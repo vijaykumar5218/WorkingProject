@@ -1,0 +1,84 @@
+:host {
+  height: 100%;
+  overflow: visible;
+
+  .mxOuterContainer {
+    position: relative;
+
+    .containerA {
+      height: 220px;
+      padding: 0 0 126px;
+      background-color: var(--primary-colors-voya-white);
+      width: -webkit-fill-available;
+
+      .voya-logo {
+        width: 53px;
+        height: 53px;
+        position: absolute;
+        border-radius: 10px;
+        border: solid 0.4px var(--secondary-colors-medium-gray-3);
+        top: 70px;
+        right: 60px;
+      }
+
+      .institute_name {
+        height: 22px;
+        flex-grow: 0;
+        margin: 13px 112px 0 13px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+        color: var(--primary-colors-voya-black);
+      }
+
+      .accounttype-name {
+        height: 16px;
+        margin: 10px 112px 0 13px;
+        font-size: 16px;
+        text-align: left;
+        color: var(--primary-colors-voya-black);
+      }
+
+      .As-of-date {
+        height: 22px;
+        margin: 28px 112px 0 13px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.14;
+        letter-spacing: 0.01px;
+        text-align: left;
+        color: var(--primary-colors-voya-black);
+      }
+
+      .balance {
+        height: 22px;
+        margin: 10px 112px 0 13px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+        color: var(--primary-colors-voya-black);
+      }
+    }
+  }
+  @media screen and (min-width: 921px) {
+    ion-spinner {
+      position: absolute;
+      top: 12%;
+      z-index: 10000;
+      left: 35%;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    ion-spinner {
+      position: absolute;
+      top: 45%;
+      z-index: 10000;
+      left: 40%;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

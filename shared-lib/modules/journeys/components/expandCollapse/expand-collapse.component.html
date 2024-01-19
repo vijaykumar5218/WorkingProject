@@ -1,0 +1,36 @@
+<div
+  [ngClass]="{
+    item: true,
+    expanded: isExpanded,
+    last: isLast,
+    mobile: !isWeb
+  }"
+>
+  <div class="header">
+    <ion-text>{{ header }}</ion-text>
+
+    <img
+      *ngIf="!isExpanded"
+      (click)="toggleExpand()"
+      (keyup.enter)="toggleExpand()"
+      tabindex="0"
+      alt="expand"
+      class="arrow-down"
+      src="assets/icon/journeys/chevron_down.svg"
+      [id]="'expandResource' + index"
+    />
+
+    <img
+      *ngIf="isExpanded"
+      (click)="toggleExpand()"
+      (keyup.enter)="toggleExpand()"
+      tabindex="0"
+      alt="collapse"
+      class="arrow-up"
+      src="assets/icon/journeys/chevron_up.svg"
+      [id]="'collapseResource' + index"
+    />
+  </div>
+
+  <ng-content *ngIf="isExpanded"></ng-content>
+</div>

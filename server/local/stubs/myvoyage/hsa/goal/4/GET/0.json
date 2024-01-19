@@ -1,0 +1,12 @@
+{
+    "hsaJourneyAnswers": [],
+    "singleMaxAmt": 3650,
+    "familyMaxAmt": 7300,
+    "catchUpAmt": 1000,
+    "accountLinked": false,
+    "accountNotLinked": true,
+    "notOnFile": true,
+    "onFile": false,
+    "individual": false,
+    "overCatchupAge": false
+}

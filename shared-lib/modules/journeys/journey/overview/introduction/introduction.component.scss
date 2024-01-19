@@ -1,0 +1,123 @@
+div.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 36px 20px 0px 20px;
+  ion-text {
+    color: var(--primary-colors-voya-black);
+  }
+
+  div {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 920px) {
+    img {
+      margin: 20px auto auto auto;
+      width: 421.8px;
+      height: 309px;
+    }
+  }
+  @media screen and (min-width: 500px) and (max-width: 920px) {
+    img {
+      margin: auto;
+      width: 295px;
+      height: 217px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    img {
+      margin: auto;
+      width: 288.3px;
+      height: 211.2px;
+    }
+  }
+}
+ion-card {
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
+  margin: 0px 20px 20px 20px;
+  color: var(--primary-colors-voya-black);
+
+  ion-card-header {
+    padding: 20px 20px 0px 20px;
+  }
+  ion-card-content {
+    padding: 20px 20px 20px 20px;
+  }
+
+  ion-card-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  ul {
+    padding: 0px 10px;
+    font-size: 16px;
+    margin-top: -20px;
+  }
+  div {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    ion-button {
+      font-weight: 600;
+      min-width: 186px;
+    }
+  }
+}
+.web-start-journey {
+  display: flex;
+  margin: 30px auto;
+  ion-button {
+    margin: auto;
+    min-width: 186px;
+  }
+}
+.start-journey-button {
+  margin: auto;
+  display: none;
+}
+.introduction-mobile {
+  div.intro {
+    .journey-header {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .introduction-card-content {
+      font-size: 14px;
+      margin-bottom: 34px;
+    }
+  }
+}
+.introduction-web {
+  @media screen and (min-width: 500px) {
+    margin-bottom: 100px;
+    .introduction-card-header,
+    .journey-header {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .introduction-card-content {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 130px;
+    .introduction-card-header,
+    .journey-header {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .introduction-card-content {
+      font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 920px) {
+    margin: 0px 36px 100px 16px;
+  }
+}

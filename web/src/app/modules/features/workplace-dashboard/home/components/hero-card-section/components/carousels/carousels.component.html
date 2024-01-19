@@ -1,0 +1,126 @@
+<div id="carouselContainer" [ngClass]="{ 'minimized': isMinimized }" class="flex-container" *ngIf="pageText">
+  <ion-row class="flex-item-header">
+    <div
+      class="add-account-title"
+      automation-id="carousel-section-header"
+      tabindex="0"
+    >
+      <span>{{ pageText.sectionHeader }}</span>
+    </div>
+  </ion-row>
+  <ion-row class="flex-item-pagination">
+    <app-pagination
+      [paginationConfig]="paginationConfig"
+      (paginationChange)="paginationChange($event)"
+    >
+    </app-pagination>
+    <a id="minimizeExpandLinkBtn" (click)="toggleMinimizeExpand()">{{ isMinimized ? 'Expand This Section' : 'Minimize This Section' }}</a>
+  </ion-row>
+  <div id="carouselContentContainer" class="background-spec">
+    <ion-row class="flex-item-image">
+      <div class="carousel-image-container" [style.background-image]="'url(' + pageText.image + ')'"></div>
+      <ng-container
+        *ngIf="
+          pageText.type === 'SCORE' && pageText.status !== 'NOT_AGGREGATED'
+        "
+      >
+        <div automation-id="carousel-FinStrong-Score" class="flex-item-score">
+          {{ pageText.score }}
+        </div>
+      </ng-container>
+    </ion-row>
+    <ion-row class="flex-item-container">
+      <ion-row class="add-account-subtitle-row">
+        <ion-col>
+          <div
+            automation-id="carousel-title-header"
+            class="carousel-sub-title"
+          >
+            {{ pageText.bodyTitle }}
+          </div>
+          <ng-container
+            *ngIf="pageText.status === 'NO_SCORE'; then noScore; else default"
+          >
+          </ng-container>
+          <ng-template #noScore>
+            <div
+              automation-id="carousel-noscore-section-content"
+              class="carousel-body"
+              [innerHTML]="pageText.bodyText"
+            ></div>
+          </ng-template>
+          <ng-template #default>
+            <div
+              automation-id="carousel-section-content"
+              class="carousel-body"
+            >
+              {{ pageText.bodyText }}
+            </div>
+          </ng-template>
+          <div class="add-account-button-row">
+            <container-element [ngSwitch]="pageText.id">
+              <v-button
+                *ngSwitchCase="'FinancialWellness'"
+                secondary
+                automation-id="carousel-finwellness-button"
+                href="{{ this.pageText.url }}"
+              >
+                {{ pageText.ctaLabel }}
+              </v-button>
+              <v-button
+                *ngSwitchCase="'TourOfSite'"
+                secondary
+                automation-id="carousel-tourofsite-button"
+                (click)="launchTour()"
+              >
+                {{ pageText.ctaLabel }}
+              </v-button>
+              <container-element *ngSwitchCase="'FinScore'">
+                <ng-container
+                  *ngIf="
+                    pageText.status === 'NOT_AGGREGATED';
+                    else displayScore
+                  "
+                >
+                  <v-button secondary (click)="openAddAccountModal()" [disabled] = "isAltAccessUser">
+                    <v-icon name="expand" *ngIf="!isAltAccessUser" primary size="20px"></v-icon>
+                    <v-icon name="expand" *ngIf="isAltAccessUser" disabled size="20px"></v-icon>
+                    {{ pageText.ctaLabel }}
+                  </v-button>
+                </ng-container>
+                <ng-template #displayScore>
+                  <v-button
+                    secondary
+                    automation-id="carousel-finwellness-button"
+                    routerLink="{{ pageText.url }}"
+                  >
+                    {{ pageText.ctaLabel }}
+                  </v-button>
+                </ng-template>
+              </container-element>
+              <v-button
+                *ngSwitchDefault
+                secondary
+                automation-id="carousel-default-button"
+                href="{{ this.pageText.url }}"
+              >
+                {{ pageText.ctaLabel }}
+              </v-button>
+            </container-element>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-row>
+  </div>
+  <div id="carouselMinimizedContentContainer">
+      <div class="carousel-image">
+          <img automation-id="carousel-image"
+               class="carouselImage"
+               src="{{ pageText.image }}"
+               alt="Carousel Image" />
+      </div>
+      <div class="carousel-sub-title">{{ pageText.bodyTitle }}</div>
+      <div class="carousel-body"><div class="content-stretcher">{{ pageText.bodyText }}<span class="actual-content" [innerHTML]="pageText.bodyText"></span></div></div>
+      <a id="readMoreLinkBtn" (click)="toggleMinimizeExpand()">Read More ></a>
+  </div>
+</div>

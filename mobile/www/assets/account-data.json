@@ -1,0 +1,201 @@
+{
+  "dataStatus": "OK",
+
+  "landingPage": "MYVOYA",
+
+  "participant": {
+    "firstName": "Participan",
+
+    "lastName": "Test",
+
+    "birthDate": "04/01/1945",
+
+    "displayName": "PARTICIPAN TEST",
+
+    "age": "76",
+
+    "profileId": "70d4297e-d555-7e9b-e053-2cd8ac0ab765"
+  },
+
+  "financialAccounts": {
+    "dataStatus": "OK",
+
+    "retirementAccounts": {
+      "dataStatus": "OK",
+
+      "errorCode": "NO_ERROR",
+
+      "accounts": [
+        {
+          "agreementId": "EA6A9185EBFBA94147D19C91862C94DD68A977084B4314F1BFCE6743F9021FD5",
+          "accountStatus": "",
+          "accountTitle": "PRECISION OPTICS CORP, INC.XXXXX PROFIT SHARING & 401(K) PLANXXXX",
+          "accountBalance": "1612893.53",
+          "accountBalanceAsOf": "10/26/2021",
+          "sourceSystem": "EASE",
+          "suppressTab": false,
+          "voyaSavings": "1612893.53",
+          "isEligibleForOrangeMoney": false,
+          "includedInOrangeMoney": false,
+          "isNew": false,
+          "isIRAPlan": true,
+          "isXSellRestricted": false,
+          "accountAllowedForMyVoya": true,
+          "clientId": "INGWIN",
+          "planId": "878076",
+          "planType": "DC",
+          "voyaAccessPlan": false,
+          "navigateToRSPortfolio": false,
+          "planLink": "~DEFAULT~",
+          "openDetailInNewWindow": false,
+          "restrictedRetirementPlan": false,
+          "vdaApplication": false
+        },
+
+        {
+          "agreementId": "6B4DDDC4717A2F66F54993CDC8C2A164",
+          "accountStatus": "ERROR",
+          "accountTitle": "Sidley Austin LLP Retirement Plans Website",
+          "accountBalance": "",
+          "sourceSystem": "VIPS",
+          "suppressTab": false,
+          "isEligibleForOrangeMoney": false,
+          "includedInOrangeMoney": false,
+          "isNew": false,
+          "isIRAPlan": false,
+          "isXSellRestricted": false,
+          "accountAllowedForMyVoya": false,
+          "planId": "NA",
+          "planType": "NA",
+          "voyaAccessPlan": false,
+          "navigateToRSPortfolio": true,
+          "planLink": "~DEFAULT~",
+          "openDetailInNewWindow": false,
+          "restrictedRetirementPlan": false,
+          "vdaApplication": false
+        },
+
+        {
+          "agreementId": "A65262FFE0B872357F951E45A2E2E092",
+          "accountStatus": "ERROR",
+          "accountTitle": "Test Company 401(k) Savings Plan Website!",
+          "accountBalance": "",
+          "sourceSystem": "VIPS",
+          "suppressTab": false,
+          "isEligibleForOrangeMoney": false,
+          "includedInOrangeMoney": false,
+          "isNew": false,
+          "isIRAPlan": false,
+          "isXSellRestricted": false,
+          "accountAllowedForMyVoya": false,
+          "planId": "NA",
+          "planType": "NA",
+          "voyaAccessPlan": false,
+          "navigateToRSPortfolio": true,
+          "planLink": "~DEFAULT~",
+          "openDetailInNewWindow": false,
+          "restrictedRetirementPlan": false,
+          "vdaApplication": false
+        },
+
+        {
+          "agreementId": "3B84F4F1693BE393B273F24BAAB0D1CB",
+
+          "accountStatus": "ERROR",
+
+          "accountTitle": "Kohler Co. 401(k) Savings Plan",
+
+          "accountBalance": "",
+
+          "sourceSystem": "VIPS",
+
+          "suppressTab": false,
+
+          "isEligibleForOrangeMoney": false,
+
+          "includedInOrangeMoney": false,
+
+          "isNew": false,
+
+          "isIRAPlan": false,
+
+          "isXSellRestricted": false,
+
+          "accountAllowedForMyVoya": false,
+
+          "planId": "NA",
+
+          "planType": "NA",
+
+          "voyaAccessPlan": false,
+
+          "navigateToRSPortfolio": true,
+
+          "planLink": "~DEFAULT~",
+
+          "openDetailInNewWindow": false,
+
+          "restrictedRetirementPlan": false,
+
+          "vdaApplication": false
+        },
+
+        {
+          "agreementId": "D29128A07F5B93A899EE9FF45B9966FB",
+
+          "accountStatus": "ERROR",
+
+          "accountTitle": "Indiana Public Retirement System",
+
+          "accountBalance": "",
+
+          "sourceSystem": "VIPS",
+
+          "suppressTab": false,
+
+          "isEligibleForOrangeMoney": false,
+
+          "includedInOrangeMoney": false,
+
+          "isNew": false,
+
+          "isIRAPlan": false,
+
+          "isXSellRestricted": false,
+
+          "accountAllowedForMyVoya": false,
+
+          "planId": "NA",
+
+          "planType": "NA",
+
+          "voyaAccessPlan": false,
+
+          "navigateToRSPortfolio": true,
+
+          "planLink": "~DEFAULT~",
+
+          "openDetailInNewWindow": false,
+
+          "restrictedRetirementPlan": false,
+
+          "vdaApplication": false
+        }
+      ]
+    }
+  },
+
+  "crossSellAllowedOrangeMoneyView": true,
+
+  "crossSellAllowedProtectionView": true,
+
+  "financialWellnessAllowed": true,
+
+  "doFinancialWellnessAllowed": true,
+
+  "vdsNavigationEnabled": true,
+
+  "showGoPaperless": false,
+
+  "showNotificationPref": false
+}

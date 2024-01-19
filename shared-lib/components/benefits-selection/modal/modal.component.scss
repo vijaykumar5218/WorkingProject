@@ -1,0 +1,27 @@
+div {
+  height: 100%;
+  padding: 40px 20px 20px 20px;
+  background: var(--primary-colors-voya-white);
+  overflow: auto;
+  &.nudge {
+    background: var(--marketing-plum);
+  }
+  #close-modal {
+    cursor: pointer;
+  }
+  img {
+    float: right;
+    margin-right: 10px;
+    @media screen and (max-width: 920px) {
+      margin-bottom: 7%;
+    }
+    @media screen and (min-width: 920px) {
+      margin-bottom: 4%;
+    }
+  }
+
+  benefits-selection-modal-nudge,
+  benefits-selection-modal-before-starting {
+    clear: right;
+  }
+}

@@ -1,0 +1,21 @@
+<ion-card>
+  <ion-card-content>
+    <ion-row>
+      <ion-col class="icon ion-no-padding">
+        <div>
+          <img src="assets/icon/translation_logo.svg" alt="" />
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <a
+            tabindex="0"
+            class="link linkcolor underline OneLinkNoTx"
+            (click)="openTranslationMessageModal()"
+            [innerHTML]="translationObject.linkText"
+          ></a>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>

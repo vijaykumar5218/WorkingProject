@@ -1,0 +1,63 @@
+{
+    "retirementAccounts": {
+        "dataStatus": "OK",
+        "errorCode": "NO_ERROR",
+        "accounts": [
+            {
+                "agreementId": "8B308019A0CC107653A4A2FF35CFDDC7E12CABEEE69ABA2544EEA814032A2984",
+                "accountTitle": "VOYA 401(K) SAVINGS PLAN",
+                "accountType": "Investment",
+                "accountBalance": "146215.26",
+                "accountBalanceAsOf": "10/23/2023",
+                "sourceSystem": "EASE",
+                "suppressTab": false,
+                "voyaSavings": "146215.26",
+                "includedInOrangeMoney": false,
+                "accountAllowedForMyVoya": false,
+                "clientId": "INGWIN",
+                "planId": "776991",
+                "planType": "DC",
+                "accountNumber": "776991@INGWIN@871827530",
+                "needOMAutomaticUpdate": false,
+                "planName": "VOYA 401(K) SAVINGS PLAN",
+                "mpStatus": "0",
+                "firstName": "Gideon",
+                "lastName": "Tuikku-DP",
+                "clientAllowed4myVoyaOrSSO": true,
+                "useMyvoyaHomepage": true,
+                "advisorNonMoneyTxnAllowed": false,
+                "advisorMoneyTxnAllowed": false,
+                "nqPenCalPlan": false,
+                "enrollmentAllowed": false,
+                "autoEnrollmentAllowed": false,
+                "vruPhoneNumber": "1-800-584-6001",
+                "rmdRecurringPaymentInd": "N",
+                "navigateToRSPortfolio": true,
+                "planLink": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/details/8B308019A0CC107653A4A2FF35CFDDC7E12CABEEE69ABA2544EEA814032A2984?clientId=INGWIN&domain=voyaretirement.intg.voya.com",
+                "openDetailInNewWindow": false,
+                "nqPlan": false,
+                "portalSupportFlag": true,
+                "applicationLink": {
+                    "linkName": "Go To My Account",
+                    "linkHref": "/myvoya/link?type=retirement&token=yRqwSz6IZcZFnTHmUngCrfyvzHocehc2EuUk3gr6ZNH3JDSh7CylDqmnwNQt6o5pUiQ1JHtVIlQdFVYE80WhT9v0c7Ee6XPG348G4zHG%2Fcc%3D"
+                },
+                "clientDomain": "voyaretirement.intg.voya.com",
+                "csSessionId": "aiZKUl6Aw12FQikdNbHKVQ11.i9290",
+                "new": false,
+                "xsellRestricted": false,
+                "iraplan": false,
+                "eligibleForOrangeMoney": false,
+                "isVoyaAccessPlan": false,
+                "isRestrictedRetirementPlan": false,
+                "isVDAApplication": false,
+                "isSavingsPlan": true
+            }
+        ]
+    },
+    "vendorAccounts": {
+        "accounts": []
+    },
+    "stockAccounts": {
+        "accounts": []
+    }
+}

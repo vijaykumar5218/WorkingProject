@@ -1,0 +1,8 @@
+<voya-global-footer
+  *ngIf="isReady"
+  [ngClass]="{'dashboard-footer': workplaceEnabled$ | async}"
+  isMyVoyage
+  useMyvoyageLinks
+  sendSpanishModalEvent
+  (voya-global-footer-spanish-modal)="handleSpanishModalEvent($event)"
+></voya-global-footer>

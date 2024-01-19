@@ -1,0 +1,43 @@
+<ng-container *ngIf="!isAltAccessUser; else altAccessUserTemplate">
+<div class="networth">
+  <ng-container *ngIf="deviceWidth <= 480">
+    <app-net-worth tagName="mx-net-worth-accounts"></app-net-worth>
+  </ng-container>
+  <div
+    [ngStyle]="(deviceWidth > 480) ? {display: 'initial'} : {display: 'none'}"
+  >
+    <ion-text *ngIf="hasMXUser">{{pageContent.networth}}</ion-text>
+    <div *ngIf="hasMXUser" id="mx-net-worth"></div>
+    <app-add-account-nudge *ngIf="!hasMXUser"></app-add-account-nudge>
+  </div>
+  <ng-container *ngIf="isDesktop && hasMXUser">
+    <ng-container *ngFor="let headerdata of getHeaderMessage?.MX">
+      <p class="titletop">{{ headerdata?.spending_budget_title }}</p>
+      <div *ngFor="let imagedata of headerdata?.spending_budget_description">
+        <p class="bottom-text">{{ imagedata?.bottom_text }}</p>
+      </div>
+    </ng-container>
+    <div class="stacked-view">
+      <ion-card class="spending-widget">
+        <app-spending-widget
+          tagName="mx-spending-widget-accounts"
+        ></app-spending-widget>
+      </ion-card>
+      <ion-card>
+        <app-budget-widget
+          tagName="mx-budget-widget-accounts"
+        ></app-budget-widget>
+      </ion-card>
+    </div>
+  </ng-container>
+</div>
+</ng-container>
+<ng-template #altAccessUserTemplate>
+  <div class="networth">
+    <img
+    class=""
+    src="assets/altAccessUser/summary-dummy.svg"
+    alt="voya"
+  />
+  </div>
+</ng-template>

@@ -1,0 +1,60 @@
+<ion-row>
+  <ion-col *ngIf="dobLabel">
+    <ion-text id="doblabel" class="font-16 toggleTxt"
+      >{{pageText.label.dob}}</ion-text
+    >
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <ion-item
+      lines="none"
+      [ngClass]="(!dobLabel && submitted) ? 'dobinput-red font-16' : 'dobinput font-16' "
+    >
+      <ng-container *ngIf="timePeriod == true; else dobInput">
+        <ion-datetime
+          id="initialInc"
+          color="dark"
+          display-format="MM/DD/YYYY"
+          value="{selectedDate}"
+          placeholder="{{pageText.placeholder.timePeriod}}"
+          (ionChange)="dateSelected($event)"
+          [(ngModel)]="myDate"
+          [max]="maxDate"
+        ></ion-datetime>
+        <img
+          id="calculatoricon"
+          alt="calculator"
+          src="../../../../../assets/icon/home.jpeg"
+          class="icon-cal"
+        />
+      </ng-container>
+      <ng-template #dobInput>
+        <ion-datetime
+          id="dobInput"
+          color="dark"
+          display-format="MM/DD/YYYY"
+          value="{selectedDate}"
+          placeholder="{{pageText.placeholder.dob}}"
+          (ionChange)="dateSelected($event)"
+        ></ion-datetime>
+      </ng-template>
+    </ion-item>
+  </ion-col>
+</ion-row>
+
+<ion-row class="p-0" *ngIf="(!dobLabel && submitted)">
+  <ion-col class="p-0">
+    <ion-row *ngIf="(!dobLabel && submitted)" class="errorMsg">
+      <ion-col class="p-0 max-width-20" *ngIf="(!dobLabel && submitted)">
+        <ion-icon id="dobwarningicon" class="custom-warning"></ion-icon>
+      </ion-col>
+      <ion-col class="p-0" *ngIf="(!dobLabel && submitted)">
+        <ion-text id="dobreqerrortxt">
+          {{pageText.validatorMessage.dob.required}}</ion-text
+        >
+      </ion-col>
+    </ion-row>
+  </ion-col>
+</ion-row>

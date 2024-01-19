@@ -1,0 +1,90 @@
+ion-card.catchup-card {
+  min-height: 500px;
+  margin: 0px;
+
+  @media screen and (max-width: 600px) {
+    min-height: auto;
+  }
+
+  .catchup-header {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-colors-voya-black);
+    margin: 15px 20px 20px 20px;
+  }
+  .view-all {
+    max-width: 59px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    letter-spacing: 0.005em;
+    text-decoration-line: underline;
+    color: var(--primary-colors-voya-dark-blue);
+    margin: 20px 20px 0px 0px;
+  }
+  .h-line {
+    margin: 0px 20px;
+    border-bottom: 1px solid var(--secondary-colors-medium-gray-3);
+  }
+
+  .section-text-message {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-colors-voya-black);
+    margin: 20px 20px 10px 20px;
+  }
+
+  .review-text-div {
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--primary-colors-voya-black);
+    margin: 10px 20px 20px 20px;
+    .review-text-viewed,
+    .review-text {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .readmore-container {
+    display: flex;
+    max-width: 105px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    .link-text {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 25px;
+      margin-left: 20px;
+    }
+  }
+
+  .back-link-container {
+    display: flex;
+    max-width: 100px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    .link-text {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 25px;
+      margin-left: 9px;
+    }
+  }
+  ion-button {
+    margin-left: 20px;
+    margin-bottom: 24px;
+  }
+  .all-caught-up {
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 20px;
+    color: var(--primary-colors-voya-black);
+  }
+}

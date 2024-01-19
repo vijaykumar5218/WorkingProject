@@ -1,0 +1,19 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button
+      *ngFor="let tab of config; let i = index"
+      [ngClass]="{selected: selectedTab === tab.route}"
+      (click)="handleTabClick(tab.route)"
+    >
+      <ion-icon
+        src="{{
+          selectedTab === tab.route
+            ? tab.icon + '-selected.svg'
+            : tab.icon + '.svg'
+        }}"
+        id="{{ 'bottom-tab-' + i }}"
+      ></ion-icon>
+      <ion-label class="tab-title">{{ tab.text }}</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

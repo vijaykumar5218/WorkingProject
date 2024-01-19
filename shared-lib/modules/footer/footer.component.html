@@ -1,0 +1,8 @@
+<ng-container *ngIf="info$ | async as info">
+  <div class="footer-tabs">
+    <app-tabsnav
+      *ngIf="info.type === footerType.tabsnav"
+      [info]="info"
+    ></app-tabsnav>
+  </div>
+</ng-container>

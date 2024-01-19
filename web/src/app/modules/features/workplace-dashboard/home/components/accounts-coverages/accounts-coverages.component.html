@@ -1,0 +1,79 @@
+<ion-card class="view-card">
+  <ion-row class="accounts-coverages">
+    <ion-col *ngIf="!isMyBenefitsUser" [size]="isCoverageAccessible ? 6 : 12">
+      <ng-container *ngTemplateOutlet="accountTemplate"></ng-container>
+    </ion-col>
+    <ion-col *ngIf="isCoverageAccessible || isMyBenefitsUser">
+      <ng-container *ngTemplateOutlet="coverageTemplate"></ng-container>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="responsive-accounts-coverages">
+    <ion-row class="tabs" *ngIf="!isMyBenefitsUser">
+      <ng-container class="tab-col-size" *ngFor="let tab of pageData.tabs">
+        <ion-col
+          *ngIf="
+            tab.id === 'accounts' ||
+            (tab.id === 'claim-coverages' && isCoverageAccessible)
+          "
+          [id]="tab.id + '-col'"
+          [ngClass]="
+            isCoverageAccessible ? 'visible-coverage' : 'non-visible-coverage'
+          "
+        >
+          <ion-text
+            (click)="onclick(tab.id)"
+            [id]="tab.id"
+            class="tab-name"
+            [ngClass]="{
+              'selected-tab': selectedTab === tab.id
+            }"
+            >{{ tab.label }}</ion-text
+          >
+          <div class="underline"></div>
+        </ion-col>
+      </ng-container>
+    </ion-row>
+    <ion-row class="tab-content" *ngIf="!isMyBenefitsUser">
+      <ion-col *ngIf="selectedTab === 'accounts'">
+        <ng-container
+          *ngTemplateOutlet="accountTemplateResponsive"
+        ></ng-container>
+      </ion-col>
+      <ion-col
+        *ngIf="selectedTab === 'claim-coverages' && isCoverageAccessible"
+      >
+        <ng-container *ngTemplateOutlet="coverageTemplate"></ng-container>
+      </ion-col>
+    </ion-row>
+    <ion-col *ngIf="isMyBenefitsUser">
+      <ng-container *ngTemplateOutlet="coverageTemplate"></ng-container>
+    </ion-col>
+  </ion-row>
+
+  <ng-template #accountTemplate>
+    <app-accounts
+      [isMXUser]="isMXUser"
+      [isCoverageAccessible]="isCoverageAccessible"
+      templateType="desktop"
+      widgetId="dashboard-accounts"
+    ></app-accounts>
+  </ng-template>
+
+  <ng-template #accountTemplateResponsive>
+    <app-accounts
+      [isMXUser]="isMXUser"
+      [isCoverageAccessible]="isCoverageAccessible"
+      templateType="responsive"
+      widgetId="responsive-dashboard-accounts"
+    ></app-accounts>
+  </ng-template>
+
+  <ng-template #coverageTemplate>
+    <app-claim-coverages
+      *ngIf="tileCoverageContent"
+      [tileCoverageContent]="tileCoverageContent"
+      [isMyBenefitsUser]="isMyBenefitsUser"
+    ></app-claim-coverages>
+  </ng-template>
+</ion-card>

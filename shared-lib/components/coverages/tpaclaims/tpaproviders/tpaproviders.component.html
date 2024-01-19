@@ -1,0 +1,66 @@
+<ion-row class="back-row">
+  <span (click)="goBack()" class="click">{{ pageText.back }}</span>
+</ion-row>
+<app-loading [loading]="carriers === null">
+  <ion-grid>
+    <ion-row class="title">
+      {{ pageText.manage }}
+    </ion-row>
+    <ion-row class="subtitle">
+      {{ pageText.selectCarrier }}
+    </ion-row>
+    <ion-row class="provider-row" *ngFor="let car of carriers">
+      <ion-col size="11" class="main-col">
+        <img
+          src="assets/icon/warning_orange.svg"
+          class="warning"
+          alt="{{ pageText.warningAlt }}"
+          *ngIf="car.crawlStatus !== 'SUCCESS' || car.loginProblem !== 'valid'"
+        />
+        <img
+          src="{{ car.logoUrl }}"
+          class="logo"
+          alt="{{ car.carrierName }} Logo"
+        />
+      </ion-col>
+      <ion-col
+        size="1"
+        class="edit-col"
+        (click)="revoke(car.carrierId, car.carrierName)"
+      >
+        <img
+          class="del-button"
+          src="assets/icon/minus-circle.svg"
+          alt="{{ pageText.deleteAlt }}"
+        />
+      </ion-col>
+      <div
+        class="bottom-text"
+        *ngIf="car.crawlStatus !== 'SUCCESS' || car.loginProblem !== 'valid'"
+      >
+        {{ car.carrierName }}{{ pageText.claimsInvalid }}
+        <a (click)="addCarrier()">{{ pageText.fix }}</a>
+      </div>
+    </ion-row>
+    <ion-row class="bottom-row">
+      <ion-button
+        size="small"
+        id="add-carrier"
+        (click)="addCarrier()"
+        class="font-18 save-button"
+        name="submit"
+        shape="round"
+        expand="block"
+        type="submit"
+        color="btncolor"
+      >
+        <img
+          class="add-icon"
+          src="assets/icon/add_outline.png"
+          alt="{{ pageText.addAlt }}"
+        />
+        {{ pageText.add }}
+      </ion-button>
+    </ion-row>
+  </ion-grid>
+</app-loading>

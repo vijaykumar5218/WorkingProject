@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { InjectionToken } from '@angular/core';\nexport const THEMES = new InjectionToken('THEMES');\nexport const ACTIVE_THEME = new InjectionToken('ACTIVE_THEME');","map":null,"metadata":{},"sourceType":"module"}

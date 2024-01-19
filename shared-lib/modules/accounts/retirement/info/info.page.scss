@@ -1,0 +1,214 @@
+.outerContainer {
+  position: relative;
+
+  .containerA {
+    height: 270px;
+    padding: 0 0 126px;
+    background-color: var(--primary-colors-voya-white);
+    width: -webkit-fill-available;
+
+    .display-name p {
+      height: 24px;
+    }
+
+    .voya-logo {
+      width: 95px;
+      height: 39px;
+      position: absolute;
+      top: 90px;
+      right: 40px;
+    }
+    .voya-logo-nonheader {
+      width: 95px;
+      height: 39px;
+      position: absolute;
+      top: 90px;
+      right: 40px;
+      margin-top: 75px;
+    }
+
+    .managed-by {
+      border-radius: 10px;
+      border: solid 1px var(--secondary-colors-medium-gray-3);
+      margin: 15px 15px 0;
+      padding: 6px;
+
+      ion-col {
+        padding: 4px 2px 2px 2px;
+      }
+
+      .managed-by-inner {
+        display: block;
+        margin: auto;
+        text-align: center;
+      }
+
+      span {
+        height: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        color: var(--primary-colors-voya-black);
+        vertical-align: top;
+      }
+
+      img {
+        height: 45px;
+        margin-left: 4px;
+      }
+    }
+    .managed-by.fe {
+      padding: 2px;
+
+      span {
+        vertical-align: -webkit-baseline-middle;
+      }
+      img {
+        height: 34px;
+        vertical-align: -webkit-baseline-middle;
+      }
+    }
+
+    .Your-account-balance {
+      height: 19px;
+      margin: 20px 100px 0 13px;
+      font-size: 16px;
+      text-align: left;
+      font-weight: bold;
+      color: var(--primary-colors-voya-black);
+    }
+
+    .display-name {
+      height: 22px;
+      margin: 6px 159px -10px 13px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left;
+      color: var(--primary-colors-voya-black);
+    }
+
+    .display-morning {
+      height: 22px;
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--primary-colors-voya-black);
+    }
+    .displayimage {
+      margin: 18px 0 0 -13px;
+    }
+    .border-margin {
+      border-radius: 10px;
+      border: solid 1px var(--secondary-colors-medium-gray-3);
+      margin: 15px;
+    }
+
+    .As-of-date {
+      height: 16px;
+      margin: 10px 112px 0 13px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.14;
+      letter-spacing: 0.01px;
+      text-align: left;
+      color: var(--primary-colors-voya-black);
+    }
+
+    span {
+      margin: 10px 126px 19px 13px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: left;
+      color: var(--primary-colors-voya-black);
+    }
+  }
+  .containerB {
+    margin-top: 60px;
+    z-index: 1;
+    width: -webkit-fill-available;
+    .orang-money-bottom {
+      display: block;
+    }
+    .dont-leave-money-mrg-top {
+      @media screen and (min-width: 970px) {
+        margin-top: 30px;
+      }
+    }
+    .Card-Background {
+      padding-left: 2px;
+      border-radius: var(--card-border-radius);
+      margin-top: -135px;
+      @media screen and (max-width: 800px) {
+        padding: 10px;
+        box-shadow: var(--card-box-shadow) !important ;
+      }
+
+      &.hsa-card {
+        padding: 6px;
+
+        ion-grid {
+          padding: 0;
+        }
+      }
+    }
+    .managed-by-offset {
+      padding: 10px;
+      border-radius: var(--card-border-radius);
+      margin-top: -70px;
+      box-shadow: var(--card-box-shadow);
+    }
+
+    hr {
+      margin-top: 7px;
+      margin-bottom: 7px;
+      display: block;
+      background-color: var(--white);
+    }
+
+    span {
+      line-height: 22px;
+      margin: 0;
+    }
+
+    .label-edit {
+      float: left;
+      margin-top: 3px;
+    }
+
+    app-orange-money {
+      margin: 0px 20px 0px 20px;
+    }
+  }
+
+  .hsaCard {
+    min-height: 250px;
+
+    ion-spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .additionalPlanBalance {
+    margin: -80px 36px 0px 36px;
+    .eachAdditionalPlan {
+      color: var(--ion-color-dark);
+      font-size: 18px;
+      border-bottom: 0.5px solid var(--border-light-grey);
+      .labelTxt {
+        margin: 10px 0px;
+      }
+      .valueTxt {
+        margin: 10px 0px;
+        align-self: center;
+      }
+    }
+    .additionalPlanBalRowTitle {
+      margin: 0px 0px -15px 0px;
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--primary-colors-voya-black);
+    }
+  }
+}

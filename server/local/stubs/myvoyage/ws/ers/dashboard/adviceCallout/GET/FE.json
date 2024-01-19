@@ -1,0 +1,18 @@
+[
+  {
+      "title": "Get Advice",
+      "offerCode": "FE",
+      "messageType": "MESSAGE",
+      "targetUrl": "https%3A%2F%2Flogin.intg.voya.com%2Fsaml%2Fsps%2Fsaml-idp-login%2Fsaml20%2Flogininitial%3FPartnerId%3Dhttps%3A%2F%2Fmy3.intg.voya.com%2Fmga%2Fsps%2Fsaml-sp-my-local%2Fsaml20%26access_token%3D%5Bexchanged_access_token%5D%26Target=https%3A%2F%2Fmy3.intg.voya.com%2Fvoyasso%2FmobileSignOn%3Fdomain%3Dkohler.intg.voya.com%26target%3D/myvoya/link?type=fe&token=urlResourceType%3DFEISSOLINK%26s%3D2ochBYl0Zd4OnTwda31Wkw11.i9290%26clientId%3DKOHLER%26vendorId%3DFEI%26disclaimer%3DFEISSORD%26domain%3Dkohler.intg.voya.com%26d%3Db6824b562ef3a62a1434a613946669b2e2a3ef07",
+      "imageTargetUrl": "https://my3.intg.voya.com/myvoya/link?type=fe&token=urlResourceType%3DFEISSOIFRAMELINK%26s%3D2ochBYl0Zd4OnTwda31Wkw11.i9290%26clientId%3DKOHLER%26vendorId%3DFEI%26domain%3Dkohler.intg.voya.com%26act%3Dcallfei%26pagecode%3Dhomealt%26treatment%3Dtile%26service%3Dimageserver%26d%3D3b824d5cb64149f9e53458c118317d9a2c04dc16",
+      "clientId": "KOHLER",
+      "messages": "The right advice can make all the difference.FE/MANACTIPS",
+      "linkName": "Learn More",
+      "investmentLink": "https://my3.intg.voya.com%2Fmyvoya%2Flink%3Ftype%3Dfe%26token%3DurlResourceType%253DFEISSOLINK%2526s%253D2ochBYl0Zd4OnTwda31Wkw11.i9290%2526clientId%253DKOHLER%2526vendorId%253DFEI%2526disclaimer%253DFEISSORD%2526domain%253Dkohler.intg.voya.com%2526d%253Db6824b562ef3a62a1434a613946669b2e2a3ef07",
+      "urls": {
+          "FE_IFRAME_MINI": "https://my3.intg.voya.com/myvoya/link?type=fe&token=urlResourceType%3DFEISSOIFRAMELINK%26s%3D2ochBYl0Zd4OnTwda31Wkw11.i9290%26clientId%3DKOHLER%26vendorId%3DFEI%26domain%3Dkohler.intg.voya.com%26act%3Dcallfei%26pagecode%3Dhome%26treatment%3Dmini%26service%3Dimageserver%26d%3D93a05593895b9d7ba3282da40258580dc42f250e",
+          "FE_SSGA_YOURMONEY": "https://my3.intg.voya.com/myvoya/link?type=myvoyalink&token=clientId%3DKOHLER%26s%3D2ochBYl0Zd4OnTwda31Wkw11.i9290%26urlResourceType%3DFEILINK%26sponsorId%3DKOHLER623042%26vendorId%3DFESAML%26RelayParam%3DbGluaz1TU0dBX1lPVVJNT05FWSZwYWdlY29kZT1SRVRJUkVFX1RPT0xCT1gmdHJlYXRtZW50PUdFVF9HVUlEQU5DRQ%253D%253D%26d%3Dbfdf84f7f00086248516826173604eb5fe99c58c",
+          "FE_IFRAME": "https://my3.intg.voya.com/myvoya/link?type=fe&token=urlResourceType%3DFEISSOIFRAMELINK%26s%3D2ochBYl0Zd4OnTwda31Wkw11.i9290%26clientId%3DKOHLER%26vendorId%3DFEI%26domain%3Dkohler.intg.voya.com%26act%3Dcallfei%26pagecode%3Dhome%26treatment%3Dtile1%26service%3Dimageserver%26d%3D8fd0b6599443741e0aed465e75effa0692dab65a"
+      }
+  }
+]

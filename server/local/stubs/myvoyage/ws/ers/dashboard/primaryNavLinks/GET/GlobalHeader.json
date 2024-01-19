@@ -1,0 +1,160 @@
+{
+  "primaryNavLinks": [
+    {
+      "id": "HOME",
+      "label": "Home",
+      "link": "/myvoyageui/#/home"
+    },
+    {
+      "id": "ACCOUNTS",
+      "label": "Accounts",
+      "link": "/myvoyageui/#/accounts"
+    },
+    {
+      "id": "COVERAGES",
+      "label": "Benefits & Coverages",
+      "link": "/myvoyageui/#/coverages"
+    },
+    {
+      "id": "LIFE_EVENTS",
+      "label": "Life Events",
+      "link": "/myvoyageui/#/journeys/"
+    },
+    {
+      "label": "Financial Wellness",
+      "id": "FINANCIAL_WELLNESS",
+      "subLinks": [
+        {
+          "label": "My Financial Wellness",
+          "link": "/cf/fw/env-files/index.html",
+          "popup": false,
+          "order": 0
+        },
+        {
+          "label": "Life Stage Guidance",
+          "link": "https://resourcecenter.voya.com/life-stages",
+          "popup": false,
+          "order": 0
+        },
+        {
+          "label": "Education Topic Library",
+          "link": "https://resourcecenter.voya.com/topics/",
+          "popup": false,
+          "order": 0
+        },
+        {
+          "label": "Tools & Calculators",
+          "link": "https://resourcecenter.voya.com/tools",
+          "popup": false,
+          "order": 0
+        },
+        {
+          "label": "Live & On Demand Sessions",
+          "link": "https://www.voya.com/voyalearn",
+          "popup": false,
+          "order": 0,
+          "target": "_blank"
+        },
+        {
+          "label": "Retire Better Blog",
+          "link": "http://blog.voya.com",
+          "popup": false,
+          "order": 0,
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "id": "GET_INV_ADVICE",
+      "label": "Get Investment Advice (In English)",
+      "link": null
+    },
+    {
+      "label": "Help",
+      "id": "HELP_ITEMS",
+      "subLinks": [
+        {
+          "label": "FAQs",
+          "link": "/myvoyageui/#/help/faq",
+          "id": "FAQS_NAVBAR_ITEM"
+        },
+        {
+          "label": "Contact A Professional",
+          "link": "/myvoyageui/#/help/contact-a-coach",
+          "id": "CONTACT_A_COACH_NAVBAR_ITEM"
+        }
+      ]
+    },
+    {
+      "id": "MY_PROFILE_LINKS",
+      "label": "My Information",
+      "subLinks": [
+        {
+          "id": "MESSAGE_CENTER",
+          "label": "Message Center",
+          "link": "/myvoyaui/index.html#/message-center",
+          "popup": false,
+          "planChoiceEligible": true
+        },
+        {
+          "id": "NOTIFICATIONS",
+          "label": "Notifications",
+          "link": "/myvoyageui/#/notification",
+          "popup": false,
+          "planChoiceEligible": true
+        },
+        {
+          "id": "MY_PROFILE",
+          "label": "My Profile",
+          "link": "/myvoyaui/index.html#/my-profile",
+          "popup": false,
+          "planChoiceEligible": true
+        },
+        {
+          "id": "SECURITY",
+          "label": "Login Information",
+          "link": "/myvoyaui/index.html#my-profile/login-info/recovery",
+          "popup": false,
+          "planChoiceEligible": false
+        },
+        {
+          "id": "PERSONAL_DETAIL",
+          "label": "Personal Information",
+          "link": "/myvoyaui/index.html#my-profile/personal-detail",
+          "popup": false,
+          "planChoiceEligible": false
+        },
+        {
+          "id": "COMM_PREF",
+          "label": "Communication Preferences",
+          "link": "/myvoyaui/index.html#my-profile/communication-preferences",
+          "popup": false,
+          "planChoiceEligible": false
+        },
+        {
+          "id": "LOGOUT",
+          "label": "Log Out",
+          "link": "/myvoya/public/logout",
+          "popup": false,
+          "planChoiceEligible": true
+        }
+      ]
+    }
+  ],
+  "resourceLinks": [
+    {
+      "id": "RESOURCES",
+      "popup": false,
+      "label": "More Resources",
+      "subLinks": null
+    }
+  ],
+  "contactUs": [
+    {
+      "label": "Contact Us",
+      "link": null,
+      "popup": false,
+      "order": 0
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<img src="{{ content?.icon }}" [alt]="content?.altText || ''" />
+<ng-container *ngIf="benefitsEnrollment$ | async as benefitsEnrollment">
+  <ion-row>
+    <ion-col>
+      <div *ngIf="benefitsEnrollment?.status != 'IN_PROGRESS'">
+        <ion-text class="lets-do-this">
+          {{ content?.header }}
+        </ion-text>
+
+        <ion-text class="time-to-select">
+          {{ content?.desc1 }}
+        </ion-text>
+
+        <ion-text>
+          {{ content?.desc2 }}
+        </ion-text>
+      </div>
+
+      <div *ngIf="benefitsEnrollment?.status == 'IN_PROGRESS'">
+        <ion-text class="lets-do-this">
+          {{ nudgeContent?.header }}
+        </ion-text>
+
+        <ion-text class="time-to-select">
+          {{ nudgeContent?.desc }}
+        </ion-text>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-button
+    size="small"
+    id="open-nudge"
+    (click)="emitSelect(benefitsEnrollment?.status)"
+    >{{ content?.buttonText }}</ion-button
+  >
+</ng-container>
+<a
+  id="open-summary-details"
+  href="javascript:void(0)"
+  (click)="goToSummaryDetails()"
+>
+  {{ content?.linkText }}
+</a>

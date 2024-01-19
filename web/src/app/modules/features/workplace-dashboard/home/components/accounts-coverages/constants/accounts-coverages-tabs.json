@@ -1,0 +1,12 @@
+{
+  "tabs": [
+    {
+      "label": "Accounts",
+      "id": "accounts"
+    },
+    {
+      "label": "",
+      "id": "claim-coverages"
+    }
+  ]
+}

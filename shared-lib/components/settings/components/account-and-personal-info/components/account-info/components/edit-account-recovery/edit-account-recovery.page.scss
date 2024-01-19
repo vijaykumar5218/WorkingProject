@@ -1,0 +1,101 @@
+:host {
+  background-color: var(--ion-color-white);
+  padding: 0 20px 0 20px;
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.25;
+  }
+  .recovery-select {
+    margin-right: 8px;
+  }
+  .sub-text {
+    line-height: 1.14;
+    letter-spacing: 0.04px;
+    text-align: left;
+    color: var(--secondary-colors-medium-gray-4);
+    font-size: 14px;
+  }
+  .message {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.08px;
+  }
+  .circle-add {
+    float: left;
+    padding-right: 5px;
+  }
+
+  .pt-15 {
+    padding-top: 15px;
+  }
+
+  ion-row {
+    ion-list {
+      padding: 0px;
+      float: left;
+    }
+    .sub-text-item {
+      background-color: var(--ion-color-white);
+    }
+    .sub-text {
+      margin: 6px 0 0 36px;
+      font-size: 14px;
+      color: var(--secondary-colors-medium-gray-4);
+    }
+    .status-link {
+      color: var(--primary-colors-voya-dark-blue);
+      padding: 0px;
+      float: right;
+      margin-top: 13px;
+      height: 49px; //height is kept 48px to match the radio buttons height in left hand side
+
+      .status-text {
+        margin-top: 5px;
+        display: inline-block;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .radio-item {
+    display: block;
+    position: relative;
+    padding: 0 6px;
+    margin: 10px 0 0;
+  }
+
+  .radio-item input[type='radio'] {
+    display: none;
+  }
+
+  .radio-item label {
+    font-size: 18px;
+  }
+
+  .radio-item label:before {
+    content: ' ';
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 13px;
+    border: 2px solid var(--ion-color-btncolor);
+    background-color: transparent;
+  }
+
+  .radio-item input[type='radio']:checked + label:after {
+    border-radius: 8px;
+    width: 13.6px;
+    height: 13.6px;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    content: ' ';
+    display: block;
+    background: var(--ion-color-btncolor);
+  }
+}

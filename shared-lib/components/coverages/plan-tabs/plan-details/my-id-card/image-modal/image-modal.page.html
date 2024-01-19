@@ -1,0 +1,23 @@
+<ion-grid class="modal-page-style">
+  <ion-header>
+    <ion-row>
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-button (click)="close()" shape="round">
+            <ion-icon name="close"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-row>
+  </ion-header>
+
+  <ion-content>
+    <swiper [config]="config" #swiper>
+      <ng-template swiperSlide>
+        <div class="swiper-zoom-container">
+          <img [src]="img" alt="card image" />
+        </div>
+      </ng-template>
+    </swiper>
+  </ion-content>
+</ion-grid>

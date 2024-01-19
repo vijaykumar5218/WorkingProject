@@ -1,0 +1,50 @@
+<ion-grid class="p-0" *ngIf="!reloading">
+  <ion-row>
+    <ion-col>
+      <img class="logo" src="assets/icon/myVoyageNew.svg" alt="myvoyage logo" />
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <img class="lock-img" src="{{logoutContent?.image_url}}" alt="lock" />
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-text class="title">
+        {{logoutContent?.timeOutMessage}}
+      </ion-text>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-text class="desc1">
+        {{logoutContent?.timeOutMessage1}}
+      </ion-text>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-text class="desc2">
+        {{logoutContent?.timeOutMessage2}}
+      </ion-text>
+    </ion-col>
+  </ion-row>
+  <ion-row class="p-0">
+    <ion-col class="p-0">
+      <ion-button
+        size="small"
+        id="sign-in-button"
+        (click)="signInClicked()"
+        class="sign-in"
+        name="submit"
+        shape="round"
+        expand="block"
+        type="submit"
+        color="btncolor"
+      >
+        {{pageText.signIn}}
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>

@@ -1,0 +1,24 @@
+<div>
+  <app-account-list
+    [accounts]="accounts?.retirementAccounts?.accounts"
+    (accountClicked)="sendAccountInfo($event)"
+    elementID="retirement-accounts-list"
+  ></app-account-list>
+  <app-account-list
+    [accounts]="accounts?.hsaAccounts?.accounts"
+    (accountClicked)="sendAccountInfo($event)"
+    elementID="hsa-accounts-list"
+  ></app-account-list>
+  <app-account-list
+    [accounts]="accounts?.brokerageAccounts?.accounts"
+    elementID="brokerage-accounts-list"
+  ></app-account-list>
+  <app-account-list
+    [accounts]="accounts?.vendorAccounts?.accounts"
+    elementID="vendor-accounts-list"
+  ></app-account-list>
+  <app-account-list
+    [accounts]="accounts?.stockAccounts?.accounts"
+    elementID="stock-accounts-list"
+  ></app-account-list>
+</div>

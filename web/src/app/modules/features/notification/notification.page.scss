@@ -1,0 +1,22 @@
+:host {
+  bottom: 40px;
+  ion-grid {
+    div.linear-gradient {
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 90px;
+      bottom: 0%;
+      height: 50%;
+      background: linear-gradient(
+        359.28deg,
+        var(--gradient-color-white) 4.4%,
+        var(--secondary-colors-voya-gray) 91.56%
+      );
+    }
+    .max-width {
+      margin: auto;
+      max-width: 1440px;
+    }
+  }
+}

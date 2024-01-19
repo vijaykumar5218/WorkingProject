@@ -1,0 +1,102 @@
+<ion-grid class="p-0" *ngIf="!reloading" class="container">
+  <ion-row class="top-row">
+    <ion-col>
+      <ion-text class="welcome">{{pageText.welcome}}</ion-text>
+    </ion-col>
+  </ion-row>
+  <ion-row class="logo-row">
+    <ion-col class="logo-col">
+      <div class="logo-div">
+        <img
+          class="logo"
+          src="assets/icon/myVoyageNew_Mobile.svg"
+          alt="voya logo"
+        />
+      </div>
+    </ion-col>
+  </ion-row>
+  <swiper
+    id="swiper-container"
+    [config]="slideOpts"
+    (swiper)="setSwiperInstance($event)"
+    [ngStyle]="{'width': pageWidth}"
+    (slideChange)="handleSlideChange()"
+  >
+    <ng-template
+      #swiper
+      swiperSlide
+      *ngFor="let step of landingSteps; let i = index"
+    >
+      <div class="page-container">
+        <img
+          class="slide-img"
+          src="{{step.login_description[0].image_url}}"
+          alt=""
+        />
+        <ion-text class="page-title">{{step.login_title}}</ion-text>
+        <ion-text class="page-desc">
+          {{step.login_description[0].description}}
+          <a
+            *ngIf="step.login_description[0].link_name"
+            (click)="openLink(step.login_description[0].link_url)"
+          >
+            {{step.login_description[0].link_name}}</a
+          >
+        </ion-text>
+      </div>
+    </ng-template>
+  </swiper>
+  <ion-row class="progress-row">
+    <ion-col>
+      <app-step-progress-bar
+        [steps]="landingSteps"
+        [currentStep]="currentStep"
+      ></app-step-progress-bar>
+    </ion-col>
+  </ion-row>
+  <ion-row class="face-id-row" *ngIf="hasFaceIDSession">
+    <ion-col>
+      <img class="bio-icon" src="{{biometricsIcon}}" alt="biometrics" />
+      <ion-text class="bio-text" (click)="loginFaceID()"
+        >{{pageText.signInWith}}{{biometricsText}}</ion-text
+      >
+    </ion-col>
+  </ion-row>
+  <ion-row class="p-0">
+    <ion-col class="p-0">
+      <ion-button
+        size="small"
+        [disabled]="signInDisabled"
+        (click)="signInClicked()"
+        class="sign-in"
+        name="submit"
+        shape="round"
+        expand="block"
+        type="submit"
+        color="btncolor"
+        id="sign-in-button"
+      >
+        {{pageText.signin}}
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row class="p-0">
+    <ion-col class="p-0">
+      <ion-button
+        size="small"
+        [disabled]="signInDisabled"
+        (click)="registerClicked()"
+        class="register"
+        name="submit"
+        shape="round"
+        expand="block"
+        type="submit"
+        color="white"
+        fill="outline"
+        id="register-button"
+      >
+        {{pageText.register}}
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>

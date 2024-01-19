@@ -1,0 +1,109 @@
+.annual-rate-bar {
+  --progress-background: var(--primary-colors-voya-dark-blue);
+  --background: lightgrey;
+  height: 10px;
+  border-radius: 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+ion-card.myv-card {
+  min-height: 150px;
+
+  ion-card-content,
+  ion-card-header ion-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.02px;
+    text-align: left;
+    color: var(--primary-colors-voya-black);
+  }
+
+  ion-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.internal-card {
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0 18px 18px 18px;
+  background-color: var(--secondary-colors-medium-gray-3);
+}
+
+.bar-bottom-item-title {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.05px;
+  text-align: left;
+  color: var(--secondary-colors-voya-gray);
+}
+.bar-bottom-item-value {
+  height: 19px;
+  display: block;
+  flex-grow: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 5px;
+  color: var(--primary-colors-voya-black);
+}
+.bar-bottom-item-value.orange {
+  color: var(--primary-colors-voya-orange);
+}
+
+.internal-card ion-card-content {
+  display: block;
+  padding: 0;
+}
+.warning-text {
+  flex-grow: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.08px;
+  text-align: left;
+  color: var(--primary-colors-voya-black);
+  margin-left: 0px;
+  font-weight: normal;
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+  }
+
+  .msg-cont {
+    margin-left: 30px;
+  }
+}
+
+.button-container {
+  text-align: center;
+  margin-right: 22px;
+}
+.internal-card ion-button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: solid 2px var(--primary-colors-voya-dark-blue);
+  background-color: #fff;
+  color: var(--primary-colors-voya-dark-blue);
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.section-title {
+  margin-left: 16px;
+  .voya-dark {
+    color: var(--primary-colors-voya-black);
+  }
+
+  img {
+    position: relative;
+    top: 6px;
+    left: 4px;
+  }
+}

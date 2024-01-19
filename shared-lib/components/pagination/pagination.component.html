@@ -1,0 +1,7 @@
+<div class="pagination-section" *ngIf="paginationConfig">
+  <v-pagination
+    [id]="id"
+    [attr.config]="paginationConfig"
+    (vpagination-change)="paginateClick($event)"
+  ></v-pagination>
+</div>

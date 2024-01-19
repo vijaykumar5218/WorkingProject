@@ -1,0 +1,396 @@
+ion-grid {
+  &.myWorkplaceDashboard {
+    .linear-gradient {
+      @media screen and (min-width: 842px) {
+        margin-top: 5px;
+      }
+      .max-width {
+        height: 94%;
+        @media screen and (max-width: 1200px) {
+          margin-right: 20px;
+        }
+        max-width: 1440px;
+        margin: auto;
+      }
+    }
+  }
+  &.myvoyage {
+    .linear-gradient {
+      margin-bottom: 0px;
+      padding-bottom: 20px;
+      .max-width {
+        max-width: 1440px;
+        height: 94%;
+        @media screen and (max-width: 920px) {
+          margin-right: 20px;
+        }
+        margin: auto;
+        padding: 0px 10px;
+      }
+    }
+  }
+  .linear-gradient {
+    left: 0%;
+    right: 0%;
+    top: 90px;
+    @media screen and (max-width: 920px) {
+      height: 100%;
+    }
+    background: linear-gradient(
+      359.28deg,
+      var(--gradient-color-white) 4.4%,
+      var(--gradient-color-light-blue) 91.56%
+    );
+  }
+  .cov-scrollable {
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      background: transparent;
+    }
+  }
+
+  app-plans {
+    margin-bottom: 20px;
+  }
+  .focused-element-coverages:focus {
+    outline: none;
+  }
+
+  ion-row.coverages-tab {
+    @media only screen and (min-width: 600px) and (max-width: 900px) {
+      min-height: 100%;
+    }
+    @media screen and (max-width: 920px) {
+      height: 100%;
+    }
+    @media screen and (min-width: 920px) and (max-width: 935px) {
+      height: 100%;
+      &.review-height {
+        height: 1825px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 98.4%;
+        }
+      }
+    }
+    @media screen and (min-width: 935px) and (max-width: 949px) {
+      height: 100%;
+      &.review-height {
+        height: 1780px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 98.3%;
+        }
+      }
+    }
+    @media screen and (min-width: 949px) and (max-width: 959px) {
+      height: 100%;
+      &.review-height {
+        height: 1720px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 98.3%;
+        }
+      }
+    }
+    @media screen and (min-width: 959px) and (max-width: 983px) {
+      height: 100%;
+      &.review-height {
+        height: 1700px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 98.3%;
+        }
+      }
+    }
+    @media screen and (min-width: 983px) and (max-width: 991px) {
+      height: 100%;
+      &.review-height {
+        height: 1660px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 98.2%;
+        }
+      }
+    }
+    @media screen and (min-width: 991px) and (max-width: 997px) {
+      height: 100%;
+      &.review-height {
+        height: 1615px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 98.2%;
+        }
+      }
+    }
+    @media screen and (min-width: 997px) and (max-width: 1005px) {
+      height: 100%;
+      &.review-height {
+        height: 1580px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 98.2%;
+        }
+      }
+    }
+    @media screen and (min-width: 1005px) and (max-width: 1015px) {
+      height: 100%;
+      &.review-height {
+        height: 1540px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 98.1%;
+        }
+      }
+    }
+    @media screen and (min-width: 1015px) and (max-width: 1075px) {
+      height: 100%;
+      &.review-height {
+        height: 1500px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 98%;
+        }
+      }
+    }
+    @media screen and (min-width: 1075px) and (max-width: 1100px) {
+      height: 100%;
+      &.review-height {
+        height: 1440px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 98%;
+        }
+      }
+    }
+    @media screen and (min-width: 1100px) and (max-width: 1150px) {
+      height: 100%;
+      &.review-height {
+        height: 1400px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 97.8%;
+        }
+      }
+    }
+    @media screen and (min-width: 1150px) and (max-width: 1200px) {
+      height: 100%;
+      &.review-height {
+        height: 1360px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 97.8%;
+        }
+      }
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1250px) {
+      height: 100%;
+      &.review-height {
+        height: 1330px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 97.7%;
+        }
+      }
+    }
+    @media screen and (min-width: 1250px) and (max-width: 1330px) {
+      height: 100%;
+      &.review-height {
+        height: 1240px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 97.6%;
+        }
+      }
+    }
+    @media screen and (min-width: 1330px) and (max-width: 1356px) {
+      height: 100%;
+      &.review-height {
+        height: 1250px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 97.6%;
+        }
+      }
+    }
+    @media screen and (min-width: 1356px) and (max-width: 1400px) {
+      height: 100%;
+      &.review-height {
+        height: 1150px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 97.4%;
+        }
+      }
+    }
+    @media screen and (min-width: 1400px) {
+      height: 100%;
+      &.review-height {
+        height: 1120px;
+        .right-card,
+        .left-card {
+          box-shadow: none;
+          height: 97.3%;
+        }
+      }
+    }
+    .left-col {
+      @media screen and (max-width: 920px) {
+        height: 100%;
+        display: none;
+      }
+      @media screen and (min-width: 920px) {
+        height: 100%;
+      }
+      max-width: 420px;
+      padding-right: 0px;
+      margin-top: 10px;
+      .left-card {
+        margin-bottom: 0;
+        @media screen and (max-width: 920px) {
+          height: 100%;
+        }
+        background: var(--white);
+        border-radius: 10px 0px 0px 10px;
+        margin-right: 0px;
+        padding: 0px 20px 0px 25px;
+        .my-coverage {
+          margin-top: 24px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.0015em;
+          color: var(--toggle-txt-color);
+          .shield-svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+          }
+          .shieldText {
+            display: flex;
+          }
+        }
+        .allCoverage {
+          display: flex;
+          cursor: pointer;
+          flex-direction: row;
+          align-items: center;
+          padding: 15px;
+          bottom: 85.29%;
+          background: var(--ion-color-white);
+          border-radius: 10px;
+          margin: 20px 0px;
+          width: 415px;
+          box-shadow: var(--card-box-shadow);
+          .allCoverage-text {
+            margin-left: 17px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.001em;
+            color: var(--primary-colors-voya-dark-blue);
+          }
+          .square-box {
+            max-width: 40px;
+            height: 40px;
+            border: 0.4px solid var(--secondary-colors-medium-gray-3);
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 5px;
+            .navigator-image {
+              width: 27px;
+              height: 27px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 1.5px;
+            }
+          }
+        }
+      }
+    }
+
+    .right-col {
+      padding-left: 0px;
+      margin-top: 30px;
+      @media screen and (max-width: 400px) {
+        height: 88% !important;
+      }
+      @media screen and (min-width: 400px) and (max-width: 500px) {
+        height: 89% !important;
+      }
+      @media screen and (min-width: 500px) and (max-width: 920px) {
+        height: 91% !important;
+      }
+      @media screen and (max-width: 920px) {
+        height: 100%;
+        margin-left: 20px;
+        margin-bottom: 40px;
+      }
+
+      .right-card {
+        @media screen and (max-width: 920px) {
+          height: 100%;
+          border-radius: 10px;
+        }
+        box-shadow: none;
+        margin: 0;
+        border-radius: 0px 10px 10px 0px;
+        .coverage-header {
+          width: 200px;
+        }
+        app-all-coverages {
+          ion-tabs {
+            .tabs-inner {
+              overflow: auto !important;
+              margin-bottom: 100px !important;
+            }
+          }
+        }
+      }
+    }
+    &.non-review-height {
+      @media screen and (min-width: 921px) {
+        height: auto;
+        min-height: 1200px;
+      }
+
+      .left-col {
+        .left-card {
+          @media screen and (min-width: 920px) {
+            height: 100%;
+            min-height: 1200px;
+            box-shadow: var(--card-box-shadow);
+          }
+        }
+      }
+      .right-col {
+        .right-card {
+          @media screen and (min-width: 920px) {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

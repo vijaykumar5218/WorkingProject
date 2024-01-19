@@ -1,0 +1,104 @@
+<div [ngClass]="isWeb ? 'input-web' : 'input-mobile'">
+  <div
+    [ngClass]="
+      element.type === 'accountRadioButton' ? 'label mb-20' : 'label mb-10'
+    "
+    *ngIf="element.labelPrefix || element.label || element.help"
+  >
+    <div class="prefix-and-label">
+      <ion-text
+        *ngIf="element.labelPrefix"
+        class="prefix"
+        [ngStyle]="{color: element.textColor}"
+        >{{ element.labelPrefix }}</ion-text
+      >
+      <ion-text
+        *ngIf="element.label"
+        [ngStyle]="{
+          color: element.textColor,
+          'font-weight': element.bold ? 'bold' : undefined
+        }"
+        >{{ element.label }}</ion-text
+      >
+      <journeys-steps-step-help
+        *ngIf="element.help"
+        [help]="element.help"
+        [idSuffix]="element.idSuffix"
+      ></journeys-steps-step-help>
+    </div>
+  </div>
+  <journeys-steps-step-input-text-field
+    *ngIf="element.type === 'textField'"
+    [value]="value"
+    [placeholder]="element.placeholder"
+    [ariaLabel]="element.label"
+    padding="16px"
+    (blur)="emitCurrentValue()"
+    (valueChange)="emitValueChange($event)"
+    [input]="element"
+  ></journeys-steps-step-input-text-field>
+  <journeys-steps-step-input-calendar
+    *ngIf="element.type === 'calendar'"
+    [placeholder]="element.placeholder"
+    (valueChange)="emitValueChange($event)"
+    [value]="value"
+    [input]="element"
+  ></journeys-steps-step-input-calendar>
+  <journeys-steps-step-input-word
+    *ngIf="element.type === 'wordGroup'"
+    [defaultValue]="value"
+    [options]="element.options"
+    (selectionChange)="emitValueChange($event)"
+    [idSuffix]="element.idSuffix"
+  ></journeys-steps-step-input-word>
+  <journeys-steps-step-input-table
+    *ngIf="element.type === 'table'"
+    [defaultValue]="value"
+    [element]="element"
+    (inputChange)="emitValueChange($event)"
+  ></journeys-steps-step-input-table>
+  <journeys-steps-step-input-radio-button
+    *ngIf="element.type === 'radioButtonInput'"
+    [element]="elementCopy"
+    (radioButtonStateChanged)="emitValueChange($event)"
+    [value]="defaultValue"
+  ></journeys-steps-step-input-radio-button>
+  <journeys-steps-step-input-account-radio-button
+    *ngIf="element.type === 'accountRadioButton'"
+    [element]="element"
+    (valueChange)="emitValueChange($event)"
+    [value]="defaultValue"
+  ></journeys-steps-step-input-account-radio-button>
+  <journeys-steps-step-input-select
+    *ngIf="element.type === 'select'"
+    [element]="element"
+    (valueChange)="emitValueChange($event)"
+    [defaultValue]="value"
+    [ariaLabel]="element.label"
+  ></journeys-steps-step-input-select>
+  <journeys-steps-step-input-slider
+    *ngIf="element.type === 'slider'"
+    [element]="elementCopy"
+    [defaultValue]="defaultValue"
+    (valueChange)="emitValueChange($event)"
+  ></journeys-steps-step-input-slider>
+  <journeys-steps-step-input-icon-text-button-select
+    *ngIf="element.type === 'iconTextButtonSelect'"
+    [element]="element"
+    (valueChange)="emitValueChange($event)"
+    [defaultValue]="value"
+    [index]="index"
+    (updateStepValueAndStep)="emitUpdateStepValueAndStep()"
+  >
+  </journeys-steps-step-input-icon-text-button-select>
+  <journeys-steps-step-input-searchbar
+    *ngIf="element.type === 'typeahead'"
+    [element]="element"
+    (valueChange)="emitValueChange($event)"
+    [defaultValue]="value"
+  >
+  </journeys-steps-step-input-searchbar>
+  <ion-text class="description" *ngIf="element.description">{{
+    element.description
+  }}</ion-text>
+</div>

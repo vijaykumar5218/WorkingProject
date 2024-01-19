@@ -1,0 +1,165 @@
+:host {
+  background-color: var(--primary-colors-voya-white);
+  div.accountInfoWeb {
+    .account-data {
+      margin: 13px 0;
+      line-height: 16px;
+    }
+    .account-label {
+      @media screen and (max-width: 920px) {
+        line-height: 2;
+      }
+      margin: 10px 0;
+    }
+    .account-value {
+      margin: auto;
+      text-align: end;
+      font-size: 16px;
+      font-weight: bold;
+      @media screen and (max-width: 920px) {
+        p.error-value {
+          text-align: initial;
+        }
+      }
+    }
+
+    ion-item {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      --inner-padding-end: 0px;
+      --background: var(--ion-color-primary-contrast);
+      margin: 0px;
+
+      .recovery-value {
+        margin-top: 0px;
+      }
+      .recovery-label {
+        margin-bottom: 0px;
+      }
+      .menu-item {
+        --detail-icon-color: var(--ion-color-button);
+        --detail-icon-opacity: 1;
+        font-size: 16px;
+        color: var(--toggle-txt-color);
+        width: 100%;
+
+        &.menu-item-error {
+          span {
+            color: var(--secondary-colors-error-red);
+
+            &.error-text {
+              font-weight: normal;
+            }
+          }
+        }
+        .menu-inner {
+          width: 100%;
+          @media screen and (max-width: 920px) {
+            padding: 20px 0px;
+          }
+        }
+      }
+
+      .menu-no-border {
+        border-bottom: none;
+        height: 68px !important;
+      }
+    }
+    .w-100 {
+      min-width: 100%;
+      ion-col.ionic-icon {
+        max-width: 35px;
+        text-align: end;
+        margin: auto;
+      }
+      ion-col.account-values {
+        ion-row {
+          @media screen and (max-width: 920px) {
+            display: grid;
+            .account-value {
+              text-align: start;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.accountInfoMobile {
+    padding: 0px 20px;
+    .account-data {
+      margin: 13px 0;
+      line-height: 16px;
+    }
+    .account-label {
+      line-height: 2;
+      margin: 10px 0;
+    }
+    .account-value {
+      margin: auto;
+      text-align: end;
+      font-size: 16px;
+      font-weight: bold;
+      p.error-value {
+        text-align: initial;
+      }
+    }
+
+    ion-item {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      --inner-padding-end: 0px;
+      --background: var(--ion-color-primary-contrast);
+      margin: 0px;
+
+      .recovery-value {
+        margin-top: 0px;
+      }
+      .recovery-label {
+        margin-bottom: 0px;
+      }
+      .menu-item {
+        --detail-icon-color: var(--ion-color-button);
+        --detail-icon-opacity: 1;
+        font-size: 16px;
+        color: var(--toggle-txt-color);
+        width: 100%;
+
+        &.menu-item-error {
+          span {
+            color: var(--secondary-colors-error-red);
+
+            &.error-text {
+              font-weight: normal;
+            }
+          }
+        }
+        .menu-inner {
+          width: 100%;
+          padding: 20px 0px;
+        }
+      }
+
+      .menu-no-border {
+        border-bottom: none;
+        height: 68px !important;
+      }
+    }
+    .w-100 {
+      min-width: 100%;
+      ion-col.ionic-icon {
+        max-width: 35px;
+        text-align: end;
+        margin: auto;
+      }
+      ion-col.account-values {
+        ion-row {
+          display: grid;
+          .account-value {
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}

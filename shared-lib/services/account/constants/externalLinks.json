@@ -1,0 +1,34 @@
+{
+    "option": [
+      {
+        "id": "manageContributions",
+        "link": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/details/0C25E1CED46EFDE8DCAC69F0CA93385640088DEE2CDBC169EE207C02DADB8B19",
+        "label": "Manage Contributions",
+        "popup":""
+      },
+      {
+        "id": "manageInvestmnents",
+        "link": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/details/0C25E1CED46EFDE8DCAC69F0CA93385640088DEE2CDBC169EE207C02DADB8B19",
+        "label": "Manage Investmnents",
+        "popup":""
+      },
+      {
+        "id": "loansWithdrawals",
+        "link": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/details/0C25E1CED46EFDE8DCAC69F0CA93385640088DEE2CDBC169EE207C02DADB8B19",
+        "label": "Loans/Withdrawals",
+        "popup":""
+      },
+      {
+        "id": "planDetails",
+        "link": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/details/0C25E1CED46EFDE8DCAC69F0CA93385640088DEE2CDBC169EE207C02DADB8B19",
+        "label": "Plan Details",
+        "popup":""
+      },
+      {
+        "id": "getInvestmentAdvice",
+        "link": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/details/0C25E1CED46EFDE8DCAC69F0CA93385640088DEE2CDBC169EE207C02DADB8B19",
+        "label": "Get Investment Advice",
+        "popup":""
+      }
+    ]
+  } 

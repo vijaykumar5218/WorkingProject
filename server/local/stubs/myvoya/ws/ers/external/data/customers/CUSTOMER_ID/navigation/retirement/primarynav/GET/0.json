@@ -1,0 +1,137 @@
+{
+  "dataStatus": "OK",
+  "primaryNavLinks": [
+    {
+      "label": "My Retirement Account",
+      "link": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/details/2E7AE611C5827DC94FFED778B85403B4442F1D7FC9A1455478594C5863EB29A4",
+      "subLinks": [
+        {
+          "agreementId": "2E7AE611C5827DC94FFED778B85403B4442F1D7FC9A1455478594C5863EB29A4",
+          "planName": "Kohler Co 401(k) Savings Plan",
+          "planId": "623040",
+          "link": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/details/2E7AE611C5827DC94FFED778B85403B4442F1D7FC9A1455478594C5863EB29A4",
+          "popup": false,
+          "clientId": "KOHLER",
+          "accountBalance": 100956.93,
+          "balanceAsOfDate": "12/31/2021",
+          "restrictedPlan": false,
+          "savingsPlan": true,
+          "enrollNow": false
+        }
+      ]
+    },
+    {
+      "label": "Financial Wellness",
+      "id": "FINANCIAL_WELLNESS",
+      "subLinks": [
+        {
+          "label": "My Financial Wellness",
+          "link": "/cf/fw/env-files/index.html",
+          "popup": false,
+          "order": 0
+        },
+        {
+          "label": "Life Stage Guidance",
+          "link": "https://resourcecenter.voya.com/life-stages",
+          "popup": false,
+          "order": 0
+        },
+        {
+          "label": "Education Topic Library",
+          "link": "https://resourcecenter.voya.com/topics/",
+          "popup": false,
+          "order": 0
+        },
+        {
+          "label": "Tools & Calculators",
+          "link": "https://resourcecenter.voya.com/tools",
+          "popup": false,
+          "order": 0
+        },
+        {
+          "label": "Live & On Demand Sessions",
+          "link": "https://www.voya.com/voyalearn",
+          "popup": false,
+          "order": 0,
+          "target": "_blank"
+        },
+        {
+          "label": "Retire Better Blog",
+          "link": "http://blog.voya.com",
+          "popup": false,
+          "order": 0,
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "label": "Get Investment Advice <span class='languageTag'>(In English)</span>",
+      "link": "/myvoya/link?type=fe&token=urlResourceType%3DFEISSOLINK%26s%3DCnkAf7da0BwhomA178WcCA11.i9291%26clientId%3DKOHLER%26vendorId%3DFEI%26disclaimer%3DFEISSORD%26domain%3Dkohler.intg.voya.com%26d%3Dd8b2a2dfc1974d4de57804768411c7f0e2ccbb62",
+      "id": "FEISSORD"
+    },
+    {
+      "label": "My Information",
+      "id": "MY_PROFILE_LINKS",
+      "subLinks": [
+        {
+          "id": "RETURN_TO_VOYA",
+          "popup": false,
+          "link": "/myvoyaui/index.html#my-voya",
+          "label": "Return to myVoya",
+          "planChoiceEligible": false
+        },
+        {
+          "id": "MESSAGE_CENTER",
+          "popup": false,
+          "link": "#/workplace-dashboard/message-center",
+          "label": "Message Center",
+          "newMessageCount": 5,
+          "planChoiceEligible": true
+        },
+        {
+          "id": "MY_PROFILE",
+          "popup": false,
+          "link": "/myvoyaui/index.html#/my-profile",
+          "label": "My Profile",
+          "planChoiceEligible": true
+        },
+        {
+          "id": "SECURITY",
+          "popup": false,
+          "link": "/myvoyaui/index.html#my-profile/login-info/recovery",
+          "label": "Login Information",
+          "planChoiceEligible": false
+        },
+        {
+          "id": "PERSONAL_DETAIL",
+          "popup": false,
+          "link": "/myvoyaui/index.html#my-profile/personal-detail",
+          "label": "Personal Information",
+          "planChoiceEligible": false
+        },
+        {
+          "id": "COMM_PREF",
+          "popup": false,
+          "link": "/myvoyaui/index.html#my-profile/communication-preferences",
+          "label": "Communication Preferences",
+          "planChoiceEligible": false
+        },
+        {
+          "id": "LOGOUT",
+          "popup": false,
+          "link": "/myvoya/public/logout",
+          "label": "Logout",
+          "planChoiceEligible": true
+        }
+      ]
+    }
+  ],
+  "resourceLinks": {
+    "label": "More Resources"
+  },
+  "grandTotal": 100956.93,
+  "clientName": "Kohler Co. 401(k) Savings Plan",
+  "displayName": "ISAIAH ROGER-DP",
+  "searchUrl": "/einfo/search/links?cl=KOHLER&pl=623040&plan=623040&domain=kohler.intg.voya.com&s=CnkAf7da0BwhomA178WcCA11.i9291&d=536322edf3120b19dc10cfe65b34e7190ef7b7bb",
+  "logoUrl": "/myvoyaui/index.html#/retirement/home"
+}

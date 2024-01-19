@@ -1,0 +1,39 @@
+<ng-container *ngFor="let data of covExp?.Benefit">
+  <ng-container *ngIf="data.benefit_type == cType">
+    <div
+      [ngClass]="isWeb ? 'web-cov-explanations' : 'mobile-explanations'"
+      *ngIf="data.explanations.length > 0"
+    >
+      <ion-row>
+        <ion-col>
+          <div class="ion-text-start exp-head">
+            <p automation-id="coverage-explanation-header">
+              {{ content.explanation.heading }}
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-card class="card-wrap exp-wrap">
+        <ion-grid>
+          <ion-row class="exp-row" *ngFor="let exp of data.explanations">
+            <h4 automation-id="outOfPocketTitle" *ngIf="exp?.outOfPocketTitle">
+              {{ exp.outOfPocketTitle }}
+            </h4>
+            <p
+              *ngIf="exp?.outOfPocketDescription"
+              [innerHTML]="exp.outOfPocketDescription"
+            ></p>
+            <h4 automation-id="deductibleTitle" *ngIf="exp?.deductibleTitle">
+              {{ exp.deductibleTitle }}
+            </h4>
+            <p
+              *ngIf="exp?.deductibleDescription"
+              [innerHTML]="exp.deductibleDescription"
+            ></p>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </div>
+  </ng-container>
+</ng-container>

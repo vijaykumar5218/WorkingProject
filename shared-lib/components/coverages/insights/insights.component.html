@@ -1,0 +1,272 @@
+<app-loading [loading]="loading">
+  <app-got-consent *ngIf="!isWeb"></app-got-consent>
+  <div [ngClass]="isWeb ? 'web-insights' : 'mobile-insights'">
+    <div class="half-bg" #topmostElement></div>
+    <app-consent-required *ngIf="!hasConsent"></app-consent-required>
+    <div class="coverage-page" *ngIf="hasConsent">
+      <div class="coverage-web-flex">
+        <div class="card-wrap">
+          <ion-grid>
+            <ion-row *ngIf="totalHealthSpend + totalPremium > 0">
+              <ion-col size="8">
+                <span id="spendingInfo">
+                  <h2 id="spendingTitle">{{ pageText.healthSpending }}</h2>
+                  <img
+                    alt="info"
+                    id="infoImage"
+                    tabindex="0"
+                    (keydown.enter)="openModal()"
+                    (click)="openModal()"
+                    src="assets/icon/ic-info-outline-24px.svg"
+                  />
+                </span>
+              </ion-col>
+              <ion-col size="4">
+                <h2 class="total-value">
+                  {{
+                    totalHealthSpend + totalPremium
+                      | currency: 'USD':'symbol':'1.2-2'
+                  }}
+                </h2>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <div class="year-toggle-btn">
+                <ion-segment
+                  [(ngModel)]="segment"
+                  #year
+                  (ionChange)="toggleYear(year.value)"
+                  mode="ios"
+                >
+                  <ion-segment-button
+                    #year
+                    (keydown.enter)="toggleYear(year.value)"
+                    *ngFor="let data of yearTabs; let i = index"
+                    value="{{ i }}"
+                    id="{{ 'cov-toggle-' + i }}"
+                    (mousedown)="onMouseClick()"
+                    (keyup.tab)="onKeyboardNavigation()"
+                    (keydown.tab)="onKeyboardNavigation()"
+                    [ngClass]="{
+                      mouseClick: isFocus,
+                      keyboardNavigation: !isFocus
+                    }"
+                  >
+                    <ion-label>{{ data.year }}</ion-label>
+                  </ion-segment-button>
+                </ion-segment>
+              </div>
+            </ion-row>
+
+            <div
+              class="pie-value-cont"
+              id="pieContainer"
+              [ngClass]="{
+                visible:
+                  isHealthUtilizationAvail ||
+                  totalPremium > 0 ||
+                  tpaData?.claims
+              }"
+            >
+              <div id="container" class="pie"></div>
+
+              <div class="pie-values">
+                <p class="pie-title">
+                  {{ contentP.title | currency: 'USD':'symbol':'1.2-2' }}
+                </p>
+                <p class="pie-subtitle">{{ contentP.pieSubTitle }}</p>
+              </div>
+            </div>
+
+            <div
+              class="insight-footer"
+              *ngIf="totalHealthSpend + totalPremium > 0"
+            >
+              <ion-row *ngIf="isDate">
+                <ion-col>
+                  <p class="date">{{ pageText.asOf }} {{ currentDate }}</p>
+                </ion-col>
+              </ion-row>
+              <ion-row *ngIf="totalPremium">
+                <ion-col class="footer-data">
+                  <span>{{ pageText.paidToDate }}</span>
+                  <span class="value">{{
+                    totalPremium | currency: 'USD':'symbol':'1.2-2'
+                  }}</span>
+                </ion-col>
+              </ion-row>
+              <ion-row *ngIf="contentP.title">
+                <ion-col class="footer-data">
+                  <span>{{ pageText.coPay }}</span>
+                  <span class="value">{{
+                    totalHealthSpend | currency: 'USD':'symbol':'1.2-2'
+                  }}</span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <a
+                  id="view-claims-1"
+                  class="view-claims-link"
+                  tabindex="0"
+                  (keydown.enter)="viewClaims()"
+                  (click)="viewClaims()"
+                  >View Your Claims</a
+                >
+              </ion-row>
+            </div>
+          </ion-grid>
+
+          <ng-container
+            *ngIf="!isHealthUtilizationAvail && !(totalPremium > 0)"
+          >
+            <p
+              class="no-info"
+              innerHTML="{{
+                nohealthData?.Insights_TotalHealthSpend_tileMessage_NoDataAvailable
+              }}"
+            ></p>
+          </ng-container>
+        </div>
+
+        <div
+          class="card-wrap"
+          id="bubbleWrapper"
+          [ngClass]="{visible: isHealthUtilizationAvail}"
+        >
+          <ion-grid>
+            <ion-row>
+              <ion-col size="8">
+                <h2>{{ pageText.planUsage }}</h2>
+                <h3>
+                  {{ pageText.benefitPeriod }}
+                  {{
+                    segment == '0'
+                      ? coverages?.planYear
+                        ? coverages?.planYear
+                        : currYear
+                      : this.preYear
+                  }}
+                </h3>
+              </ion-col>
+            </ion-row>
+
+            <div class="pie-value-cont">
+              <div id="bubbleContainer" class="pie"></div>
+            </div>
+            <div class="insight-footer">
+              <ion-row *ngIf="isDate">
+                <ion-col>
+                  <p class="date">{{ pageText.asOf }} {{ currentDate }}</p>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="footer-data">
+                  <span>{{ contentP.inClaimsTxt }}</span>
+                  <span class="value">{{
+                    this.healthData?.inNetworkCountTotal
+                  }}</span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="footer-data">
+                  <span>{{ contentP.outClaimsTxt }}</span>
+                  <span class="value">{{
+                    this.healthData?.outNetworkCountTotal
+                  }}</span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <a
+                  id="view-claims-2"
+                  class="view-claims-link"
+                  tabindex="0"
+                  (keydown.enter)="viewClaims()"
+                  (click)="viewClaims()"
+                  >View Your Claims</a
+                >
+              </ion-row>
+            </div>
+          </ion-grid>
+        </div>
+      </div>
+
+      <app-screening-nudge
+        *ngIf="healthCheckUp?.physical"
+        [prevCareKey]="'INSIGHTS_AnnualCheckUpReminder'"
+      ></app-screening-nudge>
+      <app-screening-nudge
+        *ngIf="healthCheckUp?.requiredColonScreen"
+        [prevCareKey]="'INSIGHTS_PreventativeCancerScreening_Colorectal'"
+      ></app-screening-nudge>
+      <app-screening-nudge
+        *ngIf="healthCheckUp?.requiredCytologyScreen"
+        [prevCareKey]="'INSIGHTS_PreventativeCancerScreening_Cervical'"
+      ></app-screening-nudge>
+      <app-screening-nudge
+        *ngIf="healthCheckUp?.requiredMammogramScreen"
+        [prevCareKey]="'INSIGHTS_PreventativeCancerScreening_Breast'"
+      ></app-screening-nudge>
+      <app-bstsmart-card-list></app-bstsmart-card-list>
+    </div>
+
+    <div>
+      <ion-card
+        *ngIf="isWeb && isDesktop && guidanceEnabled"
+        class="myHealthWealth"
+      >
+        <ion-row class="myHealth-title">
+          <ion-col class="myHealth-content">
+            <ion-row class="myHealth-heading">
+              <ion-text class="ths-text">
+                {{ myHealthWealth?.title }}
+              </ion-text>
+            </ion-row>
+
+            <ion-row>
+              <strong class="ths-desc">
+                {{ myHealthWealth?.description }}</strong
+              >
+            </ion-row>
+            <ion-row class="ths-details">
+              <ion-col class="ion-no-padding">
+                <ion-text
+                  class="view-details"
+                  tabindex="0"
+                  (keydown.enter)="openGuidelines()"
+                  (click)="openGuidelines()"
+                  id="myHealthWealth_link"
+                >
+                  <u
+                    ><a class="navlink" routerLinkActive="active">
+                      {{ myHealthWealth?.link_name }}
+                    </a></u
+                  >
+                </ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col class="myHealth-img-container">
+            <img
+              alt="{{ pageText.totalHealthSpendAlt }}"
+              src="assets/icon/myHandW.svg"
+              class="ths-img"
+            />
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </div>
+    <app-hsastore-nudge></app-hsastore-nudge>
+
+    <div class="turn-off-wrap" *ngIf="!isTpa && hasConsent">
+      <div
+        tabindex="0"
+        (keydown.enter)="revokeAuthorization()"
+        (click)="revokeAuthorization()"
+        id="revoke-auth"
+      >
+        {{ pageText.revokeAuth }}
+      </div>
+    </div>
+    <app-med-disclaimer></app-med-disclaimer>
+  </div>
+</app-loading>

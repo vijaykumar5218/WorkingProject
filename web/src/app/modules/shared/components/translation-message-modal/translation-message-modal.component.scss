@@ -1,0 +1,32 @@
+.translation-popup {
+  margin: auto;
+  .x-button {
+    float: right;
+    cursor: pointer;
+    color: var(--v-colors__primary);
+  }
+  .message {
+    margin-top: 39px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--primary-colors-voya-black);
+  }
+
+  .cancel-button {
+    pointer-events: auto;
+    font-size: 16px;
+    line-height: 1.56;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    --box-shadow: none;
+    --background-activated: none;
+    --background-hover: none;
+    --color: white;
+    border-radius: 20px;
+    width: 148px;
+    height: 40px;
+    margin: 15px auto;
+    --background: var(--v-colors__primary);
+  }
+}

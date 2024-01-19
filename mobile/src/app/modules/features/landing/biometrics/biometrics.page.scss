@@ -1,0 +1,63 @@
+:host {
+  background-color: var(--primary-colors-voya-white);
+
+  ion-grid {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ion-text {
+    color: var(--primary-colors-voya-black);
+
+    &.header {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+    }
+
+    &.sub-header {
+      font-size: 18px;
+    }
+
+    &.bio-name {
+      vertical-align: super;
+      margin-left: 12px;
+    }
+  }
+
+  .toggle-row {
+    border-bottom: 1px solid var(--border-light-grey);
+    margin-top: 40px;
+    padding-bottom: 12px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    ion-toggle {
+      float: right;
+      margin-right: 4px;
+    }
+
+    .toggle-col {
+      padding-top: 10px;
+    }
+  }
+
+  .continue-row {
+    height: 100%;
+
+    ion-button {
+      display: block;
+      margin: auto;
+      width: 220px;
+      position: absolute;
+      bottom: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

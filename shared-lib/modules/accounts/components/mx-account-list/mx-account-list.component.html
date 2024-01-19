@@ -1,0 +1,35 @@
+<div *ngFor="let mxaccount of mxAccountData; let i = index">
+  <ion-card
+    [disabled]="isAltAccessUser"
+    (click)="sendmxtitle(mxaccount)"
+    [ngStyle]="manageWidthOfCard(mxaccount)"
+    id="{{ 'mxaccount-' + i }}"
+    tabindex="0"
+    (keyup.enter)="sendmxtitle(mxaccount)"
+  >
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3" class="logo-column">
+          <div class="logo-container">
+            <img
+              alt="account logo"
+              class="logo"
+              src="{{ mxaccount?.medium_logo_url }}"
+            />
+          </div>
+        </ion-col>
+        <ion-col size="9" class="desc-column">
+          <p class="titletext OneLinkNoTx">
+            {{ mxaccount.name }}
+          </p>
+          <p class="subtitle">
+            {{ pageText.asOf }}{{ mxaccount.updated_at | date: 'longDate' }}
+          </p>
+          <p class="balance">
+            {{ mxaccount.balance | currency: 'USD':'symbol' }}
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</div>

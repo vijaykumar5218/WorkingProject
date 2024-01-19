@@ -1,0 +1,45 @@
+{
+  "enableMyVoyage": "Y",
+  "clientId": "INGWIN",
+  "clientDomain": "voyaretirement.accp.voya.com",
+  "clientName": "",
+  "planIdList": [
+    {
+      "planId": "776991",
+      "active": true
+    }
+  ],
+  "currentPlan": {
+    "planId": "776991",
+    "active": true
+  },
+  "firstTimeLogin": true,
+  "firstTimeLoginWeb": false,
+  "partyId": "d7181088-778b-f5d7-e053-8262cc0a774f",
+  "platform": "WORKDAY",
+  "isHealthOnly": false,
+  "myProfileURL": "https%3A%2F%2Fmy3.accp.voya.com%2Fmyvoyaui%2Findex.html%23my-profile%2Flogin-info",
+  "enableMX": "Y",
+  "enableBST": "Y",
+  "enableTPA": "N",
+  "enableWealthCoach": "Y",
+  "enableCoverages": true,
+  "enableMaintenanceWindow": "N",
+  "isMxUser": true,
+  "myWorkplaceDashboardEnabled": true,
+  "voyaSsoAppId": "PWEB",
+  "isMultiClient": false,
+  "userClientInfo": [
+    {
+      "clientId": "INGWIN",
+      "clientDomain": "voyaretirement.accp.voya.com",
+      "clientName": "Your Retirement Plan",
+      "informationLine": "1-800-584-6001",
+      "planIdList": [
+        "776991"
+      ]
+    }
+  ],
+  "omEligForDashBoard": false,
+  "hsaStoreEnabled": true
+}

@@ -1,0 +1,54 @@
+.list-wrap {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px 20px 10px;
+
+  h5 {
+    margin-bottom: 0;
+  }
+
+  & ion-item {
+    height: 36px;
+    white-space: nowrap;
+
+    & .checkmark {
+      opacity: 0;
+      margin-right: 5px;
+      position: absolute;
+      left: 0;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    & ion-radio::part(container) {
+      display: none;
+    }
+
+    &.item-radio-checked {
+      color: var(--primary-colors-voya-dark-blue);
+
+      & ion-label {
+        color: var(--primary-colors-voya-dark-blue);
+      }
+    }
+  }
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--secondary-colors-medium-gray-3);
+  margin-top: 10px;
+
+  & ion-button {
+    display: inline-flex;
+    flex: 1;
+
+    &:first-child {
+      border-right: 1px solid var(--secondary-colors-medium-gray-3);
+      font-weight: normal;
+    }
+  }
+}

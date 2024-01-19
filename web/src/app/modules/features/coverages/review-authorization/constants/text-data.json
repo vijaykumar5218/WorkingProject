@@ -1,0 +1,8 @@
+{
+  "authToDisclose": "Authorization to Disclose Protected Health Information",
+  "doYouAuth": "Do you authorize the disclosure of your PHI to Company pursuant to the terms of this Authorization to Disclose Protected Health Information?",
+  "no": "No",
+  "yes": "Yes",
+  "submit": "Submit",
+  "close": "Close"
+}

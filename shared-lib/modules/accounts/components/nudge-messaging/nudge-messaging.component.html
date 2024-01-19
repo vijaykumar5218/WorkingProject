@@ -1,0 +1,66 @@
+<ion-card *ngIf="employersMatch?.header" class="fw-card">
+  <ion-row class="fw-card-row">
+    <div>
+      <div class="fw-card-header">
+        <div class="header-wrap">
+          <p>{{ employersMatch?.header }}</p>
+        </div>
+      </div>
+      <div class="fw-card-content">
+        <ion-row>
+          <ion-col>
+            <p *ngIf="employersMatch?.subHeader" class="fw-card-text">
+              {{ employersMatch?.subHeader }}
+            </p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <p
+              *ngIf="employersMatch?.showMatchPercentageValue"
+              class="fw-card-subtext"
+            >
+              {{ employersMatch?.matchPercentage / 100 | percent }}
+            </p>
+          </ion-col>
+        </ion-row>
+
+        <ion-row
+          *ngIf="
+            employersMatch?.toolTipText != null ||
+            employersMatch?.toolTipNotes != null
+          "
+          class="fw-card-link-container"
+        >
+          <ion-col class="learn-more-content">
+            <img
+              class="learn-more-img"
+              alt="info"
+              src="assets/icon/ic-info-outline-24px.svg"
+            />
+            <a
+              class="fw-card-link"
+              tabindex="0"
+              (keyup.enter)="openLearnMoreModal()"
+              (click)="openLearnMoreModal()"
+              >{{ employersMatch?.urlText }}</a
+            >
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <div class="woman-image">
+      <img
+        *ngIf="this.employersMatch.nudgeType === 'compare'"
+        alt="women"
+        src="assets/icon/women.svg"
+      />
+      <img
+        *ngIf="this.employersMatch.nudgeType === 'COMPAREME'"
+        alt="women"
+        src="assets/icon/peopleLikeYou.svg"
+      />
+    </div>
+  </ion-row>
+</ion-card>

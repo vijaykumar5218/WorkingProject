@@ -1,0 +1,74 @@
+:host {
+  background-color: var(--primary-colors-voya-white);
+
+  ion-grid {
+    padding-top: var(--ion-safe-area-top,0);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    ion-text {
+      color: var(--primary-colors-voya-black);
+      
+    &.header {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+    }
+
+    &.sub-header {
+      font-size: 18px;
+      text-align: center;
+      display: block;
+    }
+  }
+  .image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  @media (min-width: 450px) {
+    .fix-width {
+      align-self: center;
+      width: 449px;
+    }
+  }
+
+  .toggle-row {
+    padding-bottom: 12px;
+    ion-toggle {
+      float: right;
+      margin-right: 4px;
+    }
+    .toggle-col {
+      padding-top: 10px;
+    }
+  }
+
+  .save-button-row {
+    padding: 20px 0px 10px 0px;
+    border-top: 1px solid var(--border-light-grey);
+  }
+
+  ion-button {
+    max-width: 120px;
+    margin: 0px auto;
+    height: 40px;
+    font-weight: normal;
+    font-size: 16px;
+    --color: var(--primary-colors-voya-white);
+    --background: var(--primary-colors-voya-dark-blue);
+
+    &.secondary {
+      --background: var(--primary-colors-voya-white);
+      --color: var(--primary-colors-voya-dark-blue);
+      --border-color: var(--primary-colors-voya-dark-blue);
+      --border-style: solid;
+      --border-width: 2px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+  }
+  }
+}

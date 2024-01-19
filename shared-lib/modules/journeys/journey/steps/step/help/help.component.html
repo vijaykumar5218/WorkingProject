@@ -1,0 +1,20 @@
+<v-icon
+  *ngIf="!help.icon"
+  name="questioncircle"
+  color="var(--primary-colors-voya-dark-blue)"
+  size="16px"
+  [automation-id]="'help' + idSuffix"
+  tabindex="0"
+  (keyup.enter)="openHelpModal()"
+  (click)="openHelpModal()"
+></v-icon>
+<v-icon
+  *ngIf="help.icon"
+  [name]="help.icon"
+  color="var(--primary-colors-voya-dark-blue)"
+  size="16px"
+  [automation-id]="'help' + idSuffix"
+  tabindex="0"
+  (keyup.enter)="openHelpModal()"
+  (click)="openHelpModal()"
+></v-icon>

@@ -1,0 +1,33 @@
+.text-main-container {
+  display: flex;
+  flex-direction: row;
+  margin: 16px 35px 10px 35px;
+  justify-content: flex-end;
+  align-items: center;
+  .icon {
+    display: flex;
+    margin-right: 8px;
+
+    img {
+      width: 40px;
+    }
+  }
+  .heading {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--primary-colors-voya-black);
+    flex: 1;
+  }
+  .hamburger {
+    align-self: center;
+    display: flex;
+    cursor: pointer;
+
+    v-icon {
+      margin-top: 4px;
+    }
+  }
+}
+app-table {
+  margin: 16px 35px 20px 35px;
+}

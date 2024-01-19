@@ -1,0 +1,64 @@
+:host {
+  background-color: var(--primary-colors-voya-white);
+
+  ion-grid {
+    position: absolute;
+    transform: translateY(-52%);
+    width: 100%;
+  }
+
+  .x-button {
+    display: block;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 30px;
+
+    &.ios {
+      margin-top: 60px;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 22px auto;
+  }
+
+  .header {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-colors-voya-black);
+    margin: 0px 10% 24px 10%;
+  }
+
+  .desc {
+    display: block;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.08px;
+    text-align: center;
+    color: var(--primary-colors-voya-black);
+    margin: 0px 10% 40px 10%;
+  }
+
+  ion-button {
+    width: 120px;
+    height: 40px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--primary-colors-voya-dark-blue);
+    margin: auto;
+  }
+
+  .web-no-access {
+    ion-grid {
+      top: 40%;
+    }
+  }
+  .mobile-no-access {
+    ion-grid {
+      top: 50%;
+    }
+  }
+}

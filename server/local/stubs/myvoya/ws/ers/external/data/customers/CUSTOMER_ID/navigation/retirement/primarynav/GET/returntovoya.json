@@ -1,0 +1,79 @@
+{
+  "dataStatus": "OK",
+  "primaryNavLinks": [
+    {
+      "label": "My Information",
+      "id": "MY_PROFILE_LINKS",
+      "subLinks": [
+        {
+          "id": "RETURN_TO_VOYA",
+          "popup": false,
+          "link": "/myvoyaui/index.html#my-voya",
+          "label": "Return to myVoya",
+          "planChoiceEligible": false
+        },
+        {
+          "id": "MY_PROFILE",
+          "popup": false,
+          "link": "/myvoyaui/index.html#/my-profile",
+          "label": "My Profile",
+          "planChoiceEligible": true
+        },
+        {
+          "id": "SECURITY",
+          "popup": false,
+          "link": "/myvoyaui/index.html#my-profile/login-info/recovery",
+          "label": "Login Information",
+          "planChoiceEligible": false
+        },
+        {
+          "id": "PERSONAL_DETAIL",
+          "popup": false,
+          "link": "/myvoyaui/index.html#my-profile/personal-detail",
+          "label": "Personal Information",
+          "planChoiceEligible": false
+        },
+        {
+          "id": "LOGOUT",
+          "popup": false,
+          "link": "/myvoya/public/logout",
+          "label": "Logout",
+          "planChoiceEligible": true
+        }
+      ]
+    }
+  ],
+  "resourceLinks": {
+    "label": "More Resources",
+    "subLinks": [
+      {
+        "label": "Download Transactions to Quicken",
+        "link": "/eportal/preauth.do?s=kRIVLYDLx0j083TwfE70Gw11.i9290&page=TXDOWNLOAD&section=quicken&d=743ef8dedfdd343b8ac2d41492504decc094be14",
+        "popup": false,
+        "order": 0
+      },
+      {
+        "label": "Download Transactions to Money",
+        "link": "/eportal/preauth.do?s=kRIVLYDLx0j083TwfE70Gw11.i9290&page=TXDOWNLOAD&section=money&d=6615bf2305adff920d42b8a28f10e4b0f291e9ab",
+        "popup": false,
+        "order": 0
+      },
+      {
+        "label": "Download Transactions to Excel",
+        "link": "/eportal/preauth.do?s=kRIVLYDLx0j083TwfE70Gw11.i9290&page=TXDOWNLOAD&section=excel&d=1ed88e2319d81daf01dd7e1b12dbd1e34ffb8c0c",
+        "popup": false,
+        "order": 0
+      }
+    ]
+  },
+  "clientName": "City of Los Angeles DC Plan",
+  "displayName": "DRUCILLA VANWART-DP",
+  "contactUs": {
+    "label": "Contact Us",
+    "link": "/einfo/contactus.aspx?cl=CITYLA&domain=la457.intg.voya.com&s=kRIVLYDLx0j083TwfE70Gw11.i9290&pl=711016%2C&d=fbb0348bdaca4c4a649f0a950da94eaae7cef6a0",
+    "popup": false,
+    "order": 0
+  },
+  "searchUrl": "/einfo/search/links?cl=CITYLA&pl=&plan=&domain=la457.intg.voya.com&s=kRIVLYDLx0j083TwfE70Gw11.i9290&d=6af1120239009fffa4987212e5e97dcd846f6b51",
+  "logoUrl": "/myvoyaui/index.html#/retirement/home"
+}

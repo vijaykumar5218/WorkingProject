@@ -1,0 +1,16 @@
+<journeys-overview-introduction
+  *ngIf="showSummary === false"
+  [journey]="journey"
+></journeys-overview-introduction>
+
+<journeys-overview-summary
+  [ngClass]="
+    journey?.parsedLandingAndOverviewContent?.intro?.header
+      .toLowerCase()
+      .split(' ')
+      .join('-')
+  "
+  *ngIf="showSummary"
+  [journey]="journey"
+  (valueChange)="updateValue($event)"
+></journeys-overview-summary>

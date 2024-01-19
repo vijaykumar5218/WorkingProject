@@ -1,0 +1,10 @@
+{
+  "CLIENT_ID": "ClientId",
+  "PLAN_ID": "PlanId",
+  "PARTY_ID": "PartyId",
+  "PHONE": "Phone",
+  "FIRST_NAME": "FirstName",
+  "PAGE_NAME": "PageName",
+  "Email":"Email",
+  "MyVoyageEnabled":"myVoyageEnabled"
+}

@@ -1,0 +1,26 @@
+.accounts-title {
+  color: var(--primary-colors-voya-black);
+  font-size: 24px;
+  margin: 5px 0px 20px 0px;
+  font-weight: 600;
+  display: block;
+  @media screen and (max-width: 1193px) {
+    display: none;
+  }
+}
+#balance-history-title-container {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.balance-history-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-colors-voya-black);
+}
+#container {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}

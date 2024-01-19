@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "D3YMS8BWP5.com.voya.edt.myvoyage",
+        "paths": [
+          "*redirect.html*"
+        ]
+      }
+    ]
+  }
+}

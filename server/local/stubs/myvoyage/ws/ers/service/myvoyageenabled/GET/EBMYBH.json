@@ -1,0 +1,31 @@
+{
+  "enableMyVoyage": "N",
+  "clientId": "EBMYBH",
+  "clientDomain": "mybenefitshub.intg.voya.com",
+  "clientName": "myBenefitsHub",
+  "planIdList": [],
+  "currentPlan": {
+    "active": false
+  },
+  "firstTimeLogin": true,
+  "firstTimeLoginWeb": true,
+  "partyId": "dd91d59b-54e7-6db6-e053-8262cc0aef06",
+  "isHealthOnly": false,
+  "myProfileURL": "https%3A%2F%2Fmy3.intg.voya.com%2Fmyvoyaui%2Findex.html%23my-profile%2Flogin-info",
+  "enableMX": false,
+  "enableBST": "N",
+  "enableTPA": "N",
+  "enableWealthCoach": "N",
+  "enableCoverages": false,
+  "enableMaintenanceWindow": "N",
+  "isMxUser": true,
+  "myWorkplaceDashboardEnabled": true,
+  "voyaSsoAppId": "MyVoya",
+  "isMultiClient": false,
+  "userClientInfo": [],
+  "omEligForDashBoard": false,
+  "hsaStoreEnabled": false,
+  "isMyBenefitsUser": false,
+  "isAltAccessUser": false,
+  "enableBenefitFocus": "N"
+}

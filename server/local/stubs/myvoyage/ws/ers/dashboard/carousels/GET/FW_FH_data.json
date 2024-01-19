@@ -1,0 +1,85 @@
+{
+  "heroCarousel": [
+    {
+      "sectionHeader": "Manage Your Financial Wellbeing",
+
+      "image": "https://cdn1-originals.webdamdb.com/13947_149809383?cache=1684505128&response-content-disposition=inline;filename=Pre_Assessment_enus.svg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTM5NDdfMTQ5ODA5MzgzP2NhY2hlPTE2ODQ1MDUxMjgmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9UHJlX0Fzc2Vzc21lbnRfZW51cy5zdmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=PMc3Bv1izpEP8-QGULy0XJMStt4je08YY9ghz1wgo8IaBCvEn222vBj2tIEwgdkaC6FYwi~bAY0n5j3A8EooflVccnMHuw2rNfmtWKjHc5CrZ6l51XytmDUzdwUT8Oxdym-hXECiiZoE1IjBQ2GZcBnuhj9bNcCr50fVBYOQgvSc7klE8CAiGmmTWY39inBIll3S8kVVREqRmbkkiO7zUyK7z2nb2xH1wAGx1Z3u5UgfSSgXMfhv-NRZUpJjeAY0zznz5mv37nUEpgIHpP1mcXbYAEfR7UizpMoT-13MbXqcIkRbGULQv3gYqIwc10LpFgXJ1Mnt2q~qZLEqWkNQYw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA",
+
+      "bodyTitle": "Take the Financial Wellbeing Assessment",
+
+      "bodyText": "Answer some simple questions to get a personalized dashboard with steps to help you grow your financial situation.",
+
+      "ctaLabel": "Get Started",
+
+      "url": "/cf/fw/env-files/index.html",
+      "type": "DEFAULT",
+      "score": "0",
+      "status": ""
+    },
+
+    {
+      "sectionHeader": "Update Your Information",
+
+      "image": "https://cdn1-originals.webdamdb.com/13947_149809166?cache=1684505023&response-content-disposition=inline;filename=Post_Assessment.svg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTM5NDdfMTQ5ODA5MTY2P2NhY2hlPTE2ODQ1MDUwMjMmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9UG9zdF9Bc3Nlc3NtZW50LnN2ZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=aebcraRjKRCV9HpYg~x7475e6o~UPO4rrLdSUIRLVTqXdSQF5owWtGf0mq~cZuWWpgbfHme1NBkYimKIn8J8OKA6h7~L~RmX~EWaFi9Tc~4a3xI1xSZDvGj02IWwF-ugFnXCupA8p2fw6Lr6bt0qIi5CL6dUyYZYFd8ElSkOZmXKed6l-MHZ-dCjcwtBxN52AvNbwDGogs24oxPcMGcO8rCbjEHxIbVSuMueyy5d5QDm5lyBgF8iD7teJXtSRHRJsZLmUvJ5eUlTvgIyaP~dmOzJZIwRRXhWjT7Ahko1Gos77uNfzzO4sWUv2yoUR32UyOYA9c187VK0ATuuBZMIgA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA",
+
+      "bodyTitle": "Stay on top of your Financial Wellbeing",
+
+      "bodyText": "Keeping your information up to date will make sure you are receiving the best recommendations to help you grow your Financial Wellbeing.",
+
+      "ctaLabel": "Update your assessment",
+      "url": "/cf/fw/env-files/index.html",
+      "type": "DEFAULT",
+      "score": "0",
+      "status": ""
+    },
+
+    {
+      "sectionHeader": "Adding Accounts",
+
+      "image": "assets/icon/account-type/add-account-header.svg",
+
+      "bodyTitle": "Did you know that you can add your accounts to your dashboard?",
+
+      "bodyText": "Your money might be better, when it’s together. Add in all of your financial accounts to quickly see how much you have, and how small steps can get you closer to your goals.",
+
+      "ctaLabel": "Add Account",
+
+      "url": "URL",
+      "type": "SCORE",
+      "score": "0",
+      "status": "NOT_AGGREGATED"
+    },
+    {
+      "sectionHeader": "Your Financial Strength Score",
+
+      "image": "https://cdn1-originals.webdamdb.com/13947_149808818?cache=1684504215&response-content-disposition=inline;filename=1-25_Fin_Strength_Score.svg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTM5NDdfMTQ5ODA4ODE4P2NhY2hlPTE2ODQ1MDQyMTUmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9MS0yNV9GaW5fU3RyZW5ndGhfU2NvcmUuc3ZnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=dFLrqjjry7hHUFXxjd2oyyZxH9TLeUthZCWBaAKhrqn9cJ7t29sH9nhxL8DRQW57LYjfgU1G0kAxLobZuEXIdR3ANVnrv-tHA-wLT15dKf2QC~hkgwIFHc0gH6asGPTRszHWYvjpJYFLT15bxB0Sp7TaPBxH-TPwBTab3ioh8OF-595h~8AOU5XNSNriA9IqRhbM055EtGMB1bXaz-nrV295yKSdoe2CvtbcFSA~WxQlWDqKwm2Ed7FqSE6gKZzr-EIk~dG8K9ZRHCWPzlQ~SjEO9wjxBEOLHbbQEXfg2NgkFZQlPo84rPoGpA7u4N4PAZMwANkg5tExy7j6o8868A__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA",
+
+      "bodyTitle": "Status: Building",
+
+      "bodyText": "People who are still building toward stability may have trouble dealing with surprise expenses and may miss bill payments regularly.",
+
+      "ctaLabel": "Add Account",
+
+      "url": "/financial-wellness",
+      "type": "SCORE",
+      "score": "25",
+      "status": "VULNERABLE"
+    },
+
+    {
+      "sectionHeader": "Your Financial Strength Score",
+
+      "image": "https://cdn1-originals.webdamdb.com/13947_150388406?cache=1686930461&response-content-disposition=inline;filename=No_Score.svg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTM5NDdfMTUwMzg4NDA2P2NhY2hlPTE2ODY5MzA0NjEmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9Tm9fU2NvcmUuc3ZnIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoyMTQ3NDE0NDAwfX19XX0_&Signature=azw~G-syTBNNJHB-l4k0x9hrl6CTTQEIvPfMcuHh4saUDcuJ3P4Gu4NwN8aLOyYK1~MLF40Q26aDcthrl~c19m2I1r4uHOkblJiC6POCRbzQL3HfP285S3xQd-GCoaxBDqhlrIBp-tJPR8dHViIGdcRx5fuOyL706Yrwcsyx-uVUaNxjQekiRxrIFG4rjJ3kR8SzEGgsM-ykctrfdfNFCbDuXPiiU5frL4vDTWgRAlvsU4tHeaL2dgzevOYvz2xsxxX0vM2sCL2J~7c3ifLKq~V~rVRny1E8JG5EINr0v3Jhmlnd1YGFK6Z~yJKGlCvvhdQO5EsCM-zFeHASZGUQ4Q__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA",
+
+      "bodyTitle": "What is your Financial Strength Score?",
+
+      "bodyText": "We analyze your transactions to figure out your spending, saving, and borrowing habits to see if your finances allow you to pursue your goals or hold you back.<br/><br/>We'll also give you advice on how to improve your score and move toward financial freedom.",
+      "ctaLabel": "Get My Score Now",
+
+      "url": "/financial-wellness",
+      "type": "SCORE",
+
+      "status": "NO_SCORE"
+    }
+  ]
+}

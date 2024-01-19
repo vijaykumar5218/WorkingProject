@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.voya.edt.myvoyage",
+      "sha256_cert_fingerprints": [
+        "F4:05:C1:A7:64:91:51:A6:F8:3E:CC:DD:44:8E:05:C1:09:0D:D5:11:44:09:2A:B0:D4:F5:B9:E5:2A:F4:FF:95"
+      ]
+    }
+  }
+]

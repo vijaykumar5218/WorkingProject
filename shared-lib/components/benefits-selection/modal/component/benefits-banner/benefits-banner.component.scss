@@ -1,0 +1,118 @@
+.mobileBanner {
+  #openGuidelines1,
+  #openGuidelines2 {
+    ion-card {
+      @media screen and (min-width: 920px) {
+        margin: 20px;
+        border-radius: 10px;
+        padding: 0px 40px;
+      }
+      padding: 10px;
+      background-color: var(--marketing-plum);
+      width: 100%;
+      .banner-content {
+        max-width: 1360px;
+        margin: auto;
+        padding: 15px 0px;
+        ion-row.banner-row-content {
+          ion-col.calender-block {
+            display: none;
+          }
+          ion-col.enrollment-banner-content {
+            margin: 0px 20px;
+            .time-to-select-row {
+              ion-text.time-to-select {
+                font-size: 20px;
+                font-weight: bold;
+                color: var(--primary-colors-voya-white);
+              }
+            }
+            ion-text.enrollment-banner-content-text {
+              font-size: 16px;
+              font-weight: normal;
+              color: var(--primary-colors-voya-white);
+            }
+          }
+          ion-col.mobile-calender-block {
+            max-width: 95px;
+            height: 95px;
+          }
+          ion-col.exit-block {
+            display: none;
+            .exit-icon {
+              cursor: pointer;
+            }
+          }
+        }
+        .banner-calender {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.webBanner {
+  #openGuidelines1,
+  #openGuidelines2 {
+    ion-card {
+      @media screen and (min-width: 920px) {
+        margin: 5px 0px 0px 0px;
+        border-radius: 0px;
+        padding: 0px 40px;
+      }
+      padding: 10px;
+      background-color: var(--marketing-plum);
+      width: 100%;
+      .banner-content {
+        max-width: 1360px;
+        margin: auto;
+        padding: 15px 0px;
+        ion-row.banner-row-content {
+          ion-col.calender-block {
+            @media screen and (max-width: 920px) {
+              display: none;
+            }
+            max-width: 70px;
+          }
+          ion-col.enrollment-banner-content {
+            margin: 0px 20px;
+            .time-to-select-row {
+              margin-bottom: 10px;
+              ion-text.time-to-select {
+                font-size: 24px;
+                font-weight: bold;
+                color: var(--primary-colors-voya-white);
+              }
+            }
+            ion-text.enrollment-banner-content-text {
+              font-size: 18px;
+              font-weight: normal;
+              color: var(--primary-colors-voya-white);
+            }
+          }
+          ion-col.mobile-calender-block {
+            max-width: 95px;
+            height: 95px;
+            @media screen and (min-width: 920px) {
+              display: none;
+            }
+          }
+          ion-col.exit-block {
+            max-width: 25px;
+            @media screen and (max-width: 920px) {
+              display: none;
+            }
+
+            .exit-icon {
+              cursor: pointer;
+            }
+          }
+        }
+        .banner-calender {
+          display: flex;
+        }
+      }
+    }
+  }
+}

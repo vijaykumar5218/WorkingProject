@@ -1,0 +1,6 @@
+<div [ngClass]="isWeb? 'web-responsive-help':'mobile-responsive-help'">
+  <app-menu [config]="menuConfig" [isHelp]="true"></app-menu>
+  <app-help-email-card
+    [elementID]="'qualtrics_contact_help'"
+  ></app-help-email-card>
+</div>

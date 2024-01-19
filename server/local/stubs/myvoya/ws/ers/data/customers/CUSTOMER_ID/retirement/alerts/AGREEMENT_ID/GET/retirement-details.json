@@ -1,0 +1,29 @@
+{
+	"dataStatus": "OK",
+	"data": {
+		"popupContentList": [{
+			"type": "ALERT",
+			"subType": "ASP_ALERT",
+			"data": [{
+				"title": "Voya Company Stock Fund notice",
+				"text": "If you intend to submit a Plan transaction and that transaction will include the Voya Company Stock Fund, please consider whether you are in possession of material, non-public information (\"MNPI\") about Voya Financial. You should be aware that the use of any MNPI when a trade is processed would be in violation of applicable law and/or the Voya Personal Trading Policy (the <a href=\"https://voyaretirement.intg.voya.com/einfo/pdfs/msgs/global/Personal_Trading_20150227_155222.pdf\" target=\"_window\">\"Policy\"</a>) and is, therefore, prohibited.<br /><br />If you have any questions or doubts about whether you may be in possession of MNPI about VOYA Financial, you should contact the Voya Financial Chief Compliance & Ethics Officer.<br /><br /><b>By placing a trade involving the Voya Company Stock Fund, you hereby certify that you are not in possession of any MNPI regarding Voya Financial and that your transaction will not be in violation of the Policy.</b><br /><br />If you are in possession of MNPI regarding Voya, you may not proceed with the planned transaction if it involves the Voya Company Stock Fund.",
+				"showNew": false,
+				"alert": true,
+				"startDate": "2016-10-25T10:28:00",
+				"gaEnabled": false
+			}],
+			"callbackURL": "/myvoya/ws/ers/data/customers/222d0d20-4567-0dcf-e053-d22aac0a9e36/retirement/alerts/updateinteraction?type=alert_msg&checkbox={checked}",
+			"displayDontShowMeAgainBoxAndText": false,
+			"dialogTitle": "Alerts"
+		}, {
+			"type": "ALERT",
+			"subType": "ASP_COMM",
+			"data": {
+				"callback": "/myvoya/ws/ers/data/customers/222d0d20-4567-0dcf-e053-d22aac0a9e36/retirement/alerts/updateinteraction?type=email_capture"
+			},
+			"callbackURL": "/myvoya/ws/ers/data/customers/222d0d20-4567-0dcf-e053-d22aac0a9e36/retirement/alerts/updateinteraction?type=email_capture",
+			"displayDontShowMeAgainBoxAndText": false,
+			"gaLabel": "EmailCaptureNoThanksTakeMeToMyAccount"
+		}]
+	}
+}

@@ -1,0 +1,51 @@
+<div class="header">{{ header }}</div>
+<ion-card *ngFor="let benefit of benefitsList">
+  <ion-card-content>
+    <ion-row>
+      <ion-col class="img-col">
+        <img
+          alt=""
+          src="{{
+            (content?.iconMapping)[benefit.type] ||
+              'assets/icon/benefits/benadminflag.svg'
+          }}"
+        />
+      </ion-col>
+      <ion-col>
+        <ion-text
+          [ngClass]="
+            displayPremiumAndCoverage &&
+            (benefit.coverageType || benefit.premium || benefit.premium === 0)
+              ? 'name'
+              : 'declined'
+          "
+          class="OneLinkNoTx"
+          >{{ benefit.name }}</ion-text
+        >
+        <ion-row *ngIf="displayPremiumAndCoverage">
+          <ion-col size="5" class="mt-0">
+            <ng-container *ngIf="benefit.coverageType">
+              <ion-text class="label">
+                {{ content?.coverageLabel }}
+              </ion-text>
+              <ion-text class="amt">{{ benefit?.coverageType }}</ion-text>
+            </ng-container>
+          </ion-col>
+          <ion-col size="7" class="m-auto">
+            <ng-container *ngIf="benefit.premium || benefit.premium === 0">
+              <ion-text class="label">
+                {{ content?.premiumLabel }}
+              </ion-text>
+              <ion-text class="amt"
+                >{{ benefit.premium || 0 | currency: 'USD':'symbol' }}
+                <ng-container *ngIf="benefit.premium > 0"
+                  >/{{ benefit.premiumFrequency }}</ng-container
+                >
+              </ion-text>
+            </ng-container>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>

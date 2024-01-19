@@ -1,0 +1,18 @@
+{
+  "outstandingLoan": {
+    "allLoanCount": 0,
+    "defaultedLoanBal": 0.0,
+    "defaultedLoanCount": 0,
+    "defaultedIntArrears": 0.0,
+    "genLoanCount": 0,
+    "eligEarlyPayoff": false,
+    "outstandLoanCount": 0,
+    "resLoanCount": 0,
+    "hardshipLoanCount": 0,
+    "totLoanBal": 0.0,
+    "totLoanPayment": 0.0,
+    "totLoanPrincipal": 0.0,
+    "monthlyAchPaymentCount": 0,
+    "outstandingLoanDtls": []
+  }
+}

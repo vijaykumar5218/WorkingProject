@@ -1,0 +1,19 @@
+<ion-card
+  (click)="handleJourneyClick()"
+  [id]="idPrefix + 'JourneyCard' + journey?.journeyID"
+  ><ion-card-header
+    >{{ content?.intro?.header
+    }}<journeys-status *ngIf="!isComingSoon" [status]="status"></journeys-status
+    ><img
+      *ngIf="isComingSoon"
+      [alt]="journeyContent.landingPage.comingSoonAltText"
+      src="assets/icon/journeys/comingsoon.svg"
+  /></ion-card-header>
+  <ion-card-content
+    ><div>
+      <ion-text>{{ content?.intro?.message }}</ion-text
+      ><img
+        [src]="content?.intro?.imgUrl"
+        [alt]="content?.intro?.altText || ''"
+      /></div></ion-card-content
+></ion-card>

@@ -1,0 +1,27 @@
+<div *ngIf="omEmployerMatchData?.showERMatch">
+  <label class="om-employer-match-heading">
+    {{ omEmployerMatchData?.erContributionsHeader }}
+  </label>
+  <ion-card>
+    <div class="om-employer-match-container">
+      <img
+        src="assets/om-employer-match.svg"
+        class="om-employer-match-img"
+        alt=""
+      />
+      <div>
+        <p class="om-employer-match-description">
+          {{ omEmployerMatchData?.erContributionDesc }}
+        </p>
+        <ul class="om-employer-match-content">
+          <li *ngFor="let bullet of omEmployerMatchData?.matchTiers">
+            {{ bullet }}
+          </li>
+        </ul>
+        <p class="om-employer-match-note">
+          {{ omEmployerMatchData?.erContributionDesc2 }}
+        </p>
+      </div>
+    </div>
+  </ion-card>
+</div>

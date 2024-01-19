@@ -1,0 +1,39 @@
+@import '../../../../../../../../../styles/mediaVariables.scss';
+:host {
+  ion-card {
+    @include desktop {
+      margin: 20px 0px 20px 20px;
+    }
+    @include tablet {
+      margin: 20px 0px;
+    }
+  }
+  .header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--primary-colors-voya-black);
+    margin-bottom: 20px;
+  }
+  .icon {
+    max-width: 12px;
+    margin-right: 8px;
+    img {
+      margin-top: 7px;
+    }
+  }
+  .resource-link {
+    margin: auto;
+    .morelinks {
+      caret-color: var(--ion-color-btncolor);
+      cursor: pointer;
+      font-size: 16px;
+      color: var(--primary-colors-voya-dark-blue);
+      text-decoration: underline;
+      text-decoration-thickness: 0.3px;
+      line-height: 16px;
+      letter-spacing: 0.005em;
+      text-underline-position: from-font;
+    }
+  }
+}

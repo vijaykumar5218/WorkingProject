@@ -1,0 +1,50 @@
+{
+  "Status": "success",
+  "AllAccountsBalance": [
+      {
+          "HAS_PARTY_ID": "VYA-14418998",
+          "Plan_ID": 994772,
+          "Current_Or_Prior": "Current",
+          "Plan_Year_End_Date": "2023-12-31",
+          "Plan_Type": "HRA",
+          "Plan_Link": "https://my3.intg.voya.com/mga/sps/wexhealthparticipant/saml20/logininitial?RequestBinding=HTTPPost&PartnerId=wexhealthparticipant&wexTenant=VYA&agreementNumber=VYA-14418998",
+          "Plan_Name": "2023 Health Reimbursement Arrangment",
+          "Election_Amount": 0,
+          "Calculated_Contribution": 0,
+          "YTD_Contributions": 0,
+          "Employer_Election_Amount": 1500,
+          "Employer_YTD_Contributions": 0,
+          "AvailableBalance": 1366.7,
+          "CashBalance": 1366.7,
+          "TotalBalance": 1366.7,
+          "InvestmentBalance": 0,
+          "AsOfDate": "2023-10-24",
+          "Pay_Period_Count": "26",
+          "Individual_Family": "",
+          "YTD_Wellness_Contributions": 0
+      },
+      {
+          "HAS_PARTY_ID": "VYA-14418998",
+          "Plan_ID": 994785,
+          "Current_Or_Prior": "Current",
+          "Plan_Year_End_Date": "2023-12-31",
+          "Plan_Type": "MedicalFlex",
+          "Plan_Link": "https://my3.intg.voya.com/mga/sps/wexhealthparticipant/saml20/logininitial?RequestBinding=HTTPPost&PartnerId=wexhealthparticipant&wexTenant=VYA&agreementNumber=VYA-14418998",
+          "Plan_Name": "Coventry Healthcare Inc. Restoration and Deferred Compensation Plan",
+          "Election_Amount": 1000,
+          "Calculated_Contribution": 38.46,
+          "YTD_Contributions": 807.66,
+          "Employer_Election_Amount": 0,
+          "Employer_YTD_Contributions": 0,
+          "AvailableBalance": 1000,
+          "CashBalance": 807.66,
+          "TotalBalance": 1000,
+          "InvestmentBalance": 0,
+          "AsOfDate": "2023-10-24",
+          "Pay_Period_Count": "26",
+          "Individual_Family": "",
+          "YTD_Wellness_Contributions": 0,
+          "OLD_PLANLINK": "https://my3.intg.voya.com/mga/sps/wexhealthparticipant/saml20/logininitial?RequestBinding=HTTPPost&PartnerId=wexhealthparticipant&wexTenant=VYA&agreementNumber=VYA-14418998"
+      }
+  ]
+}

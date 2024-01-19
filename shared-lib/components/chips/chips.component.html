@@ -1,0 +1,17 @@
+<ion-chip *ngFor="let el of item">
+  <ion-label>{{ el.name }}</ion-label>
+  <ion-icon
+    name="close"
+    tabindex="0"
+    (keydown.enter)="removeChip(el)"
+    (click)="removeChip(el)"
+  ></ion-icon>
+</ion-chip>
+<ion-text
+  *ngIf="item.length"
+  tabindex="0"
+  (keydown.enter)="clearBtn()"
+  (click)="clearBtn()"
+  class="clear-txt"
+  >{{ filterContent.clearFilters }}</ion-text
+>

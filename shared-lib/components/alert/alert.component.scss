@@ -1,0 +1,72 @@
+.alert-dialog {
+  margin: auto 20px;
+
+  .x-button {
+    float: right;
+    cursor: pointer;
+  }
+
+  .save-button {
+    width: 230px;
+    height: 40px;
+    margin: 30px auto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: var(--primary-colors-voya-white);
+  }
+
+  .spacer {
+    margin-top: 40px;
+  }
+
+  .title-message {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 40px 0 40px;
+    color: var(--primary-colors-voya-black);
+  }
+
+  .message {
+    margin-top: 12px;
+    font-size: 16px;
+    text-align: center;
+    max-height: 256px;
+    padding-left: 4px;
+    padding-right: 4px;
+    overflow-y: auto;
+    color: var(--primary-colors-voya-black);
+  }
+
+  .image-center {
+    display: block;
+    width: 60px;
+    margin: 40px auto;
+  }
+
+  .error {
+    color: var(--secondary-colors-error-red);
+    text-align: center;
+  }
+
+  .cancel-button {
+    width: 100px;
+    height: 26.5px;
+    font-size: 18px;
+    line-height: 1.56;
+    font-weight: normal;
+    text-align: center;
+    color: var(--primary-colors-voya-dark-blue);
+    margin: 20px auto 28px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    display: block;
+    --background: none;
+    --box-shadow: none;
+    --background-activated: none;
+    --background-hover: none;
+  }
+}

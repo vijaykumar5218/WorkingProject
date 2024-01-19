@@ -1,0 +1,7 @@
+<app-auth-header *ngIf="info?.type === headerType.authorized"></app-auth-header>
+<app-navbar
+  *ngIf="info?.type === headerType.navbar"
+  [actionOption]="info?.actionOption"
+></app-navbar>
+<app-simple *ngIf="info?.type === headerType.simple" [text]="info?.text">
+</app-simple>

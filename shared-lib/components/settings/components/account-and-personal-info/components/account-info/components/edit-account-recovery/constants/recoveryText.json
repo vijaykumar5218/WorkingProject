@@ -1,0 +1,19 @@
+{
+  "title": "Select your Primary Recovery Method",
+  "mobile": "Mobile",
+  "email": "Recovery Email",
+  "status": {
+    "add": "Add",
+    "update": "Update",
+    "preferred": "Preferred"
+  },
+  "actionOption": {
+    "header": " Edit Account Information Recovery",
+    "buttonLeft": "settings/account-and-personal-info",
+    "buttonRight": "notification"
+  },
+  "button": {
+    "cancel": "Cancel",
+    "save": "Save"
+  }
+}

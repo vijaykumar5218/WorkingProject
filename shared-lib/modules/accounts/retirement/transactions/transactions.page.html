@@ -1,0 +1,106 @@
+<app-hsastore-nudge
+  [miniNudge]="true"
+  *ngIf="account?.isHSAAccount && (account?.hsaAccountData.Plan_Type == 'HSA' || account?.hsaAccountData.Plan_Type == 'MedicalFlex')"
+></app-hsastore-nudge>
+<ion-card
+  class="transaction-card"
+  [ngClass]="(transactionHistory == undefined || transactionHistory?.length == 0) ? 'emptyCard':''"
+>
+  <ion-row
+    *ngIf="(transactionHistory == undefined || transactionHistory?.length == 0); else elseBlock"
+    class="empty-row"
+  >
+    <ion-col class="emptytransactions" size="12">
+      <app-loading-text [isLoading]="(transactionHistory == undefined)"
+        >{{pageText.noTransactions}}</app-loading-text
+      >
+    </ion-col>
+  </ion-row>
+
+  <ng-template #elseBlock>
+    <app-filter-sort
+      [sortList]="sortListOptions"
+      [filterList]="filterOptions"
+      *ngIf="isHsa"
+    ></app-filter-sort>
+    <div class="chip-wrap" *ngIf="isWeb && filterChips.length">
+      <app-chips
+        [item]="filterChips"
+        (outPutData)="onRemoveChips($event)"
+        (clearOutPutFn)="clearAllChips()"
+      ></app-chips>
+    </div>
+
+    <ion-row *ngIf="!isHsa">
+      <ion-col class="ion-text-end lastdays" size="12">
+        {{pageText.last90Days}}
+      </ion-col>
+    </ion-row>
+
+    <ion-grid *ngFor="let trans of filteredTransactionHistory">
+      <ion-row>
+        <ion-col
+          *ngIf="trans.isHSATransaction; else elseBlock"
+          class="ion-text-start"
+          size="8"
+        >
+          <span class="name">
+            <strong
+              >{{trans?.hsaTransactionData?.Provider_Name.length > 0 ?
+              trans?.hsaTransactionData?.Provider_Name :
+              trans.br980_ACT_NAME}}</strong
+            >
+          </span>
+          <span
+            *ngIf="trans.hsaTransactionData.Provider_Name.length > 0"
+            class="name sub_name"
+            >{{trans.br980_ACT_NAME}}</span
+          >
+        </ion-col>
+        <ng-template #elseBlock>
+          <ion-col class="ion-text-start" size="8">
+            <span class="name"
+              ><strong>{{(trans.br980_ACT_NAME)}}</strong></span
+            >
+          </ion-col>
+        </ng-template>
+        <ion-col class="ion-text-end" size="4">
+          <span
+            [ngClass]="{'positive': trans.cash > 0, 'negative': trans.cash < 0}"
+            class="amount"
+          >
+            <app-loading-text [isLoading]="(trans.cash == null)"
+              >{{posNegSymbol(trans.cash)}}{{trans.cash |
+              currency:"USD":"symbol"}}</app-loading-text
+            >
+          </span>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="ion-text-start sub-name">
+          <span>{{(trans.tradeDate | date:'MMMM-d-y')}}</span>
+        </ion-col>
+      </ion-row>
+      <hr class="line" />
+    </ion-grid>
+  </ng-template>
+
+  <ion-row class="mt-10" *ngIf="extLink && !isHsa">
+    <ion-col>
+      <ion-button
+        size="small"
+        id="showmore"
+        class="font-18 btnview"
+        name="show more"
+        shape="round"
+        expand="block"
+        color="btncolor"
+        fill="outline"
+        (click)="viewMoreClicked()"
+        (keyup.enter)="viewMoreClicked()"
+        >{{pageText.viewmore}}
+      </ion-button></ion-col
+    >
+  </ion-row>
+</ion-card>

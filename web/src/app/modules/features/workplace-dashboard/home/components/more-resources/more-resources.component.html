@@ -1,0 +1,27 @@
+<ng-container *ngIf="moreResources">
+  <ion-card>
+    <ion-card-content>
+      <div class="greeting-txt">
+        <div>
+          <p class="header" tabindex="0">{{ moreResources?.label }}</p>
+        </div>
+        <ion-row *ngFor="let link of moreResources?.subLinks">
+          <ion-col class="icon"
+            ><img
+              [alt]="link.label"
+              src="assets/workplace-dashboard/right-arrow.svg"
+          /></ion-col>
+
+          <ion-col class="resource-link">
+            <div
+              tabindex="0"
+              class="morelinks"
+              (click)="openLink(link.link)"
+              [innerHTML]="link.label"
+            ></div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ng-container>

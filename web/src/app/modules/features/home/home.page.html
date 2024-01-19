@@ -1,0 +1,92 @@
+<ion-grid>
+  <ng-container *ngIf="benefitsEnrollment$ | async as benefitsEnrollment">
+    <app-benefits-banner
+      *ngIf="!benefitsEnrollment.suppressBanner"
+      class="tab-and-web"
+    ></app-benefits-banner
+  ></ng-container>
+  <ion-row class="mx-error-background">
+    <ion-col>
+      <app-mxerror
+        [ngClass]="isDesktop? 'desktop-card':'mobile-card'"
+      ></app-mxerror>
+    </ion-col>
+  </ion-row>
+  <div class="background-banner">
+    <ion-row class="participant-name">
+      <ion-col size="12">
+        <h2 id="welcome-header">
+          <app-loading-text [isLoading]="!participantName">
+            <ng-container>
+              {{pageText.hi}} {{participantName}}!
+            </ng-container>
+          </app-loading-text>
+        </h2>
+      </ion-col>
+    </ion-row>
+    <app-medical-spending
+      *ngIf="isDesktop"
+      class="networth-web-view"
+    ></app-medical-spending>
+
+    <ion-row class="tiles-section">
+      <ng-container *ngIf="benefitsEnrollment$ | async as benefitsEnrollment">
+        <app-benefits-banner
+          class="mobile"
+          *ngIf="!benefitsEnrollment.suppressBanner"
+        ></app-benefits-banner
+      ></ng-container>
+      <ng-container>
+        <ion-card class="view-networth-card">
+          <ion-card-header>{{ pageText.header }}</ion-card-header>
+          <ion-card-content>
+            <div id="mx-net-worth-mini"></div>
+            <div class="text-center">
+              <ion-button
+                size="small"
+                id="view-networth"
+                fill="outline"
+                shape="round"
+                color="btncolor"
+                class="font-16 view-networth"
+                (click)="netWorthClicked()"
+              >
+                {{pageText.viewNetWorth}}
+              </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ng-container>
+      <app-medical-spending
+        *ngIf="!isDesktop"
+        class="networth-mobile-view"
+      ></app-medical-spending>
+      <app-recommended-journey
+        [journeyHeader]="pageText.journeyHeader"
+        [jouryneyButton]="pageText.startJourneyNow"
+      ></app-recommended-journey>
+      <ng-container>
+        <ion-card class="finstrong-score">
+          <ion-card-content>
+            <div id="mx-finstrong-mini"></div>
+            <div class="finstrong-score-btn-section">
+              <ion-button
+                size="small"
+                id="view-finstrong-btn"
+                fill="outline"
+                shape="round"
+                color="btncolor"
+                class="finstrong-button"
+                (click)="completeFinancialSummaryClicked()"
+                (keyup.enter)="completeFinancialSummaryClicked()"
+              >
+                {{pageText.completeFinancialSummary}}
+              </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ng-container>
+    </ion-row>
+  </div>
+  <app-footer-desktop class="footer-desktop"></app-footer-desktop>
+</ion-grid>

@@ -1,0 +1,19 @@
+:host {
+  ::ng-deep div.container {
+    min-height: 3420px !important;
+  }
+
+  div.mx-widget-finstrong {
+    margin-bottom: 70px;
+    app-mxwidget-page {
+      ion-grid {
+        div.container {
+          div.mx-widget-container {
+            padding: 0px;
+            margin: 90px auto auto auto;
+          }
+        }
+      }
+    }
+  }
+}

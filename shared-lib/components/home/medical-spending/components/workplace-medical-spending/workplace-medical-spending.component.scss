@@ -1,0 +1,125 @@
+.medical-spending-dashboard {
+  @media screen and (min-width: 601px) and (max-width: 920px) {
+    margin: 0px 23px;
+  }
+  .total-medical-spend-dashboard {
+    background-color: var(--ion-background-color);
+    padding: 20px;
+    box-shadow: none;
+    @media screen and (min-width: 280px) and (max-width: 359px) {
+      padding: 20px 20px 45px 20px;
+    }
+
+    @media screen and (min-width: 360px) and (max-width: 400px) {
+      padding: 20px 20px 30px 20px;
+    }
+    @media screen and (min-width: 1010px) and (max-width: 1154px) {
+      padding: 20px 20px 30px 20px;
+    }
+
+    @media screen and (min-width: 921px) and (max-width: 1004px) {
+      padding: 20px 20px 45px 20px;
+    }
+    margin: 20px 0px 0px 0px;
+    .medical-spend-img-container {
+      max-width: 56px;
+    }
+    .medical-spend-content {
+      max-height: 166px;
+      padding-left: 15px;
+      .ths-text {
+        margin: 0px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33;
+        letter-spacing: 0.03px;
+        color: var(--primary-colors-voya-black);
+      }
+      .ths-details {
+        color: var(--primary-colors-voya-black);
+        margin-top: 20px;
+        font-size: 18px;
+        .navlink {
+          color: var(--primary-colors-voya-black);
+        }
+        .view-details {
+          cursor: pointer;
+        }
+        .view-details-btn {
+          max-width: 105px;
+          font-size: 12px;
+          font-weight: 600;
+          ion-button {
+            background: white;
+            border-radius: 40px;
+          }
+        }
+        .tpa-waiting-view-details {
+          min-width: 172px;
+        }
+      }
+      .sub-text {
+        margin-bottom: 0px;
+        color: var(--primary-colors-voya-black);
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .totalValue {
+        max-width: 92px;
+        text-align: end;
+        @media screen and (min-width: 280px) and (max-width: 359px) {
+          margin-top: 5px;
+          text-align: start;
+        }
+        @media screen and (min-width: 921px) and (max-width: 1005px) {
+          margin-top: 5px;
+          text-align: start;
+        }
+        .ths-amount {
+          margin: 0px;
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: 0.06px;
+          color: var(--primary-colors-voya-black);
+        }
+      }
+    }
+  }
+  .authMessageCard {
+    @media screen and (min-width: 921px) and (max-width: 959px) {
+      padding-bottom: 70px;
+    }
+    @media screen and (max-width: 337px) {
+      padding-bottom: 80px;
+    }
+  }
+  .tpa-waiting-card {
+    @media screen and (max-width: 501px) {
+      height: 244px;
+    }
+    @media screen and (min-width: 1020px) and (max-width: 1328px) {
+      height: 244px;
+    }
+  }
+}
+
+.medical-spending-dashboard.for-mobile-plans {
+
+  .total-medical-spend-dashboard {
+    background-color: var(--ion-color-white);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 16px 0px;
+  }
+
+  .medical-spend-content {
+    padding-left: 8px !important;
+
+    .ths-details {
+      margin-top: 6px !important;
+    }
+
+    .sub-text {
+      margin-top: 6px !important;
+    }
+  }
+}

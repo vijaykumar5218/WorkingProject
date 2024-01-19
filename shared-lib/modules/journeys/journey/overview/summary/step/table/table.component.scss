@@ -1,0 +1,23 @@
+ion-grid {
+  --ion-grid-padding: 0px;
+  ion-row {
+    margin-bottom: 5px;
+
+    ion-col {
+      text-align: right;
+      &.first-col {
+        text-align: left;
+      }
+
+      ion-text.answer,
+      ion-text.total-label {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+ion-text {
+  color: var(--primary-colors-voya-black);
+  font-size: 16px;
+}

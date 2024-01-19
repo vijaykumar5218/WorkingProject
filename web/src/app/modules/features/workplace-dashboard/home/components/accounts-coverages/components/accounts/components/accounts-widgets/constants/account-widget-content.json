@@ -1,0 +1,17 @@
+{
+  "accountsHeader": "Accounts",
+  "coveragesHeader": "Claims & Coverages",
+  "cancelLink": "X Cancel",
+  "netWorth": "Net Worth",
+  "manageAccounts": "Manage Accounts",
+  "nonMxTempText": "Alternate view for non-MX users",
+  "coverageWidgetItems": [
+    {"text": "Medical Spending", "value": "mini_net_worth_widget"},
+    {"text": "Medical Plan Usage", "value": "mini_spending_widget"}
+  ],
+  "widgetItems": [
+    {"text": "Total NetWorth", "value": "mini_net_worth_widget", "widgetButtonText": "View Net Worth"},
+    {"text": "Spending", "value": "mini_spending_widget", "widgetButtonText": "View Spending"},
+    {"text": "Budget", "value": "mini_budgets_widget", "widgetButtonText": "View Budget"}
+  ]
+}

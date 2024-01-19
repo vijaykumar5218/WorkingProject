@@ -1,0 +1,14 @@
+<app-loading [loading]="loading">
+  <div class="half-bg" #topmostElement></div>
+  <div class="consent-wrap" *ngIf="tpaData?.claims.length < 1">
+    <app-consent-required></app-consent-required>
+  </div>
+  <div *ngIf="tpaData?.claims.length > 0">
+    <div *ngFor="let warn of warnings" class="warning-wrap">
+      <app-tpawarning [warning]="warn"></app-tpawarning>
+    </div>
+    <mobile-plan-transactions
+      (manageButtonEvent)="manageProviders()"
+    ></mobile-plan-transactions>
+  </div>
+</app-loading>

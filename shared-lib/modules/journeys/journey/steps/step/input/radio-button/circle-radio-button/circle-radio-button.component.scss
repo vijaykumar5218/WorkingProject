@@ -1,0 +1,19 @@
+.main-container {
+  .option {
+    margin-bottom: 11px;
+    display: flex;
+    label {
+      font-size: 16px;
+      color: black;
+      margin: auto 10px;
+    }
+    ion-icon {
+      width: 24px;
+      height: 24px;
+      color: var(--primary-colors-voya-dark-blue);
+    }
+  }
+  .option-element {
+    margin-top: 0px;
+  }
+}

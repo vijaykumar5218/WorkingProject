@@ -1,0 +1,118 @@
+ion-grid {
+  &.myWorkplaceDashboard {
+    .linear-gradient {
+      @media screen and (min-width: 921px) {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .linear-gradient {
+    left: 0%;
+    right: 0%;
+    top: 100px;
+    background: linear-gradient(
+      359.28deg,
+      var(--gradient-color-white) 4.4%,
+      var(--secondary-colors-voya-gray) 91.56%
+    );
+  }
+  .message-center-section {
+    min-height: 750px;
+    .left-col {
+      max-width: 100%;
+      padding-right: 20px;
+      .left-card {
+        height: 99.5%;
+        border-radius: 10px;
+        margin-right: 0px;
+        margin-left: 20px;
+        box-shadow: var(--card-box-shadow);
+        padding: 0px 0px 0px 20px;
+        @media screen and (min-width: 921px) {
+          padding-right: 50px;
+        }
+        @media screen and (max-width: 920px) {
+          padding-right: 20px;
+        }
+
+        .message-center-heading,
+        .message-category-section {
+          margin-top: 24px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.0015em;
+          color: var(--toggle-txt-color);
+          position: relative;
+        }
+        .message-center-heading {
+          ion-text {
+            position: absolute;
+            left: 29px;
+            top: -1px;
+            font-size: 18px;
+          }
+        }
+        .message-category-section {
+          ion-text {
+            position: absolute;
+            left: 29px;
+            font-size: 18px;
+          }
+        }
+        .msg-info-section {
+          --ion-item-background: var(--primary-colors-voya-white);
+          border-bottom: 1px solid var(--border-light-grey);
+          &:last-of-type {
+            border-bottom: none;
+          }
+          margin-left: 14px;
+          margin-top: 13px;
+          padding-bottom: 14px;
+          max-width: 98%;
+          .new-msg-col {
+            max-width: 54px;
+            position: relative;
+            color: var(--secondary-colors-voya-teal);
+            font-weight: bold;
+            ion-text {
+              position: absolute;
+              top: 10px;
+            }
+          }
+          .msg-info-col {
+            min-width: calc(100% - 205px);
+            @media screen and (min-width: 790px) and (max-width: 920px) {
+              min-width: calc(100% - 144px);
+            }
+            @media screen and (min-width: 280px) and (max-width: 789px) {
+              min-width: calc(100% - 144px);
+            }
+            .message-title,
+            .message-discription {
+              font-size: 16px;
+            }
+            .message-title {
+              font-weight: bold;
+            }
+            .message-link-btn {
+              margin: 5px 0px;
+            }
+          }
+          .msg-info-date {
+            position: relative;
+            ion-text {
+              position: absolute;
+              right: 0px;
+              @media screen and (min-width: 280px) and (max-width: 920px) {
+                right: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

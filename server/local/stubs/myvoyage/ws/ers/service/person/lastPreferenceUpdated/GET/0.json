@@ -1,0 +1,28 @@
+{
+    "required": false,
+    "primaryEmail": {
+        "lastUpdatedDate": "2023-03-29T21:01:27",
+        "partyContactId": "70720357-e465-450a-a658-e9a1025913d6",
+        "email": "jenifer.christina@voya.com",
+        "lastFailedInd": "N"
+    },
+    "secondaryEmailAllowed": false,
+    "docDeliveryEmailContactId": "70720357-e465-450a-a658-e9a1025913d6",
+    "mobilePhone": {
+        "lastUpdatedDate": "2022-05-24T20:32:10",
+        "partyContactId": "15a2fbad-ff98-4baf-bfd7-c77d729165b8",
+        "phoneNumber": "1111111111"
+    },
+    "lastPreferenceResponse": true,
+    "insightsNotificationPrefs": {
+        "prefEmailContactId": "70720357-e465-450a-a658-e9a1025913d6",
+        "prefPushNotificationContactId": "70720357-e465-450a-a658-e9a1025913d6"
+    },
+    "highPrioitytNotificationPrefs": {
+        "prefEmailContactId": "70720357-e465-450a-a658-e9a1025913d6"
+    },
+    "accountAlertPrefs": {
+        "prefEmailContactId": "70720357-e465-450a-a658-e9a1025913d6",
+        "prefPushNotificationContactId": "70720357-e465-450a-a658-e9a1025913d6"
+    }
+}

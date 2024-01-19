@@ -1,0 +1,16 @@
+<div class="link-container">
+  <div [ngClass]="{'anchor-tag-container': true, centered: element.centered}">
+    <a
+      class="linkcolor underline link-anchor"
+      [ngStyle]="{'margin-bottom': element.marginBottom}"
+      (click)="linkClicked(isWeb && element.weblink ? element.weblink : element.link)"
+      (keyup.enter)="linkClicked(isWeb && element.weblink ? element.weblink : element.link)"
+      tabindex="0"
+      [id]="'summaryStepLink' + element.idSuffix"
+      >{{ element.label }}</a
+    >
+  </div>
+  <div>
+    <img [src]="element.imageUrl" [alt]="element.altText || ''" />
+  </div>
+</div>

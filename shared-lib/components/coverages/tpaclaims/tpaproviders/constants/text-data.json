@@ -1,0 +1,15 @@
+{
+  "manage": "Manage My Carriers",
+  "selectCarrier": "Select a Carrier to revoke",
+  "claimsInvalid": " claims connection is invalid!",
+  "back": "Back",
+  "fix": "Fix this connection",
+  "add": "Add A Carrier",
+  "areYouSure": "Are you sure you want to revoke claims access for ",
+  "qmark": "?",
+  "revoke": "Revoke Claims Access",
+  "cancel": "Cancel",
+  "warningAlt": "Warning sign",
+  "deleteAlt": "Circle with minus sign",
+  "addAlt": "Plus Symbol"
+}

@@ -1,0 +1,10 @@
+<ion-app class="scroll-y h-100" app-theme>
+  <app-header></app-header>
+  <ion-content [scrollEvents]="true" (ionScrollStart)="logScrollStart()">
+    <ion-router-outlet
+      [animated]="true"
+      [swipeGesture]="false"
+    ></ion-router-outlet>
+  </ion-content>
+  <app-footer></app-footer>
+</ion-app>

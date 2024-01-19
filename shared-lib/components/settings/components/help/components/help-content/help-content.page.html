@@ -1,0 +1,41 @@
+<div [ngClass]="isWeb? 'web-help-content':'mobile-help-content'">
+  <ng-container
+    *ngIf="(isDesktop && isWeb) || (myWorkplaceDashboardEnabled && isWeb)"
+  >
+    <ion-row
+      [ngClass]="isWeb && myWorkplaceDashboardEnabled && !isDesktop? 'back-btn back-btn-myWorkplace':'back-btn'"
+      (click)="navigateTo()"
+      (keyup.enter)="navigateTo()"
+      id="help-content-back-btn"
+    >
+      <ion-col class="back-button" tabindex="0">
+        <ion-row>
+          <ion-col class="chevron-back">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </ion-col>
+          <ion-col class="back-text">
+            <ion-text>{{options.backBtn}}</ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col class="heading">
+        {{category?.title}}
+      </ion-col>
+    </ion-row>
+  </ng-container>
+  <ng-container *ngFor="let item of category?.questionList; let i = index;">
+    <div *ngIf="!isWeb || (isWeb && (item.enableMyVoyage))">
+      <app-accordion
+        question="{{ item?.question }}"
+        description="{{ item?.description }}"
+        [accordionId]="'help-content-' + i"
+      >
+      </app-accordion>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="enableMyVoyage">
+    <app-help-email-card
+      [elementID]="'qualtrics_contact_sub'"
+    ></app-help-email-card>
+  </ng-container>
+</div>

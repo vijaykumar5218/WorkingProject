@@ -1,0 +1,61 @@
+{
+  "option": [
+    {
+      "id": "personalAccountInfo",
+      "text": "Personal & Account Info",
+      "url": "account-and-personal-info",
+      "icon":"assets/icon/settings/Personal.svg"
+    },
+    {
+      "id": "manageAccounts",
+      "text": "Manage Accounts",
+      "url": "/account/manage-accounts",
+      "icon":"assets/icon/settings/Manage_Accounts.svg"
+    },
+    {
+      "id": "summaryBenifits",
+      "text": "Summary of Benefits",
+      "url": "summary",
+      "icon":"assets/icon/settings/Summary.svg"
+    },
+    {
+      "id": "notificationSettings",
+      "text": "Notification Settings",
+      "url": "notification-settings",
+      "icon":"assets/icon/settings/notifications.svg"
+    },
+    {
+      "id": "help",
+      "text": "Help",
+      "url": "help",
+      "icon":"assets/icon/settings/help.svg"
+    },
+    {
+      "id": "contactAdvisor",
+      "text": "Contact a Professional",
+      "url": "contact-a-coach",
+      "icon":"assets/icon/settings/conatact_coach.svg"
+    },
+    {
+      "id": "termsUse",
+      "text": "Terms of Use",
+      "icon":"assets/icon/settings/terms_use.svg"
+    },
+    {
+      "id": "privacy",
+      "text": "Privacy",
+      "url": "privacy",
+      "icon":"assets/icon/settings/Privacy.svg"
+    },
+    {
+      "id": "feedback",
+      "text": "Feedback",
+      "url": "feedback",
+      "icon":"assets/icon/settings/Feedback.svg"
+    }
+  ],
+  "button": "Sign Out",
+  "enabled": "Enabled",
+  "signOutQuestion": "Do you really want to sign out?",
+  "close": "Close"
+}

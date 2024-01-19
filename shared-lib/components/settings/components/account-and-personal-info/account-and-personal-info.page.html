@@ -1,0 +1,13 @@
+<ion-tabs [ngClass]="isWeb? 'web-tabs':'mobile-tabs'">
+  <ion-tab-bar slot="top">
+    <ion-tab-button
+      *ngFor="let tab of tabs"
+      [ngClass]="{'selectedRipple': selectedTab === tab.link}"
+      (click)="handleClick(tab)"
+      class="lightgrey"
+      [tab]="tab.link"
+    >
+      <ion-label>{{tab.label}}</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

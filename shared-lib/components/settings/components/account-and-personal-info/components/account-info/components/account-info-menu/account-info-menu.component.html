@@ -1,0 +1,57 @@
+<ion-grid class="ion-no-margin ion-no-padding">
+  <div [ngClass]="isWeb ? 'accountInfoWeb' : 'accountInfoMobile'">
+    <ion-item inset="true" class="ion-no-padding">
+      <div
+        class="menu-item menu-with-border"
+        [ngClass]="
+          emailError && label === displayText?.email ? 'menu-item-error' : ''
+        "
+      >
+        <div class="menu-inner" (click)="editProperty()" id="{{ label }}">
+          <ion-row class="font-16 w-100">
+            <ion-col class="account-values">
+              <ion-row>
+                <ion-col>
+                  <ion-text class="account-label">{{ label }}</ion-text>
+                </ion-col>
+                <ion-col class="account-value">
+                  <ion-text class="error-value">{{ value }}<br /></ion-text>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="ion-no-padding">
+                  <ion-text class="account-data font-w-600 recovery-value">
+                    <span
+                      *ngIf="emailError && label === displayText?.email"
+                      class="error-text"
+                    >
+                      {{ displayText?.emailErrorMsg }}<br /><br
+                    /></span>
+                  </ion-text>
+                </ion-col>
+              </ion-row>
+              <ion-row> </ion-row>
+            </ion-col>
+            <ion-col class="ionic-icon">
+              <div *ngIf="!isWeb" class="chevron_right">
+                <img alt="edit" src="assets/icon/chevron_right.svg" />
+              </div>
+              <div *ngIf="isWeb" class="pencil-circle">
+                <img
+                  *ngIf="!isDesktop"
+                  alt="edit"
+                  src="assets/icon/chevron_right.svg"
+                />
+                <img
+                  *ngIf="isDesktop"
+                  alt="edit"
+                  src="assets/icon/pencil-circle.svg"
+                />
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+    </ion-item>
+  </div>
+</ion-grid>

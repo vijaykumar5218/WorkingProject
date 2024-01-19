@@ -1,0 +1,61 @@
+<ion-text
+  [ngStyle]="{
+    color: element.textColor,
+    'font-size': element.headerFontSize,
+    'font-weight': element.bold === false ? 'normal' : undefined
+  }"
+  class="header"
+  *ngIf="element.header"
+  [innerHTML]="headerValueSafe || element.header"
+></ion-text>
+<div
+  class="desc"
+  [ngStyle]="{
+    'margin-bottom': element.marginBottom,
+    'margin-top': element.marginTop,
+    'text-align': element.centered ? 'center' : 'none'
+  }"
+  [ngClass]="element.type === 'note' ? 'note' : ''"
+>
+  <journeys-steps-step-intro-desc
+    *ngIf="descStrings?.length > 0"
+    [descStrings]="descStrings"
+    [element]="element"
+  ></journeys-steps-step-intro-desc>
+  <ng-container *ngIf="listDescStrings?.length > 0">
+    <ul
+      *ngIf="element.listType !== 'ordered'"
+      [ngStyle]="{
+        color: element.textColor,
+        'font-size': element.descFontSize
+      }"
+    >
+      <li
+        *ngFor="let listDescString of listDescStrings"
+        [ngStyle]="{'margin-bottom': element.listMargin}"
+      >
+        <journeys-steps-step-intro-desc
+          [descStrings]="listDescString"
+          [element]="element"
+        ></journeys-steps-step-intro-desc>
+      </li>
+    </ul>
+    <ol
+      *ngIf="element.listType === 'ordered'"
+      [ngStyle]="{
+        color: element.textColor,
+        'font-size': element.descFontSize
+      }"
+    >
+      <li
+        *ngFor="let listDescString of listDescStrings"
+        [ngStyle]="{'margin-bottom': element.listMargin}"
+      >
+        <journeys-steps-step-intro-desc
+          [descStrings]="listDescString"
+          [element]="element"
+        ></journeys-steps-step-intro-desc>
+      </li>
+    </ol>
+  </ng-container>
+</div>

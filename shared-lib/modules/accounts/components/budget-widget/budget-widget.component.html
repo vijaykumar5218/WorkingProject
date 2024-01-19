@@ -1,0 +1,18 @@
+<app-mx-widget
+  [widgetType]="widgetType.MINI_BUDGET_WIDGET"
+  [height]="'400px'"
+  [tagName]="tagName"
+></app-mx-widget>
+<hr />
+<ion-button
+  size="small"
+  id="view-budget-btn"
+  name="budget"
+  shape="round"
+  expand="block"
+  color="btncolor"
+  fill="outline"
+  (click)="handleClick()"
+>
+  {{ pageText.viewBudgets }}
+</ion-button>

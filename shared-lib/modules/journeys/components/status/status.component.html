@@ -1,0 +1,9 @@
+<div>
+  <div
+    [ngClass]="{
+      'in-progress': status === statusEnum.inProgress,
+      completed: status === statusEnum.completed
+    }"
+  ></div>
+  <span>{{ status }}</span>
+</div>

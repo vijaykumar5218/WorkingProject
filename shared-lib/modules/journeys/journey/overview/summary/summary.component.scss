@@ -1,0 +1,61 @@
+:host {
+  display: block;
+  span {
+    padding-left: 40px;
+    padding-right: 40px;
+    color: var(--primary-colors-voya-black);
+    display: block;
+
+    &.header {
+      font-size: 24px;
+      font-weight: 600;
+      padding-top: 42.5px;
+    }
+
+    &.desc {
+      font-size: 16px;
+    }
+    &.footerNote {
+      text-align: left;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+  journeys-overview-summary-step {
+    margin-bottom: 30px;
+  }
+  ion-button {
+    height: 40px;
+    color: var(--primary-colors-voya-white);
+    font-weight: normal;
+    font-size: 16px;
+    width: 60%;
+    margin: auto;
+  }
+  .web-summary {
+    margin-bottom: 100px;
+    ion-card {
+      @media screen and (max-width: 920px) {
+        padding: 20px;
+      }
+      @media screen and (min-width: 920px) {
+        padding: 36px;
+      }
+      box-shadow: none;
+      margin: 0px;
+    }
+    ion-button.save-button {
+      max-width: 220px;
+
+      &:focus {
+        border: 1px solid var(--primary-colors-voya-dark-blue);
+      }
+    }
+  }
+  .mobile-summary {
+    ion-card {
+      padding: 20px;
+      overflow: visible;
+    }
+  }
+}

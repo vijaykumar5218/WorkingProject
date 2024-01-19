@@ -1,0 +1,17 @@
+{
+  "privacy": {
+    "privacyHeader": "Our Commitment to Customer Security",
+    "privacyText": "Technology continues to make our lives easier in many ways – including how we improve our financial security. Unfortunately, as the industry gets more sophisticated, so do individuals who engage in misconduct. That’s why Voya recognizes the importance of safeguarding your financial accounts and your personal information against the ongoing risk of fraud, cyber threats and other unauthorized activity. ",
+    "privacyTextTwo": "This is essential to building a successful relationship and maintaining your trust. While Voya is committed to doing its part, we also view the protection of your accounts as a shared responsibility. The following information will help you understand Voya’s approach, as well as the actions you should be taking in conjunction with our efforts."
+  },
+  "buttonText": "View Privacy Notice",
+
+  "privacyNotice": {
+    "Option": "closebuttoncolor=#ffffff,lefttoright=yes,hideurlbar=yes,fullscreen=yes,hardwareback=no,toolbarcolor=#145a7b,zoom=no,useWideViewPort=no,hidenavigationbuttons=yes,footer=no,message=Hello,toolbar=no,location=no",
+    "url": "https://www.voya.com/privacy-notice",
+    "headerName": "Privacy Notice",
+    "btnName": "< Back",
+    "closeRoute": "/settings/privacy"
+  }
+  
+}

@@ -1,0 +1,14 @@
+<ion-tabs>
+  <ion-tab-bar slot="top">
+    <ion-tab-button
+      *ngFor="let tab of tabs"
+      [ngClass]="{'selectedRipple': selectedTab === tab.link || selectedTab === tab.routerLink}"
+      (click)="handleClick(tab)"
+      class="lightgrey"
+      [tab]="tab.link"
+      id="accountselectedtab"
+    >
+      <ion-label>{{tab.label}}</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

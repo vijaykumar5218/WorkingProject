@@ -1,0 +1,34 @@
+div.modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-colors-voya-white);
+
+  &.is-web {
+    width: 90% !important;
+    height: 60% !important;
+    margin: auto;
+  }
+
+  journeys-steps-step-video-modal {
+    flex-grow: 1;
+  }
+}
+
+ion-card {
+  top: 15%;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  color: var(--primary-colors-voya-black);
+  padding: 15px 20px 40px 20px;
+
+  img {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}

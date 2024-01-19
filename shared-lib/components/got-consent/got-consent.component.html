@@ -1,0 +1,26 @@
+<ion-card *ngIf="show" class="mobile">
+  <ion-row class="top-row">
+    <div class="title">
+      {{ content?.title }}
+    </div>
+    <div class="dec-img">
+      <img src="assets/icon/unlocked_folder.svg" alt="" />
+    </div>
+  </ion-row>
+  <ion-row class="message">
+    {{ content?.message }}
+  </ion-row>
+</ion-card>
+<ion-card *ngIf="show" class="web">
+  <div class="dec-img">
+    <img src="assets/icon/unlocked_folder.svg" alt="" />
+  </div>
+  <div>
+    <ion-row class="title">
+      {{ content?.title }}
+    </ion-row>
+    <ion-row class="message">
+      {{ content?.message }}
+    </ion-row>
+  </div>
+</ion-card>

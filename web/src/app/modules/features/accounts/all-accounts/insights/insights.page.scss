@@ -1,0 +1,24 @@
+@media screen and (max-width: 500px) {
+  .pulse-widget {
+    height: 85% !important;
+    margin: 0px;
+    #pulse_widget {
+      height: 100%;
+      iframe {
+        height: 100% !important;
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .pulse-widget {
+    height: 91% !important;
+    margin: 80px;
+    #pulse_widget {
+      height: 100%;
+      iframe {
+        height: 100% !important;
+      }
+    }
+  }
+}

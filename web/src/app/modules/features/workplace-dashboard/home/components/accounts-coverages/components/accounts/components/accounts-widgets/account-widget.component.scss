@@ -1,0 +1,46 @@
+:host {
+  .text-and-dropdown {
+    p {
+      display: initial;
+      color: var(--primary-colors-voya-black);
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .dropdown {
+      width: 192px;
+    }
+
+    @media screen and (max-width: 1192px) {
+      display: flex;
+      .accountsHeader {
+        display: none;
+      }
+      .accountwidgetitems {
+        text-align: center;
+      }
+    }
+    @media screen and (min-width: 1440px) {
+      .accountwidgetitems {
+        text-align: end;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  ion-button {
+    width: 148px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px auto 15px auto;
+    border-radius: 20px;
+  }
+}
+
+.dashboard-account-widget.responsive-account-widget app-mx-widget {
+  @media screen and (max-width: 1192px) {
+    z-index: -1;
+    display: block;
+    position: relative;
+  }
+}

@@ -1,0 +1,50 @@
+:host {
+  ion-card {
+    margin-bottom: 50px;
+    margin-top: 0px;
+  }
+
+  ion-card-content {
+    padding-bottom: 20px;
+  }
+  ion-list-header {
+    padding: 0;
+    margin-top: -16px;
+
+    ion-label {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.02px;
+    }
+  }
+
+  ion-list {
+    background-color: transparent;
+
+    ion-item:first-child {
+      border-top: 0.5px solid #b6b9c7;
+    }
+
+    ion-item {
+      --ion-item-background: transparent;
+      --padding-start: 0px;
+      --inner-padding-end: 0px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.01px;
+
+      img {
+        width: 30px;
+      }
+
+      div.title {
+        margin: 14px 0 14px 0;
+      }
+    }
+
+    ion-item:last-of-type {
+      --border-color: transparent;
+    }
+  }
+}

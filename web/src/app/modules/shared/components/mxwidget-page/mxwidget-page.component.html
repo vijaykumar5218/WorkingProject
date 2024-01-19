@@ -1,0 +1,17 @@
+<ion-grid>
+  <div class="container" #container>
+    <app-sub-header-nav
+      class="nav-header"
+      [headerName]="headerName"
+    ></app-sub-header-nav>
+    <div class="mx-widget-container">
+      <app-mx-widget
+        [widgetType]="widgetType"
+        [height]="height"
+        [tagName]="tagName"
+        id="widgetId"
+      ></app-mx-widget>
+    </div>
+  </div>
+  <app-footer-desktop class="footer-desktop"></app-footer-desktop>
+</ion-grid>

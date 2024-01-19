@@ -1,0 +1,22 @@
+:host {
+  background-color: var(--primary-colors-voya-white);
+
+  .container {
+    height: 100%;
+    .back-link {
+      padding: 20px;
+      margin: auto;
+      color: var(--primary-colors-voya-dark-blue);
+      font-weight: 600;
+      .back-arrow {
+        max-width: 15px;
+        margin: auto;
+        display: flex;
+      }
+      a {
+        font-size: 16px;
+        color: var(--primary-colors-voya-dark-blue) !important;
+      }
+    }
+  }
+}

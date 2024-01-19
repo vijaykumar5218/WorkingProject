@@ -1,0 +1,42 @@
+.titletop {
+  height: 24px;
+  flex-grow: 1;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: var(--primary-colors-voya-black);
+}
+
+ion-button {
+  border: solid 2px var(--primary-colors-voya-dark-blue);
+  width: 148px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px auto 15px auto;
+  border-radius: 20px;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: var(--secondary-colors-medium-gray-3);
+  height: 1px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+
+.bottom-text {
+  width: 335px;
+  height: 40px;
+  margin: 38.5px 17px 23px 0px;
+  text-align: left;
+  color: var(--primary-colors-voya-black);
+}

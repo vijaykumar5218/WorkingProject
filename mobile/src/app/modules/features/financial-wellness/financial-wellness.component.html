@@ -1,0 +1,21 @@
+<!-- Displayed if user has not completed assessment -->
+
+<ion-card class="fw-card">
+  <ion-card-header>
+    <ion-card-title class="label">
+      <p>{{ content.landingPage.cardTitle }}</p>
+    </ion-card-title>
+  </ion-card-header>
+  <ion-card-content class="fw-card-content">
+    <p class="fw-card-text">
+      {{ content.landingPage.intro }}
+    </p>
+    <div class="fw-card-link-container">
+      <a routerLink="/financial-wellness/personalinfo" class="fw-card-link">{{
+        content.landingPage.getStarted
+      }}</a>
+    </div>
+  </ion-card-content>
+</ion-card>
+
+<!-- Displayed if user has already completed assessment -->

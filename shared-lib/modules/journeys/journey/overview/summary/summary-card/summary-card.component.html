@@ -1,0 +1,15 @@
+<ion-card
+  *ngIf="summaryCard.id !== 'collegeSummaryCard'; else collegeSummaryCard"
+  ><app-hsa-summary-card
+    *ngIf="summaryCard.id === 'hsaSummaryCard'"
+  ></app-hsa-summary-card>
+  <app-unexpected-summary-card
+    *ngIf="summaryCard.id === 'unexpectedSummaryCard'"
+  ></app-unexpected-summary-card>
+</ion-card>
+
+<ng-template #collegeSummaryCard>
+  <journeys-overview-college-summary-card
+    [summaryCard]="summaryCard"
+  ></journeys-overview-college-summary-card>
+</ng-template>

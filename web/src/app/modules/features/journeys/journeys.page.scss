@@ -1,0 +1,127 @@
+ion-grid {
+  &.myWorkplaceDashboard {
+    .linear-gradient {
+      @media screen and (min-width: 842px) {
+        margin-top: 5px;
+      }
+    }
+  }
+  &.myvoyage {
+    .linear-gradient {
+      margin-bottom: 60px;
+
+      @media screen and (max-width: 920px) {
+        height: 100%;
+      }
+    }
+
+    .max-width {
+      @media screen and (max-width: 920px) {
+        height: 100%;
+      }
+    }
+  }
+
+  .linear-gradient {
+    left: 0%;
+    right: 0%;
+    top: 90px;
+    background: linear-gradient(
+      359.28deg,
+      var(--gradient-color-white) 4.4%,
+      var(--gradient-color-light-blue) 91.56%
+    );
+    .max-width {
+      max-width: 1440px;
+      margin: auto;
+    }
+  }
+
+  .journeys-tab {
+    @media screen and (max-width: 920px) {
+      height: 91%;
+    }
+    .left-col {
+      @media screen and (max-width: 920px) {
+        display: none;
+      }
+      max-width: 440px;
+      padding-right: 0px;
+      .left-card {
+        background: var(--white);
+        height: 850px;
+        border-radius: 10px 0px 0px 10px;
+        margin: 30px 0px auto 20px;
+        box-shadow: var(--card-box-shadow);
+        padding-left: 19px;
+        ion-text {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          color: var(--primary-colors-voya-black);
+        }
+        .recommended-journeys-title,
+        .allJourneys-journeys-title {
+          margin: 25px 0px 10px 0px;
+        }
+        .journeys-title {
+          margin: 25px 10px 10px -4px;
+        }
+        .journeys-sub-title {
+          .sub-title {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: var(--primary-colors-voya-black);
+            letter-spacing: -0.5px;
+            padding: 0px;
+            div {
+              margin: 0px;
+            }
+            div:first-child ul:first-of-type {
+              margin-top: 12px;
+            }
+            .bullet {
+              margin-left: 20px;
+            }
+          }
+          .journeys-wandering {
+            width: 32%;
+            float: right;
+          }
+        }
+      }
+    }
+
+    .right-col {
+      padding-left: 0px;
+      @media screen and (max-width: 920px) {
+        .right-card {
+          height: 100%;
+          box-shadow: none;
+          border-radius: 10px 10px 10px 10px;
+        }
+      }
+      @media screen and (min-width: 920px) {
+        .right-card {
+          box-shadow: none;
+          height: 850px;
+          border-radius: 0px 10px 10px 0px;
+          margin: 30px 20px auto 0px;
+        }
+      }
+      .right-card {
+        .journey-loader {
+          text-align: center;
+          height: 100%;
+          ion-spinner {
+            margin-top: 30%;
+          }
+        }
+      }
+      .focused-element-lifeevents:focus {
+        outline: none;
+      }
+    }
+  }
+}

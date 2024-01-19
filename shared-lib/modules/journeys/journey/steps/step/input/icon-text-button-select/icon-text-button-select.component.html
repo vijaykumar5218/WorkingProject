@@ -1,0 +1,12 @@
+<journeys-icon-text-button
+  *ngFor="let option of element.options; let i = index"
+  [element]="option"
+  (clickEvent)="chooseDependent(option)"
+  [ngClass]="{checked: option.checked}"
+  [id]="'iconTextButtonSelect' + option.idSuffix"
+  [checked]="option.checked"
+  [displayEdit]="option.elements?.length > 0"
+  [index]="index"
+  (updateStepValueAndStep)="emitUpdateStepValueAndStep()"
+>
+</journeys-icon-text-button>

@@ -1,0 +1,129 @@
+{
+  "catchUp": [
+    {
+      "eventName": "Account Aggregated",
+      "Category_name": "catchUp",
+      "Title": "Add a Beneficiary",
+      "Description": "Our records indicate that you have no beneficiary designated in your account.",
+      "Link_name": "Add a Beneficiary now",
+      "Link_url": "",
+      "eventStartDt": "2022-07-21T16:02:09",
+      "eventEndDt": "2022-07-21T17:32:07",
+      "eventAge": "12 days ago"
+    },
+    {
+      "eventName": "Journey Not Completed",
+      "Category_name": "catchUp",
+      "Title": "Enrollment season",
+      "Description": "It’s open enrollment season! Make sure you select your benefits by the end of next week",
+      "Link_name": "",
+      "Link_url": "",
+      "eventStartDt": "2022-07-06T09:45:30",
+      "eventEndDt": "2022-07-06T10:03:38",
+      "eventAge": "27 days ago"
+    },
+    {
+      "eventName": "Journey Not Completed",
+      "Category_name": "catchUp",
+      "Title": "Stay smart while online",
+      "Description": " The idea of needing to be mindful of your financial cybersecurity isn’t new - but",
+      "Link_name": "",
+      "Link_url": "",
+      "eventStartDt": "2022-07-05T16:16:54",
+      "eventEndDt": "2022-07-05T16:45:01",
+      "eventAge": "28 days ago"
+    }
+  ],
+  "highPriority": [
+    {
+      "eventName": "Account Aggregated",
+      "Category_name": "highPriority",
+      "Title": "Open enrollment season",
+      "Description": "It’s open enrollment season! Make sure you select your benefits by tomorrow Select your benefits now",
+      "Link_name": "Select Benefits",
+      "Link_url": "",
+      "eventStartDt": "2022-07-21T16:02:09",
+      "eventEndDt": "2022-07-21T17:32:07",
+      "eventAge": "12 days ago"
+    },
+    {
+      "eventName": "Account Aggregated",
+      "Category_name": "highPriority",
+      "Title": "Required Minimum (From PWeb Message Center)",
+      "Description": "Our records indicate that you are required to receive a Required Minimum Distribution from your Savings Plan account this year. For additional information regarding this payment, please contact a Call Center Representative at 1-800-123-4567. You must select the 'Retirement Savings Plan' prompt and once you hear your Savings Plan balance, you can press '0' to speak with a representative.",
+      "Link_name": "",
+      "Link_url": "",
+      "eventStartDt": "2022-07-21T16:02:09",
+      "eventEndDt": "2022-07-21T17:32:07",
+      "eventAge": "12 days ago"
+    },
+    {
+      "eventName": "Account Aggregated",
+      "Category_name": "highPriority",
+      "Title": "Required Minimum (From PWeb Message Center)",
+      "Description": "Our records indicate that you are required to receive a Required Minimum Distribution from your Savings Plan account this year. For additional information regarding this payment, please contact a Call Center Representative at 1-800-123-4567. You must select the 'Retirement Savings Plan' prompt and once you hear your Savings Plan balance, you can press '0' to speak with a representative.",
+      "Link_name": "",
+      "Link_url": "",
+      "eventStartDt": "2022-07-21T16:02:09",
+      "eventEndDt": "2022-07-21T17:32:07",
+      "eventAge": "12 days ago"
+    },
+    {
+      "eventName": "Account Aggregated",
+      "Category_name": "highPriority",
+      "Title": "Required Minimum (From PWeb Message Center)",
+      "Description": "Our records indicate that you are required to receive a Required Minimum Distribution from your Savings Plan account this year. For additional information regarding this payment, please contact a Call Center Representative at 1-800-123-4567. You must select the 'Retirement Savings Plan' prompt and once you hear your Savings Plan balance, you can press '0' to speak with a representative.",
+      "Link_name": "",
+      "Link_url": "",
+      "eventStartDt": "2022-07-21T16:02:09",
+      "eventEndDt": "2022-07-21T17:32:07",
+      "eventAge": "12 days ago"
+    }
+  ],
+  "recent": [
+    {
+      "eventName": "Account Aggregated",
+      "Category_name": "Recent",
+      "Title": "Medical Spending (from Let’s Catch Up)",
+      "Description": "Please take a moment to review your medical spending so far.",
+      "Link_name": "Review Spending",
+      "Link_url": "",
+      "eventStartDt": "2022-07-21T16:02:09",
+      "eventEndDt": "2022-07-21T17:32:07",
+      "eventAge": "12 days ago"
+    },
+    {
+      "eventName": "Account Aggregated",
+      "Category_name": "Recent",
+      "Title": "We’re Here to Help  (from Let’s Catch Up)",
+      "Description": "Schedule time with an advisor for a personalized plan.",
+      "Link_name": "Book an Appointment",
+      "Link_url": "",
+      "eventStartDt": "2022-07-21T16:02:09",
+      "eventEndDt": "2022-07-21T17:32:07",
+      "eventAge": "12 days ago"
+    },
+    {
+      "eventName": "Account Aggregated",
+      "Category_name": "Recent",
+      "Title": "Message Title  (from Let’s Catch Up) ",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elite.",
+      "Link_name": "Take Action",
+      "Link_url": "",
+      "eventStartDt": "2022-07-21T16:02:09",
+      "eventEndDt": "2022-07-21T17:32:07",
+      "eventAge": "12 days ago"
+    },
+    {
+      "eventName": "Account Aggregated",
+      "Category_name": "Recent",
+      "Title": "Caring for someone with special needs? (From PWeb Message Center)",
+      "Description": "Creating a plan is a good place to start. Voya can help guide the way with educational tips and resources. We can assist you in mapping out your vision for your loved one as well as understanding government benefits and legal tools you can use. Start planning at voya.com/voyacares",
+      "Link_name": "",
+      "Link_url": "",
+      "eventStartDt": "2022-07-21T16:02:09",
+      "eventEndDt": "2022-07-21T17:32:07",
+      "eventAge": "12 days ago"
+    }
+  ]
+}

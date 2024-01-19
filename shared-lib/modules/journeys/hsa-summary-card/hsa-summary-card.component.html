@@ -1,0 +1,21 @@
+<div class="text-main-container">
+  <div *ngIf="accountLinked" class="icon">
+    <img [src]="logoUrl" alt="account logo" />
+  </div>
+  <div class="heading OneLinkNoTx">{{ summaryCard?.description }}</div>
+  <div class="hamburger">
+    <v-icon
+      name="fa fa-ellipsis-h"
+      tabindex="0"
+      target="_blank"
+      color="var(--primary-colors-voya-dark-blue)"
+      size="16px"
+      [id]="'summaryCardRevisit' + summaryCard?.idSuffix"
+      (click)="openDialog()"
+      (keydown.enter)="openDialog()"
+    ></v-icon>
+  </div>
+</div>
+
+<app-progress-bar *ngIf="onFile" [element]="summaryCard"> </app-progress-bar>
+<app-table [element]="summaryCard" *ngIf="summaryCard?.rows"> </app-table>

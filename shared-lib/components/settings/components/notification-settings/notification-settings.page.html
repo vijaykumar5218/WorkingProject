@@ -1,0 +1,73 @@
+<div
+  [ngClass]="isWeb? 'web-notification-settings':'mobile-notification-settings'"
+  id="notification-settings"
+>
+  <ion-grid class="ion-no-padding ion-no-margin">
+    <ion-row>
+      <ion-col>
+        <label class="ion-no-padding font-18 font-w-600"> </label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p *ngIf="settingsContent" class="settings-header">
+          {{settingsContent.NotificationSettingsDescription}}
+        </p>
+      </ion-col>
+    </ion-row>
+    <form name="HPNotificationSettingsForm" id="HPNotificationSettingsForm">
+      <app-notification-events
+        [title]="content.highPriority"
+        [subTitle]="settingsContent?.HighPriorityEventsDescription"
+        [basePropName]="'HPPref'"
+      ></app-notification-events>
+      <app-notification-events
+        [title]="content.accountActivity"
+        [subTitle]="settingsContent?.AccountActivitiesDescription"
+        [basePropName]="'AAPref'"
+      ></app-notification-events>
+      <app-notification-events
+        [title]="content.insights"
+        [subTitle]="settingsContent?.InsightsRecommendationsDescription"
+        [basePropName]="'INPref'"
+      ></app-notification-events>
+      <ion-row class="button-row">
+        <ion-col *ngIf="!isWeb" class="cancel-button">
+          <ion-button
+            size="small"
+            id="cancel-button"
+            class="cancel-button"
+            shape="round"
+            expand="block"
+            fill="outline"
+            (click)="undoSettings()"
+          >
+            {{content.cancelLabel}}</ion-button
+          >
+        </ion-col>
+        <ion-col class="continue-button">
+          <ion-button
+            size="small"
+            id="save-button"
+            class="save-button"
+            shape="round"
+            expand="block"
+            fill="outline"
+            (click)="saveSettings()"
+            [ngClass]="isWeb ? 'save-button-middle' : ''"
+            >{{content.saveLabel}}</ion-button
+          >
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div
+            class="settings-footer"
+            *ngIf="settingsContent"
+            [innerHtml]="settingsContent.NotificationSettingsFooterTxt"
+          ></div>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+</div>

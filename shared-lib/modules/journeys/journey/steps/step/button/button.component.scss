@@ -1,0 +1,53 @@
+:host {
+  display: block;
+  ion-button {
+    height: 40px;
+    --color: var(--primary-colors-voya-white);
+    font-weight: normal;
+    font-size: 16px;
+    --background: var(--primary-colors-voya-dark-blue);
+  }
+
+  .steps-button-web {
+    margin: 20px auto 20px auto;
+    margin: auto;
+    .back-arrow {
+      font-size: 16px;
+      font-weight: 600;
+      max-width: 16px;
+      cursor: pointer;
+      ion-icon {
+        margin-top: 4px;
+      }
+    }
+    .back-link {
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+      font-weight: 600;
+      margin: auto;
+      .back-txt {
+        margin: auto;
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+    .continue-button {
+      max-width: 220px;
+      margin: auto;
+    }
+  }
+  .steps-button-mobile {
+    &.spacing {
+      margin: 20px auto 10px auto;
+    }
+    .back-link {
+      display: none;
+    }
+    .continue-button {
+      max-width: 220px;
+      margin: auto;
+    }
+  }
+}

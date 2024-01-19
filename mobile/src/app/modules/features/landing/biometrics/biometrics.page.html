@@ -1,0 +1,43 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-text class="header">{{pageText.header}}</ion-text>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-text class="sub-header">{{pageText.subHeader}}</ion-text>
+    </ion-col>
+  </ion-row>
+  <ion-row class="toggle-row">
+    <ion-col>
+      <img src="{{bioIcon}}" alt="biometrics" /><ion-text class="bio-name"
+        >{{bioText}}</ion-text
+      >
+    </ion-col>
+    <ion-col class="toggle-col">
+      <ion-toggle
+        id="biometrics-toggle"
+        class="biometrics-toggle"
+        [(ngModel)]="faceIDEnabled"
+      ></ion-toggle>
+    </ion-col>
+  </ion-row>
+  <ion-row class="continue-row">
+    <ion-col>
+      <ion-button
+        size="small"
+        (click)="continueClicked()"
+        class="continue"
+        name="submit"
+        shape="round"
+        expand="block"
+        type="submit"
+        color="btncolor"
+        id="continue-btn"
+      >
+        {{pageText.continue}}
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>

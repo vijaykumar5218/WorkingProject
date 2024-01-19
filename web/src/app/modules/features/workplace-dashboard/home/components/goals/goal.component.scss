@@ -1,0 +1,10 @@
+:host {
+  ion-card {
+    @media screen and (min-width: 801px) {
+      margin: 10px;
+    }
+    @media screen and (max-width: 800px) {
+      margin: 20px 0px;
+    }
+  }
+}

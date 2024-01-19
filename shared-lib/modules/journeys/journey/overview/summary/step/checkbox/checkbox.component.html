@@ -1,0 +1,21 @@
+<div
+  class="lottie"
+  [ngStyle]="{top: checkbox?.nativeElement.offsetTop - 29 + 'px'}"
+>
+  <ng-lottie [options]="options"></ng-lottie>
+</div>
+
+<div class="checkbox">
+  <ion-checkbox
+    #check
+    slot="start"
+    (click)="handleClick(checkbox?.nativeElement.checked)"
+    mode="md"
+    [id]="'summaryCheckbox' + element.idSuffix"
+  >
+  </ion-checkbox>
+
+  <span class="checkbox-label">
+    {{ element.label }}
+  </span>
+</div>

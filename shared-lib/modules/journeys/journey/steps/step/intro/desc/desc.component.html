@@ -1,0 +1,25 @@
+<ng-container *ngFor="let desc of descStrings">
+  <ion-label
+    *ngIf="desc.link || desc.videoUrl || desc.appLink"
+    class="desc-link desc-text"
+    (click)="openLink(desc)"
+    (keyup.enter)="openLink(desc)"
+    tabindex="0"
+    [ngStyle]="{
+      color: element.linkColor,
+      'font-size': element.descFontSize
+    }"
+    [id]="desc.id"
+    [innerHTML]="desc.textSafe || desc.text"
+  ></ion-label>
+  <ion-text
+    *ngIf="!desc.link && !desc.videoUrl && !desc.appLink"
+    class="desc-text"
+    [ngStyle]="{
+      color: element.textColor,
+      'font-size': element.descFontSize
+    }"
+    [innerHTML]="desc.textSafe || desc.text"
+  >
+  </ion-text
+></ng-container>

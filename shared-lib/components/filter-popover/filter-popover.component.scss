@@ -1,0 +1,39 @@
+.list-wrap {
+  max-height: 318px;
+  overflow-y: scroll;
+  padding: 10px 20px 0px;
+
+  & .list {
+    margin-bottom: 10px;
+
+    & .checkmark {
+      opacity: 0;
+      margin-right: 5px;
+      position: absolute;
+      left: 0;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    & ion-checkbox::part(container) {
+      display: none;
+    }
+  }
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--secondary-colors-medium-gray-3);
+
+  & ion-button {
+    display: inline-flex;
+    flex: 1;
+
+    &:first-child {
+      border-right: 1px solid var(--secondary-colors-medium-gray-3);
+    }
+  }
+}

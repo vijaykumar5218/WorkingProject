@@ -1,0 +1,4 @@
+{
+  "billingandpayments": "{\"billingPayments\":{\"header\":\"Billing and Payments\",\"nonAutoPay\":{\"noPaymentDue\":{\"message\":\"You have no payment due at this time.\"},\"paymentDue\":{\"message\":\"Action Required: You have a total payment due of ${{totalPaymentDue}}.\",\"isShowAlertIcon\":true,\"linkName\":\"Make a payment\",\"linkURL\":\"myBenefitsHub/billing/overview\"}},\"autoPay\":{\"noPaymentDue\":{\"message\":\"You have no scheduled payment due at this time.\"},\"paymentDue\":{\"message\":\"You have a total scheduled payment due of ${{totalPaymentDue}}.\",\"linkName\":\"View your account\",\"linkURL\":\"myBenefitsHub/billing/autopay/preferences\"}}}}",
+  "benefitsandcoverages": "{ \"Title\": \"Benefits & Coverages\", \"extlink\": \"Go to myBenefitsHub\"}"
+}

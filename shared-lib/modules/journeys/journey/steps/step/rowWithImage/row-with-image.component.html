@@ -1,0 +1,18 @@
+<div [ngClass]="{'with-header': element.header}">
+  <div class="img-container">
+    <img [src]="element.imageUrl" [alt]="element?.altText || ''" />
+    <span *ngIf="element.header">{{ element.header }}</span>
+  </div>
+  <div class="desc-answer-container">
+    <span>{{ element.description }}</span>
+    <span
+      class="answer"
+      *ngIf="element.displayAnswer === undefined || element.displayAnswer"
+      >{{
+        element.type === 'dollar' && answer !== '-'
+          ? (answer | currency: 'USD':'symbol':'1.0-0')
+          : answer
+      }}</span
+    >
+  </div>
+</div>

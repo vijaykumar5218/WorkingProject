@@ -1,0 +1,41 @@
+{
+  "hasMXAccount": false,
+  "categorizedAccounts": [
+      {
+          "accType": "Investment",
+          "enrollEligible": false,
+          "accountsCount": 2,
+          "accountsTotalBalance": 216772.5,
+          "accounts": [
+              {
+                  "agreementId": "13C0D302274276E9179495EF755FAD77BF4F8A23F7B1648B86E257890C359EB5",
+                  "accountTitle": "WASHOE COUNTY DEFERRED COMP PLAN",
+                  "accountType": "Investment",
+                  "accountBalance": "210802.71",
+                  "accountBalanceAsOf": "06/23/2023",
+                  "sourceSystem": "EASE",
+                  "suppressTab": false,
+                  "clientId": "INGWIN",
+                  "planId": "664389",
+                  "planType": "DC",
+                  "planLink": "/myvoyageui/#/accounts/retirement/664389/info",
+                  "planName": "WASHOE COUNTY DEFERRED COMP PLAN",
+                  "accountNumber": "664389@INGWIN@036639015",
+                  "isVoyaAccessPlan": false
+              },
+              {
+                  "accountTitle": "Voya Digital Adviser",
+                  "accountType": "Investment",
+                  "accountBalance": "5969.79",
+                  "accountBalanceAsOf": "06/24/2023",
+                  "sourceSystem": "BROKERAGE",
+                  "suppressTab": false,
+                  "planId": "6S1081747",
+                  "planLink": "/myvoyageui/#/accounts/retirement/6S1081747/info",
+                  "accountNumber": "6S1081747",
+                  "isVoyaAccessPlan": false
+              }
+          ]
+      }
+  ]
+}

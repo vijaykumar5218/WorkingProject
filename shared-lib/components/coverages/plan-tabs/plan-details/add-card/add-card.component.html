@@ -1,0 +1,56 @@
+<ion-grid>
+  <ion-row class="header-row">
+    <ion-col
+      size="2"
+      class="close-btn"
+      automation-id="add-card-close-btn"
+      tabindex="0"
+      (keydown.enter)="close()"
+      (click)="close()"
+      >{{ pageContent.closeBtn }}</ion-col
+    >
+    <ion-col size="8" class="card-header">{{ pageContent.header }}</ion-col>
+    <ion-col size="2"></ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="card-front" size="12" size-md="6">
+      <card-component
+        (fileBase64)="addCard($event, cardSide.FRONT)"
+        [side]="cardSide.FRONT"
+        [imageBase64]="cardFront"
+      ></card-component>
+    </ion-col>
+    <ion-col class="card-back" size="12" size-md="6">
+      <card-component
+        (fileBase64)="addCard($event, cardSide.BACK)"
+        [side]="cardSide.BACK"
+        [imageBase64]="cardBack"
+      ></card-component>
+    </ion-col>
+  </ion-row>
+
+  <ion-row
+    class="ion-justify-content-center save-button"
+    (click)="uploadCard()"
+    automation-id="upload-card"
+  >
+    <ion-col size="4">
+      <button
+        *ngIf="!loading"
+        [class.active]="cardFront != '' && cardBack != ''"
+        automation-id="save-my-card"
+        [disabled]="cardFront === '' || cardBack === ''"
+      >
+        {{ pageContent.saveBtn }}
+      </button>
+      <div class="container" *ngIf="loading">
+        <div class="text">
+          {{ pageContent.uploading }}
+        </div>
+        <div class="image">
+          <img src="assets/icon/loader.svg" alt="loader" />
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>

@@ -1,0 +1,41 @@
+<ion-grid class="ion-no-padding">
+  <ion-item
+    [ngClass]="isWeb && isDesktop ? 'desktop-menu' : 'mobile-menu'"
+    inset="true"
+    lines="none"
+    class="ion-no-padding"
+  >
+    <div class="menu-items">
+      <ng-container *ngFor="let item of config.items; let i = index">
+      <div *ngIf="item.enableMyVoyage || (!isHelp && isWeb) || !isWeb"
+        [ngClass]="
+          selectedTab === 'more-items-' + item.id && isWeb && isDesktop
+            ? 'menu-item active'
+            : 'menu-item not-active'
+        "
+        id="{{ 'more-items-' + item.id }}"
+        (click)="navigateTo(item)"
+        tabindex="0"
+        (keyup.enter)="navigateTo(item)"
+      >
+        <ion-row class="">
+          <ion-col *ngIf="item.icon" class="menu-icon">
+            <img alt="{{ item.text }}" src="{{ item.icon }}" />
+          </ion-col>
+          <ion-col
+            [ngClass]="isWeb && isDesktop ? 'desktop-menu-label' : 'menu-label'"
+          >
+            <label
+              class="ion-no-padding font-16 font-w-600 ion-float-left ion-txt"
+              >{{ item.text }}</label
+            >
+            <span class="ion-float-right"
+              ><img alt="edit" src="assets/icon/chevron_right.svg" 
+            /></span>
+          </ion-col>
+        </ion-row>
+      </div>
+      </ng-container>
+    </div>
+  </ion-item>
+</ion-grid>

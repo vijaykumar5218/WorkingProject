@@ -1,0 +1,104 @@
+:host {
+  justify-content: flex-start;
+}
+
+ion-card {
+  overflow-y: visible;
+  padding: 20px;
+
+  .chip-wrap {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 0;
+    & .clear-txt {
+      font-weight: 600;
+      color: var(--gradient-color-blue);
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  }
+
+  ion-col {
+    padding-top: 0;
+    padding-bottom: 6px;
+  }
+
+  .empty-row {
+    margin-bottom: 28px;
+  }
+
+  .emptytransactions {
+    height: 24px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.08px;
+    text-align: center;
+    color: var(--ion-color-dark);
+  }
+
+  .lastdays {
+    padding-bottom: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: 0.01px;
+    text-align: right;
+    color: var(--secondary-colors-medium-gray-1);
+  }
+
+  .name {
+    font-size: 16px;
+    color: var(--toggle-txt-color);
+    font-weight: bold;
+  }
+  .sub_name {
+    display: block;
+    font-size: 14px;
+    margin-top: 6px;
+    font-weight: 600;
+  }
+
+  span {
+    font-weight: 400;
+  }
+  .amount {
+    color: var(--secondary-colors-medium-gray-1);
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .line {
+    height: 2px;
+    background-color: var(--ion-background-color);
+    margin: 14px 2px 2px 2px;
+  }
+  .sub-name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: 0.01px;
+    text-align: left;
+    color: var(--secondary-colors-medium-gray-1);
+  }
+  .btnview {
+    width: 119px;
+    height: 36px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px var(--primary-colors-voya-dark-blue);
+  }
+
+  .positive {
+    color: var(--secondary-colors-green);
+  }
+
+  .negative {
+    color: var(--secondary-colors-error-red);
+  }
+
+  #showmore {
+    margin-top: 20px;
+  }
+}

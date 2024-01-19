@@ -1,0 +1,1060 @@
+{
+  "categoryDetail": {
+    "emergencyRoomServices": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-06-06",
+        "serviceName": "emergencyRoomServices"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-06-06",
+        "serviceName": "emergencyRoomServices"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-05-06",
+        "serviceName": "emergencyRoomServices"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-05-06",
+        "serviceName": "emergencyRoomServices"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-04-06",
+        "serviceName": "emergencyRoomServices"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-04-06",
+        "serviceName": "emergencyRoomServices"
+      }
+    ],
+    "genericDrugs": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-06-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-06-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-06-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-06-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-05-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-05-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-05-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-05-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-04-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-04-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-04-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-04-06",
+        "drugName": "Drug_name_"
+      }
+    ],
+    "inpatientHosptialCares": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-06-06",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-06-06",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-05-06",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-05-06",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-04-06",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-04-06",
+        "serviceName": "inpatientHosptialCares"
+      }
+    ],
+    "other": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-06-06",
+        "serviceName": "other"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-06-06",
+        "serviceName": "other"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-05-06",
+        "serviceName": "other"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-05-06",
+        "serviceName": "other"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-04-06",
+        "serviceName": "other"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-04-06",
+        "serviceName": "other"
+      }
+    ],
+    "outpatientLabPaths": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientLabPaths"
+      }
+    ],
+    "outpatientSurgery": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientSurgery"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientSurgery"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientSurgery"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientSurgery"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientSurgery"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientSurgery"
+      }
+    ],
+    "outpatientXrays": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientXrays"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientXrays"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientXrays"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientXrays"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientXrays"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientXrays"
+      }
+    ],
+    "preferredDrugs": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-06-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-06-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-06-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-06-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-05-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-05-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-05-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-05-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-04-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-04-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-04-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-04-06",
+        "drugName": "Drug_name_"
+      }
+    ],
+    "preventive": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-06-06",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-06-06",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-05-06",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-05-06",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-04-06",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-04-06",
+        "serviceName": "preventive"
+      }
+    ],
+    "primaryVisits": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-06-06",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-06-06",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-05-06",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-05-06",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-04-06",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-04-06",
+        "serviceName": "primaryVisits"
+      }
+    ],
+    "specialVisits": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-06-06",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-06-06",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-05-06",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-05-06",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-04-06",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-04-06",
+        "serviceName": "specialVisits"
+      }
+    ],
+    "inNetworkCost": {
+      "preferredDrugs": 66,
+      "outpatientLabPaths": 66,
+      "specialVisits": 66,
+      "preventive": 66,
+      "genericDrugs": 66,
+      "outpatientXrays": 66,
+      "primaryVisits": 66,
+      "inpatientHosptialCares": 66,
+      "emergencyRoomServices": 66,
+      "outpatientSurgery": 66,
+      "other": 66
+    },
+    "outNetworkCost": {
+      "preferredDrugs": 96,
+      "outpatientLabPaths": 96,
+      "specialVisits": 96,
+      "preventive": 96,
+      "genericDrugs": 96,
+      "outpatientXrays": 96,
+      "primaryVisits": 96,
+      "inpatientHosptialCares": 96,
+      "emergencyRoomServices": 96,
+      "outpatientSurgery": 96,
+      "other": 96
+    }
+  },
+  "inNetworkEventCount": {
+    "emergencyRoomServices": 23,
+    "genericDrugs": 23,
+    "inpatientHosptialCares": 23,
+    "other": 22,
+    "outpatientLabPaths": 23,
+    "outpatientSurgery": 23,
+    "outpatientXrays": 23,
+    "preferredDrugs": 23,
+    "preventive": 23,
+    "primaryVisits": 23,
+    "specialVisits": 23
+  },
+  "outNetworkEventCount": {
+    "emergencyRoomServices": 22,
+    "genericDrugs": 22,
+    "inpatientHosptialCares": 22,
+    "other": 22,
+    "outpatientLabPaths": 22,
+    "outpatientSurgery": 22,
+    "outpatientXrays": 22,
+    "preferredDrugs": 22,
+    "preventive": 22,
+    "primaryVisits": 22,
+    "specialVisits": 22
+  },
+  "inNetworkCost": {"outOfPocketCost": 726},
+  "outNetworkCost": {"outOfPocketCost": 1056},
+  "groupingCategoryDetails": {
+    "2022-06": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-06-06",
+        "serviceName": "emergencyRoomServices"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-06-06",
+        "serviceName": "emergencyRoomServices"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-06-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-06-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-06-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-06-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-06-06",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-06-06",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-06-06",
+        "serviceName": "other"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-06-06",
+        "serviceName": "other"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientSurgery"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientSurgery"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientXrays"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-06-06",
+        "serviceName": "outpatientXrays"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-06-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-06-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-06-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-06-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-06-06",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-06-06",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-06-06",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-06-06",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-06-06",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-06-06",
+        "serviceName": "specialVisits"
+      }
+    ],
+    "2022-05": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-05-06",
+        "serviceName": "emergencyRoomServices"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-05-06",
+        "serviceName": "emergencyRoomServices"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-05-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-05-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-05-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-05-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-05-06",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-05-06",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-05-06",
+        "serviceName": "other"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-05-06",
+        "serviceName": "other"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientSurgery"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientSurgery"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientXrays"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-05-06",
+        "serviceName": "outpatientXrays"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-05-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-05-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-05-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-05-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-05-06",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-05-06",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-05-06",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-05-06",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-05-06",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-05-06",
+        "serviceName": "specialVisits"
+      }
+    ],
+    "2022-04": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-04-06",
+        "serviceName": "emergencyRoomServices"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_emr",
+        "serviceDate": "2022-04-06",
+        "serviceName": "emergencyRoomServices"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-04-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-04-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_generic",
+        "serviceDate": "2022-04-06",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-04-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-04-06",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_inpatient",
+        "serviceDate": "2022-04-06",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-04-06",
+        "serviceName": "other"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_other",
+        "serviceDate": "2022-04-06",
+        "serviceName": "other"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_patient_path",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientSurgery"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_surgery",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientSurgery"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientXrays"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_xray",
+        "serviceDate": "2022-04-06",
+        "serviceName": "outpatientXrays"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-04-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-04-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_drug",
+        "serviceDate": "2022-04-06",
+        "serviceName": "preferredDrugs",
+        "lastFilledDate": "2022-04-06",
+        "drugName": "Drug_name_"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-04-06",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_preventive",
+        "serviceDate": "2022-04-06",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-04-06",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_visits",
+        "serviceDate": "2022-04-06",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 22,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-04-06",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": false,
+        "outOfPocketCost": 32,
+        "providerName": "Provider_name_speical_visits",
+        "serviceDate": "2022-04-06",
+        "serviceName": "specialVisits"
+      }
+    ]
+  }
+}

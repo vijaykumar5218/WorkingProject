@@ -1,0 +1,28 @@
+<ng-container
+  *ngIf="selectedBenefit?.type == 'medical_plan'; else noMedicalPlan "
+>
+  <ion-tabs (ionTabsDidChange)="tabChange()">
+    <ion-tab-bar slot="top">
+      <ion-tab-button
+        *ngFor="let tab of tabs"
+        [ngClass]="{'selectedRipple': selectedTab === tab.link || selectedTab === tab.routerLink}"
+        (click)="handleClick(tab)"
+        class="lightgrey"
+        [tab]="tab.link"
+        id="cov-plan-tab1"
+      >
+        <ion-label>{{tab.label}}</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ng-container>
+
+<ng-template #noMedicalPlan>
+  <ion-tabs (ionTabsDidChange)="tabChange()">
+    <ion-tab-bar slot="top">
+      <ion-tab-button class="lightgrey selectedRipple" id="cov-plan-tab2">
+        <ion-label>{{pageText.detailsLabel}}</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ng-template>

@@ -1,0 +1,81 @@
+<div class="section-title" *ngIf="!shouldHide">
+  <label class="voya-dark font-w-600">{{
+    pageText.investmentPerformance
+  }}</label>
+</div>
+
+<ion-card *ngIf="!shouldHide" class="myv-card">
+  <div *ngIf="loading; else elseBlock">
+    <ion-spinner></ion-spinner>
+  </div>
+  <ng-template #elseBlock>
+    <ion-card-header>
+      <ion-card-title>{{ pageText.AnnualRateReturn }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row #progessBarContainer>
+          <ion-progress-bar
+            #progessBar
+            title="Annual rate of return progress"
+            class="annual-rate-bar"
+            value="{{ progressBarValue }}"
+          ></ion-progress-bar>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <span class="bar-bottom-item-title">{{ pageText.YTDReturn }}</span>
+            <span class="bar-bottom-item-value"
+              >{{ ytdReturn | number: '1.2-2' }}%</span
+            >
+          </ion-col>
+          <ion-col size="6">
+            <span class="bar-bottom-item-title ion-text-end">{{
+              pageText.ProjReturn
+            }}</span>
+            <span class="bar-bottom-item-value orange ion-text-end"
+              >{{ projReturn | number: '1.2-2' }}%</span
+            >
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <div *ngIf="offerVal?.length > 0" class="internal-card">
+      <ion-card-content *ngFor="let offervalue of offerVal">
+        <div class="warning-text">
+          <img
+            class="icon"
+            src="{{ textPredval.icon }}"
+            alt="Message box with 3 dots"
+          />
+          <div class="msg-cont" *ngIf="offervalue?.offerCode == 'MANACCT'">
+            <p *ngFor="let message of textPredval.MANACCT?.messages">
+              {{ message }}
+            </p>
+          </div>
+          <div class="msg-cont" *ngIf="offervalue?.offerCode == 'MANACTIPS'">
+            <p *ngFor="let message of textPredval.MANACTIPS?.messages">
+              {{ message }}
+            </p>
+          </div>
+          <div class="button-container">
+            <ion-button
+              size="small"
+              fill="clear"
+              automation-id="offervalbutton"
+              (click)="openOffer(offervalue?.targetUrl)"
+            >
+              {{
+                offervalue?.offerCode == 'MANACCT'
+                  ? textPredval.MANACCT?.link_name
+                  : textPredval.MANACTIPS.link_name
+              }}
+            </ion-button>
+          </div>
+        </div>
+      </ion-card-content>
+    </div>
+  </ng-template>
+</ion-card>

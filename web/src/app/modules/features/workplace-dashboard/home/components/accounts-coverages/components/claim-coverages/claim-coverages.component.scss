@@ -1,0 +1,35 @@
+:host {
+  .claim-coverages-heading {
+    margin-left: 16px;
+    p {
+      color: var(--primary-colors-voya-black);
+      font-size: 24px;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      font-weight: 600;
+      @media screen and (max-width: 920px) {
+        display: none;
+      }
+    }
+  }
+  .claim-coverages-mybenefit_heading {
+    margin-left: 16px;
+    p {
+      color: var(--primary-colors-voya-black);
+      font-size: 24px;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      font-weight: 600;
+    }
+  }
+  app-plans {
+    ::ng-deep {
+      .web-plans-card {
+        @media screen and (max-width: 920px) {
+          overflow-y: unset;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

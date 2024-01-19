@@ -1,0 +1,44 @@
+<ion-grid
+  [ngStyle]="{
+    'font-size': element.fontSize,
+    'margin-bottom': element.tableMarginBottom
+      ? element.tableMarginBottom
+      : '20px'
+  }"
+>
+  <ion-row class="header" *ngIf="element.header">{{ element.header }}</ion-row>
+  <ng-container *ngFor="let row of element.rows; let last = last">
+    <div
+      *ngIf="!row.suppress"
+      [ngClass]="{last: last}"
+      [ngStyle]="{
+        'margin-bottom': last ? undefined : element.marginBottom,
+        color: row.textColor,
+        'font-weight': row.bold ? 'bold' : undefined
+      }"
+    >
+      <span
+        *ngIf="row.colorDotColor"
+        class="dot"
+        [ngStyle]="{'background-color': row.colorDotColor}"
+      >
+      </span>
+      <span class="row-label" [ngStyle]="{'font-size': element.labelFontSize}"
+        >{{ row.label }}
+        <span class="helpie" *ngIf="row.help">
+          <journeys-steps-step-help
+            [help]="row.help"
+          ></journeys-steps-step-help>
+        </span>
+      </span>
+      <span class="answer">
+        {{
+          row.type === 'dollar' && row.answer !== '-'
+            ? (row.prefix ? row.prefix : '') +
+              (row.answer | currency: 'USD':'symbol':'1.0-0')
+            : row.answer
+        }}</span
+      >
+    </div>
+  </ng-container>
+</ion-grid>

@@ -1,0 +1,81 @@
+<v-primary-navigation
+  logoSrc="assets/icon/myVoyageNew_Web.svg"
+  disableSearch
+  profileOption
+  profiletext=""
+  [attr.profileCircleText]="
+    numberOfNotifications > 0 ? numberOfNotifications : ' '
+  "
+  noprofileellipsis="true"
+  primaryProfileIcon="true"
+  class="desktop-nav"
+  logowidth="141px"
+  logoheight="45px"
+  [attr.logoHref]="content.navbarItems[0].link"
+>
+  <ng-container *ngFor="let navbarItem of content.navbarItems">
+    <v-desktop-navbar-item
+      [text]="navbarItem.text"
+      [link]="navbarItem.link"
+      [selected]="selectedTab === navbarItem.id"
+      [id]="navbarItem.id"
+    ></v-desktop-navbar-item>
+  </ng-container>
+  <ng-container *ngFor="let dropdownItem of content.dropdownItems">
+    <v-dropdown-item
+      slot="profile-options"
+      desktop
+      [text]="dropdownItem.text"
+      [link]="dropdownItem.link"
+      [id]="dropdownItem.id"
+    >
+      <v-icon
+        *ngIf="dropdownItem.text === 'Notifications'"
+        applyHoverStyles
+        [circleText]="numberOfNotifications > 0 ? numberOfNotifications : ' '"
+      ></v-icon>
+    </v-dropdown-item>
+  </ng-container>
+</v-primary-navigation>
+
+<ion-grid class="small-device-nav">
+  <ion-row class="menu-holder">
+    <ion-col class="menu-col">
+      <ion-row>
+        <ng-container *ngIf="smallDeviceContent?.title; else logoTemp">
+          <ion-col
+            class="backBtnSection"
+            *ngIf="smallDeviceContent?.isBackBtn"
+            (click)="handleBackClick(smallDeviceContent?.previousPage)"
+            id="navbarBackButton"
+          >
+            <ion-icon class="back-arrow" name="chevron-back-outline"></ion-icon>
+          </ion-col>
+          <ion-col class="backBtnText">
+            <p>{{ smallDeviceContent?.title }}</p>
+          </ion-col>
+        </ng-container>
+        <ion-col
+          class="bellIcon"
+          (click)="goToNotification()"
+          id="navbarNotificationButton"
+        >
+          <v-icon primary name="bell"></v-icon>
+          <span class="dot" *ngIf="numberOfNotifications > 0"></span>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ng-template #logoTemp>
+  <ion-col>
+    <v-logo
+      src="assets/icon/myVoyageNew_Web.svg"
+      width="92px"
+      height="28px"
+      [attr.logoHref]="content.navbarItems[0].link"
+      id="navbarLogo"
+    ></v-logo>
+  </ion-col>
+</ng-template>

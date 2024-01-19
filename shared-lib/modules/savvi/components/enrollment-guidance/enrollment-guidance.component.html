@@ -1,0 +1,37 @@
+<div>
+  <voya-global-basic-header
+    [baseUrl]="logoBaseUrl"
+    logoHref="/myvoyageui/#"
+    rightAligned
+    *ngIf="isWeb && (workplaceEnabled$ | async)"
+  >
+    <ng-container *ngTemplateOutlet="basicHeaderSlot"></ng-container>
+  </voya-global-basic-header>
+
+  <voya-global-basic-header
+    logoHref="/myvoyageui/#"
+    logoSrc="assets/icon/myVoyageNew_Web.svg"
+    suppressBranding
+    rightAligned
+    *ngIf="isWeb && !(workplaceEnabled$ | async)"
+  >
+    <ng-container *ngTemplateOutlet="basicHeaderSlot"></ng-container>
+  </voya-global-basic-header>
+
+  <ng-template #basicHeaderSlot>
+    <v-desktop-navbar-item
+      (click)="return()"
+      slot="links"
+      link=""
+      text="Return"
+    >
+    </v-desktop-navbar-item>
+    <v-icon (click)="return()" primary name="x" size="20px"></v-icon>
+  </ng-template>
+
+  <iframe
+    title="Savvi Enrollment Guidance"
+    allowfullscreen
+    #savviIframe
+  ></iframe>
+</div>

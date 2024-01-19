@@ -1,0 +1,49 @@
+:host {
+  background-color: var(--ion-color-white);
+  padding: 0 20px;
+}
+.web-help-content {
+  @media screen and (min-width: 920px) {
+    margin-bottom: 80px;
+  }
+  @media screen and (max-width: 920px) {
+    margin-top: 90px;
+    margin-bottom: 190px;
+  }
+  .back-btn {
+    margin-top: 25px;
+    ion-col.back-button {
+      max-width: 60px;
+      cursor: pointer;
+      ion-col.chevron-back {
+        margin: auto;
+        max-width: 18px;
+        color: var(--primary-colors-voya-dark-blue);
+        font-weight: 600;
+        ion-icon {
+          width: 16px;
+          height: 16px;
+          margin-top: 4px;
+        }
+      }
+      ion-col.back-text {
+        text-decoration-line: underline;
+        font-size: 16px;
+        margin: auto;
+        color: var(--primary-colors-voya-dark-blue);
+        font-weight: 600;
+      }
+    }
+    .heading {
+      text-align: center;
+      margin-right: 60px;
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--primary-colors-voya-black);
+    }
+  }
+  .back-btn-myWorkplace {
+    margin-top: -67px;
+    margin-left: -7px;
+  }
+}

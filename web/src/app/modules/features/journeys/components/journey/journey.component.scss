@@ -1,0 +1,35 @@
+ion-card {
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  margin: 8px 0px;
+  cursor: pointer;
+
+  .row {
+    height: 56px;
+    width: 374px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 17px;
+
+    &.coming-soon {
+      width: 380px;
+      padding: 0px 6px 0px 17px;
+      span {
+        color: var(--primary-colors-voya-black);
+      }
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.14;
+      letter-spacing: 0.01px;
+      text-align: left;
+      color: var(--primary-colors-voya-dark-blue);
+    }
+    .status-section {
+      float: right;
+    }
+  }
+}

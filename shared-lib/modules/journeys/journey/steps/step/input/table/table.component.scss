@@ -1,0 +1,34 @@
+ion-grid {
+  --ion-grid-padding: 0px;
+  ion-row {
+    align-items: center;
+
+    &.first-row {
+      margin-bottom: 25px;
+    }
+    &.row-web {
+      padding: 5px;
+    }
+
+    ion-col {
+      text-align: center;
+      &.first-col {
+        text-align: left;
+      }
+
+      ion-text {
+        color: var(--primary-colors-voya-black);
+        font-size: 16px;
+
+        &.header {
+          font-weight: 600;
+        }
+      }
+      journeys-steps-step-input-text-field {
+        margin: auto;
+        height: 36px;
+        width: 53px;
+      }
+    }
+  }
+}

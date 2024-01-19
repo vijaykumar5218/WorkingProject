@@ -1,0 +1,36 @@
+{
+  "pensionView": {
+    "defaultPensionData": {
+      "mandatoryContrib": 0.0,
+      "monthlyIncome": 0.0,
+      "pensionViewFlag": null,
+      "percCOLA": 0.0,
+      "retSysCode": null,
+      "special1": null,
+      "special2": null,
+      "srManualPenBenefitType": null,
+      "srPenCalcMethod": null,
+      "stateCode": null,
+      "yearsOfService": 0.0
+    },
+    "defaultplanId": "771040",
+    "enabled": true,
+    "pensionByAgeData": [
+      {
+        "omPensionByAgeAllowed": false,
+        "pensionByAge": null,
+        "planId": "771040"
+      }
+    ],
+    "pensionViewFlag": "None",
+    "planId": "771040",
+    "planRuleId": "0",
+    "rulemap": {
+      "771040": "0"
+    },
+    "srData": null,
+    "stillriverplanId": null,
+    "vendorData": null,
+    "vendorplanId": null
+  }
+}

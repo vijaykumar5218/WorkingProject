@@ -1,0 +1,19 @@
+<ion-card>
+  <img
+    src="assets/icon/exit.svg"
+    alt="close"
+    tabindex="0"
+    (keydown.enter)="closeInfoDialog()"
+    (click)="closeInfoDialog()"
+    id="closeInfoDialog"
+  />
+
+  <ion-card-header>
+    <ion-card-title>
+      {{ headerText }}
+    </ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{ bodyText }}
+  </ion-card-content>
+</ion-card>

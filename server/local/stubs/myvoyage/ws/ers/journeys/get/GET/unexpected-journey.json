@@ -1,0 +1,551 @@
+{
+    "all": [
+      {
+        "journeyID": 1,
+        "steps": [
+          {
+            "journeyStepId": 1,
+            "followingStep": 2,
+            "journeyStepName": "when_do_you_want_to_retire",
+            "journeyStepCMSTagId": "MVRetirementStep1JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed",
+            "answer": "{\"retirementAge\":\"67\"}"
+          },
+          {
+            "journeyStepId": 2,
+            "followingStep": 3,
+            "precedingStep": 1,
+            "journeyStepName": "what_is_most_important_to_you",
+            "journeyStepCMSTagId": "MVRetirementStep2JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed",
+            "answer": "{\"wordGroup\":\"[{\\\"text\\\":\\\"Travel\\\",\\\"id\\\":\\\"travel\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/travel.svg\\\"},{\\\"text\\\":\\\"Volunteer\\\",\\\"id\\\":\\\"volunteer\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/volunteer.svg\\\"},{\\\"text\\\":\\\"Be debt free\\\",\\\"id\\\":\\\"debt_free\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/debtFree.svg\\\"},{\\\"text\\\":\\\"Spend more time with family\\\",\\\"id\\\":\\\"family_time\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/family.svg\\\"},{\\\"text\\\":\\\"Start new career\\\",\\\"id\\\":\\\"new_career\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/startNewCareer.svg\\\"},{\\\"text\\\":\\\"Learn new skill\\\",\\\"id\\\":\\\"new_skill\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/learnNewSkill.svg\\\"},{\\\"text\\\":\\\"Home renovations\\\",\\\"id\\\":\\\"home_renovations\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/In_Company.svg\\\"},{\\\"text\\\":\\\"Invest in business\\\",\\\"id\\\":\\\"invest_business\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/investInBusiness.svg\\\"},{\\\"text\\\":\\\"Move somewhere new\\\",\\\"id\\\":\\\"move\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/moveSomewhereNew.svg\\\"},{\\\"text\\\":\\\"Gift money to friends\\\",\\\"id\\\":\\\"gift_money\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/moneyGift.svg\\\"},{\\\"text\\\":\\\"Start a business\\\",\\\"id\\\":\\\"start_business\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/startBusiness.svg\\\"},{\\\"text\\\":\\\"New hobby\\\",\\\"id\\\":\\\"new_hobby\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/newHobby.svg\\\"},{\\\"text\\\":\\\"Treat yourself to a big purchase\\\",\\\"id\\\":\\\"big_purchase\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/bigPurchase.svg\\\"}]\"}"
+          },
+          {
+            "journeyStepId": 3,
+            "followingStep": 4,
+            "precedingStep": 2,
+            "journeyStepName": "lets_check_in_on_your_savings",
+            "journeyStepCMSTagId": "MVRetirementStep3JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 4,
+            "followingStep": 5,
+            "precedingStep": 3,
+            "journeyStepName": "estimate_your_expenses_in_retirement",
+            "journeyStepCMSTagId": "MVRetirementStep4JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 5,
+            "followingStep": 6,
+            "precedingStep": 4,
+            "journeyStepName": "check_your_retirement_savings_progress",
+            "journeyStepCMSTagId": "MVRetirementStep5JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 6,
+            "followingStep": 7,
+            "precedingStep": 5,
+            "journeyStepName": "social_security",
+            "journeyStepCMSTagId": "MVRetirementStep6JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed",
+            "answer": "{\"early\":\"$56\",\"full\":\"$\",\"max\":\"$34\"}"
+          },
+          {
+            "journeyStepId": 7,
+            "followingStep": 8,
+            "precedingStep": 6,
+            "journeyStepName": "plan_for_medical_expenses",
+            "journeyStepCMSTagId": "MVRetirementStep7JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 8,
+            "followingStep": 9,
+            "precedingStep": 7,
+            "journeyStepName": "now_its_time_to_focus_on_important_actions",
+            "journeyStepCMSTagId": "MVRetirementStep8JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 9,
+            "followingStep": 10,
+            "precedingStep": 8,
+            "journeyStepName": "save_more",
+            "journeyStepCMSTagId": "MVRetirementStep9JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 10,
+            "followingStep": 18,
+            "precedingStep": 9,
+            "journeyStepName": "owe_less",
+            "journeyStepCMSTagId": "MVRetirementStep10JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed",
+            "answer": "{\"prioritizedDebt\":\"$\",\"additionalDebt\":\"$\"}"
+          },
+          {
+            "journeyStepId": 18,
+            "precedingStep": 10,
+            "journeyStepName": "review_your_investment_strategy",
+            "journeyStepCMSTagId": "MVRetirementStep11JSON",
+            "msgType": "journeyretirementsteps"
+          }
+        ],
+        "landingAndOverviewContent": "{\"intro\":{\"header\":\"Preparing for retirement\",\"message\":\"It's a good time to think about the next phase of your life. Find out how to get organized and take actionable steps to prepare for retirement.\",\"imgUrl\":\"assets/icon/journeys/In_Company.svg\"},\"overview\":{\"header\":\"Preparing for retirement\",\"message\":\"It's a good time to think about the next phase of your life. Find out how to get organized and take actionable steps to prepare for retirement.\",\"imgUrl\":\"assets/icon/journeys/In_Company.svg\",\"action\":{\"header\":\"Actions today to help you plan for tomorrow\",\"message\":\"Many people can feel overwhelmed as they get closer to retirement. We're here to help you with ${stepCount} actionable steps to consider.\\n\\nYou'll be able to save your responses and visit helpful articles, tools and videos along the way. Let’s start out by getting organized.\\n\\nWe'll walk you through how to set your vision for retirement and understand your finances today and in the future.\",\"buttonLabel\":\"Start Journey\"},\"summarySteps\":[{\"journeyStepId\":1,\"header\":\"You want to retire at:\",\"elements\":[{\"id\":\"imageWithValue\",\"answerId\":\"retirementAge\"}]},{\"journeyStepId\":5,\"header\":\"Your Retirement Progress\",\"elements\":[{\"id\":\"orangeMoney\"}]},{\"journeyStepId\":2,\"emptySubheader\":\"You currently have not selected any goals. Revisit this journey to select what is important to you.\",\"subheader\":\"Here's what is most important to you:\",\"header\":\"Your Goals\",\"elements\":[{\"id\":\"wordGroupSummary\",\"answerId\":\"wordGroup\"},{\"id\":\"wordGroupOtherSummary\",\"answerId\":\"otherInput\"}]},{\"journeyStepId\":6,\"subheader\":\"Your expected benefits at each age\",\"header\":\"Social Security\",\"elements\":[{\"id\":\"textFieldInputSummary\",\"answerId\":\"early\",\"label\":\"Early Retirement Age 62\"},{\"id\":\"textFieldInputSummary\",\"answerId\":\"full\",\"label\":\"Full Retirement Age\"},{\"id\":\"textFieldInputSummary\",\"answerId\":\"max\",\"label\":\"Maximum Benefit Age 72\"}]},{\"journeyStepId\":10,\"header\":\"Owe Less\",\"elements\":[{\"id\":\"textFieldInputSummary\",\"answerId\":\"prioritizedDebt\",\"label\":\"The debt you have prioritized to pay down first\"},{\"id\":\"textFieldInputSummary\",\"answerId\":\"additionalDebt\",\"label\":\"The committed amount of money you will pay each month on top of the minimum payment for this debt\"}]}]}}",
+        "resourcesContent": "{\"resources\":[{\"type\":\"webview\",\"header\":\"Articles\",\"links\":[{\"text\":\"Setting retirement goals that will help you in your golden years\",\"link\":\"https://www.voya.com/article/setting-retirement-goals-will-help-you-your-golden-years\"},{\"text\":\"Managing expenses in retirement\",\"link\":\"https://www.voya.com/article/managing-expenses-retirement\"},{\"text\":\"The art of asset allocation by age\",\"link\":\"https://www.voya.com/article/art-asset-allocation-age\"},{\"text\":\"Working with a financial professional can help you keep you goals on track\",\"link\":\"https://www.voya.com/article/working-financial-professional-can-help-you-keep-your-goals-track-0\"},{\"text\":\"Deciding when to retire\",\"link\":\"https://www.voya.com/article/deciding-when-retire\"},{\"text\":\"Voya Cares\",\"link\":\"https://www.voya.com/about-us/our-character/voya-cares-value-proposition\"}]},{\"type\":\"video\",\"header\":\"Videos\",\"links\":[{\"text\":\"Understand the basics of social security\",\"playerId\":\"kaltura_player_1644869606\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869606&entry_id=1_6tmhm7nx\"},{\"text\":\"Plan ahead for healthcare costs and coverage for retirement\",\"playerId\":\"kaltura_player_1644869642\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869642&entry_id=1_9to3way0\"},{\"text\":\"Spending and savings series prioritizing debt\",\"playerId\":\"kaltura_player_1642011427\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1642011427&entry_id=1_x0dpo35p\"},{\"text\":\"Learn how asset classes work in investing\",\"playerId\":\"kaltura_player_1644869692\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869692&entry_id=1_9sd775pl\"},{\"text\":\"Retirement income planning\",\"playerId\":\"kaltura_player_1644869723\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869723&entry_id=1_4pj5swer\"}]},{\"type\":\"webview\",\"header\":\"Tools\",\"links\":[{\"text\":\"Budget Calculator\",\"link\":\"https://www.voya.com/tool/budget-calculator\"}]}]}"
+      },
+      {
+        "journeyID": 2,
+        "steps": [
+          {
+            "journeyStepId": 11,
+            "followingStep": 12,
+            "journeyStepName": "before_we_get_started",
+            "journeyStepCMSTagId": "MVAddFamilyStep1JSON",
+            "msgType": "journeyaddingtofamilysteps"
+          },
+          {
+            "journeyStepId": 12,
+            "followingStep": 13,
+            "precedingStep": 11,
+            "journeyStepName": "plan_for_leave",
+            "journeyStepCMSTagId": "MVAddFamilyStep2JSON",
+            "msgType": "journeyaddingtofamilysteps",
+            "answer": "{\"leaveInputs\":\"[{\\\"answerId\\\":\\\"unpaidFMLAPercent\\\",\\\"value\\\":\\\"0\\\"},{\\\"answerId\\\":\\\"unpaidNonFMLAPercent\\\",\\\"value\\\":\\\"0\\\"}]\"}"
+          },
+          {
+            "journeyStepId": 13,
+            "followingStep": 14,
+            "precedingStep": 12,
+            "journeyStepName": "reevaluate_your_workplace_benefits",
+            "journeyStepCMSTagId": "MVAddFamilyStep3JSON",
+            "msgType": "journeyaddingtofamilysteps"
+          },
+          {
+            "journeyStepId": 14,
+            "followingStep": 15,
+            "precedingStep": 13,
+            "journeyStepName": "HSA_FSA",
+            "journeyStepCMSTagId": "MVAddFamilyStep4JSON",
+            "msgType": "journeyaddingtofamilysteps"
+          },
+          {
+            "journeyStepId": 15,
+            "followingStep": 16,
+            "precedingStep": 14,
+            "journeyStepName": "get_your_finances_in_order",
+            "journeyStepCMSTagId": "MVAddFamilyStep5JSON",
+            "msgType": "journeyaddingtofamilysteps",
+            "answer": "{\"monthlyBudget\":\"$1080\"}"
+          },
+          {
+            "journeyStepId": 16,
+            "followingStep": 17,
+            "precedingStep": 15,
+            "journeyStepName": "now_its_time_to_focus_on_important_actions",
+            "journeyStepCMSTagId": "MVAddFamilyStep6JSON",
+            "msgType": "journeyaddingtofamilysteps"
+          },
+          {
+            "journeyStepId": 17,
+            "followingStep": 19,
+            "precedingStep": 16,
+            "journeyStepName": "establish_an_emergency_fund",
+            "journeyStepCMSTagId": "MVAddFamilyStep7JSON",
+            "msgType": "journeyaddingtofamilysteps"
+          },
+          {
+            "journeyStepId": 19,
+            "followingStep": 20,
+            "precedingStep": 17,
+            "journeyStepName": "estate_planning_1",
+            "journeyStepCMSTagId": "MVAddFamilyStep8JSON",
+            "msgType": "journeyaddingtofamilysteps"
+          },
+          {
+            "journeyStepId": 20,
+            "followingStep": 21,
+            "precedingStep": 19,
+            "journeyStepName": "estate_planning_2",
+            "journeyStepCMSTagId": "MVAddFamilyStep9JSON",
+            "msgType": "journeyaddingtofamilysteps"
+          },
+          {
+            "journeyStepId": 21,
+            "precedingStep": 20,
+            "journeyStepName": "save_for_education",
+            "journeyStepCMSTagId": "MVAddFamilyStep10JSON",
+            "msgType": "journeyaddingtofamilysteps"
+          }
+        ],
+        "landingAndOverviewContent": "{\"intro\":{\"header\":\"Adding to your family\",\"message\":\"Having a kid changes everything. Learn how to get your finances in order when your family is growing.\",\"imgUrl\":\"assets/icon/journeys/Master_Close_Ups_Family_2.svg\"},\"overview\":{\"header\":\"Adding to your family\",\"message\":\"Having a kid changes everything. Learn how to get your finances in order when your family is growing or when you need time to care for them.\",\"imgUrl\":\"assets/icon/journeys/Master_Close_Ups_Family_2.svg\",\"action\":{\"header\":\"Actions to help your prepare for your growing family\",\"message\":\"Adding to your family takes more than just planning for sleepless nights. We're breaking down the steps to consider to help protect your loved ones and keep your finances on track. \",\"buttonLabel\":\"Start Journey\"},\"summarySteps\":[{\"journeyStepId\":15,\"header\":\"Adding to your family has increased your monthly budget by\",\"emptyValueHeader\":\"Based on what you have told us, adding to your family has not increased your monthly budget.\",\"elements\":[{\"id\":\"imageWithValue\",\"answerId\":\"monthlyBudget\",\"imageUrl\":\"assets/icon/journeys/family/step5.svg\",\"top\":\"15%\",\"left\":\"27%\",\"fontSize\":\"10vw\"}]},{\"journeyStepId\":12,\"header\":\"How do you plan on taking your leave?\",\"elements\":[{\"id\":\"tableInputSummary\",\"answerId\":\"leaveInputs\",\"totalLabel\":\"Total\",\"emptyTableText\":\"Based on what you have told us, you are not planning on taking leave at this time.\"}]},{\"journeyStepId\":20,\"header\":\"Estate planning\",\"elements\":[{\"id\":\"textFieldInputSummary\",\"answerId\":\"lifeInsurance\",\"label\":\"How much you need for life insurance\"}]},{\"journeyStepId\":21,\"header\":\"Save for education\",\"elements\":[{\"id\":\"textFieldInputSummary\",\"answerId\":\"educationSavings\",\"label\":\"Monthly amount needed for education\"}]}]}}",
+        "resourcesContent": "{\"resources\":[{\"type\":\"webview\",\"header\":\"Articles\",\"links\":[{\"text\":\"Financial planning when starting a family\",\"link\":\"https://blog.voya.com/financial-decisions/financial-planning-when-starting-family-nc\"},{\"text\":\"Saving for college and on your taxes: Understanding 529 plans\",\"link\":\"https://blog.voya.com/saving-college-and-your-taxes-understanding-529-plans-nc\"},{\"text\":\"How to choose a health insurance policy\",\"link\":\"https://www.voya.com/article/how-choose-health-insurance-policy\"},{\"text\":\"Having a child? Change your financial planning to suit\",\"link\":\"https://www.voya.com/article/having-child\"},{\"text\":\"5 ways new parents can go about estate planning\",\"link\":\"https://www.voya.com/article/5-ways-new-parents-can-go-about-estate-planning\"},{\"text\":\"Beneficiaries: Who gets your assets?\",\"link\":\"https://www.voya.com/article/beneficiaries-who-gets-your-assets\"},{\"text\":\"What are the types of life insurance?\",\"link\":\"https://www.voya.com/article/what-are-types-life-insurance\"}]},{\"type\":\"video\",\"header\":\"Videos\",\"links\":[{\"text\":\"Health Savings Accounts\",\"playerId\":\"kaltura_player_1644443887\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644443887&entry_id=1_vk5mvfhi\"},{\"text\":\"Building up your emergency fund\",\"playerId\":\"kaltura_player_1644444036\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644444036&entry_id=1_2lal2x6r\"},{\"text\":\"Protect your finances and family with an estate plan\",\"playerId\":\"kaltura_player_1644444067\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644444067&entry_id=1_queau17r\"},{\"text\":\"Saving for college\",\"playerId\":\"kaltura_player_1652709909\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1652709909&entry_id=1_ol00fimu\"}]},{\"type\":\"webview\",\"header\":\"Tools\",\"links\":[{\"text\":\"College savings calculator\",\"link\":\"https://www.voya.com/tool/college-savings-calculator\"},{\"text\":\"Budget calculator\",\"link\":\"https://www.voya.com/tool/budget-calculator\"},{\"text\":\"Life insurance calculator\",\"link\":\"https://www.voya.com/tool/life-insurance-calculator\"}]}]}"
+      },
+      {
+        "journeyID": 3,
+        "steps": [
+          {
+            "journeyStepId": 1,
+            "followingStep": 2,
+            "journeyStepName": "when_do_you_want_to_retire",
+            "journeyStepCMSTagId": "MVRetirementStep1JSON",
+            "msgType": "journeyretirementsteps",
+            "answer": "{\"retirementAge\":\"67\"}"
+          },
+          {
+            "journeyStepId": 2,
+            "followingStep": 3,
+            "precedingStep": 1,
+            "journeyStepName": "what_is_most_important_to_you",
+            "journeyStepCMSTagId": "MVRetirementStep2JSON",
+            "msgType": "journeyretirementsteps",
+            "answer": "{\"wordGroup\":\"[{\\\"text\\\":\\\"Travel\\\",\\\"id\\\":\\\"travel\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/travel.svg\\\"},{\\\"text\\\":\\\"Volunteer\\\",\\\"id\\\":\\\"volunteer\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/volunteer.svg\\\"},{\\\"text\\\":\\\"Be debt free\\\",\\\"id\\\":\\\"debt_free\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/debtFree.svg\\\"},{\\\"text\\\":\\\"Spend more time with family\\\",\\\"id\\\":\\\"family_time\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/family.svg\\\"},{\\\"text\\\":\\\"Start new career\\\",\\\"id\\\":\\\"new_career\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/startNewCareer.svg\\\"},{\\\"text\\\":\\\"Learn new skill\\\",\\\"id\\\":\\\"new_skill\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/learnNewSkill.svg\\\"},{\\\"text\\\":\\\"Home renovations\\\",\\\"id\\\":\\\"home_renovations\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/In_Company.svg\\\"},{\\\"text\\\":\\\"Invest in business\\\",\\\"id\\\":\\\"invest_business\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/investInBusiness.svg\\\"},{\\\"text\\\":\\\"Move somewhere new\\\",\\\"id\\\":\\\"move\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/moveSomewhereNew.svg\\\"},{\\\"text\\\":\\\"Gift money to friends\\\",\\\"id\\\":\\\"gift_money\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/moneyGift.svg\\\"},{\\\"text\\\":\\\"Start a business\\\",\\\"id\\\":\\\"start_business\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/startBusiness.svg\\\"},{\\\"text\\\":\\\"New hobby\\\",\\\"id\\\":\\\"new_hobby\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/newHobby.svg\\\"},{\\\"text\\\":\\\"Treat yourself to a big purchase\\\",\\\"id\\\":\\\"big_purchase\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/bigPurchase.svg\\\"}]\"}"
+          },
+          {
+            "journeyStepId": 3,
+            "followingStep": 4,
+            "precedingStep": 2,
+            "journeyStepName": "lets_check_in_on_your_savings",
+            "journeyStepCMSTagId": "MVRetirementStep3JSON",
+            "msgType": "journeyretirementsteps"
+          },
+          {
+            "journeyStepId": 4,
+            "followingStep": 5,
+            "precedingStep": 3,
+            "journeyStepName": "estimate_your_expenses_in_retirement",
+            "journeyStepCMSTagId": "MVRetirementStep4JSON",
+            "msgType": "journeyretirementsteps"
+          },
+          {
+            "journeyStepId": 5,
+            "followingStep": 6,
+            "precedingStep": 4,
+            "journeyStepName": "check_your_retirement_savings_progress",
+            "journeyStepCMSTagId": "MVRetirementStep5JSON",
+            "msgType": "journeyretirementsteps"
+          },
+          {
+            "journeyStepId": 6,
+            "followingStep": 7,
+            "precedingStep": 5,
+            "journeyStepName": "social_security",
+            "journeyStepCMSTagId": "MVRetirementStep6JSON",
+            "msgType": "journeyretirementsteps",
+            "answer": "{\"early\":\"$56\",\"full\":\"$\",\"max\":\"$34\"}"
+          },
+          {
+            "journeyStepId": 7,
+            "followingStep": 8,
+            "precedingStep": 6,
+            "journeyStepName": "plan_for_medical_expenses",
+            "journeyStepCMSTagId": "MVRetirementStep7JSON",
+            "msgType": "journeyretirementsteps"
+          },
+          {
+            "journeyStepId": 8,
+            "followingStep": 9,
+            "precedingStep": 7,
+            "journeyStepName": "now_its_time_to_focus_on_important_actions",
+            "journeyStepCMSTagId": "MVRetirementStep8JSON",
+            "msgType": "journeyretirementsteps"
+          },
+          {
+            "journeyStepId": 9,
+            "followingStep": 10,
+            "precedingStep": 8,
+            "journeyStepName": "save_more",
+            "journeyStepCMSTagId": "MVRetirementStep9JSON",
+            "msgType": "journeyretirementsteps"
+          },
+          {
+            "journeyStepId": 10,
+            "followingStep": 18,
+            "precedingStep": 9,
+            "journeyStepName": "owe_less",
+            "journeyStepCMSTagId": "MVRetirementStep10JSON",
+            "msgType": "journeyretirementsteps",
+            "answer": "{\"prioritizedDebt\":\"$\",\"additionalDebt\":\"$\"}"
+          },
+          {
+            "journeyStepId": 18,
+            "precedingStep": 10,
+            "journeyStepName": "review_your_investment_strategy",
+            "journeyStepCMSTagId": "MVRetirementStep11JSON",
+            "msgType": "journeyretirementsteps"
+          }
+        ],
+        "landingAndOverviewContent": "{\"intro\":{\"header\":\"Preparing for retirement\",\"message\":\"It's a good time to think about the next phase of your life. Find out how to get organized and take actionable steps to prepare for retirement.\",\"imgUrl\":\"assets/icon/journeys/In_Company.svg\"},\"overview\":{\"header\":\"Preparing for retirement\",\"message\":\"It's a good time to think about the next phase of your life. Find out how to get organized and take actionable steps to prepare for retirement.\",\"imgUrl\":\"assets/icon/journeys/In_Company.svg\",\"action\":{\"header\":\"Actions today to help you plan for tomorrow\",\"message\":\"Many people can feel overwhelmed as they get closer to retirement. We're here to help you with ${stepCount} actionable steps to consider.\\n\\nYou'll be able to save your responses and visit helpful articles, tools and videos along the way. Let’s start out by getting organized.\\n\\nWe'll walk you through how to set your vision for retirement and understand your finances today and in the future.\",\"buttonLabel\":\"Start Journey\"},\"summarySteps\":[{\"journeyStepId\":1,\"header\":\"You want to retire at:\",\"elements\":[{\"id\":\"imageWithValue\",\"answerId\":\"retirementAge\"}]},{\"journeyStepId\":5,\"header\":\"Your Retirement Progress\",\"elements\":[{\"id\":\"orangeMoney\"}]},{\"journeyStepId\":2,\"emptySubheader\":\"You currently have not selected any goals. Revisit this journey to select what is important to you.\",\"subheader\":\"Here's what is most important to you:\",\"header\":\"Your Goals\",\"elements\":[{\"id\":\"wordGroupSummary\",\"answerId\":\"wordGroup\"},{\"id\":\"wordGroupOtherSummary\",\"answerId\":\"otherInput\"}]},{\"journeyStepId\":6,\"subheader\":\"Your expected benefits at each age\",\"header\":\"Social Security\",\"elements\":[{\"id\":\"textFieldInputSummary\",\"answerId\":\"early\",\"label\":\"Early Retirement Age 62\"},{\"id\":\"textFieldInputSummary\",\"answerId\":\"full\",\"label\":\"Full Retirement Age\"},{\"id\":\"textFieldInputSummary\",\"answerId\":\"max\",\"label\":\"Maximum Benefit Age 72\"}]},{\"journeyStepId\":10,\"header\":\"Owe Less\",\"elements\":[{\"id\":\"textFieldInputSummary\",\"answerId\":\"prioritizedDebt\",\"label\":\"The debt you have prioritized to pay down first\"},{\"id\":\"textFieldInputSummary\",\"answerId\":\"additionalDebt\",\"label\":\"The committed amount of money you will pay each month on top of the minimum payment for this debt\"}]}]}}",
+        "resourcesContent": "{\"resources\":[{\"type\":\"webview\",\"header\":\"Articles\",\"links\":[{\"text\":\"Setting retirement goals that will help you in your golden years\",\"link\":\"https://www.voya.com/article/setting-retirement-goals-will-help-you-your-golden-years\"},{\"text\":\"Managing expenses in retirement\",\"link\":\"https://www.voya.com/article/managing-expenses-retirement\"},{\"text\":\"The art of asset allocation by age\",\"link\":\"https://www.voya.com/article/art-asset-allocation-age\"},{\"text\":\"Working with a financial professional can help you keep you goals on track\",\"link\":\"https://www.voya.com/article/working-financial-professional-can-help-you-keep-your-goals-track-0\"},{\"text\":\"Deciding when to retire\",\"link\":\"https://www.voya.com/article/deciding-when-retire\"},{\"text\":\"Voya Cares\",\"link\":\"https://www.voya.com/about-us/our-character/voya-cares-value-proposition\"}]},{\"type\":\"video\",\"header\":\"Videos\",\"links\":[{\"text\":\"Understand the basics of social security\",\"playerId\":\"kaltura_player_1644869606\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869606&entry_id=1_6tmhm7nx\"},{\"text\":\"Plan ahead for healthcare costs and coverage for retirement\",\"playerId\":\"kaltura_player_1644869642\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869642&entry_id=1_9to3way0\"},{\"text\":\"Spending and savings series prioritizing debt\",\"playerId\":\"kaltura_player_1642011427\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1642011427&entry_id=1_x0dpo35p\"},{\"text\":\"Learn how asset classes work in investing\",\"playerId\":\"kaltura_player_1644869692\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869692&entry_id=1_9sd775pl\"},{\"text\":\"Retirement income planning\",\"playerId\":\"kaltura_player_1644869723\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869723&entry_id=1_4pj5swer\"}]},{\"type\":\"webview\",\"header\":\"Tools\",\"links\":[{\"text\":\"Budget Calculator\",\"link\":\"https://www.voya.com/tool/budget-calculator\"}]}]}"
+      },
+      {
+        "journeyID": 4,
+        "steps": [
+          {
+            "journeyStepId": 22,
+            "followingStep": 23,
+            "journeyStepName": "UE_how_prepared_are_you",
+            "journeyStepCMSTagId": "MVUnexpectedExpensesStep1JSON",
+            "msgType": "journeyunexpectedexpensesteps",
+            "content": {
+              "pageElements": [
+                {
+                  "id": "intro",
+                  "header": "How prepared are you?",
+                  "description": "Today we're going to set a saving goal for you to make sure you're protected from a variety of unexpected expenses."
+                },
+                {
+                  "id": "image",
+                  "imageUrl": "assets/icon/journeys/unexpectedExpenses/step1.svg",
+                  "altText": ""
+                },
+                {
+                  "id": "table",
+                  "header": "Possible Expenses",
+                  "rows": [
+                    {
+                      "answer": "$400",
+                      "label": "Car Repair"
+                    },
+                    {
+                      "answer": "$2,500",
+                      "label": "Roof Repair"
+                    },
+                    {
+                      "answer": "$7,000",
+                      "label": "Death in The Family"
+                    },
+                    {
+                      "answer": "$5,000",
+                      "label": "Medical Expenses"
+                    },
+                    {
+                      "answer": "4 Weeks",
+                      "label": "Loss of Income"
+                    }
+                  ]
+                },
+                {
+                  "id": "input",
+                  "answerId": "startedSaving",
+                  "type": "yesNoInput",
+                  "label": "Have you started saving for unexpected expenses yet?",
+                  "options": [
+                    {
+                      "label": "No, I haven't",
+                      "id": "startedSavingNo"
+                    },
+                    {
+                      "label": "Yes, I have",
+                      "id": "startedSavingYes",
+                      "subInputs": [
+                        {
+                          "id": "input",
+                          "answerId": "savedSoFar",
+                          "type": "textField",
+                          "label": "How much money have you saved so far?",
+                          "validationRules": {
+                            "type": "dollar",
+                            "min": 0,
+                            "max": 9999999,
+                            "decimalPlaces": 0
+                          },
+                          "default": "$"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "button",
+                  "label": "Update",
+                  "link": "default"
+                }
+              ],
+              "helpCards": [
+                {
+                  "header": "Why do I need an emergency fund?",
+                  "description": "Check out this quick read for more information on why you need an emergency fund.",
+                  "link": "https://cdn1-originals.webdamdb.com/13947_135888277?cache=1659638449&response-content-disposition=inline;filename=Feature-not-currently-available.jpg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTM5NDdfMTM1ODg4Mjc3P2NhY2hlPTE2NTk2Mzg0NDkmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9RmVhdHVyZS1ub3QtY3VycmVudGx5LWF2YWlsYWJsZS5qcGciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=U4aIpVeDZJepmaOCdNgCA5Ny~Usz3kmxg8P~WYJYf-JXoCZEVp0f853pzasZ0MFB5S93QRXpUPAYcQ2In6rYmA8GhqIY5CAgYiQtZ2LGXhiQbLIPArfp6txoyWlBlN2ySkady7pBXcissD1k-L4poN0xqcvtNhiNzno0zOqBVEd2TQ-qzWowvXMIl6~Wx6GN7AeYZ64hsQ-WJY2mJF3qhLGHP9EP0uLNqP1tTTFrgLEnAIlgsAgQ1Teu6NHQaKtk7ZDaIo9xBywNq7YGMkvF6a1-m3XUJnKNxRCJzj4BYk0gWIfa6Sg1oaJDIP4eYIJAajlyZA-E-YKD8xHQ2NwV3g__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA",
+                  "imageUrl": "assets/icon/journeys/retirement/calendar.svg",
+                  "altText": ""
+                }
+              ]
+            }
+          },
+          {
+            "journeyStepId": 23,
+            "followingStep": 24,
+            "precedingStep": 22,
+            "journeyStepName": "UE_more_prepared",
+            "journeyStepCMSTagId": "MVUnexpectedExpensesStep2JSON",
+            "msgType": "journeyunexpectedexpensesteps"
+          },
+          {
+            "journeyStepId": 24,
+            "followingStep": 25,
+            "precedingStep": 23,
+            "journeyStepName": "UE_our_recommendations",
+            "journeyStepCMSTagId": "MVUnexpectedExpensesStep3JSON",
+            "msgType": "journeyunexpectedexpensesteps"
+          },
+          {
+            "journeyStepId": 25,
+            "precedingStep": 24,
+            "journeyStepName": "UE_link_your_account",
+            "journeyStepCMSTagId": "MVUnexpectedExpensesStep4JSON",
+            "msgType": "journeyunexpectedexpensesteps"
+          }
+        ],
+        "landingAndOverviewContent": "{\"intro\":{\"header\":\"Prepare for Unexpected Expenses\",\"message\":\"An emergency fund can help give you confindence and control over your finances if you were faced with the unexpected.\",\"imgUrl\":\"assets/icon/journeys/unexpectedExpenses/ue_overview.svg\"},\"overview\":{\"header\":\"Prepare for Unexpected Expenses\",\"message\":\"You never know what will come your way. If you're faced with an unexpected financial need, an emergency fund can help give you peace of mind and control over your finances.\",\"imgUrl\":\"assets/icon/journeys/unexpectedExpenses/ue_overview.svg\",\"action\":{\"header\":\"We'll help you:\",\"messages\":[\"Understand different types of emergency needs\",\"Figure out how much you'll need to save\",\"Create a plan to reach your savings goals\",\"Track your progress and find ways to save even more\"],\"buttonLabel\":\"Let's Go!\"},\"summarySteps\":[]},\"service\":\"UnExpectedService\"}",
+        "parsedLandingAndOverviewContent": {
+          "intro": {
+            "header": "Prepare for Unexpected Expenses",
+            "message": "An emergency fund can help give you confindence and control over your finances if you were faced with the unexpected.",
+            "imgUrl": "assets/icon/journeys/unexpectedExpenses/ue_overview.svg"
+          },
+          "overview": {
+            "header": "Prepare for Unexpected Expenses",
+            "message": "You never know what will come your way. If you're faced with an unexpected financial need, an emergency fund can help give you peace of mind and control over your finances.",
+            "imgUrl": "assets/icon/journeys/unexpectedExpenses/ue_overview.svg",
+            "action": {
+              "header": "We'll help you:",
+              "messages": [
+                "Understand different types of emergency needs",
+                "Figure out how much you'll need to save",
+                "Create a plan to reach your savings goals",
+                "Track your progress and find ways to save even more"
+              ],
+              "buttonLabel": "Let's Go!"
+            },
+            "summarySteps": []
+          }
+        },
+        "parsedResourcesContent": null,
+        "parsedComingSoonContent": null
+      }
+      
+    ],
+    "recommended": [
+      {
+        "journeyID": 1,
+        "steps": [
+          {
+            "journeyStepId": 1,
+            "followingStep": 2,
+            "journeyStepName": "when_do_you_want_to_retire",
+            "journeyStepCMSTagId": "MVRetirementStep1JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed",
+            "answer": "{\"retirementAge\":\"67\"}"
+          },
+          {
+            "journeyStepId": 2,
+            "followingStep": 3,
+            "precedingStep": 1,
+            "journeyStepName": "what_is_most_important_to_you",
+            "journeyStepCMSTagId": "MVRetirementStep2JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed",
+            "answer": "{\"wordGroup\":\"[{\\\"text\\\":\\\"Travel\\\",\\\"id\\\":\\\"travel\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/travel.svg\\\"},{\\\"text\\\":\\\"Volunteer\\\",\\\"id\\\":\\\"volunteer\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/volunteer.svg\\\"},{\\\"text\\\":\\\"Be debt free\\\",\\\"id\\\":\\\"debt_free\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/debtFree.svg\\\"},{\\\"text\\\":\\\"Spend more time with family\\\",\\\"id\\\":\\\"family_time\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/family.svg\\\"},{\\\"text\\\":\\\"Start new career\\\",\\\"id\\\":\\\"new_career\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/startNewCareer.svg\\\"},{\\\"text\\\":\\\"Learn new skill\\\",\\\"id\\\":\\\"new_skill\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/learnNewSkill.svg\\\"},{\\\"text\\\":\\\"Home renovations\\\",\\\"id\\\":\\\"home_renovations\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/In_Company.svg\\\"},{\\\"text\\\":\\\"Invest in business\\\",\\\"id\\\":\\\"invest_business\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/investInBusiness.svg\\\"},{\\\"text\\\":\\\"Move somewhere new\\\",\\\"id\\\":\\\"move\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/moveSomewhereNew.svg\\\"},{\\\"text\\\":\\\"Gift money to friends\\\",\\\"id\\\":\\\"gift_money\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/moneyGift.svg\\\"},{\\\"text\\\":\\\"Start a business\\\",\\\"id\\\":\\\"start_business\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/startBusiness.svg\\\"},{\\\"text\\\":\\\"New hobby\\\",\\\"id\\\":\\\"new_hobby\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/newHobby.svg\\\"},{\\\"text\\\":\\\"Treat yourself to a big purchase\\\",\\\"id\\\":\\\"big_purchase\\\",\\\"imageUrl\\\":\\\"assets/icon/journeys/retirement/wordGroupIcons/bigPurchase.svg\\\"}]\"}"
+          },
+          {
+            "journeyStepId": 3,
+            "followingStep": 4,
+            "precedingStep": 2,
+            "journeyStepName": "lets_check_in_on_your_savings",
+            "journeyStepCMSTagId": "MVRetirementStep3JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 4,
+            "followingStep": 5,
+            "precedingStep": 3,
+            "journeyStepName": "estimate_your_expenses_in_retirement",
+            "journeyStepCMSTagId": "MVRetirementStep4JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 5,
+            "followingStep": 6,
+            "precedingStep": 4,
+            "journeyStepName": "check_your_retirement_savings_progress",
+            "journeyStepCMSTagId": "MVRetirementStep5JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 6,
+            "followingStep": 7,
+            "precedingStep": 5,
+            "journeyStepName": "social_security",
+            "journeyStepCMSTagId": "MVRetirementStep6JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed",
+            "answer": "{\"early\":\"$56\",\"full\":\"$\",\"max\":\"$34\"}"
+          },
+          {
+            "journeyStepId": 7,
+            "followingStep": 8,
+            "precedingStep": 6,
+            "journeyStepName": "plan_for_medical_expenses",
+            "journeyStepCMSTagId": "MVRetirementStep7JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 8,
+            "followingStep": 9,
+            "precedingStep": 7,
+            "journeyStepName": "now_its_time_to_focus_on_important_actions",
+            "journeyStepCMSTagId": "MVRetirementStep8JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 9,
+            "followingStep": 10,
+            "precedingStep": 8,
+            "journeyStepName": "save_more",
+            "journeyStepCMSTagId": "MVRetirementStep9JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed"
+          },
+          {
+            "journeyStepId": 10,
+            "followingStep": 18,
+            "precedingStep": 9,
+            "journeyStepName": "owe_less",
+            "journeyStepCMSTagId": "MVRetirementStep10JSON",
+            "msgType": "journeyretirementsteps",
+            "status": "Completed",
+            "answer": "{\"prioritizedDebt\":\"$\",\"additionalDebt\":\"$\"}"
+          },
+          {
+            "journeyStepId": 18,
+            "precedingStep": 10,
+            "journeyStepName": "review_your_investment_strategy",
+            "journeyStepCMSTagId": "MVRetirementStep11JSON",
+            "msgType": "journeyretirementsteps"
+          }
+        ],
+        "landingAndOverviewContent": "{\"intro\":{\"header\":\"Preparing for retirement\",\"message\":\"It's a good time to think about the next phase of your life. Find out how to get organized and take actionable steps to prepare for retirement.\",\"imgUrl\":\"assets/icon/journeys/In_Company.svg\"},\"overview\":{\"header\":\"Preparing for retirement\",\"message\":\"It's a good time to think about the next phase of your life. Find out how to get organized and take actionable steps to prepare for retirement.\",\"imgUrl\":\"assets/icon/journeys/In_Company.svg\",\"action\":{\"header\":\"Actions today to help you plan for tomorrow\",\"message\":\"Many people can feel overwhelmed as they get closer to retirement. We're here to help you with ${stepCount} actionable steps to consider.\\n\\nYou'll be able to save your responses and visit helpful articles, tools and videos along the way. Let’s start out by getting organized.\\n\\nWe'll walk you through how to set your vision for retirement and understand your finances today and in the future.\",\"buttonLabel\":\"Start Journey\"},\"summarySteps\":[{\"journeyStepId\":1,\"header\":\"You want to retire at:\",\"elements\":[{\"id\":\"imageWithValue\",\"answerId\":\"retirementAge\"}]},{\"journeyStepId\":5,\"header\":\"Your Retirement Progress\",\"elements\":[{\"id\":\"orangeMoney\"}]},{\"journeyStepId\":2,\"emptySubheader\":\"You currently have not selected any goals. Revisit this journey to select what is important to you.\",\"subheader\":\"Here's what is most important to you:\",\"header\":\"Your Goals\",\"elements\":[{\"id\":\"wordGroupSummary\",\"answerId\":\"wordGroup\"},{\"id\":\"wordGroupOtherSummary\",\"answerId\":\"otherInput\"}]},{\"journeyStepId\":6,\"subheader\":\"Your expected benefits at each age\",\"header\":\"Social Security\",\"elements\":[{\"id\":\"textFieldInputSummary\",\"answerId\":\"early\",\"label\":\"Early Retirement Age 62\"},{\"id\":\"textFieldInputSummary\",\"answerId\":\"full\",\"label\":\"Full Retirement Age\"},{\"id\":\"textFieldInputSummary\",\"answerId\":\"max\",\"label\":\"Maximum Benefit Age 72\"}]},{\"journeyStepId\":10,\"header\":\"Owe Less\",\"elements\":[{\"id\":\"textFieldInputSummary\",\"answerId\":\"prioritizedDebt\",\"label\":\"The debt you have prioritized to pay down first\"},{\"id\":\"textFieldInputSummary\",\"answerId\":\"additionalDebt\",\"label\":\"The committed amount of money you will pay each month on top of the minimum payment for this debt\"}]}]}}",
+        "resourcesContent": "{\"resources\":[{\"type\":\"webview\",\"header\":\"Articles\",\"links\":[{\"text\":\"Setting retirement goals that will help you in your golden years\",\"link\":\"https://www.voya.com/article/setting-retirement-goals-will-help-you-your-golden-years\"},{\"text\":\"Managing expenses in retirement\",\"link\":\"https://www.voya.com/article/managing-expenses-retirement\"},{\"text\":\"The art of asset allocation by age\",\"link\":\"https://www.voya.com/article/art-asset-allocation-age\"},{\"text\":\"Working with a financial professional can help you keep you goals on track\",\"link\":\"https://www.voya.com/article/working-financial-professional-can-help-you-keep-your-goals-track-0\"},{\"text\":\"Deciding when to retire\",\"link\":\"https://www.voya.com/article/deciding-when-retire\"},{\"text\":\"Voya Cares\",\"link\":\"https://www.voya.com/about-us/our-character/voya-cares-value-proposition\"}]},{\"type\":\"video\",\"header\":\"Videos\",\"links\":[{\"text\":\"Understand the basics of social security\",\"playerId\":\"kaltura_player_1644869606\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869606&entry_id=1_6tmhm7nx\"},{\"text\":\"Plan ahead for healthcare costs and coverage for retirement\",\"playerId\":\"kaltura_player_1644869642\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869642&entry_id=1_9to3way0\"},{\"text\":\"Spending and savings series prioritizing debt\",\"playerId\":\"kaltura_player_1642011427\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1642011427&entry_id=1_x0dpo35p\"},{\"text\":\"Learn how asset classes work in investing\",\"playerId\":\"kaltura_player_1644869692\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869692&entry_id=1_9sd775pl\"},{\"text\":\"Retirement income planning\",\"playerId\":\"kaltura_player_1644869723\",\"videoUrl\":\"https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/48794683/partner_id/1234081?iframeembed=true&playerId=kaltura_player_1644869723&entry_id=1_4pj5swer\"}]},{\"type\":\"webview\",\"header\":\"Tools\",\"links\":[{\"text\":\"Budget Calculator\",\"link\":\"https://www.voya.com/tool/budget-calculator\"}]}]}"
+      }
+    ]
+  }

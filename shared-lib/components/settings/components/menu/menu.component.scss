@@ -1,0 +1,106 @@
+ion-item {
+  @mixin menu-item($isDesktop) {
+    .menu-item {
+      @if ($isDesktop) {
+        background: var(-ion-color-white);
+        padding: 23px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      } @else {
+        padding: 23px 0;
+        border-bottom: 1px solid var(--color-lightgrey);
+      }
+      --detail-icon-color: var(--ion-color-button);
+      --detail-icon-opacity: 1;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1px;
+      height: 72px;
+      color: var(--toggle-txt-color);
+      .item-inner {
+        height: 24px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      @if ($isDesktop) {
+        .desktop-menu-label {
+          margin: auto;
+          color: var(--primary-colors-voya-dark-blue);
+          span {
+            display: none;
+          }
+        }
+      } @else {
+        .menu-label {
+          margin-top: 4px;
+          padding-left: 2px;
+        }
+      }
+      .ion-txt {
+        margin: auto;
+      }
+    }
+  }
+  @mixin menu-icon {
+    .menu-icon {
+      max-width: 35px;
+      margin: auto;
+    }
+  }
+  &.mobile-menu {
+    border-radius: 12px;
+    margin: 0px 10px 0 20px;
+    padding-top: 0px;
+    --ion-background-color: transparent;
+    .menu-items {
+      width: 100%;
+      @include menu-item(false);
+      .not-active,
+      .active {
+        cursor: pointer;
+        flex-direction: row;
+        align-items: center;
+        padding: 25px 0px;
+        border-bottom: 1px solid var(--ion-item-line);
+        bottom: 85.29%;
+        visibility: inherit;
+        @include menu-icon;
+      }
+    }
+  }
+  &.desktop-menu {
+    @mixin active-notActive-styles($active) {
+      padding: 20px;
+      @if ($active) {
+        width: 412px;
+      } @else {
+        width: 374px;
+      }
+      cursor: pointer;
+      flex-direction: row;
+      align-items: center;
+      bottom: 85.29%;
+      background: var(--ion-color-white);
+      border-radius: 10px;
+      margin: 20px 0px;
+      box-shadow: var(--card-box-shadow);
+      visibility: inherit;
+      height: 64px;
+    }
+    --ion-background-color: transparent;
+    --inner-padding-end: 0px !important;
+    .menu-items {
+      width: 100%;
+      @include menu-item(true);
+      .active {
+        @include active-notActive-styles(true);
+        @include menu-icon;
+      }
+      .not-active {
+        @include menu-icon;
+        @include active-notActive-styles(false);
+      }
+    }
+  }
+}

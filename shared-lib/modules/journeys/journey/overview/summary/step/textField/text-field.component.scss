@@ -1,0 +1,16 @@
+div {
+  display: flex;
+  justify-content: space-between;
+
+  ion-text {
+    font-size: 16px;
+    color: var(--primary-colors-voya-black);
+    width: 60%;
+
+    &.answer {
+      width: 40%;
+      font-weight: bold;
+      text-align: right;
+    }
+  }
+}

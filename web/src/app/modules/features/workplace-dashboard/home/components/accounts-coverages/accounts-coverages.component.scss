@@ -1,0 +1,71 @@
+@import '../../../../../../../../../styles/mediaVariables.scss';
+:host {
+  .view-card {
+    @include desktop {
+      margin-right: 0px;
+    }
+    @include tablet {
+      margin: 20px 0px;
+    }
+    .accounts-coverages {
+      padding: 20px;
+      @include tablet {
+        display: none;
+      }
+    }
+    .responsive-accounts-coverages {
+      padding: 20px;
+      @include desktop {
+        display: none;
+      }
+      .tabs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-weight: 700;
+        font-size: 16px;
+        margin: 0 auto;
+        ion-col {
+          &#accounts-col {
+            @media screen and (max-width: 360px) {
+              max-width: 100px;
+            }
+            @media screen and (min-width: 361px) {
+              max-width: 120px;
+            }
+          }
+          &#claim-coverages-col {
+            width: 215px;
+          }
+          .tab-name {
+            color: var(--primary-colors-voya-black);
+          }
+          .selected-tab {
+            text-decoration: underline;
+            text-decoration-color: var(--ion-tab-ripple-selected-bg-color);
+            color: var(--ion-color-btncolor);
+            text-decoration-thickness: 4px;
+            text-underline-offset: 8px;
+          }
+        }
+        .tab-col-size {
+          width: 154px;
+          text-align: center;
+        }
+      }
+      .tab-content {
+        margin-top: 56px;
+        width: 100%;
+        @media screen and (max-width: 920px) {
+          margin-top: 25px;
+        }
+      }
+    }
+    .visible-coverage {
+      @media screen and (min-width: 921px) {
+        max-width: 416px;
+        margin-right: 16px;
+      }
+    }
+  }
+}

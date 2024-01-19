@@ -1,0 +1,29 @@
+<ion-card
+  class="card-background"
+  id="{{ elementID }}"
+  (click)="openQualtricsEmail()"
+  (keyup.enter)="openQualtricsEmail()"
+  tabindex="0"
+  [ngClass]="isWeb ? 'web' : 'mobile'"
+>
+  <ion-row>
+    <ion-col class="email-logo">
+      <img
+        src="assets/icon/settings/Email.svg"
+        class="EmailImage"
+        alt="email"
+        automation-id="email-image"
+      />
+    </ion-col>
+    <ion-col class="email-text" automation-id="email-text">
+      <ion-text class="EmailText">{{
+        helpPageJSON?.StillHaveQuestionsTile.questionsText
+      }}</ion-text>
+    </ion-col>
+    <ion-col class="email-link">
+      <span tabindex="0" automation-id="helpEmailLink" class="helpEmailLink">{{
+        helpPageJSON?.StillHaveQuestionsTile.helpEmailText
+      }}</span>
+    </ion-col>
+  </ion-row>
+</ion-card>

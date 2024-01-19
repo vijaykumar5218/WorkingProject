@@ -1,0 +1,18 @@
+<app-mx-widget
+  [widgetType]="element.widgetType"
+  [height]="'400px'"
+  [tagName]="'journeyMxWidget' + element.idSuffix + randomStr"
+></app-mx-widget>
+<ion-button
+  size="small"
+  [id]="'journeyMxWidgetViewMore' + element.idSuffix"
+  class="font-18"
+  shape="round"
+  expand="block"
+  color="btncolor"
+  fill="outline"
+  (click)="viewMoreClicked()"
+  *ngIf="element.showWidgetButton"
+>
+  {{ element.label }}
+</ion-button>

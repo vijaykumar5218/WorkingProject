@@ -1,0 +1,64 @@
+{
+	"filterList": [{
+		"label": "Network",
+		"values": [{
+			"name": "In Network",
+			"key": "inNetwork"
+		}, {
+			"name": "Out of Network",
+			"key": "OutNetwork"
+		}]
+	}, {
+		"label": "Category",
+		"values": [{
+			"name": "Preferred Drugs",
+			"key": "preferredDrugs"
+		}, {
+			"name": "Outpatient Labs",
+			"key": "outpatientLabPaths"
+		}, {
+			"name": "Specialist Care",
+			"key": "specialVisits"
+		}, {
+			"name": "Preventative Care",
+			"key": "preventive"
+		}, {
+			"name": "Generic Drugs",
+			"key": "genericDrugs"
+		}, {
+			"name": "X-rays",
+			"key": "outpatientXrays"
+		}, {
+			"name": "Primary Care",
+			"key": "primaryVisits"
+		}, {
+			"name": "Inpatient Care",
+			"key": "inpatientHosptialCares"
+		}, {
+			"name": "ER Services",
+			"key": "emergencyRoomServices"
+		}, {
+			"name": "Outpatient Surgery",
+			"key": "outpatientSurgery"
+		}, {
+			"name": "Other Services",
+			"key": "other"
+		}]
+	}],
+	"sortList": [{
+		"label": "Sort By",
+		"values": [{
+			"name": "Ascending Date",
+			"value": "asc"
+		}, {
+			"name": "Descending Date",
+			"value": "dsc"
+		}, {
+			"name": "Lowest Claim",
+			"value": "low"
+		}, {
+			"name": "Highest Claim",
+			"value": "high"
+		}]
+	}]
+}

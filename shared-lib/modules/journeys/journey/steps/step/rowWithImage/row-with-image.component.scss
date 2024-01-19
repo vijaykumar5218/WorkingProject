@@ -1,0 +1,48 @@
+@import '../../../../../../../styles/mediaVariables.scss';
+
+:host {
+  display: block;
+  div {
+    display: flex;
+
+    &.desc-answer-container {
+      flex-grow: 0;
+      width: 100%;
+
+      span {
+        font-size: 18px;
+        color: var(--primary-colors-voya-black);
+
+        margin: auto 0px;
+        white-space: pre-wrap;
+
+        @include mobile {
+          margin: unset;
+        }
+
+        &.answer {
+          font-size: 24px;
+          font-weight: 600;
+          padding-left: 10px;
+          margin-left: auto;
+        }
+      }
+    }
+
+    &.img-container {
+      min-width: 43px;
+      margin-right: 7px;
+      align-items: flex-start;
+
+      span {
+        font-size: 18px;
+        margin-left: 10px;
+        font-weight: 600;
+        color: var(--primary-colors-voya-black);
+      }
+    }
+  }
+  .with-header {
+    flex-direction: column;
+  }
+}

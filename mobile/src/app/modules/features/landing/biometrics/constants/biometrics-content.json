@@ -1,0 +1,6 @@
+{
+  "header": "Enable Biometric Recognition",
+  "subHeader": "Would you like to enable biometric recognition on this device? This will make logging into myVoyage and accessing your account fast and secure.",
+  "continue": "Continue",
+  "biometricsError": "We have run into an error enabling biometrics, please try again later"
+}

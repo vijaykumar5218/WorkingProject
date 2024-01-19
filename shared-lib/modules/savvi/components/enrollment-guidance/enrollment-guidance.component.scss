@@ -1,0 +1,13 @@
+div {
+  height: 85%;
+  display: flex;
+
+  v-icon {
+    cursor: pointer;
+  }
+
+  iframe {
+    margin-top: 95px;
+    width: 100%;
+  }
+}

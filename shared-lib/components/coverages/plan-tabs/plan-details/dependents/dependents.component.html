@@ -1,0 +1,43 @@
+<div
+  [ngClass]="isWeb ? 'web-dependents' : 'mobile-dependents'"
+  *ngIf="dependent && dependent.length > 0"
+>
+  <ion-row>
+    <ion-col>
+      <div class="ion-text-start dependents-head">
+        <p automation-id="dependents-header">
+          {{ content.dependents.heading }}
+        </p>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="card-wrap dep-wrap" *ngIf="dependent">
+    <ion-grid>
+      <ion-row class="dep-row" *ngFor="let info of dependent; let i = index">
+        <h4 class="OneLinkNoTx">{{ info.first_name }} {{ info.last_name }}</h4>
+        <ion-row class="info-row">
+          <ion-col size="7"
+            ><span> {{ content.dependents.relationship }} </span></ion-col
+          ><ion-col class="value" size="5">
+            <app-loading-text [isLoading]="!info"
+              >{{ info?.relationship }}
+            </app-loading-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="info-row">
+          <ion-col size="7"
+            ><span> {{ content.dependents.age }} </span></ion-col
+          ><ion-col class="value" size="5">
+            <app-loading-text [isLoading]="!info"
+              >{{ info?.age }}
+            </app-loading-text>
+          </ion-col>
+        </ion-row>
+
+        <div class="h-line" *ngIf="i < dependent.length - 1 && isWeb"></div>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</div>

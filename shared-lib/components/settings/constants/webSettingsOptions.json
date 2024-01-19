@@ -1,0 +1,17 @@
+{
+    "option": [
+      {
+        "id": "help",
+        "text": "FAQs",
+        "route": "faq",
+        "icon":"assets/icon/settings/help.svg"
+      },
+      {
+        "id": "contactAdvisor",
+        "text": "Contact a Professional",
+        "route": "contact-a-coach",
+        "icon":"assets/icon/settings/conatact_coach.svg"
+      }
+    ]
+  }
+  

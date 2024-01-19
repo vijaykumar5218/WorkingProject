@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  ion-select {
+    border: 1px solid var(--secondary-colors-medium-gray-2);
+    border-radius: 4px;
+
+    font-size: 16px;
+    --placeholder-color: var(--secondary-colors-voya-gray);
+    --placeholder-opacity: 1;
+    --padding-start: 16px;
+    --padding-end: 25px;
+    height: 56px;
+
+    &::part(icon) {
+      color: var(--primary-colors-voya-black);
+      opacity: 1;
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px var(--primary-colors-voya-black)
+    }
+  }
+}

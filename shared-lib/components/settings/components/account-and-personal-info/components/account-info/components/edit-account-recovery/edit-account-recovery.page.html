@@ -1,0 +1,106 @@
+<p class="mt-40 title">{{ displayText.title}}</p>
+<ion-grid class="ion-no-padding ion-no-margin">
+  <ion-row id="acc-recovery">
+    <ion-col size="9">
+      <div class="radio-item">
+        <input type="radio" id="optionMobile" name="option" value="mobile" />
+        <label for="optionMobile"
+          >{{ displayText.mobile }} ({{displayText.status.preferred}})</label
+        >
+      </div>
+      <ion-row lines="none" class="sub-text-item">
+        <span class="sub-text"
+          >{{accountRecoveryData?.security.accountRecoveryInfo.mobile? mobile:
+          'None'}}</span
+        >
+      </ion-row>
+      <div class="radio-item">
+        <input type="radio" id="optionEmail" name="option" value="email" />
+        <label for="optionEmail">{{displayText?.email}}</label>
+      </div>
+
+      <ion-row class="sub-text-item">
+        <span class="sub-text"
+          >{{accountRecoveryData?.security.accountRecoveryInfo.email?
+          accountRecoveryData.security.accountRecoveryInfo.email :
+          'None'}}</span
+        >
+      </ion-row>
+    </ion-col>
+
+    <ion-col size="3">
+      <ion-row
+        class="status-link pt-15"
+        (click)="updateContent('email')"
+        id="add-mobile"
+        ><div>
+          <img
+            *ngIf="addMobile"
+            class="circle-add"
+            alt="plus symbol add"
+            src="assets/icon/Circle_add_outline.svg"
+          /><span class="status-text"
+            >{{ addMobile? displayText.status.add: displayText.status.update
+            }}</span
+          >
+        </div></ion-row
+      >
+      <ion-row
+        class="status-link pt-15"
+        (click)="updateContent('email')"
+        id="add-email"
+      >
+        <div>
+          <img
+            *ngIf="addEmail"
+            class="circle-add"
+            alt="plus symbol add"
+            src="assets/icon/Circle_add_outline.svg"
+          /><span class="status-text"
+            >{{ addEmail? displayText.status.add: displayText.status.update
+            }}</span
+          >
+        </div>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-20">
+    <ion-col>
+      <p
+        class="message"
+        [innerHtml]="screenMessage?.AccountRecoveryDisclosure"
+      ></p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="mt-42"
+    ><ion-col size-md="2" size-sm="1" size-xs="1"></ion-col
+    ><ion-col>
+      <ion-button
+        size="small"
+        id="cancel-btn"
+        class="font-16"
+        name="submit"
+        shape="round"
+        expand="block"
+        color="btncolor"
+        fill="outline"
+        (click)="goBack()"
+        >{{ displayText.button.cancel }}
+      </ion-button></ion-col
+    >
+    <ion-col>
+      <ion-button
+        size="small"
+        id="save-btn"
+        class="font-16"
+        name="submit"
+        shape="round"
+        expand="block"
+        color="btncolor"
+        type="submit"
+        >{{ displayText.button.save }}
+      </ion-button></ion-col
+    ><ion-col size-md="2" size-sm="1" size-xs="1"></ion-col>
+  </ion-row>
+</ion-grid>

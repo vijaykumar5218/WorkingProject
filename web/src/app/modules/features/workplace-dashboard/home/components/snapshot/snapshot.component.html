@@ -1,0 +1,52 @@
+<ng-container *ngIf="snapshotAccount?.accounts">
+  <ion-card class="snapshot-card">
+    <ion-card-content>
+      <div>
+        <div *ngIf="snapshotHeader">
+          <p class="header" tabindex="0">{{ snapshotHeader }}</p>
+        </div>
+        <ion-row class="total-balance">
+          <ion-col size="7">
+            <p tabindex="1" class="total-balance-text">
+              {{ pageText.totalBalance }}
+            </p>
+          </ion-col>
+          <ion-col class="total-bal" size="5">
+            <ion-text
+              tabindex="2"
+              (click)="goToPlanLink()"
+              (keyup.enter)="goToPlanLink()"
+              automation-id="total-balances"
+            >
+              <a class="total-balance-value">{{
+                snapshotAccount?.totalBalance | currency
+              }}</a>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row
+          class="acc-name-bal"
+          *ngFor="let acct of snapshotAccount?.accounts; let i = index"
+        >
+          <ion-col size="7">
+            <p tabindex="3" class="acc-name OneLinkNoTx">
+              {{ acct.accountTitle }}
+            </p>
+          </ion-col>
+          <ion-col class="acc-balance" size="5">
+            <ion-text
+              tabindex="3"
+              (click)="goToPlanLink(acct)"
+              (keyup.enter)="goToPlanLink(acct)"
+              [attr.automation-id]="'account-balances_' + i"
+            >
+              <a class="total-balance-value">{{
+                acct.accountBalance | currency
+              }}</a>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ng-container>

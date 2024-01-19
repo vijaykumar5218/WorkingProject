@@ -1,0 +1,389 @@
+<div
+  #container
+  [id]="account?.planId+'-account-info'"
+  class="bg-color outerContainer"
+>
+  <div class="containerA">
+    <ion-grid>
+      <div class="account-card">
+        <img
+          class="voya-logo"
+          [ngClass]="(flagMorningStar || flagFeManaged) ? 'voya-logo-nonheader' : 'voya-logo'"
+          src="assets/icon/voyalogo.png"
+          alt="voya logo"
+        />
+        <ion-row class="managed-by" *ngIf="flagMorningStar || flagFeManaged">
+          <ion-col size="2">
+            <div class="managed-by-inner">
+              <img src="assets/icon/profes.svg" alt="professional logo" />
+            </div>
+          </ion-col>
+          <ion-col size="10" class="managed-by-inner">
+            <span>
+              {{pageText.managedBy}}
+            </span>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col
+            *ngIf="participant?.displayName != undefined || participant?.firstName != undefined || participant?.lastName != undefined"
+          >
+            <div class="ion-text-start display-name OneLinkNoTx">
+              <p class="OneLinkNoTx">
+                <app-loading-text [isLoading]="participant == null"
+                  >{{participant?.displayName ? participant?.displayName :
+                  (participant?.firstName + ' ' +
+                  participant?.lastName)}}</app-loading-text
+                >
+              </p>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start Your-account-balance">
+              <p>{{pageText.accBalance}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start">
+              <span
+                >{{(account)?.accountBalance| currency:"USD":"symbol"}}
+              </span>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="account?.accountBalanceAsOf">
+          <ion-col>
+            <div class="ion-text-start As-of-date">
+              <p>
+                {{pageText.asOf}}
+                {{(account)?.accountBalanceAsOf|date:'longDate'}}
+              </p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-grid>
+  </div>
+  <ng-container
+    *ngIf="!(account?.isVendorPlan ||
+  account?.isVoyaAccessPlan ||
+ account?.sourceSystem == 'VENDOR' ||
+  account?.sourceSystem == 'STOCK' ||
+  account?.sourceSystem == 'BROKERAGE' ||
+  account?.sourceSystem == 'NQPenCalPlan'); else otherAcctTemp;"
+  >
+    <div class="containerB">
+      <ion-card *ngIf="account?.isHSAAccount" class="Card-Background hsa-card">
+        <ion-grid *ngIf="account?.hsaAccountData?.Plan_Type !== 'HSA'">
+          <app-info-line [title]="pageText.availableAmount"
+            >{{account.hsaAccountData.AvailableBalance |
+            currency:"USD":"symbol"}}</app-info-line
+          >
+          <hr />
+          <app-info-line [title]="pageText.electionAmount"
+            >{{account.hsaAccountData.Election_Amount |
+            currency:"USD":"symbol"}}</app-info-line
+          >
+          <app-info-line [title]="pageText.ytdContrib"
+            >{{account.hsaAccountData.YTD_Contributions |
+            currency:"USD":"symbol"}}</app-info-line
+          >
+          <hr />
+          <app-info-line [title]="pageText.electionAmountEmp"
+            >{{account.hsaAccountData.Employer_Election_Amount |
+            currency:"USD":"symbol"}}</app-info-line
+          >
+          <app-info-line
+            *ngIf="account.hsaAccountData.YTD_Wellness_Contributions > 0"
+            [title]="pageText.wellnessContrib"
+            >{{account.hsaAccountData.YTD_Wellness_Contributions |
+            currency:"USD":"symbol"}}</app-info-line
+          >
+          <app-info-line [title]="pageText.empContribYTD"
+            >{{account.hsaAccountData.Employer_YTD_Contributions |
+            currency:"USD":"symbol"}}</app-info-line
+          >
+        </ion-grid>
+        <ion-grid *ngIf="account?.hsaAccountData?.Plan_Type === 'HSA'">
+          <app-info-line [title]="pageText.cashBalance"
+            >{{account.hsaAccountData.CashBalance |
+            currency:"USD":"symbol"}}</app-info-line
+          >
+          <app-info-line [title]="pageText.investedAmount"
+            >{{account.hsaAccountData.InvestmentBalance |
+            currency:"USD":"symbol"}}</app-info-line
+          >
+          <hr />
+          <app-info-line [bolded]="true" [title]="pageText.ytdContrib"
+            >{{account.hsaAccountData.YTD_Contributions |
+            currency:"USD":"symbol"}}</app-info-line
+          >
+          <app-info-line
+            *ngIf="account.hsaAccountData.YTD_Wellness_Contributions > 0"
+            [bolded]="true"
+            [title]="pageText.wellnessContrib"
+          >
+            {{account.hsaAccountData.YTD_Wellness_Contributions |
+            currency:"USD":"symbol"}}</app-info-line
+          >
+          <app-info-line [bolded]="true" [title]="pageText.empContribYTD">
+            {{account.hsaAccountData.Employer_YTD_Contributions |
+            currency:"USD":"symbol"}}</app-info-line
+          >
+        </ion-grid>
+      </ion-card>
+      <ion-card
+        *ngIf="!account?.isHSAAccount"
+        [ngClass]="(flagFeManaged || flagMorningStar) ? 'managed-by-offset' : 'Card-Background'"
+      >
+        <ion-grid>
+          <ion-row>
+            <ion-col class="ion-text-start text-single-line" size="6">
+              <span>{{pageText.vestedBalance}}</span>
+            </ion-col>
+            <ion-col class="ion-text-end" size="6">
+              <app-loading-text [isLoading]="(vestedBalance == null)"
+                >{{(vestedBalance)?.totalVestedBal |
+                currency:"USD":"symbol"}}</app-loading-text
+              >
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-text-start gain-loss-text" size="7">
+              <span>{{pageText.Gainloss}}{{currentYear}}</span>
+            </ion-col>
+            <ion-col class="ion-text-end" size="5">
+              <app-loading-text
+                [style.color]="gainLossColor"
+                [isLoading]="(gainLossValue == null)"
+              >
+                {{posNegSymbol(gainLossValue)}}{{gainLossValue |
+                currency:"USD":"symbol"}}</app-loading-text
+              >
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-text-start" size="8">
+              <span>{{pageText.Rateofreturn}}</span>
+            </ion-col>
+            <ion-col class="ion-text-end" size="4">
+              <app-loading-text
+                [style.color]="rateOfReturnColor"
+                [isLoading]="(rateOfReturn == null)"
+              >
+                {{posNegSymbol((rateOfReturn)?.prr.pct)}}{{(rateOfReturn)?.prr.pct|
+                number : '1.2-2'}}%</app-loading-text
+              >
+            </ion-col>
+          </ion-row>
+
+          <ion-row *ngIf="loan == null; else elseBlock">
+            <ion-col class="ion-text-start" size="6">
+              <span>{{pageText.Loanamount}}</span>
+            </ion-col>
+            <ion-col class="ion-text-end" size="6">
+              <app-loading-text [isLoading]="true"></app-loading-text>
+            </ion-col>
+          </ion-row>
+          <ng-template #elseBlock>
+            <ion-row
+              *ngFor="let theLoan of (loan?.outstandingLoan.outstandingLoanDtls)"
+            >
+              <ion-col class="ion-text-start" size="6">
+                <span
+                  >{{pageText.Loan}} {{theLoan.loanNumber}}
+                  {{pageText.Amount}}</span
+                >
+              </ion-col>
+              <ion-col class="ion-text-end" size="6">
+                <app-loading-text [isLoading]="false"
+                  >{{theLoan.balance |
+                  currency:"USD":"symbol"}}</app-loading-text
+                >
+              </ion-col>
+            </ion-row>
+          </ng-template>
+
+          <ion-row>
+            <ion-col class="ion-text-start" size="6">
+              <span>{{pageText.Dividends}}</span>
+            </ion-col>
+            <ion-col class="ion-text-end" size="6">
+              <span
+                >{{(dividends?.ytdDividend ? dividends?.ytdDividend : 0) |
+                currency:"USD":"symbol"}}</span
+              >
+            </ion-col>
+          </ion-row>
+          <hr />
+          <ion-row class="toggleTxt">
+            <ion-col class="ion-text-start" size="8">
+              <span><strong>{{pageText.Contribution}}</strong></span>
+            </ion-col>
+
+            <ion-col class="ion-text-end" size="4">
+              <app-loading-text [isLoading]="(contributions == null)">
+                <strong *ngIf="contributions?.contribType === modes.dollar"
+                  >{{(contributions?.employeeContrib ?
+                  contributions?.employeeContrib : 0) |
+                  currency:"USD":"symbol"}}</strong
+                >
+                <strong *ngIf="contributions?.contribType === modes.percent"
+                  >{{(contributions?.employeeContrib ?
+                  contributions?.employeeContrib : 0)/100 | percent}}</strong
+                >
+              </app-loading-text>
+            </ion-col>
+          </ion-row>
+          <ion-row class="toggleTxt" *ngIf="contributions?.totalCatchup">
+            <ion-col class="ion-text-start" size="8">
+              <span><strong>Catch-up Contribution per paycheck</strong></span>
+            </ion-col>
+
+            <ion-col class="ion-text-end" size="4">
+              <app-loading-text [isLoading]="(contributions == null)">
+                <strong *ngIf="contributions?.catchupType === modes.dollar"
+                  >{{(contributions?.totalCatchup ? contributions?.totalCatchup
+                  : 0) | currency:"USD":"symbol"}}</strong
+                >
+                <strong *ngIf="contributions?.catchupType === modes.percent"
+                  >{{(contributions?.totalCatchup ? contributions?.totalCatchup
+                  : 0)/100 | percent}}</strong
+                >
+              </app-loading-text>
+            </ion-col>
+          </ion-row>
+          <hr />
+          <ion-row class="toggleTxt">
+            <ion-col class="ion-text-start" size="7">
+              <span><strong>{{pageText.Year}}</strong></span>
+            </ion-col>
+            <ion-col class="ion-text-end" size="5">
+              <app-loading-text [isLoading]="(contribution == null)"
+                ><strong
+                  >{{(contributions?.totalYTDContrib ?
+                  contributions?.totalYTDContrib : 0) |
+                  currency:"USD":"symbol"}}</strong
+                ></app-loading-text
+              >
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+
+      <div *ngIf="omEligibility && omCorrectPlan">
+        <om-employer-match
+          [clientId]="account.clientId"
+          [planId]="account.planId"
+          [sessionId]="account.csSessionId"
+        ></om-employer-match>
+      </div>
+
+      <div *ngIf="!account?.isHSAAccount">
+        <app-annual-rate-return
+          *ngIf="omEligibility && omCorrectPlan"
+        ></app-annual-rate-return>
+        <ion-row class="orang-money-bottom">
+          <ion-col
+            *ngIf="omEligibility && estimates && omCorrectPlan"
+            class="orange-money-col"
+          >
+            <app-orange-money
+              #orangeMoneyComp
+              (madlibClose)="scrollToOrangeMoney()"
+            >
+            </app-orange-money>
+          </ion-col>
+          <ion-col
+            [ngClass]="omEligibility && estimates ? 'dont-leave-money-mrg-top' : 'dont-leave-money'"
+            *ngIf="employersMatch?.header && employersMatch?.showMatch && employersMatch?.showMatchPercentageValue && (employersMatch?.toolTipText != null || employersMatch?.toolTipNotes != null)"
+          >
+            <app-nudge-messaging
+              [employersMatch]="employersMatch"
+            ></app-nudge-messaging>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-no-padding">
+            <app-carousel></app-carousel>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div
+        *ngIf="account?.isHSAAccount && account?.hsaAccountData?.Plan_Type == 'HSA'"
+      >
+        <div *ngIf="hsaJourneyStatus != null">
+          <app-hsa-nudge
+            *ngIf="!hsaJourneyStatus.isCompleted && !isWeb"
+            [journeyId]="hsaJourneyStatus?.journeyID"
+          >
+          </app-hsa-nudge>
+          <ion-card *ngIf="hsaJourneyStatus.isCompleted" class="hsaCard">
+            <ion-spinner *ngIf="hsaJourneyLoading"></ion-spinner>
+            <app-hsa-summary-card
+              *ngIf="!hsaJourneyLoading"
+            ></app-hsa-summary-card>
+          </ion-card>
+        </div>
+      </div>
+      <div
+        *ngIf="account?.isHSAAccount && (account?.hsaAccountData.Plan_Type == 'HSA' || account?.hsaAccountData.Plan_Type == 'MedicalFlex')"
+      >
+        <app-hsastore-nudge></app-hsastore-nudge>
+      </div>
+    </div>
+    <app-more-account-info
+      *ngIf="!account?.isHSAAccount"
+    ></app-more-account-info>
+  </ng-container>
+
+  <ng-template #otherAcctTemp>
+    <div class="additionalPlanBalance" *ngIf="account.sourceSystem !== 'STOCK'">
+      <div
+        class="eachAdditionalPlan"
+        *ngFor="let acocuntInfo of account?.additionalPlanBalances"
+      >
+        <ion-row>
+          <ion-col size="8" class="ion-text-start labelTxt">
+            {{acocuntInfo.label}}
+          </ion-col>
+          <ion-col size="4" class="ion-text-end valueTxt">
+            {{acocuntInfo.value | currency}}
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <div class="additionalPlanBalance" *ngIf="account.sourceSystem == 'STOCK'">
+      <div *ngFor="let acocuntInfo of account?.additionalPlanBalances">
+        <ion-row class="additionalPlanBalRowTitle">
+          <ion-col>
+            <div>
+              <p>{{acocuntInfo?.rowTitle}}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+        <div
+          class="eachAdditionalPlan"
+          *ngFor="let rowdetails of acocuntInfo?.rowValues"
+        >
+          <ion-row>
+            <ion-col size="8" class="ion-text-start labelTxt">
+              <div [innerHTML]="rowdetails?.label"></div>
+            </ion-col>
+            <ion-col size="4" class="ion-text-end valueTxt">
+              <div [innerHTML]="rowdetails?.value | currency"></div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>

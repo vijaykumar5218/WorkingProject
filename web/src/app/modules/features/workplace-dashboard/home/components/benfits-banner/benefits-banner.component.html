@@ -1,0 +1,41 @@
+<ng-container *ngIf="contextObj">
+  <ion-row class="benefit-content">
+    <ion-col class="benefit-image-col">
+      <div class="circle">
+        <img
+          tabindex="2"
+          [alt]="contextObj?.altText"
+          [src]="contextObj?.icon"
+        />
+      </div>
+    </ion-col>
+    <ion-col class="benefit-text">
+      <div>
+        <ion-row>
+          <ion-col>
+            <p class="header" tabindex="3">{{ contextObj?.header }}</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="content" tabindex="4">{{ contextObj?.content }}</p>
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-row class="benefit-button">
+        <ion-col>
+          <ion-button
+            size="small"
+            shape="round"
+            tabindex="5"
+            [attr.aria-label]="contextObj?.buttonText"
+            (click)="openGuidelines()"
+            id="select-benefits-button"
+          >
+            {{ contextObj?.buttonText }}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ng-container>

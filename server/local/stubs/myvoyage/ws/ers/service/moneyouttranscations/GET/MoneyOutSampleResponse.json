@@ -1,0 +1,84 @@
+[
+  {
+    "clientId": "ADPTTL",
+    "clientPlanTransactions": [
+      {
+        "planId": "894550",
+        "details": {
+          "item": {
+            "clientType": "IPS",
+            "moneyoutTotalCount": "1",
+            "moneyoutLoanCount": "0",
+            "moneyoutWithdrawalCount": "1",
+            "paymentStopped": "false",
+            "moneyoutComposite": "false",
+            "notepadAttached": null
+          },
+          "transactionList": [
+            {
+              "checkCashDate": "",
+              "currentStatus": "PPT_PREPARE_PAYMENT",
+              "deliveryMaxDate": "",
+              "deliveryRange": "5 to 7",
+              "directDepositDate": "",
+              "moneyOutDeliveryMethod": "check",
+              "moneyOutSubType": "hardship withdrawal",
+              "moneyOutType": "WITHDRAWAL",
+              "netCheckAmount": "USD2,000.00",
+              "netCheckAmountSource": "OLTP",
+              "taskId": "t211228000i",
+              "transactionDate": "2021-12-28",
+              "transactionCompletionDate": "",
+              "upsTrackingAvailable": "false",
+              "upsTrackingNumber": "",
+              "moneyOutMessage": "Your General loan requested on 09/28/2023 for $5,000.00 requires additional documentation for processing. Please <a href='/eportal/preauth.do?s=KKlvcvlhk6RCU8DYW9qJlg11.i9291&page=CORRESP&section=myCorresPrec&d=53764ba8892356ed2b0a2966529d6a2efd6ef3b6'>print these forms</a> if you do not already have them, then fax or mail your completed documentation using the fax number and mailing address found at the top of your form.",
+              "transactionIdentifier": "4325113"
+            }
+          ],
+          "moneyOutEnabledInSetIt": true
+        }
+      }
+    ]
+  },
+  {
+    "clientId": "ABRA",
+    "clientPlanTransactions": [
+      {
+        "planId": "362552",
+        "details": {
+          "item": {
+            "clientType": "IPS",
+            "moneyoutTotalCount": "1",
+            "moneyoutLoanCount": "0",
+            "moneyoutWithdrawalCount": "1",
+            "paymentStopped": "false",
+            "moneyoutComposite": "false",
+            "notepadAttached": null
+          },
+          "transactionList": [
+            {
+              "checkCashDate": "",
+              "currentStatus": "PPT_PREPARE_PAYMENT",
+              "deliveryMaxDate": "",
+              "deliveryRange": "5 to 7",
+              "directDepositDate": "",
+              "moneyOutDeliveryMethod": "check",
+              "moneyOutSubType": "hardship withdrawal",
+              "moneyOutType": "WITHDRAWAL",
+              "netCheckAmount": "USD2,000.00",
+              "netCheckAmountSource": "OLTP",
+              "taskId": "t211228000i",
+              "transactionDate": "2021-12-28",
+              "transactionCompletionDate": "",
+              "upsTrackingAvailable": "false",
+              "upsTrackingNumber": "",
+              "moneyOutMessage": "Good news! Your hardship withdrawal requested on 12/29/2021 for $2,000.00 has been processed. We are currently preparing your payment for delivery. Once complete, you should receive your payment via check within 5 to 7 business days.",
+              "transactionIdentifier": "4325113"
+            }
+          ],
+          "moneyOutEnabledInSetIt": true
+        }
+      }
+    ]
+  }
+]

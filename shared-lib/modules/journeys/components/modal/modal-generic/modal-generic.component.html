@@ -1,0 +1,13 @@
+<div *ngFor="let ele of element.elements" [ngClass]="{centered: ele.centered}">
+  <journeys-modal-step-component
+    [ele]="ele"
+    (isRequired)="setRequired($event, ele)"
+    (valueChange)="updateElementValue($event, ele.answerId)"
+    (continueClick)="handleContinueClick($event)"
+    (saveValue)="handleSaveValue($event)"
+    [requiredInputsFilled]="requiredInputsFilled"
+    [accumulateAnswers]="element.accumulateAnswers"
+    [values]="stepValue"
+    [answer]="stepAnswer"
+  ></journeys-modal-step-component>
+</div>

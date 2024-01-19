@@ -1,0 +1,46 @@
+<div class="app-account-details">
+  <ion-row class="top-div">
+    <ion-col *ngIf="myWorkplaceDashboardEnabled" class="plan-col">
+      <ion-text class="planName OneLinkNoTx">{{account?.planName}}</ion-text>
+    </ion-col>
+    <ion-col *ngIf="showGoToAccountButton" class="btn-col ion-text-start">
+      <ion-button
+        size="small"
+        id="goto-account"
+        class="goto-account-button"
+        [attr.aria-label]="pageData.goToAccount"
+        shape="round"
+        expand="block"
+        color="btncolor"
+        (click)="navigateToGoToAccount(account?.planLink)"
+      >
+        {{ pageData.goToAccount}}
+      </ion-button>
+    </ion-col>
+    <ion-col *ngIf="showGoToMyHistoryButton" class="btn-col ion-text-center">
+      <ion-button
+        size="small"
+        shape="round"
+        color="btncolor"
+        [attr.aria-label]="pageData.goToMyHistory"
+        fill="outline"
+        (click)="navigateToGoMyHistory(account?.oldPlanLink)"
+        automation-id="gotomyhistorybutton"
+      >
+        {{ pageData.goToMyHistory }}
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row class="app-sub-header-container">
+    <app-sub-header
+      *ngIf="isRoutingActive"
+      [tabsAction]="pageData.tabs"
+      [selectedTab]="selectedTab"
+      [showGoToAccountButton]="showGoToAccountButton"
+      class="app-sub-header"
+    ></app-sub-header>
+  </ion-row>
+  <div *ngIf="!isRoutingActive">
+    <ion-spinner></ion-spinner>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div
+  class="container"
+  [ngStyle]="{
+    width: element.widthOfEachSprite + 'px'
+  }"
+>
+  <div
+    #img
+    [ngStyle]="{
+      width: element.widthOfEachSprite - 1 + 'px',
+      height: element.heightOfEachSprite + 'px',
+      background: 'url(' + element.imageUrl + ') 0 0'
+    }"
+  ></div>
+  <div class="hide-px"></div>
+</div>

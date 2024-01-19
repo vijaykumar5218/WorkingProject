@@ -1,0 +1,6 @@
+journeys-icon-text-button {
+  display: block;
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}

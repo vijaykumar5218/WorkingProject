@@ -1,0 +1,56 @@
+<ng-container *ngIf="!isWeb">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <button ion-button class="close_btn" (click)="closeDialog()">
+          Close
+        </button>
+      </ion-buttons>
+      <ion-title class="title">{{ element?.label }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <hr class="m-0" />
+</ng-container>
+<ion-content>
+  <ion-grid class="p-0 search-list">
+    <ion-row *ngIf="!isWeb">
+      <ion-searchbar
+        class="journeySearchbarTypeahead"
+        (ionInput)="searchTerms.next(journeySearchbarTypeahead.value)"
+        placeholder="Search"
+        #journeySearchbarTypeahead
+        [automation-id]="'journeySearchbar' + element?.idSuffix"
+        [value]="searchValue"
+      ></ion-searchbar>
+    </ion-row>
+    <ion-row class="list-wrap">
+      <ion-list *ngIf="!loading">
+        <ion-radio-group
+          [(ngModel)]="selectedValue"
+          (ionChange)="onItemSelected()"
+        >
+          <ion-item *ngFor="let item of filteredItems">
+            <ion-radio
+              slot="start"
+              mode="ios"
+              [value]="item"
+              color="btndarkblue"
+            ></ion-radio>
+            {{ item.name }}
+            <hr class="m-0" />
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-infinite-scroll
+        (ionInfinite)="onIonInfinite($event)"
+        position="bottom"
+        threshold="50px"
+      >
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+      <div class="journey-loader" *ngIf="loading">
+        <ion-spinner></ion-spinner>
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>

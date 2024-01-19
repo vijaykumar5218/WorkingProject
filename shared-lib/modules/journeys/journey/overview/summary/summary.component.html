@@ -1,0 +1,52 @@
+<div [ngClass]="isWeb ? 'web-summary' : 'mobile-summary'">
+  <span
+    *ngIf="journey.parsedLandingAndOverviewContent.overview.summaryHeader"
+    class="header"
+    >{{ journey.parsedLandingAndOverviewContent.overview.summaryHeader }}</span
+  >
+  <span
+    *ngIf="journey.parsedLandingAndOverviewContent.overview.summaryDescription"
+    class="desc"
+    >{{
+      journey.parsedLandingAndOverviewContent.overview.summaryDescription
+    }}</span
+  >
+  <journeys-overview-summary-card
+    *ngFor="
+      let summaryCard of journey.parsedLandingAndOverviewContent.overview
+        .summaryCards;
+      let i = index
+    "
+    [summaryCard]="summaryCard"
+    [index]="i"
+  ></journeys-overview-summary-card>
+  <ion-card>
+    <ng-container *ngFor="let summaryStep of summaryStepList">
+      <journeys-overview-summary-step
+        [step]="summaryStep"
+        [journeyId]="journey.journeyID"
+        (valueChange)="updateValue($event, summaryStep.answerId)"
+        [answer]="value && value[summaryStep.answerId]"
+        [ngStyle]="{'margin-bottom': summaryStep.marginBottom}"
+      ></journeys-overview-summary-step
+    ></ng-container>
+    <ion-button
+      size="small"
+      class="font-18 save-button"
+      name="submit"
+      shape="round"
+      expand="block"
+      type="submit"
+      color="btncolor"
+      (click)="handleButtonClick()"
+      id="overviewSummaryButton"
+      >{{ buttonLabel }}</ion-button
+    >
+  </ion-card>
+  <span
+    *ngIf="journey.parsedLandingAndOverviewContent.overview.footnoteText"
+    class="footerNote"
+  >
+    {{ journey.parsedLandingAndOverviewContent.overview.footnoteText }}
+  </span>
+</div>

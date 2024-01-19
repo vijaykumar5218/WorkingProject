@@ -1,0 +1,21 @@
+<div
+  class="main-container"
+  *ngFor="let option of element.options; let i = index"
+  [id]="'journeyRadioButton' + i"
+>
+  <div class="option" (click)="radioButtonClicked(option)">
+    <ion-icon
+      [name]="option.checked ? 'radio-button-on' : 'radio-button-off'"
+    ></ion-icon>
+    <label>{{ option.label }}</label>
+  </div>
+  <div>
+    <journeys-steps-step-input-radio-button-step
+      class="option-element"
+      *ngIf="option.checked"
+      [elements]="elements"
+      (valueChange)="updateValue($event)"
+      [answer]="answerString"
+    ></journeys-steps-step-input-radio-button-step>
+  </div>
+</div>

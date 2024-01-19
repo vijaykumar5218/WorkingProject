@@ -1,0 +1,44 @@
+<div [ngClass]="isWeb ? 'intro-web' : 'intro-mobile'">
+  <ion-row class="intro">
+    <div class="desc">
+      <img
+        class="image"
+        src="assets/icon/journeys/wandering_in_nature.svg"
+        alt=""
+      />
+      {{ content.landingPage.desc }}
+      <div class="bullet">
+        <ul *ngFor="let element of content.landingPage.descPoints">
+          <li class="desc">{{ element }}</li>
+        </ul>
+      </div>
+    </div>
+  </ion-row>
+  <ng-container *ngIf="journeys$ | async as journeys">
+    <journeys-list
+      *ngIf="journeys?.recommended && journeys.recommended.length > 0"
+      headerText="{{
+        journeys?.recommended?.length > 1
+          ? content.landingPage.recommendedJourneysHeader
+          : content.landingPage.recommendedJourneysHeader.slice(
+              0,
+              content.landingPage.recommendedJourneysHeader.length - 1
+            )
+      }}"
+      [journeys]="journeys?.recommended"
+      idPrefix="recommended"
+    ></journeys-list>
+
+    <journeys-list
+      class="journeys-list-all"
+      *ngIf="journeys?.all && journeys.all.length > 0"
+      [headerText]="content.landingPage.allJourneysHeader"
+      [journeys]="journeys?.all"
+      idPrefix="all"
+    ></journeys-list>
+    <app-footer-desktop
+      *ngIf="myWorkplaceDashboardEnabled && isWeb"
+      class="small-device-dashboard-footer"
+    ></app-footer-desktop>
+  </ng-container>
+</div>

@@ -1,0 +1,32 @@
+<ion-grid class="ion-no-padding">
+  <ion-item class="menu-container ion-no-padding" inset="true" lines="none">
+    <div class="menu-items">
+      <ng-container
+        *ngFor="let data of DesktopHelpPageFAQs?.categoryList;index as i"
+      >
+        <div
+          *ngIf="data.category.enableMyVoyage"
+          class="menu-item active"
+          (click)="navigateTo(data.category)"
+          (keyup.enter)="navigateTo(data.category)"
+        >
+          <ion-col class="menu-label">
+            <label
+              class="ion-no-padding font-16 font-w-600 ion-float-left"
+              id="{{'menu-label-' + i}}"
+              >{{ data.category.title }}</label
+            >
+            <span class="ion-float-right" tabindex="0" [id]="'faq-menu-item-'+i"
+              ><img alt="edit" src="assets/icon/chevron_right.svg"
+            /></span>
+          </ion-col>
+        </div>
+      </ng-container>
+    </div>
+  </ion-item>
+  <ng-container *ngIf="enableMyVoyage">
+    <app-help-email-card
+      [elementID]="'qualtrics_contact'"
+    ></app-help-email-card>
+  </ng-container>
+</ion-grid>

@@ -1,0 +1,55 @@
+ion-content {
+  background-color: var(--ion-color-white);
+}
+
+.options {
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 235px;
+  padding: 20px;
+  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--white);
+
+  .header {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.02px;
+    color: var(--primary-colors-voya-black);
+    text-align: center;
+  }
+
+  ion-row {
+    background-color: var(--white);
+  }
+}
+
+.main-content {
+  background-color: white;
+  padding: 20px;
+}
+.mobile-main-content {
+  margin-bottom: 235px;
+}
+.web-main-content {
+  margin-top: 40px;
+  margin-bottom: 320px;
+}
+.web-options {
+  margin-bottom: 95px;
+}
+
+ion-radio-group {
+  margin: auto;
+
+  ion-radio {
+    margin-right: 12px;
+    --color: var(--primary-colors-voya-dark-blue);
+    --color-checked: var(--primary-colors-voya-dark-blue);
+  }
+}
+
+#save-button {
+  margin: auto auto 30px auto;
+}

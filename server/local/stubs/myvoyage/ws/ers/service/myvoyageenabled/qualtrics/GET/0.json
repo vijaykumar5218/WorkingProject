@@ -1,0 +1,23 @@
+{
+  "enableMyVoyage": "Y",
+  "clientId": "KOHLER",
+  "appId": "MyVoyage",
+  "clientDomain": "kohler.intg.voya.com",
+  "clientName": "Kohler Co. 401(k) Savings Plan",
+  "planIdList": [
+    {"planId": "623040", "active": true, "benefitsAdminSystem": "ADP"},
+    {"planId": "623043", "active": true, "benefitsAdminSystem": "Workday"}
+  ],
+  "currentPlan": {
+    "planId": "623040",
+    "active": true,
+    "benefitsAdminSystem": "ADP"
+  },
+  "firstTimeLogin": false,
+  "email": "leon@voya.com",
+  "mobile": "9019215744",
+  "partyId": "222d0d23-7786-0dcf-e053-d22aac0a9e36",
+  "platform": "ADP",
+  "isHealthOnly": false,
+  "enableCoverages": false
+}

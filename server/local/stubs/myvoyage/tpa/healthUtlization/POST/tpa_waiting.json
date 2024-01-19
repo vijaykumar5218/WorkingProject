@@ -1,0 +1,31 @@
+{
+  "carriers": [
+    {
+      "carrierName": "Test Carrier",
+      "carrierId": 465243,
+      "payerId": 1659,
+      "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+      "connectionStatus": "Enabled",
+      "loginProblem": "valid",
+      "crawlStatus": "FAILED",
+      "crawlCount": 1,
+      "claimsCount": 5,
+      "totalOutOfPocketAmount": 367.72
+    },
+    {
+      "carrierName": "Test Carrier",
+      "carrierId": 465670,
+      "payerId": 1659,
+      "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+      "connectionStatus": "Enabled",
+      "loginProblem": "valid",
+      "crawlStatus": "SUCCESS",
+      "crawlCount": 0,
+      "claimsCount": 5,
+      "totalOutOfPocketAmount": 367.72
+    }
+  ],
+  "claims": [],
+  "groupingCategoryDetails": {},
+  "groupingClaimsByYear": {}
+}

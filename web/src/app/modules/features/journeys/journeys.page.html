@@ -1,0 +1,112 @@
+<ion-grid
+  *ngIf="urlProps"
+  [ngClass]="myWorkplaceDashboardEnabled? 'myWorkplaceDashboard':'myvoyage'"
+>
+  <div #topmostElement></div>
+  <div class="linear-gradient">
+    <div class="max-width">
+      <ion-row class="card-content journeys-tab">
+        <ion-col class="left-col">
+          <ion-card class="left-card">
+            <ion-row class="journeys-title">
+              <ion-col class="shieldText" size="1">
+                <img
+                  alt="map symbol"
+                  src="assets/icon/journeys/journeys_map.svg"
+                />
+              </ion-col>
+              <ion-col size="11">
+                <ion-text>{{pageData.landingPage.header}}</ion-text>
+              </ion-col>
+            </ion-row>
+            <ion-row class="journeys-sub-title">
+              <ion-col class="sub-title">
+                <div>
+                  <img
+                    class="journeys-wandering"
+                    src="assets/icon/journeys/wandering_in_nature.svg"
+                    alt=""
+                  />{{pageData.landingPage.desc}}
+                  <ul
+                    class="bullet"
+                    *ngFor="let element of pageData.landingPage.descPoints"
+                  >
+                    <li>{{element}}</li>
+                  </ul>
+                </div>
+              </ion-col>
+            </ion-row>
+            <ng-container *ngIf="journeys$ | async as journeys">
+              <ng-container
+                *ngIf="journeys?.recommended && journeys.recommended.length > 0"
+              >
+                <div class="recommended-journeys-title">
+                  <ion-text
+                    >{{journeys.recommended.length > 1 ?
+                    pageData.landingPage.recommendedJourneysHeader :
+                    pageData.landingPage.recommendedJourneysHeader.slice(0,
+                    pageData.landingPage.recommendedJourneysHeader.length -
+                    1)}}</ion-text
+                  >
+                </div>
+                <ion-row class="recommended-journeys">
+                  <journeys-journey
+                    *ngFor="let journey of journeys.recommended"
+                    [journey]="journey"
+                    journeyType="recommended"
+                    [urlProps]="urlProps"
+                    (localStorageChange)="triggerLocalStorageChange($event)"
+                    (journeyClick)="journeyClick()"
+                  ></journeys-journey>
+                </ion-row>
+              </ng-container>
+
+              <div class="allJourneys-journeys-title">
+                <ion-text>{{pageData.landingPage.allJourneysHeader}}</ion-text>
+              </div>
+              <ion-row
+                class="all-journeys"
+                *ngIf="journeys?.all && journeys.all.length > 0"
+              >
+                <journeys-journey
+                  *ngFor="let journey of journeys.all"
+                  [journey]="journey"
+                  journeyType="all"
+                  [urlProps]="urlProps"
+                  (localStorageChange)="triggerLocalStorageChange($event)"
+                  (journeyClick)="journeyClick()"
+                ></journeys-journey>
+              </ion-row>
+            </ng-container>
+          </ion-card>
+        </ion-col>
+
+        <ion-col class="right-col">
+          <ion-card
+            class="right-card"
+            [ngStyle]="
+          (selectedTab === 'steps' && !isDesktop) ? {height: '110%'} : {display: '100%'}
+        "
+          >
+            <div tabindex="0" #focusedElementLifeEvents>
+              <ion-router-outlet
+                *ngIf="isRoutingActive"
+                [animated]="false"
+                class="focused-element-lifeevents"
+              ></ion-router-outlet>
+            </div>
+            <div class="journey-loader" *ngIf="!isRoutingActive">
+              <ion-spinner></ion-spinner>
+            </div>
+          </ion-card>
+          <app-footer-desktop
+            *ngIf="myWorkplaceDashboardEnabled"
+            class="small-device-dashboard-footer"
+          ></app-footer-desktop>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  <app-footer-desktop class="footer-desktop"></app-footer-desktop>
+</ion-grid>

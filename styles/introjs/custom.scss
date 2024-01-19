@@ -1,0 +1,683 @@
+﻿/* Buttons style by http://nicolasgallagher.com/lab/css3-github-buttons/ Changed by Afshin Mehrabani */
+/* overrides extra padding on button elements in Firefox */
+@-webkit-keyframes introjspulse {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    25% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0.1;
+    }
+
+    50% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 0.3;
+    }
+
+    75% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes introjspulse {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    25% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0.1;
+    }
+
+    50% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 0.3;
+    }
+
+    75% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.introjs-overlay {
+    position: absolute;
+    box-sizing: content-box;
+    z-index: 999999;
+    opacity: 0;
+    background: radial-gradient(center, ellipse farthest-corner, rgba(0,0,0,0.4) 0, rgba(0,0,0,0.9) 100%);
+    transition: all 0.3s ease-out;
+}
+
+.introjs-showElement {
+    z-index: 100000003 !important;
+
+    > td {
+        z-index: 100000003 !important;
+        position: relative;
+    }
+
+    > th {
+        z-index: 100000003 !important;
+        position: relative;
+    }
+}
+
+.introjs-disableInteraction {
+    z-index: 99999999 !important;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.introjs-relativePosition {
+    position: relative;
+}
+
+.introjs-helperLayer {
+    box-sizing: content-box;
+    position: absolute;
+    z-index: 9999998;
+    background-color: transparent;
+    border: 1px solid #777;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 4px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.4);
+    transition: all 0.3s ease-out;
+
+    * {
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+
+        &:before {
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+
+        &:after {
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+    }
+}
+
+.introjs-tooltipReferenceLayer {
+    box-sizing: content-box;
+    position: absolute;
+    visibility: hidden;
+    z-index: 100000000;
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+}
+
+.introjs-helperNumberLayer {
+    color: #9e9e9e;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.introjs-arrow {
+    content: "";
+    position: absolute;
+    border-width: 10px !important;
+
+    &.top {
+        top: -10px;
+        left: 10px;
+        border-bottom-color: #fff;
+    }
+
+    &.top-right {
+        top: -10px;
+        right: 10px;
+        border-bottom-color: #fff;
+    }
+
+    &.top-middle {
+        top: -10px;
+        left: 50%;
+        margin-left: -5px;
+        border-bottom-color: #fff;
+    }
+
+    &.right {
+        right: -10px;
+        top: 10px;
+        border-left-color: #fff;
+    }
+
+    &.right-bottom {
+        bottom: 10px;
+        right: -10px;
+        border-left-color: #fff;
+    }
+
+    &.bottom {
+        bottom: -10px;
+        left: 10px;
+        border-top-color: #fff;
+    }
+
+    &.bottom-right {
+        bottom: -10px;
+        right: 10px;
+        border-top-color: #fff;
+    }
+
+    &.bottom-middle {
+        bottom: -10px;
+        left: 50%;
+        margin-left: -5px;
+        border-top-color: #fff;
+    }
+
+    &.left {
+        left: -10px;
+        top: 10px;
+        border-right-color: #fff;
+    }
+
+    &.left-bottom {
+        left: -10px;
+        bottom: 10px;
+        border-right-color: #fff;
+    }
+
+    &.top, &.top-middle, &.top-right {
+        border-color: transparent transparent rgba(255, 255, 255, 1);
+        top: -20px !important;
+    }
+
+    &.bottom, &.bottom-middle, &.bottom-right {
+        border-color: rgba(255, 255, 255, 1) transparent transparent;
+        bottom: -20px !important;
+        left: 20px !important;
+    }
+
+    &.left, &.right {
+        top: 20px;
+    }
+
+    &.left-bottom, &.right-bottom {
+        bottom: 20px;
+    }
+
+    &.left, &.left-bottom {
+        left: -20px;
+        border-color: transparent rgba(0, 0, 0, 0.5) transparent transparent;
+    }
+
+    &.right, &.right-bottom {
+        right: -20px;
+        border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+    }
+}
+
+.introjs-tooltip {
+    box-sizing: content-box;
+    position: absolute;
+    visibility: visible;
+    padding: 10px;
+    background-color: #fff;
+    min-width: 200px;
+    max-width: 300px;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.4);
+    transition: opacity 0.1s ease-out;
+
+    &.benefits-coverages {
+        right: 15px !important;
+        left: unset !important;
+    }
+
+    &.accounts-coverages {
+        .introjs-arrow {
+            right: 20% !important;
+            left: unset !important;
+        }
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1193px) {
+        &.accounts-coverages {
+            left: 20% !important;
+        }
+
+        &.benefits-coverages {
+            right: 20% !important;
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        &.accounts-coverages {
+            left: 12% !important;
+        }
+
+        &.benefits-coverages {
+            right: 12% !important;
+        }
+    }
+
+    @media screen and (min-width: 431px) and (max-width: 600px) {
+        &.accounts-coverages {
+            .introjs-arrow {
+                right: 50% !important;
+            }
+        }
+
+        &.benefits-coverages {
+            .introjs-arrow {
+                left: 30% !important;
+            }
+        }
+    }
+
+    @media screen and (max-width: 430px) {
+        &.accounts-coverages {
+            .introjs-arrow {
+                right: 70% !important;
+            }
+        }
+
+        &.benefits-coverages {
+            .introjs-arrow {
+                right: 50% !important;
+                left: unset !important;
+            }
+        }
+    }
+}
+
+.introjs-tooltip-title {
+    font-family: 300;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0 0 8px;
+    font-weight: 700;
+    float: left;
+    line-height: 1.5;
+}
+
+/* Tooltip header */
+.introjs-tooltip-header {
+    display: flex;
+    color: var(--v-colors__primary);
+    font-size: 18px;
+    font-style: normal;
+    position: absolute !important;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -25px;
+
+    &:after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+    }
+
+    .introjs-tooltip-title {
+        flex-grow: 1;
+        display: none !important;
+    }
+
+    .introjs-skipbutton {
+        flex-grow: 1;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        color: var(--v-colors__primary);
+        font-size: 18px;
+        cursor: pointer;
+        font-weight: bold;
+        line-height: 1;
+        text-align: right;
+        font-family: 'Proxima Nova Regular', Arial, sans-serif;
+        text-decoration: underline;
+        display: inline-flex;
+
+        &:hover, &:focus {
+            color: #212121;
+            outline: none;
+            text-decoration: none;
+        }
+    }
+}
+
+/* Tooltip text */
+.introjs-tooltiptext {
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #404245;
+    margin: 4px 0;
+    padding: 0 5px !important;
+}
+
+/* Tooltip bullets */
+.introjs-bullets {
+    text-align: center;
+    padding: 0 !important;
+
+    ul {
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+        clear: both;
+        margin: 0 auto 0;
+        padding: 0;
+        display: inline-block;
+
+        li {
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            list-style: none;
+            float: left;
+            margin: 0 2px;
+
+            a {
+                border: 1px solid var(--v-colors__secondary);
+                height: 10px !important;
+                width: 10px !important;
+                box-sizing: content-box;
+                display: block;
+                border-radius: 10px;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                text-decoration: none;
+                cursor: pointer;
+                background: none !important;
+
+                &:hover, &:focus {
+                    background-color: var(--v-colors__secondary);
+                    text-decoration: none;
+                    outline: none;
+                }
+
+                &.active {
+                    background-color: var(--v-colors__secondary) !important;
+                }
+            }
+        }
+    }
+}
+
+/* introjs-tooltipbuttons */
+.introjs-tooltipbuttons {
+    border-top: none !important;
+    padding: 12px 0 0 0;
+    text-align: right;
+    white-space: nowrap;
+    font-family: 300;
+    font-size: 12px;
+    font-weight: 'Lato';
+    font-style: normal;
+    letter-spacing: 0.5px;
+
+    .introjs-button {
+        &.introjs-closebutton {
+            -ms-flex-order: 2;
+            order: 2;
+            background: white;
+            color: #145a7b;
+            text-decoration: underline;
+            border: none;
+            font-family: 'Proxima Nova Regular', Arial, sans-serif;
+            box-shadow: none;
+            font-size: 18px
+        }
+    }
+
+    &:after {
+        content: "";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+    }
+}
+
+.introjs-button {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    text-decoration: none;
+    color: #424242;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    zoom: 1;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    border: none !important;
+    background-color: transparent !important;
+
+    &:hover {
+        outline: none;
+        text-decoration: none;
+        border-color: #9e9e9e;
+        background-color: #e0e0e0 !important;
+        color: #212121;
+    }
+
+    &:focus {
+        outline: none;
+        text-decoration: none;
+        color: #4985e3;
+        font-weight: 400;
+    }
+
+    &:active {
+        outline: none;
+        text-decoration: none;
+        background-color: #e0e0e0 !important;
+        border-color: #9e9e9e;
+        color: #4985e3;
+    }
+
+    &::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+    .circle {
+        border: solid 1px var(--v-colors__primary);
+        border-radius: 50%;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        padding-top: 7px;
+    }
+
+    &.introjs-disabled {
+        opacity: 0;
+    }
+}
+
+.introjs-prevbutton {
+    float: left;
+}
+
+.introjs-nextbutton {
+    float: right;
+}
+
+.introjs-disabled {
+    color: #9e9e9e;
+    border-color: #bdbdbd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: default;
+    background-color: #f4f4f4;
+    background-image: none;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        color: #9e9e9e;
+        border-color: #bdbdbd;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        cursor: default;
+        background-color: #f4f4f4;
+        background-image: none;
+        text-decoration: none;
+    }
+}
+
+.introjs-hidden {
+    display: none;
+}
+
+.introjs-progress {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    overflow: hidden;
+    height: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+}
+
+.introjs-progressbar {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    float: left;
+    width: 0%;
+    height: 100%;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    background-color: #08c;
+}
+
+.introjsFloatingElement {
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 50%;
+    top: 50%;
+}
+
+.introjs-fixedTooltip {
+    position: fixed;
+}
+
+.introjs-hint {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    background: transparent;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+
+    &:focus {
+        border: 0;
+        outline: 0;
+    }
+
+    &:hover {
+        > .introjs-hint-pulse {
+            border: 5px solid rgba(60, 60, 60, 0.57);
+        }
+    }
+}
+
+.introjs-hidehint {
+    display: none;
+}
+
+.introjs-fixedhint {
+    position: fixed;
+}
+
+.introjs-hint-pulse {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 10px;
+    height: 10px;
+    border: 5px solid rgba(60, 60, 60, 0.27);
+    border-radius: 30px;
+    background-color: rgba(136, 136, 136, 0.24);
+    z-index: 10;
+    position: absolute;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.introjs-hint-no-anim {
+    .introjs-hint-dot {
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+
+.introjs-hint-dot {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 10px solid rgba(146, 146, 146, 0.36);
+    background: transparent;
+    border-radius: 60px;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: introjspulse 3s ease-out;
+    animation: introjspulse 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    z-index: 1;
+    opacity: 0;
+    letter-spacing: 0.5px;
+}
+
+.nav-tooltip {
+    margin-left: 12%;
+}
+
+.hide-initially {
+    opacity: 0 !important;
+}
+
+.tour-active {
+    position: initial !important;
+
+    app-footer-desktop {
+        opacity: 0 !important;
+    }
+
+    .ion-page {
+        bottom: -1000% !important;
+    }
+}

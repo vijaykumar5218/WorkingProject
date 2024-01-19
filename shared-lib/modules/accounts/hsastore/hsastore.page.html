@@ -1,0 +1,35 @@
+<div [ngClass]="{'web': isWeb }">
+  <app-modal-header
+    [headerText]="pageText.headerText"
+    class="header"
+  ></app-modal-header>
+  <ion-segment
+    value="hsa"
+    [mode]="'md'"
+    (ionChange)="onSegmentChange($event)"
+    [ngClass]="{'show': hsaOrFsa?.hsa && hsaOrFsa?.fsa}"
+  >
+    <ion-segment-button value="hsa">
+      <ion-label>{{pageText.hsaStore}}</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="fsa">
+      <ion-label>{{pageText.fsaStore}}</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <div class="body" [ngClass]="{'seg-shown': hsaOrFsa?.hsa && hsaOrFsa?.fsa}">
+    <div class="iframe-wrapper">
+      <iframe
+        *ngIf="currentStore === 'fsa'"
+        src="https://tpa.fsastore.com/fsa-eligibility-list?AFID=558088&GroupName=TPA&CID=437559&utm_source=Voya+Financial&utm_medium=TPA+Mobile+Proprietary+iFrame+EL&utm_campaign=TPA+Partner"
+        class="iframe"
+        onload="window.parent.scrollTo(0,0)"
+      ></iframe>
+      <iframe
+        *ngIf="currentStore === 'hsa'"
+        src="https://tpa.hsastore.com/hsa-eligibility-list?AFID=558088&GroupName=TPA&CID=437559&utm_source=Voya+Financial&utm_medium=TPA+Mobile+Proprietary+iFrame+EL&utm_campaign=TPA+Partner"
+        class="iframe"
+        onload="window.parent.scrollTo(0,0)"
+      ></iframe>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+ion-grid {
+  &.myWorkplaceDashboard {
+    .linear-gradient {
+      margin-bottom: 55px;
+      @media screen and (min-width: 842px) {
+        margin-top: 5px;
+      }
+    }
+  }
+  &.myvoyage {
+    .linear-gradient {
+      margin-bottom: 50px;
+    }
+  }
+  .linear-gradient {
+    left: 0%;
+    right: 0%;
+    top: 100px;
+    background: linear-gradient(
+      359.28deg,
+      var(--gradient-color-white) 4.4%,
+      var(--secondary-colors-voya-gray) 91.56%
+    );
+    .max-width {
+      max-width: 1440px;
+      margin: auto;
+    }
+  }
+  .settings-tab {
+    min-height: 750px;
+    .left-col {
+      max-width: 440px;
+      padding-right: 0px;
+      @media screen and (min-width: 280px) and (max-width: 920px) {
+        display: none;
+      }
+      .left-card {
+        height: 99.5%;
+        background: var(--white);
+        border-radius: 10px 0px 0px 10px;
+        margin-right: 0px;
+        margin-left: 20px;
+        box-shadow: var(--card-box-shadow);
+        padding: 0px 0px 0px 20px;
+
+        .settings-title {
+          margin-top: 24px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.0015em;
+          color: var(--toggle-txt-color);
+        }
+      }
+    }
+
+    .right-col {
+      padding-left: 0px;
+      .right-card {
+        box-shadow: none;
+        margin-left: 0px;
+        margin-right: 20px;
+        border-radius: 0px 10px 10px 0px;
+        height: 99.5%;
+        @media screen and (min-width: 280px) and (max-width: 920px) {
+          margin-left: 20px;
+          border-radius: 10px;
+        }
+        .focused-element-help:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "faceIdIos":"Face ID",
+    "faceIdAndroid":"Facial Recognition",
+    "touchIdIos":"Touch ID",
+    "touchIdAndroid":"Fingerprints",
+    "biometrics":"Biometrics",
+    "loginWith":"Would you like to use biometrics for this app?",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "Ok",
+    "loginError": "Failed to login... please try again"
+}

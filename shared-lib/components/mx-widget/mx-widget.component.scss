@@ -1,0 +1,21 @@
+#mx-manage-accounts,
+[id*='-mx-account-transactions'] {
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.error-window {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+
+  ion-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  ion-button,
+  ion-text {
+    margin: auto;
+  }
+}

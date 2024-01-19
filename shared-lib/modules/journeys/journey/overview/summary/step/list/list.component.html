@@ -1,0 +1,47 @@
+<ion-row>
+  <div class="text-main-container list-heading">
+    <div class="icon">
+      <img
+        width="30"
+        height="30"
+        [src]="element.imageUrl"
+        [alt]="element.altText || ''"
+      />
+    </div>
+    <div class="heading text">{{ element.label }}</div>
+    <div class="hamburger"></div>
+  </div>
+</ion-row>
+<ion-row [ngStyle]="{'margin-bottom': element.marginBottom}">
+  <ion-col size="7">
+    <ion-row>
+      <div class="text" [ngStyle]="{'margin-bottom': element.bottom}">
+        {{ element.description }}
+      </div>
+      <ul
+        class="bullet"
+        *ngFor="let ele of element.elements; let index = index"
+      >
+        <li
+          class="desc"
+          [ngStyle]="{'margin-bottom': ele.marginBottom, color: ele.color}"
+        >
+          <span>{{ ele.label }}</span>
+          <span
+            ><a
+              class="linkcolor underline"
+              [id]="'link_' + index"
+              (click)="openWebView(ele.link)"
+              tabindex="0"
+              (keyup.enter)="openWebView(ele.link)"
+              >{{ ele.altText }}</a
+            ></span
+          >
+        </li>
+      </ul>
+    </ion-row>
+  </ion-col>
+  <ion-col size="5" class="desc-image">
+    <img [src]="element.descImageUrl" alt="" />
+  </ion-col>
+</ion-row>

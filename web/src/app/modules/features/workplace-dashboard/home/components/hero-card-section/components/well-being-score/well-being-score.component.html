@@ -1,0 +1,26 @@
+<ion-row class="well-being-score">
+  <ion-col id="tree-background" class="tree-background">
+    <ion-card-header tabindex="6">
+      <h2 tabindex="7">{{ pageText.wellBeingScore }}</h2>
+      <h2 tabindex="8">{{ pageText.scoreAmount }}</h2>
+    </ion-card-header>
+    <ion-card-content id="message-text">
+      <p tabindex="10" id="schedule-text">
+        {{ pageText.scheduleText }}
+      </p>
+      <p tabindex="11" id="nice-text">
+        <strong>{{ pageText.niceText }}</strong>
+      </p>
+      <p tabindex="12" id="boost-text">
+        <strong>{{ pageText.boostText }}</strong>
+      </p>
+      <br />
+      <span id="boost-button" tabindex="13">
+        {{ pageText.boostButton }}
+      </span>
+    </ion-card-content>
+  </ion-col>
+  <ion-col class="catchup-tile">
+    <app-catch-up-tile></app-catch-up-tile>
+  </ion-col>
+</ion-row>

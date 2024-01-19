@@ -1,0 +1,154 @@
+ion-grid {
+  margin: 0;
+  padding: 0;
+
+  ion-row.full-width {
+    #background-container {
+      background-image: url('/assets/mountains7.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top center;
+
+      #welcome-header {
+        margin-top: 25px;
+        margin-left: 20px;
+        margin-bottom: 70px;
+        @media only screen and (min-width: 720px) {
+          margin-bottom: 200px;
+        }
+
+        h2 {
+          font-weight: bold;
+        }
+      }
+      ion-card {
+        &.total-health-spend {
+          background-color: var(--primary-colors-voya-dark-blue);
+          width: 90%;
+          height: 166px;
+          margin-top: 5%;
+
+          @media only screen and (min-width: 720px) {
+            display: none;
+          }
+
+          .ths-text {
+            margin-left: 20px;
+            margin-right: 160px;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.33;
+            letter-spacing: 0.03px;
+            color: var(--primary-colors-voya-white);
+          }
+
+          .ths-date {
+            margin-left: 20px;
+            font-weight: normal;
+            color: var(--primary-colors-voya-white);
+          }
+
+          .ths-amount {
+            font-size: 24px;
+            font-weight: 600;
+            margin-left: 20px;
+            letter-spacing: 0.06px;
+            color: var(--primary-colors-voya-white);
+          }
+
+          .ths-details {
+            color: var(--primary-colors-voya-white);
+            margin-top: 25px;
+            margin-left: 20px;
+            font-size: 18px;
+
+            .navlink {
+              color: var(--primary-colors-voya-white);
+            }
+          }
+
+          .ths-img {
+            height: 130px;
+            width: 176px;
+            margin-top: -55%;
+            margin-left: 48%;
+          }
+        }
+      }
+
+      @media only screen and (min-width: 767px) {
+        .total-health-spend {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.mid-header {
+  margin-top: 20px;
+
+  .card-header {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 0.03px;
+    margin-left: 20px;
+    color: var(--primary-colors-voya-black);
+  }
+}
+
+#inner-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+app-medical-spending {
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+app-plans {
+  margin-top: -20px;
+}
+
+journey-list {
+  margin: 40px 20px 0 20px;
+  padding: 0 40px 0 40px;
+}
+
+.finstrong-card {
+  padding: 30px 0 0 0;
+}
+
+#view-finstrong {
+  width: 287px;
+  font-size: 16px;
+  margin: 0 auto 33px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 920px) {
+  .networth-web-view {
+    display: none;
+  }
+  .networth-mobile-view {
+    margin: 20px;
+    display: block;
+  }
+}
+@media screen and (min-width: 920px) {
+  .networth-web-view {
+    display: block;
+    margin: 20px 0 0 -40px;
+  }
+  .networth-mobile-view {
+    display: none;
+  }
+}
+
+:host ::ng-deep journeys-journey ion-card {
+  margin-bottom: 0;
+}

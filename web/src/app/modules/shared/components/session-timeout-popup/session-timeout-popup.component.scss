@@ -1,0 +1,58 @@
+.session-timeout-popup {
+  margin: auto 20px;
+
+  .save-button {
+    width: 94px;
+    height: 40px;
+    margin: 30px auto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: var(--primary-colors-voya-white);
+    pointer-events: auto;
+  }
+
+  .title-message {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-colors-voya-black);
+    .counter {
+      color: var(--ion-color-base);
+    }
+  }
+
+  .message {
+    margin-top: 12px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--primary-colors-voya-black);
+  }
+
+  .image-center {
+    display: block;
+    width: 60px;
+    margin: 40px auto;
+  }
+
+  .cancel-button {
+    pointer-events: auto;
+    width: 100px;
+    height: 26.5px;
+    font-size: 18px;
+    line-height: 1.56;
+    font-weight: normal;
+    text-align: center;
+    color: var(--primary-colors-voya-dark-blue);
+    margin: 20px auto 28px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    display: block;
+    --background: none;
+    --box-shadow: none;
+    --background-activated: none;
+    --background-hover: none;
+  }
+}

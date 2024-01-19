@@ -1,0 +1,25 @@
+<div class="icon-text-button-container">
+  <button
+    [ngClass]="{'with-edit': displayEdit, checked: checked}"
+    ion-button
+    outline
+    item-end
+    icon-start
+    (click)="handleClick()"
+  >
+    <div class="button-container">
+      <div>
+        <img [src]="element.imageUrl" [alt]="element.altText || ''" />
+      </div>
+      <span class="OneLinkNoTx">
+        {{ element.label }}
+      </span>
+    </div>
+  </button>
+  <journeys-steps-step-contentLink
+    *ngIf="displayEdit"
+    [element]="contentLinkElement"
+    [values]="contentLinkValue"
+    (valueChange)="handleValueChange($event)"
+  ></journeys-steps-step-contentLink>
+</div>

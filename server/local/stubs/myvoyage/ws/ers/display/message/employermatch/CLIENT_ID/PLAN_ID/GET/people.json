@@ -1,0 +1,16 @@
+{
+    "showMatch": true,
+    "matchPercentage": 13,
+    "toolTipNotes": "<h1>People like you...</h1> <ul><li>between the ages of 50 and 59</li> <li>whose annual income is between $40,000.00 and $79,000.00 per year</li> <li>Who are on track for retirement</li></ul> <h1>save 13% of their pay.</h1> <p> On track is defined as individuals who fall within the age and annual income ranges shown above who are estimated to have at least 70% of their current annual income available to them starting at their designated retirement age. The estimated income at retirement includes the individual’s anticipated annual rate of return and assumes that regular contributions will be made throughout the years leading up to retirement.</p>",
+    "showMatchPercentageValue": true,
+    "icon": "",
+    "header": "People like you who are on track save:",
+    "subHeader": "",
+    "urlText": "Learn More about people like you",
+    "url": "",
+    "actualEmployerMatch": 0,
+    "actualContributionPercentage": 5,
+    "peerComparisonContributionRate": 13,
+    "age": 59,
+    "nudgeType": "COMPAREME"
+}

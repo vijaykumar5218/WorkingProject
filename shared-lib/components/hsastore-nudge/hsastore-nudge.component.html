@@ -1,0 +1,29 @@
+<div *ngIf="show">
+  <div class="mini-nudge" *ngIf="miniNudge">
+    <a
+      tabindex="0"
+      (keyup.enter)="openStoreDisclaimer()"
+      (click)="openStoreDisclaimer()"
+      >{{ pageText.searchMini }}</a
+    >
+  </div>
+  <ion-card [ngClass]="{web: isWeb, 'no-card': fromJourney}" *ngIf="!miniNudge">
+    <div class="text">
+      <span>{{ pageText.explore }}</span>
+      <span
+        ><span class="purple">{{ pageText.hsa }}</span> {{ pageText.and }}
+        <span class="purple">{{ pageText.fsa }}</span></span
+      >
+      <span>{{ pageText.eligible }}</span>
+      <a
+        (click)="openStoreDisclaimer()"
+        tabindex="0"
+        (keyup.enter)="openStoreDisclaimer()"
+        >{{ pageText.search }}</a
+      >
+    </div>
+    <div class="image">
+      <img src="assets/icon/hsastore-cart.svg" alt="" />
+    </div>
+  </ion-card>
+</div>

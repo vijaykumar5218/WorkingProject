@@ -1,0 +1,11 @@
+{
+    "actionOptions":{
+        "header":"Contact a Professional",
+        "buttonRight":"Notification",
+        "buttonLeft":"settings"
+    },
+    "title": "We’re here to help",
+    "textClose": "Close",
+    "button":"Book Appointment",
+    "buttonStatement":"Go To My Account"
+}

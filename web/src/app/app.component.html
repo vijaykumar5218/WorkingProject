@@ -1,0 +1,37 @@
+<ng-container *ngIf="isAppReady">
+  <ng-container *ngIf="isMyVoyageEnabled">
+    <app-smart-banner></app-smart-banner>
+  </ng-container>
+  <ng-container *ngIf="isMyVoyageAccess; else unSecureTemplate">
+    <iframe [src]="urlSafe" hidden *ngIf="loadIframe"></iframe>
+    <ng-container *ngIf="!isUnSecure; else unSecureTemplate">
+      <app-header
+        [ngStyle]="
+          !suppressHeaderFooter ? {display: 'initial'} : {display: 'none'}
+        "
+      ></app-header>
+      <ion-app>
+        <ion-content>
+          <ion-router-outlet> </ion-router-outlet>
+        </ion-content>
+      </ion-app>
+      <app-footer
+        *ngIf="!isWorkplaceDashboardEnabled"
+        class="bottom-navigation"
+        [ngStyle]="
+          !suppressHeaderFooter && !isDesktop
+            ? {display: 'initial'}
+            : {display: 'none'}
+        "
+      ></app-footer>
+    </ng-container>
+  </ng-container>
+
+  <ng-template #unSecureTemplate>
+    <ion-app>
+      <ion-content>
+        <ion-router-outlet> </ion-router-outlet>
+      </ion-content>
+    </ion-app>
+  </ng-template>
+</ng-container>

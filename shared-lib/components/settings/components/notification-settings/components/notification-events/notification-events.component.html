@@ -1,0 +1,81 @@
+<div class="settings-section-wrapper">
+  <div>
+    <ion-toggle
+      (ionChange)="toggleSection()"
+      [(ngModel)]="sectionActive"
+      id="{{ 'toogle-btn-' + basePropName }}"
+    ></ion-toggle>
+    <h4>{{ title }}</h4>
+    <p class="settings-subtext">
+      {{ subTitle }}
+    </p>
+  </div>
+  <div *ngIf="sectionActive">
+    <div class="settings-section">
+      <!-- PUSH notifications -->
+      <ion-row>
+        <ion-checkbox
+          id="{{ basePropName + 'PushContactId' }}"
+          name="{{ basePropName + 'PushContactId' }}"
+          color="btncolor"
+          class="settings-checkbox"
+          [(ngModel)]="pushChecked"
+          (ionChange)="
+            updatePushSetting(
+              pushChecked,
+              basePropName + 'PushContactId-DONT_PUSH'
+            )
+          "
+          mode="md"
+        >
+        </ion-checkbox>
+        <ion-label class="settings-checkbox-label"
+          >{{ commonContent.pushNotification }}
+        </ion-label>
+      </ion-row>
+      <!-- TEXT notifications -->
+      <ion-row>
+        <ion-checkbox
+          [disabled]="isDisabled"
+          id="{{ basePropName + 'MobileContactId' }}"
+          name="{{ basePropName + 'MobileContactId' }}"
+          color="btncolor"
+          [(ngModel)]="textChecked"
+          (ionChange)="
+            updateSetting(
+              textChecked,
+              basePropName + 'MobileContactId-DONT_TEXT'
+            )
+          "
+          class="settings-checkbox"
+          mode="md"
+        >
+        </ion-checkbox>
+        <ion-label class="settings-checkbox-label">{{
+          commonContent.textLabel
+        }}</ion-label>
+      </ion-row>
+      <!-- EMAIL notifications -->
+      <ion-row>
+        <ion-checkbox
+          id="{{ basePropName + 'EmailContactId' }}"
+          name="{{ basePropName + 'EmailContactId' }}"
+          color="btncolor"
+          [(ngModel)]="emailChecked"
+          (ionChange)="
+            updateSetting(
+              emailChecked,
+              basePropName + 'EmailContactId-DONT_EMAIL'
+            )
+          "
+          class="settings-checkbox"
+          mode="md"
+        >
+        </ion-checkbox>
+        <ion-label class="settings-checkbox-label"
+          >{{ commonContent.emailLabel }}
+        </ion-label>
+      </ion-row>
+    </div>
+  </div>
+</div>

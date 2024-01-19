@@ -1,0 +1,15 @@
+{
+  "required": false,
+  "primaryEmail": {
+    "lastUpdatedDate": "2022-06-28T06:31:05",
+    "partyContactId": "2ef59974-4d64-4165-a726-55f8e90849f4",
+    "email": "horace@voya.com",
+    "lastFailedInd": "N"
+  },
+  "mobilePhone": {
+    "astUpdatedDate": "2022-07-25T05:34:16",
+    "partyContactId": "5a5914af-6369-4317-86d9-44e0ae9816e2",
+    "phoneNumber": "5233587415"
+  },
+  "secondaryEmailAllowed": false
+}

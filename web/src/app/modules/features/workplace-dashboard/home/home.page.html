@@ -1,0 +1,163 @@
+<ion-grid *ngIf="isTemplateReady">
+  <div #topmostElement></div>
+  <div class="workplace-dashboard">
+    <img
+      tabindex="1"
+      [ngClass]="isMorning? 'morning': isEvening? 'evening': 'afternoon'"
+      alt="Sky With Current Atmosphere Background Image"
+    />
+    <div class="background-banner">
+      <div class="max-width">
+        <div
+          class="greeting-row"
+          [ngClass]="!(!isMyBenefitsUser && ((myVoyageAccess?.isMxUser && hasMXAccount) || ((!myVoyageAccess?.isMultiClient) && moreResources?.subLinks.length > 0) || (journeys && isMyVoyageEnabled) || (offerVal.length > 0) || snapshotAccount || translation) || isMyBenefitsUser)? 'display-block':'margin-bottom'"
+        >
+          <div class="app-greeting">
+            <div class="greeting-component">
+              <app-greeting></app-greeting>
+            </div>
+            <div class="benefitsCoverage" *ngIf="!isMyBenefitsUser">
+              <ng-container *ngTemplateOutlet="benefitsCoverage"></ng-container>
+            </div>
+            <div class="greeting desktop" *ngIf="!isMyBenefitsUser">
+              <app-translation-card-section
+                *ngIf="translation && !translationPref?.translationEnabledMyvoyageDsh && translationPref?.clientTranslationEnabled"
+                [translationObject]="translation"
+              ></app-translation-card-section>
+              <ng-container *ngIf="snapshotAccount && snapshotAccount.totalBalance && snapshotAccount.accounts?.length > 0">
+                  <app-snapshot [snapshotAccount]="snapshotAccount"></app-snapshot>
+              </ng-container>
+              <ng-container>
+                <app-money-out
+                  *ngIf="isMoneyOutAvailable"
+                  [moneyOutMessagesList]="moneyOutMessagesList"
+                ></app-money-out>
+              </ng-container>
+              <ng-container *ngIf="myBenefitsUrl">
+                <ion-card class="myBenefitLink">
+                  <a class="link" [href]="myBenefitsUrl"
+                    >{{pageText.viewMyBenefitsLabel}}</a
+                  >
+                </ion-card>
+              </ng-container>
+              <ng-container *ngIf="offerVal.length > 0">
+                <div class="getAdvicer">
+                  <ng-container *ngTemplateOutlet="getAdvicer"></ng-container>
+                </div>
+              </ng-container>
+              <ng-container
+                *ngIf="((!myVoyageAccess?.isMultiClient) && moreResources?.subLinks.length > 0)"
+              >
+                <app-more-resources
+                  [moreResources]="moreResources"
+                ></app-more-resources>
+              </ng-container>
+              <ng-container *ngIf="myVoyageAccess?.isMxUser && hasMXAccount">
+                <app-finStrongScoreWidget
+                  [miniFinstrong]="'desktop-finstrong-mini'"
+                  [isAltAccessUser]="myVoyageAccess?.isAltAccessUser"
+                ></app-finStrongScoreWidget>
+              </ng-container>
+              <ng-container *ngIf="journeys && isMyVoyageEnabled">
+                <app-recommended-journey></app-recommended-journey>
+              </ng-container>
+            </div>
+            <div class="greeting desktop" *ngIf="isMyBenefitsUser">
+              <app-billing-payments></app-billing-payments>
+            </div>
+          </div>
+
+          <div
+            class="right-cards"
+            [ngClass]="!(!isMyBenefitsUser && ((myVoyageAccess?.isMxUser && hasMXAccount) || ((!myVoyageAccess?.isMultiClient) && moreResources?.subLinks.length > 0) || (journeys && isMyVoyageEnabled) || (offerVal.length > 0) || snapshotAccount || translation) || isMyBenefitsUser)? 'center-aligned':''"
+          >
+            <div class="benefitsCoverageRightCard" *ngIf="!isMyBenefitsUser">
+              <ng-container *ngTemplateOutlet="benefitsCoverage"></ng-container>
+            </div>
+            <app-translation-card-section
+              class="translation-responsive"
+              *ngIf="translation && !translationPref?.translationEnabledMyvoyageDsh && translationPref?.clientTranslationEnabled && !isMyBenefitsUser"
+              [translationObject]="translation"
+            ></app-translation-card-section>
+            <ion-row>
+              <ion-col
+                id="display-col"
+                *ngIf="true"
+              >
+                <app-orange-money
+                ></app-orange-money>
+              </ion-col>
+            </ion-row>
+            <ng-container *ngIf="snapshotAccount && !isMyBenefitsUser">
+              <app-snapshot
+                class="snapshot-responsive"
+                [snapshotAccount]="snapshotAccount"
+              ></app-snapshot>
+            </ng-container>
+            <ng-container
+              *ngIf="!myVoyageAccess?.isHealthOnly && !isMyBenefitsUser"
+            >
+              <hero-card-section></hero-card-section>
+            </ng-container>
+
+            <app-accounts-coverages
+            ></app-accounts-coverages>
+            <div id="responsiveGreeting" class="responsive" *ngIf="!isMyBenefitsUser">
+              <ng-container *ngIf="offerVal.length > 0">
+                <div class="getAdvicer">
+                  <ng-container *ngTemplateOutlet="getAdvicer"></ng-container>
+                </div>
+              </ng-container>
+              <ng-container>
+                <app-money-out
+                  *ngIf="isMoneyOutAvailable"
+                  [moneyOutMessagesList]="moneyOutMessagesList"
+                ></app-money-out>
+              </ng-container>
+              <ng-container
+                *ngIf="((!myVoyageAccess?.isMultiClient) && moreResources?.subLinks.length > 0)"
+              >
+                <app-more-resources
+                  [moreResources]="moreResources"
+                ></app-more-resources>
+              </ng-container>
+              <ng-container *ngIf="myVoyageAccess?.isMxUser && hasMXAccount">
+                <app-finStrongScoreWidget
+                  [miniFinstrong]="'responsive-finstrong-mini'"
+                  [isAltAccessUser]="myVoyageAccess?.isAltAccessUser"
+                ></app-finStrongScoreWidget>
+              </ng-container>
+              <ion-row class="journey-advisors" *ngIf="journeys && isMyVoyageEnabled">
+                <ng-container>
+                  <ion-col class="journey-col">
+                    <app-recommended-journey></app-recommended-journey>
+                  </ion-col>
+                </ng-container>
+              </ion-row>
+            </div>
+            <div class="responsive" *ngIf="isMyBenefitsUser">
+              <app-billing-payments></app-billing-payments>
+            </div>
+          </div>
+        </div>
+        <ion-row class="workplace-row-content"> </ion-row>
+      </div>
+    </div>
+    <app-footer-desktop class="dashboard-footer-desktop"></app-footer-desktop>
+  </div>
+</ion-grid>
+
+<ng-template #benefitsCoverage>
+  <ng-container *ngIf="benefitsEnrollment$ | async as benefitsEnrollment">
+    <ng-container *ngIf="!benefitsEnrollment.suppressBanner">
+      <div automation-id="benefits-col">
+        <app-benefits-banner [benefitsEnrollment]="benefitsEnrollment">
+        </app-benefits-banner>
+      </div>
+    </ng-container>
+  </ng-container>
+</ng-template>
+
+<ng-template #getAdvicer>
+  <app-advisors [offerVal]="offerVal"></app-advisors>
+</ng-template>

@@ -1,0 +1,156 @@
+<ion-grid [ngClass]="!isDesktop? 'mobile-grid' :'' ">
+  <div #topmostElement></div>
+  <ion-row>
+    <ion-col>
+      <app-mxerror></app-mxerror>
+    </ion-col>
+  </ion-row>
+  <div
+    class="linear-gradient"
+    [ngClass]="myWorkplaceDashboardEnabled? 'myWorkplaceDashboard':'myvoyage'"
+  >
+    <div class="max-width">
+      <ion-row
+        class="account-tab"
+        [ngClass]="!isDesktop? 'account-tab-mobile': ''"
+      >
+        <ion-col
+          class="left-col"
+          [ngClass]="(!isDesktop && selectedTab != 'summary')? 'hide-content' : ''"
+        >
+          <ion-card class="left-card">
+            <ng-container *ngIf="isDesktop">
+              <ion-row class="my-account">
+                <ion-col>
+                  <img
+                    id="my-account-logo"
+                    alt="piggy bank"
+                    class="elephant-svg"
+                    src="assets/icon/piggy-bank.png"
+                  />
+                  <ion-text id="my-account-text">
+                    {{pageData.my_account}}
+                  </ion-text>
+                </ion-col>
+              </ion-row>
+
+              <ion-row
+                class="allAccounts"
+                [ngStyle]="{'width':isAllAccountsSelected ? '408px' : 'auto' }"
+                (click)="clickAllAccounts()"
+                (keyup.enter)="clickAllAccounts()"
+                id="all-accounts-clicked"
+                tabindex="0"
+              >
+                <ion-col class="square-box">
+                  <img
+                    id="all-accounts-img"
+                    alt="compass"
+                    class="navigator-image"
+                    src="assets/icon/navigator-logo.png"
+                  />
+                </ion-col>
+                <ion-col class="allAccount-text">
+                  <ion-text id="all-accounts-txt"
+                    >{{pageData.allAccount}}</ion-text
+                  >
+                </ion-col>
+              </ion-row>
+            </ng-container>
+
+            <div>
+              <app-account-summary
+                [accounts]="nonHSAaccounts"
+              ></app-account-summary>
+              <app-account-summary
+                [accounts]="hsaAccounts"
+              ></app-account-summary>
+              <app-mx-account-list></app-mx-account-list>
+            </div>
+
+            <ion-row *ngIf="myWorkplaceDashboardEnabled ? enableMX : true">
+              <ion-col class="margins">
+                <ion-button
+                  [disabled]="isAltAccessUser"
+                  size="small"
+                  id="add-account"
+                  class="btnview"
+                  name="Add Account"
+                  shape="round"
+                  expand="block"
+                  color="btncolor"
+                  (click)="handleAddAccountClick()"
+                >
+                  <img
+                    class="add-circle-outline"
+                    alt="plus symbol add"
+                    src="assets/icon/addoutline.png"
+                  />
+                  {{pageData.add_account}}
+                </ion-button>
+              </ion-col>
+            </ion-row>
+
+            <ion-row
+              class="manage-accounts-row"
+              *ngIf="myWorkplaceDashboardEnabled ? enableMX && showManageAccounts : showManageAccounts"
+            >
+              <ion-col class="ion-text-center managetext">
+                <ion-text
+                  (click)="!isAltAccessUser && handleManageAccountClick()"
+                  (keyup.enter)="!isAltAccessUser && handleManageAccountClick()"
+                  id="manage-account"
+                  [ngClass]="{'not-allowed': isAltAccessUser}"
+                >
+                  <a tabindex="0" [ngClass]="{'disabled-link': isAltAccessUser}" class="linkcolor underline manage-accounts"
+                    >{{pageData.manage_account}}</a
+                  >
+                </ion-text>
+              </ion-col>
+            </ion-row>
+
+            <ion-card
+              *ngIf="hasMXUser && !isDesktop"
+              class="spending-budget-section"
+            >
+              <ng-container *ngFor="let headerdata of getHeaderMessage?.MX">
+                <p id="spending-budget-title" class="titletop">
+                  {{ headerdata?.spending_budget_title }}
+                </p>
+                <div
+                  *ngFor="let imagedata of headerdata?.spending_budget_description"
+                >
+                  <p id="bottomText" class="bottom-text">
+                    {{ imagedata?.bottom_text }}
+                  </p>
+                </div>
+              </ng-container>
+              <app-spending-widget
+                tagName="mx-spending-widget-accounts"
+              ></app-spending-widget>
+              <app-budget-widget
+                tagName="mx-budget-widget-accounts"
+              ></app-budget-widget>
+            </ion-card>
+          </ion-card>
+          <app-footer-desktop
+            *ngIf="myWorkplaceDashboardEnabled"
+            class="small-device-dashboard-footer"
+          ></app-footer-desktop>
+        </ion-col>
+
+        <ion-col class="right-col">
+          <ion-card class="right-card">
+            <ion-router-outlet
+              class="focused-element"
+              tabindex="0"
+              [animated]="false"
+              #focusedElement
+            ></ion-router-outlet>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  <app-footer-desktop class="footer-desktop"></app-footer-desktop>
+</ion-grid>

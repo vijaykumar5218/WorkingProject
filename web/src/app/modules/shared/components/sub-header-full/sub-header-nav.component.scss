@@ -1,0 +1,40 @@
+:host {
+  .container-outer {
+    box-shadow: 1px 10px 10px -10px var(--v-colors__box-shadow-25);
+    height: 72px;
+    position: sticky;
+    top: 94px;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+
+    .container {
+      flex: content;
+      flex-direction: row;
+      max-width: 1440px;
+      margin: auto;
+      height: 100%;
+      padding: 0 40px 0 40px;
+    }
+
+    img {
+      margin: auto 0 auto 0;
+      width: 14px;
+      height: 14px;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+
+    ion-text {
+      margin: auto 0 auto 10px;
+      height: 24px;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.33;
+      letter-spacing: 0.03px;
+      color: var(--primary-colors-voya-black);
+      vertical-align: middle;
+      cursor: pointer;
+    }
+  }
+}

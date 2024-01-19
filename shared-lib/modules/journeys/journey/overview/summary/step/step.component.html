@@ -1,0 +1,99 @@
+<ion-text class="header" *ngIf="header">{{ header }}</ion-text>
+<div class="web-card">
+  <ion-text *ngIf="subheader">{{ subheader }}</ion-text>
+  <ng-container *ngFor="let stepEl of step.elements; let i = index">
+    <ng-container
+      *ngIf="
+        !stepEl.flag ||
+        (journeyServiceMap[journeyId] &&
+          journeyServiceMap[journeyId][stepEl.flag])
+      "
+    >
+      <journeys-overview-summary-step-image-with-value
+        *ngIf="stepEl.id === 'imageWithValue'"
+        [content]="step.stepContent"
+        [element]="stepEl"
+        (valueEmpty)="setHeaders($event, i)"
+      ></journeys-overview-summary-step-image-with-value>
+
+      <app-orange-money
+        *ngIf="stepEl.id === 'orangeMoney'"
+        [displayHeader]="false"
+        [fromJourneys]="true"
+      ></app-orange-money>
+
+      <journeys-overview-summary-word
+        *ngIf="
+          stepEl.id === 'wordGroupSummary' ||
+          stepEl.id === 'wordGroupOtherSummary'
+        "
+        [element]="stepEl"
+        [content]="step.stepContent"
+        [isOther]="stepEl.id === 'wordGroupOtherSummary'"
+        (valueEmpty)="setHeaders($event, i)"
+      ></journeys-overview-summary-word>
+      <journeys-overview-summary-step-text-field
+        *ngIf="stepEl.id === 'textFieldInputSummary'"
+        [element]="stepEl"
+      ></journeys-overview-summary-step-text-field>
+      <journeys-steps-step-mx-widget
+        *ngIf="stepEl.id === 'mxWidget'"
+        [element]="stepEl"
+      ></journeys-steps-step-mx-widget>
+      <journeys-overview-summary-step-table
+        *ngIf="stepEl.id === 'tableInputSummary'"
+        [element]="stepEl"
+        [content]="step.stepContent"
+      ></journeys-overview-summary-step-table>
+      <ng-container *ngIf="stepEl.id === 'text-icon'">
+        <div
+          class="text-main-container"
+          [ngStyle]="{'margin-bottom': stepEl.marginBottom}"
+        >
+          <div class="icon">
+            <img
+              width="30"
+              height="30"
+              [src]="stepEl.imageUrl"
+              [alt]="stepEl.altText || ''"
+            />
+          </div>
+          <div class="heading text">{{ stepEl.label }}</div>
+          <div class="hamburger"></div>
+        </div>
+      </ng-container>
+      <journeys-overview-checkbox
+        [ngStyle]="{'margin-bottom': stepEl.marginBottom}"
+        *ngIf="stepEl.id === 'check-box'"
+        [element]="stepEl"
+        (valueChange)="updateValue($event, stepEl.answerId)"
+        [answer]="value[stepEl.answerId]"
+      >
+      </journeys-overview-checkbox>
+      <journeys-overview-summary-label
+        *ngIf="stepEl.id === 'label'"
+        [element]="stepEl"
+        [journeyId]="journeyId"
+      >
+      </journeys-overview-summary-label>
+      <journeys-link
+        *ngIf="stepEl.id === 'link'"
+        [element]="stepEl"
+      ></journeys-link>
+
+      <journeys-overview-summary-list
+        *ngIf="stepEl.id === 'list'"
+        [element]="stepEl"
+      ></journeys-overview-summary-list>
+
+      <journeys-line
+        *ngIf="stepEl.id === 'line'"
+        [element]="stepEl"
+      ></journeys-line>
+      <app-hsastore-nudge
+        *ngIf="stepEl.id === 'hsaStore'"
+        [fromJourney]="true"
+      ></app-hsastore-nudge>
+    </ng-container>
+  </ng-container>
+</div>

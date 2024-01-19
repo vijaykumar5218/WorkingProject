@@ -1,0 +1,78 @@
+{
+	"dataStatus": "OK",
+	"data": {
+		"popupContentList": [{
+			"type": "ALERT",
+			"subType": "ASP_ALERT",
+			"data": [{
+				"title": "Test alert styles",
+				"text": "<i>italics</i><br /><br /><b>bold</b><br /><br /><u>underline</u><br /><br /><sup>superscript</sup><br /><br /><font color=\"red\">font color</font>",
+				"showNew": false,
+				"alert": true,
+				"startDate": "2016-10-28T00:00:00",
+				"gaEnabled": false
+			}, {
+				"title": "Test alert class bulletList",
+				"text": "This website is for informational purposes only. Your account balance and other plan detail reflect values as of June 30, 2015.<br /><br />WE'VE MOVED! Your MSRS Account Online is now located at <a href=\"javascript:popWin('https://msrsplans.gwrs.com/login.do',500,742,'yes','yes','yes','yes','yes','url')\" class=\"comLink\">https://msrsplans.gwrs.com/login.do</a><ul class='bulletList'><li>Be sure to use the new PIN we sent you to access your account online. If you forgot your PIN or need help logging in, please contact MSRS at 651-296-2761 or 1-800-657-5757.</li><li>If you previously saved the Account Online website as a bookmark in your browser, you will need to update the bookmark with the new URL.</li></ul>",
+				"showNew": false,
+				"alert": true,
+				"startDate": "2016-10-28T00:00:00",
+				"gaEnabled": false
+			}, {
+				"title": "Test alert class comLink, JS fn popWin",
+				"text": "Look for your 2010 health benefits below. For your 401(k) Plan and Pension benefits, click on this url: <a href=\"javascript:popWin('http://www.yourbenefitsresources.com/amfam',500,742,'yes','yes','yes','yes','yes','url')\" class=\"comLink\">http://www.yourbenefitsresources.com/amfam</a>",
+				"showNew": false,
+				"alert": true,
+				"startDate": "2016-10-28T00:00:00",
+				"gaEnabled": false
+			}, {
+				"title": "Test JS fn popPDF",
+				"text": "See the <a href=\"javascript:popPDF('https://lmco.intg.voya.com/einfo/pdfs/msgs/global/roth_guide_20101026_110414.pdf',500,742,'yes','yes','yes','yes','yes','pdf')\"  class=\"comLink\">Guide to Roth 401(k) Contributions</a>.<br /><br />(NOTE: This also uses BASE_URL and relative URL functionality, so if it doesn't work, it may not be the popPDF bit that's breaking it.)",
+				"showNew": false,
+				"alert": true,
+				"startDate": "2016-10-28T00:00:00",
+				"gaEnabled": false
+			}, {
+				"title": "Test alert JS fn alertwin",
+				"text": "This is to test a Post Login Global Alert <a href=\"javascript:alertwin(307)\">Pop Up</a> - This is legitimate functionality that needs to work in PROD, but the data may be bad,  so let me know if it doesn't work and I'll engage .NET dev.",
+				"showNew": false,
+				"alert": true,
+				"startDate": "2016-10-28T00:00:00",
+				"gaEnabled": false
+			}],
+			"callbackURL": "/myvoya/ws/ers/data/customers/4689e7f1-0601-835a-e053-2cd8ac0a05b8/retirement/alerts/updateinteraction?type=alert_msg&checkbox={checked}",
+			"displayDontShowMeAgainBoxAndText": false,
+			"dialogTitle": "Alerts"
+		}, {
+			"type": "ALERT",
+			"subType": "BENE",
+			"data": "<div id=\"bene-messages-and-alerts\" class=\"modal\" title=\"Beneficiary Designation\"><div class=\"bene-alert-message\"><div><h3><p>If you would like to add beneficiary information at this time, please select the Add Beneficiary button below.</p> </h3></div><div><p><a id=\"btn_add\" href=\"https://lmco.intg.voya.com/epweb/pweblink.do?s=u51C00HYvDySylPcgYUuqw--.I517&plan=720001&act_type=P&domain=lmco.intg.voya.com&page=add-edit-bene&pageId=PERSONAL_BENEADD&d=bbf806b6263ab78e7121035e210ebc4602532979\" title=\"Add Beneficiary\"><span>Add Beneficiary</span><b></b> </a></p></div><div></div></div><div class\"alert-reminder-later-close\"></div></div>",
+			"displayDontShowMeAgainBoxAndText": false,
+			"planId": "720001",
+			"dialogTitle": "Beneficiary Designation"
+		}, {
+			"type": "ALERT",
+			"subType": "ASP_FE",
+			"callbackURL": "/myvoya/ws/ers/data/customers/4689e7f1-0601-835a-e053-2cd8ac0a05b8/retirement/alerts/updateinteraction?type=online_eval",
+			"displayDontShowMeAgainBoxAndText": false,
+			"imageLinkUrl": "/myvoya/link?type=includefe&token=urlResourceType%3DFEISSOLINK%26s%3Du51C00HYvDySylPcgYUuqw--.I517%26clientId%3DMARTIN%26vendorId%3DFEI%26disclaimer%3DFEIEMBDFOR%26domain%3Dlmco.intg.voya.com%26AlertType%3DSTOPLIGHT%26AlertSubType%3DRETIREMENT_INCOME%26PromoType%3DPROMOTYPE%26PageCode%3DHomePage%26Treatment%3DTILE%26d%3D8917cd412417ddc44c8f265d18625051c595accb",
+			"bean": {
+				"feEvalLayerFlag": true,
+				"feEvalInfo": {
+					"image": "https://lmco.intg.voya.com/static/global/images/oe_int_stop_ques.jpg",
+					"imageUrl": "/myvoya/link?type=includefe&token=urlResourceType%3DFEISSOLINK%26s%3Du51C00HYvDySylPcgYUuqw--.I517%26clientId%3DMARTIN%26vendorId%3DFEI%26disclaimer%3DFEIEMBDFOR%26domain%3Dlmco.intg.voya.com%26AlertType%3DSTOPLIGHT%26AlertSubType%3DRETIREMENT_INCOME%26PromoType%3DPROMOTYPE%26PageCode%3DHomePage%26Treatment%3DTILE%26d%3D8917cd412417ddc44c8f265d18625051c595accb",
+					"imageAltText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nul",
+					"nameText": "Prepared for Luciano Fegan-Dp",
+					"evalText": "Will you have enough Retirement Income? Investing in your retirement plan is important, Voya Retirement Advisors can help."
+				}
+			}
+		}, {
+			"type": "ALERT",
+			"subType": "ACCT_REALIGN",
+			"data": "<center>Hi ERWIN, your employer has chosen to offer an automatic account realignment<br>PHANEUF ASSOCIATES INCORPORATED 401(K) PLAN<br><br><br>Your total account balance will automatically be transferred into the 1702 TRowePrc Retirement 2040 Fund R fund.<br>Investing your future contributions into the 1702 TRowePrc Retirement 2040 Fund R fund.<br>A confirmation explaining these account realignment parameters has also been sent to your address of record.<br><br></center><div class=\"prd\"><div id=\"acct-realign-overlay\"><div class=\"manage-options clearfix\"><div class=\"option option-col1 option-row1\"><div class=\"content\"><div class=\"inner\" align=\"center\"><p><font color=#fb8000><b>This looks good!</b></font><br><br>\"...process these changes to my account.\"</p><div id=\"#\" class=\"btn_opt\"><a id=\"btn_opt\" href=\"#\"  onclick=\"javascript:postRetroAutoEnroll('N');\" title=\"Take Me to My Account\"><span>Take Me to My Account</span></a></div></div></div></div><div class=\"option option-col2 option-row1\"><div class=\"content\"><div class=\"inner\" align=\"center\"><p><b><font color=#fb8000>I do not wish to realign</font></b><br><br>\"...in my retirement plan at this time.\"</p><div id=\"#\" class=\"btn_opt\"><a id=\"btn_opt\" href=\"#\"  onclick=\"javascript:postRetroAutoEnroll('Y');\" title=\"Opt Out\"><span>Opt Out</span></a></div></div></div></div></div></div></div><br><br>This does not mean that you are not in control of the amount that you contribute or how your account is invested. You may decide to do nothing and have your account realigned as displayed, or you may choose alternative options that better meet your needs.<br><br>",
+			"displayDontShowMeAgainBoxAndText": false,
+			"planId": "551019",
+			"dialogTitle": "Account Realignment"
+		}]
+	}
+}

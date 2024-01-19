@@ -1,0 +1,214 @@
+:host {
+  display: flex;
+  align-items: center;
+
+  ion-card.loading {
+    padding: 30px;
+  }
+
+  ion-card {
+    margin: auto 20px;
+
+    div,
+    span {
+      letter-spacing: 0.08px;
+      font-size: 16px;
+      color: var(--ion-color-dark);
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    .card-content {
+      margin-top: 12px;
+    }
+
+    hr {
+      border-bottom: 1px solid var(--white);
+      margin: 11px 0 13px;
+    }
+
+    .card-intro p {
+      font-size: 16px;
+      letter-spacing: 0.08px;
+      text-align: left;
+      color: var(--ion-color-dark);
+    }
+
+    ion-spinner.loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+
+    .imake-row .label {
+      margin: 20px 0 8px;
+    }
+
+    .salary-row {
+      .label {
+        line-height: 50px;
+        margin-left: 8px;
+      }
+      .helpcircle {
+        vertical-align: middle;
+        margin-left: 4px;
+        width: 24px;
+        height: 24px;
+        color: var(--primary-colors-voya-dark-blue);
+      }
+      .a-year {
+        text-align: center;
+      }
+    }
+
+    .error-row {
+      margin-top: 8px;
+
+      ion-text {
+        margin-left: 8px;
+        display: block;
+      }
+
+      .error-icon {
+        width: 22px;
+        height: 22px;
+        margin-left: 4px;
+        fill: var(--secondary-colors-error-red);
+      }
+    }
+
+    .label {
+      padding-left: 2px;
+    }
+
+    .type-toggle {
+      padding-inline-start: 0.5rem;
+      .show-option,
+      .hide-option {
+        font-size: 1.2rem;
+        display: block;
+      }
+    }
+
+    .age-row {
+      div {
+        display: inline-block;
+        height: 54px;
+        line-height: 54px;
+      }
+
+      .value-box {
+        border: 1px solid var(--secondary-colors-medium-gray-1);
+        border-radius: 4px;
+        height: 54px;
+        width: 62px;
+        margin: 0 8px;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.03px;
+        color: var(--primary-colors-voya-dark-blue);
+        padding-right: 2px;
+        text-align: center;
+      }
+
+      .hidden-date-picker {
+        display: none;
+      }
+    }
+
+    .ayear-row {
+      margin-top: 8px;
+
+      span {
+        line-height: 24px;
+      }
+
+      .helpcircle {
+        color: var(--primary-colors-voya-dark-blue);
+        height: 24px;
+        width: 24px;
+        margin-left: 4px;
+        vertical-align: bottom;
+      }
+    }
+
+    .ifeel-row {
+      margin-top: 20px;
+    }
+
+    ion-input {
+      border: 1px solid var(--secondary-colors-medium-gray-1);
+      border-radius: 4px;
+      height: 54px;
+      --padding-start: 18px;
+    }
+
+    .float-right {
+      float: right;
+      cursor: pointer;
+    }
+
+    .save-row {
+      margin: 36px auto;
+
+      .save-button {
+        width: 269px;
+        height: 40px;
+        border-radius: 20px;
+        margin: auto;
+        align-items: center;
+        gap: 10px;
+
+        .save-spinner {
+          margin-right: 8px;
+          min-width: 24px;
+        }
+      }
+
+      .save-failed {
+        display: block;
+        color: red;
+        margin: 8px auto 0;
+        text-align: center;
+      }
+    }
+
+    .iconbutton {
+      position: absolute;
+      right: 2px;
+      top: 14px;
+      z-index: 999;
+
+      ion-icon {
+        padding-right: 8px;
+      }
+    }
+
+    ion-select {
+      border-radius: 4px;
+      height: 54px;
+      --padding-start: 20px;
+      --padding-end: 10px;
+    }
+
+    ion-col {
+      padding: 0;
+    }
+
+    .ion-select {
+      border-radius: 4px;
+      border: solid 1px var(--secondary-colors-medium-gray-2);
+    }
+
+    .error-text {
+      color: var(--secondary-colors-error-red);
+    }
+
+    .error-input {
+      border-color: var(--secondary-colors-error-red) !important;
+    }
+  }
+}

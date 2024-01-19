@@ -1,0 +1,82 @@
+[
+  {
+    "clientId": "MICHIGAN",
+    "clientPlanTransactions": [
+      {
+        "planId": "640003",
+        "details": {
+          "item": {
+            "clientType": "IPS",
+            "moneyoutTotalCount": "0",
+            "moneyoutLoanCount": "0",
+            "moneyoutWithdrawalCount": "0",
+            "paymentStopped": "false",
+            "moneyoutComposite": "false"
+          },
+          "transactionList": [
+            {
+              "checkCashDate": "",
+              "currentStatus": "UNKNOWN_ADESC=OPEN_trxStatus=DRAFT_tmStatus=OPEN_tmTaskType='HARDSHIP'",
+              "deliveryMaxDate": "",
+              "deliveryRange": "5 to 7",
+              "directDepositDate": "",
+              "moneyOutDeliveryMethod": "check",
+              "moneyOutSubType": "Emergency Withdrawals",
+              "moneyOutType": "WITHDRAWAL",
+              "netCheckAmount": "USD1,000.00",
+              "netCheckAmountSource": "OLTP",
+              "taskId": "t240108000v",
+              "transactionDate": "2024-01-08",
+              "transactionCompletionDate": "",
+              "upsTrackingAvailable": "false",
+              "upsTrackingNumber": "",
+              "moneyOutMessage": "",
+              "transactionIdentifier": "4407456",
+              "trxMethod": "Prefilled",
+              "trxStatus": "DRAFT",
+              "taskStatus": "OPEN",
+              "taskDescription": "HARDSHIP",
+              "actionDescription": "CALL INQ"
+            }
+          ],
+          "moneyOutEnabledInSetIt": true
+        }
+      },
+      {
+        "planId": "640004",
+        "details": {
+          "item": {
+            "clientType": "IPS",
+            "moneyoutTotalCount": "0",
+            "moneyoutLoanCount": "0",
+            "moneyoutWithdrawalCount": "0",
+            "paymentStopped": "false",
+            "moneyoutComposite": "false"
+          },
+          "transactionList": [],
+          "moneyOutEnabledInSetIt": true
+        }
+      }
+    ]
+  },
+  {
+    "clientId": "INGWIN",
+    "clientPlanTransactions": [
+      {
+        "planId": "666207",
+        "details": {
+          "item": {
+            "clientType": "VRIAC",
+            "moneyoutTotalCount": "0",
+            "moneyoutLoanCount": "0",
+            "moneyoutWithdrawalCount": "0",
+            "paymentStopped": "false",
+            "moneyoutComposite": "false"
+          },
+          "transactionList": [],
+          "moneyOutEnabledInSetIt": true
+        }
+      }
+    ]
+  }
+]

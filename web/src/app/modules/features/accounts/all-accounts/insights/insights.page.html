@@ -1,0 +1,14 @@
+<ng-container *ngIf="!isAltAccessUser; else altAccessUserTemplate">
+<div id="pulseWidget" class="pulse-widget">
+  <div id="pulse_widget"></div>
+</div>
+</ng-container>
+<ng-template #altAccessUserTemplate>
+  <div class="pulse-widget">
+    <img
+    class=""
+    src="assets/altAccessUser/insights-dummy.svg"
+    alt="voya"
+  />
+  </div>
+</ng-template>

@@ -1,0 +1,46 @@
+.item {
+  border-bottom: 1px solid var(--border-light-grey);
+
+  &.expanded.last {
+    border-bottom: none;
+  }
+
+  .arrow-down {
+    cursor: pointer;
+  }
+  .arrow-up {
+    cursor: pointer;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.first {
+      margin-top: 0px;
+    }
+
+    ion-text {
+      color: var(--primary-colors-voya-black);
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+.mobile .header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 920px) {
+  .header {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .header {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+}

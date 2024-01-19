@@ -1,0 +1,14 @@
+{
+  "nameLabel": "Display Name",
+  "button": {
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "alert": {
+    "message": "Your display name will be changed for all Voya accounts. Are you sure you want to continue?",
+    "imageUrl": "assets/icon/Frame.svg"
+  },
+  "errors": {
+    "invalidDisplayName": "Please enter your display name"
+  }
+}

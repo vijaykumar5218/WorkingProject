@@ -1,0 +1,7 @@
+{
+  "actionOption": {
+    "buttonLeft": "settings/help",
+    "buttonRight": "notification"
+  },
+  "backBtn": "Back"
+}

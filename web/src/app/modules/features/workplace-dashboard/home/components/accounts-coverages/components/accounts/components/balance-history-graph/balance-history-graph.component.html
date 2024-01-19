@@ -1,0 +1,17 @@
+<p class="accounts-title" tabindex="0">
+  {{ pageText.accountsHeader }}
+</p>
+<div *ngIf="displayBalanceHistoryGraph">
+  <div id="balance-history-title-container">
+    <p id="balance-history-title" class="balance-history-title" tabindex="1">
+      {{ pageText.balancehistoryTitle }}
+    </p>
+    <img
+      (click)="openModal()"
+      id="balance-history-info-icon"
+      alt="info"
+      src="assets/icon/ic-info-outline-24px.svg"
+    />
+  </div>
+  <div #highchartContainer [id]="graphId"></div>
+</div>

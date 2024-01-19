@@ -1,0 +1,30 @@
+:host {
+  background-color: var(--ion-color-white);
+
+  ion-list {
+    border-radius: 12px;
+    margin: 0 20px 0 20px !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    --ion-background-color: var(--ion-color-white);
+
+    .menu-item {
+      --detail-icon-color: var(--ion-color-button);
+      --detail-icon-opacity: 1;
+      padding: 28px 0;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1px;
+      height: 72px;
+      color: var(--toggle-txt-color);
+      border-bottom: 1px solid var(--color-lightgrey);
+
+      .item-inner {
+        height: 24px;
+      }
+    }
+  }
+  .web-responsive-help {
+    margin-top: 90px;
+  }
+}

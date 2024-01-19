@@ -1,0 +1,73 @@
+{
+    "footerLinks": {
+        "copyRightText": "©{currentYear} Voya Services Company. All rights reserved.",
+        "iconLinks": [
+            {
+                "iconName": "file",
+                "linkURL": "https://www.voya.com/terms-use",
+                "linkLabel": "Terms of Use",
+                "target": "_blank"
+            },
+            {
+                "iconName": "privacy",
+                "linkURL": "https://www.voya.com/privacy-notice",
+                "linkLabel": "Privacy",
+                "target": "_blank"
+            },
+            {
+                "iconName": "security",
+                "linkURL": "https://www.voya.com/terms-use/voya-security",
+                "linkLabel": "Security",
+                "target": "_blank"
+            },
+            {
+                "iconName": "profile",
+                "linkURL": "/myvoyageui/#/logout",
+                "linkLabel": "Logout"
+            },
+            {
+                "iconName": "globeamericas",
+                "linkURL": "#",
+                "linkLabel": "English",
+                "languages": [
+                    {
+                        "label": "English",
+                        "value": "en-US"
+                    },
+                    {
+                        "label": "Español",
+                        "value": "es-US"
+                    }
+                ]
+            }
+        ],
+        "icons": [
+            {
+                "iconname": "facebook",
+                "href": "https://www.facebook.com/pages/Voya/215714485107840/",
+                "iconsize": "18px"
+            },
+            {
+                "iconname": "twitter",
+                "href": "https://www.twitter.com/voya",
+                "iconsize": "18px"
+            },
+            {
+                "iconname": "linkedin",
+                "href": "https://www.linkedin.com/company/voya/",
+                "iconsize": "18px"
+            },
+            {
+                "iconname": "youtube",
+                "href": "https://www.youtube.com/channel/UCbWNAJD8kl_rQOZTP0mvxtw/",
+                "iconsize": "18px"
+            },
+            {
+                "iconname": "instagram",
+                "href": "https://www.instagram.com/voya/",
+                "iconsize": "20px"
+            }
+        ]
+    },
+    "dataStatus": "OK"
+}

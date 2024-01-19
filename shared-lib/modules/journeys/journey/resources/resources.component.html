@@ -1,0 +1,34 @@
+<div [ngClass]="isWeb ? 'web-resource' : 'mobile-resource'">
+  <div class="expand-collapse">
+    <span
+      tabindex="0"
+      (keyup.enter)="expandCollapseAll()"
+      (click)="expandCollapseAll()"
+      id="journeyExpandCollapseAll"
+      >{{
+        expandAll ? content.resourcesExpandLabel : content.resourcesCloseLabel
+      }}</span
+    >
+  </div>
+  <ion-list inset="true" lines="full" class="resource-list">
+    <ng-container
+      *ngFor="
+        let resource of resources?.resources;
+        let last = last;
+        let first = first;
+        let index = index
+      "
+    >
+      <journeys-expand-collapse
+        [isLast]="last"
+        [header]="resource.header"
+        [(isExpanded)]="resource.isExpanded"
+        [index]="index"
+      >
+        <journeys-resources-list
+          [resource]="resource"
+          [idSuffix]="index.toString()"
+        ></journeys-resources-list> </journeys-expand-collapse
+    ></ng-container>
+  </ion-list>
+</div>

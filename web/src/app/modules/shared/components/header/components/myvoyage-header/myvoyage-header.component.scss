@@ -1,0 +1,66 @@
+:host {
+  .desktop-nav {
+    @media screen and (min-width: 280px) and (max-width: 921px) {
+      display: none;
+    }
+  }
+  .small-device-nav {
+    background-color: var(--primary-colors-voya-white);
+    box-shadow: 0px 10px 10px -10px var(--v-colors__box-shadow-25);
+    height: 85px;
+    padding: 0px 20px;
+    font-size: 18px;
+    margin: 0px;
+    @media screen and (min-width: 921px) {
+      display: none;
+    }
+    .menu-holder {
+      flex-flow: nowrap;
+      height: 85px;
+      .menu-col {
+        margin: auto;
+        ion-col {
+          &.backBtnSection {
+            color: var(--primary-colors-voya-black);
+            margin: auto;
+            max-width: 25px;
+            cursor: pointer;
+            ion-icon {
+              margin-top: 5px;
+            }
+          }
+          &.backBtnText {
+            margin: auto;
+            width: 85%;
+            p {
+              white-space: nowrap;
+              color: var(--primary-colors-voya-black);
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin-right: 35px;
+              font-weight: bold;
+              font-stretch: normal;
+              margin-top: 14px;
+              &::first-letter {
+                text-transform: capitalize;
+              }
+            }
+          }
+          &.bellIcon {
+            margin: auto;
+            max-width: 30px;
+            .dot {
+              position: absolute;
+              background: var(--secondary-colors-voya-dark-orange);
+              width: 10px;
+              height: 10px;
+              border-radius: 10px;
+              top: -2px;
+              right: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

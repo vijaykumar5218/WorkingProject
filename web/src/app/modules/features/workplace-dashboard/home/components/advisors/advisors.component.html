@@ -1,0 +1,64 @@
+<ng-container *ngIf="offerVal?.length > 0">
+  <ion-card>
+    <div class="internal-card">
+      <ion-card-content *ngFor="let offervalue of offerVal">
+        <ion-row>
+          <ion-col>
+            <p class="headerText" tabindex="0">{{ offervalue?.title }}</p>
+          </ion-col>
+        </ion-row>
+        <ng-container *ngIf="offervalue?.offerCode === 'FE'; else nonFE">
+          <iframe
+            tabindex="0"
+            [src]="
+              sanitizer.bypassSecurityTrustResourceUrl(
+                offervalue?.urls?.FE_IFRAME_MINI
+              )
+            "
+            class="rs-be-ready-iframe"
+            title="FE Iframe in the get Advice"
+          ></iframe>
+          <iframe
+            title="FE iframe test"
+            src="
+            https://google.org/
+          "
+          ></iframe>
+        </ng-container>
+
+        <ng-template #nonFE>
+          <ion-row>
+            <ion-col class="icon">
+              <img
+                src="assets/workplace-dashboard/textPredval.svg"
+                alt="Message box with 3 dots"
+              />
+            </ion-col>
+            <ion-col>
+              <div>
+                <p tabindex="0" class="msg-cont">
+                  {{ offervalue.messages }}
+                </p>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="button-container" *ngIf="offervalue?.imageTargetUrl">
+            <ion-col class="ion-text-center">
+              <ion-button
+                size="small"
+                shape="round"
+                color="btncolor"
+                [attr.aria-label]="offervalue?.linkName"
+                fill="outline"
+                (click)="openTargetLink(offervalue?.imageTargetUrl)"
+                automation-id="offervalbutton"
+              >
+                {{ offervalue?.linkName }}
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ng-template>
+      </ion-card-content>
+    </div>
+  </ion-card>
+</ng-container>

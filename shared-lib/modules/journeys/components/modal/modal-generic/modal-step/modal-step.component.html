@@ -1,0 +1,33 @@
+<journeys-steps-step-intro
+  *ngIf="ele.id === 'intro'"
+  [element]="ele"
+></journeys-steps-step-intro>
+<journeys-steps-step-input
+  *ngIf="ele.id === 'input'"
+  [element]="ele"
+  (isRequired)="emitRequired($event)"
+  (valueChange)="emitElementValue($event)"
+  [ngStyle]="{
+    'margin-bottom': ele.marginBottom
+  }"
+  [values]="values"
+  [answer]="answer"
+  [prefill]="!accumulateAnswers"
+></journeys-steps-step-input>
+<journeys-steps-step-button
+  *ngIf="ele.id === 'button'"
+  [label]="ele.label"
+  [link]="ele.link"
+  [idSuffix]="ele.idSuffix"
+  (continueClick)="handleContinueClick($event)"
+  [disabled]="ele.isContinueButton && !requiredInputsFilled"
+></journeys-steps-step-button>
+<journeys-link *ngIf="ele.id === 'link'" [element]="ele"></journeys-link>
+<journeys-modal-step-nav-component
+  *ngIf="ele.id === 'navigation'"
+  [element]="ele"
+  (saveValue)="handleSaveValue($event)"
+  [values]="values"
+  [answer]="answer"
+  [prefill]="!accumulateAnswers"
+></journeys-modal-step-nav-component>

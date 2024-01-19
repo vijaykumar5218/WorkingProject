@@ -1,0 +1,25 @@
+{
+    "button": {
+      "continue": "Continue"
+    },
+    "label": {
+      "ssn": "Social Security Number",
+      "dob": "Date of Birth"
+    },
+    "placeholder": {
+      "ssn": "Social Security Number",
+      "dob": "Date of Birth",
+      "timePeriod":"mm/dd/yyyy"
+    },
+    "validatorMessage": {
+      "dob": {
+        "required": "Date of Birth is required.",
+        "shouldBeDOB": "Date of Birth must be in the format MM-DD-YYYY."
+      },
+      "ssn": {
+        "required": "Social Security Number is required.",
+        "shouldBeNineDigit": "Social Security Number must be in the format XXX-XX-XXXX."
+      }
+    }
+  }
+  

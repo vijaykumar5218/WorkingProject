@@ -1,0 +1,93 @@
+[ 
+    {
+        "journeyStepId": 6,
+        "followingStep": 7,
+        "precedingStep": 5,
+        "journeyStepName": "social_security",
+        "journeyStepCMSTagId": "MVRetirementStep6JSON",
+        "msgType": "journeyretirementsteps",
+        "status": "Completed",
+        "answer": "{\"early\":\"$56\",\"full\":\"$\",\"max\":\"$\"}",
+        "content": {
+            "pageElements": [
+                {
+                    "elements": [
+                        {
+                            "id": "intro",
+                            "header": "Social Security",
+                            "description": "Did you know your Social Security benefit amount depends on when you decide to apply? Hint: the longer you wait, the larger your benefit will be. Start by setting up your account at webview{ssa.gov}",
+                            "webviewLinks": [
+                                "https://www.ssa.gov"
+                            ],
+                            "webviewHeaders": [
+                                "ssa.gov"
+                            ],
+                            "idSuffix": "005"
+                        },
+                        {
+                            "id": "intro",
+                            "header": "Estimate your expected benefits at each age",
+                            "idSuffix": "015"
+                        },
+                        {
+                            "id": "input",
+                            "answerId": "early",
+                            "type": "textField",
+                            "label": "Early Retirement Age 62",
+                            "description": "(Earliest one can claim any benefits)",
+                            "validationRules": {
+                                "type": "dollar",
+                                "min": 0,
+                                "max": 9999999,
+                                "decimalPlaces": 0
+                            },
+                            "default": "$",
+                            "idSuffix": "025"
+                        },
+                        {
+                            "id": "input",
+                            "answerId": "full",
+                            "type": "textField",
+                            "label": "Full Retirement Age",
+                            "description": "(Full retirement age will vary based on your year of birth)",
+                            "validationRules": {
+                                "type": "dollar",
+                                "min": 0,
+                                "max": 9999999,
+                                "decimalPlaces": 0
+                            },
+                            "default": "$",
+                            "idSuffix": "035"
+                        },
+                        {
+                            "id": "input",
+                            "answerId": "max",
+                            "type": "textField",
+                            "label": "Maximum Benefit Age 72",
+                            "description": "(After age 70, there is no additional benefit to waiting)",
+                            "validationRules": {
+                                "type": "dollar",
+                                "min": 0,
+                                "max": 9999999,
+                                "decimalPlaces": 0
+                            },
+                            "default": "$",
+                            "idSuffix": "045"
+                        },
+                        {
+                            "id": "button",
+                            "label": "Continue",
+                            "link": "default",
+                            "idSuffix": "055"
+                        }
+                    ]
+                }
+            ]
+        },
+        "value": {
+            "early": "$56",
+            "full": "$",
+            "max": "$"
+        }
+    }
+]

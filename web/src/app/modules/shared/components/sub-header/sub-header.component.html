@@ -1,0 +1,33 @@
+<ion-tabs
+  [ngClass]="showGoToAccountButton ? 'showTitle' : ''"
+  [ngStyle]="{top: offsetTop + 'px'}"
+>
+  <ion-tab-bar
+    [ngClass]="showGoToAccountButton ? '' : 'no-acct-button'"
+    lines="none"
+    slot="top"
+    class="tabs"
+  >
+    <ion-tab-button
+      *ngFor="let tab of tabsAction"
+      [ngClass]="{
+        selectedRipple: selectedTab === tab.link,
+        supressedInsights: tabsAction.length === 1 && tab.link == 'elections'
+      }"
+      (click)="handleClick(tab)"
+      [tab]="tab.link"
+      class="lightgrey"
+      [id]="tab.link"
+    >
+      <div
+        [ngClass]="
+          tab.link == 'elections' ? 'tab-names hight-width' : 'tab-names'
+        "
+      >
+        <ion-label>{{ tab.label }}</ion-label>
+      </div>
+      <div class="selected-tab"></div>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+<div class="tabsline"></div>

@@ -1,0 +1,72 @@
+{
+    "dataStatus": "OK",
+    "footerLinks": {
+        "disclaimerText": "",
+        "copyRightText": "©{currentYear} Voya Service Company. All rights reserved.",
+        "iconLinks": [
+            {
+                "iconName": "pdf",
+                "linkURL": "http://get.adobe.com/reader/",
+                "linkLabel": "Get Adobe Reader",
+                "target": "_blank"
+            },
+            {
+                "iconName": "universalaccess",
+                "linkURL": "https://www.voya.com/articles/voya-cares-about-accessibility",
+                "linkLabel": "Accessibility",
+                "target": "_blank"
+            },
+            {
+                "id": "GLOSSARY",
+                "iconName": "file",
+                "linkURL": "/einfo/public/glossary.aspx?cl=KOHLER&domain=kohler.intg.voya.com&s=DyBdgIdh6jQZI1lj8ICbJQ11.i9290&pl=glossary&d=c93bcc3078ed85940949dd5c761221d6d51154f2",
+                "linkLabel": "Glossary",
+                "target": "_blank"
+            },
+            {
+                "iconName": "profile",
+                "linkURL": "/myvoya/public/logout",
+                "linkLabel": "Logout"
+            },
+            {
+                "iconName": "globeamericas",
+                "linkURL": "#",
+                "linkLabel": "English",
+                "languages": [
+                    {
+                        "label": "English",
+                        "value": "en-US"
+                    },
+                    {
+                        "label": "Español",
+                        "value": "es-US"
+                    }
+                ]
+            }
+        ],
+        "icons": [
+            {
+                "iconname": "facebook",
+                "href": "https://www.facebook.com/pages/Voya/215714485107840"
+            },
+            {
+                "iconname": "twitter",
+                "href": "http://twitter.com/voya"
+            },
+            {
+                "iconname": "youtube",
+                "href": "https://www.youtube.com/channel/UCbWNAJD8kl_rQOZTP0mvxtw"
+            },
+            {
+                "iconname": "linkedin",
+                "href": "https://www.linkedin.com/company/voya"
+            },
+            {
+                "iconname": "instagram",
+                "href": "https://www.instagram.com/voya"
+            }
+        ]
+    },
+    "showRetireeToolbox": false,
+    "showRetireeJourneyToolbox": false
+}

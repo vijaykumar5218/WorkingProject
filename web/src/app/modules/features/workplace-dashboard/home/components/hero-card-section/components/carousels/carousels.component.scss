@@ -1,0 +1,336 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .flex-item-header {
+        .add-account-title {
+            font-size: 24px;
+            color: var(--primary-colors-voya-black);
+            font-weight: 600;
+            align-content: center;
+
+            span {
+                display: block;
+                line-height: 55px;
+                margin-top: -10px;
+                margin-bottom: 5px;
+            }
+        }
+
+        flex: 1;
+        order: 1;
+    }
+
+    .flex-item-pagination {
+        flex: none;
+        order: 2;
+        margin-top: -10px;
+
+        app-pagination {
+            display: flex;
+            align-items: center;
+        }
+
+        #minimizeExpandLinkBtn {
+            line-height: 55px;
+            margin-left: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+            color: var(--v-colors__primary);
+            width: 133px;
+        }
+    }
+
+    .background-spec {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0px;
+            right: -20px;
+            bottom: 0px;
+            background: var( --gradient-marketing-light-blue ); //linear-gradient(180deg, #76c5e4 13.4%,rgba(118, 197, 228, 0) 98.27%);
+            opacity: 0.2;
+        }
+
+        order: 3;
+        display: flex;
+        flex-wrap: wrap;
+
+        .flex-item-image {
+            flex: 50%;
+            order: 1;
+            position: relative;
+
+            .carousel-image-container {
+                background-repeat: no-repeat;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                background-size: contain;
+                background-position: center center;
+            }
+
+            .carouselImage {
+                z-index: 999;
+                flex: 50%;
+            }
+
+            .flex-item-score {
+                position: absolute;
+                font-weight: 400 !important;
+                display: flex;
+                align-items: center !important;
+                text-align: center !important;
+                top: 45%;
+                left: 25%;
+                transform: translate(-50%, -50%);
+                justify-content: center;
+                font-size: 75px;
+                color: var(--primary-colors-voya-black);
+                z-index: 999;
+            }
+        }
+
+        .flex-item-container {
+            flex: 50%;
+            order: 2;
+            padding-left: 40px;
+
+            .add-account-subtitle-row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                z-index: 999;
+                padding-top: 20px;
+                text-align: left;
+
+                .carousel-sub-title {
+                    color: var(--primary-colors-voya-black);
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 18px;
+                    letter-spacing: 0.005em;
+                    z-index: 999;
+                    flex: 100%;
+                    order: 1;
+                    padding-bottom: 25px;
+                }
+
+                .carousel-body {
+                    color: var(--primary-colors-voya-black);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.005em;
+                    z-index: 999;
+                    flex: 100%;
+                    padding-bottom: 15px;
+                }
+
+                .add-account-button-row {
+                    width: 100%;
+                    padding-bottom: 8px;
+                    z-index: 999;
+                    flex: 100%;
+                }
+            }
+        }
+    }
+}
+
+#carouselContainer {
+    #carouselContentContainer {
+        transition-duration: 0.3s;
+        height: 327px;
+        flex: 100%;
+    }
+
+    #carouselMinimizedContentContainer {
+        transition-duration: 0.3s;
+        height: 0;
+        overflow: hidden;
+        order: 3;
+        position: relative;
+        margin-top: -20px;
+
+        .carousel-sub-title {
+            color: var(--primary-colors-voya-black);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 0.005em;
+        }
+
+        .carousel-body {
+            color: var(--primary-colors-voya-black);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.005em;
+        }
+    }
+
+    &.minimized {
+        #carouselContentContainer {
+            transition-duration: 0.3s;
+            height: 0;
+            overflow: hidden;
+        }
+
+        #carouselMinimizedContentContainer {
+            transition-duration: 0.3s;
+            display: flex;
+            align-items: center;
+            height: 67px;
+
+
+            .carousel-image {
+                width: 65px;
+                min-width: 100px;
+            }
+
+            .carousel-sub-title {
+                padding-left: 10px;
+            }
+
+            .carousel-sub-title, #readMoreLinkBtn {
+                white-space: nowrap;
+            }
+
+            .carousel-body {
+                min-width: 0;
+
+                div {
+                    position: relative;
+                    overflow: hidden;
+                    padding-left: 10px;
+                    height: 20px;
+                    width: inherit;
+                    padding-top: 3px;
+                    color: transparent;
+                    min-width: 0;
+
+                    span {
+                        position: absolute;
+                        color: var(--primary-colors-voya-black);
+                        display: block;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        width: 100%;
+                        overflow: hidden;
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+            #readMoreLinkBtn {
+                padding-left: 10px;
+                font-size: 14px;
+                color: var(--v-colors__primary);
+                font-weight: 600;
+                cursor: pointer;
+                width: 133px;
+            }
+        }
+    }
+}
+
+@media (max-width: 841px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .flex-item-header {
+            .add-account-title {
+                padding-bottom: 10px;
+
+                span {
+                    line-height: 30px;
+                    margin-top: 0;
+                }
+            }
+
+            flex: 100%;
+            order: 1;
+        }
+
+        .flex-item-pagination {
+            flex: 100%;
+            order: 4;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .background-spec {
+            &::after {
+                display: none;
+            }
+
+            .flex-item-image {
+                flex: 100%;
+                order: 2;
+                min-height: 165px;
+
+                .flex-item-score {
+                    top: 25%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .flex-item-container {
+                flex: 100%;
+                order: 3;
+                padding: 0px !important;
+                justify-content: space-evenly;
+
+                .add-account-subtitle-row {
+                    display: flex;
+                    align-items: center !important;
+                    justify-content: center;
+                    position: relative;
+
+                    .carousel-sub-title {
+                        text-align: center;
+                        justify-content: center;
+                        order: 1;
+                    }
+
+                    .carousel-body {
+                        text-align: center;
+                        order: 2;
+                    }
+
+                    .add-account-button-row {
+                        text-align: center;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        order: 3;
+                    }
+                }
+            }
+        }
+    }
+
+    #carouselContainer {
+        #carouselContentContainer {
+            height: auto !important;
+        }
+
+        #carouselMinimizedContentContainer {
+            height: 0 !important;
+        }
+
+        #minimizeExpandLinkBtn { display:none !important; }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "plans":["Add Health Plan", "Add Dental Plan", "Add Vision Plan", "Add Health Savings Account"],
+    "actionOption":{
+        "headerName": "Add Benefits",
+        "buttonLeft":"settings/summary",
+        "buttonRight":"notification"
+    }
+}

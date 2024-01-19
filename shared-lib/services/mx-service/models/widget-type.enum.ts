@@ -1,0 +1,15 @@
+export enum WidgetType {
+  CONNECT = 'connect_widget',
+  FINSTRONG = 'finstrong_widget',
+  FINSTRONG_MINI = 'mini_finstrong_widget',
+  MANAGE_ACCOUNT = 'connections_widget',
+  PULSE = 'pulse_widget',
+  NET_WORTH = 'net_worth_widget',
+  NET_WORTH_MINI = 'mini_net_worth_widget',
+  TRANSACTIONS = 'transactions_widget',
+  PULSE_CAROUSEL_MINI = 'mini_pulse_carousel_widget',
+  MINI_SPENDING_WIDGET = 'mini_spending_widget',
+  MINI_BUDGET_WIDGET = 'mini_budgets_widget',
+  SPENDING_WIDGET = 'spending_widget',
+  BUDGET_WIDGET = 'budgets_widget',
+}

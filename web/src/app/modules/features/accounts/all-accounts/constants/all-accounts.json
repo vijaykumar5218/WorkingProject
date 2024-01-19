@@ -1,0 +1,19 @@
+{
+  "tabs": [
+    {
+      "label": "Summary",
+      "link": "summary"
+    },
+    {
+      "label": "Insights",
+      "link": "insights"
+    },
+    {
+      "label": "Transactions",
+      "link": "transactions"
+    }
+  ],
+  "nonMxNetworthPlaceholderText": "Non-MX User Net Worth Placeholder text.",
+  "nonMxSpendingPlaceholderText": "Non-MX User Spending Placeholder text.",
+  "nonMxBudgetPlaceholderText": "Non-MX User Budget Placeholder text."
+}

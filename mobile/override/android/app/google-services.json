@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "727577719438",
+    "project_id": "myvoyage-prod",
+    "storage_bucket": "myvoyage-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727577719438:android:fe3d2b50b233eedf358fdf",
+        "android_client_info": {
+          "package_name": "com.voya.edt.myvoyage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727577719438-osgeluhtaj79162tjtfufn4to0589t13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb1OPO1RcNjlrXVLVqrWABdfT0uEtjlnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727577719438-osgeluhtaj79162tjtfufn4to0589t13.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "727577719438-s36rb1qdu0o09k1b42k5f52tlhgop03q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.voya.edt.myvoyage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

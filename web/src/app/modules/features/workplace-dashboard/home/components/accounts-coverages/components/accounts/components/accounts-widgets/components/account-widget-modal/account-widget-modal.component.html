@@ -1,0 +1,26 @@
+<div class="container">
+  <div>
+    <a
+      href="#"
+      id="cancel-link"
+      class="cancel-link-btn"
+      (click)="closeModal()"
+      >{{ buttonText }}</a
+    >
+  </div>
+  <ion-row>
+    <ion-col>
+      <ion-text>{{ modalHeader }}</ion-text>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="net-worth">
+    <ion-col>
+      <app-mx-widget
+        [widgetType]="widgetType"
+        [height]="'500px'"
+        [tagName]="'net_worth_widget'"
+      ></app-mx-widget>
+    </ion-col>
+  </ion-row>
+</div>

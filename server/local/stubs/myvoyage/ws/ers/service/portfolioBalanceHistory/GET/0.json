@@ -1,0 +1,67 @@
+{
+    "portfolioBalHistText": "How much are your accounts changing year over year?\r\nThe balance history graphic includes current accounts and data your current provider has on record for that calendar year. Account values fluctuate with market conditions, and when surrendered the principal may be worth more or less than its original amount invested.\r\n",
+    "portfolioBalanceHistory": [
+        {
+            "planName": "New York City Deferred Compensation 457 Payout Account",
+            "planId": "626002",
+            "amounts": [
+                "740.0",
+                "800.0",
+                "970.0",
+                "24891.4",
+                "11452.31"
+            ]
+        },
+        {
+            "planName": "New York City Deferred Compensation 401(k) Plan",
+            "planId": "626003",
+            "amounts": [
+                "1740.0",
+                "1800.0",
+                "1970.0",
+                "190400.0",
+                "93526.40"
+            ]
+        },
+        {
+            "planName": "New York City Deferred Compensation 401k Payout Account",
+            "planId": "626004",
+            "amounts": [
+                "0.0",
+                "0.0",
+                "0.0",
+                "34400.2",
+                "14035.04"
+            ]
+        },
+        {
+            "planName": "New York City Deferred Compensation Special Roll Acct",
+            "planId": "626005",
+            "amounts": [
+                "0.0",
+                "0.0",
+                "0.0",
+                "27600.0",
+                "13541.32"
+            ]
+        },
+        {
+            "planName": "New York City Savings Incentive 401(a) Plan",
+            "planId": "626006",
+            "amounts": [
+                "0.0",
+                "0.0",
+                "0.0",
+                "7600.0",
+                "4106.62"
+            ]
+        }
+    ],
+    "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "Current"
+    ]
+}

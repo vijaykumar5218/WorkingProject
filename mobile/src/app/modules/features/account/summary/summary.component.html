@@ -1,0 +1,63 @@
+<div>
+  <div *ngIf="!isHealthOnly || hasMXUser" id="background-container"></div>
+  <app-mxerror *ngIf="hasMXUser"></app-mxerror>
+  <app-net-worth
+    [usePlaceholder]="true"
+    tagName="mx-net-worth-accounts"
+  ></app-net-worth>
+
+  <ng-container *ngIf="!isHealthOnly || hasMXUser">
+    <app-account-summary
+      [accounts]="accounts"
+      (clickedAccountInfo)="sendtitle($event)"
+      id="account-info"
+    ></app-account-summary>
+
+    <app-mx-account-list
+      (mxAccountClicked)="routeToMXAccount()"
+    ></app-mx-account-list>
+
+    <ion-row class="mt-10">
+      <ion-col class="margins">
+        <ion-button
+          size="small"
+          id="addaccount"
+          class="font-18 btnview"
+          name="Add Account"
+          shape="round"
+          expand="block"
+          color="btncolor"
+          (click)="handleAddAccountClick()"
+          >{{ pageText.addAccount }}
+          <ion-icon
+            class="font"
+            slot="start"
+            name="add-circle-outline"
+          ></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="manage-accounts-row">
+      <ion-col class="ion-text-center managetext">
+        <ion-text
+          (click)="handleManageAccountClick()"
+          *ngIf="showManageAccounts"
+          id="manage-accounts"
+          ><a class="linkcolor underline">{{
+            pageText.manageAccounts
+          }}</a></ion-text
+        >
+      </ion-col>
+    </ion-row>
+
+    <ion-card *ngIf="!isHealthOnly || hasMXUser">
+      <app-spending-widget
+        tagName="mx-spending-widget-accounts"
+      ></app-spending-widget>
+      <app-budget-widget
+        tagName="mx-budget-widget-accounts"
+      ></app-budget-widget>
+    </ion-card>
+  </ng-container>
+</div>

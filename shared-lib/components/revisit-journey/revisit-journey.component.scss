@@ -1,0 +1,28 @@
+ion-card-header {
+  margin: 34px auto 10px auto;
+  text-align: center;
+  width: 90%;
+  ion-card-title {
+    font-size: 24px;
+  }
+}
+
+ion-card-content {
+  text-align: center;
+  font-size: 16px;
+  ion-button {
+    height: 40px;
+    color: var(--primary-colors-voya-white);
+    font-weight: normal;
+    font-size: 16px;
+    width: 60%;
+    margin: auto;
+  }
+  ion-button.save-button {
+    max-width: 220px;
+  }
+  p {
+    color: var(--primary-colors-voya-dark-blue);
+    cursor: pointer;
+  }
+}

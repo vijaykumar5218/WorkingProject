@@ -1,0 +1,8 @@
+{
+  "landingPage": {
+    "continueButton": "Continue",  
+    "backLink": "Back",
+    "formErrorText": "Please provide all the required values"
+  }  
+}
+

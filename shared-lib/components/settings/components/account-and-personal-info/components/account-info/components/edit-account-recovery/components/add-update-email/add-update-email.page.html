@@ -1,0 +1,56 @@
+<ion-grid class="ion-no-margin ion-no-padding">
+  <ion-row>
+    <ion-col>
+      <div class="header">{{ displayText.header}}</div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <div class="input-header ">{{ displayText.label }}</div>
+    </ion-col>
+  </ion-row>
+  <ion-row
+    ><ion-col>
+      <ion-input
+        class="edit-email mt-10"
+        id="editEmail"
+        name="editEmail"
+        type="email"
+        inputmode="email"
+        pattern="email"
+        autocomplete="email"
+        [value]="!addEmail?accountRecoveryData?.security.accountRecoveryInfo.email:''"
+        clearInput
+      ></ion-input> </ion-col
+  ></ion-row>
+
+  <ion-row class="buttons mt-42"
+    ><ion-col size-md="2" size-sm="1" size-xs="1"></ion-col
+    ><ion-col>
+      <ion-button
+        size="small"
+        id="cancel-btn"
+        class="font-16"
+        name="submit"
+        shape="round"
+        expand="block"
+        color="btncolor"
+        fill="outline"
+        (click)="goBack()"
+        >{{ displayText.buttons.cancel }}
+      </ion-button></ion-col
+    >
+    <ion-col>
+      <ion-button
+        size="small"
+        id="submit"
+        class="font-16"
+        name="submit"
+        shape="round"
+        expand="block"
+        color="btncolor"
+        >{{ displayText.buttons.code }}
+      </ion-button></ion-col
+    ><ion-col size-md="2" size-sm="1" size-xs="1"></ion-col>
+  </ion-row>
+</ion-grid>

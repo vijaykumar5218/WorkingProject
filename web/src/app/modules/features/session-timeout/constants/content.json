@@ -1,0 +1,6 @@
+{
+  "signOut": "Sign Out",
+  "signOutText": "You have been securely signed out.",
+  "sessionTimeoutText": "Your session has ended and your secure connection is now closed.",
+  "sessionTimeoutInfo": "For your security, myVoyage session end after 15 minutes of inactivity. This helps prevent breaches of security if you forget to sign out <br> <br> Please sign in to begin a new sessions."
+}

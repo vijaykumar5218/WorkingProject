@@ -1,0 +1,23 @@
+<ion-grid *ngIf="config.rows.length > 0; else emptyTableText">
+  <ion-row
+    *ngFor="let row of config.rows; let firstRow = first"
+    [ngClass]="{'first-row': firstRow}"
+  >
+    <ion-col
+      *ngFor="let col of row.columns; let firstCol = first"
+      [ngClass]="{'first-col': firstCol}"
+    >
+      <ion-text *ngIf="col.description">{{ col.description }}</ion-text>
+      <ion-text *ngIf="col.header">{{ col.header }}</ion-text>
+      <ion-text *ngIf="col.id === 'input'" class="answer">{{
+        col.answer
+      }}</ion-text>
+      <ion-text *ngIf="col.totalLabel" class="total-label">{{
+        col.totalLabel
+      }}</ion-text>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ng-template #emptyTableText>
+  <ion-text>{{ element.emptyTableText }}</ion-text></ng-template
+>

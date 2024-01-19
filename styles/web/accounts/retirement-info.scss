@@ -1,0 +1,294 @@
+.outerContainer {
+  background: var(--primary-colors-voya-white);
+  margin-top: 1px;
+  margin-bottom: 50px;
+  @media screen and (min-width: 280px) and (max-width: 920px) {
+    margin-bottom: 120px !important;
+    border-radius: 10px !important;
+    .ion-text-start.As-of-date {
+      p {
+        padding-left: 0px !important;
+      }
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 480px) {
+    // Mobile Device
+    ion-col.ion-text-start {
+      margin-bottom: 30px !important;
+    }
+    ion-col.text-single-line {
+      margin-bottom: 10px !important;
+    }
+  }
+
+  .containerA {
+    margin-top: 13px;
+    height: 295px !important;
+    padding: 0px 20px 20px 20px !important;
+    background-color: var(--primary-colors-voya-white) !important;
+    width: -webkit-fill-available !important;
+    @media screen and (min-width: 280px) and (max-width: 920px) {
+      padding: 0px !important;
+      ion-grid {
+        div.account-card {
+          margin-left: 10px !important;
+        }
+      }
+    }
+    .display-name {
+      width: 100%;
+      @media screen and (min-width: 280px) and (max-width: 920px) {
+        margin: 6px 130px -10px 13px !important;
+      }
+      p {
+        app-loading-text {
+          font-size: 18px !important;
+          font-weight: bold !important;
+        }
+      }
+    }
+    .Your-account-balance {
+      margin-bottom: 10px !important;
+      p {
+        font-size: 16px !important;
+        font-weight: normal !important;
+      }
+    }
+    .As-of-date {
+      margin-top: 30px !important;
+      p {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        padding-left: 2px !important;
+        @media screen and (min-width: 280px) and (max-width: 920px) {
+          padding-left: 0px !important;
+        }
+      }
+    }
+    .managed-by {
+      ion-col.managed-by-inner {
+        text-align: left !important;
+      }
+    }
+  }
+  .containerB {
+    padding: 5px 20px 20px 16px !important;
+    @media screen and (min-width: 280px) and (max-width: 920px) {
+      padding: 0px !important;
+    }
+    .Card-Background {
+      ion-row {
+        ion-col {
+          margin-top: 0px !important;
+          margin-bottom: 10px;
+          font-size: 18px !important;
+
+          &.ion-text-end {
+            font-weight: 600 !important;
+          }
+        }
+
+        &.toggleTxt {
+          .ion-text-start {
+            font-weight: 600 !important;
+          }
+
+          .ion-text-end {
+            font-weight: bold !important;
+          }
+        }
+      }
+    }
+
+    .managed-by-offset {
+      box-shadow: none !important;
+      margin-top: -50px !important;
+      ion-row {
+        ion-col {
+          margin-top: 0px !important;
+          margin-bottom: 10px;
+          font-size: 18px !important;
+
+          &.ion-text-end {
+            font-weight: 600 !important;
+          }
+        }
+
+        &.toggleTxt {
+          .ion-text-start {
+            font-weight: 600 !important;
+          }
+
+          .ion-text-end {
+            font-weight: bold !important;
+          }
+        }
+      }
+    }
+
+    app-annual-rate-return {
+      .section-title {
+        margin-left: 28px !important;
+
+        label {
+          font-size: 18px !important;
+          font-weight: bold !important;
+        }
+      }
+
+      .myv-card {
+        margin-left: 28px;
+        @media screen and (min-width: 280px) and (max-width: 920px) {
+          margin-left: 20px !important;
+        }
+      }
+    }
+
+    app-orange-money {
+      .section-title {
+        margin-left: 9px !important;
+        margin-top: 10px;
+
+        label {
+          font-size: 18px !important;
+          font-weight: bold !important;
+        }
+      }
+      .myv-card {
+        margin-left: 9px;
+
+        @media screen and (min-width: 280px) and (max-width: 920px) {
+          margin-left: 0px !important;
+        }
+      }
+    }
+  }
+  app-more-account-info {
+    .myv-card {
+      box-shadow: none !important;
+      ion-list {
+        ion-item.item {
+          cursor: pointer !important;
+        }
+      }
+    }
+  }
+}
+.orang-money-bottom {
+  display: flex !important;
+  @media screen and (min-width: 280px) and (max-width: 920px) {
+    .orang-money-col {
+      offset: 12;
+    }
+    display: block !important;
+  }
+}
+
+app-retirement {
+  .dont-leave-money {
+    margin-top: 12px;
+
+    app-nudge-messaging {
+      .fw-card {
+        margin-top: 40px !important;
+        margin-left: 0px !important;
+        @media screen and (min-width: 280px) and (max-width: 920px) {
+          margin-left: 20px !important;
+          .fw-card-row {
+            margin-top: 20px !important;
+            margin-bottom: 20px !important;
+          }
+        }
+        @media screen and (min-width: 920px) and (max-width: 941px) {
+          margin-left: 29px !important;
+          margin-top: 20px !important;
+          height: 272px;
+        }
+        @media screen and (min-width: 941px) and (max-width: 1075px) {
+          height: 372px;
+        }
+        @media screen and (min-width: 1075px) and (max-width: 1097px) {
+          height: 348px;
+        }
+        @media screen and (min-width: 1097px) and (max-width: 1107px) {
+          height: 329px;
+        }
+        @media screen and (min-width: 1107px) and (max-width: 1197px) {
+          .fw-card-row {
+            margin-top: 60px !important;
+          }
+          height: 316px !important;
+        }
+        @media screen and (min-width: 1197px) and (max-width: 1200px) {
+          height: 313px !important;
+        }
+        @media screen and (min-width: 1200px) and (max-width: 1347px) {
+          height: 296px !important;
+        }
+        @media screen and (min-width: 1347px) and (max-width: 1355px) {
+          height: 296px !important;
+        }
+        @media screen and (min-width: 1355px) {
+          height: 263px !important;
+        }
+        background-position: 100% !important;
+
+        .fw-card-row {
+          margin-top: 50px;
+          padding-left: 10px !important;
+          display: flex !important;
+          ion-col {
+            .fw-card-content {
+              p {
+                width: 100% !important;
+                text-align: center;
+              }
+            }
+
+            .fw-card-text {
+              text-align: center;
+            }
+
+            .fw-card-subtext {
+              margin: 0px !important;
+              text-align: center;
+            }
+          }
+          .woman-image {
+            margin: auto;
+            min-width: 140px;
+            max-width: 140px;
+            position: relative !important;
+            top: 0px !important;
+          }
+        }
+        ion-card-content {
+          .fw-card-link-container {
+            margin-left: 25px !important;
+            .learn-more-content {
+              text-align: center;
+              margin-left: 0px !important;
+              margin-top: 0px !important;
+              .learn-more-img {
+                position: absolute;
+                margin-top: 1px;
+                margin-left: -24px;
+              }
+            }
+            .float-left {
+              float: left;
+              margin-left: 30px;
+            }
+          }
+        }
+        ion-card-header {
+          ion-card-title {
+            p {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

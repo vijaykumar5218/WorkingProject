@@ -1,0 +1,7 @@
+<app-modal-header [headerText]="header" [back]="true"></app-modal-header>
+<ion-content>
+  <mobile-plan-transactions
+    [back]="true"
+    (consent)="updateHeader($event)"
+  ></mobile-plan-transactions>
+</ion-content>

@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  div {
+    display: flex;
+    align-items: center;
+    img {
+      width: 40px;
+    }
+    span {
+      font-size: 14px;
+      color: var(--primary-colors-voya-black);
+      font-weight: bold;
+      padding-left: 10px;
+    }
+  }
+}

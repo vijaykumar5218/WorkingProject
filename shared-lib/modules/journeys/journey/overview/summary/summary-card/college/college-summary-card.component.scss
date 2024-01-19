@@ -1,0 +1,10 @@
+@import '../../../../../hsa-summary-card/hsa-summary-card.component.scss';
+
+.heading-and-account {
+  width: 100%;
+
+  .account-name {
+    font-size: 14px;
+    color: var(--primary-colors-voya-black);
+  }
+}

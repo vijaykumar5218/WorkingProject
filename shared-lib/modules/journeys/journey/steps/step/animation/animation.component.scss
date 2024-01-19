@@ -1,0 +1,9 @@
+div.container {
+  margin: auto;
+  display: flex;
+  padding-bottom: 20px;
+
+  .hide-px {
+    width: 1px;
+  }
+}

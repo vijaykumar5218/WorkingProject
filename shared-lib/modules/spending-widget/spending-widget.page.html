@@ -1,0 +1,25 @@
+<div class="container" #container>
+  <ion-row *ngIf="isWeb" class="back-link">
+    <ion-col class="ion-text-start back-arrow">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </ion-col>
+    <ion-col>
+      <a
+        routerLink="/accounts/all-account/summary"
+        id="spending-widget-back-btn"
+      >
+        {{spendingText.back}}
+      </a>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <app-mx-widget
+        [widgetType]="widgetType.SPENDING_WIDGET"
+        [height]="height"
+        [tagName]="'mx-spending-widget'"
+      >
+      </app-mx-widget>
+    </ion-col>
+  </ion-row>
+</div>

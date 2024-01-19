@@ -1,0 +1,41 @@
+<ion-grid>
+  <ion-row
+    *ngFor="
+      let row of element.config.rows;
+      let firstRow = first;
+      let rowIndex = index
+    "
+    [ngClass]="{'first-row': firstRow, 'row-web': isWeb}"
+  >
+    <ion-col
+      *ngFor="
+        let col of row.columns;
+        let firstCol = first;
+        let colIndex = index
+      "
+      [ngClass]="{'first-col': firstCol}"
+    >
+      <ion-text *ngIf="col.description">{{ col.description }}</ion-text>
+      <ion-text *ngIf="col.header" class="header">{{ col.header }}</ion-text>
+      <journeys-steps-step-input-text-field
+        *ngIf="col.id === 'input'"
+        [input]="col"
+        [ariaLabel]="
+          !firstRow && !firstCol
+            ? row.columns[0].header +
+              ' ' +
+              element.config.rows[0].columns[colIndex].description
+            : ''
+        "
+        [value]="
+          getValByAnswerId(col.answerId)?.value ||
+          getValByAnswerId(col.answerId)?.value === ''
+            ? getValByAnswerId(col.answerId)?.value
+            : col.default?.toString()
+        "
+        (valueChange)="emitValueChange($event, col.answerId)"
+        [idSuffix]="'' + rowIndex + colIndex + element.idSuffix"
+      ></journeys-steps-step-input-text-field>
+    </ion-col>
+  </ion-row>
+</ion-grid>

@@ -1,0 +1,45 @@
+:host {
+  display: block;
+
+  ion-text {
+    color: var(--primary-colors-voya-black);
+    font-size: 16px;
+    display: block;
+    margin-bottom: 15px;
+
+    &.header {
+      font-weight: bold;
+    }
+  }
+
+  .text-main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .icon {
+      display: flex;
+      margin-right: 8px;
+    }
+    .heading {
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  .text {
+    color: var(--primary-colors-voya-black);
+    padding: 3px;
+  }
+
+  journeys-overview-summary-step-text-field {
+    display: block;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+
+  journeys-overview-checkbox {
+    margin-top: 14px;
+  }
+}

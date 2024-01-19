@@ -1,0 +1,20 @@
+{
+  "showMatch": true,
+  "nudgeType":"compare",
+  "matchPercentage": 6,
+  "toolTipText": [
+      "Your employer matches your contribution up to a certain amount.",
+      "Your Employer will match up to 67% of your savings up to 6%."
+  ],
+  "toolTipNotes": "Note: The match amount reflects the most recent information we have on file from your employer.",
+  "showMatchPercentageValue": true,
+  "icon": "--v-colors__secondary",
+  "header": "Don't Leave Money Behind!",
+  "subHeader": "your employer matches up to",
+  "urlText": "Learn more",
+  "url": "",
+  "actualEmployerMatch": 6,
+  "actualContributionPercentage": 5,
+  "peerComparisonContributionRate": 0,
+  "age": 65
+}

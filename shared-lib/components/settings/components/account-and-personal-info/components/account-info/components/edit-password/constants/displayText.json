@@ -1,0 +1,21 @@
+{
+  "password": "Current Password",
+  "newPassword": "New Password",
+  "confirmPassword": "Confirm Password",
+  "button": {
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "lastUpdate":"Last Updated:",
+  "alert": {
+    "message": "You password will be changed for all Voya accounts. Are you sure you want to continue?",
+    "imageUrl": "assets/icon/Frame.svg"
+  },
+  "notificationMsg": "A notification will be sent to you. ",
+  "manageNotification": "Manage your notifications.",
+  "actionOption": {
+    "headername": "Edit Password",
+    "buttonLeft": "settings/account-and-personal-info",
+    "buttonRight": "notification"
+  }
+}

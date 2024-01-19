@@ -1,0 +1,35 @@
+<div [ngClass]="isWeb? 'web-benefit-summary':'mobile-benefit-summary'">
+  <ng-container *ngIf="hasBenefits; else noBenefits">
+    <section
+      class="header-section"
+      *ngIf="benefits?.payrollDeduction?.total_deduction || benefits?.payrollDeduction?.total_deduction === 0"
+    >
+      <p class="header-text">
+        {{benefitsContent?.payrollText}}
+        {{benefits.payrollDeduction.cycle_time}}
+      </p>
+      <p class="header-text-amount">
+        {{benefits.payrollDeduction.total_deduction | currency:'USD'}}
+      </p>
+    </section>
+    <app-summary-benefits-list
+      *ngIf="benefits?.enrolled?.length > 0"
+      [header]="benefitsContent?.enrolledSectionTitle"
+      [benefitsList]="benefits.enrolled"
+      [displayPremiumAndCoverage]="true"
+    ></app-summary-benefits-list>
+    <app-summary-benefits-list
+      *ngIf="benefits?.provided?.length > 0"
+      [header]="benefitsContent?.providedSectionTitle"
+      [benefitsList]="benefits.provided"
+      [displayPremiumAndCoverage]="false"
+    ></app-summary-benefits-list>
+    <app-summary-benefits-list
+      *ngIf="benefits?.declined?.length > 0"
+      [header]="benefitsContent?.declinedSectionTitle"
+      [benefitsList]="benefits.declined"
+      [displayPremiumAndCoverage]="false"
+    ></app-summary-benefits-list>
+  </ng-container>
+</div>
+<ng-template #noBenefits> <app-no-benefits></app-no-benefits></ng-template>

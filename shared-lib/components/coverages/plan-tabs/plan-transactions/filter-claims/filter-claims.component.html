@@ -1,0 +1,52 @@
+<ion-content>
+  <div class="list-wrap">
+    <ion-list *ngFor="let data of filterList" class="list" lines="none">
+      <h5>{{ data.label }}</h5>
+      <ion-item
+        *ngFor="let el of data.values"
+        lines="none"
+        class="ion-no-padding"
+      >
+        <ion-checkbox
+          (ionChange)="onChange(el.key)"
+          [(ngModel)]="el.isChecked"
+          color="btndarkblue"
+          mode="ios"
+        ></ion-checkbox>
+        <img
+          src="assets/icon/check.svg"
+          alt="check mark"
+          srcset=""
+          class="checkmark"
+          [class.active]="el.isChecked"
+        />
+        <ion-label [color]="el.isChecked ? 'btndarkblue' : 'none'">{{
+          el.name
+        }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div class="btn-wrap">
+    <ion-button
+      size="small"
+      (click)="closeDialog(false)"
+      class="font-18 save-button"
+      expand="block"
+      fill="clear"
+      color="btndarkblue"
+    >
+      {{ filterContent.cancelLabel }}
+    </ion-button>
+    <ion-button
+      size="small"
+      (click)="closeDialog(true)"
+      class="font-18 save-button"
+      expand="block"
+      fill="clear"
+      color="btndarkblue"
+    >
+      {{ filterContent.okLable }}
+    </ion-button>
+  </div>
+</ion-content>

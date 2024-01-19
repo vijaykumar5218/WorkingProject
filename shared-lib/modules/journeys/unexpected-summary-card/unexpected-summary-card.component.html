@@ -1,0 +1,38 @@
+<div class="text-main-container">
+  <div class="icon" *ngIf="accountLinked">
+    <img [src]="accountlogoUrl" alt="account logo" />
+  </div>
+  <div class="heading">
+    <div class="account-info" *ngIf="accountLinked">
+      <ion-text>{{ summaryCard?.header }}</ion-text>
+      <ion-text class="OneLinkNoTx">{{ accountName }}</ion-text>
+    </div>
+  </div>
+  <div class="hamburger">
+    <v-icon
+      name="fa fa-ellipsis-h"
+      target="_blank"
+      color="var(--primary-colors-voya-dark-blue)"
+      size="16px"
+      [id]="'summaryCardRevisit' + summaryCard?.idSuffix"
+      tabindex="0"
+      (click)="openDialog()"
+      (keyup.enter)="openDialog()"
+    ></v-icon>
+  </div>
+</div>
+
+<app-progress-bar
+  *ngIf="summaryCard?.rows"
+  [element]="summaryCard"
+  decimalPlacesOfMaxValue="2-2"
+>
+</app-progress-bar>
+<app-table
+  [element]="summaryCard"
+  *ngIf="summaryCard?.rows && unExpectedService.isTargetNotAchieved"
+>
+</app-table>
+<div class="cong-txt" *ngIf="unExpectedService.isTargetAchieved">
+  {{ summaryCard?.description }}
+</div>

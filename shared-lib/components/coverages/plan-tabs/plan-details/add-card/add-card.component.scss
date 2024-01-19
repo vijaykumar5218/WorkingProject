@@ -1,0 +1,92 @@
+ion-grid {
+  padding: 24px 20px;
+  @media (min-width: 768px) {
+    margin: 16px 5px;
+  }
+  background-color: var(--ion-color-white);
+  .header-row {
+    margin-bottom: 40px;
+
+    .close-btn {
+      width: 41px;
+      height: 17px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 17px;
+      text-decoration-line: underline;
+      color: var(--v-colors__primary);
+      display: flex;
+      cursor: pointer;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.0015em;
+      color: var(--primary-colors-voya-black);
+    }
+  }
+
+  .save-button {
+    margin: 40px;
+
+    & ion-col {
+      display: flex;
+      justify-content: center;
+    }
+    button {
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--ion-color-primary-contrast);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: 220px;
+      height: 40px;
+      background: var(--secondary-colors-medium-gray-1);
+      border-radius: 20px;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      font-weight: lighter;
+
+      &.active {
+        background-color: var(--primary-colors-voya-dark-blue);
+      }
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: none;
+      .image {
+        flex-basis: 10%;
+        padding-top: 5px;
+        margin-left: 5px;
+        img {
+          max-width: 100%;
+        }
+      }
+      .text {
+        font-size: 14px;
+        color: var(--primary-colors-voya-dark-blue);
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .card-back {
+      margin-top: 40px;
+    }
+  }
+}

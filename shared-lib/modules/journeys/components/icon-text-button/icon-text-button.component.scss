@@ -1,0 +1,46 @@
+div.icon-text-button-container {
+  display: flex;
+
+  button {
+    border-radius: 8px;
+    background-color: var(--primary-colors-voya-white);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+
+    width: 100%;
+    padding: 0;
+    min-height: 50px;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 4px 0 black;
+    }
+
+    &.checked {
+      border: solid 2px var(--primary-colors-voya-dark-blue);
+      border-radius: 8px;
+    }
+
+    div.button-container {
+      display: flex;
+      align-items: center;
+      margin: 10px 15px 10px 15px;
+
+      div {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+      }
+
+      span {
+        font-size: 16px;
+        color: var(--primary-colors-voya-black);
+        font-weight: bold;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  journeys-steps-step-contentLink {
+    margin-left: 24px;
+  }
+}

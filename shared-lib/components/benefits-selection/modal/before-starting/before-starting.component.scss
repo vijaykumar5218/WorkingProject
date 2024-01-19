@@ -1,0 +1,38 @@
+:host {
+  display: block;
+
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-colors-voya-black);
+  }
+
+  ul {
+    list-style-type: disc;
+    font-size: 16px;
+    padding: 8px;
+    margin-left: 15px;
+    color: var(--primary-colors-voya-black);
+  }
+
+  ion-text {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary-colors-voya-black);
+
+    &.descNote {
+      margin-left: 20px;
+    }
+  }
+
+  ion-button {
+    display: block;
+    margin: auto;
+    width: 220px;
+    --border-radius: 25px;
+    color: var(--primary-colors-voya-white);
+    font-weight: 600;
+    --background: var(--primary-colors-voya-dark-blue);
+  }
+}

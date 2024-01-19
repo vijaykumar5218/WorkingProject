@@ -1,0 +1,36 @@
+<ion-card class="alert-dialog">
+  <ion-card-header>
+    <ion-card-title>
+      <span class="x-button" (click)="closeModal()" automation-id="close-btn"
+        ><img src="assets/icon/exit.svg" alt="Close dialog"/></span
+    ></ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p class="title-message">{{ header }}</p>
+    <p class="description-message" *ngIf="description">{{ description }}</p>
+    <div>
+      <ion-button
+        size="small"
+        class="font-18 save-button"
+        name="submit"
+        shape="round"
+        expand="block"
+        type="submit"
+        color="btncolor"
+        (click)="deleteCard()"
+        automation-id="yes-btn"
+      >
+        {{ yesText }}
+      </ion-button>
+      <ion-button
+        size="small"
+        (click)="closeModal()"
+        class="cancel-button"
+        automation-id="no-btn"
+        *ngIf="noText"
+      >
+        {{ noText }}
+      </ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>

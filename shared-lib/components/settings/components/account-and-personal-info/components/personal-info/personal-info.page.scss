@@ -1,0 +1,52 @@
+:host {
+  margin: 0px;
+  background: var(--primary-colors-voya-white);
+  div.webItems {
+    ion-item {
+      margin: 20px;
+      --inner-padding-end: 0px;
+      --padding-start: 0px;
+      --background: var(--primary-colors-voya-white);
+      > ion-row {
+        min-width: 100%;
+        @media screen and (min-width: 920px) {
+          .dob-value,
+          .last-name-value,
+          .first-name-value {
+            text-align: end;
+          }
+        }
+        @media screen and (max-width: 920px) {
+          padding: 10px 0px;
+          display: inline-grid;
+          .dob-value,
+          .last-name-value,
+          .first-name-value {
+            padding-top: 8px;
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+  div.mobileItem {
+    background: var(--primary-colors-voya-white);
+    padding-left: 10px;
+    ion-item {
+      --inner-padding-end: 0px;
+      --inner-start: 10px;
+      --background: var(--primary-colors-voya-white);
+      > ion-row {
+        min-width: 100%;
+        padding: 10px 0px;
+        display: inline-grid;
+        .dob-value,
+        .last-name-value,
+        .first-name-value {
+          padding-top: 8px;
+          text-align: start;
+        }
+      }
+    }
+  }
+}

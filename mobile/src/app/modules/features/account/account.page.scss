@@ -1,0 +1,14 @@
+@import '../../../../../../shared-lib/scss/tab-sub-header.scss';
+
+ion-tab-bar {
+  justify-content: flex-start;
+}
+
+ion-tab-button {
+  --background: var(--ion-color-white);
+  max-width: 33.3%;
+}
+
+#tab-button- {
+  display: none;
+}

@@ -1,0 +1,57 @@
+ion-card.card-background {
+  display: flex;
+  width: auto !important;
+  height: 64px;
+  padding: 10px;
+  cursor: pointer;
+  @media screen and (max-width: 920px) {
+    margin: 40px 20px 200px 20px;
+  }
+  @media screen and (min-width: 920px) {
+    margin: 40px 25px 200px 34px;
+  }
+  &.web {
+    @media screen and (min-width: 920px) {
+      margin: 40px 25px 0px 34px;
+    }
+  }
+  border-radius: 10px;
+  border: solid 1px var(--primary-colors-voya-dark-blue);
+  background-color: var(--primary-colors-voya-white);
+  box-shadow: none;
+
+  ion-row {
+    margin: auto;
+    ion-col.email-logo {
+      max-width: 30px;
+      margin: auto;
+      img.EmailImage {
+        margin-top: 5px;
+        width: 24px;
+        height: 24px;
+        flex-grow: 0;
+        object-fit: contain;
+      }
+    }
+    ion-col.email-text {
+      margin: auto;
+      width: 180px;
+      ion-text {
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--primary-colors-voya-dark-blue);
+      }
+    }
+    ion-col.email-link {
+      margin: auto;
+      width: 140px;
+      span {
+        font-size: 16px;
+        font-weight: normal;
+        text-align: left;
+        text-decoration: underline;
+        color: var(--primary-colors-voya-dark-blue);
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "sc1": true,
+    "sc2": true,
+    "sc6": true,
+    "sc7": true,
+    "sc8": true,
+    "smartcardDetail": [
+        {
+            "currentNdcName": "NUVARING",
+            "alternativeNdcName": "HALOETTE"
+        },
+        {
+            "currentNdcName": "Drug A",
+            "alternativeNdcName": "Another Drug"
+        }
+    ]
+}

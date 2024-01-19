@@ -1,0 +1,37 @@
+:host {
+  @keyframes rotate-img {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+
+    .compass {
+      display: block;
+      margin: 0 auto 30px auto;
+      width: 60px;
+      height: 60px;
+      animation: rotate-img 2s infinite;
+    }
+
+    .text {
+      display: block;
+      font-size: 16px;
+      letter-spacing: 0.08px;
+      text-align: center;
+      color: var(--primary-colors-voya-black);
+    }
+  }
+}

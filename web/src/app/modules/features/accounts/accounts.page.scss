@@ -1,0 +1,207 @@
+ion-grid {
+  .myWorkplaceDashboard {
+    .linear-gradient {
+      margin-bottom: -200px;
+    }
+  }
+  .myvoyage {
+    .linear-gradient {
+      margin-bottom: 40px;
+    }
+  }
+  .linear-gradient {
+    left: 0%;
+    right: 0%;
+    top: 90px;
+    @media screen and (min-width: 842px) {
+      margin-top: 5px;
+    }
+    background: linear-gradient(
+      359.28deg,
+      var(--gradient-color-white) 4.4%,
+      var(--gradient-color-blue) 91.56%
+    );
+    .max-width {
+      max-width: 1440px;
+      margin: auto;
+    }
+  }
+  .account-tab {
+    min-height: 750px;
+    .left-col {
+      max-width: 420px;
+      padding-right: 0px;
+      .left-card {
+        min-height: 1200px;
+        height: 99.5%;
+        background: var(--white);
+        border-radius: 10px 0px 0px 10px;
+        margin-right: 0px;
+        margin-left: 20px;
+        box-shadow: var(--card-box-shadow);
+        padding: 0px 20px 0px 20px;
+        .manage-accounts {
+          cursor: pointer;
+        }
+        ion-row {
+          .btnview {
+            font-size: 18px;
+            margin: 6px auto 16px auto;
+            width: 161px;
+            height: 40px;
+            .add-circle-outline {
+              height: 20px;
+              width: 20px;
+              margin-right: 5px;
+            }
+          }
+        }
+        .my-account {
+          margin-top: 24px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.0015em;
+          color: var(--toggle-txt-color);
+          .elephant-svg {
+            width: 20px;
+            height: 19px;
+            margin-right: 5px;
+          }
+        }
+        .allAccounts {
+          cursor: pointer;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 20px;
+          bottom: 85.29%;
+          background: var(--ion-color-white);
+          border-radius: 10px;
+          margin: 20px 0px;
+          width: 408px;
+          box-shadow: var(--card-box-shadow);
+          .allAccount-text {
+            margin-left: 17px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.001em;
+            color: var(--primary-colors-voya-dark-blue);
+          }
+          .square-box {
+            max-width: 60px;
+            border: 0.4px solid var(--secondary-colors-medium-gray-3);
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 10px;
+            top: 50%;
+            .navigator-image {
+              width: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+
+    .right-col {
+      @media screen and (max-width: 920px) {
+        padding-top: 10px;
+        min-height: 600px;
+      }
+      padding-left: 0px;
+      .right-card {
+        box-shadow: none;
+        margin-left: 0px;
+        margin-right: 20px;
+        border-radius: 0px 10px 10px 0px;
+        height: 99.5%;
+      }
+    }
+  }
+}
+.focused-element:focus {
+  outline: none;
+}
+.disabled-link{
+  color: var(--secondary-colors-voya-gray) !important;
+  pointer-events: none;
+}
+.not-allowed{
+   cursor: not-allowed;
+}
+ion-grid.mobile-grid {
+  .linear-gradient-height {
+    height: 20%;
+  }
+  .account-tab-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0px;
+    @media screen and (min-width: 280px) and (max-width: 920px) {
+      height: 90vh;
+    }
+    .left-col {
+      max-width: none;
+      margin-top: 730px;
+      @media screen and (min-width: 280px) and (max-width: 920px) {
+        margin-top: 15px;
+      }
+      &.hide-content {
+        display: none;
+      }
+
+      .left-card {
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 0px;
+        background: transparent;
+        box-shadow: none;
+        .manage-accounts-row {
+          margin-bottom: 30px;
+        }
+        .spending-budget-section {
+          @media screen and (min-width: 920px) {
+            margin: 20px 20px 0px 20px;
+          }
+          @media screen and (max-width: 921px) {
+            margin: 20px 20px 80px 20px;
+          }
+          padding: 0px 20px;
+          .titletop {
+            height: 24px;
+            flex-grow: 1;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            color: var(--primary-colors-voya-black);
+            margin-top: 10px;
+          }
+          .bottom-text {
+            text-align: left;
+            color: var(--primary-colors-voya-black);
+          }
+        }
+      }
+    }
+    .right-col {
+      display: flex;
+      flex-direction: column;
+
+      .right-card {
+        @media screen and (min-width: 280px) and (max-width: 920px) {
+          min-height: 100% !important;
+        }
+        margin: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-grow: 9;
+      }
+    }
+  }
+}

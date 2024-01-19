@@ -1,0 +1,323 @@
+:host {
+  background-color: var(--ion-color-white);
+  justify-content: flex-start;
+
+  .tpa {
+    color: var(--primary-colors-voya-black);
+
+    .web-header {
+      display: flex;
+      flex-direction: row;
+
+      ion-row {
+        width: 100%;
+        padding: 20px;
+
+        .close {
+          cursor: pointer;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 17px;
+          text-decoration-line: underline;
+          color: var(--primary-colors-voya-dark-blue);
+        }
+
+        .title-col {
+          text-align: center;
+
+          .title {
+            width: 100%;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            letter-spacing: 0.0015em;
+          }
+        }
+      }
+    }
+
+    .header {
+      padding: 20px;
+      margin-bottom: -30px;
+
+      h6 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.005em;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.005em;
+      }
+    }
+
+    .real-time-img {
+      display: block;
+      margin: 40px auto;
+    }
+
+    #close-btn {
+      margin: -30px auto 50px auto;
+      width: 120px;
+      height: 40px;
+    }
+
+    #tpa-stream {
+      min-height: 650px;
+      margin-bottom: 20px;
+      padding: 20px;
+      font-family: var(--ion-font-family);
+
+      &::ng-deep {
+        a {
+          color: var(--primary-colors-voya-dark-blue);
+        }
+
+        #choose-payer > h3 {
+          display: none;
+        }
+
+        #real-time-page {
+          h3 {
+            margin: auto auto 20px auto;
+            text-align: center;
+          }
+
+          #real-time-progress-flex-div {
+            flex-direction: column;
+          }
+
+          #real-time-progress {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+            color: var(--primary-colors-voya-dark-blue);
+          }
+        }
+
+        #finished-with-easy-enroll button {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+          letter-spacing: 0.005em;
+          text-decoration-line: underline;
+          color: var(--primary-colors-voya-dark-blue);
+          margin: 30px auto;
+          background-color: transparent;
+          display: block;
+        }
+
+        .btn.btn-link {
+          color: var(--primary-colors-voya-dark-blue);
+          text-decoration: underline;
+          padding-left: 2px !important;
+          font-size: 12px;
+          margin-top: -2px;
+        }
+
+        #terms-of-use {
+          & > button {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 0 30px;
+            border-radius: 20px;
+            background-color: var(--primary-colors-voya-dark-blue);
+            color: var(--primary-colors-voya-white);
+          }
+
+          & > div {
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            right: 20px;
+            bottom: 100px;
+            overflow-y: scroll;
+          }
+        }
+
+        & > svg,
+        #real-time-progress-flex-div > svg {
+          display: block;
+          align-self: center;
+          height: 40px;
+          width: 40px;
+          margin: 40px auto;
+        }
+
+        #choose-payer > div {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+
+        #payer-images {
+          div {
+            width: auto !important;
+            border: 1px solid var(--primary-colors-voya-dark-blue) !important;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 8px !important;
+            display: flex;
+            flex-direction: row;
+            height: 74px;
+            max-height: 74px !important;
+
+            &:hover,
+            &:focus {
+              border: 2px solid var(--primary-colors-voya-dark-blue) !important;
+            }
+
+            & > a {
+              height: auto;
+
+              & > div {
+                display: none;
+              }
+
+              & > img[style] {
+                padding: 10px;
+                display: block;
+                border-radius: 10px;
+                max-width: 9999px !important;
+                max-height: 100% !important;
+                object-fit: contain;
+                opacity: 1 !important;
+              }
+            }
+          }
+        }
+
+        #easy-enroll-form-page {
+          .btn.btn-primary {
+            margin: auto;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 0 30px;
+            border-radius: 20px;
+            background-color: var(--primary-colors-voya-dark-blue);
+            color: var(--primary-colors-voya-white);
+          }
+
+          #easy-enroll-form > div > svg {
+            display: block;
+            margin: 20px auto;
+          }
+
+          & > svg {
+            margin: 0 0 20px 0;
+            color: var(--primary-colors-voya-dark-blue);
+            position: absolute;
+          }
+
+          & > div {
+            display: flex;
+            flex-direction: column;
+
+            &:first-of-type {
+              width: 100%;
+              text-align: center;
+              color: var(--secondary-colors-error-red);
+            }
+
+            &:only-of-type {
+              color: var(--ion-color-dark);
+              width: auto;
+              text-align: left;
+            }
+
+            & > img {
+              max-width: 300px !important;
+              margin: auto;
+            }
+
+            & > p {
+              display: none;
+            }
+          }
+        }
+
+        #finished-with-easy-enroll {
+          & > h2 {
+            margin: auto auto 20px auto;
+            text-align: center;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 41px;
+            letter-spacing: 0.0025em;
+          }
+
+          & > p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.005em;
+            color: var(--toggle-txt-color);
+          }
+
+          a {
+            text-decoration: underline;
+          }
+
+          h4:nth-of-type(2) {
+            display: none;
+          }
+          h4:nth-of-type(3) {
+            margin-top: 12px;
+          }
+          p:nth-of-type(2) {
+            display: none;
+          }
+        }
+
+        .checkbox span,
+        label[for='accept'] {
+          margin-left: 8px;
+        }
+        .mm-popup.mm-popup--visible {
+          position: absolute;
+          left: 20px;
+          top: 120px;
+          right: 20px;
+          background-color: var(--ion-color-white);
+          padding: 20px;
+          border: 1px solid var(--color-lightgrey);
+        }
+
+        .mm-popup__box__footer {
+          margin-top: 26px;
+          display: flex;
+        }
+
+        .mm-popup__box__footer__left-space,
+        .mm-popup__box__footer__right-space {
+          display: inline-block;
+
+          margin: auto;
+
+          button {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

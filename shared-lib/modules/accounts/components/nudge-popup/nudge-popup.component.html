@@ -1,0 +1,75 @@
+<ion-card class="top">
+  <ion-card-header>
+    <ion-card-title>
+      <span
+        tabindex="0"
+        class="float-right"
+        (keyup.enter)="closeDialog()"
+        (click)="closeDialog()"
+      >
+        <img src="assets/icon/exit.svg" alt="Close dialog" />
+      </span>
+    </ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <div *ngIf="this.nudgeType !== 'COMPAREME'">
+      <span class="bolds" [innerHTML]="urlConcat"></span>
+    </div>
+
+    <div *ngIf="this.nudgeType === 'COMPAREME'">
+      <ion-row class="popup-header-row">
+        <ion-col class="ion-text-center popup-header">
+          <ion-text class="bolds"> {{ peopleLikeYouObj.header }}</ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row class="popup-points-row">
+        <ion-col class="ion-text-start popup-points">
+          <ul [innerHTML]="peopleLikeYouObj.points"></ul>
+        </ion-col>
+      </ion-row>
+      <ion-row class="popup-sub-header-row">
+        <ion-col class="ion-text-center popup-sub-header">
+          <div [innerHTML]="peopleLikeYouObj.subHeader" class="bolds"></div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="popup-desc-row">
+        <ion-col class="ion-text-center popup-desc">
+          <ion-text>{{ peopleLikeYouObj.desc }}</ion-text>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-card-content>
+
+  <ion-row class="m-auto mar-right">
+    <ion-col>
+      <ion-button
+        size="small"
+        class="font-18"
+        shape="round"
+        color="btncolor"
+        type="submit"
+        expand="block"
+        id="gotobutton"
+        (click)="openMatch()"
+        >{{
+          nudgeType === 'COMPAREME' ? pageText.close : pageText.goToMatch
+        }}</ion-button
+      >
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="dark" *ngIf="nudgeType !== 'COMPAREME'">
+    <ion-col class="ion-text-center mb-20">
+      <ion-text class="textalign"
+        ><a
+          (click)="closeDialog()"
+          tabindex="0"
+          (keyup.enter)="closeDialog()"
+          class="linkcolor underline"
+          >{{ pageText.notThisTime }}</a
+        ></ion-text
+      >
+    </ion-col>
+  </ion-row>
+</ion-card>

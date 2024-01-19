@@ -1,0 +1,23 @@
+:host {
+  background-color: var(--white);
+  padding: 8% 20px 0 20px;
+  .intro-web {
+    margin: 90px 0px 140px 0px;
+  }
+  .intro {
+    .desc {
+      color: var(--primary-colors-voya-black);
+      font-size: 18px;
+    }
+    .bullet {
+      margin-top: 12px;
+      margin-left: 23px;
+    }
+    .image {
+      shape-outside: circle(45%);
+      float: right;
+      width: 40%;
+      shape-margin: 3px;
+    }
+  }
+}

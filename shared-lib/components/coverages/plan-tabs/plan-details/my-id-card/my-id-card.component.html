@@ -1,0 +1,93 @@
+<div>
+  <ion-row>
+    <ion-col>
+      <div class="ion-text-start dependents-head">
+        <div class="background" [ngClass]="isWeb ? 'web' : ''">
+          <ion-text automation-id="app-my-id-card-header">
+            {{ content.header }}
+          </ion-text>
+          <div
+            *ngIf="
+              cardImage.cardFront === '' && cardImage.cardBack === '';
+              else cardBlock
+            "
+          >
+            <p>{{ content.desc }}</p>
+            <ion-button
+              size="small"
+              automation-id="app-my-id-card-button"
+              (click)="addACard()"
+            >
+              <ion-icon
+                class="font"
+                slot="start"
+                name="add-circle-outline"
+              ></ion-icon>
+              {{ content.button }}
+            </ion-button>
+          </div>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</div>
+<ng-template #cardBlock>
+  <button
+    slot="start"
+    fill="clear"
+    class="btn-primary"
+    (click)="toggleFlip()"
+    automation-id="flip-btn"
+  >
+    <img
+      class="img-flip"
+      src="assets/icon/account-type/flip.svg"
+      alt="flip-btn"
+    />
+    {{ content.flipBtn }}
+  </button>
+  <div class="tp-wrapper">
+    <div class="tp-box" [@flipState]="flip">
+      <div class="tp-box__side tp-box__front">
+        <img
+          class="image-viewer"
+          [src]="cardImage.cardFront"
+          *ngIf="cardImage.cardFront !== ''"
+          alt="card front"
+          (click)="showIdCard(cardImage.cardFront)"
+        />
+      </div>
+      <div class="tp-box__side tp-box__back">
+        <img
+          class="image-viewer"
+          [src]="cardImage.cardBack"
+          *ngIf="cardImage.cardBack !== ''"
+          alt="card back"
+          (click)="showIdCard(cardImage.cardBack)"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <button
+      slot="start"
+      fill="clear"
+      class="btn-sec update"
+      (click)="addACard()"
+      automation-id="update-btn"
+    >
+      {{ content.updateBtn }}
+    </button>
+  </div>
+  <div class="text-center">
+    <button
+      slot="start"
+      fill="clear"
+      class="btn-sec delete"
+      (click)="deleteImage()"
+      automation-id="delete-btn"
+    >
+      {{ content.deleteBtn }}
+    </button>
+  </div>
+</ng-template>

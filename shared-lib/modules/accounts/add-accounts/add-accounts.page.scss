@@ -1,0 +1,13 @@
+:host {
+  background-color: var(--primary-colors-voya-white);
+  overflow: hidden;
+
+  .container {
+    height: 100%;
+
+    #cancel-link {
+      float: right;
+      color: var(--primary-colors-voya-dark-blue);
+    }
+  }
+}

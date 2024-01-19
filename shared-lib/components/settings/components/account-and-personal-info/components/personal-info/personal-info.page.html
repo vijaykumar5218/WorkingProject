@@ -1,0 +1,43 @@
+<div [ngClass]="isWeb? 'webItems':'mobileItem'">
+  <ion-item class="ion-no-padding">
+    <!--First Name-->
+    <ion-row class="first-name-row">
+      <ion-col class="first-name-txt">
+        <ion-text class="firstname-label"
+          >{{ displayText?.firstName }}</ion-text
+        >
+      </ion-col>
+      <ion-col class="first-name-value">
+        <ion-text class="firstname-data font-w-600">
+          {{ participantData?.firstName }}
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  <!--Last Name-->
+  <ion-item class="ion-no-padding">
+    <ion-row class="last-name-row">
+      <ion-col class="last-name-txt">
+        <ion-text class="lastname-label">{{ displayText?.lastName }}</ion-text>
+      </ion-col>
+      <ion-col class="last-name-value">
+        <ion-text class="lastname-data font-w-600">
+          {{ participantData?.lastName }}
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  <!--DOB-->
+  <ion-item class="ion-no-padding">
+    <ion-row class="dob-row">
+      <ion-col class="dob-txt">
+        <ion-text class="dob-label">{{ displayText?.dob }}</ion-text>
+      </ion-col>
+      <ion-col class="dob-value">
+        <ion-text class="dob-data font-w-600">
+          {{ participantData?.birthDate }}
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+</div>

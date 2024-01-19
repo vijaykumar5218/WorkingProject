@@ -1,0 +1,38 @@
+:host {
+  background-color: var(--primary-colors-voya-white);
+
+  .logo {
+    display: block;
+    margin: 126px auto 35.7px auto;
+    width: 292px;
+    height: 89.3px;
+  }
+
+  .lock-img {
+    display: block;
+    margin: auto;
+    width: 183px;
+    height: 184px;
+  }
+
+  ion-text {
+    display: block;
+    margin: 0 auto 12px auto;
+    width: 281px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.08px;
+    text-align: left;
+    color: var(--primary-colors-voya-black);
+
+    &.title {
+      font-weight: bold;
+      letter-spacing: 0.02px;
+      text-align: center;
+    }
+  }
+
+  .sign-in {
+    margin-top: 22px;
+  }
+}

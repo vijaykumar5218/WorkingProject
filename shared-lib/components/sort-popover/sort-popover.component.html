@@ -1,0 +1,45 @@
+<div class="list-wrap sort-wrap">
+  <ion-list *ngFor="let data of sortList" class="list" lines="none">
+    <h5>{{ data.label }}</h5>
+    <ion-radio-group [(ngModel)]="selectedValue">
+      <ion-item class="ion-no-padding" *ngFor="let el of data.values">
+        <ion-radio
+          mode="ios"
+          value="{{ el.value }}"
+          color="btndarkblue"
+        ></ion-radio>
+        <img
+          src="assets/icon/check.svg"
+          alt="check mark"
+          srcset=""
+          class="checkmark"
+          [class.active]="selectedValue == el.value"
+        />
+        <ion-label>{{ el.name }}</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</div>
+
+<div class="btn-wrap">
+  <ion-button
+    size="small"
+    (click)="closeDialog(false)"
+    class="font-18 save-button"
+    expand="block"
+    fill="clear"
+    color="btndarkblue"
+  >
+    {{ filterContent.cancelLabel }}
+  </ion-button>
+  <ion-button
+    size="small"
+    (click)="closeDialog(true)"
+    class="font-18 save-button"
+    expand="block"
+    fill="clear"
+    color="btndarkblue"
+  >
+    {{ filterContent.okLable }}
+  </ion-button>
+</div>

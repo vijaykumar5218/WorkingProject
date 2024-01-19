@@ -1,0 +1,23 @@
+:host {
+  height: 100%;
+  display: block;
+  .steps-content {
+    height: 100%;
+    width: 100%;
+  }
+  app-step-progress-bar {
+    margin: 20px auto 20px auto;
+  }
+  swiper {
+    height: calc(100% - 48px);
+    overflow-y: scroll;
+    journeys-steps-step {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .web-steps {
+    margin: 0px 36px;
+  }
+}

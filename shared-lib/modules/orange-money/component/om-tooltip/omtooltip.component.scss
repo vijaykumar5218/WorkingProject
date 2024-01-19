@@ -1,0 +1,18 @@
+:host {
+  .toolTip {
+    background-color: var(--ion-color-white);
+    color: var(--primary-colors-voya-black);
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    img {
+      float: right;
+      cursor: pointer;
+    }
+    .content {
+      text-align: center;
+      margin: auto;
+      color: var(--ion-color-black);
+    }
+  }
+}

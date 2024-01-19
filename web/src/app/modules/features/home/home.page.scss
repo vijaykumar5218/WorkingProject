@@ -1,0 +1,158 @@
+ion-grid {
+  app-benefits-banner {
+    &.tab-and-web {
+      @media screen and (min-width: 280px) and (max-width: 920px) {
+        display: none;
+      }
+    }
+
+    &.mobile {
+      @media screen and (min-width: 920px) {
+        display: none;
+      }
+    }
+  }
+  .mx-error-background {
+    background: #daf1fd;
+  }
+  .background-banner {
+    background-image: url('^assets/Mountain.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    .participant-name {
+      max-width: 1440px;
+      margin: auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 920px) {
+      background-size: 100% 415.8px;
+    }
+    @media screen and (min-width: 280px) and (max-width: 767px) {
+      min-height: 254px;
+      background-image: url('~assets/mountains7.svg');
+      background-size: 100%;
+      background-position: top center;
+    }
+  }
+
+  .tiles-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 91px;
+    @media screen and (min-width: 280px) and (max-width: 920px) {
+      margin: 20px 0 60px 0;
+      flex-direction: column;
+    }
+    app-medical-spending {
+      @media screen and (min-width: 768px) and (max-width: 920px) {
+        margin-bottom: 35px;
+        margin-top: -42px;
+      }
+      @media screen and (min-width: 280px) and (max-width: 767px) {
+        margin-bottom: -10px;
+        margin-top: 10px;
+      }
+    }
+    ion-card {
+      width: 422px;
+      height: 500px;
+      border-radius: 10px;
+      margin: 0px 20px;
+      .view-networth {
+        font-weight: 600;
+      }
+
+      @media screen and (min-width: 921px) and (max-width: 1330px) {
+        // Tablet landscape
+        width: 356px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 920px) {
+        // Tablet Potrait
+        height: 359px;
+        width: auto;
+        &.finstrong-score {
+          height: 100%;
+          margin-bottom: 24px;
+        }
+      }
+      @media screen and (min-width: 280px) and (max-width: 767px) {
+        // Mobile potrait & landscape
+        height: 100%;
+        width: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      ion-card-header {
+        padding-top: 10px;
+        font-weight: 600;
+        padding-bottom: 0px;
+        color: var(--primary-colors-voya-black);
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+        @media screen and (min-width: 768px) {
+          font-size: 20px;
+        }
+      }
+      ion-card-content {
+        .finstrong-score-btn-section {
+          padding-top: 15px;
+          text-align: center;
+        }
+        .finstrong-button {
+          font-size: 16px;
+          font-weight: 600;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+h2#welcome-header {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 24px;
+  color: var(--primary-colors-voya-black);
+  max-width: 700px;
+  letter-spacing: 0.15%;
+  padding: 20px 0px 20px 50px;
+  @media screen and (min-width: 768px) and (max-width: 920px) {
+    padding: 15px 0px 0px 27px;
+  }
+  @media screen and (min-width: 280px) and (max-width: 767px) {
+    font-size: 32px;
+    padding: 30px 0px 0px 27px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 920px) {
+  .networth-web-view {
+    display: none;
+  }
+  .networth-mobile-view {
+    display: block;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 920px) {
+  div.mx-net-worth-home {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .networth-web-view {
+    display: block;
+    margin-top: 7px;
+  }
+  .networth-mobile-view {
+    display: none;
+  }
+}
+#mx-finstrong-mini {
+  height: 410px;
+}
+#mx-net-worth-mini {
+  height: 410px;
+}

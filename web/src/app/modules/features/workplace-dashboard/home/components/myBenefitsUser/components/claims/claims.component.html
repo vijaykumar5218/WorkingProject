@@ -1,0 +1,31 @@
+<ng-container>
+  <ion-card class="view-card">
+    <div class="ion-card">
+      <ion-row tabindex="0" class="header">{{ header }}</ion-row>
+      <ion-row class="content">
+        <ion-col class="myBenefit-warning-icon">
+          <img
+            tabindex="0"
+            alt="warning icon"
+            src="assets/mybenefits-user/warning.svg"
+          />
+        </ion-col>
+        <ion-col>
+          <p tabindex="1" class="text-content" [innerHTML]="msg"></p>
+        </ion-col>
+      </ion-row>
+      <ion-row class="claimLinks" *ngFor="let link of claimLinks">
+        <ion-col class="myBenefit-rightArrow-icon">
+          <img
+            tabindex="0"
+            alt="right arrow icon"
+            src="assets/workplace-dashboard/right-arrow.svg"
+          />
+        </ion-col>
+        <ion-col>
+          <p class="m-0" [innerHTML]="link"></p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
+</ng-container>

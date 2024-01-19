@@ -1,0 +1,51 @@
+<ion-row class="add-account-row">
+  <ion-col>
+    <ion-row>
+      <ion-col>
+        <h3 id="add-account-title" class="add-account-title">
+          {{ pageText.addAccountTitle }}
+        </h3>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <img
+          id="add-account-header-image"
+          class="add-account-header-image"
+          src="assets/icon/account-type/add-account-header.svg"
+          alt="Add account header"
+        />
+      </ion-col>
+    </ion-row>
+    <ion-row class="add-account-subtitle-row">
+      <ion-col>
+        <p id="add-account-subtitle" class="add-account-subtitle">
+          {{ pageText.addAccountSubTitle }}
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="add-account-button-row">
+      <ion-col>
+        <ion-button
+          size="small"
+          id="add-account"
+          class="add-account-button"
+          name="Add Account"
+          shape="round"
+          expand="block"
+          color="btncolor"
+        >
+          <img
+            class="add-circle-outline"
+            alt="add-circle-outline"
+            src="assets/icon/addoutline.png"
+          />
+          {{ pageText.addAccountButtonText }}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-col>
+  <ion-col class="catchup-tile">
+    <app-catch-up-tile></app-catch-up-tile>
+  </ion-col>
+</ion-row>

@@ -1,0 +1,61 @@
+:host {
+  ion-card {
+    @media screen and (min-width: 843px) {
+      margin: 20px 0px 20px 20px;
+    }
+    @media screen and (max-width: 843px) {
+      margin: 20px 0px;
+    }
+  }
+  .snapshot-card {
+    @media screen and (min-width: 844px) and (max-width: 1193px) {
+      margin-left: 0px;
+    }
+  }
+  .header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--primary-colors-voya-black);
+    margin-bottom: 15px;
+  }
+  .total-balance-value {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: end;
+    color: var(--primary-colors-voya-dark-blue);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 0.1px;
+    cursor: pointer;
+  }
+  .total-balance {
+    margin-bottom: 10px;
+    .total-balance-text {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 18px;
+      text-align: left;
+      color: var(--ion-color-dark);
+    }
+    .total-bal {
+      align-self: center;
+      text-align: right;
+    }
+  }
+  .acc-name-bal {
+    margin-top: 5px;
+    .acc-name {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      color: var(--ion-color-dark);
+    }
+    .acc-balance {
+      align-self: center;
+      text-align: right;
+    }
+  }
+}

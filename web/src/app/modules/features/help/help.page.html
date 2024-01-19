@@ -1,0 +1,46 @@
+<ion-grid
+  [ngClass]="myWorkplaceDashboardEnabled? 'myWorkplaceDashboard':'myvoyage'"
+>
+  <div #topmostElement></div>
+  <div class="linear-gradient">
+    <div class="max-width">
+      <ion-row class="settings-tab">
+        <ion-col class="left-col">
+          <ion-card class="left-card">
+            <ion-row class="settings-title">
+              <ion-col>
+                <ion-text>
+                  {{help}}
+                </ion-text>
+              </ion-col>
+            </ion-row>
+            <div class="help-menu">
+              <app-menu
+                [config]="menuConfig"
+                [selectedTab]="selectedTab"
+                (menuClick)="onFocusElement()"
+              ></app-menu>
+            </div>
+          </ion-card>
+        </ion-col>
+
+        <ion-col class="right-col">
+          <ion-card class="right-card">
+            <ion-router-outlet
+              [animated]="false"
+              class="focused-element-help"
+              tabindex="0"
+              #focusedElementHelp
+            ></ion-router-outlet>
+          </ion-card>
+          <app-footer-desktop
+            *ngIf="myWorkplaceDashboardEnabled"
+            class="small-device-dashboard-footer"
+          ></app-footer-desktop>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  <app-footer-desktop class="footer-desktop"></app-footer-desktop>
+</ion-grid>

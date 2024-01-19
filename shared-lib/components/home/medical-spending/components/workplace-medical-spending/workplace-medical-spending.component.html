@@ -1,0 +1,150 @@
+<div
+  class="medical-spending-dashboard"
+  [ngClass]="{'for-mobile-plans': forMobilePlansPage}"
+>
+  <ng-container
+    *ngIf="
+      (isTPA && hasConsent && !isTPAWaiting) || (!isTPA && hasConsent);
+      else elseBlock
+    "
+  >
+    <ion-card
+      *ngIf="totalSpend + totalPremiumSavvi > 0"
+      class="total-medical-spend-dashboard"
+    >
+      <ion-row class="medical-spend">
+        <ion-col class="medical-spend-img-container">
+          <img
+            alt="totalmedicalSpend"
+            src="assets/workplace-dashboard/medical-spending.svg"
+            id="spend-details-img"
+            class="ths-img"
+          />
+        </ion-col>
+        <ion-col class="medical-spend-content">
+          <ion-row>
+            <ion-col>
+              <p tabindex="0" class="ths-text">
+                {{ workplaceMedicalSpending.medicalSpendingHeader }}
+              </p>
+            </ion-col>
+            <ion-col class="totalValue">
+              <p tabindex="0" id="medical-spending" class="ths-amount">
+                {{ totalSpend + totalPremiumSavvi | currency }}
+              </p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <p tabindex="0" class="sub-text">
+                {{ workplaceMedicalSpending.medicalSpendingDescription }}
+              </p>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ths-details">
+            <ion-col class="ion-no-padding view-details-btn">
+              <ion-button
+                id="view-details-btn"
+                [attr.aria-label]="
+                  workplaceMedicalSpending.medicalSpendingButton
+                "
+                class="font-12"
+                shape="round"
+                expand="block"
+                color="btncolor"
+                fill="outline"
+                (click)="
+                  onClickButton(
+                    forMobilePlansPage
+                      ? 'coverages/coverage-tabs/insights'
+                      : 'coverages'
+                  )
+                "
+              >
+                {{ workplaceMedicalSpending.medicalSpendingButton }}
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ng-container>
+
+  <ng-template #elseBlock>
+    <ion-card
+      *ngIf="workplaceCovergePreAuthMessage"
+      class="total-medical-spend-dashboard authMessageCard"
+      [ngClass]="isTPA && isTPAWaiting ? 'tpa-waiting-card' : ''"
+    >
+      <ion-row class="medical-spend">
+        <ion-col class="medical-spend-img-container">
+          <img
+            alt="locker-medical-Spending"
+            [src]="
+              isTPA && isTPAWaiting
+                ? 'assets/workplace-dashboard/tpa_waiting_clock.svg'
+                : 'assets/workplace-dashboard/locker.svg'
+            "
+            id="locker-spend-details-img"
+            class="ths-img"
+          />
+        </ion-col>
+        <ion-col class="medical-spend-content">
+          <ion-row>
+            <ion-col>
+              <p class="ths-text" tabindex="0">
+                {{
+                  isTPA && isTPAWaiting
+                    ? workplaceCovergeTPAWaitingMessage.TPAWaitingMessageTitle
+                    : workplaceCovergePreAuthMessage.preAuthHeader
+                }}
+              </p>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <p class="sub-text" tabindex="0">
+                {{
+                  isTPA && isTPAWaiting
+                    ? workplaceCovergeTPAWaitingMessage.TPAWaitingMessageDescription
+                    : workplaceCovergePreAuthMessage.preAuthDescription
+                }}
+              </p>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ths-details">
+            <ion-col
+              class="ion-no-padding view-details-btn"
+              [ngClass]="
+                isTPA && isTPAWaiting ? 'tpa-waiting-view-details' : ''
+              "
+            >
+              <ion-button
+                size="small"
+                [attr.aria-label]="
+                  isTPA && isTPAWaiting
+                    ? workplaceCovergeTPAWaitingMessage.TPAWaitingMessageButton
+                    : workplaceCovergePreAuthMessage.preAuthButton
+                "
+                id="view-details-btn"
+                class="font-12"
+                shape="round"
+                expand="block"
+                color="btncolor"
+                fill="outline"
+                (click)="onClickButton()"
+              >
+                {{
+                  isTPA && isTPAWaiting
+                    ? workplaceCovergeTPAWaitingMessage.TPAWaitingMessageButton
+                    : workplaceCovergePreAuthMessage.preAuthButton
+                }}
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ng-template>
+</div>

@@ -1,0 +1,66 @@
+<app-contact-coach-popup
+  *ngIf="element.id === 'contactACoach'; else nonCustom"
+  [screenMessage]="screenMessage"
+  [settingsDisplayFlags]="settingsDisplayFlags"
+></app-contact-coach-popup>
+
+<ng-template #nonCustom>
+  <div [ngClass]="{modal: true, 'is-web': isWeb}" *ngIf="fullscreen">
+    <app-modal-header
+      [mxAccount]="
+        element.elements && element.elements[0].id === 'manageMXaccount'
+      "
+      [headerText]="
+        element.elements && element.elements[0].id === 'manageMXaccount'
+          ? element.elements[0].header
+          : element.header
+      "
+    ></app-modal-header>
+    <journeys-steps-step-video-modal
+      *ngIf="element.videoUrl"
+      [videoUrl]="element.videoUrl"
+      [playerId]="element.playerId"
+    ></journeys-steps-step-video-modal>
+    <journeys-modal-generic-component
+      *ngIf="element.id === 'genericModal'"
+      [element]="element"
+      (saveValue)="saveValue($event)"
+      [values]="values"
+      [answer]="answer"
+    ></journeys-modal-generic-component>
+    <journeys-steps-step-contentLinkModal
+      *ngIf="element.id === 'contentModal'"
+      [element]="element"
+    >
+    </journeys-steps-step-contentLinkModal>
+  </div>
+
+  <ion-card *ngIf="!fullscreen">
+    <img
+      src="assets/icon/exit.svg"
+      alt="close"
+      (click)="closeDialog()"
+      (keyup.enter)="closeDialog()"
+      tabindex="0"
+      id="closeModalDialog"
+    />
+    <journeys-steps-step-help-modal
+      *ngIf="element.id === 'help'"
+      [help]="element"
+    ></journeys-steps-step-help-modal>
+    <app-revisit-journey
+      *ngIf="element.id === 'revisit-journey-modal'"
+    ></app-revisit-journey>
+    <app-err-msg-popup
+      *ngIf="element.id === 'error-msg'"
+      [element]="element"
+    ></app-err-msg-popup>
+    <journeys-modal-generic-component
+      *ngIf="element.id === 'genericModal'"
+      [element]="element"
+      (saveValue)="saveValue($event)"
+      [values]="values"
+      [answer]="answer"
+    ></journeys-modal-generic-component>
+  </ion-card>
+</ng-template>

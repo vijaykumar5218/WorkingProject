@@ -1,0 +1,142 @@
+<ion-card class="catchup-card" *ngIf="catchUpData">
+  <ion-row>
+    <ion-col>
+      <ion-row>
+        <ion-col>
+          <h2 class="catchup-header" id="catchup-header">
+            {{ catchUpData.catchupHeader }}
+          </h2>
+        </ion-col>
+        <ion-col class="view-all" *ngIf="!singleCatchUpMessage">
+          <ion-text id="view-all">{{
+            catchUpData.catchupViewallButton
+          }}</ion-text>
+        </ion-col>
+      </ion-row>
+
+      <ng-container *ngIf="!singleCatchUpMessage; else viewReadMore">
+        <ng-container
+          *ngIf="
+            (catchUpMessageData?.catchUp).length > 0;
+            else noCatchUpMessage
+          "
+        >
+          <ion-row
+            *ngFor="
+              let message of (catchUpMessageData?.catchUp).slice(0, 3);
+              let i = index
+            "
+          >
+            <ion-col>
+              <div class="h-line" *ngIf="i != 0"></div>
+              <div>
+                <h4
+                  class="section-text-message"
+                  [id]="'medical-spending-text_' + i"
+                >
+                  {{ message.Title }}
+                </h4>
+                <div class="review-text-div">
+                  <p
+                    class="review-text"
+                    [id]="'review-text_' + i"
+                    *ngIf="message?.shortDescription"
+                  >
+                    {{ message.shortDescription }}
+                  </p>
+                  <p
+                    class="review-text"
+                    [id]="'review-text_' + i"
+                    *ngIf="!message?.shortDescription"
+                  >
+                    {{ message.Description }}
+                  </p>
+                </div>
+              </div>
+
+              <div
+                [id]="'read-more-container_' + i"
+                class="readmore-container"
+                (click)="readmore(message)"
+                *ngIf="
+                  catchUpData?.catchupReadmoreButton &&
+                  ((message?.shortDescription && !(message.Link_name === '')) ||
+                    (message?.shortDescription && message.Link_name === ''))
+                "
+              >
+                <a class="link-text linkcolor" [id]="'read-more-link_' + i"
+                  >{{ catchUpData.catchupReadmoreButton }}
+                </a>
+                <img alt="chevron right" src="assets/icon/chevron_right.svg" />
+              </div>
+
+              <div *ngIf="message.Link_name && !message?.shortDescription">
+                <ion-button
+                  size="small"
+                  class="font-12"
+                  shape="round"
+                  color="btncolor"
+                  fill="outline"
+                >
+                  {{ message.Link_name }}
+                </ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ng-container>
+      </ng-container>
+
+      <ng-template #viewReadMore>
+        <ion-row>
+          <ion-col>
+            <div>
+              <h4 class="section-text-message" [id]="'medical-spending-text'">
+                {{ singleCatchUpMessage.Title }}
+              </h4>
+              <div class="review-text-div">
+                <p class="review-text-viewed" [id]="'review-text'">
+                  {{ singleCatchUpMessage.Description }}
+                </p>
+              </div>
+            </div>
+
+            <div *ngIf="singleCatchUpMessage?.Link_name">
+              <ion-button
+                size="small"
+                class="font-12"
+                shape="round"
+                color="btncolor"
+                fill="outline"
+              >
+                {{ singleCatchUpMessage.Link_name }}
+              </ion-button>
+            </div>
+
+            <div
+              [id]="'read-more-container'"
+              class="back-link-container"
+              (click)="readmore(null)"
+            >
+              <img alt="chevron left" src="assets/icon/chevron_left.svg" />
+              <a class="link-text linkcolor" [id]="'read-more-link'"
+                >{{ catchUpData.catchupBackButton }}
+              </a>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ng-template>
+
+      <ng-template #noCatchUpMessage>
+        <ion-row>
+          <ion-col>
+            <div>
+              <p class="all-caught-up" [id]="'review-text'">
+                {{ catchUpData.noCatchUpText }}
+              </p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ng-template>
+    </ion-col>
+  </ion-row>
+</ion-card>

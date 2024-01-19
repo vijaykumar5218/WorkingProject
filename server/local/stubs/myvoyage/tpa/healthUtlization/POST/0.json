@@ -1,0 +1,531 @@
+{
+    "memberId": 4625704,
+    "carriers": [
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465243,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "FAILED",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465670,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 0,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465243,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465670,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465243,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465670,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465243,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465670,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465243,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465670,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465243,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465670,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465243,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        },
+        {
+            "carrierName": "Test Carrier",
+            "carrierId": 465670,
+            "payerId": 1659,
+            "logoUrl": "https://tpastream-public.s3.amazonaws.com/test-tpastream.png",
+            "connectionStatus": "Enabled",
+            "loginProblem": "valid",
+            "crawlStatus": "SUCCESS",
+            "crawlCount": 1,
+            "claimsCount": 5,
+            "totalOutOfPocketAmount": 367.72
+        }
+    ],
+    "claims": [
+        {
+            "serviceName": "medical",
+            "providerName": "Test Provider -- Do Not Use",
+            "inNetwork": false,
+            "outOfPocketCost": 0.0,
+            "serviceDate": "2023-11-29",
+            "insurancePaidAmount": 148.0,
+            "carrierName": "Test Carrier",
+            "carrierId": 465243
+        },
+        {
+            "serviceName": "medical",
+            "providerName": "Test Provider -- Do Not Use",
+            "inNetwork": false,
+            "outOfPocketCost": 125.0,
+            "serviceDate": "2023-05-08",
+            "insurancePaidAmount": 611.7,
+            "carrierName": "Test Carrier",
+            "carrierId": 465243
+        },
+        {
+            "serviceName": "medical",
+            "providerName": "Test Provider -- Do Not Use",
+            "inNetwork": false,
+            "outOfPocketCost": 127.72,
+            "serviceDate": "2023-06-10",
+            "insurancePaidAmount": 510.87,
+            "carrierName": "Test Carrier",
+            "carrierId": 465243
+        },
+        {
+            "serviceName": "medical",
+            "providerName": "Test Provider -- Do Not Use",
+            "inNetwork": false,
+            "outOfPocketCost": 115.0,
+            "serviceDate": "2023-09-24",
+            "insurancePaidAmount": 0.0,
+            "carrierName": "Test Carrier",
+            "carrierId": 465243
+        },
+        {
+            "serviceName": "medical",
+            "providerName": "Test Provider -- Do Not Use",
+            "inNetwork": false,
+            "outOfPocketCost": 0.0,
+            "serviceDate": "2023-11-29",
+            "insurancePaidAmount": 0.0,
+            "carrierName": "Test Carrier",
+            "carrierId": 465243
+        },
+        {
+            "serviceName": "medical",
+            "providerName": "Test Provider -- Do Not Use",
+            "inNetwork": false,
+            "outOfPocketCost": 0.0,
+            "serviceDate": "2023-08-07",
+            "insurancePaidAmount": 148.0,
+            "carrierName": "Test Carrier",
+            "carrierId": 465670
+        },
+        {
+            "serviceName": "medical",
+            "providerName": "Test Provider -- Do Not Use",
+            "inNetwork": false,
+            "outOfPocketCost": 125.0,
+            "serviceDate": "2023-07-09",
+            "insurancePaidAmount": 611.7,
+            "carrierName": "Test Carrier",
+            "carrierId": 465670
+        },
+        {
+            "serviceName": "medical",
+            "providerName": "Test Provider -- Do Not Use",
+            "inNetwork": false,
+            "outOfPocketCost": 127.72,
+            "serviceDate": "2023-07-18",
+            "insurancePaidAmount": 510.87,
+            "carrierName": "Test Carrier",
+            "carrierId": 465670
+        },
+        {
+            "serviceName": "medical",
+            "providerName": "Test Provider -- Do Not Use",
+            "inNetwork": false,
+            "outOfPocketCost": 115.0,
+            "serviceDate": "2023-08-08",
+            "insurancePaidAmount": 0.0,
+            "carrierName": "Test Carrier",
+            "carrierId": 465670
+        },
+        {
+            "serviceName": "medical",
+            "providerName": "Test Provider -- Do Not Use",
+            "inNetwork": false,
+            "outOfPocketCost": 0.0,
+            "serviceDate": "2023-09-16",
+            "insurancePaidAmount": 0.0,
+            "carrierName": "Test Carrier",
+            "carrierId": 465670
+        }
+    ],
+    "groupingCategoryDetails": {
+        "2023-11": [
+            {
+                "serviceName": "rx",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 0.0,
+                "serviceDate": "2023-11-29",
+                "insurancePaidAmount": 148.0,
+                "carrierName": "Test Carrier",
+                "carrierId": 465243,
+                "claimLines": [{
+                    "procedure_name": "ItsADrug 20MG"
+                },{
+                    "procedure_name": "ItsADrug2 20MG"
+                }],
+                "patientName": "Angla"
+            },
+            {
+                "serviceName": "medical",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 0.0,
+                "serviceDate": "2023-11-29",
+                "insurancePaidAmount": 0.0,
+                "carrierName": "Test Carrier",
+                "carrierId": 465243,
+                "claimLines": [],
+                "patientName": "Ricky"
+            }
+        ],
+        "2023-09": [
+            {
+                "serviceName": "rx",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 115.0,
+                "serviceDate": "2023-09-24",
+                "insurancePaidAmount": 0.0,
+                "carrierName": "Test Carrier",
+                "carrierId": 465243,
+                "claimLines": [{
+                    "procedure_name": "Advil 200MG"
+                }],
+                "patientName": "Ricky Silvertien"
+            },
+            {
+                "serviceName": "medical",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 0.0,
+                "serviceDate": "2023-09-16",
+                "insurancePaidAmount": 0.0,
+                "carrierName": "Test Carrier",
+                "carrierId": 465670,
+                "claimLines": [],
+                "patientName": "Richard Kingston"
+            }
+        ],
+        "2023-08": [
+            {
+                "serviceName": "medical",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": true,
+                "outOfPocketCost": 115.0,
+                "serviceDate": "2023-08-08",
+                "insurancePaidAmount": 0.0,
+                "carrierName": "Test Carrier",
+                "carrierId": 465670,
+                "claimLines": [],
+                "patientName": "Richard Kingston"
+            },
+            {
+                "serviceName": "medical",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 0.0,
+                "serviceDate": "2023-08-07",
+                "insurancePaidAmount": 148.0,
+                "carrierName": "Test Carrier",
+                "carrierId": 465670,
+                "claimLines": [],
+                "patientName": "Richard Kingston"
+            }
+        ],
+        "2023-07": [
+            {
+                "serviceName": "medical",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 127.72,
+                "serviceDate": "2023-07-18",
+                "insurancePaidAmount": 510.87,
+                "carrierName": "Test Carrier",
+                "carrierId": 465670,
+                "claimLines": [],
+                "patientName": "James Kingston"
+            },
+            {
+                "serviceName": "rx",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 125.0,
+                "serviceDate": "2023-07-09",
+                "insurancePaidAmount": 611.7,
+                "carrierName": "Test Carrier",
+                "carrierId": 465670,
+                "claimLines": [{
+                    "procedure_name": "Tylenol 500MG"
+                }],
+                "patientName": "Abby Kingston"
+            }
+        ],
+        "2023-06": [
+            {
+                "serviceName": "medical",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 127.72,
+                "serviceDate": "2023-06-10",
+                "insurancePaidAmount": 510.87,
+                "carrierName": "Test Carrier",
+                "carrierId": 465243,
+                "claimLines": [],
+                "patientName": "Richard Kingston"
+            }
+        ],
+        "2023-05": [
+            {
+                "serviceName": "medical",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 125.0,
+                "serviceDate": "2023-05-08",
+                "insurancePaidAmount": 611.7,
+                "carrierName": "Test Carrier",
+                "carrierId": 465243,
+                "claimLines": [],
+                "patientName": "Richard Kingston III"
+            }
+        ],
+        "2022-05": [
+            {
+                "serviceName": "medical",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 125.0,
+                "serviceDate": "2022-05-08",
+                "insurancePaidAmount": 611.7,
+                "carrierName": "Test Carrier",
+                "carrierId": 465243,
+                "claimLines": [],
+                "patientName": "Richard Kingston III"
+            },
+            {
+                "serviceName": "rx",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 125.0,
+                "serviceDate": "2022-05-09",
+                "insurancePaidAmount": 611.7,
+                "carrierName": "Test Carrier",
+                "carrierId": 465243,
+                "claimLines": [],
+                "patientName": "Richard Kingston III"
+            }
+        ],
+        "2022-04": [
+            {
+                "serviceName": "rx",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 125.0,
+                "serviceDate": "2022-04-08",
+                "insurancePaidAmount": 611.7,
+                "carrierName": "Test Carrier",
+                "carrierId": 465243,
+                "claimLines": [],
+                "patientName": "Richard Kingston III"
+            },
+            {
+                "serviceName": "medical",
+                "providerName": "Test Provider -- Do Not Use",
+                "inNetwork": false,
+                "outOfPocketCost": 125.0,
+                "serviceDate": "2022-04-05",
+                "insurancePaidAmount": 611.7,
+                "carrierName": "Test Carrier",
+                "carrierId": 465243,
+                "claimLines": [],
+                "patientName": "Richard Kingston III"
+            }
+        ]
+    },
+    "groupingClaimsByYear": {
+        "2022": {
+            "year": "2022",
+            "claimTotalCount": 21,
+            "outOfPocketAmountTotal": 1365.88,
+            "inNetworkTotalCount": 13,
+            "outNetworkTotalCount": 21,
+            "aggregateServiceNameClaims": {
+                "medical": {
+                    "serviceName": "medical",
+                    "claimTotalCount": 21,
+                    "outOfPocketAmountTotal": 1365.88,
+                    "inNetworkTotalCount": 0,
+                    "outNetworkTotalCount": 16
+                },
+                "dental": {
+                    "serviceName": "dental",
+                    "claimTotalCount": 12,
+                    "outOfPocketAmountTotal": 1455.88,
+                    "inNetworkTotalCount": 0,
+                    "outNetworkTotalCount": 4
+                },
+                "vision": {
+                    "serviceName": "vision",
+                    "claimTotalCount": 17,
+                    "outOfPocketAmountTotal": 12365.88,
+                    "inNetworkTotalCount": 0,
+                    "outNetworkTotalCount": 8
+                }
+            }
+        },
+        "2023": {
+            "year": "2023",
+            "claimTotalCount": 9,
+            "outOfPocketAmountTotal": 840.44,
+            "inNetworkTotalCount": 7,
+            "outNetworkTotalCount": 9,
+            "aggregateServiceNameClaims": {
+                "medical": {
+                    "serviceName": "medical",
+                    "claimTotalCount": 21,
+                    "outOfPocketAmountTotal": 1365.88,
+                    "inNetworkTotalCount": 5,
+                    "outNetworkTotalCount": 5
+                },
+                "dental": {
+                    "serviceName": "dental",
+                    "claimTotalCount": 12,
+                    "outOfPocketAmountTotal": 1455.88,
+                    "inNetworkTotalCount": 11,
+                    "outNetworkTotalCount": 14
+                },
+                "vision": {
+                    "serviceName": "vision",
+                    "claimTotalCount": 17,
+                    "outOfPocketAmountTotal": 12365.88,
+                    "inNetworkTotalCount": 7,
+                    "outNetworkTotalCount": 18
+                }
+            }
+        }
+    }
+}

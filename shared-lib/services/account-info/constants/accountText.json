@@ -1,0 +1,19 @@
+{
+    "heading":"Account Info",
+    "name":"Display Name",
+    "email":"Email",
+    "phone":"Phone",
+    "loginInfo":"Login Information",
+    "loginInfoDesc": "Manage account and security settings",
+    "retrieveTextEmail": "Retrieve via Recovery email",
+    "retrieveTextMobile": "Retrieve via Recovery Mobile Phone Number",
+    "faceIDEnabled": "Enable Face ID / Touch ID",
+    "emailErrorMsg": "An attempt to contact you by email has failed. Please review your information",
+    "nameTitle":"Edit Display Name",
+    "emailTitle":"Edit Email",
+    "phoneTitle":"Edit/Add Mobile",
+    "phoneSubTitle":"Enter your mobile number below:",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidPhone": "Please enter a valid phone number",
+    "invalidDisplayName": "Please enter your display name"
+}

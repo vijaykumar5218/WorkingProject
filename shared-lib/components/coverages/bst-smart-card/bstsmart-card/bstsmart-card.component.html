@@ -1,0 +1,21 @@
+<ion-card [ngClass]="{web: isWeb}">
+  <ion-grid>
+    <ion-row class="header-row">
+      <img src="{{ content.header_img }}" class="dec-img" alt="" />
+      <ion-text>{{ content.header }}</ion-text>
+    </ion-row>
+    <ion-row class="body-row">
+      <ion-col class="body-col">
+        <p [innerHTML]="content.body"></p>
+        <ion-row class="link-row">
+          <a (click)="linkClicked()">{{ content.link_text }}</a>
+        </ion-row>
+      </ion-col>
+      <ion-col class="img-col">
+        <div class="img-div">
+          <img src="{{ content.body_img }}" alt="" />
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>

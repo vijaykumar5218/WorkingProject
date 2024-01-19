@@ -1,0 +1,42 @@
+<div [ngClass]="isWeb ? 'consent web-consent' : 'consent'">
+  <ion-card>
+    <ion-card-content>
+      <img src="{{ this.contentJSON?.image_url }}" alt="" />
+      <div class="header">{{ this.contentJSON?.consent_title }}</div>
+      <div class="body">{{ this.contentJSON?.consent_description }}</div>
+      <div *ngIf="!isTPAWaiting">
+        <ion-button
+          size="small"
+          id="allow-auth"
+          (click)="allowAuthorization()"
+          class="font-18 save-button"
+          name="submit"
+          shape="round"
+          expand="block"
+          type="submit"
+          color="btncolor"
+        >
+          {{ isTPAStream ? pageText.reviewTPA : pageText.allowAuth }}
+        </ion-button>
+        <div class="skip click" *ngIf="!isWeb">
+          <span (click)="skip()">{{ pageText.skip }}</span>
+        </div>
+      </div>
+      <div *ngIf="isTPAWaiting">
+        <ion-button
+          size="small"
+          id="allow-auth"
+          (click)="manageTPA()"
+          class="font-18 save-button"
+          name="submit"
+          shape="round"
+          expand="block"
+          type="submit"
+          color="btncolor"
+        >
+          {{ pageText.manageCarriers }}
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</div>

@@ -1,0 +1,189 @@
+<ion-card class="account-list-card" *ngIf="showAccount">
+  <ion-row
+    tabindex="1"
+    automation-id="acct-list-header"
+    class="acct-category-header"
+    (click)="toggleAccounts()"
+    (keyup.enter)="toggleAccounts()"
+  >
+    <ion-col size="2">
+      <img
+        automation-id="acct-header-icon"
+        class="acct-header-icon"
+        src="assets/icon/account-type/{{ acctTypeIconName }}-account-icon.svg"
+        alt="{{ acctType }} logo"
+      />
+    </ion-col>
+    <ion-col size="7" class="account-card-header-col">
+      <h3 automation-id="account-card-header" class="account-card-header">
+        {{
+          categorizedAccount?.accType === 'Ready For Enrollment' ||
+          categorizedAccount?.accType === 'Line Of Credit'
+            ? categorizedAccount?.accType
+            : categorizedAccount?.accType + ' Accounts'
+        }}
+      </h3>
+      <span class="account-total" automation-id="account-total">{{
+        categorizedAccount?.accountsTotalBalance | currency
+      }}</span>
+    </ion-col>
+    <ion-col size="1" class="acct-count-col">
+      <button tabindex="-1" class="acct-count">
+        {{ categorizedAccount?.accountsCount }}
+      </button>
+    </ion-col>
+    <ion-col size="1" class="acct-count-col"></ion-col>
+    <ion-col size="1">
+      <ion-icon
+        type="image"
+        src="{{ expandIconImage }}"
+        automation-id="expandIconName"
+        [ngClass]="{
+          'account-expand-enrollment': isEnrollmentAcct,
+          'account-expand': !isEnrollmentAcct
+        }"
+        aria-label="expand/collapse"
+      >
+      </ion-icon>
+    </ion-col>
+    <div class="acc-cardheader-line"></div>
+  </ion-row>
+  <ion-row
+    *ngFor="let acct of categorizedAccount?.accounts; let i = index"
+    class="acct-expandable"
+    [ngClass]="expanded ? 'visible' : 'hidden'"
+  >
+    <ion-row
+      *ngIf="categorizedAccount?.enrollEligible"
+      class="enroll-acct-expandable"
+    >
+      <ion-col size="3" class="acct-logo">
+        <img
+          class="enroll-body-image"
+          src="assets/icon/voyalogo-min.png"
+          alt="enrollment voya mini logo"
+        />
+      </ion-col>
+      <ion-col class="enroll-body-container ">
+        <div
+          *ngIf="acct?.accountTitle"
+          [attr.automation-id]="'enroll-header-title' + i"
+          [innerHTML]="acct.accountTitle"
+          class="enrollment-account-title"
+        ></div>
+        <div
+          *ngIf="acct?.bodyText"
+          [innerHTML]="acct.bodyText"
+          [id]="'enroll-body-text' + i"
+          class="enroll-account-body-text"
+        ></div>
+        <div *ngIf="acct?.buttonText && acct?.planLink">
+          <ion-button
+            size="small"
+            color="btncolor"
+            fill="outline"
+            shape="round"
+            [attr.automation-id]="'enroll-button-text' + i"
+            class="enroll-account-button"
+            color="btncolor"
+            (click)="openEnrollNowLink(acct.planLink)"
+          >
+            {{ acct.buttonText }}
+          </ion-button>
+        </div>
+        <div
+          *ngIf="acct.ebooksLink?.url && acct.ebooksLink?.label"
+          class="enroll-ebookslink"
+        >
+          <a
+            [href]="acct.ebooksLink.url"
+            [innerHTML]="acct.ebooksLink.label"
+            target="_blank"
+            [id]="'enroll-link' + i"
+            class="linkcolor underline"
+          ></a>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row
+      *ngIf="!categorizedAccount?.enrollEligible"
+      (click)="goToPlanLink(acct)"
+      (keyup.enter)="goToPlanLink(acct)"
+      tabindex="1"
+      [attr.automation-id]="'plan-link' + indexId + '_' + i"
+      class="plan-link"
+    >
+      <ion-col size="3" class="acct-logo">
+        <img
+          class="logo-container"
+          src="{{ acct.smallLogoUrl || 'assets/icon/voyalogo-min.png' }}"
+          alt="logo"
+        />
+      </ion-col>
+      <ion-col size="7" class="acct-title">
+        <h3
+          class="account-title OneLinkNoTx"
+          [attr.automation-id]="'account-title' + indexId + '_' + i"
+        >
+          {{ acct.accountTitle }}
+        </h3>
+        <div *ngIf="acct?.accountBalanceAsOf" class="acct-asof">
+          As of {{ acct.accountBalanceAsOf }}
+        </div>
+        <div class="account-balance" *ngIf="acct?.accountBalance">
+          {{ acct.accountBalance | currency }}
+        </div>
+      </ion-col>
+      <ion-col size="2" class="acct-icon">
+        <img
+          class="acct-icon-col"
+          src="assets/icon/chevron_right.svg"
+          alt="arrow"
+        />
+      </ion-col>
+    </ion-row>
+    <div class="tabsline"></div>
+  </ion-row>
+</ion-card>
+<ion-row *ngIf="enableMX && lastAcct">
+  <ion-col class="margins">
+    <ion-button
+      [disabled]="isAltAccessUser"
+      [attr.automation-id]="'add-account' + indexId"
+      class="add-account-button"
+      [attr.aria-label]="pageText.addAccountButtonText"
+      name="Add Account"
+      shape="round"
+      expand="block"
+      color="btncolor"
+      (click)="openAddAccountModal()"
+    >
+      <img
+        class="add-circle-outline"
+        alt="add-circle-outline"
+        src="assets/icon/addoutline.png"
+      />
+      {{ pageText.addAccountButtonText }}
+    </ion-button>
+  </ion-col>
+</ion-row>
+<ion-row
+  class="manage-accounts-row"
+  *ngIf="enableMX && showManageAccounts && lastAcct"
+>
+  <ion-col class="ion-text-center managetext">
+    <ion-text
+      tabindex="1"
+      (click)="!isAltAccessUser && openManageAccountWidgetModal()"
+      (keyup.enter)="!isAltAccessUser && openManageAccountWidgetModal()"
+      id="manage-account"
+      [ngClass]="{'not-allowed': isAltAccessUser}"
+    >
+      <a
+        [ngClass]="{'disabled-link': isAltAccessUser}"
+        class="linkcolor underline manage-accounts"
+        >{{ pageText.manageAccountsText }}</a
+      >
+    </ion-text>
+  </ion-col>
+</ion-row>

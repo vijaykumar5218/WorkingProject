@@ -1,0 +1,169 @@
+<div [ngClass]="isWeb ? 'web-as-of' : 'mobile-as-of'">
+  <ion-row>
+    <ion-col>
+      <div class="ion-text-start As-of-date">
+        <p>{{ content.basic.asOf }} {{ currentDate }}</p>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="card-wrap as-of-wrap">
+    <app-loading [loading]="!benefit" [center]="true">
+      <ion-grid>
+        <ion-row
+          class="asofdata-row"
+          *ngIf="benefit?.coverageType"
+          [ngClass]="
+            (benefit?.coverageType).length > 12 ? 'margin-bottom-10' : ''
+          "
+        >
+          <ion-col class="ion-text-start last-two-values" size="7">
+            <span>{{ content.dependents.coverage_type }}</span>
+          </ion-col>
+          <ion-col class="ion-text-end last-two-values" size="5">
+            {{ benefit?.coverageType }}
+          </ion-col>
+        </ion-row>
+        <ion-row class="asofdata-row" *ngIf="benefit?.coverage_start_date">
+          <ion-col class="ion-text-start last-two-values" size="7">
+            <span>{{ content.dependents.coverage_start_date }}</span>
+          </ion-col>
+          <ion-col class="ion-text-end last-two-values" size="5">
+            {{ benefit?.coverage_start_date | date: 'MM/dd/yyy' }}
+          </ion-col>
+        </ion-row>
+
+        <ion-row
+          class="asofdata-row last-two-values"
+          *ngIf="benefit?.coverage_end_date"
+        >
+          <ion-col class="ion-text-start" size="7">
+            <span>{{ content.dependents.coverage_end_date }}</span>
+          </ion-col>
+          <ion-col class="ion-text-end last-two-values" size="5">
+            {{ benefit?.coverage_end_date | date: 'MM/dd/yyy' }}
+          </ion-col>
+        </ion-row>
+
+        <ng-container *ngIf="isWeb">
+          <ion-row
+            *ngIf="coverageDeduct?.individual > 0 || coverageDeduct?.family > 0"
+            class="asofdata-row"
+          >
+            <ion-col class="ion-text-start last-two-values" size="7">
+              <span>{{ content.dependents.coverageDeductible }}</span>
+            </ion-col>
+          </ion-row>
+          <ion-row
+            *ngIf="coverageDeduct?.individual > 0"
+            class="asofdata-row deduct-row"
+          >
+            <ion-col class="ion-text-start last-two-values" size="7">
+              <span>{{ content.dependents.individual }}</span>
+            </ion-col>
+            <ion-col class="ion-text-end last-two-values" size="5">
+              <app-loading-text [isLoading]="!coverageDeduct">
+                {{ coverageDeduct?.individual | currency: 'USD':'symbol' }}
+              </app-loading-text>
+            </ion-col>
+          </ion-row>
+          <ion-row
+            *ngIf="coverageDeduct?.family > 0"
+            class="asofdata-row deduct-row"
+          >
+            <ion-col class="ion-text-start last-two-values" size="7">
+              <span>{{ content.dependents.family }}</span>
+            </ion-col>
+            <ion-col class="ion-text-end last-two-values" size="5">
+              <app-loading-text [isLoading]="!coverageDeduct">
+                {{ coverageDeduct?.family | currency: 'USD':'symbol' }}
+              </app-loading-text>
+            </ion-col>
+          </ion-row>
+        </ng-container>
+        <ion-row
+          class="asofdata-row"
+          *ngIf="benefit?.planDetails?.deduction_start_date"
+        >
+          <ion-col class="ion-text-start last-two-values" size="7">
+            <span>{{ content.dependents.deduction_start_date }}</span>
+          </ion-col>
+          <ion-col class="ion-text-end last-two-values" size="5">
+            <app-loading-text [isLoading]="!benefit">
+              {{
+                benefit?.planDetails?.deduction_start_date | date: 'MM/dd/yyy'
+              }}
+            </app-loading-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row
+          class="asofdata-row"
+          *ngIf="benefit?.planDetails?.deduction_end_date"
+        >
+          <ion-col class="ion-text-start last-two-values" size="7">
+            <span>{{ content.dependents.deduction_end_date }}</span>
+          </ion-col>
+          <ion-col class="ion-text-end last-two-values" size="5">
+            <app-loading-text [isLoading]="!benefit"
+              >{{
+                benefit?.planDetails?.deduction_end_date | date: 'MM/dd/yyy'
+              }}
+            </app-loading-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row
+          *ngIf="isWeb && coverageDeduct?.coinsurance > 0"
+          class="asofdata-row"
+        >
+          <ion-col class="ion-text-start last-two-values" size="7">
+            <span>{{ content.dependents.coinsurance }}</span>
+          </ion-col>
+          <ion-col class="ion-text-end last-two-values" size="5">
+            <app-loading-text [isLoading]="!coverageDeduct"
+              >{{ coverageDeduct?.coinsurance }}%
+            </app-loading-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row
+          *ngIf="isWeb && coverageDeduct?.copay > 0"
+          class="asofdata-row"
+        >
+          <ion-col class="ion-text-start last-two-values" size="7">
+            <span>{{ content.dependents.copay }}</span>
+          </ion-col>
+          <ion-col class="ion-text-end last-two-values" size="5">
+            <app-loading-text [isLoading]="!coverageDeduct"
+              >{{ coverageDeduct?.copay | currency: 'USD':'symbol' }}
+            </app-loading-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="asofdata-row bold-row" *ngIf="benefit?.premium">
+          <ion-col class="ion-text-start last-two-values" size="7">
+            <span>{{ content.dependents.premium }}</span>
+          </ion-col>
+          <ion-col class="ion-text-end last-two-values" size="5">
+            {{ benefit?.premium | currency: 'USD':'symbol' }}
+          </ion-col>
+        </ion-row>
+
+        <ion-row
+          class="asofdata-row bold-row"
+          *ngIf="benefit?.planDetails?.employer_premium"
+        >
+          <ion-col class="ion-text-start last-two-values" size="7">
+            <span>{{ content.dependents.employer_premium }}</span>
+          </ion-col>
+          <ion-col class="ion-text-end last-two-values" size="5">
+            {{
+              benefit?.planDetails?.employer_premium | currency: 'USD':'symbol'
+            }}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </app-loading>
+  </ion-card>
+</div>

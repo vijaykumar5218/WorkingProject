@@ -1,0 +1,33 @@
+<div class="benefit-elections">
+  <div #topmostElement></div>
+  <ng-container
+    *ngIf="benefits?.enrolled?.length > 0 || benefits?.provided?.length > 0 || benefits?.declined?.length > 0; else noBenefits"
+  >
+    <section class="header-section">
+      <p class="header-text">
+        {{benefitsContent?.payrollText}} {{benefits?.planYear}}
+      </p>
+      <p class="header-text-amount">$0</p>
+    </section>
+    <app-summary-benefits-list
+      *ngIf="benefits?.enrolled?.length > 0"
+      [header]="benefitsContent?.enrolledSectionTitle"
+      [benefitsList]="benefits.enrolled"
+      [displayPremiumAndCoverage]="true"
+    ></app-summary-benefits-list>
+    <app-summary-benefits-list
+      *ngIf="benefits?.provided?.length > 0"
+      [header]="benefitsContent?.providedSectionTitle"
+      [benefitsList]="benefits.provided"
+      [displayPremiumAndCoverage]="false"
+    ></app-summary-benefits-list>
+    <app-summary-benefits-list
+      *ngIf="benefits?.declined?.length > 0"
+      [header]="benefitsContent?.declinedSectionTitle"
+      [benefitsList]="benefits.declined"
+      [displayPremiumAndCoverage]="false"
+    ></app-summary-benefits-list>
+  </ng-container>
+  <ng-template #noBenefits> <app-no-benefits></app-no-benefits> </ng-template>
+  <app-hsastore-nudge></app-hsastore-nudge>
+</div>

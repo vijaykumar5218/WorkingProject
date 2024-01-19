@@ -1,0 +1,22 @@
+<ion-card class="madlib-card">
+  <img src="assets/icon/tilted-dollarbill.png" alt="" />
+  <ion-card-contents>
+    <p>{{ headerText }}</p>
+    <p>
+      {{ bodyText }}
+    </p>
+    <ion-button
+      size="small"
+      class="font-18 save-button"
+      name="submit"
+      shape="round"
+      expand="block"
+      type="submit"
+      color="btncolor"
+      (click)="openMadlibModal()"
+      id="showmebutton"
+    >
+      {{ pageText.showHow }}
+    </ion-button>
+  </ion-card-contents>
+</ion-card>

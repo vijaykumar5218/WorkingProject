@@ -1,0 +1,71 @@
+ion-card {
+  padding: 20px;
+
+  &.isWeb {
+    margin: 0px 36px 40px 36px;
+  }
+
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+
+    .header {
+      align-self: flex-start;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0.001em;
+      color: var(--primary-colors-voya-black);
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    padding: 0;
+    -webkit-transition: max-height 0.5s ease-out;
+    -moz-transition: max-height 0.5s ease-out;
+    -ms-transition: max-height 0.5s ease-out;
+    -o-transition: max-height 0.5s ease-out;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+
+    &.expanded {
+      max-height: 1000px;
+    }
+
+    .content-row {
+      margin-top: 20px;
+
+      .row-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.0025em;
+        color: var(--dark-grey-text-color);
+
+        &.value {
+          text-align: right;
+        }
+      }
+    }
+
+    .subdesc-row {
+      width: 100%;
+
+      ion-col {
+        padding: 2px 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.0025em;
+        color: var(--dark-grey-text-color);
+        text-align: right;
+        word-wrap: break-word;
+      }
+    }
+  }
+}

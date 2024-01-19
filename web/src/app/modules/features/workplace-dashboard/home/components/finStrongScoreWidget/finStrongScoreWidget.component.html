@@ -1,0 +1,37 @@
+<ng-container>
+  <ion-card>
+    <ion-card-content>
+      <div class="greeting-txt">
+        <ion-row>
+          <ion-col>
+            <app-mx-widget
+              [widgetType]="widgetType"
+              [height]="'410px'"
+              [tagName]="miniFinstrong"
+              [id]="miniFinstrong"
+            >
+            </app-mx-widget>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="finStrongScore-btn-section">
+              <ion-button
+                [disabled]="isAltAccessUser"
+                size="small"
+                fill="outline"
+                shape="round"
+                color="btncolor"
+                automation-id="'view-FinStrongScore-btn'"
+                class="finStrongScore-button"
+                routerLink="/financial-wellness"
+              >
+                {{ pageText.btnText }}
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ng-container>

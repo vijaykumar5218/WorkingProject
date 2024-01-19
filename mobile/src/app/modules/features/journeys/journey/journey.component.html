@@ -1,0 +1,15 @@
+<ion-tabs #ionTabs (ionTabsDidChange)="tabChange(ionTabs)">
+  <ion-tab-bar slot="top">
+    <ion-tab-button
+      *ngFor="let tab of tabs"
+      [ngClass]="{
+        selectedRipple: selectedTab === tab.link
+      }"
+      (click)="handleClick(tab.link)"
+      class="lightgrey"
+      [tab]="tab.link"
+    >
+      <ion-label>{{ tab.label }}</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

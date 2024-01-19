@@ -1,0 +1,526 @@
+{
+  "categoryDetail": {
+    "genericDrugs": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-03-24",
+        "serviceName": "genericDrugs",
+        "drugName": "Ketorolac Tromethamine"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-03-15",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-03-15",
+        "drugName": "Atorvastatin Calcium"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-03-15",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-03-15",
+        "drugName": "Levothyroxine Sodium"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-03-15",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-03-15",
+        "drugName": "Fenofibrate"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 8.67,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-02-28",
+        "serviceName": "genericDrugs",
+        "drugName": "Metoprolol Succinate ER"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-02-11",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-02-11",
+        "drugName": "Atorvastatin Calcium"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-02-11",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-02-11",
+        "drugName": "Fenofibrate"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-02-11",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-02-11",
+        "drugName": "Levothyroxine Sodium"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-02-11",
+        "serviceName": "genericDrugs",
+        "drugName": "medroxyPROGESTERone Acetate"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "KROGER PHARMACY 16693",
+        "serviceDate": "2022-01-20",
+        "serviceName": "genericDrugs",
+        "drugName": "Vitamin D (Ergocalciferol)"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "KROGER PHARMACY 16693",
+        "serviceDate": "2022-01-20",
+        "serviceName": "genericDrugs",
+        "drugName": "Folic Acid"
+      }
+    ],
+    "inpatientHosptialCares": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 2100.66,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-01-14",
+        "serviceName": "inpatientHosptialCares"
+      }
+    ],
+    "outpatientLabPaths": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-03-25",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "DEARBORN SURGERY CENTER",
+        "serviceDate": "2022-03-25",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-03-09",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-02-28",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 15.33,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-02-17",
+        "serviceName": "outpatientLabPaths"
+      }
+    ],
+    "outpatientXrays": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-02-04",
+        "serviceName": "outpatientXrays"
+      }
+    ],
+    "preferredDrugs": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-03-09",
+        "serviceName": "preferredDrugs",
+        "drugName": "Xarelto"
+      }
+    ],
+    "preventive": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "PETER L STEVENSON",
+        "serviceDate": "2022-02-28",
+        "serviceName": "preventive"
+      }
+    ],
+    "primaryVisits": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "VENOCURE PLLC",
+        "serviceDate": "2022-02-28",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 169.96,
+        "providerName": "SUNSTRUM MEDICAL",
+        "serviceDate": "2022-01-27",
+        "serviceName": "primaryVisits"
+      }
+    ],
+    "specialVisits": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MICHIGAN HEALTHCARE PROFESSIONA",
+        "serviceDate": "2022-03-09",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 16.1,
+        "providerName": "PETER L STEVENSON",
+        "serviceDate": "2022-02-21",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 26.39,
+        "providerName": "MICHIGAN INSTITUTE OF UROLOGY P",
+        "serviceDate": "2022-02-17",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 80.52,
+        "providerName": "PETER L STEVENSON",
+        "serviceDate": "2022-02-11",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 116.77,
+        "providerName": "VENOCURE PLLC",
+        "serviceDate": "2022-01-31",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 80.52,
+        "providerName": "PETER L STEVENSON",
+        "serviceDate": "2022-01-26",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 80.52,
+        "providerName": "VICKI ANTON ATHENS",
+        "serviceDate": "2022-01-11",
+        "serviceName": "specialVisits"
+      }
+    ],
+    "inNetworkCost": {
+      "preferredDrugs": 0.0,
+      "outpatientLabPaths": 15.33,
+      "specialVisits": 400.82,
+      "preventive": 0.0,
+      "genericDrugs": 8.67,
+      "outpatientXrays": 0.0,
+      "primaryVisits": 169.96,
+      "inpatientHosptialCares": 2100.66,
+      "emergencyRoomServices": 0.0,
+      "outpatientSurgery": 0.0,
+      "other": 0.0
+    },
+    "outNetworkCost": {
+      "preferredDrugs": 0.0,
+      "outpatientLabPaths": 0.0,
+      "specialVisits": 0.0,
+      "preventive": 0.0,
+      "genericDrugs": 0.0,
+      "outpatientXrays": 0.0,
+      "primaryVisits": 0.0,
+      "inpatientHosptialCares": 0.0,
+      "emergencyRoomServices": 0.0,
+      "outpatientSurgery": 0.0,
+      "other": 0.0
+    }
+  },
+  "inNetworkEventCount": {
+    "emergencyRoomServices": 0,
+    "genericDrugs": 11,
+    "inpatientHosptialCares": 1,
+    "other": 0,
+    "outpatientLabPaths": 5,
+    "outpatientSurgery": 0,
+    "outpatientXrays": 1,
+    "preferredDrugs": 1,
+    "preventive": 1,
+    "primaryVisits": 2,
+    "specialVisits": 7
+  },
+  "outNetworkEventCount": {
+    "emergencyRoomServices": 0,
+    "genericDrugs": 0,
+    "inpatientHosptialCares": 0,
+    "other": 0,
+    "outpatientLabPaths": 0,
+    "outpatientSurgery": 0,
+    "outpatientXrays": 0,
+    "preferredDrugs": 0,
+    "preventive": 0,
+    "primaryVisits": 0,
+    "specialVisits": 0
+  },
+  "inNetworkCost": {"outOfPocketCost": 2695.44},
+  "outNetworkCost": {"outOfPocketCost": 0.0},
+  "inNetworkCountTotal": 29,
+  "outNetworkCountTotal": 0,
+  "groupingCategoryDetails": {
+    "2022-03": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-03-25",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "DEARBORN SURGERY CENTER",
+        "serviceDate": "2022-03-25",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-03-24",
+        "serviceName": "genericDrugs",
+        "drugName": "Ketorolac Tromethamine"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-03-15",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-03-15",
+        "drugName": "Atorvastatin Calcium"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-03-15",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-03-15",
+        "drugName": "Levothyroxine Sodium"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-03-15",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-03-15",
+        "drugName": "Fenofibrate"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-03-09",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-03-09",
+        "serviceName": "preferredDrugs",
+        "drugName": "Xarelto"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MICHIGAN HEALTHCARE PROFESSIONA",
+        "serviceDate": "2022-03-09",
+        "serviceName": "specialVisits"
+      }
+    ],
+    "2022-02": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 8.67,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-02-28",
+        "serviceName": "genericDrugs",
+        "drugName": "Metoprolol Succinate ER"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-02-28",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "PETER L STEVENSON",
+        "serviceDate": "2022-02-28",
+        "serviceName": "preventive"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "VENOCURE PLLC",
+        "serviceDate": "2022-02-28",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 16.1,
+        "providerName": "PETER L STEVENSON",
+        "serviceDate": "2022-02-21",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 15.33,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-02-17",
+        "serviceName": "outpatientLabPaths"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 26.39,
+        "providerName": "MICHIGAN INSTITUTE OF UROLOGY P",
+        "serviceDate": "2022-02-17",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-02-11",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-02-11",
+        "drugName": "Atorvastatin Calcium"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-02-11",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-02-11",
+        "drugName": "Fenofibrate"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-02-11",
+        "serviceName": "genericDrugs",
+        "lastFilledDate": "2022-02-11",
+        "drugName": "Levothyroxine Sodium"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "MONROE PHARMACY",
+        "serviceDate": "2022-02-11",
+        "serviceName": "genericDrugs",
+        "drugName": "medroxyPROGESTERone Acetate"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 80.52,
+        "providerName": "PETER L STEVENSON",
+        "serviceDate": "2022-02-11",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-02-04",
+        "serviceName": "outpatientXrays"
+      }
+    ],
+    "2022-01": [
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 116.77,
+        "providerName": "VENOCURE PLLC",
+        "serviceDate": "2022-01-31",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 169.96,
+        "providerName": "SUNSTRUM MEDICAL",
+        "serviceDate": "2022-01-27",
+        "serviceName": "primaryVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 80.52,
+        "providerName": "PETER L STEVENSON",
+        "serviceDate": "2022-01-26",
+        "serviceName": "specialVisits"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "KROGER PHARMACY 16693",
+        "serviceDate": "2022-01-20",
+        "serviceName": "genericDrugs",
+        "drugName": "Vitamin D (Ergocalciferol)"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 0.0,
+        "providerName": "KROGER PHARMACY 16693",
+        "serviceDate": "2022-01-20",
+        "serviceName": "genericDrugs",
+        "drugName": "Folic Acid"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 2100.66,
+        "providerName": "OAKWOOD HOSPITAL AND MEDICAL C",
+        "serviceDate": "2022-01-14",
+        "serviceName": "inpatientHosptialCares"
+      },
+      {
+        "inNetwork": true,
+        "outOfPocketCost": 80.52,
+        "providerName": "VICKI ANTON ATHENS",
+        "serviceDate": "2022-01-11",
+        "serviceName": "specialVisits"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "filterLable": "Filter",
+  "sortLable": "Sort",
+  "cancelLabel": "Cancel",
+  "okLable": "Ok",
+  "thisYear": "This Year",
+  "dateRangeLbl": "Date Range",
+  "fromTxt": "From:",
+  "toTxt": "To:",
+  "na": "N/A",
+  "manage": "Manage My Carriers",
+  "clearFilters":"Clear Filters",
+  "tpaFilterOptions": [
+    {"name": "Medical", "key": "medical", "isChecked": false},
+    {"name": "Dental", "key": "dental", "isChecked": false},
+    {"name": "Vision", "key": "vision", "isChecked": false},
+    {"name": "Prescription", "key": "rx", "isChecked": false},
+    {"name": "Facility", "key": "facility", "isChecked": false}
+  ],
+  "dateRangeOptions": [
+    {
+      "id": "30Days",
+      "value": "Last 30 Days"
+    },
+    {
+      "id": "3Months",
+      "value": "Last 3 Months"
+    },
+    {
+      "id": "6Months",
+      "value": "Last 6 Months"
+    },
+    {
+      "id": "12Months",
+      "value": "Last 12 Months"
+    },
+    {
+      "id": "thisYear",
+      "value": "This Year"
+    },
+    {
+      "id": "lastYear",
+      "value": "Last Year"
+    },
+    {
+      "id": "custom",
+      "value": "Custom"
+    }
+  ],
+  "tpaSortOptions":[
+    {
+        "name": "Earliest Date",
+        "value": "asc"
+    },
+    {
+        "name": "Latest Date",
+        "value": "dsc"
+    },
+    {
+        "name": "Lowest Amount",
+        "value": "low"
+    },
+    {
+        "name": "Highest Amount",
+        "value": "high"
+    }
+]
+}

@@ -1,0 +1,28 @@
+<div class="main-container">
+  <div
+    class="option"
+    *ngFor="let option of element.options; let i = index"
+    (click)="radioButtonClicked(option)"
+    (keyup.enter)="radioButtonClicked(option)"
+    tabindex="0"
+    [id]="'journeyRadioButton' + element.idSuffix + i"
+    [ngClass]="{checked: option.checked}"
+  >
+    <div class="radio-container">
+      <div>
+        <img
+          src="{{ option.imageUrl }}"
+          [alt]="option.checked ? 'deselect' : 'select'"
+        />
+      </div>
+      <label for="option.id">{{ option.label }}</label>
+    </div>
+  </div>
+</div>
+
+<journeys-steps-step-input-radio-button-step
+  *ngIf="elements"
+  [elements]="elements"
+  (valueChange)="updateValue($event)"
+  [answer]="answerString"
+></journeys-steps-step-input-radio-button-step>

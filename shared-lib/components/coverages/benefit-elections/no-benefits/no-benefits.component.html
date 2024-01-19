@@ -1,0 +1,30 @@
+<ion-card class="myvoyage" *ngIf="!workplaceDashboard">
+  <ion-card-content class="noCoverages">
+    <div class="noBenefIcons">
+      <span *ngFor="let data of content.noBenefitIcons" class="iconC">
+        <img src="{{ data }}" alt="" />
+      </span>
+    </div>
+    <h2>{{ content.header }}</h2>
+    <p>{{ nobenfitdata?.NoBenefitsText }}</p>
+  </ion-card-content>
+</ion-card>
+
+<ion-card *ngIf="workplaceDashboard" class="workplaceDashboard">
+  <ion-card-content class="noCoverages">
+    <div class="noBenefIcons">
+      <span class="iconC">
+        <img
+          src="assets/workplace-dashboard/no-benefits.svg"
+          alt="no-benefits"
+        />
+      </span>
+    </div>
+    <div class="no-benefit-header">
+      <ion-text>{{ workplaceDashboardBenefitData?.noBenefitHeader }}</ion-text>
+    </div>
+    <div class="no-benefit-sub-header">
+      <p>{{ workplaceDashboardBenefitData?.noBenefitDescription }}</p>
+    </div>
+  </ion-card-content>
+</ion-card>

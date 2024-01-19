@@ -1,0 +1,15 @@
+<ion-grid *ngIf="parsedAnswer?.length > 0" [ngClass]="{other: isOther}">
+  <ion-row>
+    <ion-col class="your-goals" *ngFor="let answer of parsedAnswer">
+      <ion-row
+        ><img [src]="answer.imageUrl" [alt]="answer.altText || ''"
+      /></ion-row>
+      <ion-row *ngIf="answer.label"
+        ><ion-text>{{ answer.label }}</ion-text></ion-row
+      >
+      <ion-row
+        ><ion-text>{{ answer.text }}</ion-text></ion-row
+      >
+    </ion-col>
+  </ion-row>
+</ion-grid>

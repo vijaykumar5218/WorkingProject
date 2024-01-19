@@ -1,0 +1,10 @@
+{
+    "showERMatch": true,
+    "erContributionsHeader": "Employer Contributions",
+    "erContributionDesc2": "Note: The match amount reflects the most recent information we have on file from your employer.",
+    "erContributionDesc": "Your Employer is putting money in your account in the following ways:",
+    "matchTiers": [
+        "Then Match 0.33 of the next 100% of pay",
+        "Match 100% of the first 1% of pay\r\n "
+    ]
+}

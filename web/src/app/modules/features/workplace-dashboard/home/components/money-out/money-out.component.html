@@ -1,0 +1,10 @@
+<ng-container>
+  <ion-card class="view-card">
+    <div class="ion-card">
+      <ion-row tabindex="0" class="header">{{ header }}</ion-row>
+      <ion-row class="content" *ngFor="let msg of moneyOutMessagesList">
+        <p tabindex="1" class="text-content" [innerHTML]="msg"></p>
+      </ion-row>
+    </div>
+  </ion-card>
+</ng-container>

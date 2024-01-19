@@ -1,0 +1,16 @@
+ion-grid {
+  background: var(--primary-colors-voya-white);
+  .privacy-text {
+    margin-top: 8px;
+  }
+  .icon-lock {
+    margin: 0 5px 5px 0;
+  }
+  .web-privacy,
+  .mobile-privacy {
+    margin: 20px;
+  }
+  ion-button {
+    margin: auto;
+  }
+}

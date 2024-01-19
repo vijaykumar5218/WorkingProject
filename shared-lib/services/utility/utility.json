@@ -1,0 +1,17 @@
+{
+    "actionSheetText": {
+        "cancelBtn": {
+            "text": "Cancel",
+            "role": "cancel"
+        },
+        "buttonText": "View Fact Sheet"
+    },
+    "sessionTimOut": {
+        "header": "Session Timeout",
+        "message": "Your session has timed out. Please log in again.",
+        "button": {
+            "role": "OK",
+            "text": "OK"
+        }
+    }
+}

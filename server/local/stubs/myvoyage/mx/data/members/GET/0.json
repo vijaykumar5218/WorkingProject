@@ -1,0 +1,108 @@
+{
+  "members": [
+    {
+      "guid": "MBR-e9ebc549-c43c-4b62-bf65-8158d741fd70",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-e1ca29e0-ac34-4a6b-a634-b43c7de92817",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-0c513887-bb16-4f5b-a5e2-73cdcd3c9c66",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-48b812ce-50a1-4473-8c42-f84da4036050",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-9320fec2-3efb-412e-9084-60e03f67b2d4",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-26a20faf-f2a6-42a8-a7e9-6148459911e4",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-9a7693f8-99f8-48e3-afaa-8df415d76919",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-a36f6eac-f0a3-4ede-8429-4e5864e92972",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-3713df27-8554-460e-ae48-1101342748d8",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-f37e4c01-cc8b-45d3-9606-59b3fba12959",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-9f0a9b9e-5d49-4181-9cf1-695378ed4ebb",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-440e9ecd-c30f-4d88-84a6-ca4a022d8efe",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    },
+    {
+      "guid": "MBR-a8a05540-b100-423e-bac1-4ea406f4120e",
+      "name": "Test Pulse Member",
+      "connection_status": "CONNECTED",
+      "is_user_created": "true",
+      "user_guid": "USR-adc05758-4316-4c9f-985b-6c73c876988f",
+      "connection_status_message": "Connected to Test Pulse Institution."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<div class="list-wrap sort-wrap">
+  <ion-list>
+    <h5>{{ filterContent.dateRangeLbl }}</h5>
+    <ion-radio-group [(ngModel)]="selectedValue" (ionChange)="onChange()">
+      <ion-item
+        class="ion-no-padding "
+        lines="none"
+        *ngFor="let data of dateRangeList"
+      >
+        <ion-radio
+          mode="ios"
+          value="{{ data.id }}"
+          color="btndarkblue"
+        ></ion-radio>
+        <img
+          src="assets/icon/check.svg"
+          alt="check mark"
+          srcset=""
+          class="checkmark"
+          [class.active]="this.selectedValue == data.id"
+        />
+        <ion-label>{{ data.value }} </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</div>
+
+<div class="btn-wrap">
+  <ion-button
+    size="small"
+    (click)="closeDialog(false)"
+    class="font-18 save-button"
+    expand="block"
+    fill="clear"
+    color="btndarkblue"
+  >
+    {{ filterContent.cancelLabel }}
+  </ion-button>
+  <ion-button
+    size="small"
+    (click)="closeDialog(true)"
+    class="font-18 save-button"
+    expand="block"
+    fill="clear"
+    color="btndarkblue"
+  >
+    {{ filterContent.okLable }}
+  </ion-button>
+</div>

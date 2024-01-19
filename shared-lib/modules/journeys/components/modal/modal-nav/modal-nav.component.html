@@ -1,0 +1,24 @@
+<ion-tab-bar slot="top">
+  <ion-tab-button
+    *ngFor="let ele of element.elements"
+    [ngClass]="{
+      selectedRipple: selectedElement.answerId === ele.answerId
+    }"
+    (click)="setSelectedTab(ele)"
+    class="lightgrey"
+  >
+    <ion-label>{{ ele.header }}</ion-label>
+  </ion-tab-button>
+</ion-tab-bar>
+
+<journeys-modal-generic-component
+  #genericComponent
+  [element]="selectedElement"
+  [ngStyle]="{
+    'max-height':
+      'calc(100vh - ' + genericNavComponent?.nativeElement?.offsetTop + 'px)'
+  }"
+  (saveValue)="handleSave($event)"
+  [values]="values"
+  [answer]="answer"
+></journeys-modal-generic-component>

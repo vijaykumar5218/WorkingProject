@@ -1,0 +1,57 @@
+<div [ngClass]="isWeb ? 'webBanner' : 'mobileBanner'" *ngIf="contextObj">
+  <ng-container>
+    <ion-row id="openGuidelines2" *ngIf="displayBanner">
+      <ion-card>
+        <div class="banner-content">
+          <ion-row class="banner-row-content">
+            <ion-col (click)="openGuidelines()" class="calender-block">
+              <img
+                [src]="contextObj?.icon"
+                [alt]="contextObj?.altText"
+                class="calender-img"
+              />
+            </ion-col>
+
+            <ion-col
+              (click)="openGuidelines()"
+              class="enrollment-banner-content"
+            >
+              <ion-row class="time-to-select-row">
+                <ion-col>
+                  <ion-text class="time-to-select">
+                    {{ contextObj?.header }}
+                  </ion-text>
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col>
+                  <ion-text class="enrollment-banner-content-text">
+                    {{ contextObj?.content }}
+                  </ion-text>
+                </ion-col>
+                <ion-col class="mobile-calender-block">
+                  <img
+                    [src]="contextObj.icon"
+                    [alt]="contextObj.altText"
+                    class="calender-img"
+                  />
+                </ion-col>
+              </ion-row>
+            </ion-col>
+
+            <ion-col class="exit-block">
+              <img
+                src="assets/icon/exitWhite.svg"
+                alt="exit"
+                class="exit-icon"
+                (click)="closeBenefitsBanner()"
+                id="close-banner2"
+              />
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-card>
+    </ion-row>
+  </ng-container>
+</div>

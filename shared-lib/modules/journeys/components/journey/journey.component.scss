@@ -1,0 +1,30 @@
+ion-card {
+  --color: var(--primary-colors-voya-black);
+  font-size: 16px;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  margin: 20px 0px 20px 0px;
+
+  ion-card-header {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div {
+    display: flex;
+
+    ion-text {
+      width: 66%;
+      margin-right: 3%;
+      font-size: 16px;
+    }
+
+    img {
+      width: 31%;
+      height: 100%;
+    }
+  }
+}

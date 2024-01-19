@@ -1,0 +1,16 @@
+{
+  "headerLable": "Coverages",
+  "rightLink": "notification",
+  "insights": "Insights",
+  "myClaims": "My Claims",
+  "plans": "Coverages",
+  "asOf": "As of",
+  "healthSpending": "Your Medical Spending",
+  "paidToDate": "Total premiums paid to date",
+  "coPay": "Total co-pay and out of pocket services",
+  "planUsage": "Your Medical Plan Usage",
+  "benefitPeriod": "Benefit Period",
+  "yes": "Yes",
+  "notNow": "Not Now",
+  "revokeAuth": "Revoke Claims Authorization"
+}

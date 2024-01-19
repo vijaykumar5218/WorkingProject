@@ -1,0 +1,243 @@
+<div
+  [ngClass]="isWeb ? 'web-step' : 'mobile-step'"
+  *ngIf="step.content as stepContent"
+>
+  <ion-card
+    *ngFor="let pageElement of stepContent.pageElements"
+    [ngStyle]="{
+      'background-color': pageElement.backgroundColor
+    }"
+    [ngClass]="{hideStep: currentStep !== index}"
+    class="journeys-steps-step"
+  >
+    <ng-container *ngFor="let element of pageElement.elements; index as i">
+      <ng-container
+        *ngIf="
+          !element.flag ||
+          (journeyServiceMap[journeyId] &&
+            journeyServiceMap[journeyId][element.flag])
+        "
+      >
+        <journeys-steps-step-intro
+          *ngIf="element.id === 'intro'"
+          [element]="element"
+        ></journeys-steps-step-intro>
+        <journeys-steps-step-header-with-logo
+          *ngIf="element.id === 'headerWithLogo'"
+          [element]="element"
+        >
+        </journeys-steps-step-header-with-logo>
+        <journeys-steps-step-image-with-value
+          *ngIf="element.id === 'imageWithValue'"
+          [imageUrl]="element.imageUrl"
+          [value]="imageValue"
+        ></journeys-steps-step-image-with-value>
+        <journey-step-charts
+          *ngIf="element.id === 'chart'"
+          [element]="element"
+        ></journey-step-charts>
+        <journeys-link
+          *ngIf="element.id === 'link'"
+          [element]="element"
+        ></journeys-link>
+        <journeys-steps-step-input
+          *ngIf="element.id === 'input'"
+          [element]="element"
+          [values]="step.value"
+          [answer]="step.answer"
+          (valueChange)="updateStepValue($event, element)"
+          (currentValue)="updateImageValue($event)"
+          (isRequired)="setRequired($event, element)"
+          [ngStyle]="{'margin-bottom': element.marginBottom}"
+          [index]="index"
+          (updateStepValueAndStep)="updateStepHandler()"
+        ></journeys-steps-step-input>
+        <journeys-steps-step-animation
+          *ngIf="element.id === 'animation'"
+          [element]="element"
+          [index]="index"
+        ></journeys-steps-step-animation>
+        <journeys-steps-step-video
+          *ngIf="element.id === 'video'"
+          [element]="element"
+        ></journeys-steps-step-video>
+        <app-orange-money
+          *ngIf="element.id === 'orangeMoney'"
+          [displayHeader]="false"
+          [fromJourneys]="true"
+        ></app-orange-money>
+        <img
+          *ngIf="element.id === 'image'"
+          [src]="element.imageUrl"
+          [ngStyle]="{
+            'margin-top': element.marginTop,
+            'margin-bottom': element.marginBottomWeb
+              ? element.marginBottomWeb
+              : element.marginBottom,
+            'max-width': element.maxWidth
+          }"
+          [alt]="element?.altText || ''"
+        />
+        <app-table
+          *ngIf="element.id === 'table'"
+          [element]="element"
+        ></app-table>
+        <journeys-steps-step-mx-widget
+          *ngIf="element.id === 'mxWidget'"
+          [element]="element"
+        ></journeys-steps-step-mx-widget>
+        <journeys-steps-step-expand-collapse
+          *ngIf="element.id === 'expandCollapse'"
+          [element]="element"
+        ></journeys-steps-step-expand-collapse>
+        <journeys-steps-step-row-with-image
+          *ngIf="element.id === 'rowWithImage'"
+          [element]="element"
+        ></journeys-steps-step-row-with-image>
+        <journeys-steps-step-contentLink
+          *ngIf="element.id === 'contentModal' || element.id === 'modalButton'"
+          [element]="element"
+          [ngStyle]="{
+            'margin-bottom': element?.marginBottom || '0px'
+          }"
+          [values]="step.value"
+          [answer]="step.answer"
+          (valueChange)="updateStepValueAndStep($event, element)"
+        ></journeys-steps-step-contentLink>
+
+        <ng-container *ngIf="element.pageElements">
+          <ion-card
+            class="internal"
+            *ngFor="let pageEle of element.pageElements"
+            [ngStyle]="{
+              'background-color': pageEle.backgroundColor,
+              'margin-bottom': pageEle.marginBottom
+            }"
+          >
+            <ng-container *ngFor="let ele of pageEle.elements">
+              <journeys-steps-step-intro
+                *ngIf="ele.id === 'intro'"
+                [element]="ele"
+              ></journeys-steps-step-intro>
+              <journeys-steps-step-image-with-value
+                *ngIf="ele.id === 'imageWithValue'"
+                [imageUrl]="ele.imageUrl"
+                [value]="imageValue"
+              ></journeys-steps-step-image-with-value>
+              <journeys-steps-step-input
+                *ngIf="ele.id === 'input'"
+                [element]="ele"
+                [values]="step.value"
+                [answer]="step.answer"
+                (valueChange)="updateStepValue($event, ele)"
+                (currentValue)="updateImageValue($event)"
+                [ngStyle]="{
+                  'margin-bottom': ele.marginBottom
+                }"
+                [index]="index"
+                (updateStepValueAndStep)="updateStepHandler()"
+              ></journeys-steps-step-input>
+
+              <journeys-steps-step-button
+                *ngIf="ele.id === 'button'"
+                [label]="ele.label"
+                [link]="ele.link"
+                (continueClick)="handleContinueClick($event)"
+                [idSuffix]="ele.idSuffix"
+                [isActiveBackBtn]="currentStep === 0 ? false : true"
+                (backClick)="handleBackClick()"
+                [backBtnColor]="
+                  pageEle.backgroundColor
+                    ? 'var(--primary-colors-voya-white'
+                    : 'var(--primary-colors-voya-dark-blue)'
+                "
+              ></journeys-steps-step-button>
+              <journeys-steps-step-video
+                *ngIf="ele.id === 'video'"
+                [element]="ele"
+              ></journeys-steps-step-video>
+              <img
+                *ngIf="ele.id === 'image'"
+                [src]="ele.imageUrl"
+                [alt]="ele?.altText || ''"
+              />
+              <journeys-steps-step-mx-widget
+                *ngIf="ele.id === 'mxWidget'"
+                [element]="ele"
+              ></journeys-steps-step-mx-widget>
+              <app-table *ngIf="ele.id === 'table'" [element]="ele"></app-table>
+              <journeys-steps-step-expand-collapse
+                *ngIf="ele.id === 'expandCollapse'"
+                [element]="ele"
+              ></journeys-steps-step-expand-collapse>
+              <journeys-steps-step-row-with-image
+                *ngIf="ele.id === 'rowWithImage'"
+                [element]="ele"
+              ></journeys-steps-step-row-with-image>
+              <journeys-steps-step-contentLink
+                *ngIf="ele.id === 'contentModal' || ele.id === 'modalButton'"
+                [ngStyle]="{
+                  'margin-bottom': element?.marginBottom || '0px'
+                }"
+                [element]="ele"
+                [values]="step.value"
+                [answer]="step.answer"
+                (valueChange)="updateStepValueAndStep($event, element)"
+              ></journeys-steps-step-contentLink>
+            </ng-container>
+          </ion-card>
+        </ng-container>
+        <ng-container
+          *ngIf="
+            stepContent.helpCards &&
+            isWeb &&
+            pageElement.elements.length === i + 1
+          "
+        >
+          <ng-container *ngTemplateOutlet="helpCardsTemp"></ng-container>
+        </ng-container>
+        <journeys-steps-step-button
+          *ngIf="element.id === 'button'"
+          [label]="element.label"
+          [link]="element.link"
+          [type]="element.type"
+          (continueClick)="handleContinueClick($event)"
+          [idSuffix]="element.idSuffix"
+          [noSpacing]="element?.noSpacing === 'true'"
+          [isActiveBackBtn]="
+            currentStep === 0
+              ? false
+              : element?.noBackLink === 'false'
+              ? false
+              : true
+          "
+          (backClick)="handleBackClick()"
+          [backBtnColor]="
+            pageElement.backgroundColor
+              ? 'var(--primary-colors-voya-white'
+              : 'var(--primary-colors-voya-dark-blue)'
+          "
+          [disabled]="element.isContinueButton && !continueButtonEnabled"
+          [ngStyle]="{'padding-top': element.paddingTop}"
+          [ngClass]="element?.noSpacing === 'true' ? 'no-spacing' : 'spacing'"
+        ></journeys-steps-step-button>
+        <journeys-line
+          *ngIf="element.id === 'line'"
+          [element]="element"
+        ></journeys-line>
+      </ng-container>
+    </ng-container>
+  </ion-card>
+
+  <ng-container *ngIf="stepContent.helpCards && !isWeb">
+    <ng-container *ngTemplateOutlet="helpCardsTemp"></ng-container>
+  </ng-container>
+  <ng-template #helpCardsTemp>
+    <ng-container *ngFor="let helpCard of stepContent.helpCards">
+      <journeys-steps-step-help-card
+        *ngIf="!helpCard.flag || (journeys$ | async).flags[helpCard.flag]"
+        [element]="helpCard"
+      ></journeys-steps-step-help-card
+    ></ng-container>
+  </ng-template>
+</div>

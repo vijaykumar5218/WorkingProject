@@ -1,0 +1,11 @@
+#container {
+  height: 100%;
+}
+.web-transaction {
+  @media screen and (min-width: 500px) and (max-width: 920px) {
+    margin: 15px;
+  }
+  @media screen and (min-width: 920px) {
+    margin: 35px 35px 80px 35px;
+  }
+}

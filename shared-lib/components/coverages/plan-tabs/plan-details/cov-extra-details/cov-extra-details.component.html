@@ -1,0 +1,25 @@
+<ion-card [ngClass]="isWeb ? 'isWeb' : ''">
+  <ion-row (click)="toggle()" class="header-row">
+    <div class="header">{{ planSummaryGroup?.label }}</div>
+    <img *ngIf="!expanded" src="assets/icon/plus.svg" alt="expand" />
+    <img *ngIf="expanded" src="assets/icon/minus.svg" alt="collapse" />
+  </ion-row>
+  <ion-grid class="content" [ngClass]="expanded ? 'expanded' : ''">
+    <ion-row *ngFor="let row of planSummaryGroup?.items" class="content-row">
+      <ion-col size="6" class="ion-no-padding row-text label">{{
+        row.label
+      }}</ion-col>
+      <ion-col size="6" class="ion-no-padding row-text value">{{
+        row.description
+      }}</ion-col>
+      <ion-row class="subdesc-row" *ngIf="row.subdescription">
+        <ion-col size="6"></ion-col>
+        <ion-col size="6">{{ row.subdescription }}</ion-col>
+      </ion-row>
+    </ion-row>
+    <br />
+    <ion-row *ngFor="let note of currentNotes">
+      <ion-text>• {{ note.note }}</ion-text>
+    </ion-row>
+  </ion-grid>
+</ion-card>

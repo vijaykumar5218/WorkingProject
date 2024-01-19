@@ -1,0 +1,736 @@
+{
+	"enrollmentResponse": {
+		"status": "NOT_STARTED",
+		"enrollmentWindowEnabled": true,
+		"suppressBanner": true
+	},
+	"planYear": 2022,
+	"enrolled": [{
+			"name": "Superior Vision Plan",
+			"coverage": 10.0,
+			"premium": 3.31,
+			"premiumFrequency": "biweekly",
+      "coverageType": "Employee",
+			"deductible": 0.0,
+			"type": "vision_plan",
+			"id": "bH9qxzMRPVP4",
+			"coverage_levels": {
+				"subscriber": 10.0,
+				"spouse": 0.0,
+				"child": 0.0
+			},
+			"deductibleObj": {
+				"copay": 0.0,
+				"coinsurance": 0.0,
+				"individual": 0.0,
+				"family": 0.0
+			},
+			"totalPremium": 0.0,
+			"coverage_start_date": "2022-07-01",
+			"coverage_end_date": "2023-06-30",
+			"planDetails": {
+				"id": "bH9qxzMRPVP4",
+				"type": "vision_plan",
+				"coverage_start_date": "2022-07-01",
+				"coverage_end_date": "2023-06-30",
+				"premium": 3.31,
+				"covered_people_ids": [
+					"pEpB6a26y1vx",
+					"pTdwPD5jB8wH"
+				],
+				"dependents": [{
+						"role": "spouse",
+						"id": "pTdwPD5jB8wH",
+						"birthdate": "1986-06-06",
+						"age": 0,
+            "first_name": "FirstTest",
+            "last_name": "TestLast"
+					},
+					{
+						"role": "client",
+						"id": "pEpB6a26y1vx",
+						"birthdate": "1984-08-06",
+						"age": 0,
+            "first_name": "The Test",
+            "last_name": "TestLast"
+					}
+				]
+			},
+			"plan_summary": {
+				"groups": [{
+					"name": "vision",
+					"items": [{
+							"name": "routine_eye_care",
+							"type": "copay",
+							"qualifiers": [],
+							"copay": 10,
+							"coinsurance": 0,
+							"insurance": 100,
+							"has_deductible": false,
+							"footnotes": [],
+							"label": "Routine Eye Care",
+							"sublabel": "",
+							"description": "$10 copay",
+							"subdescription": ""
+						},
+						{
+							"name": "contact_lens_fitting",
+							"type": "copay",
+							"qualifiers": [],
+							"copay": 35,
+							"coinsurance": 0,
+							"insurance": 100,
+							"has_deductible": false,
+							"footnotes": [],
+							"label": "Contact Lens Fitting",
+							"sublabel": "",
+							"description": "$35 copay",
+							"subdescription": ""
+						},
+						{
+							"name": "contact_lenses",
+							"type": "copay",
+							"qualifiers": [],
+							"copay": 20,
+							"coinsurance": 0,
+							"insurance": 100,
+							"has_deductible": false,
+							"footnotes": [],
+							"label": "Contact Lenses",
+							"sublabel": "",
+							"description": "$20 copay",
+							"subdescription": ""
+						},
+						{
+							"name": "frames",
+							"type": "allowance",
+							"qualifiers": [
+								"copay"
+							],
+							"copay": 20,
+							"coinsurance": 0,
+							"insurance": 100,
+							"allowance": 150,
+							"has_deductible": false,
+							"footnotes": [],
+							"label": "Frames",
+							"sublabel": "",
+							"description": "$150 allowance",
+							"subdescription": "$20 copay"
+						},
+						{
+							"name": "glasses",
+							"type": "copay",
+							"qualifiers": [],
+							"copay": 20,
+							"coinsurance": 0,
+							"insurance": 100,
+							"has_deductible": false,
+							"footnotes": [],
+							"label": "Lenses",
+							"sublabel": "",
+							"description": "$20 copay",
+							"subdescription": ""
+						},
+						{
+							"name": "vision_procedure",
+							"type": "copay",
+							"qualifiers": [],
+							"copay": 10,
+							"coinsurance": 0,
+							"insurance": 100,
+							"has_deductible": false,
+							"footnotes": [],
+							"label": "Vision Procedure",
+							"sublabel": "",
+							"description": "$10 copay",
+							"subdescription": ""
+						}
+					],
+					"label": "Vision Coverage"
+				}],
+				"footnotes": []
+			}
+		},
+		{
+			"name": "Bronze Plan",
+			"coverage": 5.0,
+			"premium": 90.9,
+			"premiumFrequency": "biweekly",
+      "coverageType": "Employee + Spouse",
+			"deductible": 0.0,
+			"type": "medical_plan",
+			"id": "bTFj1YyhCsMy",
+			"coverage_levels": {
+				"subscriber": 5.0,
+				"spouse": 0.0,
+				"child": 0.0
+			},
+			"deductibleObj": {
+				"copay": 0.0,
+				"coinsurance": 0.0,
+				"individual": 0.0,
+				"family": 0.0
+			},
+			"totalPremium": 1090.8000000000002,
+			"coverage_start_date": "2022-07-01",
+			"coverage_end_date": "2023-06-30",
+			"planDetails": {
+				"id": "bTFj1YyhCsMy",
+				"type": "medical_plan",
+				"coverage_start_date": "2022-07-01",
+				"coverage_end_date": "2023-06-30",
+				"premium": 90.9,
+				"covered_people_ids": [
+					"pEpB6a26y1vx",
+					"pTdwPD5jB8wH"
+				],
+				"dependents": [{
+						"role": "spouse",
+						"id": "pTdwPD5jB8wH",
+						"birthdate": "1986-06-06",
+						"age": 0,
+            "first_name": "Aaron",
+            "last_name": "TestLast"
+					},
+					{
+						"role": "client",
+						"id": "pEpB6a26y1vx",
+						"birthdate": "1984-08-06",
+						"age": 0,
+            "first_name": "Rodger",
+            "last_name": "TestLast"
+					}
+				]
+			},
+			"plan_summary": {
+				"groups": [{
+						"name": "medical",
+						"items": [{
+								"name": "coinsurance",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Coinsurance",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "deductible",
+								"type": "deductibles",
+								"qualifiers": [
+									"embedded"
+								],
+								"footnotes": [],
+								"label": "Deductible",
+								"sublabel": "",
+								"description": "$2,800/$5,600",
+								"subdescription": "Individual/Family",
+								"individual": 2800,
+								"family": 5600
+							},
+							{
+								"name": "out_of_pocket_limit",
+								"type": "out_of_pocket_limits",
+								"qualifiers": [
+									"embedded"
+								],
+								"footnotes": [],
+								"label": "Out-of-Pocket Max",
+								"sublabel": "Plan pays 100% when met",
+								"description": "$5,600/$11,200",
+								"subdescription": "Individual/Family",
+								"individual": 5600,
+								"family": 11200
+							},
+							{
+								"name": "preventive_care",
+								"type": "insurance",
+								"qualifiers": [],
+								"copay": 0,
+								"coinsurance": 0,
+								"insurance": 100,
+								"has_deductible": false,
+								"footnotes": [],
+								"label": "Preventive Care",
+								"sublabel": "",
+								"description": "plan pays 100%",
+								"subdescription": ""
+							},
+							{
+								"name": "primary_care",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Primary Care",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "specialist",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Specialist",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "urgent_care",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Urgent Care",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "emergency_room_care",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Emergency Room Care",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "diagnostic_tests",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Diagnostic Tests",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "inpatient_mental_health",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Mental Health (Inpatient)",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "outpatient_mental_health",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Mental Health (Outpatient)",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "home_care",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Home Care",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "pt_ot",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Physical and Occupational Therapy",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "chiropractic_care",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Chiropractic Care",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "hospital_facility",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Hospital Facility",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "outpatient_surgery_facility",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Outpatient Surgery Facility",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "childbirth_facility",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Childbirth Facility",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							}
+						],
+						"label": "Medical Coverage"
+					},
+					{
+						"name": "drugs",
+						"items": [{
+								"name": "deductible",
+								"type": "deductibles",
+								"qualifiers": [
+									"embedded"
+								],
+								"footnotes": [
+									"deductibles:medical"
+								],
+								"label": "Deductible",
+								"sublabel": "",
+								"description": "$2,800/$5,600",
+								"subdescription": "Individual/Family",
+								"individual": 2800,
+								"family": 5600
+							},
+							{
+								"name": "out_of_pocket_limit",
+								"type": "out_of_pocket_limits",
+								"qualifiers": [
+									"embedded"
+								],
+								"footnotes": [
+									"limit:medical"
+								],
+								"label": "Out-of-Pocket Max",
+								"sublabel": "Plan pays 100% when met",
+								"description": "$5,600/$11,200",
+								"subdescription": "Individual/Family",
+								"individual": 5600,
+								"family": 11200
+							},
+							{
+								"name": "drugs_generic",
+								"type": "copay",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 10,
+								"coinsurance": 0,
+								"insurance": 100,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Generic Drugs",
+								"sublabel": "",
+								"description": "$10 copay",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "drugs_preferred",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 20,
+								"insurance": 80,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Preferred-brand Drugs",
+								"sublabel": "",
+								"description": "you pay 20%",
+								"subdescription": "after deductible met"
+							},
+							{
+								"name": "drugs_non_preferred",
+								"type": "coinsurance",
+								"qualifiers": [
+									"after_deductible"
+								],
+								"copay": 0,
+								"coinsurance": 30,
+								"insurance": 70,
+								"has_deductible": true,
+								"footnotes": [],
+								"label": "Non-Preferred-brand Drugs",
+								"sublabel": "",
+								"description": "you pay 30%",
+								"subdescription": "after deductible met"
+							}
+						],
+						"label": "Prescription Coverage"
+					}
+				],
+				"footnotes": [{
+						"name": "deductibles:medical",
+						"type": "deductibles.combinedwith.medical",
+						"note": "The deductible is shared between your Medical and Prescription coverage."
+					},
+					{
+						"name": "limit:medical",
+						"type": "out_of_pocket_limits.combinedwith.medical",
+						"note": "The out-of-pocket limit is shared between your Medical and Prescription coverage."
+					}
+				]
+			}
+		},
+		{
+			"name": "Delta Dental Plan",
+			"coverage": 1.0,
+			"premium": 16.86,
+			"premiumFrequency": "biweekly",
+      "coverageType": "Individual",
+			"deductible": 0.0,
+			"type": "dental_plan",
+			"id": "bLi60VtfFfcm",
+			"coverage_levels": {
+				"subscriber": 1.0,
+				"spouse": 0.0,
+				"child": 0.0
+			},
+			"deductibleObj": {
+				"copay": 0.0,
+				"coinsurance": 0.0,
+				"individual": 0.0,
+				"family": 0.0
+			},
+			"totalPremium": 0.0,
+			"coverage_start_date": "2022-07-01",
+			"coverage_end_date": "2023-06-30",
+			"planDetails": {
+				"id": "bLi60VtfFfcm",
+				"type": "dental_plan",
+				"coverage_start_date": "2022-07-01",
+				"coverage_end_date": "2023-06-30",
+				"premium": 16.86,
+				"covered_people_ids": [
+					"pEpB6a26y1vx",
+					"pTdwPD5jB8wH"
+				],
+				"dependents": [{
+						"role": "spouse",
+						"id": "pTdwPD5jB8wH",
+						"birthdate": "1986-06-06",
+						"age": 0,
+            "first_name": "Aaron",
+            "last_name": "TestLast"
+					},
+					{
+						"role": "client",
+						"id": "pEpB6a26y1vx",
+						"birthdate": "1984-08-06",
+						"age": 0,
+            "first_name": "Test",
+            "last_name": "TestLast"
+					}
+				]
+			},
+			"plan_summary": {
+				"groups": [{
+					"name": "dental",
+					"items": [{
+							"name": "deductible",
+							"type": "deductibles",
+							"qualifiers": [
+								"embedded"
+							],
+							"footnotes": [],
+							"label": "Deductible",
+							"sublabel": "",
+							"description": "$50/$150",
+							"subdescription": "Individual/Family",
+							"individual": 50,
+							"family": 150
+						},
+						{
+							"name": "annual_limit",
+							"type": "annual_limit",
+							"qualifiers": [
+								"individual"
+							],
+							"footnotes": [],
+							"label": "Annual Benefit Max",
+							"sublabel": "",
+							"description": "$1,750",
+							"subdescription": "Individual",
+							"amount": 1750
+						},
+						{
+							"name": "dental_care",
+							"type": "insurance",
+							"qualifiers": [],
+							"copay": 0,
+							"coinsurance": 0,
+							"insurance": 100,
+							"has_deductible": false,
+							"footnotes": [],
+							"label": "Preventive Care",
+							"sublabel": "",
+							"description": "plan pays 100%",
+							"subdescription": ""
+						},
+						{
+							"name": "fillings",
+							"type": "coinsurance",
+							"qualifiers": [
+								"after_deductible"
+							],
+							"copay": 0,
+							"coinsurance": 20,
+							"insurance": 80,
+							"has_deductible": true,
+							"footnotes": [],
+							"label": "Fillings",
+							"sublabel": "",
+							"description": "you pay 20%",
+							"subdescription": "after deductible met"
+						},
+						{
+							"name": "endodontics",
+							"type": "coinsurance",
+							"qualifiers": [
+								"after_deductible"
+							],
+							"copay": 0,
+							"coinsurance": 50,
+							"insurance": 50,
+							"has_deductible": true,
+							"footnotes": [],
+							"label": "Endodontics",
+							"sublabel": "",
+							"description": "you pay 50%",
+							"subdescription": "after deductible met"
+						},
+						{
+							"name": "orthodontics",
+							"type": "coinsurance",
+							"qualifiers": [
+								"after_deductible"
+							],
+							"copay": 0,
+							"coinsurance": 50,
+							"insurance": 50,
+							"has_deductible": true,
+							"footnotes": [
+								"annual:orthodontics_limit"
+							],
+							"label": "Orthodontics",
+							"sublabel": "",
+							"description": "you pay 50%",
+							"subdescription": "after deductible met"
+						}
+					],
+					"label": "Dental Coverage"
+				}],
+				"footnotes": [{
+					"name": "annual:orthodontics_limit",
+					"type": "annual_limit.individual",
+					"note": "Separate annual benefit max of $1,500.",
+					"amount": 1500.0
+				}]
+			}
+		}
+	],
+	"provided": [],
+	"declined": []
+}

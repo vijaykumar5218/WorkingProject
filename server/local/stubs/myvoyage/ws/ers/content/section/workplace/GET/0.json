@@ -1,0 +1,32 @@
+{
+  "addAccount": {
+    "title": "Adding Accounts",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur. Suspendisse",
+    "benefits": {
+      "title": "Benefits:",
+      "list": [
+        {
+          "text": "Organize your financial life"
+        },
+        {
+          "text": "Get insights on your spending habits to manage your expenses and create a budget"
+        }
+      ]
+    },
+    "usefulInfo": {
+      "title": "Useful information to have on hand:",
+      "list": [
+        {
+          "text": "Account username"
+        },
+        {
+          "text": "Password"
+        }
+      ]
+    },
+    "button": {
+      "text": "Add Account"
+    },
+    "termsAndConditionsLink": "https://www.voya.com/terms-use"
+  }
+}

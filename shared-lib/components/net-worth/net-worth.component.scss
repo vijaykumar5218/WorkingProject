@@ -1,0 +1,57 @@
+:host-context(.plt-desktop) {
+  ion-card {
+    @media screen and (min-width: 768px) and (max-width: 920px) {
+      height: 490px;
+      border-radius: 10px;
+      margin: 0px 14px;
+      width: auto;
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: 921px) and (max-width: 1330px) {
+      height: 490px;
+      margin: 0px 14px;
+      width: 356px;
+    }
+    @media screen and (min-width: 1331px) {
+      width: 422px;
+      height: 490px;
+      border-radius: 10px;
+      margin: 0px 14px;
+    }
+
+    ion-card-header {
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 8px;
+        padding-bottom: 0px;
+      }
+    }
+
+    ion-button {
+      @media screen and (min-width: 768px) {
+        margin: 0px auto;
+      }
+    }
+  }
+}
+
+ion-card {
+  margin-bottom: 0;
+
+  ion-card-header {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.02px;
+    color: var(--primary-colors-voya-black);
+  }
+
+  ion-button {
+    color: var(--primary-colors-voya-dark-blue);
+    width: 148px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px auto 15px auto;
+  }
+}

@@ -1,0 +1,27 @@
+<app-step-progress-bar
+  [steps]="progressBarSteps"
+  [currentStep]="currentStep"
+></app-step-progress-bar>
+<swiper
+  [config]="slideOpts"
+  (swiper)="setSwiperInstance($event)"
+  (slideChange)="handleSlideChange()"
+  (slideChangeTransitionEnd)="scrollToTop()"
+>
+  <ng-template swiperSlide *ngFor="let step of steps; let i = index">
+    <div class="steps-content">
+      <journeys-steps-step
+        [index]="i"
+        [step]="step"
+        (continueClick)="handleContinueClick($event)"
+        (backClick)="handleBackClick()"
+        [currentStep]="currentStep"
+        [journeyId]="journey.journeyID"
+        (swipeEnabled)="updateSwipeEnabled($event)"
+        (updateStep)="updateStep($event, i)"
+        #journeyStep
+      ></journeys-steps-step>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide><div></div></ng-template>
+</swiper>

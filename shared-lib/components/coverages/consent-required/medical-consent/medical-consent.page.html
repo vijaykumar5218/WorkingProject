@@ -1,0 +1,56 @@
+<app-modal-header [headerText]="pageText.authToDisclose"></app-modal-header>
+<ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)">
+  <div
+    class="main-content"
+    [ngClass]="isWeb? 'web-main-content':'mobile-main-content'"
+  >
+    <div *ngFor="let part of contentData?.disclosure_parts; let i = index">
+      <h6>{{part?.disclosure_title}}</h6>
+      <p [innerHTML]="part?.disclosure_description_1"></p>
+      <p [innerHTML]="part?.disclosure_description_2"></p>
+    </div>
+  </div>
+  <div class="options" [ngClass]="isWeb? 'web-options':'mobile-options'">
+    <ion-row class="header">{{contentData?.auth_Text}}</ion-row>
+    <ion-row>
+      <ion-radio-group mode="md" [(ngModel)]="radioSelection">
+        <ion-row>
+          <ion-col>
+            <ion-item lines="none">
+              <ion-radio
+                value="NO"
+                [attr.disabled]="hasScrolledToBottom ? null : ''"
+              ></ion-radio>
+              <ion-label>{{pageText.no}}</ion-label>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item lines="none">
+              <ion-radio
+                value="YES"
+                [attr.disabled]="hasScrolledToBottom ? null : ''"
+              ></ion-radio>
+              <ion-label>{{pageText.yes}}</ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-radio-group>
+    </ion-row>
+    <ion-row>
+      <ion-button
+        size="small"
+        id="save-button"
+        (click)="saveConsent()"
+        class="font-18 save-button"
+        name="submit"
+        shape="round"
+        expand="block"
+        type="submit"
+        color="btncolor"
+        [attr.disabled]="hasScrolledToBottom ? null : ''"
+      >
+        {{pageText.submit}}
+      </ion-button>
+    </ion-row>
+  </div>
+</ion-content>

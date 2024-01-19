@@ -1,0 +1,192 @@
+<app-loading [loading]="!forHomePageMobile && coverages == null">
+  <div>
+    <div
+      class="web-plans-card"
+      [ngClass]="[isWeb ? '':'mobile', forHomePageMobile ? 'home-page-mobile' : '']"
+    >
+      <ng-container *ngIf="(coverages?.length > 0); else noCoverages">
+        <ion-card
+          *ngFor="let cov of coverages|paginate:{itemsPerPage:itemsPerPage,currentPage:currentPage,totalItems:totalItems}; let i = index;"
+          (click)="viewBenefit(cov)"
+          (keydown.enter)="viewBenefit(cov)"
+          tabindex="0"
+          [ngStyle]="manageWidthOfCard(cov)"
+          class="coverages-plan-slide clickable"
+          id="{{'coverage-plan-' + i}}"
+        >
+          <div *ngIf="cov">
+            <ng-container
+              *ngTemplateOutlet="planTemp;context:{cov:cov,showPlanInfo:true,i:i}"
+            >
+            </ng-container>
+          </div>
+        </ion-card>
+      </ng-container>
+
+      <ion-card
+        *ngIf="(!isWeb || (isWeb && !isDesktop)) && guidanceEnabled && !isWorkplaceDashboard && !forHomePageMobile"
+        class="myHealthWealth"
+      >
+        <ion-row class="myHealth-title">
+          <ion-col class="myHealth-content">
+            <ion-row class="myHealth-heading">
+              <ion-text class="ths-text">
+                {{ myHealthWealth?.title }}
+              </ion-text>
+            </ion-row>
+
+            <ion-row>
+              <strong class="ths-desc">
+                {{ myHealthWealth?.description }}</strong
+              >
+            </ion-row>
+            <ion-row class="ths-details">
+              <ion-col class="ion-no-padding">
+                <ion-text
+                  class="view-details"
+                  (click)="openGuidelines()"
+                  id="myHealthWealth_link"
+                >
+                  <u
+                    ><a class="navlink" routerLinkActive="active">
+                      {{ myHealthWealth?.link_name }}
+                    </a></u
+                  >
+                </ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col class="myHealth-img-container">
+            <img
+              alt="{{covText.totalHealthSpendAlt}}"
+              src="assets/icon/myHandW.svg"
+              class="ths-img"
+            />
+          </ion-col>
+        </ion-row>
+      </ion-card>
+      <app-hsastore-nudge *ngIf="!isWeb"></app-hsastore-nudge>
+    </div>
+  </div>
+
+  <ng-template #noCoverages>
+    <app-no-benefits
+      [workplaceDashboard]="isWorkplaceDashboard"
+      *ngIf="!isWeb || (isWeb && !isDesktop) || (isWeb && isWorkplaceDashboard)"
+    ></app-no-benefits>
+  </ng-template>
+</app-loading>
+
+<ng-template #planTemp let-cov="cov" let-showPlanInfo="showPlanInfo" let-i="i">
+  <ion-row class="first-row">
+    <ion-col class="coverages-logo">
+      <img
+        src="{{
+  (benefitContent?.iconMapping)[cov.type] ||
+    'assets/icon/benefits/umbrella.svg'
+}}"
+        alt=""
+      />
+    </ion-col>
+    <ion-col>
+      <ion-row>
+        <ion-col>
+          <ion-text class="name OneLinkNoTx">{{ cov.name }} </ion-text>
+        </ion-col>
+      </ion-row>
+      <ng-container *ngIf="showPlanInfo">
+        <ng-container>
+          <ion-row class="top-labels">
+            <ion-col class="plan-col"
+              ><ng-container *ngTemplateOutlet="coverageLabel"></ng-container
+            ></ion-col>
+            <ion-col>
+              <ng-container
+                *ngTemplateOutlet="coverageType;context:{cov:cov}"
+              ></ng-container>
+            </ion-col>
+          </ion-row>
+          <ion-row class="labels-values">
+            <ion-col class="labels-col">
+              <ng-container
+                *ngTemplateOutlet="premiumLabel;context:{cov:cov}"
+              ></ng-container>
+            </ion-col>
+            <ion-col class="premium-col">
+              <ng-container
+                *ngTemplateOutlet="premium;context:{cov:cov}"
+              ></ng-container
+            ></ion-col>
+          </ion-row>
+        </ng-container>
+      </ng-container>
+    </ion-col>
+    <ion-col class="rightArrow">
+      <div class="ion-text-end">
+        <img
+          [id]="'enrolled-benefit-link' + i"
+          class="enrolled-benefit-link-img"
+          src="assets/icon/chevron_right.svg"
+          alt="arrow"
+        />
+      </div>
+    </ion-col>
+  </ion-row>
+</ng-template>
+
+<ng-template #coverageLabel>
+  <ion-text class="label">{{ benefitContent?.coverageLabel }} </ion-text>
+</ng-template>
+
+<ng-template let-cov="cov" #premiumLabel>
+  <ion-text class="label" *ngIf="cov?.premium || cov?.premium === 0"
+    >{{ benefitContent?.premiumLabel }}</ion-text
+  >
+</ng-template>
+
+<ng-template let-cov="cov" #coverageType>
+  <ion-text class="label covType">{{ cov?.coverageType }}</ion-text>
+</ng-template>
+
+<ng-template let-cov="cov" #premium>
+  <ion-text class="amt"
+    >{{ cov.premium | currency: 'USD':'symbol' }}
+    <ng-container *ngIf="cov.premium > 0">
+      /{{ cov.premiumFrequency }}
+    </ng-container>
+  </ion-text>
+</ng-template>
+
+<app-pagination
+  [paginationConfig]="paginationConfig"
+  (paginationChange)="paginationChange($event)"
+  id="cov-pagination"
+></app-pagination>
+
+<ion-row *ngIf="forHomePageMobile">
+  <ion-button
+    size="small"
+    id="view-all-bens"
+    class="font-12"
+    shape="round"
+    expand="block"
+    color="btncolor"
+    fill="outline"
+    (click)="viewAllBenefits()"
+  >
+    View all Benefits
+  </ion-button>
+</ion-row>
+
+<ion-row *ngIf="isMyBenefitsUser">
+  <ion-button
+    id="go-to-my-benefits"
+    class="font-18 btnview"
+    shape="round"
+    expand="block"
+    color="btncolor"
+    href="{{benefitHubContent?.linkUrl}}"
+  >
+  {{benefitHubContent?.linkLabel}}
+  </ion-button>
+</ion-row>

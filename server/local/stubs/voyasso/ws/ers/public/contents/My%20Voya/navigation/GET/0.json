@@ -1,0 +1,3 @@
+{
+    "LanguageOptionJSON": "\"{\\\"languages\\\":[{\\\"label\\\":\\\"English\\\",\\\"languageCode\\\":\\\"en-US\\\",\\\"translatedLabel\\\":\\\"English\\\",\\\"mobileNavLinkLabel\\\":\\\"ViewinEnglish\\\"},{\\\"label\\\":\\\"Spanish\\\",\\\"languageCode\\\":\\\"es-US\\\",\\\"translatedLabel\\\":\\\"Español\\\",\\\"mobileNavLinkLabel\\\":\\\"VerenEspañol\\\"}],\\\"inEnglishLabelLinks\\\":[\\\"ACCT_GET_ADVICE\\\", \\\"FEISSORD\\\"],\\\"inEnglishLabel\\\":\\\"(in English)\\\",\\\"spanishInEnglishLabel\\\":\\\"(en Inglés)\\\"}\""
+}

@@ -1,0 +1,35 @@
+<ion-card-content>
+  <div>
+    <ion-row>
+      <ion-col class="ion-text-center popup-img">
+        <img [src]="element.imageUrl" [alt]="element.altText || ''" />
+      </ion-col>
+    </ion-row>
+    <ion-row class="popup-header-row">
+      <ion-col class="ion-text-center popup-header">
+        <ion-text class="bolds">{{ element.header }} </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="popup-desc-row">
+      <ion-col class="ion-text-center popup-desc">
+        <ion-text>{{ element.answer }}</ion-text>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-card-content>
+
+<ion-row class="m-auto mar-right">
+  <ion-col>
+    <ion-button
+      size="small"
+      class="font-18"
+      shape="round"
+      color="btncolor"
+      type="submit"
+      expand="block"
+      id="gotobutton"
+      (click)="closeDialog()"
+      >{{ pageText.close }}</ion-button
+    >
+  </ion-col>
+</ion-row>

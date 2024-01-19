@@ -1,0 +1,44 @@
+<div [ngClass]="isWeb? 'web-no-access':'mobile-no-access'">
+  <ion-row>
+    <ion-col>
+      <ion-text class="x-button" (click)="closeClicked()" id="x-button"
+        >X</ion-text
+      >
+    </ion-col>
+  </ion-row>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img src="assets/icon/warning_orange.svg" alt="warning" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-text class="header">{{messages?.message_1}}</ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text class="desc">{{messages?.message_2}}</ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button
+          size="small"
+          (click)="closeClicked()"
+          id="close-btn"
+          name="submit"
+          shape="round"
+          expand="block"
+          type="submit"
+          color="btncolor"
+        >
+          {{pageText.logout}}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

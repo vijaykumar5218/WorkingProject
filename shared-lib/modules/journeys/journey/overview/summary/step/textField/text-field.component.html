@@ -1,0 +1,11 @@
+<div>
+  <ion-text>{{ element.label }}</ion-text>
+  <ion-text
+    *ngIf="answer?.toString()?.includes('$'); else notDollar"
+    class="answer"
+    >{{ answer.replace('$', '') | currency: 'USD':'symbol':'1.0-0' }}</ion-text
+  >
+  <ng-template #notDollar
+    ><ion-text class="answer">{{ answer }}</ion-text></ng-template
+  >
+</div>

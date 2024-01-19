@@ -1,0 +1,207 @@
+:host {
+  background-color: var(--primary-colors-voya-white);
+
+  @keyframes rotate-compass {
+    0% {
+      opacity: 0;
+      transform: translateX(15%) rotate(0deg) scale(5);
+    }
+    5% {
+      opacity: 1;
+      transform: translateX(15%) scale(5);
+    }
+    10% {
+      transform: translateX(15%) scale(5);
+    }
+    20% {
+      transform: translateX(15%) rotate(-90deg) scale(5);
+    }
+    60% {
+      transform: translateX(0) rotate(90deg) scale(1);
+    }
+    100% {
+      transform: translateX(0) rotate(0deg);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  @media screen and (max-height: 700px) {
+    .top-row {
+      margin-top: 12px;
+      margin-bottom: 8px;
+
+      &.ios {
+        margin-top: 20px;
+      }
+    }
+
+    .page-container {
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  .top-row {
+    margin-bottom: 12px;
+    height: 24px;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03px;
+    text-align: center;
+    color: var(--primary-colors-voya-black);
+
+    @media screen and (min-height: 700px) {
+      margin-top: 40px;
+
+      &.ios {
+        margin-top: 70px;
+      }
+    }
+  }
+
+  #swiper-container {
+    animation: fade-in 2.5s ease-in-out both;
+    margin-bottom: 20px;
+    height: 35%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    img {
+      min-height: 0;
+      flex-shrink: 1;
+      margin: auto auto 10px auto;
+    }
+
+    .page-title {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.02px;
+      margin-bottom: 8px;
+      margin-top: 8px;
+      color: var(--primary-colors-voya-black);
+    }
+
+    .page-desc {
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: 0.08px;
+      text-align: left;
+      color: var(--primary-colors-voya-black);
+
+      a {
+        color: var(--primary-colors-voya-dark-blue);
+      }
+    }
+  }
+
+  .welcome {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.03px;
+    color: var(--primary-colors-voya-black);
+
+    animation: fade-in 2.5s ease-in-out both;
+  }
+
+  .logo-col {
+    margin: 20px auto 5% auto;
+
+    .logo-div {
+      display: block;
+      width: 292px;
+      height: 89.3px;
+      margin: auto;
+
+      .logo {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 292px;
+        height: 89.3px;
+
+        animation: fade-in 2.5s ease-in-out both;
+      }
+
+      .compass {
+        height: 46.5px;
+        width: 46.5px;
+        position: absolute;
+        top: 0;
+        left: calc(50% - 39px);
+        transform: translateX(-50%);
+
+        animation: rotate-compass 2.5s ease-in-out both;
+      }
+    }
+  }
+
+  .progress-row {
+    animation: fade-in 2.5s ease-in-out both;
+  }
+
+  .face-id-row {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.08px;
+    color: var(--primary-colors-voya-dark-blue);
+    animation: fade-in 2.5s ease-in-out both;
+    text-align: center;
+
+    .bio-icon {
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      vertical-align: bottom;
+      margin-right: 8px;
+    }
+
+    .bio-text {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+
+  ion-button {
+    display: block;
+    width: 220px;
+    height: 40px;
+    margin: 20px auto 0;
+
+    animation: fade-in 2.5s ease-in-out both;
+
+    &.register {
+      --border-color: var(--primary-colors-voya-dark-blue);
+      --border-width: 2px;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+    "retirementAccounts": {
+        "dataStatus": "OK",
+        "errorCode": "NO_ERROR",
+        "accounts": [
+            {
+                "agreementId": "13C0D302274276E9179495EF755FAD77BF4F8A23F7B1648B86E257890C359EB5",
+                "accountTitle": "WASHOE COUNTY DEFERRED COMP PLAN",
+                "accountType": "Investment",
+                "accountBalance": "210802.71",
+                "accountBalanceAsOf": "06/23/2023",
+                "sourceSystem": "EASE",
+                "suppressTab": false,
+                "voyaSavings": "210802.71",
+                "includedInOrangeMoney": false,
+                "accountAllowedForMyVoya": false,
+                "clientId": "INGWIN",
+                "planId": "664389",
+                "planType": "DC",
+                "accountNumber": "664389@INGWIN@036639015",
+                "needOMAutomaticUpdate": false,
+                "planName": "WASHOE COUNTY DEFERRED COMP PLAN",
+                "mpStatus": "0",
+                "clientAllowed4myVoyaOrSSO": true,
+                "useMyvoyaHomepage": true,
+                "advisorNonMoneyTxnAllowed": true,
+                "advisorMoneyTxnAllowed": true,
+                "nqPenCalPlan": false,
+                "enrollmentAllowed": false,
+                "autoEnrollmentAllowed": false,
+                "vruPhoneNumber": "1-800-584-6001",
+                "rmdRecurringPaymentInd": "N",
+                "navigateToRSPortfolio": true,
+                "planLink": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/details/13C0D302274276E9179495EF755FAD77BF4F8A23F7B1648B86E257890C359EB5",
+                "openDetailInNewWindow": false,
+                "nqPlan": false,
+                "portalSupportFlag": true,
+                "applicationLink": {
+                    "linkName": "Go To My Account",
+                    "linkHref": "/myvoya/link?type=retirement&token=JdVx95taRn0uaJ1t3W6lHfyvzHocehc2EuUk3gr6ZNH3JDSh7CylDqmnwNQt6o5p50W9bTWSGab4GQl3gJdA1dv0c7Ee6XPG348G4zHG%2Fcc%3D"
+                },
+                "new": false,
+                "iraplan": false,
+                "xsellRestricted": false,
+                "eligibleForOrangeMoney": false,
+                "isVoyaAccessPlan": false,
+                "isRestrictedRetirementPlan": false,
+                "isVDAApplication": false
+            }
+        ]
+    },
+    "brokerageAccounts": {
+        "dataStatus": "OK",
+        "errorCode": "NO_ERROR",
+        "accounts": [
+            {
+                "accountTitle": "Voya Digital Adviser",
+                "accountType": "Investment",
+                "accountBalance": "5969.79",
+                "accountBalanceAsOf": "06/24/2023",
+                "sourceSystem": "BROKERAGE",
+                "suppressTab": false,
+                "voyaSavings": "5969.79",
+                "includedInOrangeMoney": false,
+                "accountAllowedForMyVoya": false,
+                "planId": "6S1081747",
+                "accountNumber": "6S1081747",
+                "needOMAutomaticUpdate": false,
+                "clientAllowed4myVoyaOrSSO": false,
+                "useMyvoyaHomepage": false,
+                "advisorNonMoneyTxnAllowed": false,
+                "advisorMoneyTxnAllowed": false,
+                "nqPenCalPlan": false,
+                "enrollmentAllowed": false,
+                "autoEnrollmentAllowed": false,
+                "navigateToRSPortfolio": true,
+                "planLink": "https://esalesforceservices.intg.voya.com/esamloutbound/saml?target=Foliodx&userid=00119000016eBRKAA2&KeepAliveURL=https%3A%2F%2Fmy3.intg.voya.com%2Fmyvoya%2Fws%2Fers%2Fpublic%2FpingSession%2Frefresh&t=1687632319321&d=bf5f2a38b194fb96cc5630779672f69c68db50a3",
+                "openDetailInNewWindow": false,
+                "productType": "Vanguard",
+                "nqPlan": false,
+                "portalSupportFlag": false,
+                "applicationLink": {
+                    "linkName": "See my Investments",
+                    "linkHref": "https://esalesforceservices.intg.voya.com/esamloutbound/saml?target=Foliodx&userid=00119000016eBRKAA2&KeepAliveURL=https%3A%2F%2Fmy3.intg.voya.com%2Fmyvoya%2Fws%2Fers%2Fpublic%2FpingSession%2Frefresh&t=1687632319321&d=bf5f2a38b194fb96cc5630779672f69c68db50a3"
+                },
+                "new": false,
+                "iraplan": false,
+                "xsellRestricted": false,
+                "eligibleForOrangeMoney": false,
+                "isVoyaAccessPlan": false,
+                "isRestrictedRetirementPlan": false,
+                "isVDAApplication": true
+            }
+        ]
+    },
+    "vendorAccounts": {
+        "accounts": []
+    },
+    "stockAccounts": {
+        "accounts": []
+    }
+}

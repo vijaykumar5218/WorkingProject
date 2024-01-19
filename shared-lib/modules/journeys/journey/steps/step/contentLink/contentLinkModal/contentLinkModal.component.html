@@ -1,0 +1,14 @@
+<div
+  class="contentDynamicModal"
+  *ngIf="!((element?.elements)[0].id === 'manageMXaccount')"
+>
+  <journeys-steps-step-intro
+    *ngFor="let ele of element?.elements"
+    [element]="ele"
+    class="desc"
+  >
+  </journeys-steps-step-intro>
+</div>
+<div *ngIf="(element?.elements)[0].id === 'manageMXaccount'">
+  <app-add-accounts></app-add-accounts>
+</div>

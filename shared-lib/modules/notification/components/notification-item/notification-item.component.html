@@ -1,0 +1,29 @@
+<div [ngClass]="isWeb ? 'webNotificationItem' : ''">
+  <ion-item lines="none" *ngFor="let notification of notificationList">
+    <ion-row>
+      <ion-col size="auto">
+        <div class="dot" [ngClass]="{dot: true, new: notification.new}"></div>
+      </ion-col>
+      <ion-col>
+        <div class="mid-text-wrap">
+          <ion-label class="item-header">
+            {{ notification.Title }}
+          </ion-label>
+          <p class="item-desc">
+            {{ notification.Description }}
+          </p>
+          <span
+            class="item-link"
+            *ngIf="notification.Link_name && notification.Link_url"
+            (click)="handleNotificationUrlClick(notification)"
+          >
+            {{ notification.Link_name }}
+          </span>
+        </div>
+      </ion-col>
+      <ion-col class="time-label-col">
+        <span class="time-label">{{ notification?.eventAge }}</span>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+</div>

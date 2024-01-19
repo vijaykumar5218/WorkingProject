@@ -1,0 +1,13 @@
+<ng-container *ngIf="isCarouselRequired">
+  <ion-card class="view-card">
+    <div id="heroCarousel" class="ion-card">
+      <ng-container>
+        <carousels
+          [isMXUser]="isMXUser"
+          (displayCarousel)="displayCarousel($event)"
+        >
+        </carousels>
+      </ng-container>
+    </div>
+  </ion-card>
+</ng-container>

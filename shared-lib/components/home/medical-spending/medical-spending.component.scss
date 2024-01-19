@@ -1,0 +1,95 @@
+.total-health-spend-mobile {
+  @media screen and (max-width: 920px) {
+    display: block;
+  }
+  @media screen and (min-width: 920px) {
+    display: none;
+  }
+  background-color: var(--primary-colors-voya-dark-blue);
+  padding: 10px 0px 10px 10px;
+  margin-top: 5%;
+  .health-spend {
+    height: 100%;
+    .health-spend-content {
+      max-height: 166px;
+      padding: 10px;
+      .ths-text {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.33;
+        letter-spacing: 0.03px;
+        color: var(--primary-colors-voya-white);
+      }
+      .ths-date {
+        font-weight: normal;
+        color: var(--primary-colors-voya-white);
+      }
+      .ths-details {
+        color: var(--primary-colors-voya-white);
+        margin-top: 20px;
+        font-size: 18px;
+        .navlink {
+          color: var(--primary-colors-voya-white);
+        }
+        .view-details {
+          cursor: pointer;
+        }
+      }
+      .ths-amount {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0.06px;
+        color: var(--primary-colors-voya-white);
+      }
+    }
+    .health-spend-img-container {
+      margin: auto;
+      max-width: 177px;
+      img {
+        width: 177px;
+        height: 130px;
+      }
+    }
+  }
+}
+
+.total-health-spending-web {
+  @media screen and (max-width: 920px) {
+    display: none;
+  }
+  @media screen and (min-width: 920px) {
+    display: flex;
+    margin-top: 7px;
+  }
+  max-width: 1440px;
+  margin: auto;
+  .total-health-spend {
+    font-size: 24px;
+    color: var(--primary-colors-voya-black);
+    .health-spend {
+      margin: 0px;
+      font-size: 32px;
+      font-weight: normal;
+      color: var(--secondary-colors-voya-dark-orange);
+    }
+  }
+  .as-of-date {
+    margin-left: 8px;
+    font-size: 16px;
+    color: var(--secondary-colors-medium-gray-1);
+  }
+  .display-health-spend {
+    margin-left: 50px;
+  }
+  .navlink {
+    cursor: pointer;
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    text-decoration-line: underline;
+    color: var(--primary-colors-voya-dark-blue);
+    text-decoration-color: var(--primary-colors-voya-dark-blue);
+  }
+}

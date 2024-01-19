@@ -1,0 +1,55 @@
+<div class="web-authorization">
+  <app-modal-header
+    [headerText]="pageText.authToDisclose"
+    [back]="true"
+    [border]="false"
+    [backUrl]="redirectTo"
+  ></app-modal-header>
+  <div class="content">
+    <div class="main-content">
+      <div *ngFor="let part of contentData?.disclosure_parts; let i = index">
+        <h6>{{part?.disclosure_title}}</h6>
+        <p [innerHTML]="part?.disclosure_description_1"></p>
+        <p [innerHTML]="part?.disclosure_description_2"></p>
+      </div>
+    </div>
+    <div class="options">
+      <ion-row class="header">
+        <ion-text>{{contentData?.auth_Text}}</ion-text>
+      </ion-row>
+      <ion-row>
+        <ion-radio-group mode="md" [(ngModel)]="radioSelection">
+          <ion-row>
+            <ion-col>
+              <ion-item lines="none">
+                <ion-radio value="NO"></ion-radio>
+                <ion-label>{{pageText.no}}</ion-label>
+              </ion-item>
+            </ion-col>
+            <ion-col>
+              <ion-item lines="none">
+                <ion-radio value="YES"></ion-radio>
+                <ion-label>{{pageText.yes}}</ion-label>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-radio-group>
+      </ion-row>
+      <ion-row>
+        <ion-button
+          size="small"
+          id="save-button"
+          (click)="saveConsent()"
+          class="font-18 save-button"
+          name="submit"
+          shape="round"
+          expand="block"
+          type="submit"
+          color="btncolor"
+        >
+          {{pageText.submit}}
+        </ion-button>
+      </ion-row>
+    </div>
+  </div>
+</div>

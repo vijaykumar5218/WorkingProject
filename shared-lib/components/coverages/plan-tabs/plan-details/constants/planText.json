@@ -1,0 +1,57 @@
+{
+    "header" : { 
+          "label" : "Plan name",
+          "rightLink" : "notification"
+      },
+  
+      "tabslabel" : {
+          "details" : "Details",
+           "transactions" : "Transactions"
+       },
+
+       "basic" : {
+           "planType" : "Major medical insurance",
+           "plicyLabel" : "Policy Number",
+           "policyNum" : "701 0358896 2135114",
+           "asOf" : "As of"
+       },
+
+      
+      "dependents" : {
+        "heading" : "Dependents",
+        "coverage_type": "Coverage Type",
+        "coverage_start_date": "Coverage Begin Date",
+        "coverage_end_date": "Coverage End Date",
+        "deduction_start_date": "Deduction Begin Date",
+        "deduction_end_date": "Deduction End Date",
+        "premium": "Premium Per Paycheck",
+        "employer_premium": "Employer Contribution",
+        "relationship": "Relationship",
+        "birthdate": "Date of Birth",
+         "age": "Age",
+         "gender": "Gender",
+         "country": "Country",
+         "coinsurance":"Coinsurance",
+         "copay":"Copay",
+         "coverageDeductible":"Coverage deductible",
+         "individual":"Individual",
+         "family":"Family"
+      },
+       
+        "explanation" : {
+           "heading" : "Coverage Explanations",
+           "qa" : [
+               {
+                   "label" : "What is an out-of-pocket maximum?",
+                   "val" : "Out-of-pocket maximum is the most you could pay for covered medical expenses in a year. This amount includes money you spend on deductibles, copays, and coinsurance. Once you reach your annual out-of-pocket maximum, your health plan will pay your covered medical and prescription costs for the rest of the year."
+               },
+               {
+                   "label" : "What is a deductible?",
+                   "val" : "A deductible is the amount you pay each year for most eligible medical services or medications before your health plan begins to share in the cost of covered services. For example, if you have a $2,000 yearly deductible, you'll need to pay the first $2,000 of your total eligible medical costs before your plan helps to pay."
+               }
+           ]
+       },
+
+       "transactions" : "Transactions"
+
+  }

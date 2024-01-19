@@ -1,0 +1,21 @@
+<div class="toolTip">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img
+          id="close-dialog"
+          src="assets/icon/exit.svg"
+          (click)="closeDialog()"
+          (keyup.enter)="closeDialog()"
+          tabindex="0"
+          alt="Close dialog"
+        />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="content" [innerHtml]="tooltipContent"></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

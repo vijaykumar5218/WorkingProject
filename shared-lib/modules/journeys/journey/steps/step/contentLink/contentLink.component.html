@@ -1,0 +1,23 @@
+<p
+  *ngIf="element.id === 'contentModal'"
+  (click)="openModal()"
+  (keyup.enter)="openModal()"
+  tabindex="0"
+  [id]="'contentLink' + element.idSuffix"
+>
+  {{ element.header }}
+</p>
+<journeys-steps-step-add-child-button
+  *ngIf="element.id === 'modalButton'"
+  [element]="element"
+  (click)="openModal()"
+></journeys-steps-step-add-child-button>
+<div>
+  <img
+    class="edit"
+    src="assets/icon/journeys/edit.svg"
+    alt="edit"
+    *ngIf="element.id === 'editModalButton'"
+    (click)="openModal()"
+  />
+</div>

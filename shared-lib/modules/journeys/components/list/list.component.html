@@ -1,0 +1,8 @@
+<div>
+  <ion-text>{{ headerText }}</ion-text>
+  <journeys-journey
+    *ngFor="let journey of journeys"
+    [journey]="journey"
+    [idPrefix]="idPrefix"
+  ></journeys-journey>
+</div>

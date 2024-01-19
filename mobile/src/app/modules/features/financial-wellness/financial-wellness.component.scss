@@ -1,0 +1,19 @@
+.fw-card {
+  background-image: url('/assets/fw-images/hands.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  margin: 20px 0px 20px 0px;
+
+  .fw-card-content p {
+    width: 65%;
+  }
+
+  .fw-card-link-container {
+    margin-top: 10px;
+
+    a.fw-card-link {
+      color: var(--primary-colors-voya-dark-blue);
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "highPriority": [],
+  "recent": [
+    {
+      "new": true,
+      "eventName": "MXInsight",
+      "Category_name": "Recent",
+      "Title": "$600.00 deposit received",
+      "Description": "A deposit of $600.00 was received into your Test Pulse Checking Account account.",
+      "eventStartDt": "2023-04-21T13:55:01",
+      "eventAge": "7 days ago",
+      "Link_name": "View your insights",
+      "Link_url": "/accounts/insights"
+    },
+    {
+      "new": true,
+      "eventName": "MXInsight",
+      "Category_name": "Recent",
+      "Title": "Price increase",
+      "Description": "Netflix charged you $3.34 more this month than normal. Did you upgrade your service?",
+      "eventStartDt": "2023-04-21T13:54:57",
+      "eventAge": "7 days ago",
+      "Link_name": "View your insights",
+      "Link_url": "/accounts/insights"
+    },
+    {
+      "new": true,
+      "eventName": "MXInsight",
+      "Category_name": "Recent",
+      "Title": "New fee detected",
+      "Description": "Chase charged you $5.00. It’s a good idea to ensure charges are correct and, if needed, make adjustments to avoid fees.",
+      "eventStartDt": "2023-04-21T13:54:51",
+      "eventAge": "7 days ago",
+      "Link_name": "View your insights",
+      "Link_url": "/accounts/insights"
+    },
+    {
+      "new": false,
+      "eventName": "MXInsight",
+      "Category_name": "Recent",
+      "Title": "Low balance alert",
+      "Description": "On March 7, your Low Account Balance Account account balance fell below $100.00.",
+      "eventStartDt": "2023-04-21T13:54:34",
+      "eventAge": "7 days ago",
+      "Link_name": "View your insights",
+      "Link_url": "/accounts/insights"
+    },
+    {
+      "new": false,
+      "eventName": "Journey Not Completed",
+      "Category_name": "Recent",
+      "Title": "Maximizing Your HSA",
+      "Description": "Here's a reminder that you have another step to take on your Maximizing Your HSA journey in myVoyage.",
+      "Link_name": "Tackle it now",
+      "journeyName": "Maximizing Your HSA",
+      "eventStartDt": "2023-04-21T13:29:47",
+      "eventAge": "7 days ago",
+      "Link_url": "/journeys/journey/4/steps?journeyType=all"
+    },
+    {
+      "new": false,
+      "eventName": "Login Inactivity",
+      "Category_name": "Recent",
+      "Title": "Login Inactivity",
+      "Description": "We miss you. Come back to myVoyage to see what's new on your dashboard and get on track.",
+      "eventStartDt": "2023-04-21T13:14:16",
+      "eventAge": "7 days ago"
+    },
+    {
+      "new": false,
+      "eventName": "Account Aggregated",
+      "Category_name": "Recent",
+      "Title": "Add your external account",
+      "Description": "Add in your outside accounts to power up myVoyage and get more insight into your finances.",
+      "Link_name": "Add an account",
+      "eventStartDt": "2023-04-21T13:12:06",
+      "eventAge": "7 days ago",
+      "Link_url": "/accounts/add-accounts"
+    },
+    {
+      "new": false,
+      "eventName": "Journey Not Completed",
+      "Category_name": "Recent",
+      "Title": "Saving for College",
+      "Description": "Here's a reminder that you have another step to take on your Saving for College journey in myVoyage.",
+      "Link_name": "Tackle it now",
+      "journeyName": "Saving for College",
+      "eventStartDt": "2023-04-21T13:08:32",
+      "eventAge": "7 days ago",
+      "Link_url": "/journeys/journey/5/steps?journeyType=all"
+    }
+  ]
+}

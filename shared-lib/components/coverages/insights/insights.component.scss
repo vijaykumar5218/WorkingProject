@@ -1,0 +1,423 @@
+.coverage-page {
+  display: block;
+
+  #bubbleWrapper,
+  #pieContainer {
+    display: none;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  .card-wrap {
+    box-shadow: none;
+    padding: 15px;
+    margin: 20px 20px 0 20px;
+    background-color: var(--primary-colors-voya-white);
+    border-radius: 10px;
+    z-index: 2;
+
+    & ion-grid {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      & ion-col {
+        padding-left: 0;
+        padding-right: 0;
+        &.health-checkup-img {
+          max-width: 41px;
+          margin: auto;
+        }
+        &.schedule-heading {
+          font-size: 16px;
+          margin: auto;
+          font-weight: bold;
+          padding-left: 10px;
+          color: var(--secondary-colors-voya-dark-orange);
+        }
+
+        & p {
+          font-size: 16px;
+          margin: 0;
+
+          &.schedule-link {
+            color: var(--primary-colors-voya-dark-blue);
+            border-bottom: 1px solid var(--primary-colors-voya-dark-blue);
+            display: inline-flex;
+          }
+        }
+      }
+
+      & h2 {
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--primary-colors-voya-black);
+        margin: 0 0 10px 0;
+
+        &.total-value {
+          text-align: right;
+          font-weight: bold;
+        }
+      }
+
+      & h3 {
+        font-size: 14px;
+        color: var(--secondary-colors-voya-gray);
+        margin: 0;
+      }
+
+      & .value {
+        font-weight: 600;
+      }
+
+      & .insight-footer {
+        margin-top: auto;
+
+        & .footer-data {
+          display: flex;
+
+          font-size: 14px;
+          color: var(--ion-color-dark);
+          justify-content: space-between;
+        }
+
+        & .date {
+          font-size: 14px;
+          color: var(--primary-colors-voya-black);
+          padding-bottom: 10px;
+          margin: 0 0 5px 0;
+          border-bottom: 1px solid var(--border-light-grey);
+        }
+
+        a {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.0025em;
+          text-decoration-line: underline;
+          color: var(--primary-colors-voya-dark-blue);
+          margin-top: 12px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .pie-value-cont {
+      position: relative;
+      min-height: 350px;
+      margin: auto;
+    }
+
+    .pie {
+      z-index: 2;
+      width: 320px;
+      margin: 0px -17px;
+    }
+
+    .pie-values {
+      width: 60%;
+      position: absolute;
+      left: 20%;
+      top: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 0;
+      flex-direction: column;
+
+      & p {
+        margin: 0;
+      }
+
+      & .pie-title {
+        font-size: 34px;
+        font-weight: bold;
+        color: var(--secondary-colors-voya-teal);
+      }
+      & .pie-subtitle {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--primary-colors-voya-black);
+      }
+    }
+
+    .year-toggle-btn {
+      width: 200px;
+      margin: 0 auto;
+
+      ion-segment {
+        border-radius: 20px;
+        background-color: var(--gradient-color-white);
+
+        ion-segment-button {
+          --indicator-color: var(--primary-colors-voya-white);
+          --border-radius: 20px;
+          --indicator-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.16);
+
+          ion-label {
+            font-weight: 400;
+          }
+
+          &.mouseClick {
+            &:focus {
+              box-shadow: none;
+            }
+          }
+
+          &.keyboardNavigation {
+            &:focus {
+              box-shadow: 0 0 0 2px var(--primary-colors-voya-black);
+            }
+          }
+        }
+      }
+    }
+    & .no-info {
+      text-align: center;
+      width: 75%;
+      margin: 20px auto;
+    }
+  }
+}
+.web-insights {
+  margin-bottom: 100px;
+  .half-bg {
+    background: var(--primary-colors-voya-white);
+    top: 100px;
+  }
+  .healthCheckUp-Description {
+    margin-top: 15px;
+  }
+  @media only screen and (min-width: 1300px) {
+    .coverage-page {
+      display: block;
+      .coverage-web-flex {
+        display: flex;
+      }
+      flex-direction: row;
+      .card-wrap {
+        flex-direction: column;
+        flex: auto;
+        padding: 24px;
+        margin: 20px 12px 0px 12px;
+        .year-toggle-btn {
+          width: 190px;
+        }
+      }
+      .turn-off-wrap {
+        cursor: pointer;
+      }
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 920px) {
+    .coverage-page {
+      margin-bottom: 40px;
+      display: block;
+      .coverage-web-flex {
+        display: flex;
+      }
+      .coverage-healthCheckUp {
+        .healthCheckUp-img {
+          width: 41px;
+          height: 42px;
+        }
+      }
+      .card-wrap {
+        flex-direction: column;
+        flex: auto;
+        padding: 24px;
+        margin: 20px 12px 0px 12px;
+        .year-toggle-btn {
+          width: 190px;
+        }
+      }
+      .turn-off-wrap {
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @media only screen and (min-width: 280px) and (max-width: 480px) {
+    .coverage-page {
+      margin-bottom: 2 0px;
+      .turn-off-wrap {
+        padding-bottom: 20px;
+      }
+      .coverage-web-flex {
+        .card-wrap {
+          ion-grid {
+            ion-row {
+              ion-col {
+                span#spendingInfo {
+                  h2#spendingTitle {
+                    min-width: 90%;
+                  }
+                }
+                h2.total-value {
+                  margin-top: 3px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .coverage-healthCheckUp {
+        div.card-wrap {
+          ion-grid {
+            ion-row {
+              ion-col.schedule-heading {
+                padding-left: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 1460px) {
+    .coverage-page {
+      margin-bottom: 0px;
+      .coverage-web-flex {
+        display: flex;
+        flex-direction: column;
+        div.card-wrap,
+        .card-wrap.health-card-wrap {
+          margin: 0 auto;
+          display: flex;
+          width: 400px;
+          justify-content: space-around;
+          ion-grid {
+            margin: 0px;
+            div.insight-footer {
+              ion-row {
+                ion-col {
+                  p.donut-text {
+                    border-bottom: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        div.border-line {
+          width: 721px;
+          height: 1px;
+          flex-grow: 0;
+          transform: rotate(-0.08deg);
+          background-color: var(--ion-background-color);
+        }
+      }
+      .coverage-healthCheckUp {
+        div.card-wrap {
+          ion-grid {
+            ion-row {
+              ion-col.schedule-heading {
+                padding-left: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    // Media query for tablet ,ipad potrait
+    .coverage-page {
+      margin-bottom: 0px;
+    }
+  }
+}
+.myHealthWealth {
+  @media screen and (max-width: 920px) {
+    display: none;
+  }
+  background-color: var(--secondary-colors-voya-violet);
+  padding: 10px 0px 10px 10px;
+  .myHealth-title {
+    height: 100%;
+    .myHealth-content {
+      padding: 10px;
+      .myHealth-heading {
+        margin-bottom: 10px;
+      }
+      .ths-text {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.33;
+        letter-spacing: 0.03px;
+        color: var(--primary-colors-voya-white);
+      }
+      .ths-desc {
+        font-weight: normal;
+        font-size: 16px;
+        color: var(--primary-colors-voya-white);
+      }
+      .ths-details {
+        color: var(--primary-colors-voya-white);
+        margin-top: 20px;
+        font-size: 18px;
+        .navlink {
+          color: var(--primary-colors-voya-white);
+        }
+        .view-details {
+          cursor: pointer;
+        }
+      }
+    }
+    .myHealth-img-container {
+      margin: 20px 0px auto 0px;
+      max-width: 120px;
+      padding: 0px;
+      img {
+        width: 120px;
+        height: 130px;
+      }
+    }
+  }
+}
+.half-bg {
+  height: 240px;
+  background: linear-gradient(var(--gradient-color-light-blue), var(--white));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+#spendingInfo {
+  display: flex;
+
+  #spendingTitle {
+    padding-top: 2px;
+  }
+
+  #infoImage {
+    padding-bottom: 20px;
+    padding-left: 5px;
+    cursor: pointer;
+  }
+}
+
+.mobile-insights {
+  .turn-off-wrap {
+    padding: 24px 0px 30px 0px;
+  }
+}
+.turn-off-wrap {
+  cursor: pointer;
+  div {
+    margin: auto;
+    text-align: center;
+    height: 24px;
+    font-size: 16px;
+    line-height: 1.71;
+    letter-spacing: 0.02px;
+    text-decoration: underline;
+    color: var(--primary-colors-voya-dark-blue);
+  }
+}

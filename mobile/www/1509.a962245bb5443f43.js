@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmobile=self.webpackChunkmobile||[]).push([[1509],{61509:(l,s,e)=>{e.r(s),e.d(s,{CapAttestationWeb:()=>o});var t=e(8239),n=e(68384);class o extends n.Uw{attestApplication(a){return(0,t.Z)(function*(){return console.log(a),{success:!1,error:"Not implemented"}})()}}}}]);

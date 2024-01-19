@@ -1,0 +1,14 @@
+<ion-select
+  interface="{{ this.isWeb ? 'popover' : 'action-sheet' }}"
+  [placeholder]="ariaLabel"
+  #journeySelect
+  [value]="value?.value"
+  (ionChange)="onChange(journeySelect.value)"
+  [id]="'journeySelectInput' + element.idSuffix"
+>
+  <ion-select-option
+    *ngFor="let option of element.options"
+    [value]="option.value"
+    >{{ option.label }}</ion-select-option
+  >
+</ion-select>

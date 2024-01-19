@@ -1,0 +1,22 @@
+<div id="balance-history-modal-container">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <img
+          id="close-dialog"
+          src="assets/icon/exit.svg"
+          (click)="closeModal()"
+          alt="Close dialog"
+        />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-text>{{ modalTitle }}</ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <p>{{ modalContent }}</p>
+    </ion-row>
+  </ion-grid>
+</div>

@@ -1,0 +1,26 @@
+div {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  div {
+    width: 12px;
+    height: 12px;
+    background-color: var(--secondary-colors-error-red);
+    display: inline-block;
+    border-radius: 6px;
+    margin-right: 5px;
+
+    &.in-progress {
+      background-color: var(--secondary-colors-warning-yellow);
+    }
+
+    &.completed {
+      background-color: var(--secondary-colors-green);
+    }
+  }
+  span {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--primary-colors-voya-black);
+  }
+}

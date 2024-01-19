@@ -1,0 +1,95 @@
+{
+  "sitePrimaryColor": "#003366",
+  "siteSecondaryColor": "#009dce",
+  "siteAltSecondaryColor": "#333333",
+  "dataStatus": "OK",
+  "planLogoPathMyVoya": "/static/daimlr/images/logo_mv.png",
+  "primaryNavLinks": [
+    {
+      "label": "My Information",
+      "id": "MY_PROFILE_LINKS",
+      "subLinks": [
+        {
+          "id": "RETURN_TO_VOYA",
+          "popup": false,
+          "link": "/myvoyaui/index.html#my-voya",
+          "label": "Return to myVoya",
+          "planChoiceEligible": false
+        },
+        {
+          "id": "MY_PROFILE",
+          "popup": false,
+          "link": "/myvoyaui/index.html#/my-profile",
+          "label": "My Profile",
+          "planChoiceEligible": true
+        },
+        {
+          "id": "SECURITY",
+          "popup": false,
+          "link": "/myvoyaui/index.html#my-profile/login-info/recovery",
+          "label": "Login Information",
+          "planChoiceEligible": false
+        },
+        {
+          "id": "PERSONAL_DETAIL",
+          "popup": false,
+          "link": "/myvoyaui/index.html#my-profile/personal-detail",
+          "label": "Personal Information",
+          "planChoiceEligible": false
+        },
+        {
+          "id": "LOGOUT",
+          "popup": false,
+          "link": "/myvoya/public/logout",
+          "label": "Logout",
+          "planChoiceEligible": true
+        }
+      ]
+    }
+  ],
+  "resourceLinks": {
+    "label": "More Resources",
+    "subLinks": [
+      {
+        "label": "Get Investment Advice  <span class='languageTag'>(In English)</span>",
+        "link": "/myvoya/link?type=fe&token=urlResourceType%3DFEISSOLINK%26s%3DH7jGNFykQzy5RdWa4Q07eA11.i9290%26clientId%3DDAIMLR%26vendorId%3DFEI%26d%3D10ec95fe1e8279012923e3cc5345df74b6d0d864",
+        "popup": false,
+        "order": 0
+      },
+      {
+        "label": "TD Ameritrade Account",
+        "link": "http://www.tdameritraderetirement.com/",
+        "popup": false,
+        "order": 0
+      },
+      {
+        "label": "Download Transactions to Quicken",
+        "link": "/eportal/preauth.do?s=H7jGNFykQzy5RdWa4Q07eA11.i9290&page=TXDOWNLOAD&section=quicken&d=09dead1adf091edf64afb4b72bf492c0b9ffee3d",
+        "popup": false,
+        "order": 0
+      },
+      {
+        "label": "Download Transactions to Money",
+        "link": "/eportal/preauth.do?s=H7jGNFykQzy5RdWa4Q07eA11.i9290&page=TXDOWNLOAD&section=money&d=8cec4783c069bbcb8173ca444b639fdbb0c93e34",
+        "popup": false,
+        "order": 0
+      },
+      {
+        "label": "Download Transactions to Excel",
+        "link": "/eportal/preauth.do?s=H7jGNFykQzy5RdWa4Q07eA11.i9290&page=TXDOWNLOAD&section=excel&d=e8ada4e48b3a76740b18089021d50dab7002395e",
+        "popup": false,
+        "order": 0
+      }
+    ]
+  },
+  "clientName": "Web Site!",
+  "displayName": "ROMEO HARLEY-DP",
+  "contactUs": {
+    "label": "Contact Us",
+    "link": "/einfo/contactus.aspx?cl=DAIMLR&domain=daimler.intg.voya.com&s=H7jGNFykQzy5RdWa4Q07eA11.i9290&pl=740013%2C740015%2C740001%2C&d=f2dc15af6aba1d5e10e90589ee3ee2efc6026ab6",
+    "popup": false,
+    "order": 0
+  },
+  "searchUrl": "/einfo/search/links?cl=DAIMLR&pl=&plan=&domain=daimler.intg.voya.com&s=H7jGNFykQzy5RdWa4Q07eA11.i9290&d=d6adad8f2f9c29e08eb4f22b9dde2ea7ee28e25d",
+  "logoUrl": "/myvoyaui/index.html#/retirement/home"
+}

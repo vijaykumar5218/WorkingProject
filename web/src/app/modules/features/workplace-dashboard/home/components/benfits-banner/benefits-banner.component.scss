@@ -1,0 +1,49 @@
+@import '../../../../../../../../../styles/mediaVariables.scss';
+.benefit-content {
+  background: var(--primary-colors-voya-dark-blue);
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px 20px 5px 5px;
+  .benefit-image-col {
+    max-width: 68px;
+    margin-right: 10px;
+  }
+  @include desktop {
+    margin-left: 20px;
+  }
+  .benefit-text {
+    @media screen and (min-width: 800px) {
+      div {
+        margin-right: 20px;
+        width: 100%;
+        .benefit-button {
+          text-align: end;
+        }
+      }
+      display: flex;
+    }
+  }
+  .header {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .content {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  p {
+    margin: 0px;
+    color: var(--ion-color-white);
+  }
+  ion-button {
+    margin-top: 12px;
+    --background: var(--ion-color-white);
+    --color: var(--primary-colors-voya-dark-blue);
+    width: 106px;
+    height: 28px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}

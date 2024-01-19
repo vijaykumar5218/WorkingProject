@@ -1,0 +1,76 @@
+ion-progress-bar {
+  width: 354px;
+  margin: 15px auto 20px auto;
+  display: block;
+}
+
+ion-card {
+  background-color: var(--primary-colors-voya-white);
+  border-radius: var(--card-border-radius);
+  font-size: 16px;
+  color: var(--primary-colors-voya-black);
+  font-family: var(--ion-font-family);
+
+  ion-card-header ion-card-title p {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  ion-card-content {
+    margin: 0 0 20px 1px;
+    line-height: 1.25;
+    text-align: left;
+
+    .fw-field-header {
+      color: var(--primary-colors-voya-black);
+      margin-bottom: 8px;
+      margin-top: 20px;
+    }
+    .fw-card-intro {
+      margin: 0;
+    }
+    .fw-field-input {
+      height: 40px;
+    }
+
+    ion-input,
+    ion-select {
+      border: 1px solid var(--secondary-colors-medium-gray-2);
+      border-radius: 4px;
+      width: auto;
+      color: var(--primary-colors-voya-black);
+      --padding-start: 16px;
+    }
+
+    ion-input.invalid,
+    ion-select.invalid {
+      border-color: var(--color-warning);
+    }
+    ion-radio.invalid {
+      border: 2px solid var(--color-warning);
+    }
+
+    .fw-continue-button {
+      height: 40px;
+      width: 220px;
+      margin: 60px auto 20px auto;
+      display: block;
+    }
+    .fw-back-link-container {
+      margin: auto;
+      text-align: center;
+    }
+    .fw-back-link {
+      text-decoration: none;
+      color: var(--primary-colors-voya-dark-blue);
+    }
+    .fw-form-submit-error {
+      color: var(--color-warning);
+      margin: 15px;
+    }
+    .fw-input-error {
+      border: 1px solid var(--color-warning);
+      color: var(--color-warning);
+    }
+  }
+}

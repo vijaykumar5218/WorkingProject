@@ -1,0 +1,69 @@
+<ion-grid
+  [ngClass]="myWorkplaceDashboardEnabled? 'myWorkplaceDashboard':'myvoyage'"
+>
+  <div class="linear-gradient">
+    <div class="max-width">
+      <ion-row
+        [ngClass]="isReviewPage? 'review-height coverages-tab':'non-review-height coverages-tab'"
+      >
+        <ion-col class="left-col">
+          <ion-card class="left-card cov-scrollable">
+            <ion-row class="my-coverage">
+              <ion-col class="shieldText">
+                <img
+                  alt="shield"
+                  class="shield-svg"
+                  src="assets/icon/benefits/shield-filled.svg"
+                />
+                <ion-text>
+                  {{pageData.my_coverage}}
+                </ion-text>
+              </ion-col>
+            </ion-row>
+
+            <ion-row
+              class="allCoverage"
+              [ngStyle]="{'width':isAllPlansSelected ? '408px' : 'auto' }"
+              tabindex="0"
+              (keydown.enter)="clickAllPlans()"
+              (click)="clickAllPlans()"
+              id="all-plans-clicked"
+              tabindex="0"
+            >
+              <ion-col class="square-box">
+                <img
+                  alt="compass"
+                  class="navigator-image"
+                  src="assets/icon/navigator-logo.png"
+                />
+              </ion-col>
+              <ion-col class="allCoverage-text">
+                <ion-text>{{pageData.allCoverage}}</ion-text>
+              </ion-col>
+            </ion-row>
+
+            <app-plans></app-plans>
+          </ion-card>
+        </ion-col>
+
+        <ion-col class="right-col">
+          <ion-card class="right-card">
+            <ion-router-outlet
+              [animated]="false"
+              class="focused-element-coverages"
+              tabindex="0"
+              #focusedElementCoverages
+            >
+            </ion-router-outlet>
+          </ion-card>
+          <app-footer-desktop
+            *ngIf="myWorkplaceDashboardEnabled"
+            class="small-device-dashboard-footer"
+          ></app-footer-desktop>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  <app-footer-desktop class="footer-desktop"></app-footer-desktop>
+</ion-grid>

@@ -1,0 +1,14 @@
+{
+  "login": {
+    "userName": "U418190483",
+    "passwordLastChangedDate": "N/A",
+    "canEditInfo": true
+  },
+  "security": {
+    "accountRecoveryInfo": {
+      "primaryRecoveryMethod": "email",
+      "email": "Information  not available"
+    },
+    "additionalLinks": []
+  }
+}

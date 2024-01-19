@@ -1,0 +1,14 @@
+@media screen and (min-width: 842px) {
+  voya-global-nav {
+    &.dashboard-header {
+      height: 0px;
+      padding: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 842px) {
+  voya-global-nav {
+    padding-bottom: 0px;
+  }
+}

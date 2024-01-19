@@ -1,0 +1,57 @@
+<ion-grid class="popup-modal">
+  <ion-row class="close-icon">
+    <ion-col>
+      <ion-icon (click)="closeDialog()" name="close-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <ion-header>
+    <ion-toolbar mode="ios">
+      <ion-title>{{ pageText.title }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-row>
+    <ion-col>
+      <ion-text class="font-16">{{ screenMessage?.WealthCoachDesc }}</ion-text>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <div
+        class="font-16"
+        [innerHTML]="screenMessage?.WealthCoachStatementText"
+      ></div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="mt-42">
+    <ion-col size-md="3" size-sm="2.5" size-xs="2.5"> </ion-col>
+    <ion-col>
+      <ion-button
+        size="small"
+        id="book-apoint"
+        class="font-16"
+        name="submit"
+        shape="round"
+        expand="block"
+        color="btncolor"
+        type="submit"
+        (click)="openTimeTapUrl()"
+        >{{
+          settingsDisplayFlags?.suppressAppointment
+            ? pageText.buttonStatement
+            : pageText.button
+        }}
+      </ion-button></ion-col
+    >
+    <ion-col size-md="3" size-sm="2.5" size-xs="2.5"></ion-col>
+  </ion-row>
+  <ion-row class="disclosure-text-row">
+    <ion-col>
+      <ion-text class="disclosure-text font-16">
+        {{ screenMessage?.ContactCoachDisclosure }}
+      </ion-text>
+    </ion-col>
+  </ion-row>
+</ion-grid>

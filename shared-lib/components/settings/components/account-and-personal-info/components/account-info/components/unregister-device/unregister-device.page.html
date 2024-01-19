@@ -1,0 +1,35 @@
+<ion-grid class="ion-no-margin mt-20">
+  <div class="message" *ngFor="let item of screenMessage?.message">
+    <p>{{item}}</p>
+  </div>
+  <ion-row class="mt-42"
+    ><ion-col size-md="2" size-sm="2" size-xs="2"></ion-col
+    ><ion-col>
+      <ion-button
+        size="small"
+        id="no-btn"
+        class="font-16"
+        name="submit"
+        shape="round"
+        expand="block"
+        color="btncolor"
+        fill="outline"
+        (click)="goBack()"
+        >{{ displayText.button.no }}
+      </ion-button></ion-col
+    >
+    <ion-col>
+      <ion-button
+        size="small"
+        id="yes-btn"
+        class="font-16"
+        name="submit"
+        shape="round"
+        expand="block"
+        color="btncolor"
+        type="submit"
+        >{{ displayText.button.yes }}
+      </ion-button></ion-col
+    ><ion-col size-md="2" size-sm="2.5" size-xs="2.5"></ion-col>
+  </ion-row>
+</ion-grid>

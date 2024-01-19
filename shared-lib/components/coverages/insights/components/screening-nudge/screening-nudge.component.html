@@ -1,0 +1,25 @@
+<ion-card [ngClass]="{'web-card': isWeb}">
+  <ion-grid>
+    <ion-row class="title-row">
+      <img
+        class="title-img"
+        src="{{ content?.title_img_url }}"
+        alt="{{ content?.title_img_alt }}"
+      />
+      <span class="title">{{ content?.title }}</span>
+    </ion-row>
+    <ion-row class="body-row">
+      <div>
+        <span class="body" innerHTML="{{ content?.body }}"></span>
+        <img
+          class="body-img"
+          src="{{ content?.body_img_url }}"
+          alt="{{ content?.body_img_alt }}"
+        />
+      </div>
+    </ion-row>
+    <ion-row class="footer-row" *ngIf="content?.footer_text?.length > 0">
+      {{ content?.footer_text }}
+    </ion-row>
+  </ion-grid>
+</ion-card>

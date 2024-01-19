@@ -1,0 +1,49 @@
+<div
+  [ngClass]="
+    isWeb
+      ? 'steps-button-web'
+      : noSpacing
+      ? 'steps-button-mobile'
+      : 'spacing steps-button-mobile'
+  "
+>
+  <ion-row>
+    <ion-col class="back-link">
+      <ion-row
+        class="back-btn-section"
+        tabindex="0"
+        automation-id="back-btn"
+        *ngIf="isActiveBackBtn && isWeb"
+        (keyup.enter)="handleBackClick()"
+        (click)="handleBackClick()"
+        [ngStyle]="{
+          color: backBtnColor
+        }"
+      >
+        <ion-col class="back-arrow">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </ion-col>
+        <ion-col class="back-txt">
+          <span>{{ content.backButton }}</span>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col class="continue-button">
+      <ion-button
+        size="small"
+        class="font-18 save-button"
+        [color]="type === 'secondary' ? '' : 'btncolor'"
+        name="submit"
+        shape="round"
+        expand="block"
+        type="submit"
+        (click)="handleClick()"
+        [ngClass]="{secondary: type === 'secondary'}"
+        [id]="'journeyButton' + idSuffix"
+        [attr.disabled]="disabled ? disabled : null"
+        >{{ label }}</ion-button
+      >
+    </ion-col>
+    <ion-col class="back-link"></ion-col>
+  </ion-row>
+</div>

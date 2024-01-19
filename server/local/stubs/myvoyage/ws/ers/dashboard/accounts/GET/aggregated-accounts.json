@@ -1,0 +1,79 @@
+{
+  "hasMXAccount": false,
+  "categorizedAccounts": [
+    {
+      "accType": "Investment",
+      "enrollEligible": false,
+      "accountsCount": 3,
+      "accountsTotalBalance": 148389.62000000002,
+      "accounts": [
+        {
+          "agreementId": "8B308019A0CC107653A4A2FF35CFDDC7E12CABEEE69ABA2544EEA814032A2984",
+          "accountTitle": "VOYA 401(K) SAVINGS PLAN",
+          "accountType": "Investment",
+          "accountBalance": "146215.26",
+          "accountBalanceAsOf": "10/23/2023",
+          "sourceSystem": "EASE",
+          "suppressTab": false,
+          "clientId": "INGWIN",
+          "planId": "776991",
+          "planType": "DC",
+          "planLink": "/myvoyageui/#/accounts/retirement/776991/info",
+          "actualPlanLink": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/details/8B308019A0CC107653A4A2FF35CFDDC7E12CABEEE69ABA2544EEA814032A2984?clientId=INGWIN&domain=voyaretirement.intg.voya.com",
+          "planName": "VOYA 401(K) SAVINGS PLAN",
+          "accountNumber": "776991@INGWIN@871827530",
+          "isVoyaAccessPlan": false
+        },
+        {
+          "accountTitle": "2023 Health Reimbursement Arrangment",
+          "accountType": "Investment",
+          "accountBalance": "1366.7",
+          "accountBalanceAsOf": "10/24/2023",
+          "sourceSystem": "WEX",
+          "suppressTab": false,
+          "planId": "994772",
+          "planType": "HRA",
+          "planLink": "/myvoyageui/#/accounts/retirement/994772/info",
+          "planName": "2023 Health Reimbursement Arrangment",
+          "isVoyaAccessPlan": false
+        },
+        {
+          "accountTitle": "2022 Health Care Account",
+          "accountType": "Investment",
+          "accountBalance": "807.66",
+          "accountBalanceAsOf": "10/24/2023",
+          "sourceSystem": "WEX",
+          "suppressTab": false,
+          "planId": "994785",
+          "planType": "MedicalFlex",
+          "planLink": "/myvoyageui/#/accounts/retirement/994785/info",
+          "planName": "2022 Health Care Account",
+          "isVoyaAccessPlan": false
+        }
+      ]
+    }
+  ],
+  "snapshotAccounts": {
+    "totalBalance": 148389.62000000002,
+    "accounts": [
+      {
+        "accountTitle": "VOYA 401(K) SAVINGS PLAN",
+        "accountBalance": "146215.26",
+        "planId": 776991,
+        "planLink": "/myvoyageui/#/accounts/retirement/776991/info"
+      },
+      {
+        "accountTitle": "2023 Health Reimbursement Arrangment",
+        "accountBalance": "1366.7",
+        "planId": "994772",
+        "planLink": "/myvoyageui/#/accounts/retirement/994772/info"
+      },
+      {
+        "accountTitle": "2022 Health Care Account",
+        "accountBalance": "807.66",
+        "planId": "994785",
+        "planLink": "/myvoyageui/#/accounts/retirement/994785/info"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "navbarItems": [
+    {"text": "Home", "link": "/myvoyageui/#/home", "id": "HOME"},
+    {
+      "text": "Accounts",
+      "link": "/myvoyageui/#/accounts",
+      "id": "ACCOUNTS"
+    },
+    {
+      "text": "Coverages",
+      "link": "/myvoyageui/#/coverages",
+      "id": "COVERAGES"
+    },
+    {
+      "text": "Life Events",
+      "link": "/myvoyageui/#/journeys",
+      "id": "LIFE_EVENTS"
+    },
+    {"text": "Help", "link": "/myvoyageui/#/help/faq", "id": "HELP_ITEMS"}
+  ],
+  "dropdownItems": [
+    {
+      "text": "Notifications",
+      "link": "/myvoyageui/#/notification",
+      "id": "notification_dropdown_navbar_item"
+    },
+    {
+      "text": "Settings",
+      "link": "/myvoyageui/#/settings",
+      "id": "settings_dropdown_navbar_item"
+    },
+    {
+      "text": "Sign out",
+      "link": "/myvoyageui/#/logout",
+      "id": "logout_dropdown_navbar_item"
+    }
+  ],
+  "headerNames": [
+    {"text": "Edit Email", "path": "edit-email"},
+    {"text": "Edit Display Name", "path": "edit-display-name"},
+    {"text": "Edit/Add Mobile", "path": "edit-phone"}
+  ]
+}

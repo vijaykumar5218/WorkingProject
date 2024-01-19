@@ -1,0 +1,80 @@
+<div [ngClass]="isWeb ? 'web-plans-details' : 'mobile-plans-details'">
+  <ion-row class="outerContainer bg-color">
+    <div class="inner-container">
+      <div class="half-bg" #topmostElement></div>
+      <ion-grid class="basic-wrap">
+        <ion-row>
+          <ion-col size="8">
+            <div class="ion-text-start display-name">
+              <app-loading-text [isLoading]="!covExplanation">
+                <ng-container *ngFor="let data of covExplanation?.Benefit">
+                  <p *ngIf="selectedBenefit?.type == data.benefit_type">
+                    {{ data.benefit_type_title }}
+                  </p>
+                </ng-container>
+              </app-loading-text>
+            </div>
+          </ion-col>
+          <ion-col size="4" class="logo-c">
+            <img
+              src="{{ (benefitContent?.iconMapping)[selectedBenefit?.type] }}"
+              alt=""
+            />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <app-as-of
+        class="inputComponent"
+        [benefit]="selectedBenefit"
+        [coverageDeduct]="deductible"
+      ></app-as-of>
+
+      <app-my-id-card
+        *ngIf="
+          selectedBenefit?.type == 'medical_plan' ||
+          selectedBenefit?.type == 'dental_plan' ||
+          selectedBenefit?.type == 'vision_plan'
+        "
+        [benefitId]="selectedBenefit?.id"
+      ></app-my-id-card>
+
+      <ng-container
+        *ngIf="
+          selectedBenefit?.plan_summary?.groups.length > 0 &&
+          (selectedBenefit?.plan_summary?.groups)[0]?.items.length > 0
+        "
+      >
+        <div class="featured-header">
+          <p>
+            Featured Details
+          </p>
+        </div>
+        <div *ngFor="let group of selectedBenefit?.plan_summary?.groups">
+          <app-cov-extra-details
+            [planSummaryGroup]="group"
+            [notes]="selectedBenefit?.plan_summary.footnotes"
+          ></app-cov-extra-details>
+        </div>
+      </ng-container>
+
+      <app-dependents
+        class="inputComponent"
+        [dependent]="dependentsData"
+        *ngIf="
+          selectedBenefit?.type == 'medical_plan' ||
+          selectedBenefit?.type == 'dental_plan' ||
+          selectedBenefit?.type == 'vision_plan'
+        "
+      ></app-dependents>
+
+      <app-cov-explanations
+        class="inputComponent"
+        [covExp]="covExplanation"
+        [cType]="this.selectedBenefit?.type"
+      >
+      </app-cov-explanations>
+    </div>
+  </ion-row>
+  <app-med-disclaimer></app-med-disclaimer>
+</div>

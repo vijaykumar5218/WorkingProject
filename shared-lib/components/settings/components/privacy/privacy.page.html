@@ -1,0 +1,36 @@
+<ion-grid>
+  <div [ngClass]="isWeb? 'web-privacy':'mobile-privacy'">
+    <ion-row>
+      <ion-col>
+        <label class="ion-no-padding font-18 font-w-600"
+          >{{privacyText.privacy.privacyHeader}}</label
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="privacy-text">{{privacyText.privacy.privacyText}}</p>
+        <p class="mt-20">{{privacyText.privacy.privacyTextTwo}}</p>
+      </ion-col></ion-row
+    >
+
+    <ion-row class="mt-42">
+      <ion-button
+        size="small"
+        (click)="goToPrivacyWebView()"
+        id="view-privacy-notice"
+        class="font-18"
+        name="view-privacy-notice"
+        shape="round"
+        expand="block"
+        color="btncolor"
+        ><img
+          id="lockicon"
+          alt="lock"
+          src="assets/icon/lock_black_24dp.svg"
+          class="icon-lock"
+        />{{privacyText.buttonText}}
+      </ion-button>
+    </ion-row>
+  </div>
+</ion-grid>

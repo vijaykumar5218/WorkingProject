@@ -1,0 +1,32 @@
+{
+  "billingPayments": {
+    "header": "Billing and Payments",
+    "nonAutoPay": {
+      "noPaymentDue": {
+        "message": "You have no payment due at this time."
+      },
+      "paymentDue": {
+        "message": "Action Required: You have a total payment due of ${{totalPaymentDue}}.",
+        "isShowAlertIcon": true,
+        "linkName": "Make a payment"
+      }
+    },
+    "autoPay": {
+      "noPaymentDue": {
+        "message": "You have no scheduled payment due at this time."
+      },
+      "paymentDue": {
+        "message": "You have a total scheduled payment due of ${{totalPaymentDue}}.",
+        "linkName": "View your account"
+      }
+    }
+  },
+  "claims": {
+    "header": "Claims",
+    "message": "Action Required: One of your claims needs your attention. <a class='linkcolor' href=''>View Details</a>",
+    "claimLinks": [
+      "<a class='linkcolor' href=''>File a claim</a>",
+      "<a class='linkcolor' href=''>View claims activity</a>"
+    ]
+  }
+}

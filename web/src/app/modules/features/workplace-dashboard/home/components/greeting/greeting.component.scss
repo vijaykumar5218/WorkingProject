@@ -1,0 +1,56 @@
+.greeting-txt {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-colors-voya-black);
+  line-height: 24px;
+  letter-spacing: 0.0015em;
+  padding: 5px 0px 0px 20px;
+  @media screen and (max-width: 842px) {
+    padding-left: 0px;
+  }
+
+  h6 {
+    margin-top: 18px;
+  }
+
+  @media screen and (min-width: 1351px) and (max-width: 1441px) {
+    h6 {
+      margin-top: 22px;
+    }
+  }
+  @media screen and (min-width: 1442px) and (max-width: 1550px) {
+    h6 {
+      margin-top: 8px;
+    }
+  }
+  @media screen and (min-width: 1550px) and (max-width: 1750px) {
+    h6 {
+      margin-top: 15px;
+    }
+  }
+  @media screen and (min-width: 1750px) and (max-width: 2000px) {
+    h6 {
+      margin-top: 20px;
+    }
+  }
+  @media screen and (min-width: 2000px) and (max-width: 2400px) {
+    h6 {
+      margin-top: 35px;
+    }
+  }
+  @media screen and (min-width: 2400px) {
+    h6 {
+      margin-top: 45px;
+    }
+  }
+}
+
+h4 {
+  margin-top: -5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.0025em;
+}

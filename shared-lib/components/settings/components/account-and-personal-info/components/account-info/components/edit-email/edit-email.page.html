@@ -1,0 +1,72 @@
+<ion-grid class="ion-no-margin p-20">
+  <div [ngClass]="isWeb? 'web-edit-email':'mobile-edit-email'">
+    <ion-row>
+      <ion-col>
+        <div class="input-header">{{ displayText.nameLabel }}</div>
+      </ion-col>
+    </ion-row>
+    <ion-row
+      ><ion-col>
+        <ion-input
+          class="edit-email"
+          id="editEmail"
+          name="editEmail"
+          type="email"
+          inputmode="email"
+          pattern="email"
+          autocomplete="email"
+          [value]="email"
+          #editEmailInput
+          (ionChange)="valueChanged(editEmailInput.value)"
+          clearInput
+        ></ion-input> </ion-col
+    ></ion-row>
+    <ion-row *ngIf="!emailVailid">
+      <ion-col>
+        <ion-icon
+          class="error-icon"
+          src="assets/icon/warning.svg"
+          alt="warning"
+        ></ion-icon
+        ><ion-text class="error"
+          >{{ displayText.errors.invalidEmail }}</ion-text
+        >
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="buttons"
+      ><ion-col size="2"></ion-col
+      ><ion-col>
+        <ion-button
+          size="small"
+          id="cancel-btn"
+          class="font-12"
+          name="submit"
+          shape="round"
+          expand="block"
+          color="btncolor"
+          fill="outline"
+          (click)="cancel()"
+          >{{ displayText.button.cancel }}
+        </ion-button></ion-col
+      >
+      <ion-col>
+        <ion-button
+          size="small"
+          id="save-btn"
+          class="font-12"
+          name="submit"
+          shape="round"
+          expand="block"
+          color="btncolor"
+          (click)="saveEmail()"
+          disabled
+          [attr.disabled]="!emailVailid"
+          >{{ displayText.button.save }}
+        </ion-button></ion-col
+      ><ion-col size="2"></ion-col>
+    </ion-row>
+
+    <app-legal></app-legal>
+  </div>
+</ion-grid>

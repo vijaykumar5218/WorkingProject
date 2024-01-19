@@ -1,0 +1,18 @@
+<ion-searchbar
+  class="journeySearchbar"
+  [placeholder]="element?.label ? element.label : 'Search'"
+  #journeySearchbar
+  [automation-id]="'journeySearchbar' + element?.idSuffix"
+  (click)="!isWeb ? searchInput() : searchbarInput(journeySearchbar.value)"
+  (ionInput)="isWeb ? searchbarInput(journeySearchbar.value) : ''"
+  (ionChange)="deleteSelectedItem(journeySearchbar.value)"
+  [value]="searchValue"
+></ion-searchbar>
+<ion-card *ngIf="isWeb && showFilteredList">
+  <journeys-steps-step-input-typeahead
+    [element]="element"
+    [searchValue]="searchValue"
+    (itemSelected)="getSelectedItem($event)"
+    [isWeb]="isWeb"
+  ></journeys-steps-step-input-typeahead>
+</ion-card>

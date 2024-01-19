@@ -1,0 +1,521 @@
+@import '../../../../../../../styles/mediaVariables.scss';
+:host {
+  @media screen and (min-width: 901px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 900px) {
+    margin-bottom: 100px;
+  }
+
+  .workplace-dashboard {
+    @include desktop {
+      margin-top: 5px;
+    }
+  }
+  div.expand-collapse {
+    display: flex;
+    justify-content: flex-end;
+    span {
+      cursor: pointer;
+      margin-right: 20px;
+      margin-top: 25px;
+      color: var(--primary-colors-voya-dark-blue);
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  }
+  .background-image {
+    position: absolute;
+  }
+}
+
+ion-card.view-card app-balance-history-graph {
+  padding: 20px 20px 20px 40px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#boost-messages {
+  margin-top: 130px;
+}
+
+.loan-card {
+  padding-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+ion-grid {
+  overflow-y: unset;
+  app-benefits-banner {
+    &.tab-and-web {
+      @media screen and (min-width: 280px) and (max-width: 920px) {
+        display: none;
+      }
+    }
+
+    &.mobile {
+      @media screen and (min-width: 920px) {
+        display: none;
+      }
+    }
+  }
+  .right {
+    float: right;
+  }
+  .mx-error-background {
+    background: #daf1fd;
+  }
+  .morning {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    @media screen and (min-width: 1440px) {
+      content: url('~assets/workplace-dashboard/desktop-morning-background.png');
+    }
+    @media screen and (min-width: 834px) and (max-width: 1194px) {
+      content: url('~assets/workplace-dashboard/morning-tablet-background.svg');
+    }
+    @media screen and (max-width: 834px) {
+      content: url('~assets/workplace-dashboard/mobile-morning-background.svg');
+    }
+    @media screen and (min-width: 1194px) and (max-width: 1440px) {
+      content: url('~assets/workplace-dashboard/morning.png');
+    }
+  }
+  .afternoon {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    @media screen and (min-width: 1440px) {
+      content: url('~assets/workplace-dashboard/desktop-afternoon-background.png');
+    }
+    @media screen and (min-width: 834px) and (max-width: 1194px) {
+      content: url('~assets/workplace-dashboard/afternoon-tablet-background.svg');
+    }
+    @media screen and (max-width: 834px) {
+      content: url('~assets/workplace-dashboard/mobile-afternoon-background.svg');
+    }
+    @media screen and (min-width: 1194px) and (max-width: 1440px) {
+      content: url('~assets/workplace-dashboard/afternoon.png');
+    }
+  }
+  .evening {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    @media screen and (min-width: 1440px) {
+      content: url('~assets/workplace-dashboard/desktop-evening-background.svg');
+    }
+    @media screen and (min-width: 834px) and (max-width: 1194px) {
+      content: url('~assets/workplace-dashboard/evening-tablet-background.svg');
+    }
+    @media screen and (max-width: 834px) {
+      content: url('~assets/workplace-dashboard/mobile-evening-background.svg');
+    }
+    @media screen and (min-width: 1194px) and (max-width: 1440px) {
+      content: url('~assets/workplace-dashboard/evening.svg');
+    }
+  }
+  .mrg-top-80 {
+    margin-top: 80px;
+  }
+
+  .mrg-all-20 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .background-banner {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    min-height: 750px;
+    .max-width {
+      max-width: 1440px;
+      margin: auto;
+      padding: 0px 20px;
+      .greeting-row {
+        @include desktop {
+          display: flex;
+          .center-aligned {
+            width: 68%;
+            margin: auto;
+            margin-top: -8px;
+          }
+        }
+        @include tablet {
+          display: block;
+        }
+        @media screen and (min-width: 1240px) {
+          padding-right: 20px;
+        }
+        width: 100%;
+      }
+      .right-cards {
+        width: 100%;
+        &.center-aligned {
+          @media screen and (min-width: 1194px) {
+            width: 66%;
+          }
+          @media screen and (min-width: 1200px) {
+            margin-top: -12px;
+          }
+        }
+        @include desktop {
+          .benefitsCoverageRightCard {
+            display: block;
+          }
+        }
+        @include tablet {
+          .benefitsCoverageRightCard {
+            display: none;
+          }
+        }
+        .view-card {
+          @include tablet {
+            margin: 20px 0px;
+          }
+          @include desktop {
+            margin: 20px 0px 20px 20px;
+          }
+        }
+        .responsive {
+          @include tablet {
+            display: block;
+          }
+          @include desktop {
+            display: none;
+          }
+        }
+        .snapshot-responsive {
+          @media screen and (min-width: 1194px) {
+            display: none;
+          }
+        }
+        .translation-responsive {
+          @media screen and (min-width: 1194px) {
+            display: none;
+          }
+        }
+      }
+      @media screen and (max-width: 800px) {
+        display: block;
+      }
+      .app-greeting {
+        @include desktop {
+          min-width: 32%;
+          max-width: 32%;
+          .desktop {
+            display: block;
+          }
+          .benefitsCoverage {
+            display: none;
+          }
+        }
+        @include tablet {
+          min-width: 100%;
+          max-width: 100%;
+          display: flex;
+
+          @media screen and (max-width: 600px) {
+            display: block;
+            .greeting-component {
+              max-width: 100%;
+              min-width: 100%;
+            }
+          }
+          @media screen and (min-width: 600px) {
+            .greeting-component {
+              max-width: 34%;
+              min-width: 34%;
+            }
+          }
+          .desktop {
+            display: none;
+          }
+          .benefitsCoverage {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .workplace-row-content {
+      .greeting {
+        @include desktop {
+          max-width: 34%;
+        }
+        &.padding-top {
+          padding-top: 27px;
+        }
+      }
+      @media screen and (min-width: 921px) {
+        .view-card {
+          margin-left: 0px;
+        }
+        .app-advisors-page {
+          margin: 0px 20px;
+        }
+      }
+      @media screen and (min-width: 601px) {
+        .catchup-tile {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        display: block;
+        ion-card {
+          margin: 20px 0px;
+        }
+      }
+      @media screen and (min-width: 801px) and (max-width: 920px) {
+        margin-left: -20px;
+        margin-right: -20px;
+        .mr-10 {
+          margin: 0px 20px;
+        }
+        .advisors-col-tab {
+          margin-left: 20px;
+        }
+      }
+      @include desktop {
+        margin-bottom: -20px;
+        .journey-advisors {
+          display: flex;
+          .advisors-col-tab {
+            display: block;
+          }
+          .advisors-col-mobile {
+            display: none;
+          }
+          .journey-col {
+            margin-left: 10px;
+          }
+        }
+      }
+      @include tablet {
+        margin-bottom: -20px;
+        .journey-advisors {
+          display: block;
+          .advisors-col-tab {
+            display: none;
+          }
+          .advisors-col-mobile {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .responsive-card {
+    max-width: auto;
+    height: auto;
+    margin: auto;
+    @media screen and (min-width: 280px) and (max-width: 920px) {
+      display: block;
+      ion-card {
+        margin: 20px 0px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 920px) {
+    min-height: 254px;
+    background-size: 100%;
+    background-position: top center;
+  }
+}
+
+#select-benefits-banner {
+  max-width: 1440px;
+}
+
+.tiles-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 91px;
+  @media screen and (min-width: 280px) and (max-width: 920px) {
+    margin: 20px 0 60px 0;
+    flex-direction: column;
+  }
+  app-medical-spending {
+    @media screen and (min-width: 768px) and (max-width: 920px) {
+      margin-bottom: 35px;
+      margin-top: -42px;
+    }
+    @media screen and (min-width: 280px) and (max-width: 767px) {
+      margin-bottom: -10px;
+      margin-top: 10px;
+    }
+  }
+  ion-card {
+    width: 422px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 0px 20px;
+    .view-networth {
+      font-weight: 600;
+    }
+
+    @media screen and (min-width: 921px) and (max-width: 1330px) {
+      // Tablet landscape
+      width: 356px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 920px) {
+      // Tablet Potrait
+      height: 359px;
+      width: auto;
+      &.journey-recommended {
+        height: 446px !important;
+        margin-bottom: 24px;
+      }
+      &.finstrong-score {
+        height: 100%;
+        margin-bottom: 24px;
+      }
+    }
+    @media screen and (min-width: 280px) and (max-width: 767px) {
+      // Mobile potrait & landscape
+      height: 100%;
+      width: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      &.journey-recommended {
+        margin-bottom: 0px;
+      }
+    }
+    ion-card-header {
+      padding-top: 10px;
+      padding-bottom: 0px;
+      color: var(--primary-colors-voya-black);
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+      }
+      .journey-recommended-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--primary-colors-voya-black);
+      }
+    }
+    ion-card-content {
+      .journey-recommended-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 31px 10px 11px 10px;
+        ion-text {
+          font-weight: 600;
+          color: var(--primary-colors-voya-black);
+          font-size: 18px;
+          line-height: 16px;
+          letter-spacing: 0.0015em;
+        }
+        journeys-status {
+          font-size: 16px;
+        }
+      }
+      .journey-recommended-msg-section {
+        margin: 0px 10px;
+        .journey-recommended-msg {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.005em;
+          text-align: left;
+          color: var(--primary-colors-voya-black);
+        }
+      }
+      .journey-btn-section {
+        padding-top: 63px;
+        text-align: center;
+      }
+      .finstrong-score-btn-section {
+        padding-top: 15px;
+        text-align: center;
+      }
+      .journey-button,
+      .journeyImg {
+        display: block;
+        margin: auto;
+        width: 236px;
+        height: 192px;
+      }
+    }
+  }
+}
+
+#boost-button {
+  color: var(--primary-colors-voya-black);
+  border: 2px solid var(--primary-colors-voya-black);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 920px) {
+  .networth-web-view {
+    display: none;
+  }
+  .networth-mobile-view {
+    display: block;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 920px) {
+  div.mx-net-worth-home {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .networth-web-view {
+    display: block;
+    margin-top: 7px;
+  }
+  .networth-mobile-view {
+    display: none;
+  }
+}
+
+.display-block {
+  display: block !important;
+  .app-greeting {
+    margin-top: 0px;
+  }
+}
+.myBenefitLink {
+  padding: 40px 40px 40px 20px;
+  margin-right: 0px;
+  caret-color: var(--ion-color-btncolor);
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--primary-colors-voya-dark-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 0.3px;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  text-underline-position: from-font;
+}
+.margin-bottom {
+  .app-greeting {
+    .greeting-component {
+      @media screen and (min-width: 1193px) and (max-width: 1200px) {
+        margin-bottom: 97px;
+      }
+      @media screen and (min-width: 1201px) {
+        margin-bottom: 93px;
+      }
+    }
+  }
+}

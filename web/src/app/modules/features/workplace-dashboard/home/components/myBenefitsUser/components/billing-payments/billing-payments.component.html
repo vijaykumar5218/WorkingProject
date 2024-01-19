@@ -1,0 +1,40 @@
+<ng-container *ngIf="showPanel && dataLoading">
+  <ion-card class="view-card">
+    <div class="ion-card">
+      <ion-row
+        id="BillingandPaymentHeader"
+        automation="BillingandPaymentHeader"
+        tabindex="0"
+        class="header"
+        >{{ content?.header }}</ion-row
+      >
+      <ion-row class="content">
+        <ion-col
+          class="myBenefit-warning-icon"
+          *ngIf="content?.info?.isShowAlertIcon"
+        >
+          <img
+            tabindex="0"
+            alt="warning icon"
+            src="assets/mybenefits-user/warning.svg"
+          />
+        </ion-col>
+        <ion-col>
+          <p
+            tabindex="1"
+            class="text-content"
+            [innerHTML]="content?.info?.message"
+          ></p>
+          <span
+            id="BillingandPaymentLink"
+            automation="BillingandPaymentLink"
+            class="linkcolor underline pointer"
+            (click)="onClick(content?.info?.linkURL)"
+          >
+            {{ content?.info?.linkName }}</span
+          >
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-card>
+</ng-container>

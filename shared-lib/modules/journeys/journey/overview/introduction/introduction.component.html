@@ -1,0 +1,83 @@
+<div [ngClass]="isWeb ? 'introduction-web' : 'introduction-mobile'">
+  <div class="intro">
+    <div>
+      <ion-text class="journey-header">{{
+        journey?.parsedLandingAndOverviewContent?.overview?.header
+      }}</ion-text>
+      <journeys-status [status]="status"></journeys-status>
+    </div>
+    <ion-text class="introduction-card-content">{{
+      journey?.parsedLandingAndOverviewContent?.overview?.message
+    }}</ion-text>
+    <img
+      id="jouney-status-img"
+      [src]="journey?.parsedLandingAndOverviewContent?.overview?.imgUrl"
+      [alt]="journey?.parsedLandingAndOverviewContent?.overview?.altText || ''"
+    />
+  </div>
+  <ion-card
+    ><ion-card-header
+      *ngIf="journey?.parsedLandingAndOverviewContent?.overview?.action?.header"
+    >
+      <ion-card-title class="introduction-card-header">{{
+        journey?.parsedLandingAndOverviewContent?.overview?.action?.header
+      }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content
+      ><p
+        class="introduction-card-content"
+        *ngIf="
+          journey?.parsedLandingAndOverviewContent?.overview?.action?.message
+        "
+        [innerHTML]="
+          journey?.parsedLandingAndOverviewContent?.overview?.action?.message
+        "
+      ></p>
+      <ng-container
+        *ngIf="
+          journey?.parsedLandingAndOverviewContent?.overview?.action?.messages
+            ?.length > 0
+        "
+      >
+        <ul>
+          <li
+            *ngFor="
+              let msgs of journey?.parsedLandingAndOverviewContent?.overview
+                ?.action?.messages
+            "
+          >
+            {{ msgs }}
+          </li>
+        </ul>
+      </ng-container>
+      <div class="start-journey" *ngIf="!isWeb">
+        <ng-container *ngTemplateOutlet="btnTemplate">
+        </ng-container></div></ion-card-content
+  ></ion-card>
+
+  <div class="web-start-journey" *ngIf="isWeb">
+    <ng-container *ngTemplateOutlet="btnTemplate"> </ng-container>
+  </div>
+
+  <div class="start-journey-button">
+    <ng-template #btnTemplate>
+      <ion-button
+        size="small"
+        tabindex="0"
+        class="font-16"
+        shape="round"
+        color="btncolor"
+        (keyup.enter)="buttonClick()"
+        (click)="buttonClick()"
+        [queryParams]="journeyType ? {journeyType: journeyType} : null"
+        id="overviewIntroductionButton"
+      >
+        {{
+          journey?.parsedLandingAndOverviewContent?.overview?.action
+            ?.buttonLabel
+        }}
+      </ion-button>
+    </ng-template>
+  </div>
+</div>

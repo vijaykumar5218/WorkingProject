@@ -1,0 +1,65 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-text class="header">{{pageText.header}}</ion-text>
+    </ion-col>
+  </ion-row>
+  <ion-row class="fix-width">
+    <ion-col>
+      <ion-text class="sub-header">{{pageText.subHeader}}</ion-text>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="image">
+      <img src="assets/icon/preferenceSelectionImage.svg" alt="" />
+    </ion-col>
+  </ion-row>
+  <ng-container *ngFor="let item of objectKeys(pageText.preferenceOptions)">
+    <ion-row class="toggle-row fix-width">
+      <ion-col>
+        <ion-text class="preference-selection-text">{{item}}</ion-text>
+      </ion-col>
+      <ion-col class="toggle-col">
+        <ion-toggle
+          [disabled]="item === 'Text'&& noMobilePhone? true: undefined "
+          id="toggle-{{item}}"
+          class="preference-toggle"
+          [(ngModel)]="pageText.preferenceOptions[item]"
+          (ionChange)="changeNotificationMethod(item)"
+        ></ion-toggle>
+      </ion-col>
+    </ion-row>
+  </ng-container>
+  <ion-row class="save-button-row">
+    <ion-col>
+      <ion-button
+        size="small"
+        color="btncolor"
+        shape="round"
+        expand="block"
+        automation="preferenceSaveButton"
+        (click)="savePreferenceInDB()"
+        >{{pageText.saveButton }}</ion-button
+      >
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button
+        size="small"
+        class="secondary"
+        color="white"
+        shape="round"
+        expand="block"
+        id="preferenceNotNowButton"
+        (click)="closeDialog()"
+        >{{pageText.notnowButton }}</ion-button
+      >
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-text [innerHTML]="pageText.legalText"></ion-text>
+    </ion-col>
+  </ion-row>
+</ion-grid>

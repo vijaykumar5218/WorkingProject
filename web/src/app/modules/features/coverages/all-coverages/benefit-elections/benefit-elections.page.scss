@@ -1,0 +1,28 @@
+.benefit-elections {
+  margin: 36px 20px 90px;
+  section {
+    margin: auto 20px;
+  }
+  .header-section {
+    display: none;
+    background-color: var(--primary-colors-voya-dark-blue);
+    color: var(--primary-colors-voya-white);
+    text-align: center;
+  }
+  .header-text {
+    margin: 15px 0 0 0;
+    font-size: 12px;
+  }
+  .header-text-amount {
+    margin: 4px 0 16px 0;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  app-summary-benefits-list {
+    margin: 20px 20px 0px 20px;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}

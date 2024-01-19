@@ -1,0 +1,192 @@
+<ion-card [ngClass]="loading ? 'loading' : ''">
+  <ion-card-header *ngIf="!loading">
+    <ion-card-title>
+      <span class="float-right" (click)="closeDialog()">
+        <img src="assets/icon/exit.svg" alt="Close dialog" />
+      </span>
+    </ion-card-title>
+  </ion-card-header>
+  <ion-card-content class="card-content">
+    <ion-spinner class="loading" *ngIf="loading; else elseBlock"></ion-spinner>
+    <ng-template #elseBlock>
+      <div class="card-intro">
+        <p>
+          {{ pageText.howReady1 }}{{ madlib?.firstName
+          }}{{ pageText.howReady2 }}
+        </p>
+      </div>
+      <hr />
+
+      <ion-row class="age-row">
+        <ion-col>
+          <ion-popover
+            show-backdrop="false"
+            keepContentsMounted="true"
+            trigger="age-box"
+            class="date"
+          >
+            <ng-template>
+              <ion-datetime
+                [value]="madlib?.dob"
+                id="datetime"
+                presentation="date"
+                (ionChange)="onDobChanged($event)"
+                min="{{ minDate }}"
+                max="{{ maxDate }}"
+              ></ion-datetime>
+            </ng-template>
+          </ion-popover>
+          <div>{{ pageText.Iam }}</div>
+          <div class="value-box" id="age-box">
+            {{ age }}
+          </div>
+          <div>{{ pageText.yearsOld }}</div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="imake-row">
+        <ion-col>
+          <div class="label" [ngClass]="salaryValid ? '' : 'error-text'">
+            {{ pageText.imake }}
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="salary-row">
+        <ion-col size="8">
+          <ion-input
+            [type]="showSalary ? 'text' : 'password'"
+            value="{{ salaryString }}"
+            class="currency-input"
+            [ngClass]="salaryValid ? '' : 'error-input'"
+            maxlength="12"
+            placeholder="0.00"
+            inputmode="decimal"
+            #salaryInput
+            (ionChange)="onSalaryValueChanged(salaryInput.value)"
+          >
+          </ion-input>
+          <button
+            (click)="toggleShowSalary()"
+            class="iconbutton"
+            ion-button
+            clear
+            large
+            item-end
+            icon-only
+          >
+            <ion-icon
+              class="font-22"
+              [name]="showSalary ? 'eye-off' : 'eye'"
+            ></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col size="4" class="a-year">
+          <span class="label" [ngClass]="salaryValid ? '' : 'error-text'">{{
+            pageText.year
+          }}</span>
+          <ion-icon
+            id="help-circle"
+            class="helpcircle"
+            name="help-circle-outline"
+            (click)="openHelp()"
+          ></ion-icon>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="error-row" *ngIf="!salaryValid || !salaryInBounds">
+        <ion-col size="1">
+          <ion-icon
+            class="error-icon"
+            src="assets/icon/warning.svg"
+            alt="warning"
+          ></ion-icon>
+        </ion-col>
+        <ion-col size="8">
+          <ion-text class="error-text">{{
+            salaryInBounds ? pageText.salaryError : pageText.incomeBetween
+          }}</ion-text>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ifeel-row">
+        <ion-col>
+          <div class="label" [ngClass]="feelValid ? '' : 'error-text'">
+            {{ pageText.aboutRetire }}
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-select
+            class="border-1 mt-10"
+            interface="action-sheet"
+            #mySelect
+            placeholder="Please Select"
+            label-placement="floating"
+            [ngClass]="feelValid ? '' : 'error-input'"
+            id="happyStatus"
+            (ionChange)="onFeelingChange(mySelect.value)"
+            value="select"
+          >
+            <ion-select-option class="text-black" value="Happy">
+              {{ pageText.happy }}
+            </ion-select-option>
+            <ion-select-option class="text-black" value="Confident">
+              {{ pageText.confident }}
+            </ion-select-option>
+            <ion-select-option class="text-black" value="Optimistic">
+              {{ pageText.optimistic }}
+            </ion-select-option>
+            <ion-select-option class="text-black" value="worried">
+              {{ pageText.worried }}
+            </ion-select-option>
+            <ion-select-option class="text-black" value="unsure">
+              {{ pageText.unsure }}
+            </ion-select-option>
+            <ion-select-option class="text-black" value="confused">
+              {{ pageText.confused }}
+            </ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="error-row" *ngIf="!feelValid">
+        <ion-col size="1">
+          <ion-icon
+            class="error-icon"
+            src="assets/icon/warning.svg"
+            alt="warning"
+          ></ion-icon>
+        </ion-col>
+        <ion-col size="11">
+          <ion-text class="error-text">{{ pageText.feelingError }}</ion-text>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="save-row">
+        <ion-col>
+          <ion-button
+            size="small"
+            class="font-18 save-button"
+            name="submit"
+            shape="round"
+            expand="block"
+            type="submit"
+            color="btncolor"
+            (click)="saveMadlibData()"
+            [attr.disabled]="!salaryValid || !feelValid || saving"
+            id="how-i-am-doing"
+          >
+            <ion-spinner [hidden]="!saving" class="save-spinner"></ion-spinner>
+            {{ pageText.howDoing }}</ion-button
+          >
+          <span class="save-failed" *ngIf="saveFailed">{{
+            pageText.saveFailed
+          }}</span>
+        </ion-col>
+      </ion-row>
+    </ng-template>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,27 @@
+<div [ngClass]="isWeb? 'web-account-container':'mobile-account-container'">
+  <div *ngIf="loading; else elseBlock">
+    <ion-spinner></ion-spinner>
+  </div>
+  <ng-template #elseBlock>
+    <app-account-info-menu
+      *ngIf="participantData?.displayName"
+      [label]="displayText.name"
+      [value]="participantData?.displayName"
+    ></app-account-info-menu>
+    <app-account-info-menu
+      *ngIf="email"
+      [label]="displayText?.email"
+      [value]="email"
+      [emailError]="emailError"
+    ></app-account-info-menu>
+    <app-account-info-menu
+      [label]="displayText?.phone"
+      [value]="phone"
+    ></app-account-info-menu>
+    <app-account-info-menu
+      *ngIf="displayText?.loginInfoDesc && !isHealthOnly"
+      [label]="displayText?.loginInfo"
+      [value]="displayText?.loginInfoDesc"
+    ></app-account-info-menu>
+  </ng-template>
+</div>

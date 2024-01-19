@@ -1,0 +1,38 @@
+{
+  "heroCarousel": [
+    {
+      "id": "TourOfSite",
+      "sectionHeader": "Take A Tour",
+      "image": "https://cdn1-originals.webdamdb.com/13947_154564909?cache=1701371722&response-content-disposition=inline;filename=TakeATour.svg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTM5NDdfMTU0NTY0OTA5P2NhY2hlPTE3MDEzNzE3MjImcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9VGFrZUFUb3VyLnN2ZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=jBVF7wSgxLRZ2fQCOvLEZYJU-XpyQrhoB9l7Ds8S1xtbSx08bRjrC7lBlRTPBNvNE2E8GhXNsnauqWlIFrOkcALmr3yQd-IBXunWbYO9trYCN-t-StO23o0GsALKkOA3f8AXp4jA3Muy0u8RrSXdgYPpzuVrvSV9LhJoVYjSHETZbJcMEWYfQPL~NNyojMHjGBpGmPZNfEml6hkyXZ85W72yroC74PrzySqHkA4ziCk9mluqwg1I3ivZDvc~QhiRvOf11~NHsaA4xlqy8JDrwlbSRNu3fTb23Ch-6GGtsJYd8pXbULhgXFkdg1oH5TrVy1Zl4c~xLyMPfWOXV5u74w__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA",
+      "bodyTitle": "Tour Your Financial Dashboard",
+      "bodyText": "Explore the information and tools we provide to help you manage your financial health.",
+      "ctaLabel": "Start The Tour",
+      "type": "DEFAULT",
+      "order": 1
+    },
+    {
+      "id": "FinancialWellness",
+      "sectionHeader": "Manage Your Financial Wellbeing",
+      "image": "https://cdn1-originals.webdamdb.com/13947_149809383?cache=1684505128&response-content-disposition=inline;filename=Pre_Assessment_enus.svg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTM5NDdfMTQ5ODA5MzgzP2NhY2hlPTE2ODQ1MDUxMjgmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9UHJlX0Fzc2Vzc21lbnRfZW51cy5zdmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjIxNDc0MTQ0MDB9fX1dfQ__&Signature=PMc3Bv1izpEP8-QGULy0XJMStt4je08YY9ghz1wgo8IaBCvEn222vBj2tIEwgdkaC6FYwi~bAY0n5j3A8EooflVccnMHuw2rNfmtWKjHc5CrZ6l51XytmDUzdwUT8Oxdym-hXECiiZoE1IjBQ2GZcBnuhj9bNcCr50fVBYOQgvSc7klE8CAiGmmTWY39inBIll3S8kVVREqRmbkkiO7zUyK7z2nb2xH1wAGx1Z3u5UgfSSgXMfhv-NRZUpJjeAY0zznz5mv37nUEpgIHpP1mcXbYAEfR7UizpMoT-13MbXqcIkRbGULQv3gYqIwc10LpFgXJ1Mnt2q~qZLEqWkNQYw__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA",
+      "bodyTitle": "Take the Financial Wellbeing Assessment",
+      "bodyText": "In just a few minutes, our assessment can help you understand where you stand financially and provide personalized next steps to help you make improvements.",
+      "ctaLabel": "Get Started",
+      "url": "https://my3.accp.voya.com/eicc/servlet/MessageEventTrackingServlet?summaryId=354487263776991fwnotcomplete&loginDateTime=12%2F19%2F2023+12%3A25%3A19&sessionId=IW50K90RDNxALkEWRYNehg11.a9622&msgAction=Yes&messageId=AC.100&msgSource=ACCORDION&targetURL=%2Ffw%2Fenv-files%2Findex.html%23%2Fstart&d=a4d73355e81edfb6f82643579bec240bf79ad4bb",
+      "type": "DEFAULT",
+      "status": "FWNOTCOMPLETE"
+    },
+    {
+      "id": "FinScore",
+      "sectionHeader": "Adding Accounts",
+      "image": "https://cdn1-originals.webdamdb.com/13947_149808954?cache=1684504726&response-content-disposition=inline;filename=Add_Accounts.svg&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cCo6Ly9jZG4xLW9yaWdpbmFscy53ZWJkYW1kYi5jb20vMTM5NDdfMTQ5ODA4OTU0P2NhY2hlPTE2ODQ1MDQ3MjYmcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj1pbmxpbmU7ZmlsZW5hbWU9QWRkX0FjY291bnRzLnN2ZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MjE0NzQxNDQwMH19fV19&Signature=eq2BL01pXN4odTe8cYgstcZIPtlnbfSBBRuB8Fcbygm7AYacYcHMnWh0Rz391BcK5PbRAQdRxXr9HM4sXbpOMcJx~UPjvrUi32dGKkGhiiPBdhnj~lz2BMP~AuZeZZfj4g9wkhRRJVDIYTYqX2avUX1aIUqxbzJGVyXPq0CHqTrSc7ycTbZxYHaHZJHD46Pk-QGpKMpfKnyDe8CLUFGNYiu0OAtwr7dV-CpKnnRdAxwAO-OBnEMsCVwmrf2hOXD-ZNKlNwkbPeDo0vcgNHqBlC9Vcug1FkJVv7I6Xkd1hKpUEZ3NJGFZjC6efuFfxpV1QTWcdiMXzmwKcZUUKJlayA__&Key-Pair-Id=APKAI2ASI2IOLRFF2RHA",
+      "bodyTitle": "Did you know you can add your accounts to your dashboard?",
+      "bodyText": "Your money might be better when it's together. Add in all of your financial accounts to quickly see how much you have, and how small steps can get you closer to your goals.",
+      "ctaLabel": "Add Account",
+      "url": "URL",
+      "type": "SCORE",
+      "score": 0,
+      "status": "NOT_AGGREGATED",
+      "order": 3
+    }
+  ]
+}

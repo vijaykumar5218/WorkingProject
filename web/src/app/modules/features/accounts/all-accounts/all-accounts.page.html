@@ -1,0 +1,18 @@
+<app-sub-header
+  [tabsAction]="tabs"
+  [selectedTab]="selectedTab"
+  [ngStyle]="(isMxUser || healthOnly) ? {display: 'initial'} : {display: 'none'}"
+></app-sub-header>
+
+<div
+  class="ion-margin"
+  [ngStyle]="
+  !isMxUser ? {display: 'initial'} : {display: 'none'}"
+>
+  <app-balance-history-graph
+    id="non-mx-balance-history-graph-accounts-page"
+    graphId="all-accounts-balance-history-graph"
+    *ngIf="!isMxUser && !enableCoverages"
+  >
+  </app-balance-history-graph>
+</div>

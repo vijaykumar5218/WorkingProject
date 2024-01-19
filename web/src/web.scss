@@ -1,0 +1,183 @@
+@import './../../styles/web/accounts/retirement-info.scss';
+@import './../../styles/web/accounts/transaction.page.scss';
+@import './../../styles/web/accounts/mx-account-list.scss';
+@import './../../styles/web/accounts/all-accounts.scss';
+@import '~intro.js/introjs.css';
+
+.ion-page > ion-grid {
+  margin: 90px 0px 90px 0px;
+  padding: 0;
+  overflow-y: auto;
+}
+
+html {
+  margin-top: 0px !important;
+}
+
+.bg-color {
+  --background: var(--ion-color-white) !important;
+  background-color: var(--ion-color-white) !important;
+
+  #containerA {
+    padding-left: 10px !important;
+  }
+}
+
+.Card-Background {
+  box-shadow: none !important;
+}
+
+ion-footer {
+  position: absolute;
+  -ms-flex-order: 1;
+  order: 1;
+  width: 100%;
+}
+
+ion-col {
+  padding: 0px;
+}
+.swiper .swiper-slide {
+  display: block;
+}
+.ion-page {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: -40px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  contain: layout size style;
+  overflow: hidden;
+  z-index: 0;
+  overflow-y: auto;
+}
+
+.tabs-inner {
+  margin-top: 1px;
+  @mixin flex-styles($align-items: null) {
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin: 0px !important;
+    @if ($align-items) {
+      align-items: $align-items !important;
+    }
+  }
+  @mixin ion-card-styles($width, $height) {
+    width: $width !important;
+    height: $height !important;
+  }
+  app-plans {
+    margin: 36px 0px 100px 50px;
+    .first-row {
+      .coverages-logo {
+        max-width: 554px !important;
+      }
+    }
+    &.ion-page {
+      @media screen and (min-width: 280px) and (max-width: 481px) {
+        @include flex-styles();
+        ion-card {
+          @include ion-card-styles(auto, auto);
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 921px) {
+        @include flex-styles(center);
+        ion-card {
+          @include ion-card-styles(374px, auto);
+        }
+      }
+    }
+  }
+}
+
+ion-card.net-worth {
+  @media screen and (min-width: 280px) and (max-width: 768px) {
+    margin-top: 0px;
+  }
+}
+.bottom-navigation {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  .footer-tabs {
+    background: var(--ion-color-white);
+    border-top: 1px solid var(--border-light-grey);
+    app-tabsnav {
+      ion-tabs {
+        ion-tab-bar {
+          max-width: 500px;
+          margin: auto;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 920px) {
+    display: none;
+  }
+}
+
+.footer-desktop {
+  @media screen and (min-width: 280px) and (max-width: 920px) {
+    display: none;
+  }
+}
+.small-device-dashboard-footer {
+  @media screen and (min-width: 921px) {
+    display: none;
+  }
+}
+
+app-coverages,
+app-journeys,
+app-help,
+app-accounts,
+app-settings,
+app-notification {
+  .account-tab,
+  .coverages-tab,
+  .journeys-tab,
+  .help-tab,
+  .settings-tab,
+  .notification-tab {
+    margin: auto;
+    min-width: 100%;
+
+    @media screen and (min-width: 920px) {
+      padding-right: 1%;
+      padding-left: 1%;
+    }
+
+    @media screen and (min-width: 1200px) and (max-width: 1440px) {
+      padding-right: 10%;
+      padding-left: 10%;
+    }
+  }
+}
+
+app-plan-details,
+mobile-plan-transactions,
+app-insights,
+app-benefit-elections,
+journeys-overview-summary {
+  margin-top: 1px;
+}
+.swiper-slide-prev {
+  width: 100% !important;
+}
+
+journeys-steps {
+  swiper {
+    height: 89% !important;
+  }
+}
+
+app-insights {
+  background: var(--ion-color-white);
+}
+
+.smartbanner {
+  z-index: 100000003 !important;
+}

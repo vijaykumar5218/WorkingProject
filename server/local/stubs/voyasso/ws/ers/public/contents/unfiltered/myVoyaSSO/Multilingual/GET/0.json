@@ -1,0 +1,72 @@
+{
+    "csaHelpLanguage": {
+        "key": "GLOBAL",
+        "messages": [
+            {
+                "value": "If you need help from a ${languageSelected}-speaking customer service associate, please call us.",
+                "format": "plain_text",
+                "processed": "If you need help from a ${languageSelected}-speaking customer service associate, please call us., plain_text"
+            }
+        ]
+    },
+    "morningstarLanguage": {
+        "key": "GLOBAL",
+        "messages": [
+            {
+                "value": "Morningstar Professional Management services are only offered in English.",
+                "format": "plain_text",
+                "processed": "Morningstar Professional Management services are only offered in English., plain_text"
+            }
+        ]
+    },
+    "statementsLanguage": {
+        "key": "GLOBAL",
+        "messages": [
+            {
+                "value": "Statements are only available in English.",
+                "format": "plain_text",
+                "processed": "Statements are only available in English., plain_text"
+            }
+        ]
+    },
+    "linkedFfsLanguage": {
+        "key": "GLOBAL",
+        "messages": [
+            {
+                "value": "Linked fund fact sheets are only available in English.",
+                "format": "plain_text",
+                "processed": "Linked fund fact sheets are only available in English., plain_text"
+            }
+        ]
+    },
+    "linkedDocsLanguage": {
+        "key": "GLOBAL",
+        "messages": [
+            {
+                "value": "Linked documents are only available in English.",
+                "format": "plain_text",
+                "processed": "Linked documents are only available in English., plain_text"
+            }
+        ]
+    },
+    "financialEnginesLanguage": {
+        "key": "GLOBAL",
+        "messages": [
+            {
+                "value": "Voya Retirement Advisor services are only offered in English.",
+                "format": "plain_text",
+                "processed": "Voya Retirement Advisor services are only offered in English., plain_text"
+            }
+        ]
+    },
+    "languageSelectionModal": {
+        "key": "GLOBAL",
+        "messages": [
+            {
+                "value": "Please note: ${languageSelected} translation is intended solely as a convenience and subject to Voya's Translation Terms of Use. Some pages or documents may only be presented in English. ${languageSelected}-speaking representatives are available to assist you at <span class=\"OneLinkNoTx\" style=\"white-space:nowrap;\">${INFORMATION_LINE}.</span>",
+                "format": "plain_text",
+                "processed": "Please note: ${languageSelected} translation is intended solely as a convenience and subject to Voya's Translation Terms of Use. Some pages or documents may only be presented in English. ${languageSelected}-speaking representatives are available to assist you at <span class=\"OneLinkNoTx\" style=\"white-space:nowrap;\">${INFORMATION_LINE}.</span>, plain_text"
+            }
+        ]
+    }
+}

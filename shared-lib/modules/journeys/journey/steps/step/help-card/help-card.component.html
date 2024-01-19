@@ -1,0 +1,37 @@
+<div [ngClass]="isWeb ? 'helpcard-web' : 'helpcard-mobile'">
+  <ion-card
+    tabindex="0"
+    (keyup.enter)="openWebView()"
+    (click)="openWebView()"
+    [id]="'helpCard' + element.idSuffix"
+  >
+    <ion-row>
+      <ion-col
+        class="helpImg-col"
+        [ngStyle]="{
+          'padding-bottom': element.paddingBottom
+        }"
+      >
+        <img [src]="element.imageUrl" [alt]="element.altText || ''" />
+      </ion-col>
+      <ion-col
+        class="header-txt"
+        [ngStyle]="{
+          'margin-top': element.marginTop,
+          'margin-bottom': element.marginBottom
+        }"
+      >
+        <ion-row>
+          <ion-col class="helpHeader-col">
+            <ion-text class="header">{{ element.header }}</ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="helpDesc-col">
+            <ion-text class="description">{{ element.description }}</ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</div>

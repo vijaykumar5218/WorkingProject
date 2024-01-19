@@ -1,0 +1,28 @@
+<ng-container *ngFor="let headerdata of getHeaderMessage?.MX">
+  <div *ngIf="!isWeb">
+    <p class="titletop">{{ headerdata?.spending_budget_title }}</p>
+    <hr />
+    <div *ngFor="let imagedata of headerdata?.spending_budget_description">
+      <img src="{{ imagedata?.image_url }}" alt="" />
+      <p class="bottom-text">{{ imagedata?.bottom_text }}</p>
+    </div>
+  </div>
+  <app-mx-widget
+    [widgetType]="widgetType.MINI_SPENDING_WIDGET"
+    [height]="'400px'"
+    [tagName]="tagName"
+  ></app-mx-widget>
+  <hr />
+  <ion-button
+    size="small"
+    id="view-spending-budget-btn"
+    name="spending"
+    shape="round"
+    expand="block"
+    color="btncolor"
+    fill="outline"
+    (click)="handleClick()"
+  >
+    {{ pageText.viewSpending }}
+  </ion-button>
+</ng-container>

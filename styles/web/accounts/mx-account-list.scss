@@ -1,0 +1,40 @@
+app-mx-account-list {
+  .logo-column {
+    max-width: 80px !important;
+  }
+
+  .desc-column {
+    max-width: 240px !important;
+  }
+}
+.mxOuterContainer {
+  background: var(--primary-colors-voya-white);
+  height: 100%;
+  .containerA {
+    height: 180px !important;
+    .As-of-date {
+      color: var(--secondary-colors-medium-gray-1) !important;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .mx-widget-transaction {
+      margin: auto 0px;
+    }
+  }
+  @media screen and (min-width: 450px) {
+    .mx-widget-transaction {
+      margin: auto 25px;
+    }
+  }
+  .mx-widget-transaction {
+    height: 94%;
+    app-mx-widget {
+      .mx-widget-component {
+        height: 100%;
+        iframe {
+          height: 95%;
+        }
+      }
+    }
+  }
+}

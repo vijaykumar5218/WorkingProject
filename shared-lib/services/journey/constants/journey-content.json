@@ -1,0 +1,28 @@
+{
+  "landingPage": {
+    "navHeader": "Life Events",
+    "header": "Life Events",
+    "desc": "Interactive education modules that help you navigate life events and set goals by offering:",
+    "descPoints": [
+      "actionable and personalized steps",
+      "tools and resources that help improve your health and financial wellbeing"
+    ],
+    "allJourneysHeader": "All Life Events",
+    "recommendedJourneysHeader": "Recommended Life Events",
+    "myjourneys": "My Journeys",
+    "comingSoonAltText": "coming soon"
+  },
+  "tabHeader": {
+    "overviewLabel": "Overview",
+    "stepsLabel": "Steps",
+    "resourcesLabel": "Resources"
+  },
+  "webviewClose": "Close",
+  "videoClose": "Close",
+  "resourcesExpandLabel": "Expand All",
+  "resourcesCloseLabel": "Close All",
+  "overviewDoneButton": "Done",
+  "overviewRevisitButton": "Let's Revisit!",
+  "backButton": "Back",
+  "selectPlaceholder": "Select"
+}

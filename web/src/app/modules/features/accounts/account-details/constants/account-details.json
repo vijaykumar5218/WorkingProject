@@ -1,0 +1,20 @@
+{
+  "default_tabs": [
+    {
+      "label": "Info",
+      "link": "info"
+    },
+    {
+      "label": "Transactions",
+      "link": "transactions"
+    }
+  ],
+  "without_transactions_tabs": [
+    {
+      "label": "Info",
+      "link": "info"
+    }
+  ],
+  "goToAccount": "Go to Account",
+  "goToMyHistory": "Go to My History"
+}

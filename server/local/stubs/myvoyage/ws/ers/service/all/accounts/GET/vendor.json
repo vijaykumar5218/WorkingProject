@@ -1,0 +1,166 @@
+{
+  "retirementAccounts": {
+    "dataStatus": "OK",
+    "errorCode": "NO_ERROR",
+    "accounts": [
+      {
+        "agreementId": "0C736FE4F748B836B2A004504CA2C5008DA3AA949725E54C6D7CDE54BC3711A1",
+        "accountTitle": "401(k) Profit Sharing Plan",
+        "accountType": "Investment",
+        "accountBalance": "717459.63",
+        "accountBalanceAsOf": "03/30/2023",
+        "sourceSystem": "EASE",
+        "suppressTab": false,
+        "voyaSavings": "717459.63",
+        "includedInOrangeMoney": false,
+        "accountAllowedForMyVoya": false,
+        "clientId": "AKIN",
+        "planId": "620018",
+        "planType": "DC",
+        "accountNumber": "620018@AKIN@385934609",
+        "needOMAutomaticUpdate": false,
+        "planName": "401(k) Profit Sharing Plan",
+        "mpStatus": "0",
+        "clientAllowed4myVoyaOrSSO": false,
+        "useMyvoyaHomepage": true,
+        "advisorNonMoneyTxnAllowed": false,
+        "advisorMoneyTxnAllowed": false,
+        "nqPenCalPlan": false,
+        "enrollmentAllowed": false,
+        "autoEnrollmentAllowed": false,
+        "vruPhoneNumber": "1-844-4AG401k",
+        "rmdRecurringPaymentInd": "N",
+        "navigateToRSPortfolio": true,
+        "planLink": "https%3A%2F%2Flogin.intg.voya.com%2Fsaml%2Fsps%2Fsaml-idp-login%2Fsaml20%2Flogininitial%3FPartnerId%3Dhttps%3A%2F%2Fmy3.intg.voya.com%2Fmga%2Fsps%2Fsaml-sp-my-local%2Fsaml20%26access_token%3D%5Bexchanged_access_token%5D%26Target=https%3A%2F%2Fmy3.intg.voya.com%2Fvoyasso%2FmobileSignOn%3Fdomain%3Dakingump.intg.voya.com%26target%3D/myvoyaui/index.html#/retirement/details/0C736FE4F748B836B2A004504CA2C5008DA3AA949725E54C6D7CDE54BC3711A1",
+        "openDetailInNewWindow": false,
+        "nqPlan": false,
+        "portalSupportFlag": false,
+        "new": false,
+        "iraplan": false,
+        "xsellRestricted": false,
+        "eligibleForOrangeMoney": false,
+        "isVoyaAccessPlan": false,
+        "isRestrictedRetirementPlan": false,
+        "isVDAApplication": false
+      }
+    ]
+  },
+  "vendorAccounts": {
+    "accounts": [
+      {
+        "agreementId": "NA",
+        "accountTitle": "Partners' Retirement Plan",
+        "accountType": "Investment",
+        "accountBalance": "284012.87",
+        "accountBalanceAsOf": "2017-07-31T00:00:00-0400",
+        "sourceSystem": "VENDOR",
+        "suppressTab": false,
+        "includedInOrangeMoney": false,
+        "accountAllowedForMyVoya": false,
+        "planId": "AGPP",
+        "planType": "AGPP",
+        "needOMAutomaticUpdate": false,
+        "clientAllowed4myVoyaOrSSO": false,
+        "useMyvoyaHomepage": false,
+        "advisorNonMoneyTxnAllowed": false,
+        "advisorMoneyTxnAllowed": false,
+        "nqPenCalPlan": false,
+        "enrollmentAllowed": false,
+        "autoEnrollmentAllowed": false,
+        "navigateToRSPortfolio": true,
+        "planLink": "https%3A%2F%2Flogin.intg.voya.com%2Fsaml%2Fsps%2Fsaml-idp-login%2Fsaml20%2Flogininitial%3FPartnerId%3Dhttps%3A%2F%2Fmy3.intg.voya.com%2Fmga%2Fsps%2Fsaml-sp-my-local%2Fsaml20%26access_token%3D%5Bexchanged_access_token%5D%26Target=https%3A%2F%2Fmy3.intg.voya.com%2Fvoyasso%2FmobileSignOn%3Fdomain%3Dakingump.intg.voya.com%26target%3D/myvoya/link?type=myvoyalink&token=clientId%3DAKIN%26urlResourceType%3DCCAPENLINK%26s%3D1680276363798%26domain%3Dakingump.intg.voya.com%26vendorId%3DCCA%26pid%3DAGPP%26d%3De34c1320cbf543ed44cfc1e82cef742ed86e9ad9",
+        "openDetailInNewWindow": false,
+        "nqPlan": false,
+        "additionalPlanBalances": [
+          {
+            "label": "Ending Balance",
+            "value": 284012.87
+          },
+          {
+            "label": "Pay Credits",
+            "value": 300.21
+          },
+          {
+            "label": "Interest Credits",
+            "value": 200.35
+          },
+          {
+            "label": "Distributions/ Adjustments",
+            "value": 100.03
+          },
+          {
+            "label": "Your Guaranteed Minimum Balance will be",
+            "value": 1234.56
+          }
+        ],
+        "portalSupportFlag": false,
+        "new": false,
+        "iraplan": false,
+        "xsellRestricted": false,
+        "eligibleForOrangeMoney": false,
+        "isVoyaAccessPlan": false,
+        "isRestrictedRetirementPlan": false,
+        "isVDAApplication": false
+      }
+    ]
+  },
+  "stockAccounts": {
+    "accounts": [
+      {
+        "agreementId": "NA",
+        "accountTitle": "Partners' Retirement Plan",
+        "accountType": "Investment",
+        "accountBalance": "284012.87",
+        "accountBalanceAsOf": "2017-07-31T00:00:00-0400",
+        "sourceSystem": "STOCK",
+        "suppressTab": false,
+        "includedInOrangeMoney": false,
+        "accountAllowedForMyVoya": false,
+        "planId": "AGPP",
+        "planType": "AGPP",
+        "needOMAutomaticUpdate": false,
+        "clientAllowed4myVoyaOrSSO": false,
+        "useMyvoyaHomepage": false,
+        "advisorNonMoneyTxnAllowed": false,
+        "advisorMoneyTxnAllowed": false,
+        "nqPenCalPlan": false,
+        "enrollmentAllowed": false,
+        "autoEnrollmentAllowed": false,
+        "navigateToRSPortfolio": true,
+        "planLink": "https%3A%2F%2Flogin.intg.voya.com%2Fsaml%2Fsps%2Fsaml-idp-login%2Fsaml20%2Flogininitial%3FPartnerId%3Dhttps%3A%2F%2Fmy3.intg.voya.com%2Fmga%2Fsps%2Fsaml-sp-my-local%2Fsaml20%26access_token%3D%5Bexchanged_access_token%5D%26Target=https%3A%2F%2Fmy3.intg.voya.com%2Fvoyasso%2FmobileSignOn%3Fdomain%3Dakingump.intg.voya.com%26target%3D/myvoya/link?type=myvoyalink&token=clientId%3DAKIN%26urlResourceType%3DCCAPENLINK%26s%3D1680276363798%26domain%3Dakingump.intg.voya.com%26vendorId%3DCCA%26pid%3DAGPP%26d%3De34c1320cbf543ed44cfc1e82cef742ed86e9ad9",
+        "openDetailInNewWindow": false,
+        "nqPlan": false,
+        "additionalPlanBalances": [
+          {
+            "label": "Ending Balance",
+            "value": 284012.87
+          },
+          {
+            "label": "Pay Credits",
+            "value": 300.21
+          },
+          {
+            "label": "Interest Credits",
+            "value": 200.35
+          },
+          {
+            "label": "Distributions/ Adjustments",
+            "value": 100.03
+          },
+          {
+            "label": "Your Guaranteed Minimum Balance will be",
+            "value": 1234.56
+          }
+        ],
+        "portalSupportFlag": false,
+        "new": false,
+        "iraplan": false,
+        "xsellRestricted": false,
+        "eligibleForOrangeMoney": false,
+        "isVoyaAccessPlan": false,
+        "isRestrictedRetirementPlan": false,
+        "isVDAApplication": false
+      }
+    ]
+  }
+}

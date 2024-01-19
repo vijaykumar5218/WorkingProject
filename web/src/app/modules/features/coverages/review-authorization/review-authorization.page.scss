@@ -1,0 +1,70 @@
+app-modal-header {
+  margin-top: 15px;
+}
+div.content {
+  background-color: var(--ion-color-white);
+  .options {
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+    padding: 20px;
+    bottom: 0px;
+    position: absolute;
+    height: 235px;
+    box-shadow: 0 -4px 4px 0 rgb(0 0 0 / 25%);
+    background-color: var(--white);
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    .header {
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.02px;
+      color: var(--primary-colors-voya-black);
+
+      ion-text {
+        width: 100%;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+    }
+
+    ion-row {
+      background-color: var(--white);
+    }
+    ion-radio-group {
+      margin: auto;
+
+      ion-item {
+        width: 100px;
+        text-align: center;
+
+        ion-radio {
+          margin-right: 12px;
+          --color: var(--primary-colors-voya-dark-blue);
+          --color-checked: var(--primary-colors-voya-dark-blue);
+        }
+      }
+    }
+
+    #save-button {
+      margin: auto auto 30px auto;
+    }
+  }
+
+  .main-content {
+    background-color: white;
+    padding: 35px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 235px;
+    overflow-y: scroll;
+    h6 {
+      font-weight: bold;
+      color: var(--primary-colors-voya-black);
+    }
+    p {
+      color: var(--primary-colors-voya-black);
+    }
+  }
+}

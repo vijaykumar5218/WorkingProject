@@ -1,0 +1,11 @@
+{
+  "noBenefitIcons": [
+    "assets/icon/no-benefits/umbrella.svg",
+    "assets/icon/no-benefits/shield.svg",
+    "assets/icon/no-benefits/user.svg",
+    "assets/icon/no-benefits/tooth.svg",
+    "assets/icon/no-benefits/eye.svg"
+  ],
+
+  "header": "Benefits Info Not Available"
+}

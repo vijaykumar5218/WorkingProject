@@ -1,0 +1,41 @@
+{
+  "my_coverage": "Benefits & Coverages",
+  "allCoverage": "All Coverages",
+  "tabs": [
+    {
+      "label": "Insights",
+      "link": "insights"
+    },
+    {
+      "label": "My Claims",
+      "link": "tpaclaims"
+    },
+    {
+      "label": "My Claims",
+      "link": "claims"
+    },
+    {
+      "label": "Benefit Elections",
+      "link": "elections"
+    }
+  ],
+  "defaultTab": [
+    {
+      "label": "Insights",
+      "link": "insights"
+    },
+    {
+      "label": "My Claims",
+      "link": "tpaclaims"
+    },
+    {
+      "label": "My Claims",
+      "link": "claims"
+    },
+    {
+      "label": "Coverages",
+      "link": "plans"
+    }
+   
+  ]
+}

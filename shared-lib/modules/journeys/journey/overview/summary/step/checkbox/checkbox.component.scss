@@ -1,0 +1,31 @@
+:host {
+  display: block;
+  div.lottie {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: -15px;
+  }
+
+  div.checkbox {
+    display: flex;
+
+    ion-checkbox {
+      --size: 18px;
+      margin-right: 10px;
+      --background: var(--primary-colors-voya-white);
+      --background-checked: var(--ion-color-success-shade);
+      --border-color-checked: 1 px solid var(--ion-color-success-shade);
+
+      &::part(container) {
+        border-radius: 6px;
+        border: 1px solid black;
+      }
+    }
+
+    span {
+      color: var(--primary-colors-voya-black);
+      font-size: 16px;
+    }
+  }
+}

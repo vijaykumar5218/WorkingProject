@@ -1,0 +1,226 @@
+:host {
+  display: block;
+
+  #view-all-bens {
+    background-color: var(--primary-colors-voya-white);
+    margin: auto;
+    color: var(--primary-colors-voya-dark-blue);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    border-radius: 20px;
+    width: 151px;
+    height: 36px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .padded {
+      margin: 20px;
+    }
+  }
+
+  .web-plans-card {
+    &.home-page-mobile {
+      margin-bottom: 0px;
+    }
+
+    @media screen and (max-width: 920px) {
+      overflow-y: auto;
+      margin-bottom: 100px;
+    }
+    @media screen and (min-width: 920px) {
+      ion-card {
+        margin: 20px 0px 0px 0px;
+      }
+    }
+  }
+
+  ion-card {
+    --color: var(--primary-colors-voya-black);
+    font-size: 16px;
+    box-shadow: none;
+    border: 0.1px solid var(--secondary-colors-medium-gray-3);
+
+    &.myHealthWealth {
+      background-color: var(--secondary-colors-voya-violet);
+      padding: 10px 0px 10px 10px;
+      .myHealth-title {
+        height: 100%;
+        .myHealth-content {
+          padding: 10px;
+          .myHealth-heading {
+            margin-bottom: 10px;
+          }
+          .ths-text {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.33;
+            letter-spacing: 0.03px;
+            color: var(--primary-colors-voya-white);
+          }
+          .ths-desc {
+            font-weight: normal;
+            font-size: 16px;
+            color: var(--primary-colors-voya-white);
+          }
+          .ths-details {
+            color: var(--primary-colors-voya-white);
+            margin-top: 20px;
+            font-size: 18px;
+            .navlink {
+              color: var(--primary-colors-voya-white);
+            }
+            .view-details {
+              cursor: pointer;
+            }
+          }
+        }
+        .myHealth-img-container {
+          margin: 20px 0px auto 0px;
+          max-width: 120px;
+          padding: 0px;
+          img {
+            width: 120px;
+            height: 130px;
+          }
+        }
+      }
+    }
+
+    & .first-row {
+      align-items: center;
+
+      ion-row,
+      ion-col {
+        padding: 0px;
+      }
+
+      img {
+        width: 48px;
+        height: 48px;
+        margin-left: 5px;
+      }
+
+      .name {
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--primary-colors-voya-dark-blue);
+        min-height: 16px;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: 0.01px;
+        text-align: left;
+        margin: 2px 0;
+      }
+
+      .cov-type-col,
+      .benefit-premium-col {
+        ion-text {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 1.14;
+          color: var(--primary-colors-voya-black);
+        }
+      }
+
+      .enrolled-benefit-link-img {
+        margin: 0px;
+      }
+    }
+
+    .label {
+      font-size: 14px;
+      color: var(--primary-colors-voya-black);
+      font-weight: 400;
+      line-height: 16px;
+
+      &.covType {
+        font-weight: bold;
+      }
+    }
+
+    .amt {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--primary-colors-voya-black);
+    }
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+
+    & .top-labels {
+      display: flex;
+      padding: 0;
+
+      &.hide {
+        display: none;
+      }
+
+      &.enable {
+        display: flex;
+      }
+    }
+  }
+  .coverages-plan-slide {
+    padding: 20px;
+
+    &.clickable {
+      cursor: pointer;
+    }
+  }
+  .coverages-plan {
+    @media screen and (min-width: 920px) {
+      margin: 20px auto;
+    }
+    cursor: pointer;
+
+    .top-labels {
+      margin-bottom: 5px;
+    }
+
+    .in-between-labels {
+      .col-in-between {
+        @media screen and (min-width: 600px) {
+          min-width: 67%;
+        }
+        @media screen and (max-width: 599px) {
+          min-width: 63%;
+        }
+        .row-content {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  &ion-card {
+    padding: 20px 5px 20px 20px;
+  }
+  @media screen and (min-width: 921px) {
+    .web-plans-card.mobile {
+      padding: 20px;
+    }
+  }
+  .first-row {
+    .coverages-logo {
+      display: flex;
+      max-width: 80px !important;
+    }
+    .rightArrow {
+      max-width: 25px;
+    }
+  }
+  .top-labels {
+    .plan-col {
+      max-width: 75px !important;
+    }
+  }
+  .labels-values {
+    .labels-col {
+      max-width: 75px !important;
+    }
+  }
+}

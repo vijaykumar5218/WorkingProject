@@ -1,0 +1,9 @@
+<div>
+  <img
+    [src]="element.imageId ? service[element.imageId] : element.imageUrl"
+    alt="account logo"
+  />
+  <span>{{
+    element.answerId ? service[element.answerId] : element.header
+  }}</span>
+</div>

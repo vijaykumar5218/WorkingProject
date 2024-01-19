@@ -1,0 +1,311 @@
+:host {
+  background-color: var(--primary-colors-voya-white);
+
+  .frame {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 20px;
+    background-color: var(--white);
+    font-weight: bold;
+    .title {
+      text-align: left;
+      color: var(--ion-color-dark);
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .calim-transaction-card {
+    padding: 0;
+    background-color: var(--primary-colors-voya-white);
+
+    .dep-row {
+      margin-left: 18px;
+      margin-bottom: 8px;
+      display: flex;
+
+      .label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.0025em;
+        color: var(--primary-colors-voya-black);
+      }
+      .value {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.001em;
+        color: var(--primary-colors-voya-black);
+      }
+      .colon {
+        margin-left: 4px;
+        margin-right: 20px;
+        line-height: 16px;
+
+        &.second {
+          margin-left: 12px;
+        }
+      }
+    }
+
+    ion-list {
+      background-color: var(--ion-color-white);
+      ion-row {
+        @supports not (-webkit-touch-callout: none) {
+          .lastdays {
+            font-size: 16px;
+            color: var(--toggle-txt-color);
+            font-weight: bold;
+            padding: 0px 22px 10px 16px;
+          }
+          .color {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--dollar-amount-color);
+            padding: 0px 22px 4px 16px;
+          }
+        }
+        @supports (-webkit-touch-callout: none) {
+          .lastdays {
+            font-size: 16px;
+            color: var(--toggle-txt-color);
+            font-weight: bold;
+            padding: 20px 22px 10px 16px;
+
+            &.tpa-col {
+              padding-top: 0px;
+            }
+          }
+          .color {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--dollar-amount-color);
+            padding: 20px 22px 13px 16px;
+
+            &.tpa-col {
+              padding-top: 0px;
+            }
+          }
+        }
+        .subdate {
+          padding: 0 0px 10px 18px;
+          font-size: 14px;
+          font-weight: 600;
+          text-align: left;
+          color: var(--secondary-colors-voya-gray);
+        }
+        .sub-name {
+          height: 24px;
+          font-size: 14px;
+          font-weight: 600;
+          text-align: right;
+          color: var(--secondary-colors-voya-gray);
+          padding: 0px 22px 10px 16px;
+        }
+        .drugname {
+          font-size: 14px;
+          font-weight: 600;
+          color: var(--primary-colors-voya-black);
+          padding: 6px 22px 4px 17px;
+          margin-bottom: 12px;
+        }
+        .patient {
+          font-size: 14px;
+          font-weight: 600;
+          color: var(--primary-colors-voya-black);
+          padding: 6px 22px 12px 17px;
+        }
+        .lastfilled {
+          font-size: 14px;
+          font-weight: 600;
+          color: var(--primary-colors-voya-black);
+          padding: 0px 22px 12px 17px;
+        }
+        .carrier {
+          color: var(--primary-colors-voya-black);
+          padding: 16px 0px 8px 16px;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.0015em;
+        }
+        .sub-category {
+          height: 24px;
+          font-size: 14px;
+          font-weight: 600;
+          text-align: left;
+          color: var(--primary-colors-voya-black);
+          padding: 0px 22px 13px 6px;
+
+          &.tpa {
+            padding-left: 20px;
+          }
+        }
+        .dot {
+          width: 16px;
+          height: 16px;
+          border-radius: 12px;
+          margin-left: 16px;
+          margin-top: 2px;
+        }
+      }
+      .divider {
+        height: 1px;
+        margin: 19px 0 0;
+        background-color: var(--white);
+      }
+    }
+
+    & .filter-row {
+      margin-bottom: 15px;
+      padding: 0 20px;
+      display: flex;
+
+      .manage-button {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+        letter-spacing: 0.0125em;
+        text-decoration-line: underline;
+        text-transform: capitalize;
+        color: var(--primary-colors-voya-dark-blue);
+        align-self: center;
+        margin-left: auto;
+        cursor: pointer;
+      }
+
+      & .filt-button {
+        margin-right: 10px;
+        --background: var(--ion-color-white);
+        color: var(--ion-color-dark);
+        --border: solid 1px var(--ion-color-dark);
+        --border-color: rgb(48, 66, 94);
+        --border-radius: 10px;
+        --font-weight: 400;
+        --padding-start: 6px;
+        --padding-end: 4px;
+        --height: 34px;
+        --vertical-align: middle;
+        --background-activated: var(--ion-color-white);
+      }
+    }
+
+    & .date-range-row {
+      display: flex;
+      align-items: center;
+      padding: 0px 20px;
+      margin-bottom: 10px;
+
+      & .option-name {
+        cursor: pointer;
+        display: inline-flex;
+        margin-left: 5px;
+
+        & .value-wrap {
+          display: inline-flex;
+          align-items: center;
+
+          & .dd-ico {
+            display: inline-flex;
+          }
+        }
+      }
+    }
+
+    & .custom-date-range {
+      display: flex;
+      padding: 0 20px;
+      align-items: center;
+      --background-color: transparent;
+      --padding-left: 0;
+
+      & ion-item {
+        --background-color: transparent;
+        --padding-left: 0;
+      }
+
+      & .item-native {
+        background-color: transparent;
+        padding-left: 0;
+      }
+
+      & .cdr-block {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        margin-right: 10px;
+
+        ion-datetime-button::part(native) {
+          background-color: transparent;
+        }
+      }
+    }
+
+    & .date-range-pu {
+      width: 190px;
+    }
+
+    & ion-item::part(native) {
+      background-color: transparent;
+
+      & .item-inner {
+        border: none;
+      }
+    }
+
+    .chip-wrap {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      padding: 0 20px;
+    }
+  }
+
+  .mobile-plan-transactions {
+    padding-top: 20px;
+    background-color: var(--ion-color-white);
+  }
+
+  .web-plan-transactions {
+    @media screen and (min-width: 920px) {
+      margin: 1px 35px 150px 35px;
+    }
+    @media screen and (max-width: 920px) {
+      margin-bottom: 80px;
+    }
+    bottom: 0px;
+    > div {
+      margin-top: 35px;
+      @media only screen and (min-width: 280px) and (max-width: 920px) {
+        margin-top: 12px;
+      }
+
+      @media only screen and (min-width: 280px) and (max-width: 480px) {
+        ion-list {
+          ion-row {
+            ion-col.ion-text-start {
+              padding-right: 0px;
+            }
+            ion-col.ion-text-end {
+              padding-left: 0px;
+            }
+            ion-col.ion-text-start.lastdays {
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .data-wrapper {
+    min-height: 250px;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+}

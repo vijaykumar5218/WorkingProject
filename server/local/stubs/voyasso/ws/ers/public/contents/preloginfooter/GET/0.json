@@ -1,0 +1,72 @@
+{
+  "disclaimerText": "",
+  "copyRightText": "©{currentYear} Voya Service Company. All rights reserved.",
+  "navItems": [],
+  "iconLinks": [
+    {
+      "iconName": "file",
+      "linkURL": "http://voya.com/terms-use",
+      "linkLabel": "Terms of Use/Online Privacy",
+      "target": "_blank"
+    },
+    {
+      "iconName": "security",
+      "linkURL": "http://voya.com/articles/security",
+      "linkLabel": "Security",
+      "target": "_blank"
+    },
+    {
+      "iconName": "privacy",
+      "linkURL": "http://voya.com/privacy-notice",
+      "linkLabel": "Privacy Notice",
+      "target": "_blank"
+    },
+    {
+      "iconName": "universalaccess",
+      "linkURL": "https://www.voya.com/articles/voya-cares-about-accessibility",
+      "linkLabel": "Accessibility",
+      "target": "_blank"
+    },
+    {
+      "iconName": "file",
+      "linkURL": "https://www.voya.com/browsers-mobile-os-support",
+      "linkLabel": "Browser Requirements",
+      "target": "_blank"
+    },
+    {
+      "iconName": "pdf",
+      "linkURL": "https://get.adobe.com/reader/",
+      "linkLabel": "Get Adobe Reader",
+      "target": "_blank"
+    },
+    {
+      "iconName": "globeamericas",
+      "linkURL": "#",
+      "linkLabel": "English",
+      "languages": [
+        {
+          "label": "English",
+          "value": "en-US"
+        },
+        {
+          "label": "Español",
+          "value": "es-US"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "iconname": "facebook",
+      "href": "https://www.facebook.com/pages/Voya/215714485107840"
+    },
+    {
+      "iconname": "twitter",
+      "href": "http://twitter.com/voya"
+    },
+    {
+      "iconname": "linkedin",
+      "href": "https://www.linkedin.com/company/voya"
+    }
+  ]
+}

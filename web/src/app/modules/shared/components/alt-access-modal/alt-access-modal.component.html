@@ -1,0 +1,27 @@
+<ion-card class="alt-access-popup">
+  <ion-card-content>
+    <v-icon
+      class="x-button"
+      tabindex="0"
+      (click)="closeDialogClicked()"
+      (keyup.enter)="closeDialogClicked()"
+      id="close-btn"
+      primary
+      name="x"
+      size="20px"
+    ></v-icon>
+    <div>
+      <p class="message">{{ header }}</p>
+      <p class="message">{{ message }}</p>
+      <ion-button
+        (click)="closeDialogClicked()"
+        class="cancel-button OneLinkNoTx"
+        id="ok-btn"
+        shape="round"
+        expand="block"
+      >
+        {{ buttonText }}
+      </ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>

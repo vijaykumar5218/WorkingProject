@@ -1,0 +1,141 @@
+div {
+  height: 100%;
+  z-index: 0;
+  padding: 10px 20px 20px 0;
+  color: blue;
+  background: var(--primary-colors-voya-white);
+  overflow: auto;
+  margin-bottom: 80px;
+
+  ion-grid {
+    margin-left: 20px;
+
+    #close-modal {
+      cursor: pointer;
+      color: var(--primary-colors-voya-dark-blue);
+      float: right;
+      margin-right: 150px;
+      margin-bottom: 0;
+      @media screen and (max-width: 600px) {
+        margin-right: 0;
+      }
+    }
+    #close-modal-col {
+      height: 30px;
+      margin-bottom: 0;
+    }
+    #add-account-title {
+      font-size: 24px;
+      color: var(--primary-colors-voya-black);
+      font-weight: 700;
+      margin-top: 0;
+      margin-left: 65px;
+      margin-bottom: 20px;
+      @media screen and (max-width: 600px) {
+        margin-left: 5px;
+      }
+    }
+    .add-account-subtitle {
+      font-size: 18px;
+      color: var(--primary-colors-voya-black);
+      font-weight: 700;
+    }
+    #add-account-header-image {
+      height: 80px;
+      width: 120px;
+      margin-bottom: 0;
+    }
+    #intro-text-title {
+      margin-left: 10px;
+      margin-right: 50px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      color: var(--primary-colors-voya-black);
+
+      @media screen and (max-width: 600px) {
+        margin-right: 18px;
+        margin-left: 0;
+      }
+    }
+    #intro-text-image {
+      float: right;
+      margin: 0 55px 0 0;
+      @media screen and (max-width: 600px) {
+        margin-right: 35px;
+      }
+    }
+    .list-title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 10px 10px 0 10px;
+      margin-bottom: 5px;
+      color: var(--ion-color-dark);
+    }
+    #add-header-image {
+      height: 150px;
+      width: 150px;
+    }
+    #info-card {
+      margin-bottom: 5px;
+    }
+    #useful-title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 10px 10px 0 10px;
+      margin: 0;
+      color: var(--ion-color-dark);
+    }
+    #useful-list {
+      margin: 0 0 5px 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      color: var(--ion-color-dark);
+    }
+    #benefits-list {
+      border-bottom: 1px solid var(--secondary-colors-medium-gray-3);
+      margin-bottom: 5px;
+      padding-bottom: 15px;
+    }
+    #not-at-this-time,
+    #terms-link-text {
+      color: var(--primary-colors-voya-dark-blue);
+      font-size: 14px;
+      font-weight: 400;
+      margin-left: 37px;
+      white-space: nowrap;
+      @media screen and (max-width: 600px) {
+        margin-left: 20px;
+      }
+    }
+    #terms-link {
+      line-height: 14px;
+      margin-top: 10px;
+    }
+    #not-at-this-time {
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-left: 20px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      color: var(--ion-color-dark);
+    }
+    .add-account-button {
+      font-size: 16px;
+      margin: 10px 40px 10px 10px;
+      width: 161px;
+      height: 40px;
+      .add-circle-outline {
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

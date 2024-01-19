@@ -1,0 +1,12 @@
+<ng-container *ngIf="pageData">
+  <app-got-consent
+    *ngIf="justGaveConsent"
+    (visibilityChanged)="gotConsentVisibiltyChanged($event)"
+  ></app-got-consent>
+  <app-sub-header
+    [offsetTop]="offsetTop"
+    [tabsAction]="isDesktop ? pageData.tabs : pageData.defaultTab"
+    [selectedTab]="selectedTab"
+  >
+  </app-sub-header>
+</ng-container>

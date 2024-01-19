@@ -1,0 +1,53 @@
+{
+  "button": {
+    "continue": "Continue",
+    "login": "Login",
+    "register": "Register"
+  },
+  "tabslabel": {
+    "info": "Info",
+    "transactions": "Transactions"
+   
+  },
+  "label": {
+    "username": "Username",
+    "password": "Password"
+   
+  },
+  "placeholder": {
+    "username": "",
+    "password": ""
+  },
+  "toggle": {
+    "remember": "Remember Me",
+    "biometric": "Touch/Face ID"
+  },
+  "link": {
+    "forgotUsername": "Forgot Username?",
+    "forgotPassword": "Forgot Password?"
+  },
+  "forgotinApp": {
+    "forgotUsername": "Forgot Username",
+    "forgotPassword": "Forgot Password"
+  },
+  "nonLabeldText": {
+    "firstTimeUser": "First time user?"
+  },
+  "validatorMessage": {
+    "username": {
+      "required": "Username is required.",
+      "cannotContainSpace": "Enter valid Username"
+    },
+    "password": {
+      "required": "Password is required.",
+      "cannotContainSpace": "Enter valid Password",
+      "maxlength": "Enter valid Password"
+    },
+    "usernameandpassword":{
+      "required":"All fields are mandatory."
+    },
+    "notify":{
+      "notification":"Notifications"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<app-loading [loading]="notifications == null">
+  <div [ngClass]="isWeb? 'webNotifications':''">
+    <ng-container *ngIf="isWeb">
+      <ion-card *ngIf="notifications?.highPriority.length > 0">
+        <ng-container *ngTemplateOutlet="highPriority"> </ng-container>
+      </ion-card>
+      <ion-card *ngIf="notifications?.recent?.length > 0">
+        <ng-container *ngTemplateOutlet="recent"> </ng-container>
+      </ion-card>
+    </ng-container>
+
+    <ng-container *ngIf="!isWeb">
+      <ng-container *ngTemplateOutlet="highPriority"> </ng-container>
+      <ng-container *ngTemplateOutlet="recent"> </ng-container>
+    </ng-container>
+
+    <ng-template #highPriority>
+      <div class="high-priority" *ngIf="notifications?.highPriority.length > 0">
+        <ion-list-header>
+          <ion-label>{{pageText.highPriority}}</ion-label>
+        </ion-list-header>
+        <ion-list scroll="false">
+          <ng-container>
+            <app-notification-item
+              [notificationList]="notifications?.highPriority"
+            ></app-notification-item>
+          </ng-container>
+        </ion-list>
+      </div>
+    </ng-template>
+
+    <ng-template #recent>
+      <div class="recent-notifications">
+        <ion-list-header
+          class="recent"
+          *ngIf="notifications?.recent?.length > 0"
+        >
+          <ion-label>{{pageText.recent}}</ion-label>
+        </ion-list-header>
+        <ion-list scroll="false">
+          <ng-container>
+            <app-notification-item
+              [notificationList]="notifications?.recent"
+            ></app-notification-item>
+          </ng-container>
+        </ion-list>
+      </div>
+    </ng-template>
+    <ion-card
+      class="no-notifications"
+      *ngIf="(notifications?.recent?.length === 0) && (notifications?.highPriority?.length === 0)"
+    >
+      <ion-text>
+        You do not have any notifications at this time.
+      </ion-text>
+    </ion-card>
+  </div>
+</app-loading>

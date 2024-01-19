@@ -1,0 +1,11 @@
+{
+    "viewSpending":"View Spending",
+    "viewBudgets":"View Budgets",
+    "email":"Email",
+    "password":"Password",
+    "recovery":"Account Information Recovery",
+    "unregisterDevice":"Unregister Your Device",
+    "retrieveTextEmail": "Retrieve via Recovery email",
+    "retrieveTextMobile": "Retrieve via Recovery Mobile Phone Number",
+    "faceIDEnabled": "Enable Face ID / Touch ID"
+}

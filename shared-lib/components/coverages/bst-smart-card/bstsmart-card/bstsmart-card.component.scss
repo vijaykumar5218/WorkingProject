@@ -1,0 +1,99 @@
+::ng-deep {
+  .nudge-drug-orange {
+    color: var(--secondary-colors-voya-dark-orange);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.08px;
+  }
+}
+
+:host {
+  ion-card {
+    padding: 20px;
+
+    &.web {
+      .img-col {
+        display: flex;
+
+        img {
+          flex-grow: 99;
+          max-width: 80px;
+          max-height: 80px;
+          margin-left: auto;
+        }
+      }
+    }
+
+    ion-grid {
+      padding: 0;
+
+      .header-row {
+        display: flex;
+
+        .dec-img {
+          width: 24px;
+          height: 24px;
+          margin-right: 12px;
+        }
+
+        ion-text {
+          color: var(--secondary-colors-voya-dark-orange);
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: 0.024px;
+        }
+      }
+
+      .body-row {
+        display: flex;
+
+        .body-col {
+          flex-grow: 3;
+          display: flex;
+          flex-direction: column;
+
+          p {
+            color: var(--primary-colors-voya-black);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.08px;
+          }
+
+          .link-row {
+            margin-top: auto;
+          }
+        }
+
+        .img-col {
+          display: flex;
+          flex-shrink: 1;
+
+          .img-div {
+            margin-left: auto;
+
+            img {
+              @media (min-width: 480px) {
+                max-height: 100px;
+              }
+            }
+          }
+        }
+      }
+
+      .link-row {
+        a {
+          color: var(--primary-colors-voya-dark-blue);
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.08px;
+          text-decoration-line: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

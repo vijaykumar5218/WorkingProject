@@ -1,0 +1,11 @@
+{
+  "headername": "Notification Settings",
+  "highPriority": "High Priority",
+  "accountActivity": "Account Activity",
+  "insights": "Insights & Recommendations",
+  "pushNotification": "Push Notifications",
+  "textLabel": "Text",
+  "emailLabel": "Email",
+  "cancelLabel": "Cancel",
+  "saveLabel": "Save"
+}

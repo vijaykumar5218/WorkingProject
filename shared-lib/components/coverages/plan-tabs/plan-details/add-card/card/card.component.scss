@@ -1,0 +1,128 @@
+.card-section {
+  width: 95%;
+  height: 275px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px 40px;
+  gap: 20px;
+  border-radius: 12px;
+
+  .header {
+    height: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.0015em;
+    color: var(--primary-colors-voya-black);
+    white-space: nowrap;
+
+    .card-side {
+      color: var(--v-colors__voya-dark-orange);
+    }
+    .change {
+      font-size: 12px;
+      text-decoration: underline;
+      text-align: right;
+      margin-left: 20px;
+      color: var(--primary-colors-voya-dark-blue);
+      cursor: pointer;
+    }
+  }
+
+  .card-image {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    height: 170px;
+    background: var(--ion-color-white);
+    border: 1px solid var(--secondary-colors-medium-gray-3);
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    img {
+      max-height: 90%;
+      max-width: 90%;
+    }
+  }
+
+  .input {
+    display: none;
+  }
+
+  .sub-header {
+    width: 166px;
+    height: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.004em;
+    color: var(--voya-grey-font);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .image-placeholder {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 132px;
+    background: var(--ion-color-primary-contrast);
+    border: 1px dashed var(--voya-grey-font);
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    .placeholder {
+      padding-top: 24px;
+    }
+
+    .browse-text {
+      height: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.005em;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+
+      span {
+        color: var(--v-colors__primary);
+        .browse-title {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .align-right {
+    float: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-section {
+    margin: auto;
+  }
+}

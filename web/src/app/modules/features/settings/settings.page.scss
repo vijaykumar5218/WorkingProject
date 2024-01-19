@@ -1,0 +1,55 @@
+ion-grid {
+  ion-row {
+    &.linear-gradient {
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 90px;
+      bottom: 0%;
+      height: 50%;
+      background: linear-gradient(
+        359.28deg,
+        var(--gradient-color-white) 4.4%,
+        var(--secondary-colors-voya-gray) 91.56%
+      );
+    }
+  }
+  .max-width {
+    margin: auto;
+    max-width: 1440px;
+    .settings-tab {
+      margin: 30px auto;
+      .settings-info {
+        margin: 0px 20px;
+        .personal-info-card,
+        .account-info-card,
+        .notification-info-card {
+          .headline-row {
+            margin-bottom: 10px;
+          }
+          .headline-personal-row {
+            margin-bottom: 0px;
+          }
+          .account-info-header {
+            margin-bottom: 20px;
+          }
+          .settings-headline {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primary-colors-voya-black);
+          }
+          margin: 0 0 20px;
+          padding: 28px 48px 27.5px;
+          border-radius: 10px;
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+          background-color: var(--primary-colors-voya-white);
+          app-personal-info {
+            > ion-grid {
+              padding-left: 0px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

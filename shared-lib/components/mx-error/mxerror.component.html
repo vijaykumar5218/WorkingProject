@@ -1,0 +1,36 @@
+<ion-card
+  *ngIf="hasMXError && !mxErrorHidden"
+  [ngClass]="isWeb && isDesktop ? 'web-content' : ''"
+  class="mx-error"
+>
+  <ion-card-content [ngClass]="noLeftPadding ? 'no-left-padding' : ''">
+    <div id="mx-error-img" class="img-div">
+      <img tabindex="0" src="assets/icon/error_circle.svg" alt="error" />
+    </div>
+    <div class="txt-div" tabindex="1">
+      {{ content.mxError
+      }}<a
+        class="mx-error-link"
+        id="mx-error-link-mob"
+        *ngIf="!isWeb"
+        tabindex="2"
+        routerLink="/account/manage-accounts"
+        >{{ content.mxErrorLink }}</a
+      >
+      <a
+        class="mx-error-link"
+        id="mx-error-link-web"
+        *ngIf="isWeb"
+        tabindex="3"
+        routerLink="/accounts/manage-accounts"
+        >{{ content.mxErrorLink }}</a
+      >
+    </div>
+    <img
+      class="x-button"
+      src="assets/icon/exit.svg"
+      alt="Close warning"
+      (click)="closeClicked()"
+    />
+  </ion-card-content>
+</ion-card>

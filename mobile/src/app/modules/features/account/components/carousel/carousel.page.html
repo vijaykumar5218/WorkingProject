@@ -1,0 +1,35 @@
+<ng-container *ngIf="offerVal?.length > 0 && textPredval">
+  <label>
+    {{pageText.labelheading}}
+  </label>
+
+  <swiper [config]="config">
+    <ng-container *ngFor="let offervalue of offerVal">
+      <ng-template swiperSlide>
+        <ion-card>
+          <ion-row class="title-row">
+            <ion-col class="icon-col"
+              ><img
+                class="card-icon"
+                src="{{textPredval[offervalue?.offerCode]?.icon}}"
+                alt=""
+            /></ion-col>
+            <ion-col class="title-text">
+              {{textPredval[offervalue?.offerCode]?.title}}
+            </ion-col>
+          </ion-row>
+          <div class="warning-text">
+            <p
+              *ngFor=" let message of textPredval[offervalue?.offerCode]?.messages"
+            >
+              {{ message }}
+            </p>
+          </div>
+          <a class="fw-card-link"
+            >{{textPredval[offervalue?.offerCode]?.link_name}}</a
+          >
+        </ion-card>
+      </ng-template>
+    </ng-container>
+  </swiper>
+</ng-container>

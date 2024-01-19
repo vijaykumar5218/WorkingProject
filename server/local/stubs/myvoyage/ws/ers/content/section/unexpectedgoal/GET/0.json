@@ -1,0 +1,3 @@
+{
+  "UnexpectedGoalJSON": "{\"description\":\"Emergency Savings Account\",\"imageUrl\":\"assets/icon/progressBarBackground.svg\",\"label\":\"Current / Your Saving Goal\",\"rows\":[{\"answerId\":\"targetMonthlyContribution\",\"label\":\"Target monthly contributions for the next 3 years\",\"type\":\"textField\"},{\"answerId\":\"targetCompletionDate\",\"label\":\"Target Completion Date\",\"type\":\"textField\"}],\"marginBottom\":\"0px\",\"labelFontSize\":\"14px\",\"type\":\"dollar\",\"bgColor\":\"#0097a980\",\"borderColor\":\"#145a7bb3\"}"
+}

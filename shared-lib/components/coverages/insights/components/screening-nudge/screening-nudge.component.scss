@@ -1,0 +1,78 @@
+:host {
+  ion-card {
+    padding: 20px;
+
+    .title-row {
+      display: flex;
+      margin-bottom: 10px;
+
+      .title {
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.02px;
+        color: var(--secondary-colors-voya-dark-orange);
+        margin-left: 10px;
+        line-height: 24px;
+      }
+
+      .title-img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .body-row {
+      display: flex;
+      margin-bottom: 10px;
+
+      div {
+        display: flex;
+      }
+
+      .body-img {
+        padding-left: 20px;
+        min-height: 80px;
+        max-height: 80px;
+      }
+
+      .body {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.08px;
+
+        ::ng-deep a {
+          color: var(--primary-colors-voya-dark-blue);
+        }
+      }
+    }
+
+    .footer-row {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.08px;
+      color: var(--primary-colors-voya-dark-blue);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+
+  .web-card {
+    .title {
+      font-size: 29px;
+      line-height: 35px;
+    }
+
+    .title-img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .body {
+      font-size: 18px;
+    }
+
+    .footer {
+      font-size: 18px;
+    }
+  }
+}

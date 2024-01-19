@@ -1,0 +1,21 @@
+<div [ngClass]="{nudge: !showBeforeStarting}">
+  <span
+    tabindex="0"
+    (keydown.enter)="closeModal()"
+    (click)="closeModal()"
+    id="close-modal"
+  >
+    <img [src]="exitIconPath" alt="exit" />
+  </span>
+  <benefits-selection-modal-nudge
+    *ngIf="!showBeforeStarting"
+    (selectBenefits)="handleSelectBenefitsClick()"
+    [content]="content?.nudge"
+    [nudgeContent]="content?.nudgeInProgress"
+  ></benefits-selection-modal-nudge>
+  <benefits-selection-modal-before-starting
+    *ngIf="showBeforeStarting"
+    [modalContent]="content?.beforeStarting"
+    (closeModal)="closeModal()"
+  ></benefits-selection-modal-before-starting>
+</div>

@@ -1,0 +1,11 @@
+<ion-list inset="true" lines="full">
+  <ng-container *ngFor="let ele of stepContentElements; let i = index">
+    <journeys-expand-collapse
+      [header]="element.options[i].label"
+      [index]="ele.idSuffix"
+    >
+      <journeys-steps-step-intro
+        [element]="ele"
+      ></journeys-steps-step-intro> </journeys-expand-collapse
+  ></ng-container>
+</ion-list>

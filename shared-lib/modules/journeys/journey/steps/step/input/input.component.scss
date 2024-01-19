@@ -1,0 +1,42 @@
+:host {
+  display: block;
+  margin-bottom: 40px;
+  .label {
+    ion-text {
+      font-size: 16px;
+      color: var(--primary-colors-voya-black);
+    }
+
+    .prefix-and-label {
+      display: flex;
+
+      .prefix {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  journeys-steps-step-input-text-field {
+    height: 56px;
+  }
+
+  journeys-steps-step-input-radio-button {
+    display: block;
+    margin-top: 20px;
+  }
+
+  ion-text.description {
+    display: block;
+    font-size: 14px;
+    color: var(--primary-colors-voya-black);
+    margin-top: 10px;
+  }
+  
+  journeys-steps-step-input-calendar {
+    height: 56px;
+  }
+}
+.input-web {
+  margin: auto;
+  max-width: 335px;
+}

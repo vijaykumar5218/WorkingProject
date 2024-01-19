@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 12px;
+
+  div {
+    height: 8px;
+    background-color: var(--secondary-colors-medium-gray-3);
+    margin-right: 5px;
+
+    &.completed {
+      background-color: var(--secondary-colors-voya-dark-orange);
+    }
+
+    &.in-progress {
+      background-color: var(--secondary-colors-medium-gray-2);
+    }
+
+    &.in-progress.current-step {
+      background-color: var(--secondary-colors-medium-gray-3);
+    }
+
+    &:first-of-type:not(:only-of-type) {
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-of-type:not(:only-of-type) {
+      border-radius: 0 5px 5px 0;
+    }
+
+    &:only-of-type {
+      border-radius: 5px;
+    }
+  }
+}

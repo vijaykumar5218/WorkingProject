@@ -1,0 +1,17 @@
+ion-text,
+ion-label {
+  color: var(--primary-colors-voya-black);
+  font-size: 16px;
+  display: block;
+}
+
+.desc-text {
+  display: inline;
+  white-space: pre-line;
+
+  &.desc-link {
+    cursor: pointer;
+    color: var(--primary-colors-voya-dark-blue);
+    text-decoration: underline;
+  }
+}

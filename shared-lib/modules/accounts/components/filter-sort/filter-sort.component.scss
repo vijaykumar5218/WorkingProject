@@ -1,0 +1,19 @@
+.filter-row {
+  margin-bottom: 15px;
+  padding: 0px;
+
+  & .filt-button {
+    margin-right: 10px;
+    --background: var(--ion-color-white);
+    color: var(--ion-color-dark);
+    --border: solid 1px var(--ion-color-dark);
+    --border-color: rgb(48, 66, 94);
+    --border-radius: 10px;
+    --font-weight: 400;
+    --padding-start: 6px;
+    --padding-end: 4px;
+    --height: 34px;
+    --vertical-align: middle;
+    --background-activated: var(--ion-color-white);
+  }
+}

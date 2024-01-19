@@ -1,0 +1,90 @@
+<ion-grid class="myWorkplaceDashboard">
+  <ion-row class="message-center-section linear-gradient">
+    <ion-col class="left-col">
+      <ion-card class="left-card">
+        <ion-row class="message-center-heading">
+          <ion-col>
+            <img
+              id="message-center-logo"
+              alt=""
+              src="assets/icon/message_center.svg"
+            />
+            <ion-text>
+              {{catchUpData?.messageCenter?.header}}
+            </ion-text>
+          </ion-col>
+        </ion-row>
+
+        <ng-container
+          *ngTemplateOutlet="temp;context:{categoryName:'highPriority',messages:catchUpMessageData?.highPriority}"
+        >
+        </ng-container>
+        <ng-container
+          *ngTemplateOutlet="temp;context:{categoryName:'recent',messages:catchUpMessageData?.recent}"
+        >
+        </ng-container>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <app-footer-desktop class="footer-desktop"></app-footer-desktop>
+</ion-grid>
+
+<ng-template let-categoryName="categoryName" let-messages="messages" #temp>
+  <ng-container *ngIf="messages && messages.length > 0">
+    <ion-row class="message-category-section">
+      <ion-col>
+        <img
+          id="high-priority-logo"
+          alt=""
+          src="assets/icon/{{categoryName}}.svg"
+        />
+        <ion-text>
+          {{categoryName ==
+          'recent'?catchUpData?.messageCenter?.recentMsgTxt:catchUpData?.messageCenter?.highPriorityMsgTxt}}
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row
+      *ngFor="let message of messages; let i = index;"
+      class="msg-info-section"
+    >
+      <ion-col class="new-msg-col">
+        <ion-text>{{catchUpData?.messageCenter?.newMsgTxt}}</ion-text>
+      </ion-col>
+      <ion-col class="msg-info-col">
+        <ion-row *ngIf="message?.Title">
+          <ion-col>
+            <ion-text class="message-title">
+              {{message.Title}}
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="message?.Description">
+          <ion-col>
+            <ion-text class="message-discription">
+              {{message.Description}}
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngIf="message?.Link_name" class="message-link-btn">
+          <ion-col>
+            <ion-button
+              size="small"
+              class="font-12"
+              shape="round"
+              color="btncolor"
+              fill="outline"
+              [id]="categoryName + '_'+message?.Link_name.split(' ').join('_')+ i"
+            >
+              {{ message.Link_name }}
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col class="msg-info-date">
+        <ion-text>Feb 16</ion-text>
+      </ion-col>
+    </ion-row>
+  </ng-container>
+</ng-template>

@@ -1,0 +1,72 @@
+.top {
+  @media screen and (max-width: 920px) {
+    top: 15%;
+  }
+  @media screen and (min-width: 920px) {
+    top: 20%;
+  }
+  padding: 10px 10px 0px 20px;
+  color: var(--primary-colors-voya-black);
+  .float-right {
+    float: right;
+    cursor: pointer;
+  }
+  ion-card-content {
+    padding-top: 25px;
+  }
+  .textalign {
+    margin: 20px 56px 0 46px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.02px;
+    text-align: left;
+    color: var(--primary-colors-voya-dark-blue);
+  }
+  .mar-right {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .bolds {
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--primary-colors-voya-black);
+  }
+  .popup-header-row {
+    max-width: 280px;
+    margin: auto;
+    .popup-header {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  }
+  .popup-points-row {
+    max-width: 280px;
+    margin: auto;
+    .popup-points {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+  }
+  .popup-sub-header {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .popup-desc-row {
+    max-width: 340px;
+    margin: auto;
+    .popup-desc {
+      font-size: 12px;
+    }
+  }
+  ion-button {
+    width: fit-content;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-width: 140px;
+  }
+  .linkcolor {
+    cursor: pointer;
+  }
+}

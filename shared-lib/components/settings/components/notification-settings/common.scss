@@ -1,0 +1,36 @@
+:host {
+  font-size: 16px;
+  background-color: var(--ion-color-white);
+  padding: 0 20px;
+
+  .settings-section-wrapper {
+    border-bottom: 1px solid var(--color-lightgrey);
+
+    ion-toggle {
+      float: right;
+      margin-right: 18px;
+    }
+  }
+  h4 {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  .settings-subtext {
+    color: var(--secondary-colors-voya-gray);
+    margin: 4px 0 16px 0;
+    padding: 0;
+  }
+  .settings-section {
+    ion-checkbox {
+      color: var(--primary-colors-voya-dark-blue);
+    }
+    .settings-checkbox-label {
+      margin-left: 8px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--primary-colors-voya-black);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar mode="md" [ngClass]="isAndroid ? 'android-offset' : ''">
+    <img
+      *ngIf="actionOption.displayLogo"
+      class="headerimg"
+      alt="voya financial login logo"
+      src="../../../../assets/icon/myVoyageNew_Mobile.svg"
+    />
+
+    <ion-button
+      size="small"
+      slot="start"
+      *ngIf="actionOption?.btnleft"
+      (click)="routeToPage(actionOption.buttonLeft.link)"
+      id="navbarBackButton"
+    >
+      <img
+        class="left-button-img"
+        alt="back arrow"
+        src="assets/icon/left_chevron_voya_black.svg"
+      />
+    </ion-button>
+    <ion-title
+      *ngIf="!actionOption.displayLogo"
+      [ngClass]="actionOption.btnleft ? 'left-button-visible' : ''"
+      >{{ actionOption.headername }}</ion-title
+    >
+    <button
+      ion-button
+      slot="end"
+      *ngIf="actionOption?.btnright"
+      (click)="routeToPage(actionOption.buttonRight.link, true)"
+      id="navbarNotificationButton"
+    >
+      <img
+        class="right-button-img"
+        alt="notification bell"
+        src="assets/icon/notifications_outline.svg"
+      />
+      <span
+        *ngIf="notificationValue?.newNotificationCount > 0"
+        class="dot"
+      ></span>
+    </button>
+  </ion-toolbar>
+</ion-header>

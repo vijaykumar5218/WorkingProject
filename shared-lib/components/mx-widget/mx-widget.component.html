@@ -1,0 +1,16 @@
+<div
+  *ngIf="!hasError"
+  id="{{ tagName }}"
+  [ngClass]="isWeb ? 'web-mx-widget-component' : 'mobile-mx-widget-component'"
+></div>
+<div *ngIf="hasError" class="error-window">
+  <ion-text>{{ content.widgetError }}</ion-text>
+  <ion-button
+    size="small"
+    (click)="refreshWidget()"
+    fill="clear"
+    color="btncolor"
+  >
+    {{ content.retry }}
+  </ion-button>
+</div>

@@ -1,0 +1,37 @@
+{
+    "members": [
+      {
+        "guid": "MBR-a39bab00-cc0c-4539-ac68-897942ea4650",
+        "aggregated_at": "2022-09-14T01:03:39+00:00",
+        "name": "MX Bank (Oauth)",
+        "connection_status": "CONNECTED",
+        "is_user_created": "true",
+        "user_guid": "USR-cf7c18a3-5552-4f78-82fc-7013a3b03d12",
+        "connection_status_message": "Connected to MX Bank (Oauth)."
+      },
+      {
+        "guid": "MBR-ff895952-1cb5-433c-bb10-73814949cdaa",
+        "name": "Manual Institution",
+        "is_user_created": "true",
+        "user_guid": "USR-cf7c18a3-5552-4f78-82fc-7013a3b03d12"
+      },
+      {
+        "guid": "MBR-6d06eed5-33e7-48f0-b82b-2132f9608eb7",
+        "name": "Test Pulse Member",
+        "connection_status": "CONNECTED",
+        "is_user_created": "false",
+        "user_guid": "USR-cf7c18a3-5552-4f78-82fc-7013a3b03d12",
+        "connection_status_message": "Connected to Test Pulse Institution."
+      },
+      {
+        "guid": "MBR-0af948fb-7df2-45b7-948b-df5d927bb41c",
+        "aggregated_at": "2022-07-07T12:17:00+00:00",
+        "name": "American Express Credit Card",
+        "connection_status": "DENIED",
+        "is_user_created": "true",
+        "user_guid": "USR-cf7c18a3-5552-4f78-82fc-7013a3b03d12",
+        "connection_status_message": "The credentials entered do not match credentials at this institution."
+      }
+    ]
+  }
+  

@@ -1,0 +1,25 @@
+{
+    "enableMyVoyage": "Y",
+    "clientId": "INGWIN",
+    "clientDomain": "smithbarney.intg.voya.com",
+    "clientName": "Your Retirement Plan",
+    "planIdList": [
+        {
+            "planId": "776991",
+            "active": true,
+            "benefitsAdminSystem": "Workday"
+        }
+    ],
+    "currentPlan": {
+        "planId": "776991",
+        "active": true,
+        "benefitsAdminSystem": "Workday"
+    },
+    "firstTimeLogin": false,
+    "platform": "Workday",
+    "isHealthOnly": false,
+    "enableCoverages": false,
+    "myProfileURL": "https%3A%2F%2Flogin.intg.voya.com%2Fsaml%2Fsps%2Fsaml-idp-login%2Fsaml20%2Flogininitial%3FPartnerId%3Dhttps%3A%2F%2Fmy3.intg.voya.com%2Fmga%2Fsps%2Fsaml-sp-my-local%2Fsaml20%26access_token%3D%5Bexchanged_access_token%5D%26Target\u003dhttps%3A%2F%2Fmy3.intg.voya.com%2Fvoyasso%2FmobileSignOn%3Fdomain%3Dsmithbarney.intg.voya.com%26target%3Dhttps%3A%2F%2Fmy3.intg.voya.com%2Fmyvoyaui%2Findex.html%23my-profile%2Flogin-info",
+    "enableMX": true,
+    "enableBST": "Y"
+}

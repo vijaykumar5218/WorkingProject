@@ -1,0 +1,97 @@
+<div *ngIf="content">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" id="close-modal-col">
+        <p id="close-modal" (click)="closeModal()">{{ pageText.cancelText }}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-xs="2" size-sm="4"></ion-col>
+      <ion-col size-xs="8" size-sm="4">
+        <h3 id="add-account-title">{{ content.addAccount.title }}</h3>
+      </ion-col>
+      <ion-col size-xs="2" size-sm="4"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-xs="2" size-sm="4"></ion-col>
+      <ion-col id="intro-text-title" size-xs="8" size-sm="3">
+        <span>{{ content.addAccount.subtitle }}</span>
+      </ion-col>
+      <ion-col size="1">
+        <img
+          id="intro-text-image"
+          src="assets/workplace-dashboard/add-account-modal-icon.svg"
+          alt="Intro"
+        />
+      </ion-col>
+      <ion-col size-xs="1" size-sm="4"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-xs="1" size-sm="4"></ion-col>
+      <ion-col size-xs="10" size-sm="4">
+        <ion-card id="info-card">
+          <p class="list-title">{{ content.addAccount['benefits'].title }}</p>
+          <ul id="benefits-list">
+            <li *ngFor="let item of content.addAccount['benefits'].list">
+              {{ item.text }}
+            </li>
+          </ul>
+          <p class="list-title">{{ content.addAccount['usefulInfo'].title }}</p>
+          <ul id="useful-list">
+            <li
+              *ngFor="let usefulItem of content.addAccount['usefulInfo'].list"
+            >
+              {{ usefulItem.text }}
+            </li>
+          </ul>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs="1" size-sm="4"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-xs="3" size-sm="5"></ion-col>
+      <ion-col size-xs="3" size-sm="2">
+        <ion-button
+          size="small"
+          id="add-account"
+          class="add-account-button"
+          name="Add Account"
+          shape="round"
+          expand="block"
+          color="btncolor"
+          (click)="openAddAccountWidgetModal()"
+        >
+          <img
+            class="add-circle-outline"
+            alt="add-circle-outline"
+            src="assets/icon/addoutline.png"
+          />
+          {{ content.addAccount['button'].text }}
+        </ion-button>
+      </ion-col>
+      <ion-col size-xs="6"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-xs="3" size-sm="5"></ion-col>
+      <ion-col size-xs="6" size-sm="5">
+        <a id="not-at-this-time" href="#" (click)="closeModal()">{{
+          pageText.notNowText
+        }}</a>
+      </ion-col>
+      <ion-col size-xs="3" size-sm="2"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-xs="3" size-sm="5"></ion-col>
+      <ion-col size-xs="8" size-sm="2" id="terms-link">
+        <br />
+        <a
+          id="terms-link-text"
+          href="{{ content.addAccount.termsAndConditionsLink }}"
+          target="_blank"
+          >{{ pageText.tncText }}</a
+        >
+      </ion-col>
+      <ion-col size-xs="1" size-sm="5"></ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

@@ -1,0 +1,58 @@
+<ion-grid
+  class="popup-modal"
+  [ngClass]="isWeb? hideHeader? 'help-card web-grid' : isWorkplaceDashboard? 'workplace-help-menu web-grid': 'help-menu web-grid' :'mobile-grid'"
+>
+  <div *ngIf="loading">
+    <ion-spinner></ion-spinner>
+  </div>
+  <div *ngIf="!loading">
+    <ion-header *ngIf="hideHeader && isWeb">
+      <ion-toolbar mode="ios">
+        <ion-buttons slot="secondary">
+          <ion-button size="small" id="close-button" (click)="closeDialog()">
+            {{ pageText.textClose }}
+          </ion-button>
+        </ion-buttons>
+        <ion-title>{{ pageText.title }}</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-row>
+      <ion-col>
+        <ion-text>{{ screenMessage?.WealthCoachDesc }}</ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="(settingsDisplayFlags?.suppressAppointment)">
+      <ion-col>
+        <div
+          class="dark WealthCoachStatementText"
+          [innerHTML]="screenMessage?.WealthCoachStatementText"
+        ></div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="mt-42">
+      <ion-col>
+        <ion-button
+          size="small"
+          id="book-apoint"
+          name="submit"
+          shape="round"
+          expand="block"
+          color="btncolor"
+          type="submit"
+          (click)="openTimeTapUrl()"
+          >{{ settingsDisplayFlags?.suppressAppointment ?
+          pageText.buttonStatement : pageText.button }}
+        </ion-button></ion-col
+      >
+    </ion-row>
+    <ion-row class="disclosure-text-row">
+      <ion-col>
+        <ion-text class="disclosure-text">
+          {{ screenMessage?.ContactCoachDisclosure }}
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-grid>

@@ -1,0 +1,17 @@
+<div
+  class="accordion-container"
+  [id]="accordionId"
+  (click)="toggleAccordion()"
+  (keyup.enter)="toggleAccordion()"
+  [ngClass]="isListItemOpened ? 'open' : ''"
+  tabindex="0"
+>
+  <label>
+    {{ question }}
+    <div class="arrow"></div>
+  </label>
+
+  <div class="content">
+    <p innerHTML="{{ description }}"></p>
+  </div>
+</div>

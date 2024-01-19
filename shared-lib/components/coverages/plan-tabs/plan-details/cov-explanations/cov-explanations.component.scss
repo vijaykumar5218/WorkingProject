@@ -1,0 +1,65 @@
+.exp-head {
+  flex-grow: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 0.03px;
+  text-align: left;
+  color: var(--primary-colors-voya-black);
+  padding: 0 20px;
+  margin-top: 10px;
+
+  & p {
+    margin: 0;
+  }
+}
+
+.card-wrap {
+  z-index: 1;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  padding: 20px 15px;
+  margin-top: 10px;
+}
+
+.exp-wrap {
+  & h4 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    color: var(--primary-colors-voya-dark-blue);
+  }
+
+  & p {
+    font-size: 16px;
+    margin: 0 0 70px 0;
+    color: var(--primary-colors-voya-black);
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  .exp-row {
+    margin: 0 0 30px 0;
+    flex-direction: column;
+    padding-bottom: 15px;
+
+    &:last-child {
+      border-bottom: none;
+      margin: 0px 0;
+      padding-bottom: 0px;
+    }
+  }
+}
+
+.web-cov-explanations {
+  div.exp-head {
+    padding-left: 35px;
+  }
+  ion-card.exp-wrap {
+    margin-left: 35px;
+    box-shadow: none;
+    padding: 0px;
+  }
+}

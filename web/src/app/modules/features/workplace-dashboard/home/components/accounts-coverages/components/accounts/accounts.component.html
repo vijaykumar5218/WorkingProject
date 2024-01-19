@@ -1,0 +1,39 @@
+<ion-row *ngIf="!isMXUser && isCoverageAccessible">
+  <ion-col class="accountsHeader">
+    <p tabindex="0">{{ pageText.accountsHeader }}</p>
+  </ion-col>
+</ion-row>
+<app-balance-history-graph
+  *ngIf="!isMXUser && !isCoverageAccessible"
+  graphId="accounts-balance-history-graph"
+></app-balance-history-graph>
+<app-account-widgets
+  widgetHeight="420px"
+  [isMXUser]="isMXUser"
+  [widgetId]="widgetId"
+  [templateType]="templateType"
+></app-account-widgets>
+<div automation-id="acct-connect-error">
+  <app-mxerror
+    [noLeftPadding]="true"
+    automation-id="acct-connect-error-text"
+  ></app-mxerror>
+</div>
+<ng-container *ngIf="!isHealthOnly || isMXUser">
+  <ng-container
+    *ngFor="
+      let expandableAccount of expandableAccountsContent?.expandableAccounts;
+      let last = last;
+      let i = index
+    "
+  >
+    <app-expandable-account-list
+      [acctType]="expandableAccount?.acctType"
+      [lastAcct]="last ? true : false"
+      [indexId]="i"
+      [isMXUser]="isMXUser ? true : false"
+      [enableMX]="enableMX"
+    >
+    </app-expandable-account-list>
+  </ng-container>
+</ng-container>

@@ -1,0 +1,29 @@
+:host {
+  display: block;
+
+  :host-context(.plt-tablet) {
+    ion-header {
+      background-color: white;
+    }
+
+    @media (max-width: 500px) {
+      ion-toolbar.ios {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  ion-toolbar {
+    &.border {
+      border-bottom: 1px solid var(--secondary-colors-medium-gray-3);
+    }
+
+    #close-button {
+      margin-left: 20px;
+      font-size: 16px;
+      line-height: 1.06;
+      text-decoration: underline;
+      --color: var(--primary-colors-voya-dark-blue);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<ion-card
+  tabindex="0"
+  [ngStyle]="manageWidthOfCard()"
+  (keyup.enter)="handleJourneyClick()"
+  (click)="handleJourneyClick()"
+  [id]="journeyType + 'JourneyCard' + journey?.journeyID"
+>
+  <div class="row" [ngClass]="{'coming-soon': isComingSoon}">
+    <span>
+      {{ content.intro.header }}
+    </span>
+    <div class="status-section">
+      <journeys-status
+        *ngIf="!isComingSoon"
+        [status]="status"
+      ></journeys-status>
+      <img
+        *ngIf="isComingSoon"
+        [alt]="journeyContent.landingPage.comingSoonAltText"
+        src="assets/icon/journeys/comingsoon.svg"
+      />
+    </div>
+  </div>
+</ion-card>

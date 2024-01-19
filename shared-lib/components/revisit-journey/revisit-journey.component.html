@@ -1,0 +1,22 @@
+<ion-card-header>
+  <ion-card-title>
+    {{ modalContent.header }}
+  </ion-card-title>
+</ion-card-header>
+<ion-card-content>
+  <ion-button
+    size="small"
+    shape="round"
+    expand="block"
+    color="btncolor"
+    id="close-modal"
+    (click)="goToSteps()"
+  >
+    {{ modalContent.button }}</ion-button
+  ><br />
+  <p id="go-to-steps" (click)="closeInfoDialog()">
+    <u tabindex="0" (keydown.enter)="closeInfoDialog()">
+      {{ modalContent.link }}
+    </u>
+  </p>
+</ion-card-content>

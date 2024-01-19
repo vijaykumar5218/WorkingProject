@@ -1,0 +1,12 @@
+{
+  "eventTrackingLogin": {
+    "eventName": "Login Inactivity"
+  },
+  "eventTrackingPreference":{
+    "eventName": "PreferencesUpdated"
+  },
+  "eventTrackingMx": {
+    "eventName": "Account Aggregated",
+    "updateInd": "Y"
+  }
+}

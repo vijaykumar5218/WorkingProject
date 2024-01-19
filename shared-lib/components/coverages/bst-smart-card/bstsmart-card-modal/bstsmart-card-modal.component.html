@@ -1,0 +1,24 @@
+<app-modal-header
+  [headerText]="smartCardContent?.modalContent.modalHeader"
+  [back]="isWeb"
+  #topmostElement
+></app-modal-header>
+
+<ion-grid [ngClass]="{web: isWeb}">
+  <ion-row>
+    <ion-col size="8">
+      <h1>{{ smartCardContent?.modalContent.topHeader }}</h1>
+      <p [innerHTML]="smartCardContent?.modalContent.topBody"></p>
+    </ion-col>
+
+    <ion-col size="4" class="img-col">
+      <img src="{{ smartCardContent?.modalContent.topImage }}" alt="" />
+    </ion-col>
+  </ion-row>
+  <ion-row *ngFor="let part of smartCardContent?.modalContent?.bodyParts">
+    <div>
+      <h1>{{ part.header }}</h1>
+      <p [innerHTML]="part.body"></p>
+    </div>
+  </ion-row>
+</ion-grid>

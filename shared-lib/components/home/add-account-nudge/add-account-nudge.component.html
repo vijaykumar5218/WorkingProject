@@ -1,0 +1,34 @@
+<ion-card
+  *ngIf="show"
+  [ngStyle]="{margin: cardMargin}"
+  [ngClass]="isWeb ? 'web' : ''"
+>
+  <ion-row>
+    <img src="assets/icon/people_at_table.svg" alt="" />
+  </ion-row>
+  <ion-row>
+    <ion-text class="body"
+      >Get Personalized Insights on where your money is going</ion-text
+    >
+  </ion-row>
+  <ion-row>
+    <ion-text class="sub-body"
+      >Add your accounts and view your lines of credit, investments, and
+      balances all in one place.</ion-text
+    >
+  </ion-row>
+  <ion-row>
+    <ion-button
+      size="small"
+      id="addaccount"
+      class="font-18 btnview"
+      name="Add Account"
+      shape="round"
+      expand="block"
+      color="btncolor"
+      (click)="addAccountClicked()"
+      >Add Account
+      <ion-icon class="font" slot="start" name="add-circle-outline"></ion-icon>
+    </ion-button>
+  </ion-row>
+</ion-card>

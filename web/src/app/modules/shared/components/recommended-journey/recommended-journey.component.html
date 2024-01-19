@@ -1,0 +1,77 @@
+<ng-container *ngIf="recommendedJourneys?.length > 0">
+  <ng-container *ngFor="let recommended of recommendedJourneys; let i = index">
+    <div *ngIf="recommended?.status !== statusCompleted">
+      <ion-card
+        [ngClass]="
+          myWorkplaceDashboardEnabled
+            ? 'workplace-journey-recommended'
+            : 'myvoyage-journey-recommended'
+        "
+      >
+        <ion-card-header>
+          <p
+            tabindex="0"
+            class="journey-recommended-title"
+            [attr.automation-id]="'journeyHeader_' + i"
+          >
+            {{ journeyHeader }}
+          </p>
+        </ion-card-header>
+        <ion-card-content>
+          <ng-container *ngIf="!myWorkplaceDashboardEnabled">
+            <img
+              [src]="
+                recommended?.parsedLandingAndOverviewContent?.intro?.imgUrl
+              "
+              class="journeyImg"
+              alt="journey_image"
+              [id]="'journeyImg' + i"
+            />
+          </ng-container>
+          <div class="journey-recommended-header">
+            <p
+              tabindex="0"
+              [attr.automation-id]="'journey-recommended-header' + i"
+            >
+              {{ recommended?.parsedLandingAndOverviewContent?.intro?.header }}
+            </p>
+            <journeys-status [status]="recommended?.status"></journeys-status>
+          </div>
+          <div class="journey-recommended-msg-section">
+            <p
+              tabindex="0"
+              class="journey-recommended-msg"
+              [attr.automation-id]="'journey-recommended-msg' + i"
+            >
+              {{ recommended?.parsedLandingAndOverviewContent?.intro?.message }}
+            </p>
+            <ng-container *ngIf="myWorkplaceDashboardEnabled">
+              <img
+                [src]="
+                  recommended?.parsedLandingAndOverviewContent?.intro?.imgUrl
+                "
+                class="journeyImg"
+                [attr.automation-id]="'journey_image' + i"
+                alt="journey_image"
+              />
+            </ng-container>
+          </div>
+          <div class="journey-btn-section">
+            <ion-button
+              size="small"
+              fill="outline"
+              shape="round"
+              color="btncolor"
+              [attr.aria-label]="recommended.buttonText"
+              [attr.automation-id]="'view-journey-btn_' + i"
+              class="journey-button"
+              (click)="navigateToRecommendedJourney()"
+            >
+              {{ recommended.buttonText }}
+            </ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ng-container>
+</ng-container>

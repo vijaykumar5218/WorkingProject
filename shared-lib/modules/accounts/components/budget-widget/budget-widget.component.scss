@@ -1,0 +1,17 @@
+ion-button {
+  border: solid 2px var(--primary-colors-voya-dark-blue);
+  width: 148px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px auto 15px auto;
+  border-radius: 20px;
+}
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: var(--secondary-colors-medium-gray-3);
+  height: 1px;
+}

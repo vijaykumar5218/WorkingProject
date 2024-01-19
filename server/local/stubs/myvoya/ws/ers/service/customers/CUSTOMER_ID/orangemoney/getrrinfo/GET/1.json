@@ -1,0 +1,15 @@
+{
+    "madLibData": {
+        "annualSalary": 85000.0,
+        "dob": "1950-01-01T00:00:00",
+        "firstName": "HIEDI",
+        "firstTimeUser": true,
+        "madLib": true,
+        "madlibHelpContent":
+            "With just a few steps you can check your progress toward your future monthly retirement income goals.",
+        "participantStatus": "ACTIVE",
+        "promoTextForSkip": null,
+        "skipMadlibAllowed": true,
+        "omTitle": "nonfe-madlib-myOrangeMoney"
+    }
+}

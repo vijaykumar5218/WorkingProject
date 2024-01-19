@@ -1,0 +1,12 @@
+<div class="word-container">
+  <div
+    *ngFor="let option of options"
+    (click)="toggleSelectOption(option)"
+    (keyup.enter)="toggleSelectOption(option)"
+    [ngClass]="{selected: getSelected(option)}"
+    [id]="option.id + idSuffix"
+    tabindex="0"
+  >
+    {{ option.text }}
+  </div>
+</div>

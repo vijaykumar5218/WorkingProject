@@ -1,0 +1,17 @@
+{
+  "colors": { 
+    "medical": "#d7b8c9",
+    "dental": "#d9d9d9",
+    "vision": "#b5a7ba",
+    "rx": "#c4E2F0",
+    "facility": "#99d5dd"
+  },  
+
+  "serviceName": {
+    "medical": "Medical Care",
+    "dental": "Dental Care",
+    "vision": "Vision Care",
+    "rx": "Prescription Care",
+    "facility": "Facility Care"
+  }
+}

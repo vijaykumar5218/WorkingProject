@@ -1,0 +1,24 @@
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  .anchor-tag-container {
+    align-self: flex-start;
+    display: flex;
+    flex: 1;
+
+    &.centered {
+      justify-content: center;
+    }
+
+    .link-anchor {
+      font-size: 16px;
+      text-underline-offset: 4px;
+      cursor: pointer;
+    }
+  }
+  .img {
+    height: 100%;
+  }
+}

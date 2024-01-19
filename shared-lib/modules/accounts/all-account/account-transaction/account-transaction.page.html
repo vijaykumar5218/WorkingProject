@@ -1,0 +1,22 @@
+<div
+  id="container"
+  #container
+  [ngClass]="isWeb? 'web-transaction':'mobile-transaction'"
+>
+<ng-container *ngIf="isAltAccessUser; else mxGraph">
+  <div  id="transactionsimage" [ngClass]="isWeb? 'web-transaction':'mobile-transaction'">
+    <img
+    class=""
+    src="assets/altAccessUser/transactions-dummy.svg"
+    alt="voya"
+  />
+  </div>
+</ng-container>
+<ng-template #mxGraph>
+  <app-mx-widget
+  [widgetType]="widgetType.TRANSACTIONS"
+  [height]="height"
+  [tagName]="'mx-transactions'"
+></app-mx-widget>
+</ng-template>
+</div>

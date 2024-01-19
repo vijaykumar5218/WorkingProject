@@ -1,0 +1,23 @@
+{
+    "id": "1047",
+    "type": "medical_plan",
+    "coverage": "Employee + One",
+    "coverage_start_date": "2022-04-01",
+    "deduction_start_date": "2022-04-01",
+    "premium": 554.26,
+    "covered_people_ids": [
+        "498"
+    ],
+    "dependents": [
+        {
+            "id": "498",
+            "first_name": "Juliet",
+            "last_name": "Darshan-DP",
+            "relationship": "SPOUSE",
+            "birthdate": "1961-07-23",
+            "age": 61
+        }
+    ],
+    "policyId": "1047",
+    "benAdminFlag": true
+}

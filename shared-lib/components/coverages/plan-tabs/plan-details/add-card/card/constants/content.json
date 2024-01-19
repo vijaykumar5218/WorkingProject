@@ -1,0 +1,31 @@
+{
+  "cardSection": {
+    "header": {
+      "upload": "Upload",
+      "frontSide": "front side",
+      "backSide": "back side"
+    },
+    "subHeader": "Supports PNG, JPG, JPEG, TIFF",
+    "browse": {
+      "browse": "Browse",
+      "choose": "to choose image",
+      "click": "Click",
+      "add":"to add Image"
+    }
+  },
+  "card": {
+    "header": {
+      "frontSide": "Front side",
+      "backSide": "Back side",
+      "change": "Change"
+    }
+  },
+  "common": {
+    "card": " of the card"
+  },
+  "actionsheet":{
+    "fromPhotos": "From Photos",
+    "fromCamera": "Take Picture",
+    "cancel": "Cancel"
+  }
+}

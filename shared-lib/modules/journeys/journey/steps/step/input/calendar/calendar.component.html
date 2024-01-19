@@ -1,0 +1,13 @@
+<section>
+  <ion-datetime-button datetime="datetime" id="open-date"></ion-datetime-button>
+</section>
+<ion-popover show-backdrop="false" keepContentsMounted="true">
+  <ng-template>
+    <ion-datetime
+      [value]="fullDateValue"
+      id="datetime"
+      presentation="month-year"
+      (ionChange)="emitValueChange($event)"
+    ></ion-datetime>
+  </ng-template>
+</ion-popover>

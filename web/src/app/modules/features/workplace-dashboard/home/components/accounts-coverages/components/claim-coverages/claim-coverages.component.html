@@ -1,0 +1,7 @@
+<ion-row [ngClass]="!isMyBenefitsUser ? 'claim-coverages-heading' : 'claim-coverages-mybenefit_heading'">
+  <ion-col>
+    <p tabindex="0">{{ tileCoverageContent?.title }}</p>
+  </ion-col>
+</ion-row>
+<app-medical-spending *ngIf="!isMyBenefitsUser" [isWorkplaceDashboard]="true"></app-medical-spending>
+<app-plans [isWorkplaceDashboard]="true" [showPagination]="true" [isMyBenefitsUser]="isMyBenefitsUser" [benefitHubContent]="tileCoverageContent"></app-plans>

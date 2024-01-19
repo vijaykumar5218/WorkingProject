@@ -1,0 +1,24 @@
+<ion-grid>
+  <div>
+    <app-menu [config]="menuConfig"></app-menu>
+  </div>
+  <div class="ion-no-padding bottom">
+    <ion-row class="mt-42">
+      <ion-col>
+        <ion-button
+          size="small"
+          id="sign-out-small-device"
+          class="font-18 sign-out"
+          name="sign-out"
+          shape="round"
+          expand="block"
+          color="btncolor"
+          fill="outline"
+          (click)="onLogout()"
+        >
+          {{settingsOption.button}}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-grid>

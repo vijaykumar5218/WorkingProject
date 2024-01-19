@@ -1,0 +1,48 @@
+.add-account-row {
+  .add-account-subtitle-row {
+    margin-bottom: 50px;
+    .add-account-subtitle {
+      float: left;
+      font-size: 18px;
+      color: var(--primary-colors-voya-black);
+      font-weight: 700;
+    }
+  }
+
+  h3.add-account-title {
+    margin-top: 0;
+    font-size: 24px;
+    color: var(--primary-colors-voya-black);
+    font-weight: 600;
+  }
+  .add-account-header-image {
+    float: left;
+    height: 234px;
+    width: 402px;
+    display: block;
+  }
+  .add-account-button-row {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    .add-account-button {
+      font-size: 16px;
+      margin: auto;
+      width: 161px;
+      height: 40px;
+      .add-circle-outline {
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+        margin-top: -3px;
+      }
+    }
+  }
+
+  .catchup-tile {
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+    max-width: 305px;
+  }
+}

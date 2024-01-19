@@ -1,0 +1,16 @@
+export const environment = {
+  production: false,
+  livereload: false,
+  baseUrl: 'https://myvoyage3.intg.app.voya.com/',
+  tpaPrefix: 'INTG-',
+  tpaSdk: '1a1d68b8-93c1-41ac-bced-16d1624c527f',
+  tokenBaseUrl: 'https://token.intg.app.voya.com/',
+  myvoyaBaseUrl: 'https://myvoya-my5.intg.app.voya.com/',
+  loginBaseUrl: 'https://login5.intg.voya.com/',
+  savviBaseUrl: 'https://myhealthwealth.intg.voya.com/',
+  authClientID: 'myvoyage3_app_RJsIuvqU3t0aNPbaVgbX',
+  authTokenExchangeClient: 'myvoyage_app_token_exchange_8ah5YTB3MIavGzS3UXjj',
+  ssoSamlUrl: 'https://sso.myvoya.com',
+  openIdConfigurationUrl: 'oidcop/customer5/.well-known/openid-configuration',
+  samlAudience: 'saml/sps/saml-idp-login5/saml20',
+};

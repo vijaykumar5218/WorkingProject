@@ -1,0 +1,73 @@
+:host {
+  display: block;
+  ion-card {
+    cursor: pointer;
+    box-shadow: var(--card-box-shadow);
+    border-radius: var(--card-border-radius);
+    margin: 0;
+    color: var(--primary-colors-voya-black);
+    ion-col.header-txt {
+      margin: auto;
+      ion-col.helpHeader-col {
+        .header {
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+      ion-col.helpDesc-col {
+        margin: auto;
+        .description {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .helpcard-web {
+    ion-card {
+      padding: 15px 20px 15px 20px;
+      .helpImg-col {
+        display: flex;
+        margin: auto;
+        @media screen and (max-width: 500px) {
+          max-width: 116px;
+        }
+        @media screen and (min-width: 500px) {
+          max-width: 138px;
+        }
+        img {
+          width: 98px;
+          height: 98px;
+        }
+      }
+      ion-col.header-txt {
+        ion-col.helpHeader-col {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    ion-card:hover {
+      box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+    }
+  }
+  .helpcard-mobile {
+    ion-card {
+      padding: 5px 20px 5px 20px;
+      .helpImg-col {
+        margin: auto;
+        @media screen and (max-width: 500px) {
+          max-width: 98px;
+          max-height: 98px;
+        }
+        @media screen and (min-width: 500px) {
+          max-width: 128px;
+        }
+        img {
+          max-width: 86px;
+          height: 85px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+ion-toolbar {
+  --background: var(--primary-colors-voya-white);
+
+  .headerimg {
+    height: 28px;
+    padding-left: 20px;
+    margin-top: 3px;
+  }
+
+  ion-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-colors-voya-black);
+  }
+
+  .left-button-visible {
+    padding: 0;
+    margin-left: -10px;
+  }
+
+  button {
+    margin-right: 14px;
+    background-color: transparent;
+    .dot {
+      position: absolute;
+      background: var(--secondary-colors-voya-dark-orange);
+      width: 12px;
+      height: 12px;
+      border-radius: 12px;
+      top: 10px;
+    }
+  }
+
+  ion-button {
+    --background: transparent;
+    --box-shadow: none;
+
+    .left-button-img {
+      height: 12px;
+    }
+
+    .right-button-img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+ion-toolbar.android-offset {
+  ion-title {
+    margin-top: 2px;
+  }
+}

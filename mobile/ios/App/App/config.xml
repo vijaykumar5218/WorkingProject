@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <access origin="*" />
+  
+  <feature name="SecureWebView">
+    <param name="ios-package" value="SecureWebView"/>
+  </feature>
+  <feature name="IonicHttp">
+    <param name="ios-package" value="IonicHttp"/>
+  </feature>
+  <feature name="IonicAuthConnectStorage">
+    <param name="ios-package" value="IonicAuthConnectStorage"/>
+  </feature>
+
+  <feature name="IonicNativeAuth">
+    <param name="ios-package" value="IonicNativeAuthPlugin" onload="true"/>
+  </feature>
+  <feature name="VaultPlugin">
+    <param name="ios-package" value="VaultPlugin" onload="true"/>
+  </feature>
+  <feature name="DevicePlugin">
+    <param name="ios-package" value="IdentityVaultDevicePlugin" onload="true"/>
+  </feature>
+  <feature name="IdentityVaultPlugin">
+    <param name="ios-package" value="IdentityVaultPlugin" onload="true"/>
+  </feature>
+
+  <feature name="CordovaHttpPlugin">
+    <param name="ios-package" value="CordovaHttpPlugin"/>
+  </feature>
+
+  <feature name="File">
+    <param name="ios-package" value="CDVFile"/>
+    <param name="onload" value="true"/>
+  </feature>
+
+  <feature name="InAppBrowser">
+    <param name="ios-package" value="CDVWKInAppBrowser"/>
+    <param name="onload" value="true"/>
+  </feature>
+
+  <feature name="MCCordovaPlugin">
+    <param name="ios-package" value="MCCordovaPlugin"/>
+    <param name="onload" value="true"/>
+  </feature>
+
+  <feature name="PreviewAnyFile">
+    <param name="ios-package" value="HWPPreviewAnyFile"/>
+  </feature>
+
+  
+  <preference name="InAppBrowserStatusBarStyle" value="lightcontent" />
+  <preference name="com.salesforce.marketingcloud.app_id" value="9bd8e778-f77b-4d9e-a206-b64571336e6b" />
+  <preference name="com.salesforce.marketingcloud.access_token" value="vUpsnrMV1Xn2en4GZTRMUkJf" />
+  <preference name="com.salesforce.marketingcloud.tenant_specific_endpoint" value="https://mcpg212dzgxf1q2673290s18f58m.device.marketingcloudapis.com/" />
+  <preference name="com.salesforce.marketingcloud.delay_registration_until_contact_key_is_set" value="true" />
+  <preference name="com.salesforce.marketingcloud.notification_small_icon" value="splash" />
+</widget>

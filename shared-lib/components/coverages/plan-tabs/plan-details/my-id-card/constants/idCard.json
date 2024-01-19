@@ -1,0 +1,15 @@
+{
+  "header": "My ID Card",
+  "desc": "You currently do not have a saved card photo attached to this benefit. Tap the button below to add a photo of your benefit.",
+  "button":"Add A Card",
+  "flipBtn": "Flip",
+  "actionsheet":{
+    "fromPhotos": "From Photos",
+    "fromCamera": "Take Picture",
+    "cancel": "Cancel"
+  },
+  "loaderMessagefromCamera":"Take a picture of the <span>$cardSide</span> side of your card. Crop the captured picture for best view.",
+  "loaderMessagefromPhotos":"Upload a picture of the <span>$cardSide</span> side of your card. Crop the uploaded picture for best view.",
+  "updateBtn": "Update",
+  "deleteBtn": "Delete"
+}

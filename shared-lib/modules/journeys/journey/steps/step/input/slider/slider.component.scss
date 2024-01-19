@@ -1,0 +1,26 @@
+div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+ion-range {
+  --knob-size: 30px;
+  --bar-background-active: var(--primary-colors-voya-dark-blue);
+  --bar-height: 6px;
+  --bar-border-radius: 5px;
+  --knob-background: var(--primary-colors-voya-white);
+  --bar-background: var(--secondary-colors-medium-gray-3);
+  --knob-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+  --height: 24px;
+  padding: 0px 12px 0px 0px;
+
+  &::part(knob) {
+    border: solid 1px var(--secondary-colors-medium-gray-3);
+  }
+}
+ion-button {
+  width: 18%;
+  margin: 0px 0px 0px 3.5%;
+  height: 28px;
+  font-size: 12px;
+}

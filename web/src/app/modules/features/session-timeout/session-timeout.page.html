@@ -1,0 +1,47 @@
+<ion-grid class="p-0">
+  <ion-row>
+    <ion-col>
+      <img
+        class="logo"
+        src="assets/icon/myVoyageNew_Web.svg"
+        alt="myvoyage logo"
+      />
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <img class="lock-img" src="assets/icon/Secured.svg" alt="lock icon" />
+    </ion-col>
+  </ion-row>
+  <div class="sessionTimeoutContent">
+    <ion-row>
+      <ion-col
+        ><ion-text class="title"
+          >{{pageText.sessionTimeoutText}}</ion-text
+        ></ion-col
+      >
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p [innerHTML]="pageText.sessionTimeoutInfo"></p>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-row class="p-0">
+    <ion-col class="p-0">
+      <ion-button
+        size="small"
+        id="sign-in-button"
+        (click)="signOutClicked()"
+        class="sign-in"
+        name="submit"
+        shape="round"
+        expand="block"
+        type="submit"
+        color="btncolor"
+      >
+        {{pageText.signOut}}
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>

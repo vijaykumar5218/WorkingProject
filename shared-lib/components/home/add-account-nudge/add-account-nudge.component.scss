@@ -1,0 +1,39 @@
+:host {
+  ion-card {
+    padding: 20px;
+
+    &.web {
+      box-shadow: none;
+    }
+
+    ion-text {
+      width: 100%;
+      text-align: center;
+      color: var(--ion-color-dark);
+
+      &.body {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 14px;
+      }
+
+      &.sub-body {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.08px;
+        margin-bottom: 20px;
+      }
+    }
+
+    img {
+      margin: auto auto 20px auto;
+    }
+
+    ion-button {
+      margin: auto;
+      width: 151px;
+      height: 40px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.transaction-card {
+  margin: 38px !important;
+  margin-bottom: 120px !important;
+  box-shadow: none;
+  min-height: 80% !important;
+  @media screen and (min-width: 280px) and (max-width: 920px) {
+    margin: 20px 20px 120px 20px !important;
+  }
+}
+
+.transaction-card.emptyCard {
+  margin: 38px 20px 120px 20px !important;
+  width: auto !important;
+  height: 162.7px !important;
+  border-radius: 10px !important;
+  box-shadow: var(--card-box-shadow) !important;
+  min-height: unset !important;
+  padding: 13.1px 19px 41.3px 20px !important;
+
+  @media only screen and (min-width: 768px) {
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    padding: 15px !important;
+
+    ion-row.empty-row {
+      margin-bottom: 0px !important;
+    }
+    ion-row {
+      ion-col {
+        ion-button {
+          margin-top: 0px !important;
+          margin-bottom: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+ion-card {
+  .btnview {
+    margin: 20px auto 40px auto !important;
+  }
+  .btnadjust {
+    margin: auto !important;
+  }
+}

@@ -1,0 +1,26 @@
+<ion-card class="myv-card" *ngIf="externalLinks && externalLinks.length > 0">
+  <ion-card-content>
+    <ion-list>
+      <ion-list-header>
+        <ion-label>{{ pageText.moreAccountInfo }}</ion-label>
+      </ion-list-header>
+      <ng-container *ngFor="let link of externalLinks">
+        <ion-item
+          (keyup.enter)="itemClicked(link)"
+          tabindex="0"
+          (click)="itemClicked(link)"
+          id="{{ link.id }}"
+        >
+          <ion-label>
+            <div class="title">{{ link.label }}</div>
+          </ion-label>
+          <img
+            src="assets/icon/chevron_right.svg"
+            tabindex="0"
+            alt="right arrow"
+          />
+        </ion-item>
+      </ng-container>
+    </ion-list>
+  </ion-card-content>
+</ion-card>

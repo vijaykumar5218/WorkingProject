@@ -1,0 +1,18 @@
+<ng-container *ngFor="let card of dependentSummaryCards; let i = index">
+  <ion-card>
+    <div class="text-main-container">
+      <div *ngIf="card.accountLinked" class="icon">
+        <img [src]="card.logoUrl" alt="logo" />
+      </div>
+      <div class="heading-and-account">
+        <div class="heading">{{ card.description }}</div>
+        <div class="account-name OneLinkNoTx" *ngIf="card.accountLinked">
+          {{ card.accountName }}
+        </div>
+      </div>
+    </div>
+
+    <app-progress-bar [element]="card.progressBar"> </app-progress-bar>
+    <app-table [element]="card.table"> </app-table>
+  </ion-card>
+</ng-container>

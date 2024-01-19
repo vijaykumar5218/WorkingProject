@@ -1,0 +1,3 @@
+{
+    "HSAGoalJSON": "{\"description\":\"HSA Contribution Goal\",\"imageUrl\":\"assets/icon/progressBarBackground.svg\",\"label\":\"YTD Contributions / Yearly Goal\",\"rows\":[{\"answerId\":\"adjustedMaxContribution\",\"label\":\"Your Yearly Goal\",\"type\":\"dollar\",\"flag\":\"accountNotLinked\"},{\"answerId\":\"currentBalance\",\"label\":\"HSA Balance\",\"type\":\"dollar\"},{\"answerId\":\"adjustedContributionPerPayPeriod\",\"label\":\"Recommended Contribution per Pay Period\",\"type\":\"dollar\"},{\"answerId\":\"adjustedyearlyTaxSavings\",\"label\":\"Your Yearly Tax Savings\",\"type\":\"dollar\"}],\"marginBottom\":\"0px\",\"labelFontSize\":\"14px\",\"type\":\"dollar\"}"
+}

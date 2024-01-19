@@ -1,0 +1,57 @@
+{
+  "title": 0,
+  "pieSubTitle": "All Categories",
+  "totalOutNetwork": 0,
+  "colors": {  
+    "preferredDrugs": "#bde3f2",
+    "outpatientLabPaths": "#99d5dd",
+    "specialVisits": "#d7b8c9",
+    "preventive": "#d7b8c9",
+    "genericDrugs": "#bde3f2",
+    "outpatientXrays": "#b5a7ba",
+    "primaryVisits": "#d7b8c9",
+    "inpatientHosptialCares": "#99d5dd",
+    "emergencyRoomServices": "#b5a7ba",
+    "outpatientSurgery": "#99d5dd",
+    "other": "#d9d9d9",
+    "medical": "#bde3f2",
+    "dental": "#99d5dd",
+    "vision": "#d7b8c9",
+    "rx": "#d7b8c9",
+    "facility": "#bde3f2"
+  },  
+
+  "outNetworkCostNames": {
+    "preferredDrugs": "Preferred Drugs",
+    "outpatientLabPaths": "Outpatient Labs",
+    "specialVisits": "Specialist Care",
+    "preventive": "Preventative Care",
+    "genericDrugs": "Generic Drugs",
+    "outpatientXrays": "X-rays",
+    "primaryVisits": "Primary Care",
+    "inpatientHosptialCares": "Inpatient Care",
+    "emergencyRoomServices": "ER Services",
+    "outpatientSurgery": "Outpatient Surgery",
+    "other": "Other Services",
+    "medical": "Medical",
+    "dental": "Dental",
+    "vision": "Vision",
+    "rx": "RX",
+    "facility": "Facility"
+  },
+ 
+
+  "pieDefaultSubTitle": "All Categories",
+  "myBill":"My Bill",
+  "inNetwork": "In Network",
+  "outOfNetwork":"Out of Network",
+  "drugNames":"Drug:",
+  "lastFilled":"Last Filled:",
+  "inClaimsTxt" : "In network claims",
+  "outClaimsTxt" : "Out of network claims",
+  "thisYearTxt" : "This Year",
+  "lastYearTxt" : "Last Year",
+  "segmentValue": "0",
+  "noInfoTxt" : "There is currently no information for this time period.",
+  "patientName" : "Patient"
+}

@@ -1,0 +1,16 @@
+{
+  "headerName": "Edit/Add Mobile",
+  "headerDesc" : "Enter your mobile number below:",
+  "label": "Mobile",
+  "button": {
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "alert": {
+    "message": "Your mobile phone will be changed for your Voya account. Are you sure you want to continue?",
+    "imageUrl": "assets/icon/Frame.svg"
+  },
+  "errors": {
+    "invalidPhone": "Please enter a valid phone number"
+  }
+}

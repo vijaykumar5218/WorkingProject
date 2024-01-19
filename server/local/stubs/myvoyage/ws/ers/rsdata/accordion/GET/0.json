@@ -1,0 +1,24 @@
+[
+  {
+      "clientId": "INGWIN",
+      "title": "Get Advice",
+      "offerCode": "MANACCT",
+      "messageType": "MESSAGE",
+      "targetUrl": "https%3A%2F%2Flogin.intg.voya.com%2Fsaml%2Fsps%2Fsaml-idp-login%2Fsaml20%2Flogininitial%3FPartnerId%3Dhttps%3A%2F%2Fmy3.intg.voya.com%2Fmga%2Fsps%2Fsaml-sp-my-local%2Fsaml20%26access_token%3D%5Bexchanged_access_token%5D%26Target=https%3A%2F%2Fmy3.intg.voya.com%2Fvoyasso%2FmobileSignOn%3Fdomain%3Dvoyaretirement.intg.voya.com%26target%3D/epweb/pweblink.do?s=ophQ3RyQn3kEiJcDSmo3BA11.i9290&domain=voyaretirement.intg.voya.com&cl=INGWIN&act_type=P&page=advice&pageId=ACCT_GET_ADVICE&plan=814059&d=17238aa4bbabd8f5f5207e04dd5bdd05e89ee5a3",
+      "targetImageUrl": "https://my3.intg.voya.com/eicc/servlet/MessageEventTrackingServlet?summaryId=041848716814059MANACCT&loginDateTime=10%2F06%2F2023+04%3A53%3A09&sessionId=ophQ3RyQn3kEiJcDSmo3BA11.i9290&msgAction=Yes&messageId=AC.84&msgSource=ACCORDION&targetURL=https%3A%2F%2F%3Cclient+domain%3E%2Fepweb%2Fpweblink.do%3Fpage%3Dadvice%26plan%3D814059%26s%3D%3CSSO+Session+ID%3E%26domain%3D%3CClient+domain%3E%26act_type%3D%26pageId%3DACCT_GET_ADVICE%26d%3D%3Cdigital+sig%3E&d=b02f412a57f476ece094b1fa88c55f4bb9a25d95"
+  },
+  {
+      "clientId": "INGWIN",
+      "title": "Compare Yourself",
+      "messageType": "DEFAULT",
+      "targetUrl": "http://voya.com/tool/compare-me/",
+      "targetImageUrl": "http://voya.com/tool/compare-me/"
+  },
+  {
+      "clientId": "INGWIN",
+      "title": "Diversify",
+      "messageType": "DEFAULT",
+      "targetUrl": "https://marketing.voyacdn.com/3027984-2/index.html",
+      "targetImageUrl": "https://marketing.voyacdn.com/3027984-2/index.html"
+  }
+]

@@ -1,0 +1,1633 @@
+[
+    {
+        "financialAccountId": "932722",
+        "balance": "166.71",
+        "totalSuspense": "0",
+        "billingConfigs": [
+            {
+                "billingServiceTechId": "697355",
+                "paymentFormat": "ACH Initiate",
+                "nextBillingGenerationDate": "2024-01-04 00:00:00.0",
+                "nextBillingPeriodStartDate": "2024-02-01 00:00:00.0",
+                "achDay": "",
+                "achNextDay": "",
+                "lapseDate": "",
+                "status": "Active - In-Forcexxx",
+                "effectiveDate": "2020-11-01 00:00:00.0",
+                "terminationDate": "",
+                "invoiceFrequency": "Quarterly",
+                "bankAccountTechId": "",
+                "bankName": "",
+                "accountType": "",
+                "routingNumber": "",
+                "bankAccountNumber": "",
+                "bankAccountName": "",
+                "achEffectiveDate": "",
+                "surrenderStatus": "",
+                "downstreamProcessingStatus": null,
+                "invoices": [
+                    {
+                        "invoiceTechId": "22032645",
+                        "invoiceNumber": "12A5000423",
+                        "billingFromDate": "2023-11-01 00:00:00.0",
+                        "billingToDate": "2024-01-31 00:00:00.0",
+                        "invoiceDueDate": "2023-11-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "166.7",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "0"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "0"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "0"
+                            }
+                        ],
+                        "payment_Details": null
+                    },
+                    {
+                        "invoiceTechId": "21821134",
+                        "invoiceNumber": "12A4783589",
+                        "billingFromDate": "2023-08-01 00:00:00.0",
+                        "billingToDate": "2023-10-31 00:00:00.0",
+                        "invoiceDueDate": "2023-08-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6443947",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "2518",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-04-21 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "21573082",
+                        "invoiceNumber": "12A4554541",
+                        "billingFromDate": "2023-05-01 00:00:00.0",
+                        "billingToDate": "2023-07-31 00:00:00.0",
+                        "invoiceDueDate": "2023-05-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6443947",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "0",
+                                "paymentCheckNumber": "2518",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-04-21 00:00:00.0",
+                                "confirmationNumber": ""
+                            },
+                            {
+                                "paymentTechId": "6452215",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "2555",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-05-01 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "21319752",
+                        "invoiceNumber": "12A4314656",
+                        "billingFromDate": "2023-02-01 00:00:00.0",
+                        "billingToDate": "2023-04-30 00:00:00.0",
+                        "invoiceDueDate": "2023-02-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6391358",
+                                "paymentType": "Manual",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-02-22 00:00:00.0",
+                                "confirmationNumber": ""
+                            },
+                            {
+                                "paymentTechId": "6443947",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "0",
+                                "paymentCheckNumber": "2518",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-04-21 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "21086898",
+                        "invoiceNumber": "12A4097863",
+                        "billingFromDate": "2022-11-01 00:00:00.0",
+                        "billingToDate": "2023-01-31 00:00:00.0",
+                        "invoiceDueDate": "2022-11-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6289914",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "20.82",
+                                "paymentCheckNumber": "2458",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-11-04 00:00:00.0",
+                                "confirmationNumber": ""
+                            },
+                            {
+                                "paymentTechId": "6289915",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "145.88",
+                                "paymentCheckNumber": "2457",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-11-04 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "20843196",
+                        "invoiceNumber": "12A3870125",
+                        "billingFromDate": "2022-08-01 00:00:00.0",
+                        "billingToDate": "2022-10-31 00:00:00.0",
+                        "invoiceDueDate": "2022-08-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6201640",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "2379",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-08-05 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "20595111",
+                        "invoiceNumber": "12A3638032",
+                        "billingFromDate": "2022-05-01 00:00:00.0",
+                        "billingToDate": "2022-07-31 00:00:00.0",
+                        "invoiceDueDate": "2022-05-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6107753",
+                                "paymentType": "Manual",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-05-02 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "20356222",
+                        "invoiceNumber": "12A3408155",
+                        "billingFromDate": "2022-02-01 00:00:00.0",
+                        "billingToDate": "2022-04-30 00:00:00.0",
+                        "invoiceDueDate": "2022-02-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6021539",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "2293",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-02-04 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "billingServiceTechId": "697356",
+                "paymentFormat": "ACH Initiate",
+                "nextBillingGenerationDate": "2024-01-04 00:00:00.0",
+                "nextBillingPeriodStartDate": "2024-02-01 00:00:00.0",
+                "achDay": "",
+                "achNextDay": "",
+                "lapseDate": "",
+                "status": "Active - In-Force",
+                "effectiveDate": "2020-11-01 00:00:00.0",
+                "terminationDate": "",
+                "invoiceFrequency": "Quarterly",
+                "bankAccountTechId": "",
+                "bankName": "",
+                "accountType": "",
+                "routingNumber": "",
+                "bankAccountNumber": "",
+                "bankAccountName": "",
+                "achEffectiveDate": "",
+                "surrenderStatus": "",
+                "downstreamProcessingStatus": null,
+                "invoices": [
+                    {
+                        "invoiceTechId": "22032645",
+                        "invoiceNumber": "12A5000423",
+                        "billingFromDate": "2023-11-01 00:00:00.0",
+                        "billingToDate": "2024-01-31 00:00:00.0",
+                        "invoiceDueDate": "2023-11-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "166.7",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "0"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "0"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "0"
+                            }
+                        ],
+                        "payment_Details": null
+                    },
+                    {
+                        "invoiceTechId": "21821134",
+                        "invoiceNumber": "12A4783589",
+                        "billingFromDate": "2023-08-01 00:00:00.0",
+                        "billingToDate": "2023-10-31 00:00:00.0",
+                        "invoiceDueDate": "2023-08-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6443947",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "2518",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-04-21 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "21573082",
+                        "invoiceNumber": "12A4554541",
+                        "billingFromDate": "2023-05-01 00:00:00.0",
+                        "billingToDate": "2023-07-31 00:00:00.0",
+                        "invoiceDueDate": "2023-05-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6443947",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "0",
+                                "paymentCheckNumber": "2518",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-04-21 00:00:00.0",
+                                "confirmationNumber": ""
+                            },
+                            {
+                                "paymentTechId": "6452215",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "2555",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-05-01 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "21319752",
+                        "invoiceNumber": "12A4314656",
+                        "billingFromDate": "2023-02-01 00:00:00.0",
+                        "billingToDate": "2023-04-30 00:00:00.0",
+                        "invoiceDueDate": "2023-02-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6391358",
+                                "paymentType": "Manual",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-02-22 00:00:00.0",
+                                "confirmationNumber": ""
+                            },
+                            {
+                                "paymentTechId": "6443947",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "0",
+                                "paymentCheckNumber": "2518",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-04-21 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "21086898",
+                        "invoiceNumber": "12A4097863",
+                        "billingFromDate": "2022-11-01 00:00:00.0",
+                        "billingToDate": "2023-01-31 00:00:00.0",
+                        "invoiceDueDate": "2022-11-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6289914",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "20.82",
+                                "paymentCheckNumber": "2458",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-11-04 00:00:00.0",
+                                "confirmationNumber": ""
+                            },
+                            {
+                                "paymentTechId": "6289915",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "145.88",
+                                "paymentCheckNumber": "2457",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-11-04 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "20843196",
+                        "invoiceNumber": "12A3870125",
+                        "billingFromDate": "2022-08-01 00:00:00.0",
+                        "billingToDate": "2022-10-31 00:00:00.0",
+                        "invoiceDueDate": "2022-08-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6201640",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "2379",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-08-05 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "20595111",
+                        "invoiceNumber": "12A3638032",
+                        "billingFromDate": "2022-05-01 00:00:00.0",
+                        "billingToDate": "2022-07-31 00:00:00.0",
+                        "invoiceDueDate": "2022-05-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6107753",
+                                "paymentType": "Manual",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-05-02 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "20356222",
+                        "invoiceNumber": "12A3408155",
+                        "billingFromDate": "2022-02-01 00:00:00.0",
+                        "billingToDate": "2022-04-30 00:00:00.0",
+                        "invoiceDueDate": "2022-02-01 00:00:00.0",
+                        "totalDue": "166.7",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "31876889111453511",
+                                "coverageName": "Life Supplemental Employee",
+                                "productType": "Term Life",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004671",
+                                "serviceDescription": "Life Supplemental Employee",
+                                "premiumDue": "152.4",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "152.4"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Billing Charge",
+                                "premiumDue": "3.5",
+                                "isABillingCharge": "True",
+                                "isAWriteOff": "False",
+                                "paidAmount": "3.5"
+                            },
+                            {
+                                "billedCoverageTechId": "31876889111458419",
+                                "coverageName": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "0000004684",
+                                "serviceDescription": "Accidental Death & Dismemberment Supplemental Employee PAI",
+                                "premiumDue": "10.8",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "10.8"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6021539",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "166.7",
+                                "paymentCheckNumber": "2293",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-02-04 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "financialAccountId": "937834",
+        "balance": "20",
+        "totalSuspense": "0",
+        "billingConfigs": [
+            {
+                "billingServiceTechId": "702009",
+                "paymentFormat": "ACH InitiateYY",
+                "nextBillingGenerationDate": "2024-01-04 00:00:00.0",
+                "nextBillingPeriodStartDate": "2024-02-01 00:00:00.0",
+                "achDay": "",
+                "achNextDay": "",
+                "lapseDate": "",
+                "status": "Active - In-Force",
+                "effectiveDate": "2020-11-01 00:00:00.0",
+                "terminationDate": "2024-02-01 00:00:00.0",
+                "invoiceFrequency": "Quarterly",
+                "bankAccountTechId": "",
+                "bankName": "",
+                "accountType": "",
+                "routingNumber": "",
+                "bankAccountNumber": "",
+                "bankAccountName": "",
+                "achEffectiveDate": "",
+                "surrenderStatus": "",
+                "downstreamProcessingStatus": null,
+                "invoices": [
+                    {
+                        "invoiceTechId": "22032646",
+                        "invoiceNumber": "12A5000424",
+                        "billingFromDate": "2023-11-01 00:00:00.0",
+                        "billingToDate": "2024-01-31 00:00:00.0",
+                        "invoiceDueDate": "2023-11-01 00:00:00.0",
+                        "totalDue": "20.82",
+                        "remainingDue": "20.82",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "3187688916566407",
+                                "coverageName": "Compass Accident Voluntary Employee",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "CAC1503857",
+                                "serviceDescription": "Compass Accident Voluntary Employee",
+                                "premiumDue": "20.82",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "0"
+                            }
+                        ],
+                        "payment_Details": null
+                    },
+                    {
+                        "invoiceTechId": "21821135",
+                        "invoiceNumber": "12A4783590",
+                        "billingFromDate": "2023-08-01 00:00:00.0",
+                        "billingToDate": "2023-10-31 00:00:00.0",
+                        "invoiceDueDate": "2023-08-01 00:00:00.0",
+                        "totalDue": "20.82",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "3187688916566407",
+                                "coverageName": "Compass Accident Voluntary Employee",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "CAC1503857",
+                                "serviceDescription": "Compass Accident Voluntary Employee",
+                                "premiumDue": "20.82",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "20.82"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6443948",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "20.82",
+                                "paymentCheckNumber": "2517",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-04-21 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "21573084",
+                        "invoiceNumber": "12A4554543",
+                        "billingFromDate": "2023-05-01 00:00:00.0",
+                        "billingToDate": "2023-07-31 00:00:00.0",
+                        "invoiceDueDate": "2023-05-01 00:00:00.0",
+                        "totalDue": "20.82",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "3187688916566407",
+                                "coverageName": "Compass Accident Voluntary Employee",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "CAC1503857",
+                                "serviceDescription": "Compass Accident Voluntary Employee",
+                                "premiumDue": "20.82",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "20.82"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6443948",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "0",
+                                "paymentCheckNumber": "2517",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-04-21 00:00:00.0",
+                                "confirmationNumber": ""
+                            },
+                            {
+                                "paymentTechId": "6452216",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "20.82",
+                                "paymentCheckNumber": "2554",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-05-01 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "21319757",
+                        "invoiceNumber": "12A4314661",
+                        "billingFromDate": "2023-02-01 00:00:00.0",
+                        "billingToDate": "2023-04-30 00:00:00.0",
+                        "invoiceDueDate": "2023-02-01 00:00:00.0",
+                        "totalDue": "20.82",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "3187688916566407",
+                                "coverageName": "Compass Accident Voluntary Employee",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "CAC1503857",
+                                "serviceDescription": "Compass Accident Voluntary Employee",
+                                "premiumDue": "20.82",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "20.82"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6391182",
+                                "paymentType": "Manual",
+                                "invoicePaymentAmount": "20.82",
+                                "paymentCheckNumber": "",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-02-22 00:00:00.0",
+                                "confirmationNumber": ""
+                            },
+                            {
+                                "paymentTechId": "6443948",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "0",
+                                "paymentCheckNumber": "2517",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2023-04-21 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "21086902",
+                        "invoiceNumber": "12A4097867",
+                        "billingFromDate": "2022-11-01 00:00:00.0",
+                        "billingToDate": "2023-01-31 00:00:00.0",
+                        "invoiceDueDate": "2022-11-01 00:00:00.0",
+                        "totalDue": "20.82",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "3187688916566407",
+                                "coverageName": "Compass Accident Voluntary Employee",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "CAC1503857",
+                                "serviceDescription": "Compass Accident Voluntary Employee",
+                                "premiumDue": "20.82",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "20.82"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6289915",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "20.82",
+                                "paymentCheckNumber": "2457",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-11-04 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "20843197",
+                        "invoiceNumber": "12A3870126",
+                        "billingFromDate": "2022-08-01 00:00:00.0",
+                        "billingToDate": "2022-10-31 00:00:00.0",
+                        "invoiceDueDate": "2022-08-01 00:00:00.0",
+                        "totalDue": "20.82",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "3187688916566407",
+                                "coverageName": "Compass Accident Voluntary Employee",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "CAC1503857",
+                                "serviceDescription": "Compass Accident Voluntary Employee",
+                                "premiumDue": "20.82",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "20.82"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6200004",
+                                "paymentType": "Manual",
+                                "invoicePaymentAmount": "20.82",
+                                "paymentCheckNumber": "",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-08-03 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "20595114",
+                        "invoiceNumber": "12A3638035",
+                        "billingFromDate": "2022-05-01 00:00:00.0",
+                        "billingToDate": "2022-07-31 00:00:00.0",
+                        "invoiceDueDate": "2022-05-01 00:00:00.0",
+                        "totalDue": "20.82",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "3187688916566407",
+                                "coverageName": "Compass Accident Voluntary Employee",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "CAC1503857",
+                                "serviceDescription": "Compass Accident Voluntary Employee",
+                                "premiumDue": "20.82",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "20.82"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6107767",
+                                "paymentType": "Manual",
+                                "invoicePaymentAmount": "20.82",
+                                "paymentCheckNumber": "",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-05-02 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    },
+                    {
+                        "invoiceTechId": "20356226",
+                        "invoiceNumber": "12A3408159",
+                        "billingFromDate": "2022-02-01 00:00:00.0",
+                        "billingToDate": "2022-04-30 00:00:00.0",
+                        "invoiceDueDate": "2022-02-01 00:00:00.0",
+                        "totalDue": "20.82",
+                        "remainingDue": "0",
+                        "achPullDate": "",
+                        "downstreamProcessingStatus": null,
+                        "invoiceDetails": [
+                            {
+                                "billedCoverageTechId": "3187688916566407",
+                                "coverageName": "Compass Accident Voluntary Employee",
+                                "productType": "Accident",
+                                "insuredFirstName": "Malisa",
+                                "insuredLastName": "Kaster-DP",
+                                "insuredMiddleName": "",
+                                "insuredSuffix": "",
+                                "policyNumber": "CAC1503857",
+                                "serviceDescription": "Compass Accident Voluntary Employee",
+                                "premiumDue": "20.82",
+                                "isABillingCharge": "False",
+                                "isAWriteOff": "False",
+                                "paidAmount": "20.82"
+                            }
+                        ],
+                        "payment_Details": [
+                            {
+                                "paymentTechId": "6021531",
+                                "paymentType": "Check",
+                                "invoicePaymentAmount": "20.82",
+                                "paymentCheckNumber": "2294",
+                                "paymentBankName": "",
+                                "paymentRoutingNumber": "",
+                                "paymentAccountNumber": "",
+                                "paymentAccountName": "",
+                                "paymentDate": "2022-02-04 00:00:00.0",
+                                "confirmationNumber": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

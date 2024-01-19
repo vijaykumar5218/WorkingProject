@@ -1,0 +1,60 @@
+<div>
+  <app-add-account-nudge
+    [cardMargin]="'20px 20px 20px 0px'"
+    *ngIf="!hasAccounts && isHealthOnly"
+  ></app-add-account-nudge>
+  <ng-container *ngIf="isMXUser && hasAccounts">
+    <ion-row class="text-and-dropdown">
+      <ion-col class="accountsHeader">
+        <p tabindex="0">{{ pageText.accountsHeader }}</p>
+      </ion-col>
+      <ion-col class="accountwidgetitems">
+        <v-select
+          class="dropdown"
+          (vselect-change)="changeWidgetsType($event)"
+          [disabled]="isAltAccessUser"
+          [id]="templateType + '-' + widgetType"
+        >
+          <option
+            *ngFor="let widget of pageText.widgetItems"
+            value="{{ widget.value }}"
+          >
+            {{ widget.text }}
+          </option>
+        </v-select>
+      </ion-col>
+    </ion-row>
+    <ion-row
+      class="dashboard-account-widget"
+      [ngClass]="
+        widgetId === 'responsive-dashboard-accounts' && isIos
+          ? 'responsive-account-widget'
+          : ''
+      "
+    >
+      <ion-col>
+        <app-mx-widget
+          [widgetType]="widgetType"
+          [height]="widgetHeight || '400px'"
+          [tagName]="widgetId"
+        ></app-mx-widget>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button
+          [disabled]="isAltAccessUser"
+          automation-id="view-widget-type-btn"
+          name="viewWidgetType"
+          shape="round"
+          expand="block"
+          color="btncolor"
+          fill="outline"
+          (click)="navigateToAccounts()"
+        >
+          {{ widgetButtonText }}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ng-container>
+</div>

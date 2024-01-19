@@ -1,0 +1,344 @@
+{
+    "dependents": [],
+    "collegeTypes": [
+        {
+            "id": 1,
+            "value": "1",
+            "label": "Private University",
+            "inflationRate": 3.3
+        },
+        {
+            "id": 2,
+            "value": "2",
+            "label": "In-state Public University",
+            "inflationRate": 2.5
+        },
+        {
+            "id": 3,
+            "value": "3",
+            "label": "Out-of-state Public University",
+            "inflationRate": 2.4
+        },
+        {
+            "id": 4,
+            "value": "4",
+            "label": "Community College",
+            "inflationRate": 2.8
+        }
+    ],
+    "states": [
+        {
+            "id": "AL",
+            "value": "AL",
+            "label": "Alabama"
+        },
+        {
+            "id": "AK",
+            "value": "AK",
+            "label": "Alaska"
+        },
+        {
+            "id": "AZ",
+            "value": "AZ",
+            "label": "Arizona"
+        },
+        {
+            "id": "AR",
+            "value": "AR",
+            "label": "Arkansas"
+        },
+        {
+            "id": "CA",
+            "value": "CA",
+            "label": "California"
+        },
+        {
+            "id": "CO",
+            "value": "CO",
+            "label": "Colorado"
+        },
+        {
+            "id": "CT",
+            "value": "CT",
+            "label": "Connecticut"
+        },
+        {
+            "id": "DE",
+            "value": "DE",
+            "label": "Delaware"
+        },
+        {
+            "id": "DC",
+            "value": "DC",
+            "label": "District of Columbia"
+        },
+        {
+            "id": "FL",
+            "value": "FL",
+            "label": "Florida"
+        },
+        {
+            "id": "GA",
+            "value": "GA",
+            "label": "Georgia"
+        },
+        {
+            "id": "HI",
+            "value": "HI",
+            "label": "Hawaii"
+        },
+        {
+            "id": "ID",
+            "value": "ID",
+            "label": "Idaho"
+        },
+        {
+            "id": "IL",
+            "value": "IL",
+            "label": "Illinois"
+        },
+        {
+            "id": "IN",
+            "value": "IN",
+            "label": "Indiana"
+        },
+        {
+            "id": "IA",
+            "value": "IA",
+            "label": "Iowa"
+        },
+        {
+            "id": "KS",
+            "value": "KS",
+            "label": "Kansas"
+        },
+        {
+            "id": "KY",
+            "value": "KY",
+            "label": "Kentucky"
+        },
+        {
+            "id": "LA",
+            "value": "LA",
+            "label": "Louisiana"
+        },
+        {
+            "id": "ME",
+            "value": "ME",
+            "label": "Maine"
+        },
+        {
+            "id": "MD",
+            "value": "MD",
+            "label": "Maryland"
+        },
+        {
+            "id": "MA",
+            "value": "MA",
+            "label": "Massachusetts"
+        },
+        {
+            "id": "MI",
+            "value": "MI",
+            "label": "Michigan"
+        },
+        {
+            "id": "MN",
+            "value": "MN",
+            "label": "Minnesota"
+        },
+        {
+            "id": "MS",
+            "value": "MS",
+            "label": "Mississippi"
+        },
+        {
+            "id": "MO",
+            "value": "MO",
+            "label": "Missouri"
+        },
+        {
+            "id": "MT",
+            "value": "MT",
+            "label": "Montana"
+        },
+        {
+            "id": "NE",
+            "value": "NE",
+            "label": "Nebraska"
+        },
+        {
+            "id": "NV",
+            "value": "NV",
+            "label": "Nevada"
+        },
+        {
+            "id": "NH",
+            "value": "NH",
+            "label": "New Hampshire"
+        },
+        {
+            "id": "NJ",
+            "value": "NJ",
+            "label": "New Jersey"
+        },
+        {
+            "id": "NM",
+            "value": "NM",
+            "label": "New Mexico"
+        },
+        {
+            "id": "NY",
+            "value": "NY",
+            "label": "New York"
+        },
+        {
+            "id": "NC",
+            "value": "NC",
+            "label": "North Carolina"
+        },
+        {
+            "id": "ND",
+            "value": "ND",
+            "label": "North Dakota"
+        },
+        {
+            "id": "OH",
+            "value": "OH",
+            "label": "Ohio"
+        },
+        {
+            "id": "OK",
+            "value": "OK",
+            "label": "Oklahoma"
+        },
+        {
+            "id": "OR",
+            "value": "OR",
+            "label": "Oregon"
+        },
+        {
+            "id": "PA",
+            "value": "PA",
+            "label": "Pennsylvania"
+        },
+        {
+            "id": "RI",
+            "value": "RI",
+            "label": "Rhode Island"
+        },
+        {
+            "id": "SC",
+            "value": "SC",
+            "label": "South Carolina"
+        },
+        {
+            "id": "SD",
+            "value": "SD",
+            "label": "South Dakota"
+        },
+        {
+            "id": "TN",
+            "value": "TN",
+            "label": "Tennessee"
+        },
+        {
+            "id": "TX",
+            "value": "TX",
+            "label": "Texas"
+        },
+        {
+            "id": "UT",
+            "value": "UT",
+            "label": "Utah"
+        },
+        {
+            "id": "VT",
+            "value": "VT",
+            "label": "Vermont"
+        },
+        {
+            "id": "VA",
+            "value": "VA",
+            "label": "Virginia"
+        },
+        {
+            "id": "WA",
+            "value": "WA",
+            "label": "Washington"
+        },
+        {
+            "id": "WV",
+            "value": "WV",
+            "label": "West Virginia"
+        },
+        {
+            "id": "WI",
+            "value": "WI",
+            "label": "Wisconsin"
+        },
+        {
+            "id": "WY",
+            "value": "WY",
+            "label": "Wyoming"
+        }
+    ],
+    "filingStatuses": [
+        {
+            "id": "SINGLE",
+            "value": "SINGLE",
+            "label": "Single"
+        },
+        {
+            "id": "MARRIED_SEPARATELY",
+            "value": "MARRIED_SEPARATELY",
+            "label": "Married Filing Separately"
+        },
+        {
+            "id": "HEAD_HOUSEHOLD",
+            "value": "HEAD_HOUSEHOLD",
+            "label": "Head of Household"
+        },
+        {
+            "id": "MARRIED_JOINTLY",
+            "value": "MARRIED_JOINTLY",
+            "label": "Married Filing Jointly"
+        },
+        {
+            "id": "QUAILIFIED_WIDOWER",
+            "value": "QUAILIFIED_WIDOWER",
+            "label": "Qualified Widow(er)"
+        }
+    ],
+    "defaultCollegeStartAge": 18.0,
+    "defaultYearsOfAttendance": 4.0,
+    "collegeStartAge": {
+        "minValue": 0.0,
+        "maxValue": 18.0,
+        "defaultValue": 18.0
+    },
+    "yearsOfAttendance": {
+        "minValue": 1.0,
+        "maxValue": 6.0,
+        "defaultValue": 4.0
+    },
+    "inflationRate": [
+        {
+            "label": "Historical",
+            "defaultValue": 3.3
+        },
+        {
+            "label": "Fixed",
+            "defaultValue": 3.3,
+            "minValue": 0.0
+        }
+    ],
+    "rateOfReturn": {
+        "minValue": 0.0,
+        "defaultValue": 6.0
+    },
+    "simpleAnnualInterestRate": {
+        "minValue": 0.0,
+        "defaultValue": 4.82
+    }
+}

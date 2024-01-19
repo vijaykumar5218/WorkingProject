@@ -1,0 +1,75 @@
+<ion-grid class="p-0">
+  <ion-row class="full-width">
+    <app-mxerror></app-mxerror>
+    <ion-col class="p-0" size="12" id="background-container">
+      <div id="welcome-header">
+        <h2>
+          {{content.hi}} {{firstName}}!
+        </h2>
+        <app-medical-spending class="networth-web-view"></app-medical-spending>
+      </div>
+      <ng-container *ngIf="benefitsEnrollment$ | async as benefitsEnrollment">
+        <app-benefits-banner
+          *ngIf="!benefitsEnrollment.suppressBanner"
+        ></app-benefits-banner
+      ></ng-container>
+      <app-net-worth
+        [usePlaceholder]="true"
+        tagName="mx-net-worth-home"
+      ></app-net-worth>
+      <ion-row class="mid-header">
+        <ion-col>
+          <ion-label class="card-header">Benefits & Coverages</ion-label>
+        </ion-col>
+      </ion-row>
+      <app-medical-spending
+        class="networth-mobile-view"
+        [forMobilePlansPage]="true"
+      ></app-medical-spending>
+      <app-plans
+        [isWorkplaceDashboard]="true"
+        [showPagination]="false"
+        [forHomePageMobile]="true"
+      ></app-plans>
+    </ion-col>
+  </ion-row>
+  <ion-row class="p-0">
+    <ion-col class="p-0" size="12">
+      <div id="inner-container">
+        <ng-container *ngIf="journeyResponse$ | async as journeys">
+          <journeys-list
+            *ngIf="journeys?.recommended?.length > 0"
+            headerText="{{journeys?.recommended.length > 1 ? content.journeyHeader : content.journeyHeader.slice(0, content.journeyHeader.length - 1) }}"
+            [journeys]="journeys.recommended"
+            idPrefix="recommended"
+          ></journeys-list>
+        </ng-container>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="p-0 finstrong-section">
+    <ion-col class="p-0">
+      <ion-card class="finstrong-card">
+        <app-mx-widget
+          [widgetType]="widgetType.FINSTRONG_MINI"
+          [height]="'400px'"
+          [tagName]="'mx-finstrong-mini'"
+          #homeFinstrong
+        ></app-mx-widget>
+        <ion-button
+          size="small"
+          id="view-finstrong"
+          class="font-18"
+          name="sign-out"
+          shape="round"
+          expand="block"
+          color="btncolor"
+          fill="outline"
+          routerLink="/home/financial-summary"
+        >
+          {{content.completeFinancialSummary}}
+        </ion-button>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>

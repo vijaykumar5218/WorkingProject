@@ -1,0 +1,131 @@
+<ion-card class="popup-input-dialog">
+  <ion-card-header>
+    <ion-card-title
+      >{{ title
+      }}<span
+        [hidden]="saving"
+        class="float-right"
+        (click)="closeDialogClicked(false)"
+        (keyup.enter)="closeDialogClicked(false)"
+        tabindex="0"
+        ><img
+          id="close-dialog"
+          src="assets/icon/exit.svg"
+          alt="Close dialog"/></span
+    ></ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <div class="input-title" [ngClass]="invalid ? 'error-title' : ''">
+      {{ inputTitle }}
+    </div>
+    <ion-input
+      *ngIf="inputType == allInputTypes.number"
+      type="tel"
+      appIntegerInput
+      value="{{ value }}"
+      class="dialog-input"
+      id="editInput"
+      [ngClass]="invalid ? 'error-input' : ''"
+      #numberInput
+      (ionChange)="valueChanged(numberInput.value)"
+    ></ion-input>
+    <ion-input
+      *ngIf="inputType == allInputTypes.text"
+      type="tel"
+      value="{{ value }}"
+      class="dialog-input"
+      id="editInput"
+      [ngClass]="invalid ? 'error-input' : ''"
+      #numberInput
+      (ionChange)="valueChanged(numberInput.value)"
+    ></ion-input>
+    <ion-input
+      *ngIf="inputType == allInputTypes.email"
+      type="email"
+      id="editPhoneEmail"
+      value="{{ value }}"
+      [ngClass]="invalid ? 'error-input' : ''"
+      class="edit-email"
+      name="editEmail"
+      inputmode="email"
+      pattern="email"
+      autocomplete="email"
+      #editEmailInput
+      (ionChange)="valueChanged(editEmailInput.value)"
+      clearInput
+    ></ion-input>
+    <ion-input
+      *ngIf="inputType == allInputTypes.phone"
+      class="dialog-input"
+      id="editPhoneInput"
+      name="editPhone"
+      type="text"
+      value="{{ value }}"
+      #editPhoneInput
+      (ionChange)="valueChanged(editPhoneInput.value, inputType)"
+      pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+      maxlength="12"
+      inputmode="numeric"
+      clearInput
+      [ngClass]="invalid ? 'error-input' : ''"
+    ></ion-input>
+    <ion-input
+      *ngIf="inputType == allInputTypes.currency"
+      value="{{ value }}"
+      id="editCurrencyInput"
+      class="currency-input"
+      [ngClass]="invalid ? 'error-input' : ''"
+      maxlength="11"
+      type="tel"
+      (beforeinput)="beforeInput($event)"
+      placeholder="0.00"
+      currencyMask
+      decimal="."
+      thousand=","
+      #currencyInput
+      (ionChange)="valueChanged(currencyInput.value)"
+      ><span class="dollar-symbol">$</span></ion-input
+    >
+    <ion-icon
+      *ngIf="invalid"
+      class="error-icon"
+      src="assets/icon/warning.svg"
+      alt="warning"
+      id="warning-img"
+    ></ion-icon
+    ><ion-text class="error">{{ errorText }}</ion-text>
+  </ion-card-content>
+  <div>
+    <ion-button
+      size="small"
+      (click)="closeDialogClicked(true)"
+      class="font-18 save-button"
+      name="submit"
+      shape="round"
+      expand="block"
+      type="submit"
+      color="btncolor"
+      [attr.disabled]="invalid || saving"
+      id="save-btn"
+    >
+      <ion-spinner [hidden]="!saving" class="save-spinner"></ion-spinner>
+      {{ pageText.save }}
+    </ion-button>
+    <ion-button
+      size="small"
+      (click)="closeDialogClicked(false)"
+      (keyup.enter)="closeDialogClicked(false)"
+      class="cancel-button"
+      disabled
+      [attr.disabled]="saving"
+      id="cancel-btn"
+    >
+      {{ pageText.cancel }}
+    </ion-button>
+  </div>
+
+  <app-legal
+    *ngIf="inputType == allInputTypes.email || inputType == allInputTypes.phone"
+  ></app-legal>
+</ion-card>

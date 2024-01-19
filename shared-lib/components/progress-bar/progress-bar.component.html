@@ -1,0 +1,45 @@
+<div
+  class="main_container"
+  [ngStyle]="{'background-image': 'url(' + element.imageUrl + ')'}"
+>
+  <div id="progress_formula">{{ element.label }}</div>
+  <div
+    id="progress_container"
+    [ngStyle]="{
+      'border-color': element.borderColor
+    }"
+  >
+    <div id="progress_container_text">
+      <div id="progress_container_text_align_center">
+        {{
+          element.type === 'dollar'
+            ? (element.value
+              | currency
+                : 'USD'
+                : 'symbol'
+                : '1.' + (decimalPlacesOfValue ? decimalPlacesOfValue : '0-0'))
+            : element.value
+        }}/{{
+          element.type === 'dollar'
+            ? (element.maxValue
+              | currency
+                : 'USD'
+                : 'symbol'
+                : '1.' +
+                    (decimalPlacesOfMaxValue ? decimalPlacesOfMaxValue : '0-0'))
+            : element.maxValue
+        }}
+      </div>
+    </div>
+    <div
+      id="loading_bar"
+      [ngStyle]="{
+        'background-color': element.bgColor,
+        width:
+          element.value / element.maxValue > 1
+            ? '100%'
+            : (element.value / element.maxValue) * 100 + '%'
+      }"
+    ></div>
+  </div>
+</div>

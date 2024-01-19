@@ -1,0 +1,14 @@
+{
+    "dataStatus": "OK",
+    "translationEnabled": false,
+    "modalAlertsEnabled": false,
+    "contentCaptureEnabled": false,
+    "oneLinkKeyForEnglish": "50E9-BDF3-115F-286D",
+    "oneLinkKeyForSpanish": "D002-7D8C-A50B-FA2D",
+    "langPreference": {
+        "preference": "en-US"
+    },
+    "translationEnabledMyvoyageDsh": false,
+    "clientTranslationEnabled": true,
+    "clientId": "INGWIN"
+}

@@ -1,0 +1,16 @@
+:host {
+  --ion-background-color: var(--primary-colors-voya-white);
+
+  ion-tab-button.selected {
+    box-shadow: 0 3px 0 0 var(--secondary-colors-voya-dark-orange) inset;
+
+    ion-label {
+      font-weight: bold;
+      color: var(--primary-colors-voya-black);
+    }
+  }
+
+  ion-icon {
+    margin-top: 9px;
+  }
+}

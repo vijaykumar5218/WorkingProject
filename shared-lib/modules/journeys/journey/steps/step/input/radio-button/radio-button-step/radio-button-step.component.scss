@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  margin-top: 36px;
+  .note {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+}

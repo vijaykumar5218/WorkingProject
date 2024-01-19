@@ -1,0 +1,27 @@
+<ion-card class="translation-popup">
+  <ion-card-content>
+    <v-icon
+      class="x-button"
+      tabindex="0"
+      (click)="closeDialogClicked()"
+      (keyup.enter)="closeDialogClicked()"
+      id="close-btn"
+      primary
+      name="x"
+      size="20px"
+    ></v-icon>
+    <div>
+      <p class="message OneLinkNoTx">{{ message }}</p>
+      <ion-button
+        size="small"
+        (click)="closeDialogClicked()"
+        class="cancel-button OneLinkNoTx"
+        id="no-btn"
+        shape="round"
+        expand="block"
+      >
+        {{ buttonText }}
+      </ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>

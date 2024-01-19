@@ -1,0 +1,94 @@
+:host {
+  div {
+    min-height: 100%;
+    flex-direction: column;
+
+    ion-card {
+      flex-grow: 1;
+      box-shadow: var(--card-box-shadow);
+      border-radius: var(--card-border-radius);
+      margin: 0;
+      padding: 15px 20px 20px 20px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+
+      &.internal {
+        box-shadow: none;
+        display: block;
+        flex-grow: 0;
+      }
+
+      &.hideStep > :not(journeys-steps-step-animation) {
+        display: none;
+      }
+
+      journeys-steps-step-input:last-of-type {
+        margin-bottom: 20px;
+      }
+
+      journeys-steps-step-row-with-image {
+        margin-bottom: 25px;
+
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
+
+      journeys-steps-step-mx-widget {
+        margin-bottom: 10px;
+      }
+
+      journeys-steps-step-button {
+        width: 100%;
+        margin-top: auto;
+        &.spacing {
+          padding-top: 20px;
+        }
+        &.no-spacing {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+      }
+
+      journeys-steps-step-header-with-logo {
+        margin-bottom: 20px;
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+
+    journeys-steps-step-help-card {
+      margin-top: 20px;
+    }
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      width: 362px;
+    }
+  }
+  div.web-step {
+    background: var(--ion-color-white);
+    @media screen and (min-width: 920px) {
+      ion-card {
+        margin: 0px 36px 100px 36px;
+        box-shadow: none;
+      }
+    }
+    @media screen and (max-width: 920px) {
+      ion-card {
+        box-shadow: none;
+      }
+    }
+  }
+  div.mobile-step {
+    margin-bottom: 25px;
+    display: flex;
+  }
+}

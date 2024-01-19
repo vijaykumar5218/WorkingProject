@@ -1,0 +1,9 @@
+<div
+  *ngFor="let step of steps; let i = index"
+  [ngClass]="{
+    completed: step.status === status.completed,
+    'in-progress': step.status === status.inProgress,
+    'current-step': i === currentStep
+  }"
+  [ngStyle]="{width: (1 / steps.length) * 100 + '%'}"
+></div>

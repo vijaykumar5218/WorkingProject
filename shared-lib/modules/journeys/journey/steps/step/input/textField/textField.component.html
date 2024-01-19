@@ -1,0 +1,26 @@
+<ion-input
+  [(ngModel)]="value"
+  [placeholder]="placeholder"
+  (ionChange)="emitValueChange()"
+  (ionBlur)="emitBlur()"
+  [style.--padding-start]="padding"
+  [inputmode]="
+    (input.validationRules?.type === validationType.number ||
+      input.validationRules?.type === validationType.percentage ||
+      input.validationRules?.type === validationType.dollar) &&
+    !input.validationRules?.decimalPlaces
+      ? 'numeric'
+      : 'text'
+  "
+  [journeysValidation]
+  [input]="input"
+  [automation-id]="'journeyInput' + (idSuffix || input.idSuffix)"
+  [attr.aria-label]="input.ariaLabel"
+  [ngClass]="{'large-input': input.largeInput}"
+  [attr.aria-label]="ariaLabel"
+  #inputEl
+>
+  <ion-label *ngIf="input.validationRules?.type === validationType.percentage"
+    >%</ion-label
+  >
+</ion-input>

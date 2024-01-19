@@ -1,0 +1,109 @@
+.outerContainer {
+  .half-bg {
+    height: 50vh;
+    background-color: var(--primary-colors-voya-white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .featured-header {
+    flex-grow: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: 0.03px;
+    color: var(--primary-colors-voya-black);
+    padding: 0 25px;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  .basic-wrap {
+    padding: 30px 20px 20px;
+  }
+
+  .display-name {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    color: var(--primary-colors-voya-black);
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  .policy-label {
+    margin-bottom: 10px;
+
+    & p {
+      font-size: 16px;
+    }
+  }
+  .policy-number {
+    margin-bottom: 0px;
+
+    & p {
+      font-size: 16px;
+      margin: 6px 0 0 0;
+      color: var(--primary-colors-voya-black);
+
+      &.policyId {
+        font-weight: bold;
+        margin-top: 6px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  hr {
+    display: block;
+    background-color: var(--white);
+  }
+}
+
+.logo-c {
+  margin-bottom: 0;
+  display: inline-flex;
+  justify-content: flex-end;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.inputComponent {
+  position: relative;
+}
+
+.web-plans-details {
+  .inner-container {
+    margin-bottom: 80px;
+    overflow-y: auto;
+    margin-top: 1px;
+    width: 100%;
+    .basic-wrap {
+      padding-left: 36px;
+      padding-right: 36px;
+      .logo-c {
+        img {
+          width: 62px;
+          height: 62px;
+        }
+      }
+    }
+
+    .featured-header {
+      margin-top: 20px;
+      padding: 0 35px;
+    }
+  }
+}
+.mobile-plans-details {
+  .inner-container {
+    width: 100%;
+  }
+}

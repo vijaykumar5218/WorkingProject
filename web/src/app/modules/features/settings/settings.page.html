@@ -1,0 +1,68 @@
+<ion-grid>
+  <ion-row class="linear-gradient"> </ion-row>
+  <div class="max-width">
+    <ion-row class="settings-tab">
+      <ion-col class="settings-info">
+        <ion-row class="personal-info">
+          <ion-col class="ion-no-padding">
+            <ion-card class="personal-info-card">
+              <ion-row class="headline-personal-row">
+                <ion-col class="ion-no-padding">
+                  <ion-text class="settings-headline"
+                    >{{pagedata.personalInfo}}</ion-text
+                  >
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="ion-no-padding">
+                  <app-personal-info></app-personal-info>
+                </ion-col>
+              </ion-row>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row class="account-info">
+          <ion-col class="ion-no-padding">
+            <ion-card class="account-info-card">
+              <ion-row class="headline-row account-info-header">
+                <ion-col class="ion-no-padding">
+                  <ion-text class="settings-headline"
+                    >{{pagedata.accountInfo}}</ion-text
+                  >
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="ion-no-padding">
+                  <app-account-info></app-account-info>
+                </ion-col>
+              </ion-row>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row
+          class="notification-info"
+          *ngIf="settings?.primaryEmail?.email"
+        >
+          <ion-col class="ion-no-padding">
+            <ion-card class="notification-info-card">
+              <ion-row class="headline-row">
+                <ion-col class="ion-no-padding">
+                  <ion-text class="settings-headline"
+                    >{{pagedata.notificationSettings}}</ion-text
+                  >
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="ion-no-padding">
+                  <app-notification-settings></app-notification-settings>
+                </ion-col>
+              </ion-row>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <app-footer-desktop class="footer-desktop"></app-footer-desktop>
+</ion-grid>

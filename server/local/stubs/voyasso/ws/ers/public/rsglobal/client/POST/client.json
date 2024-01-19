@@ -1,0 +1,19 @@
+{
+    "errorCode": 0,
+    "domain": "voyaretirement.intg.voya.com",
+    "clientId": "INGWIN",
+    "penPay": false,
+    "qdro": false,
+    "eoi": false,
+    "myBenefitsHub": false,
+    "appId": "myVoyage",
+    "vwoEnabled": false,
+    "levelAccessEnabled": false,
+    "mobileClientBrand": false,
+    "newNavigationEnabled": false,
+    "guidanceEnabled": false,
+    "planWithEase": false,
+    "bannerEnabled": false,
+    "preAuthRegistration": false,
+    "wexHealthSession": false
+}

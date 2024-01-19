@@ -1,0 +1,29 @@
+<div>
+  <journeys-steps-step-input-text-field
+    #textField
+    [value]="value"
+    (blur)="onInputBlur(textField.value)"
+    [input]="element"
+    [ariaLabel]="element.label"
+  ></journeys-steps-step-input-text-field>
+</div>
+<app-table [element]="element"></app-table>
+<div>
+  <ion-range
+    [max]="max"
+    [min]="element.validationRules.min"
+    [(ngModel)]="sliderValue"
+    #slider
+    [ionChange]="onSliderChange(slider.value)"
+    debounce="150"
+    [id]="'journeySliderInput' + element.idSuffix"
+  ></ion-range>
+  <ion-button
+    size="small"
+    shape="round"
+    class="secondary"
+    (click)="reset()"
+    [id]="'journeySliderReset' + element.idSuffix"
+    >{{ element.buttonLabel }}</ion-button
+  >
+</div>

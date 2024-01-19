@@ -1,0 +1,285 @@
+{
+  "planYear": 2022,
+  "enrolled": [
+    {
+      "name": "Basic Long Term Disability",
+      "coverage": 2518.0,
+      "deductible": 0.0,
+      "type": "basic_ltd_insurance",
+      "id": "brjy6jAcyJGF",
+      "coverage_levels": {"subscriber": 2518.0},
+      "deductibleObj": {},
+      "totalPremium": 0.0,
+      "coverageType": "Individual",
+      "coverage_start_date": "2021-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Supplemental Life Insurance",
+      "coverage": 122000.0,
+      "premium": 14.03,
+      "premiumFrequency": "semimonthly",
+      "deductible": 0.0,
+      "type": "life_insurance",
+      "id": "bmrGzcYwrzw2",
+      "coverage_levels": {"subscriber": 122000.0, "spouse": 0.0, "child": 0.0},
+      "deductibleObj": {},
+      "totalPremium": 0.0,
+      "coverageType": "Family",
+      "coverage_start_date": "2022-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Superior Vision Plan",
+      "coverage": 0.0,
+      "premium": 1.79,
+      "premiumFrequency": "semimonthly",
+      "deductible": 0.0,
+      "type": "vision_plan",
+      "id": "b7Eju8mdkCYt",
+      "deductibleObj": {
+        "copay": 10.0,
+        "coinsurance": 0.0,
+        "individual": 0.0,
+        "family": 0.0
+      },
+      "totalPremium": 0.0,
+      "coverageType": "Individual",
+      "coverage_start_date": "2021-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Consumer Plan A",
+      "coverage": 0.0,
+      "premium": 4.22,
+      "premiumFrequency": "semimonthly",
+      "deductible": 2800.0,
+      "type": "medical_plan",
+      "id": "bfefcR6nG4bv",
+      "deductibleObj": {
+        "copay": 0.0,
+        "coinsurance": 30.0,
+        "individual": 2800.0,
+        "family": 5600.0
+      },
+      "totalPremium": 67.52,
+      "coverageType": "Individual",
+      "coverage_start_date": "2021-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Delta Dental Plan",
+      "coverage": 0.0,
+      "premium": 7.15,
+      "premiumFrequency": "semimonthly",
+      "deductible": 50.0,
+      "type": "dental_plan",
+      "id": "beeNr3LyvdGg",
+      "deductibleObj": {
+        "copay": 0.0,
+        "coinsurance": 20.0,
+        "individual": 50.0,
+        "family": 150.0
+      },
+      "totalPremium": 0.0,
+      "coverageType": "Individual",
+      "coverage_start_date": "2021-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Voya HSA",
+      "coverage": 0.0,
+      "deductible": 0.0,
+      "type": "hsa",
+      "id": "bazCtvA5s7VH",
+      "deductibleObj": {},
+      "totalPremium": 0.0,
+      "coverageType": "Individual",
+      "coverage_start_date": "2021-01-01",
+      "coverage_end_date": "2022-12-31"
+    }
+  ],
+  "provided": [],
+  "declined": [
+    {
+      "name": "Supplemental Long Term Disability",
+      "coverage": 0.0,
+      "premium": 0.0,
+      "premiumFrequency": "semimonthly",
+      "deductible": 0.0,
+      "type": "ltd_insurance",
+      "id": "bGysJzXAQVzE",
+      "coverage_levels": {"subscriber": 0.0},
+      "deductibleObj": {},
+      "coverageType": "Individual",
+      "coverage_start_date": "2022-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Supplemental AD&D Insurance",
+      "coverage": 0.0,
+      "premium": 0.0,
+      "premiumFrequency": "semimonthly",
+      "deductible": 0.0,
+      "type": "add_insurance",
+      "id": "b1Y61PLY2RMk",
+      "coverage_levels": {"subscriber": 0.0},
+      "deductibleObj": {},
+      "coverageType": "Individual",
+      "coverage_start_date": "2022-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Basic AD&D Insurance",
+      "coverage": 0.0,
+      "deductible": 0.0,
+      "type": "basic_add_insurance",
+      "id": "bsyXY4XakMhi",
+      "coverage_levels": {"subscriber": 0.0},
+      "deductibleObj": {},
+      "coverageType": "Individual",
+      "coverage_start_date": "2022-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Critical Illness Insurance",
+      "coverage": 0.0,
+      "premium": 0.0,
+      "premiumFrequency": "semimonthly",
+      "deductible": 0.0,
+      "type": "illness_indemnity",
+      "id": "bmWmqU1dNvbg",
+      "coverage_levels": {"subscriber": 0.0, "spouse": 0.0, "child": 0.0},
+      "deductibleObj": {},
+      "coverageType": "Individual",
+      "coverage_start_date": "2022-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Accident Insurance - Non-NY",
+      "coverage": 0.0,
+      "premium": 0.0,
+      "premiumFrequency": "semimonthly",
+      "deductible": 0.0,
+      "type": "accident_indemnity",
+      "id": "bYhs36yhUcGP",
+      "deductibleObj": {},
+      "coverageType": "Individual",
+      "coverage_start_date": "2022-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Traditional Plan C",
+      "coverage": 0.0,
+      "premium": 0.0,
+      "premiumFrequency": "semimonthly",
+      "deductible": 650.0,
+      "type": "medical_plan",
+      "id": "bKMsqb1F6upC",
+      "deductibleObj": {
+        "copay": 0.0,
+        "coinsurance": 20.0,
+        "individual": 650.0,
+        "family": 1300.0
+      },
+      "coverageType": "Individual",
+      "coverage_start_date": "2022-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Consumer Plan B",
+      "coverage": 0.0,
+      "premium": 0.0,
+      "premiumFrequency": "semimonthly",
+      "deductible": 1400.0,
+      "type": "medical_plan",
+      "id": "bwa0AKwK5WLw",
+      "deductibleObj": {
+        "copay": 0.0,
+        "coinsurance": 20.0,
+        "individual": 1400.0,
+        "family": 2800.0
+      },
+      "coverageType": "Individual",
+      "coverage_start_date": "2022-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+      "name": "Voya Health FSA",
+      "coverage": 0.0,
+      "deductible": 0.0,
+      "type": "fsa",
+      "id": "byBj1x74PwWt",
+      "deductibleObj": {},
+      "coverageType": "Individual",
+      "coverage_start_date": "2022-01-01",
+      "coverage_end_date": "2022-12-31"
+    },
+    {
+        "name": "Voya Health FSA",
+        "coverage": 0.0,
+        "deductible": 0.0,
+        "type": "fsa",
+        "id": "byBj1x74PwWt",
+        "deductibleObj": {},
+        "coverageType": "Individual",
+        "coverage_start_date": "2022-01-01",
+        "coverage_end_date": "2022-12-31"
+      },
+      {
+        "name": "Voya Health FSA",
+        "coverage": 0.0,
+        "deductible": 0.0,
+        "type": "fsa",
+        "id": "byBj1x74PwWt",
+        "deductibleObj": {},
+        "coverageType": "Individual",
+        "coverage_start_date": "2022-01-01",
+        "coverage_end_date": "2022-12-31"
+      },
+      {
+        "name": "Voya Health FSA",
+        "coverage": 0.0,
+        "deductible": 0.0,
+        "type": "fsa",
+        "id": "byBj1x74PwWt",
+        "deductibleObj": {},
+        "coverageType": "Individual",
+        "coverage_start_date": "2022-01-01",
+        "coverage_end_date": "2022-12-31"
+      },
+      {
+        "name": "Voya Health FSA",
+        "coverage": 0.0,
+        "deductible": 0.0,
+        "type": "fsa",
+        "id": "byBj1x74PwWt",
+        "deductibleObj": {},
+        "coverageType": "Individual",
+        "coverage_start_date": "2022-01-01",
+        "coverage_end_date": "2022-12-31"
+      },
+      {
+        "name": "Voya Health FSA",
+        "coverage": 0.0,
+        "deductible": 0.0,
+        "type": "fsa",
+        "id": "byBj1x74PwWt",
+        "deductibleObj": {},
+        "coverageType": "Individual",
+        "coverage_start_date": "2022-01-01",
+        "coverage_end_date": "2022-12-31"
+      },
+    {
+      "name": "Voya Limited-Purpose FSA",
+      "coverage": 0.0,
+      "deductible": 0.0,
+      "type": "lpfsa",
+      "id": "bMxmDLYj06xb",
+      "deductibleObj": {},
+      "coverageType": "Individual",
+      "coverage_start_date": "2022-01-01",
+      "coverage_end_date": "2022-12-31"
+    }
+  ]
+}

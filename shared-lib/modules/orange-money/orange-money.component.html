@@ -1,0 +1,175 @@
+<div class="section-title" *ngIf="displayHeader">
+  <label class="voya-dark font-w-600">{{
+    omHeader?.OMHeader ? omHeader.OMHeader : orangeText.retirementAccount
+  }}</label>
+</div>
+<ion-card class="myv-card" *ngIf="!shouldHide">
+  <div *ngIf="!estimates; else elseBlock">
+    <ion-spinner></ion-spinner>
+  </div>
+  <ng-template #elseBlock>
+    <ion-card-header>
+      <ion-row>
+        <ion-col class="card-title">
+          <ion-card-title>
+            {{ orangeText.title }}
+          </ion-card-title>
+        </ion-col>
+        <ion-col>
+          <img
+            (click)="openTooltip()"
+            (keyup.enter)="openTooltip()"
+            automation-id="om-info-button"
+            tabindex="0"
+            class="tool-tip"
+            alt="info"
+            src="assets/icon/ic-info-outline-24px.svg"
+          />
+        </ion-col>
+        <ion-col class="ion-text-end om-edit-icon" *ngIf="!suppressEdit">
+          <span
+            ><img
+              (click)="editOrangeMoney()"
+              (keyup.enter)="editOrangeMoney()"
+              tabindex="0"
+              class="ion-float-right"
+              alt="edit"
+              src="assets/icon/pencil_circle.svg"
+          /></span>
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="container">
+        <div class="barWrapper">
+          <div
+            title="85%"
+            class="font-12 tooltip"
+            [ngStyle]="{'left.%': progressWidth - 3}"
+          >
+            <span
+              [ngClass]="progressWidth >= 100 ? 'progress-text-offset' : ''"
+              >{{ progressWidth.toFixed(0) + '%' }}</span
+            >
+            <img
+              class="arrow-down"
+              alt="arrow down"
+              src="assets/icon/ic_arrow_drop_down.svg"
+            />
+          </div>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              title="Orange money progress"
+              role="progressbar"
+              [ngStyle]="{'width.%': progressWidth}"
+            ></div>
+          </div>
+        </div>
+        <div>
+          <ion-grid class="ion-no-padding">
+            <ion-row class="orange-money-details">
+              <ion-col size-xs="5" size-sm="4" size-md="4" size-lg="4">
+                <p class="retire-label-grey">
+                  {{ orangeText.estimates.incomeText }}
+                </p>
+                <p class="font-14 font-w-600 ion-no-margin orange-color">
+                  {{
+                    estimates
+                      ? (estimates?.estimatedMonthlyIncome
+                        | currency: 'USD':'symbol':'1.0-0')
+                      : ''
+                  }}
+                </p>
+              </ion-col>
+              <ion-col size-xs="4" size-sm="4" size-md="4" size-lg="4">
+                <p class="retire-label-grey">
+                  {{ orangeText.estimates.goalText }}
+                </p>
+                <p class="font-14 font-w-600 ion-no-margin">
+                  {{
+                    estimates
+                      ? (estimates?.estimatedMonthlyGoal
+                        | currency: 'USD':'symbol':'1.0-0')
+                      : ''
+                  }}
+                </p>
+              </ion-col>
+              <ion-col size-xs="3" size-sm="4" size-md="4" size-lg="4">
+                <p class="retire-label-grey" *ngIf="estimates?.difference > 0">
+                  {{ orangeText.estimates.gapText }}
+                </p>
+                <p
+                  class="font-14 font-w-600 ion-no-margin"
+                  *ngIf="!(estimates?.difference > 0)"
+                >
+                  {{ orangeText.estimates.onTrackText }}
+                </p>
+                <p
+                  class="font-14 font-w-600 ion-no-margin"
+                  *ngIf="estimates?.difference > 0"
+                >
+                  {{
+                    estimates
+                      ? (estimates?.difference
+                        | currency: 'USD':'symbol':'1.0-0')
+                      : ''
+                  }}
+                </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <hr class="divider" />
+        </div>
+        <div>
+          <ion-grid class="ion-no-padding">
+            <ion-row>
+              <ion-col size-xs="6" size-sm="4" size-md="4" size-lg="4">
+                <label class="font-14">{{ orangeText.currSalary }}</label>
+              </ion-col>
+              <ion-col size-xs="6" size-sm="8" size-md="8" size-lg="8" class="">
+                <div class="text-right">
+                  <div class="bottom-line-text">
+                    {{ estimates?.currSalary | currency: 'USD':'symbol' }}
+                  </div>
+                  <img
+                    class="bottom-line-img"
+                    automation-id="edit_current_salary"
+                    (click)="editCurrentSalary()"
+                    (keyup.enter)="editCurrentSalary()"
+                    tabindex="0"
+                    alt="edit"
+                    src="assets/icon/pencil_circle.svg"
+                  />
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row class="mt-20">
+              <ion-col size-xs="6" size-sm="4" size-md="4" size-lg="4">
+                <label class="font-14">{{ orangeText.retirementAge }}</label>
+              </ion-col>
+              <ion-col size-xs="6" size-sm="8" size-md="8" size-lg="8" class="">
+                <div class="text-right">
+                  <div class="bottom-line-text">
+                    {{ estimates?.retirementAge }}
+                  </div>
+                  <img
+                    class="bottom-line-img"
+                    automation-id="edit_retirement_age"
+                    (click)="editRetirementAge()"
+                    (keyup.enter)="editRetirementAge()"
+                    tabindex="0"
+                    alt="edit"
+                    src="assets/icon/pencil_circle.svg"
+                  />
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+    </ion-card-content>
+  </ng-template>
+</ion-card>
+<app-mad-lib *ngIf="shouldHide" (madlibClose)="emitMadlibClose()"></app-mad-lib>

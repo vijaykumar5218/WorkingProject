@@ -1,0 +1,19 @@
+<ion-card>
+  <ion-row class="title">
+    <ion-col>
+      {{ content.hsaAwaits }}
+    </ion-col>
+  </ion-row>
+  <ion-row class="message">
+    <ion-col>
+      {{ content.nextSteps }}
+      <br />
+      <br />
+      <span (click)="linkClicked()" id="setHsaGoalLink"
+        >{{ content.setHsaGoal
+        }}<ion-spinner *ngIf="loading" class="loading"></ion-spinner
+      ></span>
+    </ion-col>
+  </ion-row>
+  <img src="assets/icon/hsa-bubbles.svg" alt="" />
+</ion-card>

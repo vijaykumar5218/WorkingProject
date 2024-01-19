@@ -1,0 +1,14 @@
+{
+  "header": "Enter your email address below:",
+  "label": "Email Address",
+  "actionOption": {
+    "updateHeader": "Add Recovery Email",
+    "addHeader": "Update Recovery Email",
+    "buttonLeft": "settings/account-and-personal-info/account-info/edit-account-recovery",
+    "buttonRight": "notification"
+  },
+  "buttons":{
+      "cancel":"Cancel",
+      "code":"Send Code"
+  }
+}

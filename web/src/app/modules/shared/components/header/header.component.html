@@ -1,0 +1,16 @@
+<ion-header [ngStyle]="{top: smartBannerTop}" *ngIf="isHeaderReady">
+  <v-brand-stripe
+    imageSource=""
+    colorFrom="var(--v-colors__secondary)"
+    colorTo="var(--v-colors__secondary)"
+  ></v-brand-stripe>
+  <ng-container *ngIf="!isWorkplaceHeader; else workplaceHeaderTemp">
+    <app-myvoyage-header [selectedTab]="selectedTab"></app-myvoyage-header>
+  </ng-container>
+
+  <ng-template #workplaceHeaderTemp>
+    <workplace-dashboard-header
+      [selectedTab]="selectedTab"
+    ></workplace-dashboard-header>
+  </ng-template>
+</ion-header>

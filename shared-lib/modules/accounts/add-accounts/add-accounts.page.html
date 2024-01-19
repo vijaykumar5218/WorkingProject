@@ -1,0 +1,13 @@
+<div class="container" #container>
+  <div *ngIf="showCancel">
+    <a href="#" id="cancel-link" (click)="closeModal();"
+      >{{ pageText.cancelLink }}</a
+    >
+  </div>
+  <app-mx-widget
+    [widgetType]="widgetType.CONNECT"
+    [height]="height"
+    [tagName]="'mx-add-accounts'"
+    id="add-accounts-button"
+  ></app-mx-widget>
+</div>

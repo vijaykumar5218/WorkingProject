@@ -1,0 +1,43 @@
+<div class="tpa">
+  <app-modal-header
+    *ngIf="!isWeb"
+    [headerText]="pageText.headerLable"
+  ></app-modal-header>
+  <div *ngIf="isWeb" class="web-header">
+    <ion-row>
+      <ion-col (click)="closeClicked()" size="3" class="close">Close</ion-col>
+      <ion-col size="6" class="title-col"
+        ><span class="title">{{pageText.headerLable}}</span></ion-col
+      >
+      <ion-col size="3"></ion-col>
+    </ion-row>
+  </div>
+  <div *ngIf="step == streamStep.CHOOSE_PAYER">
+    <div class="header">
+      <h6>{{pageText.choseCarrier}}</h6>
+      <span>{{pageText.addMore}}</span>
+    </div>
+  </div>
+  <div *ngIf="step == streamStep.REAL_TIME || step == streamStep.DONE_ENROLL">
+    <img
+      class="real-time-img"
+      src="assets/icon/realtime_verification.svg"
+      alt="{{pageText.verificationAlt}}"
+    />
+  </div>
+  <div id="tpa-stream"></div>
+  <div *ngIf="step == streamStep.DONE_ENROLL">
+    <ion-button
+      size="small"
+      (click)="closeClicked()"
+      name="submit"
+      shape="round"
+      expand="block"
+      type="submit"
+      color="btncolor"
+      id="close-btn"
+    >
+      {{pageText.close}}
+    </ion-button>
+  </div>
+</div>

@@ -1,0 +1,163 @@
+{
+  "tourContent": {
+    "desktop": [
+      {
+        "id": "NAVIGATION",
+        "selector": "voya-global-nav",
+        "subContent": [
+          {
+            "id": "PRIMARY_NAVIGATION",
+            "selectorSource": "shadowRoot",
+            "selector": "v-primary-navigation",
+            "subContent": [
+              {
+                "id": "PRIMARY_NAVIGATION_WRAPPER",
+                "intro": "Navigate your site, quickly access key features, and view or change preferences.",
+                "gaLabel": "",
+                "selectorSource": "shadowRoot",
+                "selector": ".v-primary-menu-holder",
+                "tooltipClass": "nav-tooltip"
+              },
+              {
+                "id": "PERSONAL_INFO",
+                "intro": "View or change account and security preferences as well as access important messages and notices.",
+                "gaLabel": "",
+                "selectorSource": "shadowRoot",
+                "selector": ".profileIcon",
+                "tooltipPosition": "bottom-right-aligned"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ACCOUNT_SNAPSHOTS",
+        "intro": "Stay up to date and view important account information or action items specific to different life events.",
+        "gaLabel": "",
+        "selector": ".greeting"
+      },
+      {
+        "id": "HERO_CARDS",
+        "intro": "View and track progress on your path to financial wellness along with guidance on your next best step.",
+        "gaLabel": "",
+        "selector": "#heroCarousel"
+      },
+      {
+        "id": "ACCOUNT_COVERAGES",
+        "intro": "Get a historical view of your accounts and access all of them in one place.",
+        "gaLabel": "",
+        "selector": ".accounts-coverages"
+      }
+    ],
+    "tablet": [
+      {
+        "id": "NAVIGATION",
+        "selector": "voya-global-nav",
+        "subContent": [
+          {
+            "id": "PRIMARY_NAVIGATION",
+            "selectorSource": "shadowRoot",
+            "selector": "v-primary-navigation",
+            "subContent": [
+              {
+                "id": "PRIMARY_NAVIGATION_WRAPPER",
+                "intro": "Navigate your site, quickly access key features, and view or change preferences.",
+                "gaLabel": "",
+                "selectorSource": "shadowRoot",
+                "selector": ".v-primary-menu-holder",
+                "tooltipClass": "nav-tooltip"
+              },
+              {
+                "id": "PERSONAL_INFO",
+                "intro": "View or change account and security preferences as well as access important messages and notices.",
+                "gaLabel": "",
+                "selectorSource": "shadowRoot",
+                "selector": ".profileIcon",
+                "tooltipPosition": "bottom-right-aligned"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "HERO_CARDS",
+        "intro": "View and track progress on your path to financial wellness along with guidance on your next best step.",
+        "gaLabel": "",
+        "selector": "#heroCarousel",
+        "tooltipPosition": "top"
+      },
+      {
+        "id": "ACCOUNT_COVERAGES",
+        "intro": "Get a historical view of your accounts and access all of them in one place.",
+        "gaLabel": "",
+        "selector": "app-accounts-coverages",
+        "tooltipPosition": "top"
+      },
+      {
+        "id": "ACCOUNT_SNAPSHOTS",
+        "intro": "Stay up to date and view important account information or action items specific to different life events.",
+        "gaLabel": "",
+        "selector": "#responsiveGreeting",
+        "tooltipPosition": "top"
+      }
+    ],
+    "mobile": [
+      {
+        "id": "NAVIGATION",
+        "selector": "voya-global-nav",
+        "subContent": [
+          {
+            "id": "MOBILE_NAVIGATION",
+            "selectorSource": "shadowRoot",
+            "selector": "v-mobile-navigation-container",
+            "subContent": [
+              {
+                "id": "MOBILE_NAVIGATION_TOP_BAR",
+                "selectorSource": "shadowRoot",
+                "selector": "v-mobile-navigation-topbar",
+                "subContent": [
+                  {
+                    "id": "HAMBURGER",
+                    "intro": "Navigate your site, quickly access key features, and view or change preferences.",
+                    "gaLabel": "",
+                    "selectorSource": "shadowRoot",
+                    "selector": "v-hamburger"
+                  },
+                  {
+                    "id": "PERSONAL_INFO",
+                    "intro": "View or change account and security preferences as well as access important messages and notices.",
+                    "gaLabel": "",
+                    "selectorSource": "shadowRoot",
+                    "selector": "v-hamburger",
+                    "tooltipPosition": "bottom-right-aligned"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "HERO_CARDS",
+        "intro": "View and track progress on your path to financial wellness along with guidance on your next best step.",
+        "gaLabel": "",
+        "selector": "#heroCarousel",
+        "tooltipPosition": "top"
+      },
+      {
+        "id": "ACCOUNT_COVERAGES",
+        "intro": "Get a historical view of your accounts and access all of them in one place.",
+        "gaLabel": "",
+        "selector": "app-accounts-coverages",
+        "tooltipPosition": "top"
+      },
+      {
+        "id": "ACCOUNT_SNAPSHOTS",
+        "intro": "Stay up to date and view important account information or action items specific to different life events.",
+        "gaLabel": "",
+        "selector": "#responsiveGreeting",
+        "tooltipPosition": "top"
+      }
+    ]
+  }
+}

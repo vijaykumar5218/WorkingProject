@@ -1,0 +1,15 @@
+{
+  "expandableAccounts": [
+    {"acctType": "Ready For Enrollment"},
+    {"acctType": "Investment"},
+    {"acctType": "Savings"},
+    {"acctType": "Checking"},
+    {"acctType": "Credit Card"},
+    {"acctType": "Cash"},
+    {"acctType": "Mortgage"},
+    {"acctType": "Loan"},
+    {"acctType": "Insurance"},
+    {"acctType": "Property"},
+    {"acctType": "Line of Credit"}
+  ]
+}

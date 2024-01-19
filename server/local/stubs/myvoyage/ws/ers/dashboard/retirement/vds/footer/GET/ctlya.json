@@ -1,0 +1,106 @@
+{
+    "dataStatus": "OK",
+    "footerLinks": {
+        "disclaimerText": "Annuities are issued by Voya Retirement Insurance and Annuity Company (VRIAC), Windsor, CT or ReliaStar Life Insurance Company, (ReliaStar), Minneapolis, MN. VRIAC or ReliaStar is solely responsible for meeting its obligations. Plan administrative services provided by VRIAC or Voya Institutional Plan Services LLC (VIPS). VIPS does not engage in the sale or solicitation of securities. All companies are members of the Voya™  family of companies. All products or services may not be available in all states. Only VRIAC is admitted and its products offered in the state of New York.",
+        "copyRightText": "©{currentYear} Voya Service Company. All rights reserved.",
+        "iconLinks": [
+            {
+                "iconName": "pdf",
+                "linkURL": "http://get.adobe.com/reader/",
+                "linkLabel": "Get Adobe Reader",
+                "target": "_blank"
+            },
+            {
+                "id": "TERMOFUSE",
+                "iconName": "file",
+                "linkURL": "https://www.voya.com/terms-use",
+                "linkLabel": "Terms of Use/Online Privacy",
+                "target": "_blank"
+            },
+            {
+                "id": "SECURITY",
+                "iconName": "security",
+                "linkURL": "http://voya.com/terms-use/voya-security",
+                "linkLabel": "Security",
+                "target": "_blank"
+            },
+            {
+                "id": "EXCESSTRADING",
+                "iconName": "file",
+                "linkURL": "/einfo/pdfs/forms/ingwin/Excess_Trading_Policy.pdf",
+                "linkLabel": "Excessive Trading Policy",
+                "target": "_blank"
+            },
+            {
+                "id": "PRIVACYPROMISE",
+                "iconName": "privacy",
+                "linkURL": "https://www.voya.com/privacy-notice",
+                "linkLabel": "Privacy Notice",
+                "target": "_blank"
+            },
+            {
+                "iconName": "universalaccess",
+                "linkURL": "https://www.voya.com/articles/voya-cares-about-accessibility",
+                "linkLabel": "Accessibility",
+                "target": "_blank"
+            },
+            {
+                "id": "CONTACTUS",
+                "iconName": "phone",
+                "linkURL": "/einfo/contactus.aspx?cl=INGWIN&domain=voyaretirement.intg.voya.com&s=HrIxc9IlQ4T6Brp1ySJmNw11.i9290&pl=PLANIDS&d=f48590072897059de108e1c730b5a27862bc0616",
+                "linkLabel": "Contact Us"
+            },
+            {
+                "id": "GLOSSARY",
+                "iconName": "file",
+                "linkURL": "/einfo/public/glossary.aspx?cl=INGWIN&domain=voyaretirement.intg.voya.com&s=HrIxc9IlQ4T6Brp1ySJmNw11.i9290&pl=glossary&d=5a95ff76c36b64fce78f6e87ffbdf1bba3e87baf",
+                "linkLabel": "Glossary",
+                "target": "_blank"
+            },
+            {
+                "iconName": "profile",
+                "linkURL": "/myvoya/public/logout",
+                "linkLabel": "Log Out"
+            },
+            {
+                "iconName": "globeamericas",
+                "linkURL": "#",
+                "linkLabel": "English",
+                "languages": [
+                    {
+                        "label": "English",
+                        "value": "en-US"
+                    },
+                    {
+                        "label": "Español",
+                        "value": "es-US"
+                    }
+                ]
+            }
+        ],
+        "icons": [
+            {
+                "iconname": "facebook",
+                "href": "https://www.facebook.com/pages/Voya/215714485107840"
+            },
+            {
+                "iconname": "twitter",
+                "href": "http://twitter.com/voya"
+            },
+            {
+                "iconname": "youtube",
+                "href": "https://www.youtube.com/channel/UCbWNAJD8kl_rQOZTP0mvxtw"
+            },
+            {
+                "iconname": "linkedin",
+                "href": "https://www.linkedin.com/company/voya"
+            },
+            {
+                "iconname": "instagram",
+                "href": "https://www.instagram.com/voya"
+            }
+        ]
+    },
+    "showRetireeToolbox": false,
+    "showRetireeJourneyToolbox": false
+}

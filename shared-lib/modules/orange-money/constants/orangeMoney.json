@@ -1,0 +1,26 @@
+{
+  "title": "Retirement monthly income",
+  "currSalary": "Your current salary",
+  "retirementAge": "Desired retirement age",
+  "estimates": {
+    "incomeText": "Est. retirement income",
+    "goalText": "Est. monthly goal",
+    "gapText": "A difference of",
+    "onTrackText": "You are on track!"
+  },
+  "retirementAccount":"My Retirement Progress",
+  "dialogs": {
+    "currentSalaryTitle": "Your current salary",
+    "currentSalaryInputTitle": "Yearly income",
+    "RetirementAgeTitle": "Your retirement age",
+    "RetirementAgeInputTitle": "Age",
+    "validations": {
+      "retirementBetween": "Retirement age should be between {1} and {2}",
+      "retirementExcedes": "Retirement age cannot exceed ",
+      "retirementBelow": "Retirement age cannot go below ",
+      "retirementAgeSame": "Retirement age has not changed",
+      "incomeSame": "Income amount has not changed",
+      "incomeBetween": "Enter a value between 1 and 9,999,999"
+    }
+  }
+}

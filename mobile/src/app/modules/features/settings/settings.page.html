@@ -1,0 +1,40 @@
+<app-loading [loading]="loading">
+  <app-menu [config]="menuConfig" [isHelp]="false"></app-menu>
+  <ion-grid class="ion-no-padding bottom">
+    <ion-row class="biometrics-row" *ngIf="faceIDAllowed">
+      <ion-col
+        size="10"
+        [ngStyle]="{'margin-top': marginTop}"
+        class="biometrics-label-col"
+        ><img src="{{biometricsIcon}}" alt="biometrics" /><ion-text
+          class="font-16 font-w-600"
+          >{{biometricsText}}</ion-text
+        ></ion-col
+      >
+      <ion-col size="2" class="biometrics-toggle-col">
+        <ion-toggle
+          class="biometrics-toggle"
+          [(ngModel)]="faceIDEnabled"
+          (ionChange)="onFaceIDChanged()"
+        ></ion-toggle>
+      </ion-col>
+    </ion-row>
+    <ion-row class="mt-42">
+      <ion-col>
+        <ion-button
+          size="small"
+          id="sign-out"
+          class="font-18 sign-out"
+          name="sign-out"
+          shape="round"
+          expand="block"
+          color="btncolor"
+          fill="outline"
+          (click)="logout()"
+        >
+          {{options.button}}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</app-loading>

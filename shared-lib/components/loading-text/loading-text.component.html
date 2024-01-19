@@ -1,0 +1,6 @@
+<ion-skeleton-text
+  *ngIf="isLoading"
+  class="skeleton"
+  animated
+></ion-skeleton-text>
+<span *ngIf="!isLoading"><ng-content></ng-content></span>

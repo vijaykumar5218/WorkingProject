@@ -1,0 +1,75 @@
+app-spending-widget,
+app-budget-widget {
+  app-mx-widget {
+    @mixin iframe-styles($height: null, $width: null) {
+      margin: auto !important;
+      display: flex !important;
+      @if ($height) {
+        height: $height !important;
+      }
+      @if ($width) {
+        width: $width !important;
+      }
+    }
+    iframe {
+      @include iframe-styles(280px, 100%);
+      @media screen and (min-width: 500px) and (max-width: 920px) {
+        @include iframe-styles();
+      }
+      @media screen and (min-width: 920px) and (max-width: 1250px) {
+        @include iframe-styles(280px, 100%);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .networth {
+    margin: 36px 20px;
+  }
+}
+
+@media screen and (min-width: 920px) and (max-height: 820px) {
+  app-accounts {
+    @mixin ion-grid-styles {
+      width: 320px !important;
+      margin-left: 0px !important;
+    }
+    app-account-summary {
+      app-account-list {
+        > ion-card {
+          margin: 20px 0px !important;
+          ion-grid {
+            @include ion-grid-styles;
+          }
+        }
+      }
+    }
+    app-mx-account-list {
+      > div {
+        > ion-card {
+          margin: 20px 0px !important;
+          > ion-grid {
+            @include ion-grid-styles;
+          }
+        }
+      }
+    }
+  }
+}
+app-all-accounts {
+  app-summary {
+    div.networth {
+      @media screen and (max-width: 480px) {
+        margin-top: 0px !important;
+        app-net-worth {
+          ion-card.net-worth {
+            border-radius: 0px !important;
+            margin: 0px !important;
+            padding-bottom: 20px !important;
+          }
+        }
+      }
+    }
+  }
+}

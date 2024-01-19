@@ -1,0 +1,15 @@
+<ng-container>
+  <journeys-steps-step-input-radio-button-circle-radio-button
+    *ngIf="element.subtype === 'circle'"
+    [element]="element"
+    [value]="value"
+    (radioButtonStateChanged)="emitValueChange($event)"
+    [isToggle]="element.isToggle"
+  ></journeys-steps-step-input-radio-button-circle-radio-button>
+  <journeys-steps-step-input-radio-button-radio
+    *ngIf="!element.subtype"
+    [element]="element"
+    (radioButtonStateChanged)="emitValueChange($event)"
+    [value]="value"
+  ></journeys-steps-step-input-radio-button-radio>
+</ng-container>

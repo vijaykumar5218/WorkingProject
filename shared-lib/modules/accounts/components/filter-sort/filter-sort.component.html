@@ -1,0 +1,23 @@
+<div class="filter-row">
+  <ion-button
+    size="small"
+    size="small"
+    fill="outline"
+    (click)="opnFilter($event)"
+    (keyup.spacebar)="opnFilter($event)"
+    class="filt-button font-14"
+    >{{ filterContent.filterLable }}
+    <ion-icon class="ml-10" name="filter-outline"></ion-icon>
+  </ion-button>
+
+  <ion-button
+    size="small"
+    (click)="opnSorting($event)"
+    (keyup.spacebar)="opnSorting($event)"
+    size="small"
+    fill="outline"
+    class="filt-button font-14"
+    >{{ filterContent.sortLable }}
+    <ion-icon class="ml-10" name="chevron-down-outline"></ion-icon>
+  </ion-button>
+</div>

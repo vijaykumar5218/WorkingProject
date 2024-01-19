@@ -1,0 +1,20 @@
+<div *ngIf="accountData.length > 0">
+  <div class="radioLabel">
+    <ion-text *ngIf="element?.radioLabel">{{ element.radioLabel }}</ion-text>
+  </div>
+  <div
+    *ngFor="let account of accountData; let i = index"
+    tabindex="0"
+    (click)="emitData(account.guid)"
+    (keyup.enter)="emitData(account.guid)"
+  >
+    <div class="mx-account OneLinkNoTx">
+      <ion-icon
+        class="radio-icons"
+        [name]="account.radioButtonIconName"
+        [id]="account?.guid"
+      ></ion-icon>
+      <label for="html">{{ account.name }}</label>
+    </div>
+  </div>
+</div>

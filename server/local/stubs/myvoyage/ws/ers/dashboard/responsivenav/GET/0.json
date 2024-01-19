@@ -1,0 +1,566 @@
+{
+  "primaryNavLinks": [
+    {
+      "id": "HOME",
+      "popup": false,
+      "link": "/myvoyageui/#/home",
+      "label": "Home"
+    },
+    {
+      "id": "ACCOUNTS",
+      "popup": false,
+      "link": "/myvoyageui/#/accounts",
+      "label": "Accounts",
+      "subLinks": [
+        {
+          "id": "Account Summary",
+          "popup": false,
+          "link": "/myvoyageui/#/accounts",
+          "label": "Account Summary"
+        },
+        {
+          "agreementId": "2E7AE611C5827DC94FFED778B85403B4442F1D7FC9A1455478594C5863EB29A4",
+          "accountType": "Investment",
+          "accountBalance": "100956.93",
+          "accountBalanceAsOf": "12/31/2021",
+          "suppressTab": false,
+          "includedInOrangeMoney": false,
+          "accountAllowedForMyVoya": false,
+          "clientId": "KOHLER",
+          "planId": "623040",
+          "needOMAutomaticUpdate": false,
+          "planName": "Kohler Co 401(k) Savings Plan",
+          "clientAllowed4myVoyaOrSSO": false,
+          "useMyvoyaHomepage": false,
+          "advisorNonMoneyTxnAllowed": false,
+          "advisorMoneyTxnAllowed": false,
+          "nqPenCalPlan": false,
+          "enrollmentAllowed": false,
+          "autoEnrollmentAllowed": false,
+          "navigateToRSPortfolio": true,
+          "openDetailInNewWindow": false,
+          "nqPlan": false,
+          "portalSupportFlag": false,
+          "subLinks": [
+            {
+              "id": "Overview",
+              "type": "primary",
+              "popup": false,
+              "label": "Overview",
+              "subLinks": [
+                {
+                  "id": "/retirement/details",
+                  "type": "myVoya",
+                  "popup": false,
+                  "link": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/details/2E7AE611C5827DC94FFED778B85403B4442F1D7FC9A1455478594C5863EB29A4",
+                  "label": "Retirement Overview"
+                },
+                {
+                  "id": "ACCT_HISTORY_LANDING",
+                  "type": "null",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/pwebui/account-history?s=c1nHBOtBt2DVX39COMoc5A11.i9291&clientId=KOHLER&planId=623040&pageId=ACCT_HISTORY_LANDING&d=1406f616d53ba1ff9ce038a00de85fce43f3c94b",
+                  "label": "Account History",
+                  "subLinks": [
+                    {
+                      "id": "ACCT_HISTORY_LANDING_SUMMARY",
+                      "type": "null",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/pwebui/account-history?s=c1nHBOtBt2DVX39COMoc5A11.i9291&clientId=KOHLER&planId=623040&pageId=ACCT_HISTORY_LANDING&d=1406f616d53ba1ff9ce038a00de85fce43f3c94b",
+                      "label": "Summary"
+                    },
+                    {
+                      "id": "ACCT_PENDING_SUB",
+                      "type": "pweb",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=pending&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_PENDING&d=a5c9baff7028d1c910e649e8d49a4fa2435e4808",
+                      "label": "Pending Transactions"
+                    },
+                    {
+                      "id": "ACCT_ACTIVITY",
+                      "type": "pweb",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=account-activity&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_ACTIVITY&d=3c7f6088f4bb44638d434d1746ce36dd05ef3193",
+                      "label": "Account Activity"
+                    }
+                  ]
+                },
+                {
+                  "id": "RETIREE_TOOLBOX",
+                  "type": "myVoya",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/myvoyaui/index.html#/retireetoolbox/2E7AE611C5827DC94FFED778B85403B4442F1D7FC9A1455478594C5863EB29A4?pageId=RETIREE_TOOLBOX",
+                  "label": "Retiree Resources"
+                }
+              ],
+              "illustration": "docmagnifier"
+            },
+            {
+              "id": "Contributions & Savings",
+              "type": "primary",
+              "popup": false,
+              "label": "Contributions & Savings",
+              "subLinks": [
+                {
+                  "id": "ACCT_BAL",
+                  "type": "pweb",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=balances&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_BAL&d=66de6247495ed927c80f88ce5d184b6b131c5c2c",
+                  "label": "Balances",
+                  "subLinks": [
+                    {
+                      "id": "ACCT_BAL",
+                      "type": "null",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=balances&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_BAL&d=66de6247495ed927c80f88ce5d184b6b131c5c2c",
+                      "label": "By Fund"
+                    },
+                    {
+                      "id": "ACCT_BALBYSOURCE",
+                      "type": "pweb",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=balanceBySource&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_BALBYSOURCE&d=ee63c7642a113833cbd34df1a61cad1b0a77f912",
+                      "label": "By Source"
+                    },
+                    {
+                      "id": "ACCT_VESTING",
+                      "type": "pweb",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=balanceVesting&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_VESTING&d=402229a4f7fe0ac4f94be7c3fd899c22b1a5036a",
+                      "label": "Vested"
+                    },
+                    {
+                      "id": "ACCT_BALCOMPARISON",
+                      "type": "pweb",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=balanceComparison&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_BALCOMPARISON&d=bf4533108fb7fb403e322aba45361d38bf0db1fa",
+                      "label": "Comparison"
+                    }
+                  ],
+                  "tertiaryNavType": "listview",
+                  "tertiaryNavLabel": "View:"
+                },
+                {
+                  "id": "ACCT_PERSONALPERFORMANCE",
+                  "type": "pweb",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=personalPerformance&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_PERSONALPERFORMANCE&d=144d1a639d5ff2218342c4158c73370fff553fce",
+                  "label": "Personal Rate of Return"
+                },
+                {
+                  "id": "ACCT_CONTRIB",
+                  "type": "pweb",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/pwebui/contributions?s=c1nHBOtBt2DVX39COMoc5A11.i9291&planId=623040&pageId=ACCT_CONTRIB&d=d435d546bb0a7bfa2325d2ce52d93a212b67681d",
+                  "label": "Manage Contributions"
+                },
+                {
+                  "id": "ACCT_BONUS",
+                  "type": "pweb",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=bonusContribution&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_BONUS&d=6ce663af667ce10fbc083eff81d8fa64049a54bd",
+                  "label": "Bonus Contributions"
+                },
+                {
+                  "id": "ACCT_CONTHIST",
+                  "type": "pweb",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=contributionHistory&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_CONTHIST&d=89d36635a4fa3aa716e51a1f6fc3cd24ced8ed3d",
+                  "label": "Contribution History"
+                }
+              ],
+              "illustration": "dollarbill"
+            },
+            {
+              "id": "Investments & Research",
+              "type": "primary",
+              "popup": false,
+              "label": "Investments & Research",
+              "subLinks": [
+                {
+                  "id": "ACCT_MINVEST",
+                  "type": "pweb",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/pwebui/manage-investments?s=c1nHBOtBt2DVX39COMoc5A11.i9291&planId=623040&pageId=ACCT_MINVEST&d=d6fac2b32004d12912960aaeb323eb1b9e27ac89",
+                  "label": "Manage Investments",
+                  "subLinks": [
+                    {
+                      "id": "ACCT_MINVEST",
+                      "type": "pweb",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/pwebui/manage-investments?s=c1nHBOtBt2DVX39COMoc5A11.i9291&planId=623040&pageId=ACCT_MINVEST&d=d6fac2b32004d12912960aaeb323eb1b9e27ac89",
+                      "label": "Manage Investments"
+                    },
+                    {
+                      "id": "ACCT_MYELECT",
+                      "type": "pweb",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=viewMyElection&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_MYELECT&d=5ffde5fc9a03641bbf8781ac6993ec1c94dd48a6",
+                      "label": "My Elections"
+                    },
+                    {
+                      "id": "ACCT_CHGELECT",
+                      "type": "pweb",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=changeElection&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_CHGELECT&d=49e3c0eee263d5d27cf825707c19faa0bd78ecbf",
+                      "label": "Future Investment Elections"
+                    },
+                    {
+                      "id": "ACCT_REALLOC",
+                      "type": "pweb",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=reallocateBalances&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_REALLOC&d=473029be7ae314c80c6ae39278a6ef7e16f3f2d2",
+                      "label": "One Time Account Rebalance"
+                    },
+                    {
+                      "id": "ACCT_REBAL",
+                      "type": "pweb",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=rebalanceAccount&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_REBAL&d=ac368a3a8b3df45198cb3a9f01a484e9296031f8",
+                      "label": "Automatic Account Rebalance"
+                    },
+                    {
+                      "id": "ACCT_FUNDTX",
+                      "type": "pweb",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=fundTransfer&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_FUNDTX&d=731a8a99d4b5148c8f23391f827015e8ba777a26",
+                      "label": "Fund to Fund Transfer"
+                    }
+                  ],
+                  "tertiaryNavType": "dropdown",
+                  "tertiaryNavLabel": "Edit My Investments"
+                },
+                {
+                  "id": "investment_informationfundinformation",
+                  "type": "einfo",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/einfo/fundinfo.aspx?cl=KOHLER&pl=623040&page=investment_informationfundinformation&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=282af616ddc82d33522d9f48441b37b164666aa4",
+                  "label": "Fund Information"
+                },
+                {
+                  "id": "investment_informationfundperformance",
+                  "type": "einfo",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/einfo/fundinfo.aspx?cl=KOHLER&pl=623040&page=investment_informationfundperformance&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=cda2d8a07988735f76e0a6eaeb73b4e4103f4dcf",
+                  "label": "Fund Performance"
+                },
+                {
+                  "id": "investment_informationfundprices",
+                  "type": "einfo",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/einfo/fundinfo.aspx?cl=KOHLER&pl=623040&page=investment_informationfundprices&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=5ec9d2c12700e050871bc4821faef6c9def39e50",
+                  "label": "Fund Prices",
+                  "subLinks": [
+                    {
+                      "id": "investment_informationfundprices",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/fundinfo.aspx?cl=KOHLER&pl=623040&page=investment_informationfundprices&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=5ec9d2c12700e050871bc4821faef6c9def39e50",
+                      "label": "Current Prices"
+                    },
+                    {
+                      "id": "investment_informationfundpricesgraph",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/fundinfo.aspx?cl=KOHLER&pl=623040&page=investment_informationfundpricesgraph&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=77dff41754b36c2e87937319333f16d791bbfd67",
+                      "label": "Historic Graph"
+                    }
+                  ],
+                  "tertiaryNavType": "listview",
+                  "tertiaryNavLabel": "View:"
+                },
+                {
+                  "id": "FE_ACCT_GET_ADVICE",
+                  "type": "FE",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/myvoya/link?type=fe&token=urlResourceType%3DFEISSOLINK%26s%3Dc1nHBOtBt2DVX39COMoc5A11.i9291%26clientId%3DKOHLER%26vendorId%3DFEI%26disclaimer%3DFEISSORD%26domain%3Dkohler.intg.voya.com%26d%3D4fa6eb7b72aeb680d4d5328f8cf8af5d68cc620e",
+                  "label": "Get Investment Advice"
+                }
+              ],
+              "illustration": "bargraph"
+            },
+            {
+              "id": "Loans & Withdrawals",
+              "type": "primary",
+              "popup": false,
+              "label": "Loans & Withdrawals",
+              "subLinks": [
+                {
+                  "id": "LOANS_WITHD_LANDING",
+                  "type": "null",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/pwebui/loans-withdrawals?s=c1nHBOtBt2DVX39COMoc5A11.i9291&planId=623040&pageId=LOANS_WITHD_LANDING&d=537375dc017408b9d4f737644a9759ce6af6f91e",
+                  "label": "Summary"
+                },
+                {
+                  "id": "ACCT_LOANMODEL",
+                  "type": "pweb",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/epweb/pweblink.do?page=loanModel&plan=623040&s=c1nHBOtBt2DVX39COMoc5A11.i9291&domain=voyaretirement.intg.voya.com&act_type=&__plan__ID___=623040&pageId=ACCT_LOANMODEL&d=6aed1aa9feada702670f8255b18f2a72e06d37d7",
+                  "label": "Model a Loan"
+                }
+              ],
+              "illustration": "hand"
+            },
+            {
+              "id": "Plan Details",
+              "type": "primary",
+              "popup": false,
+              "label": "Plan Details",
+              "subLinks": [
+                {
+                  "id": "plan_informationintroduction",
+                  "type": "einfo",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationintroduction&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=a603ab8ce0d3be741d68b9879fe199ecb9fd6e69",
+                  "label": "Introduction",
+                  "subLinks": [
+                    {
+                      "id": "plan_informationwhatsnew",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationwhatsnew&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=7e2bf8cb579082a3b79eb9e9b0c1fcf0ca047e24",
+                      "label": "Important Information"
+                    },
+                    {
+                      "id": "plan_informationparticipantservices",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationparticipantservices&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=a936cc2c0d24dd0a03a5b9be8b5d7ffdddabad28",
+                      "label": "Customer Service"
+                    },
+                    {
+                      "id": "plan_informationfaqs",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationfaqs&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=8986a43ce245951a35e534d4c5873b35275c943c",
+                      "label": "FAQ's"
+                    }
+                  ],
+                  "tertiaryNavType": "dropdown",
+                  "tertiaryNavLabel": "Additional Plan Information"
+                },
+                {
+                  "id": "plan_informationplanhighlights",
+                  "type": "einfo",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationplanhighlights&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=5b35c4a3ef7eae1220fd395ad6e0ba5b6475109f",
+                  "label": "Plan Highlights",
+                  "subLinks": [
+                    {
+                      "id": "plan_informationwhatsnew",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationwhatsnew&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=7e2bf8cb579082a3b79eb9e9b0c1fcf0ca047e24",
+                      "label": "Important Information"
+                    },
+                    {
+                      "id": "plan_informationparticipantservices",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationparticipantservices&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=a936cc2c0d24dd0a03a5b9be8b5d7ffdddabad28",
+                      "label": "Customer Service"
+                    },
+                    {
+                      "id": "plan_informationfaqs",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationfaqs&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=8986a43ce245951a35e534d4c5873b35275c943c",
+                      "label": "FAQ's"
+                    }
+                  ],
+                  "tertiaryNavType": "dropdown",
+                  "tertiaryNavLabel": "Additional Plan Information"
+                },
+                {
+                  "id": "formsforms2",
+                  "type": "einfo",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/einfo/forms.aspx?cl=KOHLER&pl=623040&page=formsforms2&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=c659812179f795515422b9666028293f795065fe",
+                  "label": "Forms",
+                  "subLinks": [
+                    {
+                      "id": "plan_informationwhatsnew",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationwhatsnew&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=7e2bf8cb579082a3b79eb9e9b0c1fcf0ca047e24",
+                      "label": "Important Information"
+                    },
+                    {
+                      "id": "plan_informationparticipantservices",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationparticipantservices&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=a936cc2c0d24dd0a03a5b9be8b5d7ffdddabad28",
+                      "label": "Customer Service"
+                    },
+                    {
+                      "id": "plan_informationfaqs",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationfaqs&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=8986a43ce245951a35e534d4c5873b35275c943c",
+                      "label": "FAQ's"
+                    }
+                  ],
+                  "tertiaryNavType": "dropdown",
+                  "tertiaryNavLabel": "Additional Plan Information"
+                },
+                {
+                  "id": "plan_informationparticipantdisclosure",
+                  "type": "einfo",
+                  "popup": false,
+                  "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationparticipantdisclosure&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=c613ecd077819b99f5c0ecafaa03eda75eedd7ad",
+                  "label": "Participant Disclosure",
+                  "subLinks": [
+                    {
+                      "id": "plan_informationwhatsnew",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationwhatsnew&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=7e2bf8cb579082a3b79eb9e9b0c1fcf0ca047e24",
+                      "label": "Important Information"
+                    },
+                    {
+                      "id": "plan_informationparticipantservices",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationparticipantservices&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=a936cc2c0d24dd0a03a5b9be8b5d7ffdddabad28",
+                      "label": "Customer Service"
+                    },
+                    {
+                      "id": "plan_informationfaqs",
+                      "type": "einfo",
+                      "popup": false,
+                      "link": "https://my3.unit.voya.com/einfo/planinfo.aspx?cl=KOHLER&pl=623040&page=plan_informationfaqs&domain=kohler.intg.voya.com&s=c1nHBOtBt2DVX39COMoc5A11.i9291&cur_pln=623040&d=8986a43ce245951a35e534d4c5873b35275c943c",
+                      "label": "FAQ's"
+                    }
+                  ],
+                  "tertiaryNavType": "dropdown",
+                  "tertiaryNavLabel": "Additional Plan Information"
+                }
+              ],
+              "illustration": "documents"
+            }
+          ],
+          "savingsPlan": false,
+          "enrollNow": false,
+          "new": false,
+          "iraplan": false,
+          "xsellRestricted": false,
+          "eligibleForOrangeMoney": false,
+          "isVoyaAccessPlan": false,
+          "isRestrictedRetirementPlan": false,
+          "isVDAApplication": false
+        }
+      ]
+    },
+    {
+      "id": "LIFE_EVENTS",
+      "popup": false,
+      "link": "/myvoyageui/#/journeys/",
+      "label": "Life Events"
+    },
+    {
+      "id": "FINANCIAL_WELLNESS",
+      "popup": false,
+      "label": "Financial Wellness",
+      "subLinks": [
+        {
+          "popup": false,
+          "link": "https://my3.intg.voya.com/fw/env-files/index.html",
+          "label": "My Financial Wellness"
+        },
+        {
+          "popup": false,
+          "link": "https://resourcecenter.voya.com/life-stages",
+          "label": "Life Stage Guidance"
+        },
+        {
+          "popup": false,
+          "link": "https://resourcecenter.voya.com/topics/",
+          "label": "Education Topic Library"
+        },
+        {
+          "popup": false,
+          "link": "https://resourcecenter.voya.com/tools",
+          "label": "Tools & Calculators"
+        },
+        {
+          "popup": false,
+          "link": "https://www.voya.com/voyalearn",
+          "label": "Live & On Demand Sessions"
+        },
+        {
+          "popup": false,
+          "link": "http://blog.voya.com",
+          "label": "Retire Better Blog"
+        }
+      ]
+    },
+    {
+      "id": "HELP_ITEMS",
+      "popup": false,
+      "label": "Help",
+      "subLinks": [
+        {
+          "id": "FAQS_NAVBAR_ITEM",
+          "popup": false,
+          "link": "/myvoyageui/#/help/faq",
+          "label": "FAQ's"
+        },
+        {
+          "id": "CONTACT_A_COACH_NAVBAR_ITEM",
+          "popup": false,
+          "link": "/myvoyageui/#/help/contact-a-coach",
+          "label": "Contact A Professional"
+        }
+      ]
+    },
+    {
+      "id": "MESSAGE_CENTER",
+      "popup": false,
+      "link": "https://my3.intg.voya.com/myvoyaui/index.html#/message-center",
+      "label": "Message Center",
+      "newMessageCount": 0
+    },
+    {
+      "id": "MY_PROFILE",
+      "popup": false,
+      "link": "https://my3.intg.voya.com/myvoyaui/index.html#/my-profile",
+      "label": "My Profile"
+    },
+    {
+      "id": "LOGOUT",
+      "popup": false,
+      "link": "https://my3.intg.voya.com/myvoya/public/logout",
+      "label": "Log Out"
+    },
+    {
+      "id": "RESOURCES",
+      "popup": false,
+      "subLinks": [
+        {
+          "popup": false,
+          "link": "https://my3.intg.voya.com/myvoya/link?type=fe&token=urlResourceType%3DFEISSOLINK%26s%3Dc1nHBOtBt2DVX39COMoc5A11.i9291%26clientId%3DINGWIN%26vendorId%3DFEI%26d%3D5cf49d224a18c65ace2d429b2b7637d7eed08848",
+          "label": "Get Investment Advice  <span class='languageTag'>(In English)</span>"
+        },
+        {
+          "popup": false,
+          "link": "https://my3.intg.voya.com/eportal/preauth.do?s=c1nHBOtBt2DVX39COMoc5A11.i9291&page=TXDOWNLOAD&section=quicken&d=d2cab779e73f327bbe824bffb4131dbb11489e90",
+          "label": "Download Transactions to Quicken"
+        },
+        {
+          "popup": false,
+          "link": "https://my3.intg.voya.com/eportal/preauth.do?s=c1nHBOtBt2DVX39COMoc5A11.i9291&page=TXDOWNLOAD&section=money&d=a965b1e1aff492c0d3448f04e71858e8ef6860ad",
+          "label": "Download Transactions to Money"
+        },
+        {
+          "popup": false,
+          "link": "https://my3.intg.voya.com/eportal/preauth.do?s=c1nHBOtBt2DVX39COMoc5A11.i9291&page=TXDOWNLOAD&section=excel&d=e47240041cdb3f6c732975d90aee243be8722718",
+          "label": "Download Transactions to Excel"
+        }
+      ]
+    }
+  ],
+  "dataStatus": "OK",
+  "logoUrl": "https://my3.intg.voya.com/myvoyaui/index.html#/retirement/home",
+  "grandTotalEnabled": false
+}

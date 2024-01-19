@@ -1,0 +1,32 @@
+<ng-container *ngFor="let element of elements; let i = index">
+  <journeys-steps-step-input
+    *ngIf="element.id === 'input'"
+    [element]="element"
+    [ngStyle]="{
+      'margin-bottom': element.marginBottom
+    }"
+    (valueChange)="updateStepValue($event, element.answerId)"
+    (isRequired)="setRequired($event, element)"
+    [answer]="answer"
+    (blur)="setShowNote($event, element)"
+  ></journeys-steps-step-input>
+  <ng-container *ngFor="let ele of element.elements">
+    <ng-container
+      *ngIf="
+        !ele.flag ||
+        (flagMap[element.answerId] && flagMap[element.answerId][ele.flag])
+      "
+    >
+      <journeys-steps-step-intro
+        [ngClass]="ele.type === 'note' ? 'note' : ''"
+        *ngIf="ele.id === 'intro'"
+        [element]="ele"
+      ></journeys-steps-step-intro>
+    </ng-container>
+  </ng-container>
+  <journeys-steps-step-intro
+    [ngClass]="element.type === 'note' ? 'note' : ''"
+    *ngIf="element.id === 'intro'"
+    [element]="element"
+  ></journeys-steps-step-intro>
+</ng-container>

@@ -1,0 +1,29 @@
+{
+    "fn": "HORACE",
+    "ln": "IGNACIO-DP",
+    "dob": "1954-12-19 00:00:00.0",
+    "ageInMths": "809",
+    "salary": 47383.71,
+    "clients": [
+        {
+            "id": "KOHLER",
+            "name": "KOHLER",
+            "domain": "kohler.intg.voya.com",
+            "clientLocation": "QY",
+            "plans": [
+                {
+                    "id": "623040",
+                    "longName": "Kohler Co 401(k) Savings Plan",
+                    "name": "Kohler Co 401(k) Savings Plan",
+                    "adviceStatus": "FE_ELIGIBLE"
+                },
+                {
+                    "id": "623043",
+                    "longName": "Kohler Co 401(k) Savings Plan",
+                    "name": "Kohler Co 401(k) Savings Plan",
+                    "adviceStatus": "FE_MANAGED"
+                }
+            ]
+        }
+    ]
+}

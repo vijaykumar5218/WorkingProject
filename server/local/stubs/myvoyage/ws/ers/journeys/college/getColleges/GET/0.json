@@ -1,0 +1,12 @@
+{
+    "page": 0,
+    "totalPages": 1,
+    "totalEntries": 1,
+    "schools": [{
+        "id": 1,
+        "name": "Test College",
+        "schoolType": "Text",
+        "schoolDuration": "4",
+        "stateId": "TX"
+    }]
+}

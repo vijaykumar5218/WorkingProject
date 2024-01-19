@@ -1,0 +1,181 @@
+<ion-row
+  class="orangeMoney-content"
+  *ngIf="estimates && orangeData?.errorCode !== 'system-unavailable'"
+>
+  <ion-col class="orangeMoney-text">
+    <div>
+      <ion-row class="header-row">
+        <ion-col class="header-text">
+          <ion-text
+            class="header"
+            tabindex="0"
+            [innerHTML]="omTitle"
+          ></ion-text>
+          <ion-text class="om-title-text" tabindex="0">{{
+            pageText.title
+          }}</ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="image-col">
+          <div class="rectangle" style="text-align: center;">
+            <img
+              class="image-format"
+              tabindex="2"
+              alt="Orange Money image"
+              src="assets/workplace-dashboard/orangeMoney.png"
+            />
+          </div>
+        </ion-col>
+
+        <ion-col class="orangeMoney-stat-col">
+          <ion-row>
+            <ion-text class="stat-monthly-income" tabindex="0">
+              {{
+                estimates
+                  ? (estimates?.estimatedMonthlyIncome
+                    | currency: 'USD':'symbol':'1.0-0')
+                  : ''
+              }}</ion-text
+            >
+          </ion-row>
+          <ion-row class="mrg-top">
+            <ion-text class="statDescription" tabindex="0">{{
+              pageText.estimated
+            }}</ion-text>
+          </ion-row>
+          <ion-row>
+            <ion-text class="statDescription" tabindex="0">{{
+              pageText.MonthlyIncome
+            }}</ion-text>
+          </ion-row>
+        </ion-col>
+
+        <ion-col class="orangeMoney-stat-col">
+          <ion-row>
+            <ion-text class="stat" tabindex="0">{{
+              estimates
+                ? (estimates?.estimatedMonthlyGoal
+                  | currency: 'USD':'symbol':'1.0-0')
+                : ''
+            }}</ion-text>
+          </ion-row>
+          <ion-row class="mrg-top">
+            <ion-text class="statDescription" tabindex="0">{{
+              pageText.estimated
+            }}</ion-text>
+          </ion-row>
+          <ion-row>
+            <ion-text class="statDescription" tabindex="0">{{
+              pageText.MonthlyGoal
+            }}</ion-text>
+          </ion-row>
+        </ion-col>
+
+        <ion-col class="orangeMoney-stat-col" *ngIf="estimates?.difference > 0">
+          <ion-row>
+            <ion-text class="stat" tabindex="0">
+              {{
+                estimates
+                  ? (estimates?.difference | currency: 'USD':'symbol':'1.0-0')
+                  : ''
+              }}</ion-text
+            >
+          </ion-row>
+          <ion-row>
+            <ion-text class="statDescription" tabindex="0">{{
+              pageText.ADifferenceOf
+            }}</ion-text>
+          </ion-row>
+        </ion-col>
+        <ion-col
+          class="orangeMoney-stat-col  align-col"
+          *ngIf="!(estimates?.difference > 0)"
+        >
+          <ion-row>
+            <ion-text class="statDescription" tabindex="0">{{
+              pageText.onTrackText
+            }}</ion-text>
+          </ion-row>
+        </ion-col>
+        <ion-col class="divider-col" *ngIf="isSizeOne()">
+          <div class="vertical"></div>
+        </ion-col>
+      </ion-row>
+    </div>
+    <ion-col class="orangeMoney-button" *ngIf="detailsLink">
+      <ion-row>
+        <ion-button
+          size="small"
+          shape="round"
+          tabindex="0"
+          automation-id="select-orangeMoney-button"
+          href="{{ detailsLink }}"
+        >
+          {{ pageText.viewDetails }}
+        </ion-button>
+      </ion-row>
+    </ion-col>
+  </ion-col>
+</ion-row>
+
+<ion-row
+  class="orangeMoney-madlib-content"
+  *ngIf="
+    !estimates &&
+    orangeData?.errorCode !== 'system-unavailable' &&
+    (orangeData?.madLibData || orangeData?.errorCode === 'opt-out')
+  "
+>
+  <ion-col class="orangeMoney-madlib-text">
+    <div>
+      <ion-row class="madlib-header-row">
+        <ion-col class="madlib-header-text">
+          <ion-text
+            class="madlib-header"
+            tabindex="0"
+            [innerHTML]="omTitle"
+          ></ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row class="mobile">
+        <div class="rectangle">
+          <img
+            class="org-image-format"
+            tabindex="2"
+            alt=""
+            src="assets/workplace-dashboard/orangMoneyMadlib.png"
+          />
+        </div>
+      </ion-row>
+      <ion-row>
+        <ion-row>
+          <ion-text class="statDescription-madlib" tabindex="0">{{
+            omTileIncompleteMadlibText
+          }}</ion-text>
+        </ion-row>
+        <ion-row *ngIf="detailsLink">
+          <ion-button
+            size="small"
+            class="button-madlib"
+            shape="round"
+            tabindex="0"
+            href="{{ detailsLink }}"
+          >
+            {{ pageText.showmehow }}
+          </ion-button>
+        </ion-row>
+      </ion-row>
+    </div>
+    <ion-col class="image-col-madlib desktop">
+      <div class="rectangle">
+        <img
+          class="org-image-format"
+          tabindex="2"
+          alt=""
+          src="assets/workplace-dashboard/orangMoneyMadlib.png"
+        />
+      </div>
+    </ion-col>
+  </ion-col>
+</ion-row>

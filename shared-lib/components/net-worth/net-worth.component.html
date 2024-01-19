@@ -1,0 +1,33 @@
+<ion-card class="net-worth" *ngIf="!showNudge || !usePlaceholder">
+  <ng-container
+    *ngIf="isWeb === true && currentUrl !== '/home'; else NetWorthHeader"
+  >
+    <ion-card-header>{{ netWorthContent.header }}</ion-card-header>
+  </ng-container>
+  <ng-template #NetWorthHeader>
+    <ion-card-header>{{ netWorthContent.header }}</ion-card-header>
+  </ng-template>
+
+  <app-mx-widget
+    [widgetType]="isTablet ? widgetType.NET_WORTH : widgetType.NET_WORTH_MINI"
+    [height]="isTablet ? '475px' : '400px'"
+    [tagName]="tagName"
+    #widget
+  ></app-mx-widget>
+  <ion-button
+    size="small"
+    id="view-net-worth-btn"
+    class="font-18"
+    name="sign-out"
+    shape="round"
+    expand="block"
+    color="btncolor"
+    fill="outline"
+    (click)="netWorthClicked()"
+  >
+    {{ netWorthContent.viewNetWorth }}
+  </ion-button>
+</ion-card>
+<app-add-account-nudge
+  *ngIf="showNudge && usePlaceholder"
+></app-add-account-nudge>

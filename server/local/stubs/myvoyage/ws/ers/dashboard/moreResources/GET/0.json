@@ -1,0 +1,39 @@
+{
+  "resourceLink": {
+    "label": "More Resources",
+    "id": "Resources",
+    "subLinks": [
+      {
+        "label": "Get Investment Advice <span class='languageTag'>(In English)</span>",
+        "link": "/myvoya/link?type=fe&token=urlResourceType%3DFEISSOLINK%26s%3DH7jGNFykQzy5RdWa4Q07eA11.i9290%26clientId%3DDAIMLR%26vendorId%3DFEI%26d%3D10ec95fe1e8279012923e3cc5345df74b6d0d864",
+        "popup": false,
+        "order": 0
+      },
+      {
+        "label": "TD Ameritrade Account",
+        "link": "http://www.tdameritraderetirement.com/",
+        "popup": false,
+        "order": 0
+      },
+      {
+        "label": "Download Transactions to Quicken",
+        "link": "/eportal/preauth.do?s=H7jGNFykQzy5RdWa4Q07eA11.i9290&page=TXDOWNLOAD&section=quicken&d=09dead1adf091edf64afb4b72bf492c0b9ffee3d",
+        "popup": false,
+        "order": 0
+      },
+      {
+        "label": "Download Transactions to Money",
+        "link": "/eportal/preauth.do?s=H7jGNFykQzy5RdWa4Q07eA11.i9290&page=TXDOWNLOAD&section=money&d=8cec4783c069bbcb8173ca444b639fdbb0c93e34",
+        "popup": false,
+        "order": 0
+      },
+      {
+        "label": "Download Transactions to Excel",
+        "link": "/eportal/preauth.do?s=H7jGNFykQzy5RdWa4Q07eA11.i9290&page=TXDOWNLOAD&section=excel&d=e8ada4e48b3a76740b18089021d50dab7002395e",
+        "popup": false,
+        "order": 0
+      }
+    ]
+  },
+  "dataStatus": "OK"
+}

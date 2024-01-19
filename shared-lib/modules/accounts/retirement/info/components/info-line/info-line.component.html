@@ -1,0 +1,8 @@
+<ion-row [ngClass]="{'bolded-row': bolded}">
+  <ion-col class="ion-text-start text-single-line" size="8">
+    <span>{{ title }}</span>
+  </ion-col>
+  <ion-col class="ion-text-end" size="4">
+    <ng-content></ng-content>
+  </ion-col>
+</ion-row>

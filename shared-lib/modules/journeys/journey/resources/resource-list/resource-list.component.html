@@ -1,0 +1,9 @@
+<ng-container *ngFor="let link of resource.links; let index = index">
+  <span
+    tabindex="0"
+    (keyup.enter)="openLink(link)"
+    (click)="openLink(link)"
+    [id]="'journeyResource' + index + idSuffix"
+    >{{ link.text }}</span
+  >
+</ng-container>

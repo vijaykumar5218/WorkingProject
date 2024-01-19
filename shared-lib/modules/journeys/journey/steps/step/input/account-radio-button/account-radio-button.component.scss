@@ -1,0 +1,23 @@
+:host {
+  .radioLabel {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+  }
+  display: block;
+  .mx-account {
+    margin-bottom: 15px;
+    display: flex;
+    label {
+      font-size: 16px;
+      color: black;
+      margin: auto 10px;
+    }
+    ion-icon {
+      width: 24px;
+      height: 24px;
+      color: black;
+    }
+  }
+}

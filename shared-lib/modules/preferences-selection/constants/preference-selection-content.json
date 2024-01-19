@@ -1,0 +1,14 @@
+
+{   
+    "notificationHeader":"Enable Notifications",
+    "notificationDescription":"By clicking yes, you will be redirecting to OS setting to turn on push notifications.",
+    "header":"Stay up to date",
+    "subHeader":"Get insights on your health care and finance delivered in real time by enabling notifications",
+    "saveButton":"Save",
+    "notnowButton":"Not Now",
+    "preferenceOptions":{
+        "Push Notifications": false,
+        "Text": false,
+        "Email":true},
+    "legalText":"if you select to receive text notification, you agree to receive text message to your mobile phone using an automated dialing system. We will periodically send recurring message to the mobile number provided. Messages frequency depends on requests made, alerts triggered and changes to your account. Please review our <a class='linkcolor underline' target='_blank' href='https://www.voya.com/terms-use#sms'>SMS/Text Message Terms and Conditions </a>and <a class='linkcolor underline' target='_blank' href='https://www.voya.com/privacy-notice'>Privacy Notice </a>for more information. Message and data rates may apply. To opt-out of receiving future text messages from Voya, reply STOP to cancel at any time. For additional help, reply HELP."
+}

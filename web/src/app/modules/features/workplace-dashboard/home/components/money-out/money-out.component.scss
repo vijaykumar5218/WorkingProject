@@ -1,0 +1,43 @@
+@import '../../../../../../../../../styles/mediaVariables.scss';
+
+.view-card {
+  margin: 20px 0px 20px 0px;
+
+  @include desktop {
+    margin-left: 20px;
+  }
+
+  .ion-card {
+    background: var(--ion-color-white);
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+
+    .header {
+      font-size: 24px;
+      color: var(--primary-colors-voya-black);
+      font-weight: 600;
+      align-content: center;
+      padding-bottom: 10px;
+    }
+
+    .content {
+      color: var(--primary-colors-voya-black);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.005em;
+      z-index: 999;
+      flex: 100%;
+      border-bottom-color: var(--secondary-colors-medium-gray-3);
+      border-bottom-style: solid;
+      .text-content {
+        display: inline;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

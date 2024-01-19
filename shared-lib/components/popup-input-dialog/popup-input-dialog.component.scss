@@ -1,0 +1,94 @@
+.popup-input-dialog {
+  margin: auto;
+  width: 80%;
+
+  ion-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 0.03px;
+    color: var(--primary-colors-voya-black);
+
+    span {
+      float: right;
+      cursor: pointer;
+    }
+  }
+
+  .input-title {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.08px;
+    color: var(--primary-colors-voya-black);
+    margin-bottom: 14px;
+  }
+
+  ion-input {
+    --padding-start: 10px;
+    border-radius: 5px;
+    border: solid 1px var(--secondary-colors-voya-gray) !important;
+    background-color: var(--primary-colors-voya-white);
+    margin-bottom: 8px;
+  }
+
+  ion-input.currency-input {
+    --padding-start: 18px;
+  }
+
+  .dollar-symbol {
+    position: absolute;
+    left: 8px;
+  }
+
+  .save-button {
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: 600;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: var(--primary-colors-voya-dark-blue);
+  }
+
+  .save-spinner {
+    margin-right: 8px;
+  }
+
+  .cancel-button {
+    width: 60px;
+    height: 26.5px;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: center;
+    font-weight: normal;
+    color: var(--primary-colors-voya-dark-blue);
+    margin: 21.5px auto;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    display: block;
+    --background: none;
+    --box-shadow: none;
+  }
+
+  .error {
+    color: var(--secondary-colors-error-red);
+    margin-left: 4px;
+    vertical-align: top;
+  }
+
+  .error-icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 4px;
+    fill: var(--secondary-colors-error-red);
+  }
+
+  .error-input input {
+    border-color: var(--secondary-colors-error-red) !important;
+  }
+  .error-title {
+    color: var(--secondary-colors-error-red);
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "errorText": "Sorry, it appears that some of your account information may not be available at this time. Please check back soon.",
+    "dismiss": "Dismiss",
+    "networkErrorTitle": "No Connection",
+    "networkErrorMessage": "Make sure your device is connected to the internet. Go to your device settings to enable Wi-Fi or Cellular Data"
+}

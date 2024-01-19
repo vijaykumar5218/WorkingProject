@@ -1,0 +1,232 @@
+<app-modal-header
+  *ngIf="isModal"
+  [headerText]="'Claims'"
+  [back]="false"
+></app-modal-header>
+<div [ngClass]="isWeb ? 'web-plan-transactions' : 'mobile-plan-transactions'">
+  <div #topmostElement></div>
+  <app-consent-required
+    *ngIf="!hasConsent"
+    [back]="back"
+  ></app-consent-required>
+  <div *ngIf="hasConsent">
+    <div class="calim-transaction-card">
+      <div class="filter-row">
+        <ion-button
+          size="small"
+          (click)="opnFilter($event)"
+          #filter
+          size="small"
+          fill="outline"
+          class="filt-button font-14"
+          id="filter-button"
+          >{{ filterContent.filterLable }}
+          <ion-icon class="ml-10" name="filter-outline"></ion-icon>
+        </ion-button>
+
+        <ion-button
+          size="small"
+          (click)="opnSorting($event)"
+          size="small"
+          fill="outline"
+          class="filt-button font-14"
+          id="sort-button"
+          >{{ filterContent.sortLable }}
+          <ion-icon class="ml-10" name="chevron-down-outline"></ion-icon>
+        </ion-button>
+        <div
+          (click)="manageCarriers()"
+          class="manage-button"
+          *ngIf="isTpa && !isModal"
+          tabindex="0"
+          (keydown.enter)="manageCarriers()"
+        >
+          {{ filterContent.manage }}
+        </div>
+      </div>
+
+      <div class="chip-wrap" *ngIf="isWeb && filterChips.length">
+        <app-chips
+          [item]="filterChips"
+          (outPutData)="onRemoveChips($event)"
+          (clearOutPutFn)="clearAllChips()"
+        ></app-chips>
+      </div>
+
+      <div class="date-range-row">
+        <ion-text class="font-w-600"
+          >{{ filterContent.dateRangeLbl }} :
+        </ion-text>
+        <ion-text
+          class="option-name"
+          *ngFor="let data of filterContent.dateRangeOptions; let i = index"
+          [hidden]="data.id != selectedRangeType"
+          tabindex="0"
+          (keydown.enter)="opnDateRangeFilter($event)"
+          (click)="opnDateRangeFilter($event)"
+        >
+          <span class="value-wrap">
+            {{ data.value }}
+            <ion-icon name="caret-down-outline"></ion-icon>
+          </span>
+        </ion-text>
+      </div>
+
+      <div class="custom-date-range" *ngIf="this.selectedRangeType == 'custom'">
+        <div class="cdr-block">
+          <ion-text class="font-w-600">{{ filterContent.fromTxt }}</ion-text>
+          <section>
+            <ion-datetime-button
+              datetime="datetimeFrom"
+              id="open-date"
+            ></ion-datetime-button>
+          </section>
+          <ion-popover show-backdrop="false" keepContentsMounted="true">
+            <ng-template>
+              <ion-datetime
+                id="datetimeFrom"
+                [value]="fromDate"
+                [min]="fromMinDate"
+                [max]="fromMaxDate"
+                presentation="date"
+                (ionChange)="fromDateChange($event)"
+              ></ion-datetime>
+            </ng-template>
+          </ion-popover>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </div>
+        <div class="cdr-block">
+          <ion-text class="font-w-600">{{ filterContent.toTxt }}</ion-text>
+          <section>
+            <ion-datetime-button
+              datetime="datetimeTo"
+              id="open-date"
+            ></ion-datetime-button>
+          </section>
+          <ion-popover show-backdrop="false" keepContentsMounted="true">
+            <ng-template>
+              <ion-datetime
+                id="datetimeTo"
+                [value]="toDate"
+                [min]="toMinDate"
+                [max]="toMaxDate"
+                presentation="date"
+                (ionChange)="toDateChange($event)"
+              ></ion-datetime>
+            </ng-template>
+          </ion-popover>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </div>
+      </div>
+
+      <div class="data-wrapper">
+        <app-loading [loading]="!isDataLoaded">
+          <div *ngFor="let data of filteredGroupData">
+            <div class="frame" *ngIf="data?.date && data?.name?.length">
+              <span class="title">
+                {{ data?.date | date: 'MMMM y' }}
+              </span>
+            </div>
+            <ion-list *ngFor="let info of data.name">
+              <ion-row *ngIf="info.carrierName">
+                <ion-col class="carrier">
+                  {{ info.carrierName }}
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col
+                  class="ion-text-start lastdays OneLinkNoTx"
+                  [ngClass]="{'tpa-col': isTpa}"
+                  size="8"
+                >
+                  {{ info.providerName }}
+                </ion-col>
+                <ion-col
+                  class="ion-text-end color"
+                  [ngClass]="{'tpa-col': isTpa}"
+                  size="4"
+                >
+                  {{ -info.outOfPocketCost | currency: 'USD':'symbol' }}
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <ion-col class="ion-text-start subdate" size="6">
+                  {{ info.serviceDate | date: 'MMMM d, y' }}
+                </ion-col>
+                <ion-col class="ion-text-end sub-name" size="6">
+                  {{ contentP.myBill }}
+                </ion-col>
+              </ion-row>
+
+              <ion-row class="dep-row" *ngIf="info.firstName && info.lastName">
+                <div class="label">Patient Name</div>
+                <div class="colon">:</div>
+                <div class="value">
+                  {{ info.firstName + ' ' + info.lastName }}
+                </div>
+              </ion-row>
+
+              <ion-row class="dep-row" *ngIf="info.relationship">
+                <div class="label">Relationship</div>
+                <div class="colon second">:</div>
+                <div class="value">{{ info.relationship }}</div>
+              </ion-row>
+
+              <div
+                *ngIf="
+                  (info.serviceName === 'genericDrugs' ||
+                    info.serviceName === 'preferredDrugs' ||
+                    info.serviceName === 'rx') &&
+                  info.drugName != null &&
+                  info.drugName.length > 0
+                "
+              >
+                <ion-row>
+                  <ion-col class="drugname OneLinkNoTx">
+                    {{ contentP.drugNames }} {{ info.drugName }}
+                  </ion-col>
+                </ion-row>
+
+                <ion-row *ngIf="info.lastFilledDate">
+                  <ion-col class="lastfilled">
+                    {{ contentP.lastFilled }}
+                    {{
+                      info.lastFilledDate
+                        ? (info.lastFilledDate | date: 'MMMM d, y')
+                        : filterContent.na
+                    }}
+                  </ion-col>
+                </ion-row>
+              </div>
+              <ion-row *ngIf="info.patientName">
+                <ion-col class="patient">
+                  {{ contentP.patientName }}: {{ info.patientName }}
+                </ion-col>
+              </ion-row>
+
+              <ion-row>
+                <div
+                  class="dot"
+                  [ngStyle]="{
+                    background: this.contentP.colors[info.serviceName]
+                  }"
+                ></div>
+                <ion-col class="ion-text-start sub-category">
+                  {{ this.contentP.outNetworkCostNames[info.serviceName] }}
+                  {{
+                    info.inNetwork == true
+                      ? '(' + this.contentP.inNetwork + ')'
+                      : '(' + this.contentP.outOfNetwork + ')'
+                  }}
+                </ion-col>
+              </ion-row>
+              <hr class="divider" />
+            </ion-list>
+          </div>
+        </app-loading>
+      </div>
+    </div>
+    <app-med-disclaimer></app-med-disclaimer>
+  </div>
+</div>

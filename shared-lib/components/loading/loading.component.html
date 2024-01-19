@@ -1,0 +1,6 @@
+<div *ngIf="loading">
+  <ion-spinner [class.center]="center"></ion-spinner>
+</div>
+<div *ngIf="!loading">
+  <ng-content></ng-content>
+</div>

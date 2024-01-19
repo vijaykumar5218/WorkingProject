@@ -1,0 +1,20 @@
+<div class="model-content">
+  <p class="header">{{ modalContent?.header }}</p>
+  <section>
+    <ul *ngFor="let content of modalContent?.descList">
+      <li>{{ content }}</li>
+    </ul>
+    <ion-text class="descNote">{{ modalContent?.descNote }}</ion-text>
+  </section>
+  <br />
+  <ion-text>{{ modalContent?.usefulInfoHeader }}</ion-text>
+  <section>
+    <ul *ngFor="let content of modalContent?.usefulInfoDescList">
+      <li>{{ content }}</li>
+    </ul>
+  </section>
+  <br />
+  <ion-button size="small" (click)="openSavvi()" id="open-savvi">{{
+    modalContent?.buttonLabel
+  }}</ion-button>
+</div>

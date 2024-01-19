@@ -1,0 +1,73 @@
+:host {
+  height: 100%;
+  overflow: visible;
+  .app-account-details {
+    height: 100%;
+    .app-sub-header-container {
+      height: 100%;
+      .app-sub-header {
+        width: 100%;
+        position: relative;
+      }
+    }
+    .top-div {
+      margin: 24px 36px 0px 0px;
+      flex-wrap: nowrap;
+      .plan-col {
+        margin-left: 34px;
+      }
+      .planName {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--primary-colors-voya-black);
+      }
+      .btn-col {
+        max-width: 180px;
+        .goto-account-button {
+          width: fit-content;
+          margin-left: 16px;
+          font-size: 16px;
+        }
+      }
+      .top-row {
+        margin-right: 34px;
+      }
+      .open-outline {
+        margin-left: 3px;
+      }
+      @media screen and (max-width: 1024px) {
+        display: grid;
+        margin: 5px 36px 0px 0px;
+        .planName {
+          white-space: wrap;
+        }
+        .btn-col {
+          margin: 8px auto;
+          justify-self: center;
+        }
+      }
+    }
+    @media screen and (min-width: 921px) {
+      ion-spinner {
+        position: absolute;
+        top: 12%;
+        z-index: 10000;
+        left: 35%;
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    @media screen and (max-width: 920px) {
+      ion-spinner {
+        position: absolute;
+        top: 45%;
+        z-index: 10000;
+        left: 40%;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}

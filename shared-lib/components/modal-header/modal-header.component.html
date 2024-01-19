@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-toolbar mode="ios" [ngClass]="{border: border}">
+    <ion-buttons slot="secondary">
+      <ion-button size="small" id="close-button" (click)="closeDialog()">
+        {{ content.closeText }}
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{ headerText }}</ion-title>
+  </ion-toolbar>
+</ion-header>

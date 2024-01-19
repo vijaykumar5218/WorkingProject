@@ -1,0 +1,70 @@
+<div
+  #container
+  [id]="accountMX?.guid+'-mx-details'"
+  class="bg-color mxOuterContainer"
+  *ngIf="!isWeb || (isWeb && isVisible)"
+>
+  <div class="containerA">
+    <ion-grid>
+      <div>
+        <img
+          class="voya-logo"
+          src="{{accountMX?.medium_logo_url}}"
+          alt="voya"
+        />
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start institute_name OneLinkNoTx">
+              <span>{{accountMX?.institution_name}} </span>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start accounttype-name">
+              <span>{{accountMX?.account_type_name}} </span>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start accounttype-name">
+              <span>{{pageText.accBalance}}</span>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start balance">
+              <span>{{accountMX?.balance | currency:"USD":"symbol"}} </span>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <div class="ion-text-start As-of-date">
+              <p>
+                {{pageText.asOf}}{{(accountMX)?.updated_at|date:'longDate'}}
+              </p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-grid>
+  </div>
+  <div class="mx-widget-transaction">
+    <app-mx-widget
+      [widgetType]="widgetType.TRANSACTIONS"
+      [height]="isWeb ? '98%' : '598px'"
+      [tagName]="tagName"
+      [subAccount]="true"
+    ></app-mx-widget>
+  </div>
+</div>
+<div *ngIf="isWeb && !isVisible" class="spinn">
+  <ion-spinner></ion-spinner>
+</div>

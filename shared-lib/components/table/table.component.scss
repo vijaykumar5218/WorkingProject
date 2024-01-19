@@ -1,0 +1,46 @@
+:host {
+  display: block;
+
+  .dot {
+    height: 14px;
+    width: 14px;
+    margin: auto 10px auto 0px;
+    border-radius: 50%;
+  }
+
+  ion-grid {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--primary-colors-voya-black);
+    padding: 0px;
+    .header {
+      font-weight: bold;
+      padding: 0px 0px 10px 0px;
+    }
+    .helpie {
+      margin-left: -4px;
+    }
+
+    div {
+      justify-content: space-between;
+      display: flex;
+
+      &:not(.last) {
+        margin-bottom: 13px;
+      }
+
+      span {
+        &.row-label {
+          margin-right: 10px;
+          padding-right: 10px;
+        }
+
+        &.answer {
+          font-weight: bold;
+          text-align: end;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}

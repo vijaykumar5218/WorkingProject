@@ -1,0 +1,80 @@
+ion-card.myvoyage {
+  --color: var(--primary-colors-voya-black);
+  font-size: 16px;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-box-shadow);
+  margin: 20px 20px 0 20px;
+  padding: 15px;
+
+  & .noCoverages {
+    padding: 40px 10px;
+    text-align: center;
+    flex-direction: column;
+
+    & h2 {
+      font-size: 24px;
+      color: var(--primary-colors-voya-black);
+      font-weight: 600;
+      margin: 0 0 10px 0;
+    }
+
+    & p {
+      font-size: 16px;
+      color: var(--primary-colors-voya-black);
+      margin: 0;
+    }
+
+    .noBenefIcons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: flex-end;
+      position: relative;
+      padding: 0 15px 0px 15px;
+      margin-bottom: 20px;
+
+      &::before {
+        width: 100%;
+        height: 30px;
+        background-color: var(--secondary-colors-light-gray-1);
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        border-radius: 10px;
+      }
+
+      .iconC {
+        display: inline-flex;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+
+        &:nth-child(3) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+ion-card.workplaceDashboard {
+  box-shadow: none;
+  margin: 20px 0px;
+  text-align: center;
+  color: var(--primary-colors-voya-black);
+  .noBenefIcons {
+    max-width: 258.25px;
+    margin: auto;
+  }
+  .no-benefit-header {
+    margin: 15px auto;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .no-benefit-sub-header {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}

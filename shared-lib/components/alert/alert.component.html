@@ -1,0 +1,55 @@
+<ion-card class="alert-dialog">
+  <ion-card-header>
+    <ion-card-title>
+      <span
+        class="x-button"
+        tabindex="0"
+        (click)="closeDialogClicked(false)"
+        (keyup.enter)="closeDialogClicked(false)"
+        id="close-btn"
+        ><img src="assets/icon/exit.svg" alt="Close dialog"/></span
+    ></ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <img
+      [hidden]="!imageUrl"
+      class="image-center"
+      [src]="imageUrl"
+      alt="warning"
+    />
+    <div [hidden]="imageUrl" class="spacer"></div>
+    <p class="title-message">{{ titleMessage }}</p>
+    <p class="message">{{ message }}</p>
+    <div class="error" [hidden]="!error">
+      An error occurred while saving. Please try again.
+    </div>
+    <div>
+      <ion-button
+        size="small"
+        (click)="closeDialogClicked(true)"
+        (keyup.enter)="closeDialogClicked(true)"
+        class="font-18 save-button"
+        name="submit"
+        shape="round"
+        expand="block"
+        type="submit"
+        color="btncolor"
+        [attr.disabled]="saving"
+        id="yes-btn"
+      >
+        <ion-spinner [hidden]="!saving" class="save-spinner"></ion-spinner>
+        {{ yesButtonTxt }}
+      </ion-button>
+      <ion-button
+        size="small"
+        (click)="closeDialogClicked(false)"
+        (keyup.enter)="closeDialogClicked(false)"
+        class="cancel-button"
+        [attr.disabled]="saving"
+        id="no-btn"
+      >
+        {{ noButtonTxt }}
+      </ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>

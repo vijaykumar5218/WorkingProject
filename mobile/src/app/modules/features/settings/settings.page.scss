@@ -1,0 +1,53 @@
+:host {
+  background-color: var(--ion-color-white);
+
+  ion-icon {
+    font-size: 20px;
+  }
+
+  .bottom {
+    width: 100%;
+    margin-bottom: 30px;
+
+    .sign-out {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: 0.2px;
+      color: var(--primary-colors-voya-dark-blue);
+      width: 94px;
+      margin: auto;
+    }
+  }
+
+  .biometrics-row {
+    margin: 0 20px 0 20px;
+    border-bottom: 1px solid var(--color-lightgrey);
+  }
+
+  .biometrics-label-col {
+    margin: 16px 0 16px 0;
+
+    img {
+      width: 24px;
+      height: 24px;
+      vertical-align: super;
+    }
+
+    ion-text {
+      color: var(--primary-colors-voya-black);
+      margin-left: 8px;
+      vertical-align: top;
+      line-height: 24px;
+    }
+  }
+
+  .biometrics-toggle-col {
+    margin: 16px 0 16px 0;
+
+    ion-toggle {
+      float: right;
+      margin: 13px 20px 0 0;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/myvoyage",
+    "target": "local"
+  },
+  {
+    "path": "/myvoya",
+    "target": "local"
+  },
+  {
+    "path": "/oidcop",
+    "target": "local"
+  },
+  {
+    "path": "/pkmsoidc",
+    "target": "local"
+  },
+  {
+    "path": "/voyasso",
+    "target": "local"
+  }
+]

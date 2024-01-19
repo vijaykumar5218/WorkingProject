@@ -1,0 +1,14 @@
+{
+    "tabs": [
+        {
+            "label": "Details",
+            "link": "details"
+        }
+    ],
+    "defaultTab": [
+        {
+            "label": "Details",
+            "link": "details"
+        }
+    ]
+}

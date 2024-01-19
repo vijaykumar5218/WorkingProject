@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  ion-searchbar {
+    border: 1px solid var(--secondary-colors-medium-gray-2);
+    border-radius: 4px;
+    width: auto;
+    --padding-start: 16px;
+    padding: 0px !important;
+    --placeholder-color: var(--secondary-colors-voya-gray);
+    --placeholder-opacity: 1;
+    --padding-end: 25px;
+    height: 56px;
+
+    &::part(icon) {
+      color: var(--primary-colors-voya-black);
+      opacity: 1;
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px var(--primary-colors-voya-black);
+    }
+  }
+  ion-card {
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px;
+    height: 200px;
+  }
+}

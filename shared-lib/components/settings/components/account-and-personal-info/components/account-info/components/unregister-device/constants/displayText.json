@@ -1,0 +1,11 @@
+{
+    "actionOption": {
+        "headerName": "Unregister Your Device",
+        "buttonLeft": "settings/account-and-personal-info",
+        "buttonRight": "notification"
+      },
+      "button": {
+        "yes": "Yes",
+        "no": "No"
+      }
+}

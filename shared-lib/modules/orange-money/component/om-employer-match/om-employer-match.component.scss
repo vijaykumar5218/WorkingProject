@@ -1,0 +1,58 @@
+@import '../../../../../styles/mediaVariables.scss';
+
+:host {
+  .om-employer-match-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--dark-grey-text-color);
+    margin-left: 28px;
+  }
+
+  .om-employer-match-container {
+    display: flex;
+    padding: 20px;
+    @include mobile {
+      flex-flow: column;
+    }
+
+    .om-employer-match-img {
+      width: 160px;
+      height: 100px;
+      margin-right: 20px;
+      align-self: center;
+      @include mobile {
+        width: 280px;
+        height: unset;
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+    }
+
+    .om-employer-match-description {
+      color: var(--dark-grey-text-color);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0.024px;
+    }
+
+    .om-employer-match-content {
+      margin: 20px 0px 20px 24px;
+      color: var(--dark-grey-text-color);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .om-employer-match-note {
+      color: var(--dark-grey-text-color);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px; /* 133.333% */
+      letter-spacing: 0.012px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

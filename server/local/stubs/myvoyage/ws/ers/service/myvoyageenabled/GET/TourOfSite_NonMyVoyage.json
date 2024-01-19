@@ -1,0 +1,53 @@
+{
+  "enableMyVoyage": "Y",
+  "clientId": "INGWIN",
+  "clientDomain": "voyaretirement.intg.voya.com",
+  "clientName": "",
+  "planIdList": [
+    {
+      "planId": "814059",
+      "active": true
+    }
+  ],
+  "currentPlan": {
+    "planId": "814059",
+    "active": true
+  },
+  "firstTimeLogin": false,
+  "firstTimeLoginWeb": false,
+  "partyId": "bbce4783-79dc-4467-b27b-b6d2d095598a",
+  "isHealthOnly": false,
+  "myProfileURL": "https%3A%2F%2Fmy3.intg.voya.com%2Fmyvoyaui%2Findex.html%23my-profile%2Flogin-info",
+  "enableMX": "Y",
+  "enableBST": "N",
+  "enableTPA": "N",
+  "enableWealthCoach": "N",
+  "enableCoverages": false,
+  "enableMaintenanceWindow": "N",
+  "isMxUser": false,
+  "myWorkplaceDashboardEnabled": true,
+  "voyaSsoAppId": "PWEB",
+  "isMultiClient": true,
+  "userClientInfo": [
+    {
+      "clientId": "ADPTTL",
+      "clientDomain": "adptotalsource.intg.voya.com",
+      "clientName": "ADP TotalSource Retirement Savings Plan",
+      "informationLine": "855-646-7549",
+      "planIdList": [
+        "894550"
+      ]
+    },
+    {
+      "clientId": "INGWIN",
+      "clientDomain": "voyaretirement.intg.voya.com",
+      "clientName": "Your Retirement Plan",
+      "informationLine": "1-800-584-6001",
+      "planIdList": [
+        "814059"
+      ]
+    }
+  ],
+  "omEligForDashBoard": false,
+  "hsaStoreEnabled": true
+}

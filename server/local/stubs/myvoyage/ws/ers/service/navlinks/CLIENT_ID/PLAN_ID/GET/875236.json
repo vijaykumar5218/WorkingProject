@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ACCT_CONTRIB",
+    "popup": false,
+    "link": "https://my3.intg.voya.com%2Fpwebui%2Fcontributions%3Fs%3DjPyC71Bo32BSKlUqPrBR0g11.i9290%26clientId%3DINGWIN%26domain%3Dvoyaretirement.intg.voya.com%26planId%3D422020%26pageId%3DACCT_CONTRIB%26d%3D9d4d6fc446d2212bc8d523b597469656ed90e6ae",
+    "label": "Manage Contributions"
+  },
+  {
+    "id": "ACCT_MINVEST",
+    "popup": false,
+    "link": "https://my3.intg.voya.com%2Fpwebui%2Fmanage-investments%3Fs%3DjPyC71Bo32BSKlUqPrBR0g11.i9290%26clientId%3DINGWIN%26domain%3Dvoyaretirement.intg.voya.com%26planId%3D422020%26pageId%3DACCT_MINVEST%26d%3Dbfd8e82c12cb8fac81f2ed3b93d145f21e716d6c",
+    "label": "Manage Investments"
+  },
+  {
+    "id": "LOANS_WITHD_LANDING",
+    "popup": false,
+    "link": "https://my3.intg.voya.com%2Fpwebui%2Floans-withdrawals%3Fs%3DjPyC71Bo32BSKlUqPrBR0g11.i9290%26clientId%3DINGWIN%26domain%3Dvoyaretirement.intg.voya.com%26planId%3D422020%26pageId%3DLOANS_WITHD_LANDING%26d%3D41d92c989b86032ab9cae1a2fabcb5c78342ce82",
+    "label": "Loans \u0026 Withdrawals"
+  }
+]

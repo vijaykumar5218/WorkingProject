@@ -1,0 +1,79 @@
+<div
+  *ngIf="imgUrl === undefined; else showCard"
+  class="card-section"
+  [ngClass]="side === cardSide.BACK ? 'align-right' : ''"
+>
+  <div class="header">
+    {{ pageContent.cardSection.header.upload }}&nbsp;<span class="card-side">
+      {{
+        side === cardSide.FRONT
+          ? pageContent.cardSection.header.frontSide
+          : pageContent.cardSection.header.backSide
+      }}&nbsp; </span
+    >{{ pageContent.common.card }}
+  </div>
+  <div class="sub-header">{{ pageContent.cardSection.subHeader }}</div>
+  <div class="image-placeholder">
+    <img class="placeholder" src="assets/icon/image-placeholder.svg" alt="" />
+    <div class="browse-text">
+      <span
+        tabindex="0"
+        (keydown.enter)="openFileBrowser()"
+        (click)="openFileBrowser()"
+        automation-id="open-file-browser"
+        ><span class="browse-title">{{ isWeb ? pageContent.cardSection.browse.browse : pageContent.cardSection.browse.click
+        }}</span>
+        <input
+          #fileInput
+          type="file"
+          accept="image/png, image/jpeg, image/tiff"
+          class="input"
+          (change)="selectFile($event)"
+        />
+      </span>
+      {{ isWeb ? pageContent.cardSection.browse.choose :pageContent.cardSection.browse.add }}
+    </div>
+  </div>
+</div>
+
+<ng-template #showCard>
+  <div
+    class="card-section"
+    [ngClass]="side === cardSide.BACK ? 'align-right' : ''"
+  >
+    <div class="header">
+      <span class="card-side">
+        {{
+          side === cardSide.FRONT
+            ? pageContent.card.header.frontSide
+            : pageContent.card.header.backSide
+        }}&nbsp; </span
+      >{{ pageContent.common.card }}
+      <span
+        class="change"
+        tabindex="0"
+        (keydown.enter)="changeCard()"
+        (click)="changeCard()"
+        automation-id="change-card"
+        >{{ pageContent.card.header.change }}
+        <input
+          #fileInput
+          type="file"
+          accept="image/png, image/jpeg, image/tiff"
+          class="input"
+          (change)="selectFile($event)"
+        />
+      </span>
+    </div>
+    <div class="card-image">
+      <img
+        [src]="imgUrl"
+        [alt]="
+          side === cardSide.FRONT
+            ? 'Front side of your card'
+            : 'Back side of your card'
+        "
+      />
+    </div>
+  </div>
+</ng-template>

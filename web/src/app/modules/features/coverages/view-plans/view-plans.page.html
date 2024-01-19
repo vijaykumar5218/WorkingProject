@@ -1,0 +1,15 @@
+<ng-container
+  *ngIf="selectedBenefit?.type == 'medical_plan'; else noMedicalPlan "
+>
+  <app-sub-header
+    [tabsAction]="tabs"
+    [selectedTab]="selectedTab"
+  ></app-sub-header>
+</ng-container>
+
+<ng-template #noMedicalPlan>
+  <app-sub-header
+    [tabsAction]="pageData.defaultTab"
+    [selectedTab]="pageData.defaultTab[0].link"
+  ></app-sub-header>
+</ng-template>

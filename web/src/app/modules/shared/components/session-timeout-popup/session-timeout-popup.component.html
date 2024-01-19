@@ -1,0 +1,30 @@
+<ion-card class="session-timeout-popup">
+  <ion-card-content>
+    <img class="image-center" src="assets/icon/Frame.svg" alt="warning" />
+    <p class="title-message">
+      {{ content.titleMsg }} <span class="counter">{{ counter }}</span>
+    </p>
+    <p class="message">{{ content.msg }}</p>
+    <div>
+      <ion-button
+        (click)="closeDialogClicked(true)"
+        class="font-18 save-button"
+        name="submit"
+        shape="round"
+        expand="block"
+        type="submit"
+        color="btncolor"
+        id="yes-btn"
+      >
+        {{ content.continueBtnTxt }}
+      </ion-button>
+      <ion-button
+        (click)="closeDialogClicked(false)"
+        class="cancel-button"
+        id="no-btn"
+      >
+        {{ content.logOutBtnTxt }}
+      </ion-button>
+    </div>
+  </ion-card-content>
+</ion-card>

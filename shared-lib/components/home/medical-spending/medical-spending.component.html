@@ -1,0 +1,104 @@
+<ng-container
+  *ngIf="
+    !isWorkplaceDashboard && !forMobilePlansPage;
+    else workplaceDashboardTemp
+  "
+>
+  <ion-card
+    *ngIf="hasConsent && totalSpend + totalPremiumSavvi > 0"
+    class="total-health-spend-mobile"
+  >
+    <ion-row class="health-spend">
+      <ion-col class="health-spend-content">
+        <ion-row>
+          <ion-text class="ths-text">
+            {{ content.totHealthSpend }}
+          </ion-text>
+        </ion-row>
+
+        <ion-row>
+          <strong class="ths-date"
+            >{{ content.asOfDate }} {{ currentDate }}</strong
+          >
+        </ion-row>
+        <ion-row>
+          <ion-col class="ion-no-padding">
+            <ion-text id="medical-spending" class="ths-amount">
+              {{ totalSpend + totalPremiumSavvi | currency }}
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ths-details">
+          <ion-col class="ion-no-padding">
+            <ion-text
+              id="spend-details-text"
+              class="view-details"
+              (click)="viewDetails()"
+            >
+              <u
+                ><a class="navlink" routerLinkActive="active">{{
+                  content.spendDetails
+                }}</a></u
+              >
+            </ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col class="health-spend-img-container">
+        <img
+          alt=""
+          src="assets/icon/TotalHealthSpends.svg"
+          id="spend-details-img"
+          class="ths-img"
+        />
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-row class="total-health-spending-web">
+    <ion-col
+      *ngIf="hasConsent && totalSpend + totalPremiumSavvi > 0"
+      class="display-health-spend"
+    >
+      <ion-row>
+        <ion-col>
+          <ion-text id="medical-spending-web" class="total-health-spend">
+            {{ content.totHealthSpendWeb }}
+            <ion-text class="health-spend">{{
+              totalSpend + totalPremiumSavvi | currency
+            }}</ion-text>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-text id="asOfDate" class="as-of-date">
+          {{ content.asOfDate }}{{ currentDate }}</ion-text
+        >
+        <ion-text
+          id="spend-details-web"
+          class="view-details"
+          (click)="viewDetails()"
+          (keydown.enter)="viewDetails()"
+        >
+          <u
+            ><a class="navlink" routerLinkActive="active" tabindex="0">{{
+              content.spendDetails
+            }}</a></u
+          >
+        </ion-text>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ng-container>
+
+<ng-template #workplaceDashboardTemp>
+  <workplace-medical-spending
+    *ngIf="isMyvoyageEnabled"
+    [totalSpend]="totalSpend"
+    [totalPremiumSavvi]="totalPremiumSavvi"
+    [hasConsent]="hasConsent"
+    [isTPA]="isTPA"
+    [isTPAWaiting]="isTPAWaiting"
+    [forMobilePlansPage]="forMobilePlansPage"
+  ></workplace-medical-spending>
+</ng-template>
